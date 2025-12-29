@@ -1,3 +1,1 @@
-from .main import create_app
-
-__all__ = ["create_app"]
+# Package marker (intentionally no side-effect imports)
