@@ -76,7 +76,7 @@ def build_sold_search_url(query: str, page: int = 1) -> str:
     }
     return f"{EBAY_SEARCH_URL}?{urlencode(params)}"
 
-def fetch_html(url: str, timeout: int = 20) -> str:
+def fetch_html(url: str, timeout: int = 20, max_retries: int = 5) -> str:
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -84,11 +84,31 @@ def fetch_html(url: str, timeout: int = 20) -> str:
             "Chrome/120.0.0.0 Safari/537.36"
         ),
         "Accept-Language": "en-US,en;q=0.9",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Connection": "keep-alive",
+        "DNT": "1",
+        "Upgrade-Insecure-Requests": "1",
     }
-    r = requests.get(url, headers = headers, timeout=timeout)
-    if r.status_code != 200:
-        raise RuntimeError(f"eBay request failed: {r.status_code} for {url}")
-    return r.text
+
+    session = requests.Session()
+
+    last_status = None
+    for attempt in range(1, max_retries + 1):
+        r = session.get(url, headers=headers, timeout=timeout)
+        last_status = r.status_code
+
+        if r.status_code == 200:
+            return r.text
+
+        if r.status_code in (429, 500, 502, 503, 504):
+            sleep_s = min(2 ** attempt, 20)  # 2, 4, 8, 16, 20...
+            time.sleep(sleep_s)
+            continue
+
+        break
+
+    raise RuntimeError(f"eBay request failed: {last_status} for {url}")
+
 
 def parse_sold_results(html: str) -> List[EbayComp]:
     soup = BeautifulSoup(html, "lmxl")
@@ -163,10 +183,18 @@ def main() -> None:
     parser.add_argument("--pages", type=int, default=1, help="Number of pages to scrape (default: 1)")
     parser.add_argument("--delay", type=float, default=1.0, help="Delay between pages in seconds (default: 1.0)")
     parser.add_argument("--limit", type=int, default=0, help="Limit number of comps printed (0 = no limit)")
+    parser.add_argument("--fail-soft", action="store_true", help="On request errors, print [] instead of raising.")
 
     args = parser.parse_args()
 
-    comps = scrape_ebay_sold(args.query, pages=args.pages, delay=args.delay)
+    try:
+        comps = scrape_ebay_sold(args.query, pages=args.pages, delay=args.delay)
+    except RuntimeError as e:
+        if args.fail_soft:
+            print("[]")
+            return
+        raise
+    
     if args.limit and args.limit > 0:
         comps = comps[: args.limit]
 
