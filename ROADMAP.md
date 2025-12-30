@@ -16,7 +16,8 @@ Start small: comps → estimate → confidence. Then expand.
 - [ ] Low-engagement / stale listings
 
 ## Next (Search & Aggregation)
-- [ ] Multi-site pulling (eBay → others later)
+- [ ] Multi-site pulling (eBay → others later, Depop, Etsy, Grailed, Poshmark, Mercari)
+- [ ] Target keywords, J43, Red Detroit, Blue Detroit, Purple Detroit, JB, JS, 90s, etc
 - [ ] Filters: model (J01/J130/etc), size, condition, color
 - [ ] Saved searches
 - [ ] Notifications / alerts
