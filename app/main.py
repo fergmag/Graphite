@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from typing import Any, Dict, List
 
 from app.scrape_ebay import scrape_ebay_sold
@@ -74,6 +74,10 @@ def create_app() -> Flask:
                 **payload,
             }
         ), 200
+
+    @app.get("/")
+    def home():
+        return render_template("index.html")
 
     @app.get("/estimate")
     def estimate():

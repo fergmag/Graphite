@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Graphite – Estimate</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; max-width: 900px; }
+      h1 { margin: 0 0 8px; }
+      .muted { color: #666; margin: 0 0 16px; }
+      label { display: block; font-weight: 600; margin: 14px 0 6px; }
+      input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 10px; font-size: 14px; }
+      textarea { min-height: 220px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .row { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
+      button { padding: 10px 14px; border: 1px solid #222; background: #111; color: #fff; border-radius: 10px; cursor: pointer; }
+      button.secondary { background: #fff; color: #111; }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+      pre { background: #0b0b0b; color: #eaeaea; padding: 14px; border-radius: 12px; overflow: auto; }
+      .tiny { font-size: 12px; color: #666; margin-top: 6px; }
+    </style>
+  </head>
+  <body>
+    <h1>Graphite</h1>
+    <p class="muted">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
+
+    <label for="query">Query</label>
+    <input id="query" value="Carhartt J01" />
+
+    <label for="comps">Comps JSON (array of objects)</label>
+    <textarea id="comps">[
+  {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
+  {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
+  {"title":"Carhartt J01 Made in USA","price":165},
+  {"title":"Carhartt Detroit J01","price":195},
+  {"title":"J01 Detroit Jacket","price":240}
+]</textarea>
+    <div class="tiny">Tip: you can paste any array of comps. Only <code>price</code> is required.</div>
+
+    <div class="row">
+      <button id="seedBtn">Seed Cache</button>
+      <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
+      <button id="clearBtn" class="secondary">Clear Output</button>
+    </div>
+
+    <label>Output</label>
+    <pre id="out">{}</pre>
+
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const out = $("out");
+      const seedBtn = $("seedBtn");
+      const estimateBtn = $("estimateBtn");
+      const clearBtn = $("clearBtn");
+
+      function setOut(obj) {
+        out.textContent = JSON.stringify(obj, null, 2);
+      }
+
+      async function postJSON(url, body) {
+        const res = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { data = { raw: text }; }
+        return { status: res.status, data };
+      }
+
+      async function getJSON(url) {
+        const res = await fetch(url);
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { data = { raw: text }; }
+        return { status: res.status, data };
+      }
+
+      seedBtn.addEventListener("click", async () => {
+        seedBtn.disabled = true;
+        estimateBtn.disabled = true;
+
+        const query = $("query").value.trim();
+        let comps;
+        try {
+          comps = JSON.parse($("comps").value);
+        } catch (e) {
+          setOut({ ok: false, error: "Invalid JSON in comps textarea." });
+          seedBtn.disabled = false;
+          estimateBtn.disabled = false;
+          return;
+        }
+
+        const { status, data } = await postJSON("/seed", { query, comps });
+        setOut({ http_status: status, ...data });
+
+        seedBtn.disabled = false;
+        estimateBtn.disabled = false;
+      });
+
+      estimateBtn.addEventListener("click", async () => {
+        estimateBtn.disabled = true;
+        seedBtn.disabled = true;
+
+        const query = $("query").value.trim();
+        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true`);
+        setOut({ http_status: status, ...data });
+
+        estimateBtn.disabled = false;
+        seedBtn.disabled = false;
+      });
+
+      clearBtn.addEventListener("click", () => setOut({}));
+    </script>
+  </body>
+</html>
