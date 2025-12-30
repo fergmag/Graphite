@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from typing import Any, Dict, List
 
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
@@ -11,6 +12,68 @@ def create_app() -> Flask:
     @app.get("/health")
     def health():
         return jsonify({"status": "ok"})
+
+    @app.post("/seed")
+    def seed():
+        data = request.get_json(silent=True) or {}
+        query = (data.get("query") or "").strip()
+        comps = data.get("comps") or []
+
+        if not query or not isinstance(comps, list):
+            return jsonify(
+                {
+                    "error": "Bad request. Expected JSON with fields: query (string), comps (list).",
+                    "example": {
+                        "query": "Carhartt J01",
+                        "comps": [{"title": "Carhartt J01 jacket", "price": 180.0}],
+                    },
+                }
+            ), 400
+        
+        prices: List[float] = []
+        clean_sample: List[Dict[str, Any]] = []
+
+        for c in comps:
+            if not isinstance(c, dict):
+                continue
+            p = c.get("price")
+            if p is None:
+                continue
+            try:
+                p = float(p)
+            except (TypeError, ValueError):
+                continue
+            if p <= 0:
+                continue
+
+            clean_sample.append(
+                {
+                    "title": str(c.get("title") or ""),
+                    "price": p,
+                    "shipping": c.get("shipping"),
+                    "url": c.get("url"),
+                    "ended": c.get("ended"),
+                }
+            )
+            prices.append(p)
+        
+        summary = summarize_prices(prices)
+        payload = {
+            "n": summary.n,
+            "summary": to_dict(summary),
+            "sample": clean_sample[:5],
+        }
+
+        write_cache(query, payload)
+
+        return jsonify(
+            {
+                "ok": True,
+                "query": query,
+                "cached": True,
+                **payload,
+            }
+        ), 200
 
     @app.get("/estimate")
     def estimate():
