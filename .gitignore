@@ -17,3 +17,6 @@ ENV/
 
 # Editor
 .vscode/
+
+# Cache
+cache/

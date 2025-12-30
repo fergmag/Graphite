@@ -76,7 +76,7 @@ def build_sold_search_url(query: str, page: int = 1) -> str:
     }
     return f"{EBAY_SEARCH_URL}?{urlencode(params)}"
 
-def fetch_html(url: str, timeout: int = 20, max_retries: int = 5) -> str:
+def fetch_html(url: str, timeout: int = 10, max_retries: int = 2) -> str:
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -101,7 +101,7 @@ def fetch_html(url: str, timeout: int = 20, max_retries: int = 5) -> str:
             return r.text
 
         if r.status_code in (429, 500, 502, 503, 504):
-            sleep_s = min(2 ** attempt, 20)  # 2, 4, 8, 16, 20...
+            sleep_s = min(2 ** attempt, 8)  # 2, 4, 8, 16, 20...
             time.sleep(sleep_s)
             continue
 
@@ -194,7 +194,7 @@ def main() -> None:
             print("[]")
             return
         raise
-    
+
     if args.limit and args.limit > 0:
         comps = comps[: args.limit]
 

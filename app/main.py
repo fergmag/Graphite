@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
+from app.cache import read_cache, write_cache
 
 
 def create_app() -> Flask:
@@ -16,6 +17,7 @@ def create_app() -> Flask:
         query = (request.args.get("query") or "").strip()
         pages = int(request.args.get("pages") or 1)
         include_shipping = (request.args.get("include_shipping") or "false").lower() in ("1", "true", "yes", "y")
+        use_cache = (request.args.get("use_cache") or "true").lower() in ("1", "true", "yes", "y")
 
         if not query:
             return jsonify(
@@ -28,8 +30,23 @@ def create_app() -> Flask:
         pages = max(1, min(pages, 3))
 
         try:
-            comps = scrape_ebay_sold(query, pages=pages, delay=1.0)
+            comps = scrape_ebay_sold(query, pages=pages, delay=0.5)
         except RuntimeError as e:
+            cached = read_cache(query) if use_cache else None
+            if cached:
+                return jsonify(
+                    {
+                        "query": query,
+                        "platform": "ebay",
+                        "ok": True,
+                        "from_cache": True,
+                        "include_shipping": include_shipping,
+                        "cached_at": cached.get("cached_at"),
+                        **cached["payload"],
+                        "note": "Live scrape failed; served last cached result.",
+                        "reason": str(e),
+                    }
+                ), 200
             return jsonify(
                 {
                     "query": query,
@@ -48,17 +65,24 @@ def create_app() -> Flask:
 
         sample = [c.__dict__ for c in comps[:5]]
 
+        payload = {
+            "n": summary.n,
+            "summary": to_dict(summary),
+            "sample": sample,
+        }
+        write_cache(query, payload)
+
         return jsonify(
             {
                 "query": query,
                 "platform": "ebay",
                 "ok": True,
+                "from_cache": False,
                 "include_shipping": include_shipping,
-                "n": summary.n,
-                "summary": to_dict(summary),
-                "sample": sample,
+                **payload,
             }
         )
+
 
     return app
 
