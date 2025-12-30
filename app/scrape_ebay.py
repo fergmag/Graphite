@@ -76,7 +76,7 @@ def build_sold_search_url(query: str, page: int = 1) -> str:
     }
     return f"{EBAY_SEARCH_URL}?{urlencode(params)}"
 
-def fetch_html(url: str, timeout: int = 10, max_retries: int = 2) -> str:
+def fetch_html(url: str, timeout: int = 8, max_retries: int = 2) -> str:
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -94,8 +94,15 @@ def fetch_html(url: str, timeout: int = 10, max_retries: int = 2) -> str:
 
     last_status = None
     for attempt in range(1, max_retries + 1):
-        r = session.get(url, headers=headers, timeout=timeout)
-        last_status = r.status_code
+        try:
+            r = session.get(url, headers=headers, timeout=timeout)
+        except requests.RequestException as e:
+            if attempt != max_retries:
+                time.sleep(min(2 ** attempt, 6))
+                continue
+            raise RuntimeError(f"eBay request error: {e}") from e
+
+        last_status = r.status_code 
 
         if r.status_code == 200:
             return r.text

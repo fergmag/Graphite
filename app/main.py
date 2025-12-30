@@ -18,6 +18,7 @@ def create_app() -> Flask:
         pages = int(request.args.get("pages") or 1)
         include_shipping = (request.args.get("include_shipping") or "false").lower() in ("1", "true", "yes", "y")
         use_cache = (request.args.get("use_cache") or "true").lower() in ("1", "true", "yes", "y")
+        cache_first = (request.args.get("cache_first") or "false").lower() in ("1", "true", "yes", "y")
 
         if not query:
             return jsonify(
@@ -28,6 +29,22 @@ def create_app() -> Flask:
             ), 400
 
         pages = max(1, min(pages, 3))
+
+        if cache_first and use_cache:
+            cached = read_cache(query)
+            if cached:
+                return jsonify(
+                    {
+                        "query": query,
+                        "platform": "ebay",
+                        "ok": True,
+                        "from_cache": True,
+                        "cached_at": cached.get("cached_at"),
+                        "include_shipping": include_shipping,
+                        **cached["payload"],
+                        "note": "Served cached result (cache_first=true).",
+                    }
+                ), 200
 
         try:
             comps = scrape_ebay_sold(query, pages=pages, delay=0.5)
