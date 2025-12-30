@@ -42,6 +42,16 @@
       <button id="clearBtn" class="secondary">Clear Output</button>
     </div>
 
+    <label>Summary</label>
+    <div id="summaryCard" style="border:1px solid #ccc; border-radius:12px; padding:12px;">
+      <div><strong>Estimate:</strong> <span id="estimateTxt">—</span></div>
+      <div><strong>Confidence:</strong> <span id="confTxt">—</span></div>
+      <div><strong>Deal score:</strong> <span id="dealTxt">—</span></div>
+      <div class="tiny">Tip: add <code>&asking=...</code> to score a deal (we’ll add an input next).</div>
+    </div>
+
+    <label style="margin-top:14px;">Raw JSON (debug)</label>
+
     <label>Output</label>
     <pre id="out">{}</pre>
 
@@ -51,10 +61,35 @@
       const seedBtn = $("seedBtn");
       const estimateBtn = $("estimateBtn");
       const clearBtn = $("clearBtn");
+      const estimateTxt = $("estimateTxt");
+      const confTxt = $("confTxt");
+      const dealTxt = $("dealTxt");
 
       function setOut(obj) {
+
+        const pub = obj && obj.public ? obj.public : null;
+
+        if (!pub) {
+          estimateTxt.textContent = "—";
+          confTxt.textContent = "—";
+          dealTxt.textContent = "—";
+        } else {
+          const est = pub.estimate != null ? `$${pub.estimate}` : "—";
+          estimateTxt.textContent = est;
+
+          const conf = pub.confidence_label ? `${pub.confidence_label} (${pub.confidence_pct}%)` : "—";
+          confTxt.textContent = conf;
+
+          if (pub.deal_score != null) {
+            dealTxt.textContent = `${pub.deal_score}/5 — ${pub.deal_label} (Δ $${pub.delta}, ${pub.delta_pct}%)`;
+          } else {
+            dealTxt.textContent = "— (add asking=...)";
+          }
+        }
+
         out.textContent = JSON.stringify(obj, null, 2);
       }
+
 
       async function postJSON(url, body) {
         const res = await fetch(url, {

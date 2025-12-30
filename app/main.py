@@ -5,6 +5,7 @@ from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
 from app.db import init_db, insert_comps, insert_estimate
+from app.public_view import build_public
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -65,6 +66,8 @@ def create_app() -> Flask:
             "sample": clean_sample[:5],
         }
 
+        public = build_public(payload["summary"], asking = None)
+
         write_cache(query, payload)
 
         inserted = insert_comps(query, clean_sample)
@@ -76,6 +79,7 @@ def create_app() -> Flask:
                 "query": query,
                 "cached": True,
                 "db_inserted_comps": inserted,
+                "public": public,
                 **payload,
             }
         ), 200
@@ -91,6 +95,13 @@ def create_app() -> Flask:
         include_shipping = (request.args.get("include_shipping") or "false").lower() in ("1", "true", "yes", "y")
         use_cache = (request.args.get("use_cache") or "true").lower() in ("1", "true", "yes", "y")
         cache_first = (request.args.get("cache_first") or "false").lower() in ("1", "true", "yes", "y")
+        asking_raw = (request.args.get("asking") or "").strip()
+        asking = None
+        if asking_raw:
+            try:
+                asking = float(asking_raw)
+            except ValueError:
+                return jsonify({"error": "Invalid asking price. Use a number like 175 or 175.50"}), 400
 
         if not query:
             return jsonify(
@@ -105,6 +116,9 @@ def create_app() -> Flask:
         if cache_first and use_cache:
             cached = read_cache(query)
             if cached:
+                payload = cached["payload"]
+                public = build_public(payload["summary"], asking = asking)
+
                 return jsonify(
                     {
                         "query": query,
@@ -113,6 +127,7 @@ def create_app() -> Flask:
                         "from_cache": True,
                         "cached_at": cached.get("cached_at"),
                         "include_shipping": include_shipping,
+                        "public": public,
                         **cached["payload"],
                         "note": "Served cached result (cache_first=true).",
                     }
@@ -123,6 +138,8 @@ def create_app() -> Flask:
         except RuntimeError as e:
             cached = read_cache(query) if use_cache else None
             if cached:
+                payload = cached["payload"]
+                public = build_public(payload["summary"], asking = asking)
                 return jsonify(
                     {
                         "query": query,
@@ -131,11 +148,13 @@ def create_app() -> Flask:
                         "from_cache": True,
                         "include_shipping": include_shipping,
                         "cached_at": cached.get("cached_at"),
-                        **cached["payload"],
+                        "public": public,
+                        **payload,
                         "note": "Live scrape failed; served last cached result.",
                         "reason": str(e),
                     }
                 ), 200
+            
             return jsonify(
                 {
                     "query": query,
@@ -161,6 +180,8 @@ def create_app() -> Flask:
         }
         write_cache(query, payload)
 
+        public = build_public(payload["summary"], asking = asking)
+
         return jsonify(
             {
                 "query": query,
@@ -168,6 +189,7 @@ def create_app() -> Flask:
                 "ok": True,
                 "from_cache": False,
                 "include_shipping": include_shipping,
+                "public": public,
                 **payload,
             }
         )
