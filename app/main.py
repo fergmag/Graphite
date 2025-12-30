@@ -4,10 +4,11 @@ from typing import Any, Dict, List
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
-
+from app.db import init_db, insert_comps, insert_estimate
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    init_db()
 
     @app.get("/health")
     def health():
@@ -66,11 +67,15 @@ def create_app() -> Flask:
 
         write_cache(query, payload)
 
+        inserted = insert_comps(query, clean_sample)
+        insert_estimate(query, payload["summary"])
+
         return jsonify(
             {
                 "ok": True,
                 "query": query,
                 "cached": True,
+                "db_inserted_comps": inserted,
                 **payload,
             }
         ), 200

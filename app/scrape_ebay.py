@@ -118,7 +118,7 @@ def fetch_html(url: str, timeout: int = 8, max_retries: int = 2) -> str:
 
 
 def parse_sold_results(html: str) -> List[EbayComp]:
-    soup = BeautifulSoup(html, "lmxl")
+    soup = BeautifulSoup(html, "lxml")
     comps: List[EbayComp] = []
 
     for li in soup.select("li.s-item"):

@@ -20,3 +20,6 @@ ENV/
 
 # Cache
 cache/
+
+# Graphite.db
+graphite.db
