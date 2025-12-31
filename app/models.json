@@ -1,0 +1,12 @@
+{
+  "carhartt j01": {
+    "casp": null,
+    "accuracy_pct": null,
+    "note": "Default: computed from comps. Override only if needed."
+  },
+  "carhartt j97": {
+    "casp": 325,
+    "accuracy_pct": 60,
+    "note": "Fallback baseline for rare/volatile models; tune later."
+  }
+}

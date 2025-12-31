@@ -3,6 +3,7 @@ from typing import Any, Dict, List
 from flask import Flask, jsonify, render_template, request
 
 from app.cache import read_cache, write_cache
+from app.model_profiles import apply_profile_to_public, load_profiles, match_profile
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.public_view import build_public_response
 from app.scrape_ebay import scrape_ebay_sold
@@ -10,6 +11,9 @@ from app.scrape_ebay import scrape_ebay_sold
 
 def create_app() -> Flask:
     app = Flask(__name__)
+
+    # Load model profiles once at startup (simple for now)
+    profiles = load_profiles()
 
     @app.get("/health")
     def health():
@@ -69,13 +73,18 @@ def create_app() -> Flask:
 
         summary_obj = summarize_prices(prices)
         summary = to_dict(summary_obj)
+
         public = build_public_response(summary)
+
+        prof = match_profile(query, profiles)
+        if prof:
+            public = apply_profile_to_public(public, prof)
 
         payload = {
             "n": summary_obj.n,
-            "summary": summary,          # debug / internal (kept for now)
-            "public": public,            # clean / user-facing
-            "sample": clean_sample[:5],  # small sample only
+            "summary": summary,          # debug/internal
+            "public": public,            # user-facing
+            "sample": clean_sample[:5],
         }
 
         write_cache(query, payload)
@@ -116,14 +125,18 @@ def create_app() -> Flask:
             ), 400
 
         pages = max(1, min(pages, 3))
+        prof = match_profile(query, profiles)
 
-        # Cache-first mode
+        # 1) Cache-first mode
         if cache_first and use_cache:
             cached = read_cache(query)
             if cached:
                 payload = cached.get("payload") or {}
                 summary = payload.get("summary") or {}
                 public = build_public_response(summary, asking=asking)
+
+                if prof:
+                    public = apply_profile_to_public(public, prof)
 
                 return jsonify(
                     {
@@ -134,12 +147,12 @@ def create_app() -> Flask:
                         "cached_at": cached.get("cached_at"),
                         "include_shipping": include_shipping,
                         **payload,
-                        "public": public,  # rebuilt so deal score reflects asking
+                        "public": public,
                         "note": "Served cached result (cache_first=true).",
                     }
                 ), 200
 
-        # Live scrape attempt
+        # 2) Live scrape attempt
         try:
             comps = scrape_ebay_sold(query, pages=pages, delay=0.5)
         except RuntimeError as e:
@@ -148,6 +161,9 @@ def create_app() -> Flask:
                 payload = cached.get("payload") or {}
                 summary = payload.get("summary") or {}
                 public = build_public_response(summary, asking=asking)
+
+                if prof:
+                    public = apply_profile_to_public(public, prof)
 
                 return jsonify(
                     {
@@ -160,6 +176,31 @@ def create_app() -> Flask:
                         **payload,
                         "public": public,
                         "note": "Live scrape failed; served last cached result.",
+                        "reason": str(e),
+                    }
+                ), 200
+
+            # 3) If we have a profile, return it as fallback even with 0 comps
+            if prof and (prof.casp is not None or prof.accuracy_pct is not None):
+                base_public = {
+                    "casp": prof.casp,
+                    "casp_label": "Calculated average sold price",
+                    "accuracy_pct": prof.accuracy_pct if prof.accuracy_pct is not None else 0,
+                    "accuracy_label": "Very Low",
+                }
+                public = apply_profile_to_public(base_public, prof)
+                return jsonify(
+                    {
+                        "ok": True,
+                        "platform": "ebay",
+                        "query": query,
+                        "from_cache": False,
+                        "include_shipping": include_shipping,
+                        "n": 0,
+                        "summary": None,
+                        "public": public,
+                        "sample": [],
+                        "note": "No live comps available; served model profile fallback.",
                         "reason": str(e),
                     }
                 ), 200
@@ -190,6 +231,9 @@ def create_app() -> Flask:
         summary_obj = summarize_prices(prices)
         summary = to_dict(summary_obj)
         public = build_public_response(summary, asking=asking)
+
+        if prof:
+            public = apply_profile_to_public(public, prof)
 
         payload = {
             "n": summary_obj.n,
