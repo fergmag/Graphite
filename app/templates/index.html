@@ -3,93 +3,192 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Graphite – Estimate</title>
+    <title>Graphite</title>
     <style>
-      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; max-width: 900px; }
-      h1 { margin: 0 0 8px; }
-      .muted { color: #666; margin: 0 0 16px; }
-      label { display: block; font-weight: 600; margin: 14px 0 6px; }
-      input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 10px; font-size: 14px; }
-      textarea { min-height: 220px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-      .row { display: flex; gap: 12px; margin-top: 12px; flex-wrap: wrap; }
-      button { padding: 10px 14px; border: 1px solid #222; background: #111; color: #fff; border-radius: 10px; cursor: pointer; }
-      button.secondary { background: #fff; color: #111; }
-      button:disabled { opacity: 0.6; cursor: not-allowed; }
-      pre { background: #0b0b0b; color: #eaeaea; padding: 14px; border-radius: 12px; overflow: auto; }
-      .tiny { font-size: 12px; color: #666; margin-top: 6px; }
+      :root {
+        --bg: #ffffff;
+        --text: #0b0b0b;
+        --muted: #6b6b6b;
+        --card: #f6f6f7;
+        --border: #e6e6e8;
+        --btn: #0b0b0b;
+        --btnText: #ffffff;
+        --btnAlt: #ffffff;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 28px;
+        max-width: 880px;
+      }
+
+      h1 { margin: 0 0 6px; font-size: 34px; letter-spacing: -0.02em; }
+      .sub { margin: 0 0 18px; color: var(--muted); }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px;
+        margin-top: 14px;
+      }
+
+      label { display: block; font-weight: 600; margin: 14px 0 8px; }
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        font-size: 14px;
+        background: #fff;
+        box-sizing: border-box;
+      }
+      textarea {
+        min-height: 190px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      }
+
+      .row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+
+      button {
+        padding: 10px 14px;
+        border-radius: 14px;
+        border: 1px solid var(--btn);
+        background: var(--btn);
+        color: var(--btnText);
+        cursor: pointer;
+        font-weight: 600;
+      }
+      button.secondary {
+        background: var(--btnAlt);
+        color: var(--btn);
+      }
+      button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+      .tiny { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+      .summary {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .metric {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 14px;
+      }
+      .metric .k { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+      .metric .v { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; }
+      .metric .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+
+      .ok { color: #0b0b0b; }
+      .warn { color: #b45309; }
+      .err { color: #b91c1c; }
+
+      @media (min-width: 720px) {
+        .summary { grid-template-columns: repeat(3, 1fr); }
+      }
     </style>
   </head>
   <body>
     <h1>Graphite</h1>
-    <p class="muted">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
+    <p class="sub">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
 
-    <label for="query">Query</label>
-    <input id="query" value="Carhartt J01" />
+    <div class="card">
+      <label for="query">Query</label>
+      <input id="query" value="Carhartt J01" />
 
-    <label for="comps">Comps JSON (array of objects)</label>
-    <textarea id="comps">[
+      <label for="asking">Asking price (optional, for deal score)</label>
+      <input id="asking" placeholder="e.g. 160" inputmode="decimal" />
+
+      <label for="comps">Comps JSON (array of objects)</label>
+      <textarea id="comps">[
   {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
   {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
   {"title":"Carhartt J01 Made in USA","price":165},
   {"title":"Carhartt Detroit J01","price":195},
   {"title":"J01 Detroit Jacket","price":240}
 ]</textarea>
-    <div class="tiny">Tip: you can paste any array of comps. Only <code>price</code> is required.</div>
+      <div class="tiny">Tip: only <code>price</code> is required. (Title helps later for filtering.)</div>
 
-    <div class="row">
-      <button id="seedBtn">Seed Cache</button>
-      <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
-      <button id="clearBtn" class="secondary">Clear Output</button>
+      <div class="row">
+        <button id="seedBtn">Seed Cache</button>
+        <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
+      </div>
     </div>
 
-    <label>Summary</label>
-    <div id="summaryCard" style="border:1px solid #ccc; border-radius:12px; padding:12px;">
-      <div><strong>Estimate:</strong> <span id="estimateTxt">—</span></div>
-      <div><strong>Confidence:</strong> <span id="confTxt">—</span></div>
-      <div><strong>Deal score:</strong> <span id="dealTxt">—</span></div>
-      <div class="tiny">Tip: add <code>&asking=...</code> to score a deal (we’ll add an input next).</div>
+    <div class="card">
+      <div class="summary">
+        <div class="metric">
+          <div class="k">CASP</div>
+          <div class="v" id="caspVal">—</div>
+          <div class="hint">Calculated average sold price</div>
+        </div>
+
+        <div class="metric">
+          <div class="k">Accuracy of CASP</div>
+          <div class="v" id="accVal">—</div>
+          <div class="hint" id="accHint">—</div>
+        </div>
+
+        <div class="metric">
+          <div class="k">Deal score</div>
+          <div class="v" id="dealVal">—</div>
+          <div class="hint" id="dealHint">Add an asking price to score the deal.</div>
+        </div>
+      </div>
+
+      <div class="tiny" id="statusLine"></div>
     </div>
-
-    <label style="margin-top:14px;">Raw JSON (debug)</label>
-
-    <label>Output</label>
-    <pre id="out">{}</pre>
 
     <script>
       const $ = (id) => document.getElementById(id);
-      const out = $("out");
+
       const seedBtn = $("seedBtn");
       const estimateBtn = $("estimateBtn");
-      const clearBtn = $("clearBtn");
-      const estimateTxt = $("estimateTxt");
-      const confTxt = $("confTxt");
-      const dealTxt = $("dealTxt");
+      const statusLine = $("statusLine");
 
-      function setOut(obj) {
+      const caspVal = $("caspVal");
+      const accVal = $("accVal");
+      const accHint = $("accHint");
+      const dealVal = $("dealVal");
+      const dealHint = $("dealHint");
 
-        const pub = obj && obj.public ? obj.public : null;
-
-        if (!pub) {
-          estimateTxt.textContent = "—";
-          confTxt.textContent = "—";
-          dealTxt.textContent = "—";
-        } else {
-          const est = pub.estimate != null ? `$${pub.estimate}` : "—";
-          estimateTxt.textContent = est;
-
-          const conf = pub.confidence_label ? `${pub.confidence_label} (${pub.confidence_pct}%)` : "—";
-          confTxt.textContent = conf;
-
-          if (pub.deal_score != null) {
-            dealTxt.textContent = `${pub.deal_score}/5 — ${pub.deal_label} (Δ $${pub.delta}, ${pub.delta_pct}%)`;
-          } else {
-            dealTxt.textContent = "— (add asking=...)";
-          }
-        }
-
-        out.textContent = JSON.stringify(obj, null, 2);
+      function setStatus(text, cls) {
+        statusLine.className = "tiny " + (cls || "");
+        statusLine.textContent = text || "";
       }
 
+      function setSummary(publicObj) {
+        if (!publicObj) {
+          caspVal.textContent = "—";
+          accVal.textContent = "—";
+          accHint.textContent = "—";
+          dealVal.textContent = "—";
+          dealHint.textContent = "Add an asking price to score the deal.";
+          return;
+        }
+
+        const casp = publicObj.casp;
+        caspVal.textContent = (casp == null) ? "—" : `$${Math.round(casp)}`;
+
+        const accPct = publicObj.accuracy_pct;
+        const aLabel = publicObj.accuracy_label || "";
+        accVal.textContent = (accPct == null) ? "—" : `${accPct}%`;
+        accHint.textContent = aLabel ? aLabel : "—";
+
+        if (publicObj.deal_score != null) {
+          dealVal.textContent = `${publicObj.deal_score}/5`;
+          dealHint.textContent = publicObj.deal_label ? publicObj.deal_label : "";
+        } else {
+          dealVal.textContent = "—";
+          dealHint.textContent = "Add an asking price to score the deal.";
+        }
+      }
 
       async function postJSON(url, body) {
         const res = await fetch(url, {
@@ -114,20 +213,29 @@
       seedBtn.addEventListener("click", async () => {
         seedBtn.disabled = true;
         estimateBtn.disabled = true;
+        setStatus("Seeding cache…", "ok");
 
         const query = $("query").value.trim();
         let comps;
+
         try {
           comps = JSON.parse($("comps").value);
-        } catch (e) {
-          setOut({ ok: false, error: "Invalid JSON in comps textarea." });
+        } catch {
+          setStatus("Invalid JSON in comps field.", "err");
           seedBtn.disabled = false;
           estimateBtn.disabled = false;
           return;
         }
 
         const { status, data } = await postJSON("/seed", { query, comps });
-        setOut({ http_status: status, ...data });
+
+        if (status >= 200 && status < 300 && data.ok) {
+          setSummary(data.public);
+          setStatus("Seeded cache.", "ok");
+        } else {
+          setSummary(null);
+          setStatus(`Seed failed (HTTP ${status}).`, "err");
+        }
 
         seedBtn.disabled = false;
         estimateBtn.disabled = false;
@@ -136,16 +244,34 @@
       estimateBtn.addEventListener("click", async () => {
         estimateBtn.disabled = true;
         seedBtn.disabled = true;
+        setStatus("Fetching estimate…", "ok");
 
         const query = $("query").value.trim();
-        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true`);
-        setOut({ http_status: status, ...data });
+        const askingStr = $("asking").value.trim();
+        const asking = askingStr ? Number(askingStr) : null;
+
+        let url = `/estimate?query=${encodeURIComponent(query)}&cache_first=true`;
+        if (asking != null && !Number.isNaN(asking) && asking > 0) {
+          url += `&asking=${encodeURIComponent(String(asking))}`;
+        }
+
+        const { status, data } = await getJSON(url);
+
+        if (status >= 200 && status < 300 && data.ok) {
+          setSummary(data.public);
+          setStatus(data.note || "OK", "ok");
+        } else {
+          setSummary(null);
+          setStatus((data && data.reason) ? data.reason : `Request failed (HTTP ${status}).`, "warn");
+        }
 
         estimateBtn.disabled = false;
         seedBtn.disabled = false;
       });
 
-      clearBtn.addEventListener("click", () => setOut({}));
+      // initialize
+      setSummary(null);
+      setStatus("", "ok");
     </script>
   </body>
 </html>
