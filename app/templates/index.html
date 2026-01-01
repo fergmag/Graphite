@@ -122,29 +122,29 @@
 
   <body>
     <h1>Graphite</h1>
-    <p class="muted">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
+    <p class="muted">Get CASP instantly. Advanced: seed the cache from pasted comps only if live results are blocked.</p>
 
-    <label for="query">Query</label>
-    <input id="query" value="Carhartt J01" />
-
-    <label for="asking">Asking price (optional, for deal score)</label>
-    <input id="asking" placeholder="e.g. 160" />
-
-    <label for="comps">Comps JSON (array of objects)</label>
-    <textarea id="comps">[
+<label for="comps">Comps JSON (advanced, optional)</label>
+<textarea id="comps">[
   {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
   {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
   {"title":"Carhartt J01 Made in USA","price":165},
   {"title":"Carhartt Detroit J01","price":195},
   {"title":"J01 Detroit Jacket","price":240}
 ]</textarea>
-    <div class="tiny">Tip: only <code>price</code> is required. (Title helps later for filtering.)</div>
+<div class="tiny">Advanced: paste manual comps to seed the cache. Only <code>price</code> is required.</div>
+<details class="advanced">
+  <summary>Advanced: Seed cache from pasted comps</summary>
+  <div class="tiny">Seeds the cache using the comps in the box above.</div>
+  <div class="row">
+    <button id="seedBtn" class="secondary">Seed cache</button>
+  </div>
+</details>
 
-    <div class="row">
-      <button id="seedBtn">Seed Cache</button>
-      <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
-      <button id="clearBtn" class="secondary">Clear</button>
-    </div>
+<div class="row">
+  <button id="estimateBtn">Get CASP</button>
+  <button id="clearBtn" class="secondary">Clear</button>
+</div>
 
     <div class="cards">
       <div class="card">
