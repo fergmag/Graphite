@@ -7,142 +7,178 @@
     <style>
       :root {
         --bg: #ffffff;
-        --text: #0b0b0b;
-        --muted: #6b6b6b;
-        --card: #f6f6f7;
-        --border: #e6e6e8;
-        --btn: #0b0b0b;
-        --btnText: #ffffff;
-        --btnAlt: #ffffff;
+        --fg: #0b0b0b;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+        --pill: #f3f4f6;
+        --btn: #111827;
+        --btnfg: #ffffff;
+        --btn2: #ffffff;
       }
 
       body {
-        background: var(--bg);
-        color: var(--text);
         font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        margin: 28px;
-        max-width: 880px;
+        margin: 24px;
+        max-width: 920px;
+        color: var(--fg);
+        background: var(--bg);
       }
 
-      h1 { margin: 0 0 6px; font-size: 34px; letter-spacing: -0.02em; }
-      .sub { margin: 0 0 18px; color: var(--muted); }
+      h1 { margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em; }
+      .muted { color: var(--muted); margin: 0 0 18px; }
 
-      .card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 18px;
-        margin-top: 14px;
-      }
-
-      label { display: block; font-weight: 600; margin: 14px 0 8px; }
+      label { display:block; font-weight: 600; margin: 14px 0 6px; }
       input, textarea {
         width: 100%;
-        padding: 12px;
-        border: 1px solid var(--border);
-        border-radius: 14px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
         font-size: 14px;
-        background: #fff;
-        box-sizing: border-box;
+        outline: none;
       }
+
       textarea {
-        min-height: 190px;
+        min-height: 220px;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
       }
 
-      .row { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
-
+      .row { display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
       button {
         padding: 10px 14px;
-        border-radius: 14px;
+        border-radius: 12px;
         border: 1px solid var(--btn);
         background: var(--btn);
-        color: var(--btnText);
+        color: var(--btnfg);
         cursor: pointer;
         font-weight: 600;
       }
       button.secondary {
-        background: var(--btnAlt);
+        background: var(--btn2);
         color: var(--btn);
       }
-      button:disabled { opacity: 0.55; cursor: not-allowed; }
+      button:disabled { opacity: 0.6; cursor:not-allowed; }
 
-      .tiny { font-size: 12px; color: var(--muted); margin-top: 8px; }
+      .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
-      .summary {
+      .cards {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+      @media (max-width: 820px) {
+        .cards { grid-template-columns: 1fr; }
       }
 
-      .metric {
-        background: #fff;
-        border: 1px solid var(--border);
+      .card {
+        border: 1px solid var(--line);
         border-radius: 16px;
         padding: 14px;
       }
-      .metric .k { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
-      .metric .v { font-size: 26px; font-weight: 750; letter-spacing: -0.02em; }
-      .metric .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+      .card h3 { margin: 0 0 6px; font-size: 14px; color: var(--muted); font-weight: 700; }
+      .big { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; }
+      .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: var(--pill); font-weight: 700; font-size: 12px; margin-top: 8px; }
 
-      .ok { color: #0b0b0b; }
-      .warn { color: #b45309; }
-      .err { color: #b91c1c; }
-
-      @media (min-width: 720px) {
-        .summary { grid-template-columns: repeat(3, 1fr); }
+      .status {
+        margin-top: 14px;
+        padding: 10px 12px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        color: var(--muted);
+        font-size: 13px;
       }
+
+      .watch {
+        margin-top: 18px;
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+      }
+
+      ul { margin: 10px 0 0; padding-left: 18px; }
+      li { margin: 8px 0; }
+      .pill {
+        display:inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--pill);
+        font-weight: 700;
+        font-size: 13px;
+      }
+      .xbtn {
+        margin-left: 10px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: white;
+        color: var(--fg);
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .watchrow { display:flex; gap: 10px; flex-wrap: wrap; }
+      .watchrow input { flex: 1; min-width: 260px; }
     </style>
   </head>
+
   <body>
     <h1>Graphite</h1>
-    <p class="sub">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
+    <p class="muted">Seed comps → get an instant estimate (even if eBay blocks live scraping).</p>
 
-    <div class="card">
-      <label for="query">Query</label>
-      <input id="query" value="Carhartt J01" />
+    <label for="query">Query</label>
+    <input id="query" value="Carhartt J01" />
 
-      <label for="asking">Asking price (optional, for deal score)</label>
-      <input id="asking" placeholder="e.g. 160" inputmode="decimal" />
+    <label for="asking">Asking price (optional, for deal score)</label>
+    <input id="asking" placeholder="e.g. 160" />
 
-      <label for="comps">Comps JSON (array of objects)</label>
-      <textarea id="comps">[
+    <label for="comps">Comps JSON (array of objects)</label>
+    <textarea id="comps">[
   {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
   {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
   {"title":"Carhartt J01 Made in USA","price":165},
   {"title":"Carhartt Detroit J01","price":195},
   {"title":"J01 Detroit Jacket","price":240}
 ]</textarea>
-      <div class="tiny">Tip: only <code>price</code> is required. (Title helps later for filtering.)</div>
+    <div class="tiny">Tip: only <code>price</code> is required. (Title helps later for filtering.)</div>
 
-      <div class="row">
-        <button id="seedBtn">Seed Cache</button>
-        <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
+    <div class="row">
+      <button id="seedBtn">Seed Cache</button>
+      <button id="estimateBtn" class="secondary">Get Estimate (cache-first)</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>CASP</h3>
+        <p class="big" id="casp">$—</p>
+        <div class="sub">Calculated average sold price</div>
+      </div>
+
+      <div class="card">
+        <h3>Accuracy of CASP</h3>
+        <p class="big" id="acc">—%</p>
+        <div class="badge" id="accLabel">—</div>
+      </div>
+
+      <div class="card">
+        <h3>Deal score</h3>
+        <p class="big" id="deal">—</p>
+        <div class="sub" id="dealSub">Add an asking price to score the deal.</div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="summary">
-        <div class="metric">
-          <div class="k">CASP</div>
-          <div class="v" id="caspVal">—</div>
-          <div class="hint">Calculated average sold price</div>
-        </div>
+    <div class="status" id="status">Status: Ready</div>
 
-        <div class="metric">
-          <div class="k">Accuracy of CASP</div>
-          <div class="v" id="accVal">—</div>
-          <div class="hint" id="accHint">—</div>
-        </div>
+    <div class="watch">
+      <h2 style="margin:0 0 6px; font-size:16px;">Watchlist</h2>
+      <p class="muted" style="margin:0 0 10px;">Save queries you want Graphite to keep an eye on (automation later).</p>
 
-        <div class="metric">
-          <div class="k">Deal score</div>
-          <div class="v" id="dealVal">—</div>
-          <div class="hint" id="dealHint">Add an asking price to score the deal.</div>
-        </div>
+      <div class="watchrow">
+        <input id="watchInput" placeholder="e.g. Carhartt J97 / Barbour Beaufort / Nike ACG" />
+        <button id="watchAddBtn">Add</button>
+        <button id="watchRefreshBtn" class="secondary">Refresh</button>
       </div>
 
-      <div class="tiny" id="statusLine"></div>
+      <div id="watchList"></div>
     </div>
 
     <script>
@@ -150,43 +186,53 @@
 
       const seedBtn = $("seedBtn");
       const estimateBtn = $("estimateBtn");
-      const statusLine = $("statusLine");
+      const clearBtn = $("clearBtn");
 
-      const caspVal = $("caspVal");
-      const accVal = $("accVal");
-      const accHint = $("accHint");
-      const dealVal = $("dealVal");
-      const dealHint = $("dealHint");
+      const caspEl = $("casp");
+      const accEl = $("acc");
+      const accLabelEl = $("accLabel");
+      const dealEl = $("deal");
+      const dealSubEl = $("dealSub");
+      const statusEl = $("status");
 
-      function setStatus(text, cls) {
-        statusLine.className = "tiny " + (cls || "");
-        statusLine.textContent = text || "";
+      const watchInput = $("watchInput");
+      const watchAddBtn = $("watchAddBtn");
+      const watchRefreshBtn = $("watchRefreshBtn");
+      const watchList = $("watchList");
+
+      function setStatus(msg) {
+        statusEl.textContent = `Status: ${msg}`;
       }
 
-      function setSummary(publicObj) {
-        if (!publicObj) {
-          caspVal.textContent = "—";
-          accVal.textContent = "—";
-          accHint.textContent = "—";
-          dealVal.textContent = "—";
-          dealHint.textContent = "Add an asking price to score the deal.";
+      function fmtMoney(x) {
+        if (x === null || x === undefined) return "$—";
+        const v = Number(x);
+        if (!Number.isFinite(v)) return "$—";
+        return `$${v.toFixed(0)}`;
+      }
+
+      function updateCards(resp) {
+        const pub = (resp && resp.public) ? resp.public : null;
+
+        if (!pub) {
+          caspEl.textContent = "$—";
+          accEl.textContent = "—%";
+          accLabelEl.textContent = "—";
+          dealEl.textContent = "—";
+          dealSubEl.textContent = "—";
           return;
         }
 
-        const casp = publicObj.casp;
-        caspVal.textContent = (casp == null) ? "—" : `$${Math.round(casp)}`;
+        caspEl.textContent = fmtMoney(pub.casp);
+        accEl.textContent = `${pub.accuracy_pct ?? "—"}%`;
+        accLabelEl.textContent = pub.accuracy_label ?? "—";
 
-        const accPct = publicObj.accuracy_pct;
-        const aLabel = publicObj.accuracy_label || "";
-        accVal.textContent = (accPct == null) ? "—" : `${accPct}%`;
-        accHint.textContent = aLabel ? aLabel : "—";
-
-        if (publicObj.deal_score != null) {
-          dealVal.textContent = `${publicObj.deal_score}/5`;
-          dealHint.textContent = publicObj.deal_label ? publicObj.deal_label : "";
+        if (pub.deal_score) {
+          dealEl.textContent = `${pub.deal_score}/5`;
+          dealSubEl.textContent = `${pub.deal_label} • ${pub.delta > 0 ? "+" : ""}${pub.delta} (${pub.delta_pct}%)`;
         } else {
-          dealVal.textContent = "—";
-          dealHint.textContent = "Add an asking price to score the deal.";
+          dealEl.textContent = "—";
+          dealSubEl.textContent = "Add an asking price to score the deal.";
         }
       }
 
@@ -196,45 +242,82 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
-        const text = await res.text();
-        let data;
-        try { data = JSON.parse(text); } catch { data = { raw: text }; }
+        const data = await res.json().catch(() => null);
         return { status: res.status, data };
       }
 
       async function getJSON(url) {
         const res = await fetch(url);
-        const text = await res.text();
-        let data;
-        try { data = JSON.parse(text); } catch { data = { raw: text }; }
+        const data = await res.json().catch(() => null);
         return { status: res.status, data };
+      }
+
+      function renderWatchItems(items) {
+        const clean = Array.isArray(items) ? items.filter(Boolean) : [];
+        if (clean.length === 0) {
+          watchList.innerHTML = `<div class="tiny">No saved queries yet.</div>`;
+          return;
+        }
+
+        const ul = document.createElement("ul");
+
+        clean.forEach((q) => {
+          const li = document.createElement("li");
+
+          const pill = document.createElement("span");
+          pill.className = "pill";
+          pill.textContent = q;
+
+          const x = document.createElement("button");
+          x.className = "xbtn";
+          x.textContent = "Remove";
+          x.addEventListener("click", async () => {
+            await fetch(`/watchlist?query=${encodeURIComponent(q)}`, { method: "DELETE" });
+            await refreshWatchlist();
+          });
+
+          li.appendChild(pill);
+          li.appendChild(document.createTextNode(" "));
+          li.appendChild(x);
+          ul.appendChild(li);
+        });
+
+        watchList.innerHTML = "";
+        watchList.appendChild(ul);
+      }
+
+      async function refreshWatchlist() {
+        const { status, data } = await getJSON("/watchlist");
+        if (status !== 200 || !data || !data.ok) {
+          setStatus("Watchlist error");
+          return;
+        }
+        renderWatchItems(data.items || []);
       }
 
       seedBtn.addEventListener("click", async () => {
         seedBtn.disabled = true;
         estimateBtn.disabled = true;
-        setStatus("Seeding cache…", "ok");
+        setStatus("Seeding…");
 
         const query = $("query").value.trim();
         let comps;
-
         try {
           comps = JSON.parse($("comps").value);
-        } catch {
-          setStatus("Invalid JSON in comps field.", "err");
+        } catch (e) {
+          setStatus("Invalid comps JSON");
           seedBtn.disabled = false;
           estimateBtn.disabled = false;
           return;
         }
 
         const { status, data } = await postJSON("/seed", { query, comps });
-
-        if (status >= 200 && status < 300 && data.ok) {
-          setSummary(data.public);
-          setStatus("Seeded cache.", "ok");
+        if (status !== 200 || !data || !data.ok) {
+          setStatus("Seed error");
+          updateCards(null);
         } else {
-          setSummary(null);
-          setStatus(`Seed failed (HTTP ${status}).`, "err");
+          setStatus("Seeded cache.");
+          updateCards(data);
         }
 
         seedBtn.disabled = false;
@@ -242,36 +325,59 @@
       });
 
       estimateBtn.addEventListener("click", async () => {
-        estimateBtn.disabled = true;
         seedBtn.disabled = true;
-        setStatus("Fetching estimate…", "ok");
+        estimateBtn.disabled = true;
+        setStatus("Estimating…");
 
         const query = $("query").value.trim();
-        const askingStr = $("asking").value.trim();
-        const asking = askingStr ? Number(askingStr) : null;
+        const asking = $("asking").value.trim();
+        const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : "";
 
-        let url = `/estimate?query=${encodeURIComponent(query)}&cache_first=true`;
-        if (asking != null && !Number.isNaN(asking) && asking > 0) {
-          url += `&asking=${encodeURIComponent(String(asking))}`;
-        }
+        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}`);
 
-        const { status, data } = await getJSON(url);
-
-        if (status >= 200 && status < 300 && data.ok) {
-          setSummary(data.public);
-          setStatus(data.note || "OK", "ok");
+        if (status !== 200 || !data || !data.ok) {
+          setStatus("Estimate error");
+          updateCards(null);
         } else {
-          setSummary(null);
-          setStatus((data && data.reason) ? data.reason : `Request failed (HTTP ${status}).`, "warn");
+          setStatus(data.from_cache ? "Served cached result." : "Live result.");
+          updateCards(data);
         }
 
-        estimateBtn.disabled = false;
         seedBtn.disabled = false;
+        estimateBtn.disabled = false;
       });
 
-      // initialize
-      setSummary(null);
-      setStatus("", "ok");
+      clearBtn.addEventListener("click", () => {
+        $("asking").value = "";
+        updateCards(null);
+        setStatus("Ready");
+      });
+
+      watchAddBtn.addEventListener("click", async () => {
+        const q = watchInput.value.trim();
+        if (!q) return;
+
+        setStatus("Saving watch…");
+        const { status, data } = await postJSON("/watchlist", { query: q });
+
+        if (status !== 200 || !data || !data.ok) {
+          setStatus("Watchlist add error");
+          return;
+        }
+
+        watchInput.value = "";
+        renderWatchItems(data.items || []);
+        setStatus("Watch saved.");
+      });
+
+      watchRefreshBtn.addEventListener("click", async () => {
+        setStatus("Refreshing watchlist…");
+        await refreshWatchlist();
+        setStatus("Ready");
+      });
+
+      // initial load
+      refreshWatchlist();
     </script>
   </body>
 </html>
