@@ -60,6 +60,21 @@
 
       .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
+      details.advanced {
+        margin-top: 10px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 10px 12px;
+        background: #fff;
+      }
+      details.advanced summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+      details.advanced .row {
+        margin-top: 10px;
+      }
+
       .cards {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -124,27 +139,33 @@
     <h1>Graphite</h1>
     <p class="muted">Get CASP instantly. Advanced: seed the cache from pasted comps only if live results are blocked.</p>
 
-<label for="comps">Comps JSON (advanced, optional)</label>
-<textarea id="comps">[
+    <label for="query">Query</label>
+    <input id="query" value="Carhartt J01" />
+
+    <label for="asking">Asking price (optional, for deal score)</label>
+    <input id="asking" placeholder="e.g. 160" />
+
+    <label for="comps">Comps JSON (advanced, optional)</label>
+    <textarea id="comps">[
   {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
   {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
   {"title":"Carhartt J01 Made in USA","price":165},
   {"title":"Carhartt Detroit J01","price":195},
   {"title":"J01 Detroit Jacket","price":240}
 ]</textarea>
-<div class="tiny">Advanced: paste manual comps to seed the cache. Only <code>price</code> is required.</div>
-<details class="advanced">
-  <summary>Advanced: Seed cache from pasted comps</summary>
-  <div class="tiny">Seeds the cache using the comps in the box above.</div>
-  <div class="row">
-    <button id="seedBtn" class="secondary">Seed cache</button>
-  </div>
-</details>
+    <div class="tiny">Advanced: paste manual comps to seed the cache. Only <code>price</code> is required.</div>
+    <details class="advanced">
+      <summary>Advanced: Seed cache from pasted comps</summary>
+      <div class="tiny">Seeds the cache using the comps in the box above.</div>
+      <div class="row">
+        <button id="seedBtn" class="secondary">Seed cache</button>
+      </div>
+    </details>
 
-<div class="row">
-  <button id="estimateBtn">Get CASP</button>
-  <button id="clearBtn" class="secondary">Clear</button>
-</div>
+    <div class="row">
+      <button id="estimateBtn">Get CASP</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
 
     <div class="cards">
       <div class="card">
@@ -253,7 +274,9 @@
       }
 
       function renderWatchItems(items) {
-        const clean = Array.isArray(items) ? items.filter(Boolean) : [];
+        const clean = Array.isArray(items)
+          ? items.filter((item) => typeof item === "string" && item.trim().length > 0)
+          : [];
         if (clean.length === 0) {
           watchList.innerHTML = `<div class="tiny">No saved queries yet.</div>`;
           return;
@@ -354,8 +377,8 @@
       });
 
       watchAddBtn.addEventListener("click", async () => {
-        const q = watchInput.value.trim();
-        if (!q) return;
+        const q = watchInput.value;
+        if (!q.trim()) return;
 
         setStatus("Saving watch…");
         const { status, data } = await postJSON("/watchlist", { query: q });

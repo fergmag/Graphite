@@ -190,14 +190,17 @@ def list_watches() -> List[str]:
 
 
 def add_watch(query: str) -> None:
-    q = (query or "").strip()
-    if not q:
+    if query is None:
+        return
+    if not isinstance(query, str):
+        query = str(query)
+    if not query.strip():
         return
     con = _connect()
     try:
         con.execute(
             "INSERT OR IGNORE INTO watchlist (query, created_at) VALUES (?, ?)",
-            (q, _utc_now()),
+            (query, _utc_now()),
         )
         con.commit()
     finally:
@@ -205,12 +208,15 @@ def add_watch(query: str) -> None:
 
 
 def delete_watch(query: str) -> None:
-    q = (query or "").strip()
-    if not q:
+    if query is None:
+        return
+    if not isinstance(query, str):
+        query = str(query)
+    if not query.strip():
         return
     con = _connect()
     try:
-        con.execute("DELETE FROM watchlist WHERE query=?", (q,))
+        con.execute("DELETE FROM watchlist WHERE query=?", (query,))
         con.commit()
     finally:
         con.close()

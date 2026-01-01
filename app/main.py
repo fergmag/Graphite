@@ -61,17 +61,25 @@ def create_app() -> Flask:
     @app.post("/watchlist")
     def watchlist_add():
         data = request.get_json(silent=True) or {}
-        q = (data.get("query") or "").strip()
-        if not q:
+        raw_query = data.get("query")
+        if raw_query is None:
+            raw_query = ""
+        if not isinstance(raw_query, str):
+            raw_query = str(raw_query)
+        if not raw_query.strip():
             return jsonify({"ok": False, "error": "Missing query"}), 400
-        add_watch(q)
+        add_watch(raw_query)
         return jsonify({"ok": True, "items": list_watches()}), 200
 
     @app.delete("/watchlist")
     def watchlist_delete():
-        q = (request.args.get("query") or "").strip()
-        if q:
-            delete_watch(q)
+        raw_query = request.args.get("query")
+        if raw_query is None:
+            raw_query = ""
+        if not isinstance(raw_query, str):
+            raw_query = str(raw_query)
+        if raw_query.strip():
+            delete_watch(raw_query)
         return jsonify({"ok": True, "items": list_watches()}), 200
 
     # -----------------------
