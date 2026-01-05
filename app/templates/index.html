@@ -274,6 +274,22 @@
         return { status: res.status, data };
       }
 
+      async function refreshWatchItem(query) {
+        if (!query) return;
+        setStatus(`Refreshing “${query}”…`);
+        const { status, data } = await getJSON(
+          `/estimate?query=${encodeURIComponent(query)}&cache_first=false&use_cache=true`
+        );
+
+        if (status !== 200 || !data || !data.ok) {
+          setStatus("Watch refresh error");
+          return;
+        }
+
+        setStatus(data.from_cache ? "Served cached result." : "Live result.");
+        updateCards(data);
+      }
+
       function renderWatchItems(items) {
         const clean = Array.isArray(items)
           ? items.filter((item) => typeof item === "string" && item.trim().length > 0)
@@ -300,7 +316,16 @@
             await refreshWatchlist();
           });
 
+          const refresh = document.createElement("button");
+          refresh.className = "xbtn";
+          refresh.textContent = "Refresh";
+          refresh.addEventListener("click", async () => {
+            await refreshWatchItem(q);
+          });
+
           li.appendChild(pill);
+          li.appendChild(document.createTextNode(" "));
+          li.appendChild(refresh);
           li.appendChild(document.createTextNode(" "));
           li.appendChild(x);
           ul.appendChild(li);

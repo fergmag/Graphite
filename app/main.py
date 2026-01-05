@@ -272,6 +272,7 @@ def create_app() -> Flask:
         }
 
         write_cache(query, payload)
+        insert_comps(query, comps_dicts)
         insert_estimate(query, public_payload=public, summary_payload=summary_dict)
 
         return jsonify(
