@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, render_template
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Sequence
+import re
 
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
@@ -37,6 +38,54 @@ def _parse_float(x: Optional[str]) -> Optional[float]:
         return float(s)
     except ValueError:
         return None
+
+
+def _listing_id_from_url(url: Optional[str]) -> Optional[str]:
+    if not url:
+        return None
+    match = re.search(r"/itm/(?:[^/]+/)?(\d+)", url)
+    if match:
+        return match.group(1)
+    match = re.search(r"itm/(\d+)", url)
+    if match:
+        return match.group(1)
+    return None
+
+
+def _normalize_comps(comps: Sequence[Dict[str, Any]], source: str) -> List[Dict[str, Any]]:
+    normalized: List[Dict[str, Any]] = []
+    seen_keys = set()
+
+    for comp in comps:
+        if not isinstance(comp, dict):
+            continue
+        url = comp.get("url")
+        listing_id = comp.get("listing_id") or _listing_id_from_url(url)
+        dedupe_key = listing_id or url
+        if dedupe_key and dedupe_key in seen_keys:
+            continue
+        if dedupe_key:
+            seen_keys.add(dedupe_key)
+
+        ended_at = comp.get("ended_at") or comp.get("ended")
+        currency = comp.get("currency") or comp.get("shipping_currency")
+
+        normalized.append(
+            {
+                "title": comp.get("title"),
+                "price": comp.get("price"),
+                "shipping": comp.get("shipping"),
+                "currency": currency,
+                "url": url,
+                "ended": comp.get("ended"),
+                "ended_at": ended_at,
+                "source": source,
+                "model_guess": comp.get("model_guess"),
+                "listing_id": listing_id,
+            }
+        )
+
+    return normalized
 
 
 def create_app() -> Flask:
@@ -133,6 +182,8 @@ def create_app() -> Flask:
             )
             prices.append(p)
 
+        normalized_comps = _normalize_comps(clean_sample, source="manual")
+
         summary = summarize_prices(prices)
         summary_dict = to_dict(summary)
 
@@ -152,13 +203,13 @@ def create_app() -> Flask:
             "n": summary.n,
             "public": public,
             "summary": summary_dict,
-            "sample": clean_sample[:5],
+            "sample": normalized_comps[:5],
         }
 
         write_cache(query, payload)
 
         # DB writes
-        insert_comps(query, clean_sample)
+        insert_comps(query, normalized_comps)
         insert_estimate(query, public_payload=public, summary_payload=summary_dict)
 
         return jsonify({"ok": True, "query": query, "cached": True, **payload}), 200
@@ -245,7 +296,8 @@ def create_app() -> Flask:
 
         # compute
         comps_dicts = [c.__dict__ for c in comps]
-        prices = comps_to_prices(comps_dicts, include_shipping=include_shipping)
+        normalized_comps = _normalize_comps(comps_dicts, source="ebay")
+        prices = comps_to_prices(normalized_comps, include_shipping=include_shipping)
         summary = summarize_prices(prices)
         summary_dict = to_dict(summary)
 
@@ -268,11 +320,11 @@ def create_app() -> Flask:
             "n": summary.n,
             "public": public,
             "summary": summary_dict,
-            "sample": comps_dicts[:5],
+            "sample": normalized_comps[:5],
         }
 
         write_cache(query, payload)
-        insert_comps(query, comps_dicts)
+        insert_comps(query, normalized_comps)
         insert_estimate(query, public_payload=public, summary_payload=summary_dict)
 
         return jsonify(
@@ -292,3 +344,4 @@ def create_app() -> Flask:
 if __name__ == "__main__":
     app = create_app()
     app.run(debug=True)
+ 

@@ -54,8 +54,13 @@ def init_db() -> None:
                     title TEXT,
                     price REAL,
                     shipping REAL,
+                    currency TEXT,
                     url TEXT,
                     ended TEXT,
+                    ended_at TEXT,
+                    source TEXT,
+                    model_guess TEXT,
+                    listing_id TEXT,
                     created_at TEXT NOT NULL
                 )
                 """
@@ -63,8 +68,13 @@ def init_db() -> None:
         else:
             # migrations for older DBs
             _ensure_column(con, "comps", "shipping", "REAL")
+            _ensure_column(con, "comps", "currency", "TEXT")
             _ensure_column(con, "comps", "ended", "TEXT")
+            _ensure_column(con, "comps", "ended_at", "TEXT")
             _ensure_column(con, "comps", "url", "TEXT")
+            _ensure_column(con, "comps", "source", "TEXT")
+            _ensure_column(con, "comps", "model_guess", "TEXT")
+            _ensure_column(con, "comps", "listing_id", "TEXT")
             _ensure_column(con, "comps", "created_at", "TEXT")
 
         # estimates
@@ -110,7 +120,8 @@ def init_db() -> None:
 def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
     """
     Inserts comps; returns number inserted.
-    Expects each comp dict may include: title, price, shipping, url, ended.
+    Expects each comp dict may include:
+    title, price, shipping, currency, url, ended, ended_at, source, model_guess, listing_id.
     """
     if not comps:
         return 0
@@ -124,8 +135,13 @@ def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
                 c.get("title"),
                 c.get("price"),
                 c.get("shipping"),
+                c.get("currency"),
                 c.get("url"),
                 c.get("ended"),
+                c.get("ended_at"),
+                c.get("source"),
+                c.get("model_guess"),
+                c.get("listing_id"),
                 now,
             )
         )
@@ -135,8 +151,21 @@ def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
         cur = con.cursor()
         cur.executemany(
             """
-            INSERT INTO comps (query, title, price, shipping, url, ended, created_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO comps (
+                query,
+                title,
+                price,
+                shipping,
+                currency,
+                url,
+                ended,
+                ended_at,
+                source,
+                model_guess,
+                listing_id,
+                created_at
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             rows,
         )
