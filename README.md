@@ -1,1 +1,1 @@
-Prototype Carhartt jacket finder
+Everything vintage Carhartt!
