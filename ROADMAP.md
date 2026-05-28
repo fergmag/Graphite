@@ -10,6 +10,7 @@ Start small: comps → estimate → confidence. Then expand.
 - [ ] Simple API endpoint: /estimate?query=...
 
 ## Next (Core Intelligence)
+- HVT's, jackets will be ranked out of 5 stars or 1/5 etc, with 5 being the rarest grails, and 1 being mids
 - [ ] Undervalued listings (estimate vs asking)
 - [ ] Overpriced listings
 - [ ] Mislabelled listings (title/attrs don't match model patterns)
@@ -21,6 +22,12 @@ Start small: comps → estimate → confidence. Then expand.
 - [ ] Filters: model (J01/J130/etc), size, condition, color
 - [ ] Saved searches
 - [ ] Notifications / alerts
+
+## Personal selling website
+- Website to make my instagram page seem more legit
+- Takes payments (paypal & stripe?)
+- Handle taxes? Can't claim they're $15 gifts anymore I don't think.
+- Doesn't look like shit
 
 ## ML + Image
 - [ ] Identify jacket model from images
@@ -43,6 +50,8 @@ Start small: comps → estimate → confidence. Then expand.
 - [ ] Authentication / legit check system
 - [ ] Anti-scam protection
 - [ ] Escrow-style verified trades (Graphite as trusted middleman)
+
+## Bundle it all into one!
 
 ---
 
@@ -119,8 +128,8 @@ Goal: user chooses what to track and how.
 
 ### Step 28: Marketplace + trust layer (later)
 Goal: optional expansion, not needed for core value.
-- Listing posting + messaging
-- Trust features and (eventually) escrow-style verified trades
+- Listing, posting,  messaging
+- Trust features with profiles and kudos or likes and (eventually) escrow-style verified trades
 
 ### Step 29: Monetization + production hardening
 Goal: shipping-grade stability.
@@ -128,4 +137,4 @@ Goal: shipping-grade stability.
 - Deploy production server + observability + rate-limits + safer scraping
 
 
-## Will figure out how to meet the rest of the goals later
+## Will figure out how to meet the rest of the goals later, EVERYTHING IS SUBJECT TO CHANGE
