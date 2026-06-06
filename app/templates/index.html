@@ -9,26 +9,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --bg: #111111;
-        --fg: #f0efed;
-        --muted: #777777;
-        --line: #2a2a2a;
-        --pill: #1c1c1c;
-        --btn: #f0efed;
+        --bg: #283238;
+        --fg: #ffffff;
+        --muted: #ffffff;
+        --line: rgba(255,255,255,0.18);
+        --pill: #ffffff;
+        --btn: #ffffff;
         --btnfg: #111111;
-        --btn2bg: #1c1c1c;
-        --btn2fg: #f0efed;
+        --btn2bg: rgba(255,255,255,0.12);
+        --btn2fg: #ffffff;
       }
 
       body {
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        margin: 24px;
-        max-width: 920px;
+        margin: 0 auto;
+        max-width: 680px;
+        padding: 48px 24px 80px;
         color: var(--fg);
-        background: var(--bg);
+        background-color: var(--bg);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+        min-height: 100vh;
       }
 
-      h1 { margin: 0 0 6px; font-weight: 700; letter-spacing: -0.02em; }
+      .site-header {
+        margin-bottom: 40px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid var(--line);
+      }
+      .site-header h1 {
+        margin: 0 0 4px;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .site-header .handle {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--fg);
+        margin-top: 6px;
+        display: block;
+        letter-spacing: 0.04em;
+      }
+
       .muted { color: var(--muted); margin: 0 0 18px; }
 
       label { display:block; font-weight: 600; margin: 14px 0 6px; }
@@ -39,8 +62,8 @@
         border-radius: 12px;
         font-size: 14px;
         outline: none;
-        background: var(--pill);
-        color: var(--fg);
+        background: #ffffff;
+        color: #111111;
         font-family: inherit;
       }
 
@@ -73,7 +96,7 @@
         border: 1px solid var(--line);
         border-radius: 12px;
         padding: 10px 12px;
-        background: var(--pill);
+        background: rgba(255,255,255,0.08);
       }
       details.advanced summary {
         cursor: pointer;
@@ -94,21 +117,23 @@
       }
 
       .card {
-        border: 1px solid var(--line);
+        border: none;
         border-radius: 16px;
-        padding: 14px;
+        padding: 16px;
+        background: #ffffff;
+        color: #111111;
       }
-      .card h3 { margin: 0 0 6px; font-size: 14px; color: var(--muted); font-weight: 700; }
-      .big { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; }
-      .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
-      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: var(--pill); font-weight: 700; font-size: 12px; margin-top: 8px; }
+      .card h3 { margin: 0 0 6px; font-size: 13px; color: #666666; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+      .big { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; }
+      .sub { font-size: 12px; color: #666666; margin-top: 4px; }
+      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 12px; margin-top: 8px; }
 
       .status {
         margin-top: 14px;
         padding: 10px 12px;
         border: 1px solid var(--line);
         border-radius: 12px;
-        color: var(--muted);
+        color: #ffffff;
         font-size: 13px;
       }
 
@@ -124,7 +149,8 @@
         display:inline-block;
         padding: 6px 10px;
         border-radius: 999px;
-        background: var(--pill);
+        background: #ffffff;
+        color: #111111;
         font-weight: 700;
         font-size: 13px;
       }
@@ -132,9 +158,9 @@
         margin-left: 10px;
         padding: 6px 10px;
         border-radius: 999px;
-        border: 1px solid var(--line);
-        background: var(--pill);
-        color: var(--fg);
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.12);
+        color: #ffffff;
         font-weight: 700;
         cursor: pointer;
       }
@@ -144,8 +170,10 @@
   </head>
 
   <body>
-    <h1>Graphite</h1>
-    <p class="muted">Get CASP instantly. Advanced: seed the cache from pasted comps only if live results are blocked.</p>
+    <header class="site-header">
+      <h1>Graphite</h1>
+      <span class="handle">@graphitevintage</span>
+    </header>
 
     <label for="query">Query</label>
     <input id="query" value="Carhartt J01" />
