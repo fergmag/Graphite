@@ -4,20 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Graphite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --bg: #ffffff;
-        --fg: #0b0b0b;
-        --muted: #6b7280;
-        --line: #e5e7eb;
-        --pill: #f3f4f6;
-        --btn: #111827;
-        --btnfg: #ffffff;
-        --btn2: #ffffff;
+        --bg: #111111;
+        --fg: #f0efed;
+        --muted: #777777;
+        --line: #2a2a2a;
+        --pill: #1c1c1c;
+        --btn: #f0efed;
+        --btnfg: #111111;
+        --btn2bg: #1c1c1c;
+        --btn2fg: #f0efed;
       }
 
       body {
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
         margin: 24px;
         max-width: 920px;
         color: var(--fg);
@@ -35,6 +39,9 @@
         border-radius: 12px;
         font-size: 14px;
         outline: none;
+        background: var(--pill);
+        color: var(--fg);
+        font-family: inherit;
       }
 
       textarea {
@@ -53,8 +60,9 @@
         font-weight: 600;
       }
       button.secondary {
-        background: var(--btn2);
-        color: var(--btn);
+        background: var(--btn2bg);
+        color: var(--btn2fg);
+        border-color: var(--line);
       }
       button:disabled { opacity: 0.6; cursor:not-allowed; }
 
@@ -65,7 +73,7 @@
         border: 1px solid var(--line);
         border-radius: 12px;
         padding: 10px 12px;
-        background: #fff;
+        background: var(--pill);
       }
       details.advanced summary {
         cursor: pointer;
@@ -125,7 +133,7 @@
         padding: 6px 10px;
         border-radius: 999px;
         border: 1px solid var(--line);
-        background: white;
+        background: var(--pill);
         color: var(--fg);
         font-weight: 700;
         cursor: pointer;
