@@ -22,19 +22,31 @@
 
       body {
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
-        margin: 0 auto;
-        max-width: 680px;
-        padding: 48px 24px 80px;
+        margin: 0;
+        padding: 0;
         color: var(--fg);
         background-color: var(--bg);
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
         min-height: 100vh;
       }
 
+      .page-content {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 40px 24px 80px;
+      }
+
       .site-header {
-        margin-bottom: 40px;
-        padding-bottom: 28px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: var(--bg);
         border-bottom: 1px solid var(--line);
+      }
+      .site-header-inner {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 20px 24px;
       }
       .site-header h1 {
         margin: 0 0 4px;
@@ -110,23 +122,25 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 12px;
-        margin-top: 18px;
+        margin-top: 24px;
       }
-      @media (max-width: 820px) {
+      @media (max-width: 600px) {
         .cards { grid-template-columns: 1fr; }
       }
 
       .card {
         border: none;
-        border-radius: 16px;
-        padding: 16px;
+        border-radius: 14px;
+        padding: 20px;
         background: #ffffff;
         color: #111111;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+        border-top: 3px solid #283238;
       }
-      .card h3 { margin: 0 0 6px; font-size: 13px; color: #666666; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-      .big { font-size: 34px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; }
-      .sub { font-size: 12px; color: #666666; margin-top: 4px; }
-      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 12px; margin-top: 8px; }
+      .card h3 { margin: 0 0 10px; font-size: 11px; color: #888888; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+      .big { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; line-height: 1; }
+      .sub { font-size: 12px; color: #888888; margin-top: 8px; }
+      .badge { display:inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 11px; margin-top: 10px; letter-spacing: 0.03em; }
 
       .status {
         margin-top: 14px;
@@ -138,13 +152,26 @@
       }
 
       .watch {
-        margin-top: 18px;
+        margin-top: 32px;
         border-top: 1px solid var(--line);
-        padding-top: 16px;
+        padding-top: 24px;
+      }
+      .watch h2 {
+        margin: 0 0 4px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+      }
+      .watch-sub {
+        margin: 0 0 14px;
+        font-size: 12px;
+        color: rgba(255,255,255,0.55);
       }
 
-      ul { margin: 10px 0 0; padding-left: 18px; }
-      li { margin: 8px 0; }
+      ul { margin: 14px 0 0; padding-left: 0; list-style: none; }
+      li { margin: 8px 0; display: flex; align-items: center; gap: 8px; }
       .pill {
         display:inline-block;
         padding: 6px 10px;
@@ -171,37 +198,40 @@
 
   <body>
     <header class="site-header">
-      <h1>Graphite</h1>
-      <span class="handle">@graphitevintage</span>
+      <div class="site-header-inner">
+        <h1>Graphite</h1>
+        <span class="handle">@graphitevintage</span>
+      </div>
     </header>
 
-    <label for="query">Query</label>
+    <div class="page-content">
+
+    <label for="query">Search query</label>
     <input id="query" value="Carhartt J01" />
 
-    <label for="asking">Asking price (optional, for deal score)</label>
+    <label for="asking">Asking price <span style="font-weight:400;opacity:0.7;">— optional, generates a deal score</span></label>
     <input id="asking" placeholder="e.g. 160" />
 
-    <label for="comps">Comps JSON (advanced, optional)</label>
-    <textarea id="comps">[
+    <div class="row">
+      <button id="estimateBtn">Get CASP</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </div>
+
+    <details class="advanced">
+      <summary>Advanced: seed cache from pasted comps</summary>
+      <div class="tiny" style="margin-top:10px;">Use this only if live scraping is blocked. Paste comps JSON below — only <code>price</code> is required.</div>
+      <label for="comps" style="margin-top:12px;">Comps JSON</label>
+      <textarea id="comps">[
   {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
   {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
   {"title":"Carhartt J01 Made in USA","price":165},
   {"title":"Carhartt Detroit J01","price":195},
   {"title":"J01 Detroit Jacket","price":240}
 ]</textarea>
-    <div class="tiny">Advanced: paste manual comps to seed the cache. Only <code>price</code> is required.</div>
-    <details class="advanced">
-      <summary>Advanced: Seed cache from pasted comps</summary>
-      <div class="tiny">Seeds the cache using the comps in the box above.</div>
       <div class="row">
         <button id="seedBtn" class="secondary">Seed cache</button>
       </div>
     </details>
-
-    <div class="row">
-      <button id="estimateBtn">Get CASP</button>
-      <button id="clearBtn" class="secondary">Clear</button>
-    </div>
 
     <div class="cards">
       <div class="card">
@@ -227,13 +257,12 @@
     <div class="status" id="status">Status: Ready</div>
 
     <div class="watch">
-      <h2 style="margin:0 0 6px; font-size:16px;">Watchlist</h2>
-      <p class="muted" style="margin:0 0 10px;">Save queries you want Graphite to keep an eye on (automation later).</p>
+      <h2>Watchlist</h2>
+      <p class="watch-sub">Saved queries — auto-refresh coming later.</p>
 
       <div class="watchrow">
-        <input id="watchInput" placeholder="e.g. Carhartt J97 / Barbour Beaufort / Nike ACG" />
-        <button id="watchAddBtn">Add</button>
-        <button id="watchRefreshBtn" class="secondary">Refresh</button>
+        <input id="watchInput" placeholder="e.g. Carhartt J97" />
+        <button id="watchAddBtn">Save</button>
       </div>
 
       <div id="watchList"></div>
@@ -255,7 +284,6 @@
 
       const watchInput = $("watchInput");
       const watchAddBtn = $("watchAddBtn");
-      const watchRefreshBtn = $("watchRefreshBtn");
       const watchList = $("watchList");
 
       function setStatus(msg) {
@@ -455,14 +483,10 @@
         setStatus("Watch saved.");
       });
 
-      watchRefreshBtn.addEventListener("click", async () => {
-        setStatus("Refreshing watchlist…");
-        await refreshWatchlist();
-        setStatus("Ready");
-      });
-
       // initial load
       refreshWatchlist();
     </script>
+
+    </div> <!-- .page-content -->
   </body>
 </html>
