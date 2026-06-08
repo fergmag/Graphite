@@ -101,22 +101,9 @@
       }
       button:disabled { opacity: 0.6; cursor:not-allowed; }
 
-      .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
+      *, *::before, *::after { box-sizing: border-box; }
 
-      details.advanced {
-        margin-top: 10px;
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        padding: 10px 12px;
-        background: rgba(255,255,255,0.08);
-      }
-      details.advanced summary {
-        cursor: pointer;
-        font-weight: 600;
-      }
-      details.advanced .row {
-        margin-top: 10px;
-      }
+      .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
       .cards {
         display: grid;
@@ -192,7 +179,12 @@
         cursor: pointer;
       }
       .watchrow { display:flex; gap: 10px; flex-wrap: wrap; }
-      .watchrow input { flex: 1; min-width: 260px; }
+      .watchrow input { flex: 1; min-width: 0; }
+      .pill {
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+      .pill:hover { opacity: 0.75; }
     </style>
   </head>
 
@@ -206,49 +198,33 @@
 
     <div class="page-content">
 
-    <label for="query">Search query</label>
+    <label for="query">Jacket model</label>
     <input id="query" value="Carhartt J01" />
 
-    <label for="asking">Asking price <span style="font-weight:400;opacity:0.7;">— optional, generates a deal score</span></label>
+    <label for="asking">Asking price <span style="font-weight:400;opacity:0.7;">— optional</span></label>
     <input id="asking" placeholder="e.g. 160" />
 
     <div class="row">
-      <button id="estimateBtn">Get CASP</button>
+      <button id="estimateBtn">Get Estimate</button>
       <button id="clearBtn" class="secondary">Clear</button>
     </div>
 
-    <details class="advanced">
-      <summary>Advanced: seed cache from pasted comps</summary>
-      <div class="tiny" style="margin-top:10px;">Use this only if live scraping is blocked. Paste comps JSON below — only <code>price</code> is required.</div>
-      <label for="comps" style="margin-top:12px;">Comps JSON</label>
-      <textarea id="comps">[
-  {"title":"Carhartt J01 Detroit Jacket - Brown","price":180},
-  {"title":"Vintage Carhartt J01 Blanket Lined","price":210},
-  {"title":"Carhartt J01 Made in USA","price":165},
-  {"title":"Carhartt Detroit J01","price":195},
-  {"title":"J01 Detroit Jacket","price":240}
-]</textarea>
-      <div class="row">
-        <button id="seedBtn" class="secondary">Seed cache</button>
-      </div>
-    </details>
-
     <div class="cards">
       <div class="card">
-        <h3>CASP</h3>
+        <h3>Estimated Value</h3>
         <p class="big" id="casp">$—</p>
-        <div class="sub">Calculated average sold price</div>
+        <div class="sub">Avg of recent eBay sold listings</div>
       </div>
 
       <div class="card">
-        <h3>Accuracy of CASP</h3>
+        <h3>Accuracy</h3>
         <p class="big" id="acc">—%</p>
         <div class="badge" id="accLabel">—</div>
         <div class="sub">How reliable this estimate is</div>
       </div>
 
       <div class="card">
-        <h3>Deal score</h3>
+        <h3>Deal Score</h3>
         <p class="big" id="deal">—</p>
         <div class="sub" id="dealSub">Add an asking price to score the deal.</div>
       </div>
@@ -271,7 +247,6 @@
     <script>
       const $ = (id) => document.getElementById(id);
 
-      const seedBtn = $("seedBtn");
       const estimateBtn = $("estimateBtn");
       const clearBtn = $("clearBtn");
 
@@ -338,23 +313,7 @@
         return { status: res.status, data };
       }
 
-      async function refreshWatchItem(query) {
-        if (!query) return;
-        setStatus(`Refreshing “${query}”…`);
-        const { status, data } = await getJSON(
-          `/estimate?query=${encodeURIComponent(query)}&cache_first=false&use_cache=true`
-        );
-
-        if (status !== 200 || !data || !data.ok) {
-          setStatus("Watch refresh error");
-          return;
-        }
-
-        setStatus(data.from_cache ? "Served cached result." : "Live result.");
-        updateCards(data);
-      }
-
-      function renderWatchItems(items) {
+function renderWatchItems(items) {
         const clean = Array.isArray(items)
           ? items.filter((item) => typeof item === "string" && item.trim().length > 0)
           : [];
@@ -371,26 +330,22 @@
           const pill = document.createElement("span");
           pill.className = "pill";
           pill.textContent = q;
+          pill.title = "Tap to load estimate";
+          pill.addEventListener("click", () => {
+            $("query").value = q;
+            runEstimate(q);
+          });
 
           const x = document.createElement("button");
           x.className = "xbtn";
-          x.textContent = "Remove";
+          x.textContent = "×";
+          x.title = "Remove";
           x.addEventListener("click", async () => {
             await fetch(`/watchlist?query=${encodeURIComponent(q)}`, { method: "DELETE" });
             await refreshWatchlist();
           });
 
-          const refresh = document.createElement("button");
-          refresh.className = "xbtn";
-          refresh.textContent = "Refresh";
-          refresh.addEventListener("click", async () => {
-            await refreshWatchItem(q);
-          });
-
           li.appendChild(pill);
-          li.appendChild(document.createTextNode(" "));
-          li.appendChild(refresh);
-          li.appendChild(document.createTextNode(" "));
           li.appendChild(x);
           ul.appendChild(li);
         });
@@ -408,56 +363,29 @@
         renderWatchItems(data.items || []);
       }
 
-      seedBtn.addEventListener("click", async () => {
-        seedBtn.disabled = true;
+async function runEstimate(query) {
         estimateBtn.disabled = true;
-        setStatus("Seeding…");
+        setStatus("Fetching estimate…");
 
-        const query = $("query").value.trim();
-        let comps;
-        try {
-          comps = JSON.parse($("comps").value);
-        } catch (e) {
-          setStatus("Invalid comps JSON");
-          seedBtn.disabled = false;
-          estimateBtn.disabled = false;
-          return;
-        }
-
-        const { status, data } = await postJSON("/seed", { query, comps });
-        if (status !== 200 || !data || !data.ok) {
-          setStatus("Seed error");
-          updateCards(null);
-        } else {
-          setStatus("Seeded cache.");
-          updateCards(data);
-        }
-
-        seedBtn.disabled = false;
-        estimateBtn.disabled = false;
-      });
-
-      estimateBtn.addEventListener("click", async () => {
-        seedBtn.disabled = true;
-        estimateBtn.disabled = true;
-        setStatus("Estimating…");
-
-        const query = $("query").value.trim();
         const asking = $("asking").value.trim();
         const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : "";
 
         const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}`);
 
         if (status !== 200 || !data || !data.ok) {
-          setStatus("Estimate error");
+          setStatus("Error fetching estimate");
           updateCards(null);
         } else {
-          setStatus(data.from_cache ? "Served cached result." : "Live result.");
+          setStatus(data.from_cache ? "Cached result." : "Live result.");
           updateCards(data);
         }
 
-        seedBtn.disabled = false;
         estimateBtn.disabled = false;
+      }
+
+      estimateBtn.addEventListener("click", () => {
+        const query = $("query").value.trim();
+        if (query) runEstimate(query);
       });
 
       clearBtn.addEventListener("click", () => {
