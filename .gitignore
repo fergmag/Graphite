@@ -22,4 +22,4 @@ ENV/
 cache/
 
 # Graphite.db
-graphite.db
+graphite.dbmemory/
