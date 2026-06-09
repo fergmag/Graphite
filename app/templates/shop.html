@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Graphite{% if page == 'sold' %} — Sold{% endif %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      :root {
+        --bg-page:   #283238;
+        --bg-header: #1c2528;
+        --bg-light:  #2f3c42;
+        --fg:        #ffffff;
+        --line:      rgba(255,255,255,0.18);
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        margin: 0; padding: 0;
+        color: var(--fg);
+        background-color: var(--bg-page);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+        min-height: 100vh;
+      }
+
+      /* ── Ticker ── */
+      .ticker-wrap {
+        overflow: hidden;
+        white-space: nowrap;
+        background: var(--bg-light);
+        border-bottom: 1px solid var(--line);
+        padding: 7px 0;
+      }
+      .ticker-track {
+        display: inline-block;
+        animation: ticker 40s linear infinite;
+      }
+      .ticker-track span {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .ticker-dot { font-size: 16px; vertical-align: middle; margin: 0 16px; opacity: 0.6; }
+      @keyframes ticker {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      /* ── Main header (darker bg) ── */
+      .site-header { position: sticky; top: 0; z-index: 100; }
+      .header-main {
+        background: var(--bg-header);
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        padding: 16px 40px 16px 32px;
+      }
+
+      /* ── Gr element logo ── */
+      .element-logo {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(255,255,255,0.75);
+        border-radius: 5px;
+        width: 58px;
+        height: 58px;
+        text-decoration: none;
+        color: #ffffff;
+        line-height: 1;
+        transition: border-color 0.15s;
+      }
+      .element-logo:hover { border-color: #ffffff; }
+      .el-symbol { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+
+      /* ── Nav ── */
+      .nav-links {
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 20%;
+      }
+      .nav-link {
+        padding: 8px 12px;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        color: rgba(255,255,255,0.75);
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.15s, background 0.15s;
+        white-space: nowrap;
+      }
+      .nav-link:hover { color: #ffffff; }
+      .nav-link.active { background: rgba(255,255,255,0.12); color: #ffffff; }
+
+      /* ── Sort sub-bar (lighter bg, matches ticker + page) ── */
+      .sort-bar {
+        background: transparent;
+        padding: 8px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 80px;
+      }
+      .sort-wrap { position: relative; }
+      .sort-btn {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 5px 12px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        background: transparent;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: border-color 0.15s;
+      }
+      .sort-btn:hover { border-color: var(--line); }
+      .sort-caret { font-size: 13px; }
+      .sort-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 4px);
+        background: #1e2a2f;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        min-width: 180px;
+        z-index: 200;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      }
+      .sort-menu.open { display: block; }
+      .sort-opt {
+        display: block; width: 100%;
+        padding: 10px 16px; border: none;
+        background: transparent; color: #ffffff;
+        font-family: inherit; font-size: 13px; font-weight: 600;
+        text-align: left; cursor: pointer;
+        transition: background 0.1s;
+      }
+      .sort-opt:hover { background: rgba(255,255,255,0.08); }
+      .sort-opt.active { background: rgba(255,255,255,0.1); }
+
+      /* ── Page ── */
+      .page-content {
+        width: 92%;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 32px 0 80px;
+      }
+
+      /* ── Grid ── */
+      .listings-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      @media (max-width: 1100px) { .listings-grid { grid-template-columns: repeat(3, 1fr); } }
+      @media (max-width: 750px)  { .listings-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+
+      /* ── Card ── */
+      .listing-card {
+        background: #ffffff;
+        color: #111111;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+        display: flex; flex-direction: column;
+        cursor: pointer;
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      .listing-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.24); }
+      .listing-card.sold { opacity: 0.72; }
+      .listing-photo {
+        position: relative; width: 100%; aspect-ratio: 4 / 5;
+        background: #e8e5e0;
+        display: flex; align-items: center; justify-content: center; overflow: hidden;
+      }
+      .listing-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
+      .sold-stamp {
+        position: absolute; inset: 0;
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(0,0,0,0.3);
+      }
+      .sold-stamp span {
+        background: #c62828; color: #fff;
+        font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+        padding: 5px 14px; border-radius: 3px; transform: rotate(-12deg);
+      }
+      .listing-info { padding: 12px 14px 14px; flex: 1; display: flex; flex-direction: column; gap: 5px; }
+      .listing-title { font-size: 13px; font-weight: 700; line-height: 1.3; }
+      .listing-meta { display: flex; align-items: center; justify-content: space-between; }
+      .listing-size {
+        font-size: 11px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.05em; background: #f0f0f0; color: #555;
+        padding: 3px 7px; border-radius: 4px;
+      }
+      .listing-price { font-size: 17px; font-weight: 800; letter-spacing: -0.02em; }
+
+      /* ── Empty ── */
+      .empty {
+        grid-column: 1 / -1; text-align: center; padding: 60px 24px;
+        font-size: 13px; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 0.04em;
+      }
+
+      /* ── Modal ── */
+      .modal-overlay {
+        display: none; position: fixed; inset: 0; z-index: 500;
+        background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+        padding: 24px 16px; overflow-y: auto;
+      }
+      .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
+      .modal {
+        background: #ffffff; color: #111111; border-radius: 12px;
+        width: 100%; max-width: 780px; overflow: hidden;
+        display: grid; grid-template-columns: 1fr 1fr;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.4); position: relative; margin: auto;
+      }
+      @media (max-width: 640px) { .modal { grid-template-columns: 1fr; } }
+      .modal-photo {
+        aspect-ratio: 4 / 5; background: #e8e5e0;
+        display: flex; align-items: center; justify-content: center; overflow: hidden;
+      }
+      @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
+      .modal-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
+      .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; }
+      .modal-close {
+        position: absolute; top: 14px; right: 14px;
+        width: 32px; height: 32px; border-radius: 999px; border: none;
+        background: rgba(0,0,0,0.12); color: #333;
+        font-size: 14px; font-weight: 700; cursor: pointer;
+        display: flex; align-items: center; justify-content: center; z-index: 10;
+        transition: background 0.15s;
+      }
+      .modal-close:hover { background: rgba(0,0,0,0.2); }
+      .modal-title  { font-size: 20px; font-weight: 800; line-height: 1.2; }
+      .modal-price  { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; }
+      .modal-size-badge {
+        display: inline-block; font-size: 11px; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 0.06em;
+        background: #f0f0f0; color: #555; padding: 3px 10px; border-radius: 4px;
+      }
+      .modal-desc { font-size: 13px; color: #555; line-height: 1.6; }
+      .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+      .btn-stripe {
+        width: 100%; padding: 14px; border-radius: 8px; border: none;
+        background: #111111; color: #ffffff;
+        font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+        transition: background 0.15s;
+      }
+      .btn-stripe:hover { background: #2a2a2a; }
+      .btn-paypal {
+        width: 100%; padding: 14px; border-radius: 8px; border: 2px solid #f0c040;
+        background: #ffd140; color: #111111;
+        font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+        transition: background 0.15s;
+      }
+      .btn-paypal:hover { background: #f5c800; }
+      .payment-note { font-size: 11px; color: #aaa; text-align: center; }
+
+      @media (max-width: 600px) {
+        .header-main { padding: 14px 20px; }
+        .sort-bar { padding: 7px 20px; }
+        .nav-link { font-size: 13px; padding: 6px 8px; }
+        .nav-links { padding-left: 10%; }
+        .page-content { width: 100%; padding: 20px 12px 60px; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+
+      <!-- Ticker: 6 copies → animate -50% = seamless 3-copy loop -->
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+          <span>@graphitevintage on Instagram for the best prices. Always buying via DM.</span><span class="ticker-dot">•</span>
+        </div>
+      </div>
+
+      <!-- Main nav row -->
+      <div class="header-main">
+        <a href="/" class="element-logo">
+          <span class="el-symbol">Gr</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/shop"    class="nav-link {% if page == 'shop'    %}active{% endif %}">Shop</a>
+          <a href="/sold"    class="nav-link {% if page == 'sold'    %}active{% endif %}">Sold</a>
+          <a href="/archive" class="nav-link {% if page == 'archive' %}active{% endif %}">Archive</a>
+          <a href="/about"   class="nav-link {% if page == 'about'   %}active{% endif %}">About</a>
+        </nav>
+      </div>
+
+      <!-- Sort sub-bar -->
+      <div class="sort-bar">
+        <div class="sort-wrap" id="sortWrap">
+          <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
+          <div class="sort-menu" id="sortMenu">
+            <button class="sort-opt active" data-sort="newest">Newest first</button>
+            <button class="sort-opt" data-sort="price-high">Price: high to low</button>
+            <button class="sort-opt" data-sort="price-low">Price: low to high</button>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="page-content">
+      <div class="listings-grid" id="grid"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose">✕</button>
+        <div class="modal-photo" id="modalPhoto"></div>
+        <div class="modal-body">
+          <div class="modal-title"   id="modalTitle"></div>
+          <div class="modal-price"   id="modalPrice"></div>
+          <span class="modal-size-badge" id="modalSize"></span>
+          <div class="modal-desc"    id="modalDesc"></div>
+          <div class="modal-actions" id="modalActions"></div>
+          <div class="payment-note">Secure checkout via Stripe or PayPal</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const LISTINGS = {{ listings | tojson }};
+      const PAGE     = {{ page | tojson }};
+      let currentSort = 'newest';
+
+      function esc(str) {
+        return String(str ?? '')
+          .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+          .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+      }
+
+      function getItems() {
+        let items = [...LISTINGS];
+        if (currentSort === 'price-high') items.sort((a,b) => b.price - a.price);
+        else if (currentSort === 'price-low') items.sort((a,b) => a.price - b.price);
+        else items.sort((a,b) => new Date(b.created_at) - new Date(a.created_at));
+        return items;
+      }
+
+      function photoHtml(photos, title, cls) {
+        if (photos && photos.length > 0)
+          return `<img src="/static/images/listings/${esc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
+        return `<span class="${cls}">Photo coming soon</span>`;
+      }
+
+      function render() {
+        const items = getItems();
+        const grid  = document.getElementById('grid');
+        if (items.length === 0) {
+          const msg = PAGE === 'sold' ? 'Nothing sold yet.' : 'No items available right now — check back soon.';
+          grid.innerHTML = `<div class="empty">${msg}</div>`;
+          return;
+        }
+        grid.innerHTML = items.map((l, i) => `
+          <div class="listing-card${l.sold ? ' sold' : ''}" data-index="${i}">
+            <div class="listing-photo">
+              ${photoHtml(l.photos, l.title, 'photo-placeholder')}
+              ${l.sold ? '<div class="sold-stamp"><span>Sold</span></div>' : ''}
+            </div>
+            <div class="listing-info">
+              <div class="listing-title">${esc(l.title)}</div>
+              <div class="listing-meta">
+                <span class="listing-size">${esc(l.size)}</span>
+                <span class="listing-price">$${esc(l.price)}</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        document.querySelectorAll('.listing-card').forEach(card => {
+          card.addEventListener('click', () => openModal(getItems()[+card.dataset.index]));
+        });
+      }
+
+      function openModal(listing) {
+        document.getElementById('modalPhoto').innerHTML = photoHtml(listing.photos, listing.title, 'modal-photo-placeholder');
+        document.getElementById('modalTitle').textContent = listing.title;
+        document.getElementById('modalPrice').textContent = `$${listing.price}`;
+        document.getElementById('modalSize').textContent  = listing.size;
+        const descEl = document.getElementById('modalDesc');
+        descEl.textContent   = listing.description || '';
+        descEl.style.display = listing.description ? 'block' : 'none';
+        const actions = document.getElementById('modalActions');
+        if (listing.sold) {
+          actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#c62828;font-size:14px;padding:10px 0;">This item has sold.</div>`;
+        } else {
+          actions.innerHTML = `
+            <button class="btn-stripe" onclick="handleStripe()">Buy with card — $${esc(listing.price)}</button>
+            <button class="btn-paypal" onclick="handlePaypal()">Pay with PayPal</button>
+          `;
+        }
+        document.getElementById('modalOverlay').classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        document.getElementById('modalOverlay').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function handleStripe() {
+        alert('Stripe checkout coming soon — DM @graphitevintage on Instagram to purchase.');
+      }
+      function handlePaypal() {
+        alert('PayPal checkout coming soon — DM @graphitevintage on Instagram to purchase.');
+      }
+
+      document.getElementById('modalClose').addEventListener('click', closeModal);
+      document.getElementById('modalOverlay').addEventListener('click', e => {
+        if (e.target === document.getElementById('modalOverlay')) closeModal();
+      });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+      const sortMenu = document.getElementById('sortMenu');
+      document.getElementById('sortBtn').addEventListener('click', e => {
+        e.stopPropagation();
+        sortMenu.classList.toggle('open');
+      });
+      document.querySelectorAll('.sort-opt').forEach(opt => {
+        opt.addEventListener('click', () => {
+          document.querySelectorAll('.sort-opt').forEach(o => o.classList.remove('active'));
+          opt.classList.add('active');
+          currentSort = opt.dataset.sort;
+          sortMenu.classList.remove('open');
+          render();
+        });
+      });
+      document.addEventListener('click', () => sortMenu.classList.remove('open'));
+
+      render();
+    </script>
+  </body>
+</html>

@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 from typing import Any, Dict, List, Optional, Sequence
+import json
+import os
 import re
 
 from app.scrape_ebay import scrape_ebay_sold
@@ -96,9 +98,40 @@ def create_app() -> Flask:
     def health():
         return jsonify({"status": "ok"})
 
-    @app.get("/")
+    @app.get("/tool")
     def home():
         return render_template("index.html")
+
+    def _load_listings():
+        listings_path = os.path.join(os.path.dirname(__file__), "listings.json")
+        try:
+            with open(listings_path) as f:
+                return json.load(f)
+        except Exception:
+            return []
+
+    @app.get("/")
+    @app.get("/shop")
+    def shop():
+        all_listings = _load_listings()
+        return render_template("shop.html",
+            listings=[l for l in all_listings if not l.get("sold")],
+            page="shop")
+
+    @app.get("/sold")
+    def sold():
+        all_listings = _load_listings()
+        return render_template("shop.html",
+            listings=[l for l in all_listings if l.get("sold")],
+            page="sold")
+
+    @app.get("/archive")
+    def archive():
+        return render_template("archive.html", page="archive")
+
+    @app.get("/about")
+    def about():
+        return render_template("about.html", page="about")
 
     # -----------------------
     # Watchlist API

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "example-001",
+    "title": "Carhartt J01 Detroit Jacket",
+    "size": "L",
+    "condition": "Good",
+    "price": 185,
+    "description": "Minor cracking on left cuff. Pit to pit 24\", length 27\".",
+    "photos": [],
+    "sold": false,
+    "created_at": "2026-06-08"
+  }
+]
