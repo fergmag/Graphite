@@ -9,6 +9,7 @@ from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
 from app.public_view import build_public_payload
+from app.filters import filter_comps, normalize_query
 from app.db import (
     init_db,
     insert_comps,
@@ -200,7 +201,7 @@ def create_app() -> Flask:
     @app.post("/seed")
     def seed():
         data = request.get_json(silent=True) or {}
-        query = (data.get("query") or "").strip()
+        query = normalize_query(data.get("query") or "")
         comps = data.get("comps") or []
 
         if not query or not isinstance(comps, list):
@@ -282,7 +283,7 @@ def create_app() -> Flask:
     # -----------------------
     @app.get("/estimate")
     def estimate():
-        query = (request.args.get("query") or "").strip()
+        query = normalize_query(request.args.get("query") or "")
         pages = int(request.args.get("pages") or 1)
         include_shipping = _parse_bool(request.args.get("include_shipping") or "false", False)
         use_cache = _parse_bool(request.args.get("use_cache") or "true", True)
@@ -360,6 +361,7 @@ def create_app() -> Flask:
         # compute
         comps_dicts = [c.__dict__ for c in comps]
         normalized_comps = _normalize_comps(comps_dicts, source="ebay")
+        normalized_comps = filter_comps(normalized_comps, query)
         prices = comps_to_prices(normalized_comps, include_shipping=include_shipping)
         summary = summarize_prices(prices)
         summary_dict = to_dict(summary)

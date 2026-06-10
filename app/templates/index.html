@@ -47,7 +47,26 @@
         max-width: 680px;
         margin: 0 auto;
         padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
+      .header-left { display: flex; flex-direction: column; }
+      .logout-btn {
+        padding: 7px 14px;
+        border-radius: 6px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: rgba(255,255,255,0.6);
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: color 0.15s, border-color 0.15s;
+      }
+      .logout-btn:hover { color: #ffffff; border-color: rgba(255,255,255,0.5); }
       .site-header h1 {
         margin: 0 0 4px;
         font-size: 22px;
@@ -191,8 +210,11 @@
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <h1>Graphite</h1>
-        <span class="handle">@graphitevintage</span>
+        <div class="header-left">
+          <h1>Graphite</h1>
+          <span class="handle">@graphitevintage</span>
+        </div>
+        <a href="/logout" class="logout-btn">Log out</a>
       </div>
     </header>
 
