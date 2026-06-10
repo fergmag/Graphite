@@ -1,4 +1,5 @@
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for
+from functools import wraps
 from typing import Any, Dict, List, Optional, Sequence
 import json
 import os
@@ -90,15 +91,44 @@ def _normalize_comps(comps: Sequence[Dict[str, Any]], source: str) -> List[Dict[
     return normalized
 
 
+def _login_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if not session.get("logged_in"):
+            return redirect(url_for("login"))
+        return f(*args, **kwargs)
+    return decorated
+
+
 def create_app() -> Flask:
     app = Flask(__name__)
+    app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-change-me")
     init_db()
 
     @app.get("/health")
     def health():
         return jsonify({"status": "ok"})
 
+    @app.get("/login")
+    def login():
+        return render_template("login.html", error=False)
+
+    @app.post("/login")
+    def login_post():
+        password = request.form.get("password", "")
+        expected = os.environ.get("TOOL_PASSWORD", "graphite")
+        if password == expected:
+            session["logged_in"] = True
+            return redirect(url_for("home"))
+        return render_template("login.html", error=True)
+
+    @app.get("/logout")
+    def logout():
+        session.clear()
+        return redirect(url_for("login"))
+
     @app.get("/tool")
+    @_login_required
     def home():
         return render_template("index.html")
 

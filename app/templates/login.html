@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Graphite — Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      :root { --bg-page: #283238; --bg-header: #1c2528; --bg-light: #2f3c42; --fg: #ffffff; --line: rgba(255,255,255,0.18); }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        margin: 0; padding: 0; color: var(--fg);
+        background-color: var(--bg-page);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+        min-height: 100vh;
+        display: flex; align-items: center; justify-content: center;
+      }
+      .login-box {
+        width: 100%; max-width: 360px;
+        padding: 40px 32px;
+        background: var(--bg-header);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+      }
+      .logo {
+        display: inline-flex; align-items: center; justify-content: center;
+        border: 2px solid rgba(255,255,255,0.75);
+        border-radius: 5px; width: 52px; height: 52px;
+        font-size: 26px; font-weight: 800; letter-spacing: -0.03em;
+        color: #ffffff; margin-bottom: 28px;
+      }
+      h1 { font-size: 18px; font-weight: 700; margin: 0 0 24px; letter-spacing: 0.02em; }
+      label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 6px; }
+      input[type="password"] {
+        width: 100%; padding: 12px 14px;
+        background: var(--bg-light); border: 1px solid var(--line); border-radius: 6px;
+        color: #ffffff; font-family: inherit; font-size: 15px;
+        outline: none; transition: border-color 0.15s;
+      }
+      input[type="password"]:focus { border-color: rgba(255,255,255,0.5); }
+      .error { font-size: 12px; color: #e57373; font-weight: 600; margin-top: 10px; }
+      button[type="submit"] {
+        width: 100%; margin-top: 20px; padding: 13px;
+        background: #ffffff; color: #111111;
+        border: none; border-radius: 6px;
+        font-family: inherit; font-size: 14px; font-weight: 800;
+        letter-spacing: 0.04em; text-transform: uppercase;
+        cursor: pointer; transition: background 0.15s;
+      }
+      button[type="submit"]:hover { background: #e0e0e0; }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <div class="logo">Gr</div>
+      <h1>Owner Login</h1>
+      <form method="POST" action="/login">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autofocus autocomplete="current-password" />
+        {% if error %}<div class="error">Incorrect password.</div>{% endif %}
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </body>
+</html>
