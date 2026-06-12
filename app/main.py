@@ -5,6 +5,10 @@ import json
 import os
 import re
 
+import stripe
+from dotenv import load_dotenv
+load_dotenv()
+
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
@@ -163,6 +167,44 @@ def create_app() -> Flask:
     @app.get("/about")
     def about():
         return render_template("about.html", page="about")
+
+    # -----------------------
+    # Stripe Checkout
+    # -----------------------
+    @app.post("/checkout")
+    def checkout():
+        stripe.api_key = os.environ.get("STRIPE_SECRET_KEY", "")
+        data = request.get_json(silent=True) or {}
+        listing_id = data.get("id")
+
+        all_listings = _load_listings()
+        listing = next((l for l in all_listings if str(l.get("id")) == str(listing_id)), None)
+
+        if not listing or listing.get("sold"):
+            return jsonify({"ok": False, "error": "Listing not available"}), 400
+
+        price_cents = int(round(float(listing["price"]) * 100))
+        base_url = request.host_url.rstrip("/")
+
+        session_obj = stripe.checkout.Session.create(
+            payment_method_types=["card"],
+            line_items=[{
+                "price_data": {
+                    "currency": "usd",
+                    "product_data": {
+                        "name": listing["title"],
+                        "description": f"Size: {listing.get('size', '')}",
+                    },
+                    "unit_amount": price_cents,
+                },
+                "quantity": 1,
+            }],
+            mode="payment",
+            success_url=f"{base_url}/shop?success=1",
+            cancel_url=f"{base_url}/shop?cancelled=1",
+        )
+
+        return jsonify({"ok": True, "url": session_obj.url}), 200
 
     # -----------------------
     # Watchlist API

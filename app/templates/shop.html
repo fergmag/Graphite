@@ -329,6 +329,7 @@
     </header>
 
     <div class="page-content">
+      <div id="flash" style="display:none;margin-bottom:20px;padding:14px 18px;border-radius:8px;font-size:13px;font-weight:700;letter-spacing:0.04em;"></div>
       <div class="listings-grid" id="grid"></div>
     </div>
 
@@ -414,7 +415,7 @@
           actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#c62828;font-size:14px;padding:10px 0;">This item has sold.</div>`;
         } else {
           actions.innerHTML = `
-            <button class="btn-stripe" onclick="handleStripe()">Buy with card — $${esc(listing.price)}</button>
+            <button class="btn-stripe" onclick="handleStripe('${esc(listing.id)}')">Buy with card — $${esc(listing.price)}</button>
             <button class="btn-paypal" onclick="handlePaypal()">Pay with PayPal</button>
           `;
         }
@@ -427,8 +428,18 @@
         document.body.style.overflow = '';
       }
 
-      function handleStripe() {
-        alert('Stripe checkout coming soon — DM @graphitevintage on Instagram to purchase.');
+      async function handleStripe(listingId) {
+        const res = await fetch('/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: listingId }),
+        });
+        const data = await res.json();
+        if (data.ok && data.url) {
+          window.location.href = data.url;
+        } else {
+          alert('Something went wrong — DM @graphitevintage on Instagram.');
+        }
       }
       function handlePaypal() {
         alert('PayPal checkout coming soon — DM @graphitevintage on Instagram to purchase.');
@@ -455,6 +466,21 @@
         });
       });
       document.addEventListener('click', () => sortMenu.classList.remove('open'));
+
+      // Show success/cancelled banner from Stripe redirect
+      const params = new URLSearchParams(window.location.search);
+      const flash = document.getElementById('flash');
+      if (params.get('success')) {
+        flash.style.display = 'block';
+        flash.style.background = '#1b4332';
+        flash.style.color = '#6fcf97';
+        flash.textContent = 'Payment successful — thank you! Check your email for confirmation.';
+      } else if (params.get('cancelled')) {
+        flash.style.display = 'block';
+        flash.style.background = '#3b1f1f';
+        flash.style.color = '#e57373';
+        flash.textContent = 'Payment cancelled. DM @graphitevintage on Instagram if you need help.';
+      }
 
       render();
     </script>

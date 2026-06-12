@@ -24,3 +24,6 @@ cache/
 # Graphite.db
 graphite.db
 memory/
+
+# Secrets
+.env
