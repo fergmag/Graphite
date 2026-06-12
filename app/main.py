@@ -5,6 +5,7 @@ import json
 import os
 import re
 
+import requests as _req
 import stripe
 from dotenv import load_dotenv
 load_dotenv()
@@ -151,14 +152,16 @@ def create_app() -> Flask:
         all_listings = _load_listings()
         return render_template("shop.html",
             listings=[l for l in all_listings if not l.get("sold")],
-            page="shop")
+            page="shop",
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
 
     @app.get("/sold")
     def sold():
         all_listings = _load_listings()
         return render_template("shop.html",
             listings=[l for l in all_listings if l.get("sold")],
-            page="sold")
+            page="sold",
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
 
     @app.get("/archive")
     def archive():
@@ -205,6 +208,62 @@ def create_app() -> Flask:
         )
 
         return jsonify({"ok": True, "url": session_obj.url}), 200
+
+    # -----------------------
+    # PayPal Checkout
+    # -----------------------
+    def _paypal_base():
+        return "https://api-m.paypal.com" if os.environ.get("PAYPAL_MODE") == "live" \
+            else "https://api-m.sandbox.paypal.com"
+
+    def _paypal_token():
+        r = _req.post(
+            f"{_paypal_base()}/v1/oauth2/token",
+            auth=(os.environ.get("PAYPAL_CLIENT_ID", ""), os.environ.get("PAYPAL_CLIENT_SECRET", "")),
+            data={"grant_type": "client_credentials"},
+            headers={"Accept": "application/json"},
+            timeout=10,
+        )
+        r.raise_for_status()
+        return r.json()["access_token"]
+
+    @app.post("/paypal/create-order")
+    def paypal_create_order():
+        data = request.get_json(silent=True) or {}
+        listing_id = data.get("id")
+        all_listings = _load_listings()
+        listing = next((l for l in all_listings if str(l.get("id")) == str(listing_id)), None)
+        if not listing or listing.get("sold"):
+            return jsonify({"ok": False, "error": "Listing not available"}), 400
+        price = f"{float(listing['price']):.2f}"
+        token = _paypal_token()
+        r = _req.post(
+            f"{_paypal_base()}/v2/checkout/orders",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            json={
+                "intent": "CAPTURE",
+                "purchase_units": [{"amount": {"currency_code": "USD", "value": price},
+                                    "description": listing["title"]}],
+            },
+            timeout=10,
+        )
+        r.raise_for_status()
+        return jsonify({"ok": True, "orderID": r.json()["id"]}), 200
+
+    @app.post("/paypal/capture-order")
+    def paypal_capture_order():
+        data = request.get_json(silent=True) or {}
+        order_id = data.get("orderID")
+        if not order_id:
+            return jsonify({"ok": False, "error": "Missing orderID"}), 400
+        token = _paypal_token()
+        r = _req.post(
+            f"{_paypal_base()}/v2/checkout/orders/{order_id}/capture",
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+            timeout=10,
+        )
+        r.raise_for_status()
+        return jsonify({"ok": True}), 200
 
     # -----------------------
     # Watchlist API

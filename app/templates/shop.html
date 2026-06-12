@@ -286,6 +286,9 @@
     </style>
   </head>
 
+  {% if paypal_client_id %}
+  <script src="https://www.paypal.com/sdk/js?client-id={{ paypal_client_id }}&currency=USD" defer></script>
+  {% endif %}
   <body>
     <header class="site-header">
 
@@ -415,9 +418,38 @@
           actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#c62828;font-size:14px;padding:10px 0;">This item has sold.</div>`;
         } else {
           actions.innerHTML = `
-            <button class="btn-stripe" onclick="handleStripe('${esc(listing.id)}')">Buy with card — $${esc(listing.price)}</button>
-            <button class="btn-paypal" onclick="handlePaypal()">Pay with PayPal</button>
+            <button class="btn-stripe" id="stripeBtn">Buy with card — $${esc(listing.price)}</button>
+            <div id="paypal-button-container"></div>
           `;
+          document.getElementById('stripeBtn').addEventListener('click', () => handleStripe(listing.id));
+          if (window.paypal) {
+            paypal.Buttons({
+              createOrder: async () => {
+                const res = await fetch('/paypal/create-order', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ id: listing.id }),
+                });
+                const data = await res.json();
+                return data.orderID;
+              },
+              onApprove: async (data) => {
+                await fetch('/paypal/capture-order', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ orderID: data.orderID }),
+                });
+                closeModal();
+                flash.style.display = 'block';
+                flash.style.background = '#1b4332';
+                flash.style.color = '#6fcf97';
+                flash.textContent = 'Payment successful — thank you! Check your email for confirmation.';
+              },
+              onError: () => {
+                alert('PayPal checkout failed — DM @graphitevintage on Instagram.');
+              }
+            }).render('#paypal-button-container');
+          }
         }
         document.getElementById('modalOverlay').classList.add('open');
         document.body.style.overflow = 'hidden';
@@ -440,9 +472,6 @@
         } else {
           alert('Something went wrong — DM @graphitevintage on Instagram.');
         }
-      }
-      function handlePaypal() {
-        alert('PayPal checkout coming soon — DM @graphitevintage on Instagram to purchase.');
       }
 
       document.getElementById('modalClose').addEventListener('click', closeModal);
