@@ -1,12 +1,164 @@
 {
-  "carhartt j01": {
-    "casp": null,
+  "jb0817": {
+    "casp": 900,
     "accuracy_pct": null,
-    "note": "Default: computed from comps. Override only if needed."
+    "aliases": ["jb0817 graphite"],
+    "note": "Detroit — Graphite. Owner buy price USD (incl. 20% platform buffer)."
   },
-  "carhartt j97": {
-    "casp": 325,
-    "accuracy_pct": 60,
-    "note": "Fallback baseline for rare/volatile models; tune later."
+  "jb0873": {
+    "casp": 1000,
+    "accuracy_pct": null,
+    "aliases": ["jb0873 mocha"],
+    "note": "Detroit — Mocha."
+  },
+  "jb0866": {
+    "casp": 750,
+    "accuracy_pct": null,
+    "aliases": ["jb0866 dark olive", "jb0866 dol"],
+    "note": "Detroit — Dark Olive (DOL)."
+  },
+  "j65 brick": {
+    "casp": 2500,
+    "accuracy_pct": null,
+    "aliases": ["j65 brk"],
+    "note": "Detroit — Brick (BRK). Grail tier."
+  },
+  "j65 blue": {
+    "casp": 2500,
+    "accuracy_pct": null,
+    "aliases": ["j65 blu"],
+    "note": "Detroit — Blue (BLU). Grail tier."
+  },
+  "js1237": {
+    "casp": 2000,
+    "accuracy_pct": null,
+    "aliases": ["js1237 light blue"],
+    "note": "Detroit — Light Blue. Colorway unconfirmed."
+  },
+  "js1236": {
+    "casp": 800,
+    "accuracy_pct": null,
+    "aliases": ["js1236 redwood", "js1236 rdw"],
+    "note": "Detroit — Redwood (RDW)."
+  },
+  "js1235": {
+    "casp": 800,
+    "accuracy_pct": null,
+    "aliases": ["js1235 spruce", "js1235 spc"],
+    "note": "Detroit — Spruce (SPC)."
+  },
+  "js1207": {
+    "casp": 500,
+    "accuracy_pct": null,
+    "aliases": ["js1207 natural", "js1207 nat"],
+    "note": "Detroit — Natural (NAT)."
+  },
+  "jr0115": {
+    "casp": 500,
+    "accuracy_pct": null,
+    "aliases": ["jr0115 carbon blue"],
+    "note": "Detroit — Carbon Blue."
+  },
+  "j110 darkstone": {
+    "casp": 800,
+    "accuracy_pct": null,
+    "aliases": ["j110 dst"],
+    "note": "Detroit — Darkstone (DST)."
+  },
+  "jq2472": {
+    "casp": 850,
+    "accuracy_pct": null,
+    "aliases": ["jq2472 aztec"],
+    "note": "Detroit — Aztec."
+  },
+  "jp1017": {
+    "casp": 550,
+    "accuracy_pct": null,
+    "aliases": ["jp1017 graphite"],
+    "note": "Detroit — Graphite."
+  },
+  "ju1005": {
+    "casp": 1500,
+    "accuracy_pct": null,
+    "aliases": ["ju1005 black"],
+    "note": "Detroit — Black."
+  },
+  "j97 crimson": {
+    "casp": 2700,
+    "accuracy_pct": null,
+    "aliases": ["j97 cri"],
+    "note": "Detroit — Crimson (CRI). Grail tier."
+  },
+  "j97 moss": {
+    "casp": 700,
+    "accuracy_pct": null,
+    "aliases": ["j97 mos"],
+    "note": "Detroit — Moss (MOS)."
+  },
+  "j97 burgundy": {
+    "casp": 900,
+    "accuracy_pct": null,
+    "aliases": ["j97 brg"],
+    "note": "Detroit — Burgundy (BRG)."
+  },
+  "j97 petrol": {
+    "casp": 600,
+    "accuracy_pct": null,
+    "aliases": ["j97 ptl"],
+    "note": "Detroit — Petrol (PTL)."
+  },
+  "j97 timber": {
+    "casp": 700,
+    "accuracy_pct": null,
+    "aliases": ["j97 tmb"],
+    "note": "Detroit — Timber (TMB)."
+  },
+  "j43 chestnut": {
+    "casp": 600,
+    "accuracy_pct": null,
+    "aliases": ["j43 cht"],
+    "note": "Detroit — Chestnut (CHT)."
+  },
+  "j43 burgundy": {
+    "casp": 900,
+    "accuracy_pct": null,
+    "aliases": ["j43 brg"],
+    "note": "Detroit — Burgundy (BRG)."
+  },
+  "j43 onyx": {
+    "casp": 900,
+    "accuracy_pct": null,
+    "aliases": ["j43 onx"],
+    "note": "Detroit — Onyx (ONX)."
+  },
+  "j43 hunter green": {
+    "casp": 900,
+    "accuracy_pct": null,
+    "aliases": ["j43 htg"],
+    "note": "Detroit — Hunter Green (HTG)."
+  },
+  "jb1236": {
+    "casp": 1000,
+    "accuracy_pct": null,
+    "aliases": ["jb1236 redwood", "jb1236 rdw"],
+    "note": "Detroit — Redwood."
+  },
+  "jb1215": {
+    "casp": 1000,
+    "accuracy_pct": null,
+    "aliases": ["jb1215 carbon blue"],
+    "note": "Detroit — Carbon Blue."
+  },
+  "j76 moss": {
+    "casp": 700,
+    "accuracy_pct": null,
+    "aliases": ["j76 mos"],
+    "note": "Detroit — Moss (MOS)."
+  },
+  "j76 cement": {
+    "casp": 700,
+    "accuracy_pct": null,
+    "aliases": ["j76 cmt"],
+    "note": "Detroit — Cement (CMT)."
   }
 }

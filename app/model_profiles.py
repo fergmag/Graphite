@@ -82,6 +82,18 @@ def match_profile(query: str, profiles: Dict[str, ModelProfile]) -> Optional[Mod
     return None
 
 
+def get_manual_casp_for_query(query: str, path: str = DEFAULT_PROFILES_PATH) -> Optional[float]:
+    """
+    Convenience function used by main.py.
+    Returns the manual CASP override for a query, or None if no match.
+    """
+    profiles = load_profiles(path)
+    profile = match_profile(query, profiles)
+    if profile and profile.casp is not None:
+        return profile.casp
+    return None
+
+
 def apply_profile_to_public(public_obj: Dict[str, Any], profile: ModelProfile) -> Dict[str, Any]:
     """
     Override CASP/accuracy if provided in the profile.

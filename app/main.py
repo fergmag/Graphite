@@ -386,6 +386,29 @@ def create_app() -> Flask:
                     }
                 ), 200
 
+            # No cache — try model profile as last resort
+            if get_manual_casp_for_query:
+                try:
+                    profile_casp = get_manual_casp_for_query(query)
+                    if profile_casp is not None:
+                        public = build_public_payload(casp=profile_casp, confidence=0.0, asking=asking)
+                        return jsonify(
+                            {
+                                "ok": True,
+                                "platform": "ebay",
+                                "query": query,
+                                "from_cache": False,
+                                "n": 0,
+                                "public": public,
+                                "summary": None,
+                                "sample": [],
+                                "note": "Scrape failed; estimate from model profile only.",
+                                "reason": str(e),
+                            }
+                        ), 200
+                except Exception:
+                    pass
+
             return jsonify(
                 {
                     "ok": False,

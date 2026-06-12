@@ -15,40 +15,58 @@ _SIZE_SYNONYMS = {
     "xx large": "xxl",
 }
 
-# Map Carhartt colorway names to their common search term.
-# Keep this conservative — only map when the two terms are genuinely interchangeable.
+# Generic color synonyms — only for terms that are NOT specific Carhartt colorway names.
+# Do NOT add crimson, moss, hunter green etc. — those are real colorway names.
 _COLOR_SYNONYMS = {
-    "crimson":       "red",
-    "hunter green":  "green",
-    "moss":          "green",
-    "sage":          "green",
-    "forest green":  "green",
     "duck brown":    "brown",
-    "carhartt brown":"brown",
     "dark brown":    "brown",
     "deep blue":     "navy",
     "dark navy":     "navy",
     "midnight blue": "navy",
 }
 
+# Carhartt colorway abbreviations → full name.
+# Allows "j97 cri" and "j97 crimson" to resolve to the same cache key.
+_CODE_ALIASES = {
+    "brk": "brick",
+    "blu": "blue",
+    "cri": "crimson",
+    "mos": "moss",
+    "brg": "burgundy",
+    "ptl": "petrol",
+    "tmb": "timber",
+    "cht": "chestnut",
+    "onx": "onyx",
+    "htg": "hunter green",
+    "nat": "natural",
+    "rdw": "redwood",
+    "spc": "spruce",
+    "dol": "dark olive",
+    "dst": "darkstone",
+}
+
 
 def normalize_query(query: str) -> str:
     """
-    Lowercase + replace size words and color synonyms so that
-    'J01 Medium' and 'J01 M', or 'J01 Crimson' and 'J01 Red',
-    resolve to the same cache key and eBay query.
+    Lowercase, expand Carhartt colorway abbreviations, normalize size words,
+    and replace generic color synonyms. Ensures consistent cache keys regardless
+    of whether the user types 'j97 cri' or 'j97 crimson', 'large' or 'l', etc.
     """
     q = query.strip().lower()
 
-    # Colors first (multi-word phrases before single-word sizes)
+    # Multi-word phrases first
     for phrase, canonical in _COLOR_SYNONYMS.items():
         q = q.replace(phrase, canonical)
 
-    # Sizes: only replace whole words
+    # Carhartt code abbreviations (whole word only)
+    for abbr, full in _CODE_ALIASES.items():
+        q = re.sub(rf"\b{re.escape(abbr)}\b", full, q)
+
+    # Size words (whole word only)
     for word, canonical in _SIZE_SYNONYMS.items():
         q = re.sub(rf"\b{re.escape(word)}\b", canonical, q)
 
-    # Collapse any double spaces
+    # Collapse extra spaces
     q = re.sub(r"\s{2,}", " ", q).strip()
     return q
 
