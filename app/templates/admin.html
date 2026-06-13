@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Graphite — Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      :root {
+        --bg: #283238; --bg-header: #1c2528; --bg-card: #2f3c42;
+        --fg: #ffffff; --line: rgba(255,255,255,0.18); --muted: rgba(255,255,255,0.5);
+      }
+      body {
+        font-family: 'Inter', system-ui, sans-serif; margin: 0; padding: 0;
+        background: var(--bg); color: var(--fg); min-height: 100vh;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+      }
+
+      /* ── Topbar ── */
+      .topbar {
+        background: var(--bg-header); border-bottom: 1px solid var(--line);
+        padding: 0 20px; display: flex; align-items: center; justify-content: space-between;
+        position: sticky; top: 0; z-index: 10; height: 56px;
+      }
+      .topbar-title { font-size: 15px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; flex-shrink: 0; }
+      .tabs { display: flex; gap: 4px; }
+      .tab-btn {
+        padding: 7px 16px; border-radius: 6px; border: none;
+        background: transparent; color: var(--muted);
+        font-family: inherit; font-size: 13px; font-weight: 700;
+        letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer;
+        transition: background 0.15s, color 0.15s;
+      }
+      .tab-btn:hover { color: var(--fg); }
+      .tab-btn.active { background: rgba(255,255,255,0.12); color: var(--fg); }
+      .topbar-right { display: flex; gap: 8px; align-items: center; }
+      .topbar-link {
+        font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+        color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 5px;
+        border: 1px solid transparent; transition: color 0.15s, border-color 0.15s;
+      }
+      .topbar-link:hover { color: var(--fg); border-color: var(--line); }
+
+      /* ── Tab panels ── */
+      .tab-panel { display: none; }
+      .tab-panel.active { display: block; }
+
+      /* ══════════════════════════════════════
+         LISTINGS TAB
+      ══════════════════════════════════════ */
+      #panel-listings { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
+
+      .section-label { font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
+
+      .add-form { background: var(--bg-card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-bottom: 36px; }
+      .field { margin-bottom: 14px; }
+      .field label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+      .field input[type="text"], .field input[type="number"], .field textarea, .field select {
+        width: 100%; padding: 12px 14px;
+        background: var(--bg); border: 1px solid var(--line); border-radius: 8px;
+        color: var(--fg); font-family: inherit; font-size: 16px;
+        outline: none; transition: border-color 0.15s; -webkit-appearance: none;
+      }
+      .field input:focus, .field textarea:focus, .field select:focus { border-color: rgba(255,255,255,0.45); }
+      .field textarea { min-height: 80px; resize: vertical; }
+      .field select option { background: #283238; }
+      .photo-input { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .photo-label {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 12px 18px; border-radius: 8px; border: 1px dashed var(--line);
+        background: var(--bg); color: var(--muted); font-size: 13px; font-weight: 700;
+        cursor: pointer; transition: border-color 0.15s, color 0.15s;
+      }
+      .photo-label:hover { border-color: rgba(255,255,255,0.4); color: var(--fg); }
+      #photoInput { display: none; }
+      #photoCount { font-size: 12px; color: var(--muted); font-weight: 600; }
+      .btn-add { width: 100%; padding: 15px; margin-top: 6px; border-radius: 8px; border: none; background: #ffffff; color: #111111; font-family: inherit; font-size: 15px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: background 0.15s; }
+      .btn-add:hover { background: #e0e0e0; }
+
+      .listing-row { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 12px; display: flex; gap: 14px; align-items: flex-start; }
+      .listing-thumb { width: 64px; height: 64px; border-radius: 6px; background: var(--bg); flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+      .listing-thumb img { width: 100%; height: 100%; object-fit: cover; }
+      .listing-thumb-placeholder { font-size: 10px; color: var(--muted); font-weight: 600; text-align: center; padding: 4px; }
+      .listing-info { flex: 1; min-width: 0; }
+      .listing-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .listing-meta { font-size: 12px; color: var(--muted); font-weight: 600; }
+      .sold-badge { display: inline-block; background: #c62828; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; margin-left: 6px; vertical-align: middle; }
+      .listing-actions { display: flex; flex-direction: column; gap: 7px; flex-shrink: 0; }
+      .btn-sm { padding: 8px 14px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: var(--fg); font-family: inherit; font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+      .btn-sm:hover { background: rgba(255,255,255,0.08); }
+      .btn-sm.danger { border-color: rgba(198,40,40,0.4); color: #e57373; }
+      .btn-sm.danger:hover { background: rgba(198,40,40,0.12); }
+      .empty-state { text-align: center; padding: 40px; color: var(--muted); font-size: 13px; font-weight: 600; letter-spacing: 0.04em; }
+
+      /* ══════════════════════════════════════
+         ESTIMATOR TAB
+      ══════════════════════════════════════ */
+      #panel-estimator { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
+
+      #panel-estimator label { display: block; font-weight: 600; margin: 14px 0 6px; color: var(--fg); }
+      #panel-estimator input.est-input {
+        width: 100%; padding: 10px 12px; border: 1px solid var(--line);
+        border-radius: 12px; font-size: 14px; outline: none;
+        background: #ffffff; color: #111111; font-family: inherit;
+      }
+      .est-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+      .est-btn {
+        padding: 10px 14px; border-radius: 12px; border: 1px solid #ffffff;
+        background: #ffffff; color: #111111; cursor: pointer; font-weight: 600; font-family: inherit;
+      }
+      .est-btn.secondary {
+        background: rgba(255,255,255,0.12); color: #ffffff; border-color: var(--line);
+      }
+      .est-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+      .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+      @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+      .card { border: none; border-radius: 14px; padding: 20px; background: #ffffff; color: #111111; box-shadow: 0 4px 20px rgba(0,0,0,0.18); border-top: 3px solid #283238; }
+      .card h3 { margin: 0 0 10px; font-size: 11px; color: #888; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+      .big { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; line-height: 1; }
+      .sub { font-size: 12px; color: #888; margin-top: 8px; }
+      .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 11px; margin-top: 10px; letter-spacing: 0.03em; }
+
+      .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
+
+      .watch { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
+      .watch h2 { margin: 0 0 4px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; }
+      .watch-sub { margin: 0 0 14px; font-size: 12px; color: rgba(255,255,255,0.55); }
+      .watchrow { display: flex; gap: 10px; flex-wrap: wrap; }
+      .watchrow .est-input { flex: 1; min-width: 0; }
+      ul.watchul { margin: 14px 0 0; padding-left: 0; list-style: none; }
+      ul.watchul li { margin: 8px 0; display: flex; align-items: center; gap: 8px; }
+      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #ffffff; color: #111111; font-weight: 700; font-size: 13px; cursor: pointer; transition: opacity 0.15s; }
+      .pill:hover { opacity: 0.75; }
+      .xbtn { margin-left: 10px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #ffffff; font-weight: 700; cursor: pointer; font-family: inherit; }
+      .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
+    </style>
+  </head>
+  <body>
+
+    <div class="topbar">
+      <span class="topbar-title">Admin</span>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="listings">Listings</button>
+        <button class="tab-btn" data-tab="estimator">Estimator</button>
+      </div>
+      <div class="topbar-right">
+        <a href="/shop" class="topbar-link">Shop</a>
+        <a href="/logout" class="topbar-link">Log out</a>
+      </div>
+    </div>
+
+    <!-- ── LISTINGS PANEL ── -->
+    <div id="panel-listings" class="tab-panel active">
+      <p class="section-label">Add Listing</p>
+      <form class="add-form" method="POST" action="/admin/add" enctype="multipart/form-data">
+        <div class="field">
+          <label>Title</label>
+          <input type="text" name="title" placeholder="e.g. Carhartt J97 Crimson Detroit Jacket" required />
+        </div>
+        <div class="field">
+          <label>Size</label>
+          <select name="size">
+            <option value="">— Select —</option>
+            <option>S</option><option>M</option><option>L</option><option>XL</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Price (USD)</label>
+          <input type="number" name="price" placeholder="e.g. 2500" min="0" step="1" required />
+        </div>
+        <div class="field">
+          <label>Description (optional)</label>
+          <textarea name="description" placeholder="Condition notes, measurements, etc."></textarea>
+        </div>
+        <div class="field">
+          <label>Photos</label>
+          <div class="photo-input">
+            <label class="photo-label" for="photoInput">+ Add Photos</label>
+            <input type="file" id="photoInput" name="photos" accept="image/*" multiple />
+            <span id="photoCount"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn-add">Add Listing</button>
+      </form>
+
+      <p class="section-label">Current Listings ({{ listings|length }})</p>
+
+      {% if listings %}
+        {% for l in listings %}
+        <div class="listing-row">
+          <div class="listing-thumb">
+            {% if l.photos and l.photos|length > 0 %}
+              <img src="/static/images/listings/{{ l.photos[0] }}" alt="{{ l.title }}" />
+            {% else %}
+              <span class="listing-thumb-placeholder">No photo</span>
+            {% endif %}
+          </div>
+          <div class="listing-info">
+            <div class="listing-name">
+              {{ l.title }}{% if l.sold %}<span class="sold-badge">Sold</span>{% endif %}
+            </div>
+            <div class="listing-meta">${{ l.price }} · {{ l.size }} · {{ l.created_at }}</div>
+          </div>
+          <div class="listing-actions">
+            <form method="POST" action="/admin/toggle-sold/{{ l.id }}">
+              <button class="btn-sm" type="submit">{{ 'Mark Available' if l.sold else 'Mark Sold' }}</button>
+            </form>
+            <form method="POST" action="/admin/delete/{{ l.id }}" onsubmit="return confirm('Delete this listing?')">
+              <button class="btn-sm danger" type="submit">Delete</button>
+            </form>
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="empty-state">No listings yet.</div>
+      {% endif %}
+    </div>
+
+    <!-- ── ESTIMATOR PANEL ── -->
+    <div id="panel-estimator" class="tab-panel">
+
+      <label for="query">Jacket model</label>
+      <input class="est-input" id="query" placeholder="e.g. J97 CRI, JB0817, J65 BRK" />
+
+      <label for="asking">Asking price <span style="font-weight:400;opacity:0.7;">— optional</span></label>
+      <input class="est-input" id="asking" placeholder="e.g. 2500" />
+
+      <div class="est-row">
+        <button class="est-btn" id="estimateBtn">Get Estimate</button>
+        <button class="est-btn secondary" id="clearBtn">Clear</button>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Estimated Value</h3>
+          <p class="big" id="casp">$—</p>
+          <div class="sub">Avg of recent eBay sold listings</div>
+        </div>
+        <div class="card">
+          <h3>Accuracy</h3>
+          <p class="big" id="acc">—%</p>
+          <div class="badge" id="accLabel">—</div>
+          <div class="sub">How reliable this estimate is</div>
+        </div>
+        <div class="card">
+          <h3>Deal Score</h3>
+          <p class="big" id="deal">—</p>
+          <div class="sub" id="dealSub">Add an asking price to score the deal.</div>
+        </div>
+      </div>
+
+      <div class="status" id="status">Status: Ready</div>
+
+      <div class="watch">
+        <h2>Watchlist</h2>
+        <p class="watch-sub">Saved queries — auto-refresh coming later.</p>
+        <div class="watchrow">
+          <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
+          <button class="est-btn" id="watchAddBtn">Save</button>
+        </div>
+        <div id="watchList"></div>
+      </div>
+
+    </div>
+
+    <script>
+      // ── Tab switching ──
+      const tabBtns  = document.querySelectorAll('.tab-btn');
+      const panels   = document.querySelectorAll('.tab-panel');
+
+      function switchTab(name) {
+        tabBtns.forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+        panels.forEach(p => p.classList.toggle('active', p.id === `panel-${name}`));
+        location.hash = name;
+      }
+
+      tabBtns.forEach(b => b.addEventListener('click', () => switchTab(b.dataset.tab)));
+
+      // Restore tab from hash
+      const hash = location.hash.replace('#', '');
+      if (hash === 'estimator') switchTab('estimator');
+
+      // ── Photo count ──
+      document.getElementById('photoInput').addEventListener('change', function() {
+        const n = this.files.length;
+        document.getElementById('photoCount').textContent = n > 0 ? `${n} photo${n > 1 ? 's' : ''} selected` : '';
+      });
+
+      // ── Estimator ──
+      const $ = id => document.getElementById(id);
+
+      function setStatus(msg) { $('status').textContent = `Status: ${msg}`; }
+
+      function fmtMoney(x) {
+        if (x == null) return '$—';
+        const v = Number(x);
+        return Number.isFinite(v) ? `$${v.toFixed(0)}` : '$—';
+      }
+
+      function updateCards(resp) {
+        const pub = resp && resp.public;
+        if (!pub) {
+          $('casp').textContent = '$—'; $('acc').textContent = '—%';
+          $('accLabel').textContent = '—'; $('deal').textContent = '—';
+          $('dealSub').textContent = 'Add an asking price to score the deal.';
+          return;
+        }
+        $('casp').textContent = fmtMoney(pub.casp);
+        $('acc').textContent = `${pub.accuracy_pct ?? '—'}%`;
+        $('accLabel').textContent = pub.accuracy_label ?? '—';
+        if (pub.deal_score) {
+          $('deal').textContent = `${pub.deal_score}/5`;
+          $('dealSub').textContent = `${pub.deal_label} • ${pub.delta > 0 ? '+' : ''}${pub.delta} (${pub.delta_pct}%)`;
+        } else {
+          $('deal').textContent = '—';
+          $('dealSub').textContent = 'Add an asking price to score the deal.';
+        }
+      }
+
+      async function getJSON(url) {
+        const res = await fetch(url);
+        const data = await res.json().catch(() => null);
+        return { status: res.status, data };
+      }
+
+      async function postJSON(url, body) {
+        const res = await fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(body) });
+        const data = await res.json().catch(() => null);
+        return { status: res.status, data };
+      }
+
+      function renderWatchItems(items) {
+        const clean = Array.isArray(items) ? items.filter(i => typeof i === 'string' && i.trim()) : [];
+        if (!clean.length) { $('watchList').innerHTML = '<div class="tiny">No saved queries yet.</div>'; return; }
+        const ul = document.createElement('ul');
+        ul.className = 'watchul';
+        clean.forEach(q => {
+          const li = document.createElement('li');
+          const pill = document.createElement('span');
+          pill.className = 'pill'; pill.textContent = q; pill.title = 'Tap to load estimate';
+          pill.addEventListener('click', () => { $('query').value = q; runEstimate(q); });
+          const x = document.createElement('button');
+          x.className = 'xbtn'; x.textContent = '×';
+          x.addEventListener('click', async () => {
+            await fetch(`/watchlist?query=${encodeURIComponent(q)}`, { method: 'DELETE' });
+            await refreshWatchlist();
+          });
+          li.appendChild(pill); li.appendChild(x); ul.appendChild(li);
+        });
+        $('watchList').innerHTML = ''; $('watchList').appendChild(ul);
+      }
+
+      async function refreshWatchlist() {
+        const { status, data } = await getJSON('/watchlist');
+        if (status === 200 && data && data.ok) renderWatchItems(data.items || []);
+      }
+
+      async function runEstimate(query) {
+        $('estimateBtn').disabled = true;
+        setStatus('Fetching estimate…');
+        const asking = $('asking').value.trim();
+        const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : '';
+        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}`);
+        if (status !== 200 || !data || !data.ok) {
+          setStatus('Error fetching estimate'); updateCards(null);
+        } else {
+          setStatus(data.from_cache ? 'Cached result.' : 'Live result.'); updateCards(data);
+        }
+        $('estimateBtn').disabled = false;
+      }
+
+      $('estimateBtn').addEventListener('click', () => { const q = $('query').value.trim(); if (q) runEstimate(q); });
+      $('clearBtn').addEventListener('click', () => { $('asking').value = ''; updateCards(null); setStatus('Ready'); });
+      $('watchAddBtn').addEventListener('click', async () => {
+        const q = $('watchInput').value;
+        if (!q.trim()) return;
+        setStatus('Saving watch…');
+        const { status, data } = await postJSON('/watchlist', { query: q });
+        if (status !== 200 || !data || !data.ok) { setStatus('Watchlist add error'); return; }
+        $('watchInput').value = ''; renderWatchItems(data.items || []); setStatus('Watch saved.');
+      });
+
+      refreshWatchlist();
+    </script>
+  </body>
+</html>

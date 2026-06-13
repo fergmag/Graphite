@@ -5,8 +5,10 @@ import json
 import os
 import re
 
+import uuid
 import requests as _req
 import stripe
+from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -125,7 +127,7 @@ def create_app() -> Flask:
         expected = os.environ.get("TOOL_PASSWORD", "graphite")
         if password == expected:
             session["logged_in"] = True
-            return redirect(url_for("home"))
+            return redirect(url_for("admin"))
         return render_template("login.html", error=True)
 
     @app.get("/logout")
@@ -136,7 +138,7 @@ def create_app() -> Flask:
     @app.get("/tool")
     @_login_required
     def home():
-        return render_template("index.html")
+        return redirect("/admin#estimator")
 
     def _load_listings():
         listings_path = os.path.join(os.path.dirname(__file__), "listings.json")
@@ -145,6 +147,19 @@ def create_app() -> Flask:
                 return json.load(f)
         except Exception:
             return []
+
+    def _save_listings(listings):
+        listings_path = os.path.join(os.path.dirname(__file__), "listings.json")
+        with open(listings_path, "w") as f:
+            json.dump(listings, f, indent=2)
+
+    def _save_photo(file):
+        ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
+        filename = f"{uuid.uuid4().hex}.{ext}"
+        upload_dir = os.path.join(os.path.dirname(__file__), "static", "images", "listings")
+        os.makedirs(upload_dir, exist_ok=True)
+        file.save(os.path.join(upload_dir, filename))
+        return filename
 
     @app.get("/")
     @app.get("/shop")
@@ -170,6 +185,61 @@ def create_app() -> Flask:
     @app.get("/about")
     def about():
         return render_template("about.html", page="about")
+
+    # -----------------------
+    # Admin
+    # -----------------------
+    @app.get("/admin")
+    @_login_required
+    def admin():
+        return render_template("admin.html", listings=_load_listings())
+
+    @app.post("/admin/add")
+    @_login_required
+    def admin_add():
+        from datetime import datetime, timezone
+        title       = request.form.get("title", "").strip()
+        size        = request.form.get("size", "").strip()
+        price       = request.form.get("price", "").strip()
+        description = request.form.get("description", "").strip()
+        if not title or not price:
+            return redirect(url_for("admin"))
+        photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                photos.append(_save_photo(f))
+        listings = _load_listings()
+        listings.insert(0, {
+            "id": uuid.uuid4().hex[:10],
+            "title": title,
+            "size": size,
+            "price": float(price),
+            "description": description,
+            "photos": photos,
+            "sold": False,
+            "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        })
+        _save_listings(listings)
+        return redirect(url_for("admin"))
+
+    @app.post("/admin/toggle-sold/<listing_id>")
+    @_login_required
+    def admin_toggle_sold(listing_id):
+        listings = _load_listings()
+        for l in listings:
+            if str(l.get("id")) == listing_id:
+                l["sold"] = not l.get("sold", False)
+                break
+        _save_listings(listings)
+        return redirect(url_for("admin"))
+
+    @app.post("/admin/delete/<listing_id>")
+    @_login_required
+    def admin_delete(listing_id):
+        listings = _load_listings()
+        listings = [l for l in listings if str(l.get("id")) != listing_id]
+        _save_listings(listings)
+        return redirect(url_for("admin"))
 
     # -----------------------
     # Stripe Checkout
