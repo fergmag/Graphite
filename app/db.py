@@ -236,6 +236,48 @@ def add_watch(query: str) -> None:
         con.close()
 
 
+def list_comps(limit: int = 100) -> List[Dict[str, Any]]:
+    con = _connect()
+    try:
+        rows = con.execute(
+            """
+            SELECT query, title, price, url, ended_at, source, created_at
+            FROM comps
+            ORDER BY created_at DESC
+            LIMIT ?
+            """,
+            (limit,),
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+
+def count_comps() -> int:
+    con = _connect()
+    try:
+        row = con.execute("SELECT COUNT(*) as n FROM comps").fetchone()
+        return row["n"] if row else 0
+    finally:
+        con.close()
+
+
+def count_comps_for_queries(normalized_queries: List[str]) -> Dict[str, int]:
+    """Returns {normalized_query: count} for each query that has comps in the DB."""
+    if not normalized_queries:
+        return {}
+    con = _connect()
+    try:
+        placeholders = ",".join("?" * len(normalized_queries))
+        rows = con.execute(
+            f"SELECT query, COUNT(*) as n FROM comps WHERE query IN ({placeholders}) GROUP BY query",
+            normalized_queries,
+        ).fetchall()
+        return {r["query"]: r["n"] for r in rows}
+    finally:
+        con.close()
+
+
 def delete_watch(query: str) -> None:
     if query is None:
         return

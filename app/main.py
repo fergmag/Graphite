@@ -24,6 +24,9 @@ from app.db import (
     add_watch,
     list_watches,
     delete_watch,
+    list_comps,
+    count_comps,
+    count_comps_for_queries,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -153,6 +156,19 @@ def create_app() -> Flask:
         with open(listings_path, "w") as f:
             json.dump(listings, f, indent=2)
 
+    def _load_archive():
+        path = os.path.join(os.path.dirname(__file__), "archive.json")
+        try:
+            with open(path) as f:
+                return json.load(f)
+        except Exception:
+            return []
+
+    def _save_archive(data):
+        path = os.path.join(os.path.dirname(__file__), "archive.json")
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2)
+
     def _save_photo(file):
         ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
         filename = f"{uuid.uuid4().hex}.{ext}"
@@ -180,7 +196,7 @@ def create_app() -> Flask:
 
     @app.get("/archive")
     def archive():
-        return render_template("archive.html", page="archive")
+        return render_template("archive.html", page="archive", archive=_load_archive())
 
     @app.get("/about")
     def about():
@@ -192,7 +208,7 @@ def create_app() -> Flask:
     @app.get("/admin")
     @_login_required
     def admin():
-        return render_template("admin.html", listings=_load_listings())
+        return render_template("admin.html", listings=_load_listings(), archive=_load_archive())
 
     @app.post("/admin/add")
     @_login_required
@@ -240,6 +256,138 @@ def create_app() -> Flask:
         listings = [l for l in listings if str(l.get("id")) != listing_id]
         _save_listings(listings)
         return redirect(url_for("admin"))
+
+    @app.post("/admin/edit/<listing_id>")
+    @_login_required
+    def admin_edit(listing_id):
+        listings = _load_listings()
+        for l in listings:
+            if str(l.get("id")) == listing_id:
+                title = request.form.get("title", "").strip()
+                size  = request.form.get("size", "").strip()
+                price = request.form.get("price", "").strip()
+                desc  = request.form.get("description", "").strip()
+                if title: l["title"] = title
+                if size:  l["size"]  = size
+                if price:
+                    try: l["price"] = float(price)
+                    except ValueError: pass
+                l["description"] = desc
+                for f in request.files.getlist("photos"):
+                    if f and f.filename:
+                        l.setdefault("photos", []).append(_save_photo(f))
+                break
+        _save_listings(listings)
+        return redirect(url_for("admin"))
+
+    @app.get("/api/comps")
+    @_login_required
+    def api_comps():
+        limit = int(request.args.get("limit", 100))
+        return jsonify({"ok": True, "comps": list_comps(limit), "total": count_comps()})
+
+    @app.post("/api/comps/counts")
+    @_login_required
+    def api_comps_counts():
+        """Given a list of raw watchlist queries, returns {query: comp_count} using normalized keys."""
+        queries = (request.get_json(silent=True) or {}).get("queries", [])
+        normalized = {q: normalize_query(q) for q in queries if isinstance(q, str) and q.strip()}
+        nq_list = list(set(normalized.values()))
+        counts_by_nq = count_comps_for_queries(nq_list)
+        result = {orig: counts_by_nq.get(nq, 0) for orig, nq in normalized.items()}
+        return jsonify({"ok": True, "counts": result})
+
+    @app.post("/admin/populate-watchlist")
+    @_login_required
+    def admin_populate_watchlist():
+        profiles_path = os.path.join(os.path.dirname(__file__), "models.json")
+        try:
+            with open(profiles_path) as f:
+                models = json.load(f)
+            for key in models.keys():
+                add_watch(key)
+        except Exception:
+            pass
+        return redirect("/admin#estimator")
+
+    # -----------------------
+    # Archive admin
+    # -----------------------
+    @app.get("/admin/archive")
+    @_login_required
+    def admin_archive():
+        return render_template("admin.html", listings=_load_listings(), archive=_load_archive())
+
+    @app.post("/admin/archive/add-section")
+    @_login_required
+    def archive_add_section():
+        title = request.form.get("title", "").strip()
+        if not title:
+            return redirect("/admin#archive")
+        data = _load_archive()
+        data.append({"id": uuid.uuid4().hex[:10], "title": title, "subsections": []})
+        _save_archive(data)
+        return redirect("/admin#archive")
+
+    @app.post("/admin/archive/delete-section/<sid>")
+    @_login_required
+    def archive_delete_section(sid):
+        data = [s for s in _load_archive() if s["id"] != sid]
+        _save_archive(data)
+        return redirect("/admin#archive")
+
+    @app.post("/admin/archive/add-subsection/<sid>")
+    @_login_required
+    def archive_add_subsection(sid):
+        title = request.form.get("title", "").strip()
+        text  = request.form.get("text", "").strip()
+        data  = _load_archive()
+        for section in data:
+            if section["id"] == sid:
+                photos = []
+                for f in request.files.getlist("photos"):
+                    if f and f.filename:
+                        photos.append(_save_photo(f))
+                section["subsections"].append({
+                    "id": uuid.uuid4().hex[:10],
+                    "title": title,
+                    "text": text,
+                    "photos": photos,
+                })
+                break
+        _save_archive(data)
+        return redirect("/admin#archive")
+
+    @app.post("/admin/archive/update-subsection/<sid>/<ssid>")
+    @_login_required
+    def archive_update_subsection(sid, ssid):
+        title = request.form.get("title", "").strip()
+        text  = request.form.get("text", "").strip()
+        data  = _load_archive()
+        for section in data:
+            if section["id"] == sid:
+                for sub in section["subsections"]:
+                    if sub["id"] == ssid:
+                        if title: sub["title"] = title
+                        sub["text"] = text
+                        for f in request.files.getlist("photos"):
+                            if f and f.filename:
+                                sub["photos"].append(_save_photo(f))
+                        break
+                break
+        _save_archive(data)
+        return redirect("/admin#archive")
+
+    @app.post("/admin/archive/delete-subsection/<sid>/<ssid>")
+    @_login_required
+    def archive_delete_subsection(sid, ssid):
+        data = _load_archive()
+        for section in data:
+            if section["id"] == sid:
+                section["subsections"] = [s for s in section["subsections"] if s["id"] != ssid]
+                break
+        _save_archive(data)
+        return redirect("/admin#archive")
 
     # -----------------------
     # Stripe Checkout
