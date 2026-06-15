@@ -137,6 +137,33 @@
       .pill:hover { opacity: 0.75; }
       .xbtn { margin-left: 10px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #ffffff; font-weight: 700; cursor: pointer; font-family: inherit; }
       .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+      /* ══════════════════════════════════════
+         ARCHIVE TAB
+      ══════════════════════════════════════ */
+      #panel-archive { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
+
+      .arc-section { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
+      .arc-section-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; cursor: pointer; user-select: none; }
+      .arc-section-title { font-size: 14px; font-weight: 700; }
+      .arc-section-toggle { font-size: 12px; color: var(--muted); font-weight: 700; }
+      .arc-section-body { border-top: 1px solid var(--line); padding: 16px; display: none; }
+      .arc-section-body.open { display: block; }
+
+      .arc-subsection { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
+      .arc-sub-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+      .arc-sub-text { font-size: 12px; color: var(--muted); margin-bottom: 8px; white-space: pre-wrap; line-height: 1.5; }
+      .arc-sub-photos { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+      .arc-sub-photos img { width: 56px; height: 56px; object-fit: cover; border-radius: 5px; }
+      .arc-sub-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+
+      .arc-add-sub { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+      .arc-add-sub-title { font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+
+      .arc-edit-form { margin-top: 8px; display: none; }
+      .arc-edit-form.open { display: block; }
+      .arc-edit-form textarea { width: 100%; padding: 10px 12px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; min-height: 80px; resize: vertical; outline: none; margin-bottom: 8px; }
+      .arc-edit-form input[type="text"] { width: 100%; padding: 10px 12px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; outline: none; margin-bottom: 8px; }
     </style>
   </head>
   <body>
@@ -146,6 +173,7 @@
       <div class="tabs">
         <button class="tab-btn active" data-tab="listings">Listings</button>
         <button class="tab-btn" data-tab="estimator">Estimator</button>
+        <button class="tab-btn" data-tab="archive">Archive</button>
       </div>
       <div class="topbar-right">
         <a href="/shop" class="topbar-link">Shop</a>
@@ -206,6 +234,7 @@
             <div class="listing-meta">${{ l.price }} · {{ l.size }} · {{ l.created_at }}</div>
           </div>
           <div class="listing-actions">
+            <button class="btn-sm" onclick="toggleEdit('ledit-{{ l.id }}')">Edit</button>
             <form method="POST" action="/admin/toggle-sold/{{ l.id }}">
               <button class="btn-sm" type="submit">{{ 'Mark Available' if l.sold else 'Mark Sold' }}</button>
             </form>
@@ -213,6 +242,33 @@
               <button class="btn-sm danger" type="submit">Delete</button>
             </form>
           </div>
+        </div>
+        <div class="arc-edit-form" id="ledit-{{ l.id }}" style="padding:0 0 0 78px; margin-top:-8px; margin-bottom:12px;">
+          <form method="POST" action="/admin/edit/{{ l.id }}" enctype="multipart/form-data" style="background:var(--bg-card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-top:4px;">
+            <div class="field"><label>Title</label><input type="text" name="title" value="{{ l.title }}" required /></div>
+            <div class="field">
+              <label>Size</label>
+              <select name="size">
+                <option value="">— Select —</option>
+                {% for sz in ['S','M','L','XL'] %}
+                <option value="{{ sz }}" {% if l.size == sz %}selected{% endif %}>{{ sz }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="field"><label>Price (USD)</label><input type="number" name="price" value="{{ l.price }}" min="0" step="1" required /></div>
+            <div class="field"><label>Description</label><textarea name="description">{{ l.description }}</textarea></div>
+            <div class="field">
+              <label>Add More Photos</label>
+              <div class="photo-input">
+                <label class="photo-label" for="ep-{{ l.id }}">+ Add Photos</label>
+                <input type="file" id="ep-{{ l.id }}" name="photos" accept="image/*" multiple style="display:none" />
+              </div>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:4px;">
+              <button type="submit" class="btn-add" style="flex:1;">Save Changes</button>
+              <button type="button" class="btn-sm" onclick="toggleEdit('ledit-{{ l.id }}')" style="white-space:nowrap;">Cancel</button>
+            </div>
+          </form>
         </div>
         {% endfor %}
       {% else %}
@@ -256,14 +312,103 @@
       <div class="status" id="status">Status: Ready</div>
 
       <div class="watch">
-        <h2>Watchlist</h2>
-        <p class="watch-sub">Saved queries — auto-refresh coming later.</p>
-        <div class="watchrow">
-          <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
-          <button class="est-btn" id="watchAddBtn">Save</button>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+          <h2 style="margin:0;">Watchlist</h2>
+          <button class="est-btn secondary" id="watchToggleBtn" style="padding:5px 10px;font-size:11px;">Hide</button>
         </div>
-        <div id="watchList"></div>
+        <p class="watch-sub">Saved queries — auto-refresh coming later.</p>
+        <div id="watchBody">
+          <div class="watchrow">
+            <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
+            <button class="est-btn" id="watchAddBtn">Save</button>
+          </div>
+          <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
+            <button class="est-btn secondary" type="submit" style="width:100%;font-size:12px;">Load all 27 models</button>
+          </form>
+          <div id="watchList"></div>
+        </div>
       </div>
+
+    </div>
+
+    <!-- ── ARCHIVE PANEL ── -->
+    <div id="panel-archive" class="tab-panel">
+
+      <p class="section-label">Add Section</p>
+      <form class="add-form" method="POST" action="/admin/archive/add-section" style="padding:16px;">
+        <div class="field">
+          <label>Section Title</label>
+          <input type="text" name="title" placeholder="e.g. Rare Detroits" required />
+        </div>
+        <button type="submit" class="btn-add">Add Section</button>
+      </form>
+
+      <p class="section-label" style="margin-top:28px;">Sections ({{ archive|length }})</p>
+
+      {% if archive %}
+        {% for section in archive %}
+        <div class="arc-section">
+          <div class="arc-section-header" onclick="toggleArcSection('{{ section.id }}')">
+            <span class="arc-section-title">{{ section.title }}</span>
+            <span class="arc-section-toggle" id="tog-{{ section.id }}">▾</span>
+          </div>
+          <div class="arc-section-body" id="arc-{{ section.id }}">
+
+            {% for sub in section.subsections %}
+            <div class="arc-subsection">
+              <div class="arc-sub-title">{{ sub.title or '(no title)' }}</div>
+              {% if sub.text %}<div class="arc-sub-text">{{ sub.text }}</div>{% endif %}
+              {% if sub.photos %}
+              <div class="arc-sub-photos">
+                {% for p in sub.photos %}<img src="/static/images/listings/{{ p }}" />{% endfor %}
+              </div>
+              {% endif %}
+              <div class="arc-sub-actions">
+                <button class="btn-sm" onclick="toggleEdit('edit-{{ sub.id }}')">Edit</button>
+                <form method="POST" action="/admin/archive/delete-subsection/{{ section.id }}/{{ sub.id }}" style="display:inline" onsubmit="return confirm('Delete?')">
+                  <button class="btn-sm danger" type="submit">Delete</button>
+                </form>
+              </div>
+              <div class="arc-edit-form" id="edit-{{ sub.id }}">
+                <form method="POST" action="/admin/archive/update-subsection/{{ section.id }}/{{ sub.id }}" enctype="multipart/form-data">
+                  <input type="text" name="title" value="{{ sub.title }}" placeholder="Title" />
+                  <textarea name="text" placeholder="Text...">{{ sub.text }}</textarea>
+                  <div class="photo-input" style="margin-bottom:8px;">
+                    <label class="photo-label" for="ep-{{ sub.id }}">+ Add Photos</label>
+                    <input type="file" id="ep-{{ sub.id }}" name="photos" accept="image/*" multiple style="display:none" />
+                  </div>
+                  <button class="btn-sm" type="submit">Save</button>
+                </form>
+              </div>
+            </div>
+            {% endfor %}
+
+            <div class="arc-add-sub">
+              <div class="arc-add-sub-title">Add Subsection</div>
+              <form method="POST" action="/admin/archive/add-subsection/{{ section.id }}" enctype="multipart/form-data">
+                <div class="field"><label>Title</label><input type="text" name="title" placeholder="e.g. J65 Detroit Brick" /></div>
+                <div class="field"><label>Text</label><textarea name="text" placeholder="Write something..."></textarea></div>
+                <div class="field">
+                  <label>Photos</label>
+                  <div class="photo-input">
+                    <label class="photo-label" for="ap-{{ section.id }}">+ Add Photos</label>
+                    <input type="file" id="ap-{{ section.id }}" name="photos" accept="image/*" multiple style="display:none" />
+                  </div>
+                </div>
+                <button type="submit" class="btn-add" style="margin-top:4px;">Add</button>
+              </form>
+            </div>
+
+            <form method="POST" action="/admin/archive/delete-section/{{ section.id }}" style="margin-top:12px;" onsubmit="return confirm('Delete this entire section?')">
+              <button class="btn-sm danger" type="submit">Delete Section</button>
+            </form>
+
+          </div>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="empty-state">No sections yet — add one above.</div>
+      {% endif %}
 
     </div>
 
@@ -283,6 +428,29 @@
       // Restore tab from hash
       const hash = location.hash.replace('#', '');
       if (hash === 'estimator') switchTab('estimator');
+
+      // ── Archive section toggle ──
+      function toggleArcSection(id) {
+        const body = document.getElementById('arc-' + id);
+        const tog  = document.getElementById('tog-' + id);
+        const open = body.classList.toggle('open');
+        tog.textContent = open ? '▴' : '▾';
+      }
+
+      function toggleEdit(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle('open');
+      }
+
+      // ── Watchlist collapse ──
+      const watchToggleBtn = document.getElementById('watchToggleBtn');
+      const watchBody = document.getElementById('watchBody');
+      let watchVisible = true;
+      watchToggleBtn.addEventListener('click', () => {
+        watchVisible = !watchVisible;
+        watchBody.style.display = watchVisible ? 'block' : 'none';
+        watchToggleBtn.textContent = watchVisible ? 'Hide' : 'Show';
+      });
 
       // ── Photo count ──
       document.getElementById('photoInput').addEventListener('change', function() {
@@ -333,7 +501,7 @@
         return { status: res.status, data };
       }
 
-      function renderWatchItems(items) {
+      function renderWatchItems(items, counts) {
         const clean = Array.isArray(items) ? items.filter(i => typeof i === 'string' && i.trim()) : [];
         if (!clean.length) { $('watchList').innerHTML = '<div class="tiny">No saved queries yet.</div>'; return; }
         const ul = document.createElement('ul');
@@ -341,22 +509,49 @@
         clean.forEach(q => {
           const li = document.createElement('li');
           const pill = document.createElement('span');
-          pill.className = 'pill'; pill.textContent = q; pill.title = 'Tap to load estimate';
-          pill.addEventListener('click', () => { $('query').value = q; runEstimate(q); });
+          pill.className = 'pill'; pill.title = 'Tap to load estimate';
+          pill.addEventListener('click', () => { $('query').value = q; runEstimate(q); switchTab('estimator'); });
+
+          const label = document.createElement('span');
+          label.textContent = q;
+          pill.appendChild(label);
+
+          const bell = document.createElement('button');
+          bell.className = 'xbtn'; bell.style.fontSize = '13px'; bell.style.padding = '4px 8px';
+          const count = counts && counts[q] != null ? counts[q] : 0;
+          bell.textContent = count > 0 ? `🔔 ${count}` : '🔔';
+          bell.title = count > 0 ? `${count} scraped comps for ${q}` : `No comps yet for ${q}`;
+          bell.addEventListener('click', (e) => { e.stopPropagation(); /* future: open comps for this query */ });
+
           const x = document.createElement('button');
           x.className = 'xbtn'; x.textContent = '×';
           x.addEventListener('click', async () => {
             await fetch(`/watchlist?query=${encodeURIComponent(q)}`, { method: 'DELETE' });
             await refreshWatchlist();
           });
-          li.appendChild(pill); li.appendChild(x); ul.appendChild(li);
+          li.appendChild(pill); li.appendChild(bell); li.appendChild(x); ul.appendChild(li);
         });
         $('watchList').innerHTML = ''; $('watchList').appendChild(ul);
       }
 
       async function refreshWatchlist() {
         const { status, data } = await getJSON('/watchlist');
-        if (status === 200 && data && data.ok) renderWatchItems(data.items || []);
+        if (status !== 200 || !data || !data.ok) return;
+        const items = data.items || [];
+        // Fetch comp counts for all watchlist queries in one call
+        let counts = {};
+        if (items.length) {
+          const res = await fetch('/api/comps/counts', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ queries: items }),
+          }).catch(() => null);
+          if (res && res.ok) {
+            const cd = await res.json().catch(() => null);
+            if (cd && cd.counts) counts = cd.counts;
+          }
+        }
+        renderWatchItems(items, counts);
       }
 
       async function runEstimate(query) {
@@ -381,7 +576,7 @@
         setStatus('Saving watch…');
         const { status, data } = await postJSON('/watchlist', { query: q });
         if (status !== 200 || !data || !data.ok) { setStatus('Watchlist add error'); return; }
-        $('watchInput').value = ''; renderWatchItems(data.items || []); setStatus('Watch saved.');
+        $('watchInput').value = ''; setStatus('Watch saved.'); await refreshWatchlist();
       });
 
       refreshWatchlist();
