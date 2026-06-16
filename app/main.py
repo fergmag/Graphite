@@ -2,8 +2,10 @@ from flask import Flask, jsonify, request, render_template, session, redirect, u
 from functools import wraps
 from typing import Any, Dict, List, Optional, Sequence
 import json
+import logging
 import os
 import re
+import threading
 
 import uuid
 import requests as _req
@@ -296,6 +298,20 @@ def create_app() -> Flask:
         counts_by_nq = count_comps_for_queries(nq_list)
         result = {orig: counts_by_nq.get(nq, 0) for orig, nq in normalized.items()}
         return jsonify({"ok": True, "counts": result})
+
+    @app.get("/admin/refresh-status")
+    @_login_required
+    def admin_refresh_status():
+        from app.scraper import get_refresh_status
+        return jsonify({"ok": True, **get_refresh_status()})
+
+    @app.post("/admin/refresh-now")
+    @_login_required
+    def admin_refresh_now():
+        from app.scraper import refresh_all_watchlist
+        t = threading.Thread(target=refresh_all_watchlist, daemon=True)
+        t.start()
+        return jsonify({"ok": True, "message": "Refresh started in background"})
 
     @app.post("/admin/populate-watchlist")
     @_login_required
@@ -744,6 +760,23 @@ def create_app() -> Flask:
                 **payload,
             }
         ), 200
+
+    # ── Background scheduler ──
+    # Guard: in Flask debug mode the reloader forks a child process; only start
+    # the scheduler in the child (WERKZEUG_RUN_MAIN=true) or in production.
+    _in_reloader_child = os.environ.get("WERKZEUG_RUN_MAIN") == "true"
+    _should_schedule = not app.debug or _in_reloader_child
+    if _should_schedule:
+        try:
+            from apscheduler.schedulers.background import BackgroundScheduler
+            from app.scraper import refresh_all_watchlist as _refresh
+            _sched = BackgroundScheduler(daemon=True)
+            _sched.add_job(_refresh, "interval", hours=6, id="watchlist_refresh",
+                           misfire_grace_time=300)
+            _sched.start()
+            logging.getLogger(__name__).info("[scheduler] Started — refresh every 6 h")
+        except Exception as _e:
+            logging.getLogger(__name__).warning("[scheduler] Could not start: %s", _e)
 
     return app
 

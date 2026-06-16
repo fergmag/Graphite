@@ -316,7 +316,7 @@
           <h2 style="margin:0;">Watchlist</h2>
           <button class="est-btn secondary" id="watchToggleBtn" style="padding:5px 10px;font-size:11px;">Hide</button>
         </div>
-        <p class="watch-sub">Saved queries — auto-refresh coming later.</p>
+        <p class="watch-sub">Auto-refreshes every 6 hours. <span id="lastRefresh" style="color:var(--muted);"></span></p>
         <div id="watchBody">
           <div class="watchrow">
             <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
@@ -325,6 +325,7 @@
           <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
             <button class="est-btn secondary" type="submit" style="width:100%;font-size:12px;">Load all 27 models</button>
           </form>
+          <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
         </div>
       </div>
@@ -579,6 +580,39 @@
         $('watchInput').value = ''; setStatus('Watch saved.'); await refreshWatchlist();
       });
 
+      // ── Refresh status ──
+      async function loadRefreshStatus() {
+        const res = await fetch('/admin/refresh-status').catch(() => null);
+        if (!res || !res.ok) return;
+        const d = await res.json().catch(() => null);
+        if (!d || !d.ran_at) return;
+        const ago = Math.round((Date.now() - new Date(d.ran_at).getTime()) / 60000);
+        const label = ago < 60 ? `${ago}m ago` : `${Math.round(ago/60)}h ago`;
+        const stat = d.ok != null ? ` · ${d.ok} ok / ${d.failed} failed` : '';
+        document.getElementById('lastRefresh').textContent = `Last run: ${label}${stat}`;
+      }
+
+      const refreshNowBtn = document.getElementById('refreshNowBtn');
+      if (refreshNowBtn) {
+        refreshNowBtn.addEventListener('click', async () => {
+          refreshNowBtn.disabled = true;
+          refreshNowBtn.textContent = 'Starting…';
+          const res = await fetch('/admin/refresh-now', { method: 'POST' }).catch(() => null);
+          if (res && res.ok) {
+            refreshNowBtn.textContent = 'Running in background…';
+            setTimeout(() => {
+              refreshNowBtn.textContent = 'Refresh All Now';
+              refreshNowBtn.disabled = false;
+              refreshWatchlist();
+            }, 60000); // re-enable after 60s; counts will update
+          } else {
+            refreshNowBtn.textContent = 'Error — try again';
+            refreshNowBtn.disabled = false;
+          }
+        });
+      }
+
+      loadRefreshStatus();
       refreshWatchlist();
     </script>
   </body>
