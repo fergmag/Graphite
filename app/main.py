@@ -7,6 +7,7 @@ import os
 import re
 import threading
 
+import base64
 import uuid
 import requests as _req
 import stripe
@@ -46,6 +47,61 @@ try:
     from app.model_profiles import get_manual_casp_for_query  # type: ignore
 except Exception:
     get_manual_casp_for_query = None  # type: ignore
+
+
+_APP_DATA_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def _github_sync_file(rel_path: str, content: str, message: str) -> None:
+    """Push a file to the GitHub repo via API. No-op if env vars not set."""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    repo  = os.environ.get("GITHUB_REPO", "")   # e.g. "fergmag/Graphite"
+    if not token or not repo:
+        return
+    try:
+        url = f"https://api.github.com/repos/{repo}/contents/{rel_path}"
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        r = _req.get(url, headers=headers, timeout=8, params={"ref": "main"})
+        sha = r.json().get("sha") if r.status_code == 200 else None
+        body: Dict[str, Any] = {
+            "message": message,
+            "content": base64.b64encode(content.encode()).decode(),
+            "branch": "main",
+        }
+        if sha:
+            body["sha"] = sha
+        _req.put(url, headers=headers, json=body, timeout=12)
+    except Exception as e:
+        logging.getLogger(__name__).warning("[github-sync] %s: %s", rel_path, e)
+
+
+def _persist_listings() -> None:
+    """Write listings to JSON and sync to GitHub so data survives redeploys."""
+    data = db_list_listings()
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    path = os.path.join(_APP_DATA_DIR, "listings.json")
+    try:
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception:
+        pass
+    _github_sync_file("app/listings.json", content, "sync: listings updated")
+
+
+def _persist_archive() -> None:
+    """Write archive sections to JSON and sync to GitHub so data survives redeploys."""
+    data = db_load_archive()
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    path = os.path.join(_APP_DATA_DIR, "archive.json")
+    try:
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception:
+        pass
+    _github_sync_file("app/archive.json", content, "sync: archive updated")
 
 
 def _parse_bool(x: str, default: bool = False) -> bool:
@@ -227,18 +283,21 @@ def create_app() -> Flask:
             "sold": False,
             "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         })
+        _persist_listings()
         return redirect("/admin#listings")
 
     @app.post("/admin/toggle-sold/<listing_id>")
     @_login_required
     def admin_toggle_sold(listing_id):
         db_toggle_sold(listing_id)
+        _persist_listings()
         return redirect("/admin#listings")
 
     @app.post("/admin/delete/<listing_id>")
     @_login_required
     def admin_delete(listing_id):
         db_delete_listing(listing_id)
+        _persist_listings()
         return redirect("/admin#listings")
 
     @app.post("/admin/edit/<listing_id>")
@@ -259,6 +318,7 @@ def create_app() -> Flask:
         if new_photos:
             fields["photos"] = new_photos
         db_update_listing(listing_id, fields)
+        _persist_listings()
         return redirect("/admin#listings")
 
     @app.get("/api/history")
@@ -334,6 +394,7 @@ def create_app() -> Flask:
             if f and f.filename:
                 photos.append(_save_photo(f))
         db_add_section(uuid.uuid4().hex[:10], title, text=text, photos=photos)
+        _persist_archive()
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/edit-section/<sid>")
@@ -346,12 +407,14 @@ def create_app() -> Flask:
             if f and f.filename:
                 photos.append(_save_photo(f))
         db_update_section(sid, {"title": title, "text": text, "photos": photos or None})
+        _persist_archive()
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/delete-section/<sid>")
     @_login_required
     def archive_delete_section(sid):
         db_delete_section(sid)
+        _persist_archive()
         return redirect("/admin#archive")
 
     # -----------------------

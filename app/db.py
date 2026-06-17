@@ -116,8 +116,7 @@ def init_db() -> None:
             )
 
         # listings
-        listings_new = not _table_exists(con, "listings")
-        if listings_new:
+        if not _table_exists(con, "listings"):
             con.execute(
                 """
                 CREATE TABLE listings (
@@ -133,12 +132,11 @@ def init_db() -> None:
                 )
                 """
             )
-            # Migrate from listings.json if it exists
-            _migrate_listings_json(con)
+        # Always migrate from JSON — INSERT OR IGNORE skips existing rows
+        _migrate_listings_json(con)
 
         # archive
-        archive_new = not _table_exists(con, "archive_sections")
-        if archive_new:
+        if not _table_exists(con, "archive_sections"):
             con.execute(
                 """
                 CREATE TABLE archive_sections (
@@ -150,10 +148,11 @@ def init_db() -> None:
                 )
                 """
             )
-            _migrate_archive_json(con)
         else:
             _ensure_column(con, "archive_sections", "text", "TEXT")
             _ensure_column(con, "archive_sections", "photos", "TEXT")
+        # Always migrate from JSON — INSERT OR IGNORE skips existing rows
+        _migrate_archive_json(con)
 
         con.commit()
     finally:
@@ -192,9 +191,15 @@ def _migrate_archive_json(con: sqlite3.Connection) -> None:
     except Exception:
         return
     for si, section in enumerate(sections):
+        photos = section.get("photos") or []
+        if isinstance(photos, str):
+            try:
+                photos = json.loads(photos)
+            except Exception:
+                photos = []
         con.execute(
             "INSERT OR IGNORE INTO archive_sections (id, title, text, photos, position) VALUES (?,?,?,?,?)",
-            (section["id"], section["title"], None, json.dumps([]), si),
+            (section["id"], section.get("title", ""), section.get("text", ""), json.dumps(photos), si),
         )
 
 
