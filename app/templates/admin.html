@@ -126,6 +126,14 @@
 
       .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
 
+      .chart-wrap { margin-top: 20px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; display: none; }
+      .chart-wrap.visible { display: block; }
+      .chart-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
+      .chart-title { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+      .chart-range { font-size: 11px; color: var(--muted); }
+      .chart-svg { width: 100%; height: 80px; display: block; }
+      .chart-labels { display: flex; justify-content: space-between; margin-top: 4px; font-size: 10px; color: var(--muted); }
+
       .watch { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
       .watch h2 { margin: 0 0 4px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; }
       .watch-sub { margin: 0 0 14px; font-size: 12px; color: rgba(255,255,255,0.55); }
@@ -171,9 +179,9 @@
     <div class="topbar">
       <span class="topbar-title">Admin</span>
       <div class="tabs">
-        <button class="tab-btn active" data-tab="listings">Listings</button>
-        <button class="tab-btn" data-tab="estimator">Estimator</button>
-        <button class="tab-btn" data-tab="archive">Archive</button>
+        <button type="button" class="tab-btn active" data-tab="listings">Listings</button>
+        <button type="button" class="tab-btn" data-tab="estimator">Estimator</button>
+        <button type="button" class="tab-btn" data-tab="archive">Archive</button>
       </div>
       <div class="topbar-right">
         <a href="/shop" class="topbar-link">Shop</a>
@@ -311,6 +319,15 @@
 
       <div class="status" id="status">Status: Ready</div>
 
+      <div class="chart-wrap" id="chartWrap">
+        <div class="chart-header">
+          <span class="chart-title">CASP History</span>
+          <span class="chart-range" id="chartRange"></span>
+        </div>
+        <svg class="chart-svg" id="chartSvg" viewBox="0 0 600 80" preserveAspectRatio="none"></svg>
+        <div class="chart-labels" id="chartLabels"></div>
+      </div>
+
       <div class="watch">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <h2 style="margin:0;">Watchlist</h2>
@@ -428,7 +445,7 @@
 
       // Restore tab from hash
       const hash = location.hash.replace('#', '');
-      if (hash === 'estimator') switchTab('estimator');
+      if (['estimator', 'archive', 'listings'].includes(hash)) switchTab(hash);
 
       // ── Archive section toggle ──
       function toggleArcSection(id) {
@@ -562,15 +579,16 @@
         const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : '';
         const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}`);
         if (status !== 200 || !data || !data.ok) {
-          setStatus('Error fetching estimate'); updateCards(null);
+          setStatus('Error fetching estimate'); updateCards(null); renderChart(null);
         } else {
           setStatus(data.from_cache ? 'Cached result.' : 'Live result.'); updateCards(data);
+          loadHistory(query);
         }
         $('estimateBtn').disabled = false;
       }
 
       $('estimateBtn').addEventListener('click', () => { const q = $('query').value.trim(); if (q) runEstimate(q); });
-      $('clearBtn').addEventListener('click', () => { $('asking').value = ''; updateCards(null); setStatus('Ready'); });
+      $('clearBtn').addEventListener('click', () => { $('asking').value = ''; updateCards(null); renderChart(null); setStatus('Ready'); });
       $('watchAddBtn').addEventListener('click', async () => {
         const q = $('watchInput').value;
         if (!q.trim()) return;
@@ -579,6 +597,73 @@
         if (status !== 200 || !data || !data.ok) { setStatus('Watchlist add error'); return; }
         $('watchInput').value = ''; setStatus('Watch saved.'); await refreshWatchlist();
       });
+
+      // ── CASP History Chart ──
+      function renderChart(history) {
+        const wrap = $('chartWrap');
+        const svg  = $('chartSvg');
+        const labels = $('chartLabels');
+        const rangeEl = $('chartRange');
+        svg.innerHTML = '';
+        labels.innerHTML = '';
+
+        if (!history || history.length < 2) {
+          wrap.classList.remove('visible');
+          return;
+        }
+
+        const W = 600, H = 80, PAD = 6;
+        const prices = history.map(d => d.casp);
+        const minP = Math.min(...prices);
+        const maxP = Math.max(...prices);
+        const spread = maxP - minP || 1;
+
+        const toX = i => PAD + (i / (history.length - 1)) * (W - PAD * 2);
+        const toY = p => PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
+
+        const pts = history.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
+
+        // shaded area under line
+        const areaFirst = `${toX(0).toFixed(1)},${H}`;
+        const areaLast  = `${toX(history.length-1).toFixed(1)},${H}`;
+        const area = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+        area.setAttribute('points', `${areaFirst} ${pts} ${areaLast}`);
+        area.setAttribute('fill', 'rgba(255,255,255,0.06)');
+        svg.appendChild(area);
+
+        // line
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+        line.setAttribute('points', pts);
+        line.setAttribute('fill', 'none');
+        line.setAttribute('stroke', '#ffffff');
+        line.setAttribute('stroke-width', '2');
+        line.setAttribute('stroke-linejoin', 'round');
+        svg.appendChild(line);
+
+        // end dot
+        const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot.setAttribute('cx', toX(history.length-1).toFixed(1));
+        dot.setAttribute('cy', toY(prices[prices.length-1]).toFixed(1));
+        dot.setAttribute('r', '3');
+        dot.setAttribute('fill', '#ffffff');
+        svg.appendChild(dot);
+
+        // range label
+        rangeEl.textContent = `$${minP.toFixed(0)} – $${maxP.toFixed(0)} · ${history.length} runs`;
+
+        // date labels: first and last
+        const fmt = s => s ? s.slice(0,10) : '';
+        labels.innerHTML = `<span>${fmt(history[0].created_at)}</span><span>${fmt(history[history.length-1].created_at)}</span>`;
+
+        wrap.classList.add('visible');
+      }
+
+      async function loadHistory(query) {
+        const res = await fetch(`/api/history?query=${encodeURIComponent(query)}`).catch(() => null);
+        if (!res || !res.ok) return;
+        const d = await res.json().catch(() => null);
+        if (d && d.history) renderChart(d.history);
+      }
 
       // ── Refresh status ──
       async function loadRefreshStatus() {

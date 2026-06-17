@@ -29,6 +29,7 @@ from app.db import (
     list_comps,
     count_comps,
     count_comps_for_queries,
+    get_casp_history,
     db_list_listings,
     db_insert_listing,
     db_update_listing,
@@ -255,6 +256,15 @@ def create_app() -> Flask:
             fields["photos"] = new_photos
         db_update_listing(listing_id, fields)
         return redirect("/admin#listings")
+
+    @app.get("/api/history")
+    @_login_required
+    def api_history():
+        from app.filters import normalize_query as _nq
+        query = _nq(request.args.get("query") or "")
+        if not query:
+            return jsonify({"ok": False, "error": "Missing query"}), 400
+        return jsonify({"ok": True, "query": query, "history": get_casp_history(query)})
 
     @app.get("/api/comps")
     @_login_required

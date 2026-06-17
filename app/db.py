@@ -363,6 +363,24 @@ def count_comps() -> int:
         con.close()
 
 
+def get_casp_history(query: str, limit: int = 60) -> List[Dict[str, Any]]:
+    """Returns [{casp, created_at}] oldest-first for a query, for charting."""
+    con = _connect()
+    try:
+        rows = con.execute(
+            """
+            SELECT casp, created_at FROM estimates
+            WHERE query=? AND casp IS NOT NULL
+            ORDER BY created_at ASC
+            LIMIT ?
+            """,
+            (query, limit),
+        ).fetchall()
+        return [{"casp": r["casp"], "created_at": r["created_at"]} for r in rows]
+    finally:
+        con.close()
+
+
 def count_comps_for_queries(normalized_queries: List[str]) -> Dict[str, int]:
     """Returns {normalized_query: count} for each query that has comps in the DB."""
     if not normalized_queries:
