@@ -35,9 +35,21 @@
 
       .archive-empty { text-align: center; padding: 80px 24px; color: rgba(255,255,255,0.4); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 
-      .archive-entry { margin-bottom: 56px; }
-      .entry-title { font-size: 22px; font-weight: 800; margin: 0 0 14px; line-height: 1.2; }
-      .entry-text { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.8); margin: 0 0 20px; white-space: pre-wrap; }
+      .archive-entry { border-bottom: 1px solid var(--line); }
+      .entry-header {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 28px 0; cursor: pointer; user-select: none; gap: 20px;
+      }
+      .entry-title { font-size: 28px; font-weight: 800; margin: 0; line-height: 1.1; letter-spacing: -0.02em; }
+      .entry-arrow {
+        font-size: 20px; color: rgba(255,255,255,0.4); flex-shrink: 0;
+        transition: transform 0.25s; line-height: 1;
+      }
+      .entry-arrow.open { transform: rotate(180deg); }
+
+      .entry-body { display: none; padding-bottom: 36px; }
+      .entry-body.open { display: block; }
+      .entry-text { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.8); margin: 0 0 24px; white-space: pre-wrap; }
 
       .photo-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
       .photo-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; display: block; }
@@ -78,20 +90,35 @@
       {% if archive %}
         {% for section in archive %}
         <div class="archive-entry">
-          <h2 class="entry-title">{{ section.title }}</h2>
-          {% if section.text %}<p class="entry-text">{{ section.text }}</p>{% endif %}
-          {% if section.photos %}
-          <div class="photo-grid">
-            {% for photo in section.photos %}
-            <img src="/photos/{{ photo }}" alt="{{ section.title }}" loading="lazy" />
-            {% endfor %}
+          <div class="entry-header" onclick="toggleEntry('ae-{{ loop.index }}')">
+            <h2 class="entry-title">{{ section.title }}</h2>
+            <span class="entry-arrow" id="arr-{{ loop.index }}">▾</span>
           </div>
-          {% endif %}
+          <div class="entry-body" id="ae-{{ loop.index }}">
+            {% if section.text %}<p class="entry-text">{{ section.text }}</p>{% endif %}
+            {% if section.photos %}
+            <div class="photo-grid">
+              {% for photo in section.photos %}
+              <img src="/photos/{{ photo }}" alt="{{ section.title }}" loading="lazy" />
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
         </div>
         {% endfor %}
       {% else %}
         <div class="archive-empty">Archive coming soon</div>
       {% endif %}
     </div>
+
+    <script>
+      function toggleEntry(id) {
+        const body = document.getElementById(id);
+        const idx  = id.replace('ae-', '');
+        const arr  = document.getElementById('arr-' + idx);
+        const open = body.classList.toggle('open');
+        arr.classList.toggle('open', open);
+      }
+    </script>
   </body>
 </html>
