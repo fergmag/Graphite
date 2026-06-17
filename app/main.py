@@ -29,6 +29,17 @@ from app.db import (
     list_comps,
     count_comps,
     count_comps_for_queries,
+    db_list_listings,
+    db_insert_listing,
+    db_update_listing,
+    db_toggle_sold,
+    db_delete_listing,
+    db_load_archive,
+    db_add_section,
+    db_delete_section,
+    db_add_subsection,
+    db_update_subsection,
+    db_delete_subsection,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -145,31 +156,6 @@ def create_app() -> Flask:
     def home():
         return redirect("/admin#estimator")
 
-    def _load_listings():
-        listings_path = os.path.join(os.path.dirname(__file__), "listings.json")
-        try:
-            with open(listings_path) as f:
-                return json.load(f)
-        except Exception:
-            return []
-
-    def _save_listings(listings):
-        listings_path = os.path.join(os.path.dirname(__file__), "listings.json")
-        with open(listings_path, "w") as f:
-            json.dump(listings, f, indent=2)
-
-    def _load_archive():
-        path = os.path.join(os.path.dirname(__file__), "archive.json")
-        try:
-            with open(path) as f:
-                return json.load(f)
-        except Exception:
-            return []
-
-    def _save_archive(data):
-        path = os.path.join(os.path.dirname(__file__), "archive.json")
-        with open(path, "w") as f:
-            json.dump(data, f, indent=2)
 
     def _save_photo(file):
         ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
@@ -182,7 +168,7 @@ def create_app() -> Flask:
     @app.get("/")
     @app.get("/shop")
     def shop():
-        all_listings = _load_listings()
+        all_listings = db_list_listings()
         return render_template("shop.html",
             listings=[l for l in all_listings if not l.get("sold")],
             page="shop",
@@ -190,7 +176,7 @@ def create_app() -> Flask:
 
     @app.get("/sold")
     def sold():
-        all_listings = _load_listings()
+        all_listings = db_list_listings()
         return render_template("shop.html",
             listings=[l for l in all_listings if l.get("sold")],
             page="sold",
@@ -198,7 +184,7 @@ def create_app() -> Flask:
 
     @app.get("/archive")
     def archive():
-        return render_template("archive.html", page="archive", archive=_load_archive())
+        return render_template("archive.html", page="archive", archive=db_load_archive())
 
     @app.get("/about")
     def about():
@@ -210,7 +196,7 @@ def create_app() -> Flask:
     @app.get("/admin")
     @_login_required
     def admin():
-        return render_template("admin.html", listings=_load_listings(), archive=_load_archive())
+        return render_template("admin.html", listings=db_list_listings(), archive=db_load_archive())
 
     @app.post("/admin/add")
     @_login_required
@@ -221,13 +207,12 @@ def create_app() -> Flask:
         price       = request.form.get("price", "").strip()
         description = request.form.get("description", "").strip()
         if not title or not price:
-            return redirect(url_for("admin"))
+            return redirect("/admin#listings")
         photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
                 photos.append(_save_photo(f))
-        listings = _load_listings()
-        listings.insert(0, {
+        db_insert_listing({
             "id": uuid.uuid4().hex[:10],
             "title": title,
             "size": size,
@@ -237,50 +222,39 @@ def create_app() -> Flask:
             "sold": False,
             "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         })
-        _save_listings(listings)
-        return redirect(url_for("admin"))
+        return redirect("/admin#listings")
 
     @app.post("/admin/toggle-sold/<listing_id>")
     @_login_required
     def admin_toggle_sold(listing_id):
-        listings = _load_listings()
-        for l in listings:
-            if str(l.get("id")) == listing_id:
-                l["sold"] = not l.get("sold", False)
-                break
-        _save_listings(listings)
-        return redirect(url_for("admin"))
+        db_toggle_sold(listing_id)
+        return redirect("/admin#listings")
 
     @app.post("/admin/delete/<listing_id>")
     @_login_required
     def admin_delete(listing_id):
-        listings = _load_listings()
-        listings = [l for l in listings if str(l.get("id")) != listing_id]
-        _save_listings(listings)
-        return redirect(url_for("admin"))
+        db_delete_listing(listing_id)
+        return redirect("/admin#listings")
 
     @app.post("/admin/edit/<listing_id>")
     @_login_required
     def admin_edit(listing_id):
-        listings = _load_listings()
-        for l in listings:
-            if str(l.get("id")) == listing_id:
-                title = request.form.get("title", "").strip()
-                size  = request.form.get("size", "").strip()
-                price = request.form.get("price", "").strip()
-                desc  = request.form.get("description", "").strip()
-                if title: l["title"] = title
-                if size:  l["size"]  = size
-                if price:
-                    try: l["price"] = float(price)
-                    except ValueError: pass
-                l["description"] = desc
-                for f in request.files.getlist("photos"):
-                    if f and f.filename:
-                        l.setdefault("photos", []).append(_save_photo(f))
-                break
-        _save_listings(listings)
-        return redirect(url_for("admin"))
+        title = request.form.get("title", "").strip()
+        size  = request.form.get("size", "").strip()
+        price = request.form.get("price", "").strip()
+        desc  = request.form.get("description", "").strip()
+        new_photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                new_photos.append(_save_photo(f))
+        fields: Dict[str, Any] = {"title": title, "size": size, "description": desc}
+        if price:
+            try: fields["price"] = float(price)
+            except ValueError: pass
+        if new_photos:
+            fields["photos"] = new_photos
+        db_update_listing(listing_id, fields)
+        return redirect("/admin#listings")
 
     @app.get("/api/comps")
     @_login_required
@@ -332,7 +306,7 @@ def create_app() -> Flask:
     @app.get("/admin/archive")
     @_login_required
     def admin_archive():
-        return render_template("admin.html", listings=_load_listings(), archive=_load_archive())
+        return render_template("admin.html", listings=db_list_listings(), archive=db_load_archive())
 
     @app.post("/admin/archive/add-section")
     @_login_required
@@ -340,16 +314,13 @@ def create_app() -> Flask:
         title = request.form.get("title", "").strip()
         if not title:
             return redirect("/admin#archive")
-        data = _load_archive()
-        data.append({"id": uuid.uuid4().hex[:10], "title": title, "subsections": []})
-        _save_archive(data)
+        db_add_section(uuid.uuid4().hex[:10], title)
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/delete-section/<sid>")
     @_login_required
     def archive_delete_section(sid):
-        data = [s for s in _load_archive() if s["id"] != sid]
-        _save_archive(data)
+        db_delete_section(sid)
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/add-subsection/<sid>")
@@ -357,21 +328,16 @@ def create_app() -> Flask:
     def archive_add_subsection(sid):
         title = request.form.get("title", "").strip()
         text  = request.form.get("text", "").strip()
-        data  = _load_archive()
-        for section in data:
-            if section["id"] == sid:
-                photos = []
-                for f in request.files.getlist("photos"):
-                    if f and f.filename:
-                        photos.append(_save_photo(f))
-                section["subsections"].append({
-                    "id": uuid.uuid4().hex[:10],
-                    "title": title,
-                    "text": text,
-                    "photos": photos,
-                })
-                break
-        _save_archive(data)
+        photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                photos.append(_save_photo(f))
+        db_add_subsection(sid, {
+            "id": uuid.uuid4().hex[:10],
+            "title": title,
+            "text": text,
+            "photos": photos,
+        })
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/update-subsection/<sid>/<ssid>")
@@ -379,30 +345,17 @@ def create_app() -> Flask:
     def archive_update_subsection(sid, ssid):
         title = request.form.get("title", "").strip()
         text  = request.form.get("text", "").strip()
-        data  = _load_archive()
-        for section in data:
-            if section["id"] == sid:
-                for sub in section["subsections"]:
-                    if sub["id"] == ssid:
-                        if title: sub["title"] = title
-                        sub["text"] = text
-                        for f in request.files.getlist("photos"):
-                            if f and f.filename:
-                                sub["photos"].append(_save_photo(f))
-                        break
-                break
-        _save_archive(data)
+        photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                photos.append(_save_photo(f))
+        db_update_subsection(ssid, {"title": title, "text": text, "photos": photos})
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/delete-subsection/<sid>/<ssid>")
     @_login_required
     def archive_delete_subsection(sid, ssid):
-        data = _load_archive()
-        for section in data:
-            if section["id"] == sid:
-                section["subsections"] = [s for s in section["subsections"] if s["id"] != ssid]
-                break
-        _save_archive(data)
+        db_delete_subsection(ssid)
         return redirect("/admin#archive")
 
     # -----------------------
@@ -414,7 +367,7 @@ def create_app() -> Flask:
         data = request.get_json(silent=True) or {}
         listing_id = data.get("id")
 
-        all_listings = _load_listings()
+        all_listings = db_list_listings()
         listing = next((l for l in all_listings if str(l.get("id")) == str(listing_id)), None)
 
         if not listing or listing.get("sold"):
@@ -465,7 +418,7 @@ def create_app() -> Flask:
     def paypal_create_order():
         data = request.get_json(silent=True) or {}
         listing_id = data.get("id")
-        all_listings = _load_listings()
+        all_listings = db_list_listings()
         listing = next((l for l in all_listings if str(l.get("id")) == str(listing_id)), None)
         if not listing or listing.get("sold"):
             return jsonify({"ok": False, "error": "Listing not available"}), 400
