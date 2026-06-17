@@ -151,27 +151,20 @@
       ══════════════════════════════════════ */
       #panel-archive { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
 
-      .arc-section { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
-      .arc-section-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; cursor: pointer; user-select: none; }
-      .arc-section-title { font-size: 14px; font-weight: 700; }
-      .arc-section-toggle { font-size: 12px; color: var(--muted); font-weight: 700; }
-      .arc-section-body { border-top: 1px solid var(--line); padding: 16px; display: none; }
-      .arc-section-body.open { display: block; }
+      .arc-row { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+      .arc-row-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+      .arc-row-text { font-size: 12px; color: var(--muted); white-space: pre-wrap; line-height: 1.5; margin-bottom: 8px; }
+      .arc-row-photos { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+      .arc-row-photos img { width: 56px; height: 56px; object-fit: cover; border-radius: 5px; }
+      .arc-row-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 
-      .arc-subsection { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
-      .arc-sub-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
-      .arc-sub-text { font-size: 12px; color: var(--muted); margin-bottom: 8px; white-space: pre-wrap; line-height: 1.5; }
-      .arc-sub-photos { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
-      .arc-sub-photos img { width: 56px; height: 56px; object-fit: cover; border-radius: 5px; }
-      .arc-sub-actions { display: flex; gap: 6px; flex-wrap: wrap; }
-
-      .arc-add-sub { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
-      .arc-add-sub-title { font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
-
-      .arc-edit-form { margin-top: 8px; display: none; }
+      .arc-edit-form { margin-top: 10px; display: none; }
       .arc-edit-form.open { display: block; }
-      .arc-edit-form textarea { width: 100%; padding: 10px 12px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; min-height: 80px; resize: vertical; outline: none; margin-bottom: 8px; }
-      .arc-edit-form input[type="text"] { width: 100%; padding: 10px 12px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; outline: none; margin-bottom: 8px; }
+      .arc-edit-form input[type="text"], .arc-edit-form textarea {
+        width: 100%; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line);
+        border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; outline: none; margin-bottom: 8px;
+      }
+      .arc-edit-form textarea { min-height: 80px; resize: vertical; }
     </style>
   </head>
   <body>
@@ -230,7 +223,7 @@
         <div class="listing-row">
           <div class="listing-thumb">
             {% if l.photos and l.photos|length > 0 %}
-              <img src="/static/images/listings/{{ l.photos[0] }}" alt="{{ l.title }}" />
+              <img src="/photos/{{ l.photos[0] }}" alt="{{ l.title }}" />
             {% else %}
               <span class="listing-thumb-placeholder">No photo</span>
             {% endif %}
@@ -352,80 +345,63 @@
     <!-- ── ARCHIVE PANEL ── -->
     <div id="panel-archive" class="tab-panel">
 
-      <p class="section-label">Add Section</p>
-      <form class="add-form" method="POST" action="/admin/archive/add-section" style="padding:16px;">
+      <p class="section-label">Add Entry</p>
+      <form class="add-form" method="POST" action="/admin/archive/add-section" enctype="multipart/form-data">
         <div class="field">
-          <label>Section Title</label>
+          <label>Title</label>
           <input type="text" name="title" placeholder="e.g. Rare Detroits" required />
         </div>
-        <button type="submit" class="btn-add">Add Section</button>
+        <div class="field">
+          <label>Text (optional)</label>
+          <textarea name="text" placeholder="Write something about this piece..."></textarea>
+        </div>
+        <div class="field">
+          <label>Photos</label>
+          <div class="photo-input">
+            <label class="photo-label" for="arcPhotoInput">+ Add Photos</label>
+            <input type="file" id="arcPhotoInput" name="photos" accept="image/*" multiple style="display:none" />
+            <span id="arcPhotoCount"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn-add">Add Entry</button>
       </form>
 
-      <p class="section-label" style="margin-top:28px;">Sections ({{ archive|length }})</p>
+      <p class="section-label" style="margin-top:28px;">Entries ({{ archive|length }})</p>
 
       {% if archive %}
         {% for section in archive %}
-        <div class="arc-section">
-          <div class="arc-section-header" onclick="toggleArcSection('{{ section.id }}')">
-            <span class="arc-section-title">{{ section.title }}</span>
-            <span class="arc-section-toggle" id="tog-{{ section.id }}">▾</span>
+        <div class="arc-row">
+          <div class="arc-row-title">{{ section.title }}</div>
+          {% if section.text %}<div class="arc-row-text">{{ section.text }}</div>{% endif %}
+          {% if section.photos %}
+          <div class="arc-row-photos">
+            {% for p in section.photos %}<img src="/photos/{{ p }}" alt="" />{% endfor %}
           </div>
-          <div class="arc-section-body" id="arc-{{ section.id }}">
-
-            {% for sub in section.subsections %}
-            <div class="arc-subsection">
-              <div class="arc-sub-title">{{ sub.title or '(no title)' }}</div>
-              {% if sub.text %}<div class="arc-sub-text">{{ sub.text }}</div>{% endif %}
-              {% if sub.photos %}
-              <div class="arc-sub-photos">
-                {% for p in sub.photos %}<img src="/static/images/listings/{{ p }}" />{% endfor %}
-              </div>
-              {% endif %}
-              <div class="arc-sub-actions">
-                <button class="btn-sm" onclick="toggleEdit('edit-{{ sub.id }}')">Edit</button>
-                <form method="POST" action="/admin/archive/delete-subsection/{{ section.id }}/{{ sub.id }}" style="display:inline" onsubmit="return confirm('Delete?')">
-                  <button class="btn-sm danger" type="submit">Delete</button>
-                </form>
-              </div>
-              <div class="arc-edit-form" id="edit-{{ sub.id }}">
-                <form method="POST" action="/admin/archive/update-subsection/{{ section.id }}/{{ sub.id }}" enctype="multipart/form-data">
-                  <input type="text" name="title" value="{{ sub.title }}" placeholder="Title" />
-                  <textarea name="text" placeholder="Text...">{{ sub.text }}</textarea>
-                  <div class="photo-input" style="margin-bottom:8px;">
-                    <label class="photo-label" for="ep-{{ sub.id }}">+ Add Photos</label>
-                    <input type="file" id="ep-{{ sub.id }}" name="photos" accept="image/*" multiple style="display:none" />
-                  </div>
-                  <button class="btn-sm" type="submit">Save</button>
-                </form>
-              </div>
-            </div>
-            {% endfor %}
-
-            <div class="arc-add-sub">
-              <div class="arc-add-sub-title">Add Subsection</div>
-              <form method="POST" action="/admin/archive/add-subsection/{{ section.id }}" enctype="multipart/form-data">
-                <div class="field"><label>Title</label><input type="text" name="title" placeholder="e.g. J65 Detroit Brick" /></div>
-                <div class="field"><label>Text</label><textarea name="text" placeholder="Write something..."></textarea></div>
-                <div class="field">
-                  <label>Photos</label>
-                  <div class="photo-input">
-                    <label class="photo-label" for="ap-{{ section.id }}">+ Add Photos</label>
-                    <input type="file" id="ap-{{ section.id }}" name="photos" accept="image/*" multiple style="display:none" />
-                  </div>
-                </div>
-                <button type="submit" class="btn-add" style="margin-top:4px;">Add</button>
-              </form>
-            </div>
-
-            <form method="POST" action="/admin/archive/delete-section/{{ section.id }}" style="margin-top:12px;" onsubmit="return confirm('Delete this entire section?')">
-              <button class="btn-sm danger" type="submit">Delete Section</button>
+          {% endif %}
+          <div class="arc-row-actions">
+            <button type="button" class="btn-sm" onclick="toggleEdit('aedit-{{ section.id }}')">Edit</button>
+            <form method="POST" action="/admin/archive/delete-section/{{ section.id }}" style="display:inline" onsubmit="return confirm('Delete this entry?')">
+              <button class="btn-sm danger" type="submit">Delete</button>
             </form>
-
+          </div>
+          <div class="arc-edit-form" id="aedit-{{ section.id }}">
+            <form method="POST" action="/admin/archive/edit-section/{{ section.id }}" enctype="multipart/form-data">
+              <input type="text" name="title" value="{{ section.title }}" placeholder="Title" required />
+              <textarea name="text" placeholder="Text...">{{ section.text or '' }}</textarea>
+              <div class="photo-input" style="margin-bottom:8px;">
+                <label class="photo-label" for="aep-{{ section.id }}">+ Add Photos</label>
+                <input type="file" id="aep-{{ section.id }}" name="photos" accept="image/*" multiple style="display:none" />
+              </div>
+              <div style="display:flex; gap:8px;">
+                <button type="submit" class="btn-add" style="flex:1;">Save</button>
+                <button type="button" class="btn-sm" onclick="toggleEdit('aedit-{{ section.id }}')">Cancel</button>
+              </div>
+            </form>
           </div>
         </div>
         {% endfor %}
       {% else %}
-        <div class="empty-state">No sections yet — add one above.</div>
+        <div class="empty-state">No entries yet — add one above.</div>
       {% endif %}
 
     </div>
@@ -447,14 +423,6 @@
       const hash = location.hash.replace('#', '');
       if (['estimator', 'archive', 'listings'].includes(hash)) switchTab(hash);
 
-      // ── Archive section toggle ──
-      function toggleArcSection(id) {
-        const body = document.getElementById('arc-' + id);
-        const tog  = document.getElementById('tog-' + id);
-        const open = body.classList.toggle('open');
-        tog.textContent = open ? '▴' : '▾';
-      }
-
       function toggleEdit(id) {
         const el = document.getElementById(id);
         el.classList.toggle('open');
@@ -474,6 +442,10 @@
       document.getElementById('photoInput').addEventListener('change', function() {
         const n = this.files.length;
         document.getElementById('photoCount').textContent = n > 0 ? `${n} photo${n > 1 ? 's' : ''} selected` : '';
+      });
+      document.getElementById('arcPhotoInput').addEventListener('change', function() {
+        const n = this.files.length;
+        document.getElementById('arcPhotoCount').textContent = n > 0 ? `${n} photo${n > 1 ? 's' : ''} selected` : '';
       });
 
       // ── Estimator ──

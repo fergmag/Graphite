@@ -144,24 +144,16 @@ def init_db() -> None:
                 CREATE TABLE archive_sections (
                     id TEXT PRIMARY KEY,
                     title TEXT NOT NULL,
-                    position INTEGER NOT NULL DEFAULT 0
-                )
-                """
-            )
-            con.execute(
-                """
-                CREATE TABLE archive_subsections (
-                    id TEXT PRIMARY KEY,
-                    section_id TEXT NOT NULL,
-                    title TEXT,
                     text TEXT,
                     photos TEXT,
                     position INTEGER NOT NULL DEFAULT 0
                 )
                 """
             )
-            # Migrate from archive.json if it exists
             _migrate_archive_json(con)
+        else:
+            _ensure_column(con, "archive_sections", "text", "TEXT")
+            _ensure_column(con, "archive_sections", "photos", "TEXT")
 
         con.commit()
     finally:
@@ -201,21 +193,9 @@ def _migrate_archive_json(con: sqlite3.Connection) -> None:
         return
     for si, section in enumerate(sections):
         con.execute(
-            "INSERT OR IGNORE INTO archive_sections (id, title, position) VALUES (?,?,?)",
-            (section["id"], section["title"], si),
+            "INSERT OR IGNORE INTO archive_sections (id, title, text, photos, position) VALUES (?,?,?,?,?)",
+            (section["id"], section["title"], None, json.dumps([]), si),
         )
-        for ssi, sub in enumerate(section.get("subsections") or []):
-            con.execute(
-                "INSERT OR IGNORE INTO archive_subsections (id, section_id, title, text, photos, position) VALUES (?,?,?,?,?,?)",
-                (
-                    sub["id"],
-                    section["id"],
-                    sub.get("title", ""),
-                    sub.get("text", ""),
-                    json.dumps(sub.get("photos") or []),
-                    ssi,
-                ),
-            )
 
 
 def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
@@ -514,36 +494,48 @@ def db_delete_listing(listing_id: str) -> None:
 def db_load_archive() -> List[Dict[str, Any]]:
     con = _connect()
     try:
-        sections = con.execute(
+        rows = con.execute(
             "SELECT * FROM archive_sections ORDER BY position ASC"
         ).fetchall()
         result = []
-        for s in sections:
-            subs = con.execute(
-                "SELECT * FROM archive_subsections WHERE section_id=? ORDER BY position ASC",
-                (s["id"],),
-            ).fetchall()
-            sub_list = []
-            for sub in subs:
-                d = dict(sub)
-                try:
-                    d["photos"] = json.loads(d.get("photos") or "[]")
-                except Exception:
-                    d["photos"] = []
-                sub_list.append(d)
-            result.append({"id": s["id"], "title": s["title"], "subsections": sub_list})
+        for r in rows:
+            d = dict(r)
+            try:
+                d["photos"] = json.loads(d.get("photos") or "[]")
+            except Exception:
+                d["photos"] = []
+            result.append(d)
         return result
     finally:
         con.close()
 
 
-def db_add_section(section_id: str, title: str) -> None:
+def db_add_section(section_id: str, title: str, text: str = "", photos: Optional[List[str]] = None) -> None:
     con = _connect()
     try:
         max_pos = con.execute("SELECT COALESCE(MAX(position)+1, 0) FROM archive_sections").fetchone()[0]
         con.execute(
-            "INSERT INTO archive_sections (id, title, position) VALUES (?,?,?)",
-            (section_id, title, max_pos),
+            "INSERT INTO archive_sections (id, title, text, photos, position) VALUES (?,?,?,?,?)",
+            (section_id, title, text, json.dumps(photos or []), max_pos),
+        )
+        con.commit()
+    finally:
+        con.close()
+
+
+def db_update_section(section_id: str, fields: Dict[str, Any]) -> None:
+    con = _connect()
+    try:
+        row = con.execute("SELECT photos FROM archive_sections WHERE id=?", (section_id,)).fetchone()
+        if not row:
+            return
+        existing_photos: List[str] = json.loads(row["photos"] or "[]")
+        new_photos = fields.get("photos")
+        if new_photos:
+            existing_photos.extend(new_photos)
+        con.execute(
+            "UPDATE archive_sections SET title=?, text=?, photos=? WHERE id=?",
+            (fields.get("title", ""), fields.get("text", ""), json.dumps(existing_photos), section_id),
         )
         con.commit()
     finally:
@@ -553,59 +545,7 @@ def db_add_section(section_id: str, title: str) -> None:
 def db_delete_section(section_id: str) -> None:
     con = _connect()
     try:
-        con.execute("DELETE FROM archive_subsections WHERE section_id=?", (section_id,))
         con.execute("DELETE FROM archive_sections WHERE id=?", (section_id,))
-        con.commit()
-    finally:
-        con.close()
-
-
-def db_add_subsection(section_id: str, sub: Dict[str, Any]) -> None:
-    con = _connect()
-    try:
-        max_pos = con.execute(
-            "SELECT COALESCE(MAX(position)+1, 0) FROM archive_subsections WHERE section_id=?",
-            (section_id,),
-        ).fetchone()[0]
-        con.execute(
-            "INSERT INTO archive_subsections (id, section_id, title, text, photos, position) VALUES (?,?,?,?,?,?)",
-            (
-                sub["id"],
-                section_id,
-                sub.get("title", ""),
-                sub.get("text", ""),
-                json.dumps(sub.get("photos") or []),
-                max_pos,
-            ),
-        )
-        con.commit()
-    finally:
-        con.close()
-
-
-def db_update_subsection(sub_id: str, fields: Dict[str, Any]) -> None:
-    con = _connect()
-    try:
-        row = con.execute("SELECT photos FROM archive_subsections WHERE id=?", (sub_id,)).fetchone()
-        if not row:
-            return
-        existing_photos: List[str] = json.loads(row["photos"] or "[]")
-        new_photos = fields.get("photos")
-        if new_photos:
-            existing_photos.extend(new_photos)
-        con.execute(
-            "UPDATE archive_subsections SET title=?, text=?, photos=? WHERE id=?",
-            (fields.get("title", ""), fields.get("text", ""), json.dumps(existing_photos), sub_id),
-        )
-        con.commit()
-    finally:
-        con.close()
-
-
-def db_delete_subsection(sub_id: str) -> None:
-    con = _connect()
-    try:
-        con.execute("DELETE FROM archive_subsections WHERE id=?", (sub_id,))
         con.commit()
     finally:
         con.close()

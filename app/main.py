@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template, session, redirect, url_for
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for, send_from_directory
 from functools import wraps
 from typing import Any, Dict, List, Optional, Sequence
 import json
@@ -37,10 +37,8 @@ from app.db import (
     db_delete_listing,
     db_load_archive,
     db_add_section,
+    db_update_section,
     db_delete_section,
-    db_add_subsection,
-    db_update_subsection,
-    db_delete_subsection,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -158,13 +156,19 @@ def create_app() -> Flask:
         return redirect("/admin#estimator")
 
 
+    _DEFAULT_PHOTOS_DIR = os.path.join(os.path.dirname(__file__), "static", "images", "listings")
+    _PHOTOS_DIR = os.environ.get("GRAPHITE_PHOTOS_DIR", _DEFAULT_PHOTOS_DIR)
+
     def _save_photo(file):
         ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
         filename = f"{uuid.uuid4().hex}.{ext}"
-        upload_dir = os.path.join(os.path.dirname(__file__), "static", "images", "listings")
-        os.makedirs(upload_dir, exist_ok=True)
-        file.save(os.path.join(upload_dir, filename))
+        os.makedirs(_PHOTOS_DIR, exist_ok=True)
+        file.save(os.path.join(_PHOTOS_DIR, filename))
         return filename
+
+    @app.get("/photos/<path:filename>")
+    def serve_photo(filename):
+        return send_from_directory(_PHOTOS_DIR, filename)
 
     @app.get("/")
     @app.get("/shop")
@@ -324,48 +328,30 @@ def create_app() -> Flask:
         title = request.form.get("title", "").strip()
         if not title:
             return redirect("/admin#archive")
-        db_add_section(uuid.uuid4().hex[:10], title)
+        text = request.form.get("text", "").strip()
+        photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                photos.append(_save_photo(f))
+        db_add_section(uuid.uuid4().hex[:10], title, text=text, photos=photos)
+        return redirect("/admin#archive")
+
+    @app.post("/admin/archive/edit-section/<sid>")
+    @_login_required
+    def archive_edit_section(sid):
+        title = request.form.get("title", "").strip()
+        text  = request.form.get("text", "").strip()
+        photos = []
+        for f in request.files.getlist("photos"):
+            if f and f.filename:
+                photos.append(_save_photo(f))
+        db_update_section(sid, {"title": title, "text": text, "photos": photos or None})
         return redirect("/admin#archive")
 
     @app.post("/admin/archive/delete-section/<sid>")
     @_login_required
     def archive_delete_section(sid):
         db_delete_section(sid)
-        return redirect("/admin#archive")
-
-    @app.post("/admin/archive/add-subsection/<sid>")
-    @_login_required
-    def archive_add_subsection(sid):
-        title = request.form.get("title", "").strip()
-        text  = request.form.get("text", "").strip()
-        photos = []
-        for f in request.files.getlist("photos"):
-            if f and f.filename:
-                photos.append(_save_photo(f))
-        db_add_subsection(sid, {
-            "id": uuid.uuid4().hex[:10],
-            "title": title,
-            "text": text,
-            "photos": photos,
-        })
-        return redirect("/admin#archive")
-
-    @app.post("/admin/archive/update-subsection/<sid>/<ssid>")
-    @_login_required
-    def archive_update_subsection(sid, ssid):
-        title = request.form.get("title", "").strip()
-        text  = request.form.get("text", "").strip()
-        photos = []
-        for f in request.files.getlist("photos"):
-            if f and f.filename:
-                photos.append(_save_photo(f))
-        db_update_subsection(ssid, {"title": title, "text": text, "photos": photos})
-        return redirect("/admin#archive")
-
-    @app.post("/admin/archive/delete-subsection/<sid>/<ssid>")
-    @_login_required
-    def archive_delete_subsection(sid, ssid):
-        db_delete_subsection(ssid)
         return redirect("/admin#archive")
 
     # -----------------------

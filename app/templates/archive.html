@@ -10,7 +10,13 @@
     <style>
       *, *::before, *::after { box-sizing: border-box; }
       :root { --bg-page: #283238; --bg-header: #1c2528; --bg-light: #2f3c42; --fg: #ffffff; --line: rgba(255,255,255,0.18); }
-      body { font-family: 'Inter', system-ui, -apple-system, sans-serif; margin: 0; padding: 0; color: var(--fg); background-color: var(--bg-page); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E"); min-height: 100vh; }
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        margin: 0; padding: 0; color: var(--fg);
+        background-color: var(--bg-page);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+        min-height: 100vh;
+      }
       .site-header { position: sticky; top: 0; z-index: 100; }
       .ticker-wrap { overflow: hidden; white-space: nowrap; background: var(--bg-light); border-bottom: 1px solid var(--line); padding: 7px 0; }
       .ticker-track { display: inline-block; animation: ticker 40s linear infinite; }
@@ -18,15 +24,31 @@
       .ticker-dot { font-size: 16px; vertical-align: middle; margin: 0 16px; opacity: 0.6; }
       @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
       .header-main { background: var(--bg-header); border-bottom: 1px solid var(--line); display: flex; align-items: center; padding: 16px 40px 16px 32px; }
-      .element-logo { flex-shrink: 0; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.75); border-radius: 5px; padding: 8px 14px; text-decoration: none; color: #ffffff; min-width: 64px; line-height: 1; transition: border-color 0.15s; }
-      .element-logo:hover { border-color: #ffffff; }
+      .element-logo { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.75); border-radius: 5px; width: 58px; height: 58px; color: #ffffff; line-height: 1; }
       .el-symbol { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
       .nav-links { flex: 1; display: flex; justify-content: space-evenly; align-items: center; padding-left: 20%; }
       .nav-link { padding: 8px 12px; border-radius: 6px; border: none; background: transparent; color: rgba(255,255,255,0.75); font-family: inherit; font-size: 15px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: color 0.15s, background 0.15s; white-space: nowrap; }
       .nav-link:hover { color: #ffffff; }
       .nav-link.active { background: rgba(255,255,255,0.12); color: #ffffff; }
-      .page-content { max-width: 900px; margin: 0 auto; padding: 80px 24px; text-align: center; }
-      .page-content p { color: rgba(255,255,255,0.5); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+      .page-content { max-width: 900px; margin: 0 auto; padding: 60px 24px 100px; }
+
+      .archive-empty { text-align: center; padding: 80px 24px; color: rgba(255,255,255,0.4); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+      .archive-entry { margin-bottom: 56px; }
+      .entry-title { font-size: 22px; font-weight: 800; margin: 0 0 14px; line-height: 1.2; }
+      .entry-text { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,0.8); margin: 0 0 20px; white-space: pre-wrap; }
+
+      .photo-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+      .photo-grid img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; display: block; }
+
+      @media (max-width: 600px) {
+        .header-main { padding: 14px 20px; }
+        .nav-link { font-size: 13px; padding: 6px 8px; }
+        .nav-links { padding-left: 10%; }
+        .page-content { padding: 40px 16px 80px; }
+        .photo-grid { grid-template-columns: repeat(2, 1fr); }
+      }
     </style>
   </head>
   <body>
@@ -51,6 +73,25 @@
         </nav>
       </div>
     </header>
-    <div class="page-content"><p>Archive coming soon</p></div>
+
+    <div class="page-content">
+      {% if archive %}
+        {% for section in archive %}
+        <div class="archive-entry">
+          <h2 class="entry-title">{{ section.title }}</h2>
+          {% if section.text %}<p class="entry-text">{{ section.text }}</p>{% endif %}
+          {% if section.photos %}
+          <div class="photo-grid">
+            {% for photo in section.photos %}
+            <img src="/photos/{{ photo }}" alt="{{ section.title }}" loading="lazy" />
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="archive-empty">Archive coming soon</div>
+      {% endif %}
+    </div>
   </body>
 </html>
