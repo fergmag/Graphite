@@ -5,7 +5,11 @@
     "size": "M",
     "price": 3500.0,
     "description": "Medium J97 Crimson Detroit 2001",
-    "photos": [],
+    "photos": [
+      "57a5bc509c6542dfb88f6620d8bd59f0.jpeg",
+      "f1b6d2c34fcc40fa84507a442009c711.jpeg",
+      "026151160d454f459d56e1ebf66502fb.jpeg"
+    ],
     "sold": false,
     "created_at": "2026-06-18",
     "position": 0
