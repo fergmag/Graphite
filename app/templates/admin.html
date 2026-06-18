@@ -158,6 +158,16 @@
       .arc-row-photos img { width: 56px; height: 56px; object-fit: cover; border-radius: 5px; }
       .arc-row-actions { display: flex; gap: 6px; flex-wrap: wrap; }
 
+      .edit-photos-grid { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+      .edit-photo-item { position: relative; width: 72px; height: 72px; flex-shrink: 0; }
+      .edit-photo-item img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
+      .edit-photo-remove {
+        position: absolute; top: -6px; right: -6px; width: 20px; height: 20px;
+        border-radius: 999px; border: none; background: #c62828; color: #fff;
+        font-size: 11px; font-weight: 800; cursor: pointer; line-height: 1;
+        display: flex; align-items: center; justify-content: center; padding: 0;
+      }
+
       .arc-edit-form { margin-top: 10px; display: none; }
       .arc-edit-form.open { display: block; }
       .arc-edit-form input[type="text"], .arc-edit-form textarea {
@@ -258,6 +268,21 @@
             </div>
             <div class="field"><label>Price (USD)</label><input type="number" name="price" value="{{ l.price }}" min="0" step="1" required /></div>
             <div class="field"><label>Description</label><textarea name="description">{{ l.description }}</textarea></div>
+            {% if l.photos %}
+            <div class="field">
+              <label>Current Photos</label>
+              <div class="edit-photos-grid">
+                {% for p in l.photos %}
+                <div class="edit-photo-item">
+                  <img src="{{ p | photo_url }}" alt="" />
+                  <form method="POST" action="/admin/remove-photo/{{ l.id }}/{{ loop.index0 }}" style="display:inline" onsubmit="return confirm('Remove this photo?')">
+                    <button class="edit-photo-remove" type="submit">✕</button>
+                  </form>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
             <div class="field">
               <label>Add More Photos</label>
               <div class="photo-input">

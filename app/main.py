@@ -36,6 +36,7 @@ from app.db import (
     db_update_listing,
     db_toggle_sold,
     db_delete_listing,
+    db_set_listing_photos,
     db_load_archive,
     db_add_section,
     db_update_section,
@@ -222,23 +223,36 @@ def create_app() -> Flask:
             os.environ.get("CLOUDINARY_API_SECRET")
         )
 
-    def _save_photo(file) -> str:
+    def _save_photo(file) -> Optional[str]:
+        log = logging.getLogger(__name__)
         if _cloudinary_configured():
-            import cloudinary
-            import cloudinary.uploader
-            cloudinary.config(
-                cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
-                api_key=os.environ.get("CLOUDINARY_API_KEY"),
-                api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
-            )
-            result = cloudinary.uploader.upload(file, folder="graphite")
-            return result["secure_url"]
+            try:
+                import cloudinary
+                import cloudinary.uploader
+                cloudinary.config(
+                    cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
+                    api_key=os.environ.get("CLOUDINARY_API_KEY"),
+                    api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
+                )
+                result = cloudinary.uploader.upload(file, folder="graphite")
+                url = result.get("secure_url")
+                if not url:
+                    log.error("[cloudinary] Upload returned no URL: %s", result)
+                    return None
+                return url
+            except Exception as e:
+                log.error("[cloudinary] Upload failed: %s", e)
+                return None
         # Fallback: save locally
-        ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
-        filename = f"{uuid.uuid4().hex}.{ext}"
-        os.makedirs(_PHOTOS_DIR, exist_ok=True)
-        file.save(os.path.join(_PHOTOS_DIR, filename))
-        return filename
+        try:
+            ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
+            filename = f"{uuid.uuid4().hex}.{ext}"
+            os.makedirs(_PHOTOS_DIR, exist_ok=True)
+            file.save(os.path.join(_PHOTOS_DIR, filename))
+            return filename
+        except Exception as e:
+            log.error("[local-photo] Save failed: %s", e)
+            return None
 
     @app.template_filter("photo_url")
     def photo_url_filter(photo: str) -> str:
@@ -297,7 +311,7 @@ def create_app() -> Flask:
         photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
-                photos.append(_save_photo(f))
+                _p = _save_photo(f); photos.append(_p) if _p else None
         db_insert_listing({
             "id": uuid.uuid4().hex[:10],
             "title": title,
@@ -335,7 +349,7 @@ def create_app() -> Flask:
         new_photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
-                new_photos.append(_save_photo(f))
+                new__p = _save_photo(f); photos.append(_p) if _p else None
         fields: Dict[str, Any] = {"title": title, "size": size, "description": desc}
         if price:
             try: fields["price"] = float(price)
@@ -344,6 +358,18 @@ def create_app() -> Flask:
             fields["photos"] = new_photos
         db_update_listing(listing_id, fields)
         _persist_listings()
+        return redirect("/admin#listings")
+
+    @app.post("/admin/remove-photo/<listing_id>/<int:idx>")
+    @_login_required
+    def admin_remove_photo(listing_id, idx):
+        listing = next((l for l in db_list_listings() if l["id"] == listing_id), None)
+        if listing:
+            photos = listing.get("photos") or []
+            if 0 <= idx < len(photos):
+                photos.pop(idx)
+            db_set_listing_photos(listing_id, photos)
+            _persist_listings()
         return redirect("/admin#listings")
 
     @app.get("/api/history")
@@ -417,7 +443,7 @@ def create_app() -> Flask:
         photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
-                photos.append(_save_photo(f))
+                _p = _save_photo(f); photos.append(_p) if _p else None
         db_add_section(uuid.uuid4().hex[:10], title, text=text, photos=photos)
         _persist_archive()
         return redirect("/admin#archive")
@@ -430,7 +456,7 @@ def create_app() -> Flask:
         photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
-                photos.append(_save_photo(f))
+                _p = _save_photo(f); photos.append(_p) if _p else None
         db_update_section(sid, {"title": title, "text": text, "photos": photos or None})
         _persist_archive()
         return redirect("/admin#archive")

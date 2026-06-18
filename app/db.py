@@ -483,6 +483,15 @@ def db_toggle_sold(listing_id: str) -> None:
         con.close()
 
 
+def db_set_listing_photos(listing_id: str, photos: List[str]) -> None:
+    con = _connect()
+    try:
+        con.execute("UPDATE listings SET photos=? WHERE id=?", (json.dumps(photos), listing_id))
+        con.commit()
+    finally:
+        con.close()
+
+
 def db_delete_listing(listing_id: str) -> None:
     con = _connect()
     try:

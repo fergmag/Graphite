@@ -237,10 +237,30 @@
       .modal-photo {
         aspect-ratio: 4 / 5; background: #e8e5e0;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
+        position: relative;
       }
       @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
-      .modal-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .modal-photo img { width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; }
       .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
+      .slide-arrow {
+        position: absolute; top: 50%; transform: translateY(-50%);
+        width: 36px; height: 36px; border-radius: 999px; border: none;
+        background: rgba(255,255,255,0.85); color: #111; font-size: 14px; font-weight: 700;
+        cursor: pointer; display: flex; align-items: center; justify-content: center;
+        z-index: 5; transition: background 0.15s; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      }
+      .slide-arrow:hover { background: #fff; }
+      .slide-prev { left: 10px; }
+      .slide-next { right: 10px; }
+      .slide-dots {
+        position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+        display: flex; gap: 5px;
+      }
+      .slide-dot {
+        width: 6px; height: 6px; border-radius: 999px;
+        background: rgba(255,255,255,0.5); transition: background 0.15s;
+      }
+      .slide-dot.active { background: #fff; }
       .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; }
       .modal-close {
         position: absolute; top: 14px; right: 14px;
@@ -408,8 +428,47 @@
         });
       }
 
+      let _slideIndex = 0;
+      let _slidePhotos = [];
+
+      function buildSlider(photos, title) {
+        _slidePhotos = (photos && photos.length) ? photos : [];
+        _slideIndex  = 0;
+        const el = document.getElementById('modalPhoto');
+        if (!_slidePhotos.length) {
+          el.innerHTML = `<span class="modal-photo-placeholder">Photo coming soon</span>`;
+          return;
+        }
+        el.innerHTML = `
+          <img id="slideImg" src="${photoSrc(_slidePhotos[0])}" alt="${esc(title)}" draggable="false" />
+          ${_slidePhotos.length > 1 ? `
+            <button class="slide-arrow slide-prev" id="slidePrev">&#8249;</button>
+            <button class="slide-arrow slide-next" id="slideNext">&#8250;</button>
+            <div class="slide-dots" id="slideDots">
+              ${_slidePhotos.map((_,i) => `<div class="slide-dot${i===0?' active':''}"></div>`).join('')}
+            </div>` : ''}
+        `;
+        if (_slidePhotos.length > 1) {
+          document.getElementById('slidePrev').addEventListener('click', e => { e.stopPropagation(); goSlide(-1, title); });
+          document.getElementById('slideNext').addEventListener('click', e => { e.stopPropagation(); goSlide(1, title); });
+          // Touch swipe
+          let tx = 0;
+          el.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+          el.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].clientX - tx;
+            if (Math.abs(dx) > 40) goSlide(dx < 0 ? 1 : -1, title);
+          }, { passive: true });
+        }
+      }
+
+      function goSlide(dir, title) {
+        _slideIndex = (_slideIndex + dir + _slidePhotos.length) % _slidePhotos.length;
+        document.getElementById('slideImg').src = photoSrc(_slidePhotos[_slideIndex]);
+        document.querySelectorAll('.slide-dot').forEach((d, i) => d.classList.toggle('active', i === _slideIndex));
+      }
+
       function openModal(listing) {
-        document.getElementById('modalPhoto').innerHTML = photoHtml(listing.photos, listing.title, 'modal-photo-placeholder');
+        buildSlider(listing.photos, listing.title);
         document.getElementById('modalTitle').textContent = listing.title;
         document.getElementById('modalPrice').textContent = `$${listing.price}`;
         document.getElementById('modalSize').textContent  = listing.size;
