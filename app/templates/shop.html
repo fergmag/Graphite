@@ -305,6 +305,43 @@
         .nav-links { padding-left: 10%; }
         .page-content { width: 100%; padding: 20px 12px 60px; }
       }
+
+      /* ── Footer ── */
+      .site-footer {
+        background: var(--bg-header);
+        border-top: 1px solid var(--line);
+        padding: 40px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .footer-col { display: flex; flex-direction: column; gap: 8px; }
+      .footer-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 4px; }
+      .footer-text { font-size: 13px; color: #ffffff; line-height: 1.6; max-width: 280px; }
+      .footer-select {
+        background: var(--bg-light);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 8px 12px;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 32px;
+      }
+      .footer-copy { font-size: 11px; color: rgba(255,255,255,0.35); align-self: flex-end; }
+      @media (max-width: 600px) {
+        .site-footer { padding: 32px 20px; gap: 24px; }
+        .footer-copy { width: 100%; }
+      }
     </style>
   </head>
 
@@ -579,5 +616,24 @@
 
       render();
     </script>
+
+    <footer class="site-footer">
+      <div class="footer-col">
+        <div class="footer-label">Currency</div>
+        <select class="footer-select" id="currencySelect">
+          <option value="CAD">🇨🇦 CAD — Canadian Dollar</option>
+          <option value="USD">🇺🇸 USD — US Dollar</option>
+        </select>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Shipping Policy</div>
+        <div class="footer-text">All orders are shipped with Canada Post, unless contacted for a different shipping arrangement at buyers expense.</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Refund Policy</div>
+        <div class="footer-text">All sales are final.</div>
+      </div>
+      <div class="footer-copy">© Graphite Vintage</div>
+    </footer>
   </body>
 </html>
