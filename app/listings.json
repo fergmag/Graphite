@@ -37,7 +37,12 @@
     "size": "M",
     "price": 1000.0,
     "description": "Medium J43 Burgundy Detroit 1998",
-    "photos": [],
+    "photos": [
+      "0561e89e00bf4680bfaa1a4a1b387e85.jpeg",
+      "5483f0a19afd48d1af89d3e0403b29c0.jpeg",
+      "50dd988f39b7495186e796d109d1ed2a.jpeg",
+      "9730eb13871e46088e368ddad4616591.jpeg"
+    ],
     "sold": false,
     "created_at": "2026-06-18",
     "position": 2
