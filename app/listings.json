@@ -1,18 +1,1 @@
-[
-  {
-    "id": "b9bec8a413",
-    "title": "J43 BRG Medium",
-    "size": "M",
-    "price": 1000.0,
-    "description": "Medium J43 Burgundy Detroit 1998",
-    "photos": [
-      "a2dc7554ad874ac1b3f51f68ebcb0ca9.jpeg",
-      "2df88d9af61b425291f01c92f0b1bdda.jpeg",
-      "f9365f4d10b4440699c8ec477039b96a.jpeg",
-      "6c4e02064e66458781ca76d083360cbf.jpeg"
-    ],
-    "sold": false,
-    "created_at": "2026-06-18",
-    "position": 2
-  }
-]
+[]
