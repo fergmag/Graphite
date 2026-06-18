@@ -5,7 +5,12 @@
     "size": "M",
     "price": 3500.0,
     "description": "2001 J97 Crimson Detroit",
-    "photos": [],
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1781818306/graphite/fjymmusjcct7ccfpxnmi.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1781818308/graphite/yawdlt3kxirz7niulr3v.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1781818309/graphite/fxpi3lp8tgshpmawvjit.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1781818310/graphite/chtuvq40otj7d3oy3p8d.jpg"
+    ],
     "sold": false,
     "created_at": "2026-06-18",
     "position": 0
