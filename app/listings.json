@@ -1,5 +1,20 @@
 [
   {
+    "id": "9c58311f35",
+    "title": "JU1057 Medium",
+    "size": "M",
+    "price": 700.0,
+    "description": "Medium JU1057 Damson Unlined Chore 1993",
+    "photos": [
+      "1abc096e58cf453aaa259ee96e26d040.jpg",
+      "f814edb580504369a11373c42d8ec9e3.jpg",
+      "1ce04ee8384047b2a1d313f01057bb9f.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-06-18",
+    "position": -1
+  },
+  {
     "id": "7d4aa8a0e5",
     "title": "J97 CRI Medium",
     "size": "M",
