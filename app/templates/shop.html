@@ -466,8 +466,12 @@
         return SYMBOLS[currentCurrency] + v.toFixed(d).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
       }
       function toggleAccordion(btn) {
-        btn.classList.toggle('open');
-        btn.nextElementSibling.classList.toggle('open');
+        const body = btn.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
+        sortMenu.classList.remove('open');
+        if (!isOpen) { btn.classList.add('open'); body.classList.add('open'); }
       }
 
       function esc(str) {
