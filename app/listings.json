@@ -14,20 +14,5 @@
     "sold": false,
     "created_at": "2026-06-18",
     "position": -2
-  },
-  {
-    "id": "7d4aa8a0e5",
-    "title": "J97 CRI Medium",
-    "size": "M",
-    "price": 3500.0,
-    "description": "Medium J97 Crimson Detroit 2001",
-    "photos": [
-      "f86ffc4b526b4dbea7d9c836daf502a0.jpg",
-      "0701cb2ec06042f48facf797b63bb76f.jpg",
-      "07f7e784e06c416a8d95770ac5361e8f.jpg"
-    ],
-    "sold": false,
-    "created_at": "2026-06-18",
-    "position": 0
   }
 ]
