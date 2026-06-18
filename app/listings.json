@@ -1,5 +1,16 @@
 [
   {
+    "id": "e839104aac",
+    "title": "JU1057 Medium",
+    "size": "M",
+    "price": 700.0,
+    "description": "1993 JU1057 Damson Unlined Chore",
+    "photos": [],
+    "sold": false,
+    "created_at": "2026-06-18",
+    "position": -2
+  },
+  {
     "id": "19f65c7552",
     "title": "J43 BRG Medium",
     "size": "M",
