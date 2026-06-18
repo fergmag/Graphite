@@ -5,9 +5,7 @@
     "size": "M",
     "price": 700.0,
     "description": "1993 JU1057 Damson Unlined Chore",
-    "photos": [
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1781818653/graphite/bnt18aig7xcgue0rjlfk.jpg"
-    ],
+    "photos": [],
     "sold": false,
     "created_at": "2026-06-18",
     "position": -2
