@@ -1,5 +1,16 @@
 [
   {
+    "id": "60d9c26d50",
+    "title": "JU1057 Medium",
+    "size": "M",
+    "price": 700.0,
+    "description": "1993 JU1057 Damson",
+    "photos": [],
+    "sold": false,
+    "created_at": "2026-06-18",
+    "position": -2
+  },
+  {
     "id": "c44154d56d",
     "title": "J43 BRG Medium",
     "size": "M",
