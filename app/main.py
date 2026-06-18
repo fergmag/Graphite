@@ -349,7 +349,7 @@ def create_app() -> Flask:
         new_photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
-                new__p = _save_photo(f); photos.append(_p) if _p else None
+                _p = _save_photo(f); new_photos.append(_p) if _p else None
         fields: Dict[str, Any] = {"title": title, "size": size, "description": desc}
         if price:
             try: fields["price"] = float(price)

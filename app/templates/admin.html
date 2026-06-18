@@ -275,9 +275,7 @@
                 {% for p in l.photos %}
                 <div class="edit-photo-item">
                   <img src="{{ p | photo_url }}" alt="" />
-                  <form method="POST" action="/admin/remove-photo/{{ l.id }}/{{ loop.index0 }}" style="display:inline" onsubmit="return confirm('Remove this photo?')">
-                    <button class="edit-photo-remove" type="submit">✕</button>
-                  </form>
+                  <button type="button" class="edit-photo-remove" onclick="removePhoto('{{ l.id }}', {{ loop.index0 }})">✕</button>
                 </div>
                 {% endfor %}
               </div>
@@ -451,6 +449,13 @@
       function toggleEdit(id) {
         const el = document.getElementById(id);
         el.classList.toggle('open');
+      }
+
+      async function removePhoto(listingId, idx) {
+        if (!confirm('Remove this photo?')) return;
+        const res = await fetch(`/admin/remove-photo/${listingId}/${idx}`, { method: 'POST' });
+        if (res.ok) location.reload();
+        else alert('Failed to remove photo — try again.');
       }
 
       // ── Watchlist collapse ──
