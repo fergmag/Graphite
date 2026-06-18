@@ -371,9 +371,12 @@
         return items;
       }
 
+      function photoSrc(p) {
+        return (p && (p.startsWith('http://') || p.startsWith('https://'))) ? p : `/photos/${p}`;
+      }
       function photoHtml(photos, title, cls) {
         if (photos && photos.length > 0)
-          return `<img src="/static/images/listings/${esc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
+          return `<img src="${photoSrc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
         return `<span class="${cls}">Photo coming soon</span>`;
       }
 

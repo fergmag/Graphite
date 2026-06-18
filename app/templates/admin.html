@@ -223,7 +223,7 @@
         <div class="listing-row">
           <div class="listing-thumb">
             {% if l.photos and l.photos|length > 0 %}
-              <img src="/photos/{{ l.photos[0] }}" alt="{{ l.title }}" />
+              <img src="{{ l.photos[0] | photo_url }}" alt="{{ l.title }}" />
             {% else %}
               <span class="listing-thumb-placeholder">No photo</span>
             {% endif %}
@@ -375,7 +375,7 @@
           {% if section.text %}<div class="arc-row-text">{{ section.text }}</div>{% endif %}
           {% if section.photos %}
           <div class="arc-row-photos">
-            {% for p in section.photos %}<img src="/photos/{{ p }}" alt="" />{% endfor %}
+            {% for p in section.photos %}<img src="{{ p | photo_url }}" alt="" />{% endfor %}
           </div>
           {% endif %}
           <div class="arc-row-actions">

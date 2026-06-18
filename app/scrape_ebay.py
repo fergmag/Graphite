@@ -76,40 +76,65 @@ def build_sold_search_url(query: str, page: int = 1) -> str:
     }
     return f"{EBAY_SEARCH_URL}?{urlencode(params)}"
 
-def fetch_html(url: str, timeout: int = 8, max_retries: int = 2) -> str:
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/120.0.0.0 Safari/537.36"
-        ),
-        "Accept-Language": "en-US,en;q=0.9",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Connection": "keep-alive",
-        "DNT": "1",
-        "Upgrade-Insecure-Requests": "1",
-    }
+_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "DNT": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
 
-    session = requests.Session()
+
+def _make_session() -> requests.Session:
+    """Return a session pre-warmed with eBay cookies."""
+    s = requests.Session()
+    s.headers.update(_HEADERS)
+    try:
+        s.get("https://www.ebay.com/", timeout=8)
+    except Exception:
+        pass  # If the warm-up fails, continue anyway
+    return s
+
+
+def fetch_html(url: str, timeout: int = 12, max_retries: int = 3,
+               session: Optional[requests.Session] = None) -> str:
+    own_session = session is None
+    s = session or _make_session()
 
     last_status = None
     for attempt in range(1, max_retries + 1):
         try:
-            r = session.get(url, headers=headers, timeout=timeout)
+            r = s.get(url, timeout=timeout)
         except requests.RequestException as e:
-            if attempt != max_retries:
-                time.sleep(min(2 ** attempt, 6))
+            if attempt < max_retries:
+                time.sleep(min(2 ** attempt, 10))
                 continue
             raise RuntimeError(f"eBay request error: {e}") from e
 
-        last_status = r.status_code 
+        last_status = r.status_code
 
         if r.status_code == 200:
             return r.text
 
+        if r.status_code == 403:
+            # Bot detection — back off hard then retry
+            if attempt < max_retries:
+                time.sleep(45 * attempt)
+                continue
+            break
+
         if r.status_code in (429, 500, 502, 503, 504):
-            sleep_s = min(2 ** attempt, 8)  # 2, 4, 8, 16, 20...
-            time.sleep(sleep_s)
+            time.sleep(min(2 ** attempt, 10))
             continue
 
         break
@@ -163,11 +188,13 @@ def parse_sold_results(html: str) -> List[EbayComp]:
 
     return comps
 
-def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0) -> List[EbayComp]:
+def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
+                     session: Optional[requests.Session] = None) -> List[EbayComp]:
+    s = session or _make_session()
     all_comps: List[EbayComp] = []
     for p in range(1, pages + 1):
         url = build_sold_search_url(query, page=p)
-        html = fetch_html(url)
+        html = fetch_html(url, session=s)
         comps = parse_sold_results(html)
         all_comps.extend(comps)
 
@@ -181,7 +208,7 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0) -> List[Eba
             continue
         seen.add(c.url)
         unique.append(c)
-    
+
     return unique
 
 def main() -> None:

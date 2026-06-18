@@ -99,7 +99,7 @@
             {% if section.photos %}
             <div class="photo-grid">
               {% for photo in section.photos %}
-              <img src="/photos/{{ photo }}" alt="{{ section.title }}" loading="lazy" />
+              <img src="{{ photo | photo_url }}" alt="{{ section.title }}" loading="lazy" />
               {% endfor %}
             </div>
             {% endif %}

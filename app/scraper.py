@@ -11,7 +11,7 @@ import time
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from app.scrape_ebay import scrape_ebay_sold
+from app.scrape_ebay import scrape_ebay_sold, _make_session
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
@@ -48,14 +48,14 @@ def _normalize_comp(c: Dict[str, Any], source: str) -> Dict[str, Any]:
     }
 
 
-def scrape_and_save(raw_query: str) -> Dict[str, Any]:
+def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     """
     Scrape eBay for one query, compute CASP, write to cache + DB.
     Returns a small result dict (ok, n, casp, reason).
     """
     query = normalize_query(raw_query)
     try:
-        raw_comps = scrape_ebay_sold(query, pages=1, delay=0.5)
+        raw_comps = scrape_ebay_sold(query, pages=1, delay=0.5, session=session)
     except RuntimeError as e:
         log.warning("[scraper] %s — scrape failed: %s", query, e)
         return {"query": query, "ok": False, "reason": str(e)}
@@ -105,7 +105,7 @@ def scrape_and_save(raw_query: str) -> Dict[str, Any]:
     return {"query": query, "ok": True, "n": summary.n, "casp": casp}
 
 
-def refresh_all_watchlist(delay_seconds: float = 12.0) -> Dict[str, Any]:
+def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
     """
     Iterate every watchlist query, scrape and save each one.
     Called by the APScheduler job and the manual /admin/refresh-now endpoint.
@@ -116,10 +116,13 @@ def refresh_all_watchlist(delay_seconds: float = 12.0) -> Dict[str, Any]:
     queries = list_watches()
     log.info("[scheduler] Starting refresh — %d queries", len(queries))
 
+    # One shared session per refresh run — keeps cookies across queries
+    sess = _make_session()
+
     ok_count = 0
     fail_count = 0
     for i, q in enumerate(queries):
-        result = scrape_and_save(q)
+        result = scrape_and_save(q, session=sess)
         if result["ok"]:
             ok_count += 1
         else:

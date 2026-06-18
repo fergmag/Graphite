@@ -215,12 +215,37 @@ def create_app() -> Flask:
     _DEFAULT_PHOTOS_DIR = os.path.join(os.path.dirname(__file__), "static", "images", "listings")
     _PHOTOS_DIR = os.environ.get("GRAPHITE_PHOTOS_DIR", _DEFAULT_PHOTOS_DIR)
 
-    def _save_photo(file):
+    def _cloudinary_configured() -> bool:
+        return bool(
+            os.environ.get("CLOUDINARY_CLOUD_NAME") and
+            os.environ.get("CLOUDINARY_API_KEY") and
+            os.environ.get("CLOUDINARY_API_SECRET")
+        )
+
+    def _save_photo(file) -> str:
+        if _cloudinary_configured():
+            import cloudinary
+            import cloudinary.uploader
+            cloudinary.config(
+                cloud_name=os.environ.get("CLOUDINARY_CLOUD_NAME"),
+                api_key=os.environ.get("CLOUDINARY_API_KEY"),
+                api_secret=os.environ.get("CLOUDINARY_API_SECRET"),
+            )
+            result = cloudinary.uploader.upload(file, folder="graphite")
+            return result["secure_url"]
+        # Fallback: save locally
         ext = (file.filename.rsplit(".", 1)[-1] if "." in file.filename else "jpg").lower()
         filename = f"{uuid.uuid4().hex}.{ext}"
         os.makedirs(_PHOTOS_DIR, exist_ok=True)
         file.save(os.path.join(_PHOTOS_DIR, filename))
         return filename
+
+    @app.template_filter("photo_url")
+    def photo_url_filter(photo: str) -> str:
+        """Return the correct URL for a photo — Cloudinary URL or local /photos/ path."""
+        if photo and (photo.startswith("http://") or photo.startswith("https://")):
+            return photo
+        return f"/photos/{photo}"
 
     @app.get("/photos/<path:filename>")
     def serve_photo(filename):
