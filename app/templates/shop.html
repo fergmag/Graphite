@@ -315,6 +315,16 @@
         .page-content { width: 100%; padding: 20px 12px 60px; }
       }
 
+      /* ── Splash ── */
+      #splash { position:fixed; inset:0; z-index:9999; background:#283238; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; transition:opacity 0.4s; }
+      #splash.gone { opacity:0; pointer-events:none; }
+      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; }
+      .splash-dots { display:flex; gap:7px; }
+      .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
+      .splash-dot:nth-child(2) { animation-delay:0.2s; }
+      .splash-dot:nth-child(3) { animation-delay:0.4s; }
+      @keyframes sdot { 0%,80%,100% { opacity:0.3; transform:scale(0.8); } 40% { opacity:1; transform:scale(1); } }
+
       /* ── Footer ── */
       .site-footer {
         background: var(--bg-header);
@@ -364,6 +374,14 @@
   <script src="https://www.paypal.com/sdk/js?client-id={{ paypal_client_id }}&currency=USD" defer></script>
   {% endif %}
   <body>
+    <div id="splash">
+      <div class="splash-logo">Gr</div>
+      <div class="splash-dots">
+        <div class="splash-dot"></div>
+        <div class="splash-dot"></div>
+        <div class="splash-dot"></div>
+      </div>
+    </div>
     <header class="site-header">
 
       <!-- Ticker: 6 copies → animate -50% = seamless 3-copy loop -->
@@ -684,6 +702,11 @@
       }
 
       render();
+      window.addEventListener('load', () => {
+        const s = document.getElementById('splash');
+        s.classList.add('gone');
+        setTimeout(() => s.remove(), 450);
+      });
     </script>
 
     <footer class="site-footer">
