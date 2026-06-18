@@ -27,3 +27,5 @@ memory/
 
 # Secrets
 .env
+app/listings.json
+app/archive.json
