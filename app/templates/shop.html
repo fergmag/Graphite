@@ -452,9 +452,9 @@
       const PAGE     = {{ page | tojson }};
       let currentSort = 'newest';
 
-      const RATES   = { CAD:1, USD:0.73, EUR:0.67, GBP:0.57, AUD:1.12, JPY:108, CHF:0.65, KRW:975, HKD:5.70, SGD:0.98, NZD:1.20 };
-      const SYMBOLS = { CAD:'CA$', USD:'US$', EUR:'€', GBP:'£', AUD:'A$', JPY:'¥', CHF:'CHF ', KRW:'₩', HKD:'HK$', SGD:'S$', NZD:'NZ$' };
-      const DECIMALS = { JPY:0, KRW:0 };
+      const RATES   = { CAD:1, USD:0.73, EUR:0.67, GBP:0.57, AUD:1.12, JPY:108, CHF:0.65, KRW:975, HKD:5.70, SGD:0.98, NZD:1.20, THB:25.5, PHP:40.8, VND:18200, IDR:11400 };
+      const SYMBOLS = { CAD:'CA$', USD:'US$', EUR:'€', GBP:'£', AUD:'A$', JPY:'¥', CHF:'CHF ', KRW:'₩', HKD:'HK$', SGD:'S$', NZD:'NZ$', THB:'฿', PHP:'₱', VND:'₫', IDR:'Rp' };
+      const DECIMALS = { JPY:0, KRW:0, VND:0, IDR:0 };
       const SHIPPING_CAD = 50 / 0.73; // $50 USD flat rate
       let currentCurrency = 'CAD';
       let currentShipTo   = 'international';
@@ -706,11 +706,10 @@
       }
 
       render();
-      window.addEventListener('load', () => {
+      setTimeout(() => {
         const s = document.getElementById('splash');
-        s.classList.add('gone');
-        setTimeout(() => s.remove(), 450);
-      });
+        if (s) { s.classList.add('gone'); setTimeout(() => s.remove(), 450); }
+      }, 600);
     </script>
 
     <footer class="site-footer">
@@ -728,6 +727,10 @@
           <option value="HKD">🇭🇰 HKD — Hong Kong Dollar</option>
           <option value="SGD">🇸🇬 SGD — Singapore Dollar</option>
           <option value="NZD">🇳🇿 NZD — New Zealand Dollar</option>
+          <option value="THB">🇹🇭 THB — Thai Baht</option>
+          <option value="PHP">🇵🇭 PHP — Philippine Peso</option>
+          <option value="VND">🇻🇳 VND — Vietnamese Dong</option>
+          <option value="IDR">🇮🇩 IDR — Indonesian Rupiah</option>
         </select>
         <div style="font-size:10px;color:rgba(255,255,255,0.4);margin-top:6px;">Rates are approximate</div>
       </div>
