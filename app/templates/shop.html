@@ -316,9 +316,10 @@
       }
 
       /* ── Splash ── */
-      #splash { position:fixed; inset:0; z-index:9999; background:#283238; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; transition:opacity 0.4s; animation: splashAuto 0.4s ease 1.8s forwards; }
+      #splash { position:fixed; inset:0; z-index:9999; background:#283238; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; opacity:0; animation: splashIn 0.4s ease forwards, splashOut 0.4s ease 1.8s forwards; }
       #splash.gone { opacity:0; pointer-events:none; visibility:hidden; }
-      @keyframes splashAuto { to { opacity:0; pointer-events:none; visibility:hidden; } }
+      @keyframes splashIn  { to { opacity:1; } }
+      @keyframes splashOut { to { opacity:0; pointer-events:none; visibility:hidden; } }
       .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; }
       .splash-dots { display:flex; gap:7px; }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
