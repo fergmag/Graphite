@@ -316,8 +316,8 @@
       }
 
       /* ── Splash ── */
-      #splash { display:flex; opacity:1; transition: opacity 0.5s ease; position:fixed; inset:0; z-index:9999; background:#000000; flex-direction:column; align-items:center; justify-content:center; gap:28px; }
-      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
+      #splash { display:flex; opacity:1; transition: opacity 0.5s ease; position:fixed; inset:0; z-index:9999; background:#283238; flex-direction:column; align-items:center; justify-content:center; gap:28px; font-family:'Inter',system-ui,-apple-system,sans-serif; }
+      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:800; color:#fff; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
       .splash-dots { display:flex; gap:7px; animation: splashContentIn 0.4s ease 0.35s both; }
       @keyframes splashContentIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
@@ -418,7 +418,7 @@
 
       <!-- Sort sub-bar -->
       <div class="sort-bar">
-        <span style="margin-right:auto;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.45);">All prices in USD</span>
+        <span style="margin-right:auto;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#ffffff;">All prices in USD</span>
         <div class="sort-wrap" id="sortWrap">
           <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
           <div class="sort-menu" id="sortMenu">
