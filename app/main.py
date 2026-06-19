@@ -488,17 +488,27 @@ def create_app() -> Flask:
 
         session_obj = stripe.checkout.Session.create(
             payment_method_types=["card"],
-            line_items=[{
-                "price_data": {
-                    "currency": "usd",
-                    "product_data": {
-                        "name": listing["title"],
-                        "description": f"Size: {listing.get('size', '')}",
+            line_items=[
+                {
+                    "price_data": {
+                        "currency": "usd",
+                        "product_data": {
+                            "name": listing["title"],
+                            "description": f"Size: {listing.get('size', '')}",
+                        },
+                        "unit_amount": price_cents,
                     },
-                    "unit_amount": price_cents,
+                    "quantity": 1,
                 },
-                "quantity": 1,
-            }],
+                {
+                    "price_data": {
+                        "currency": "usd",
+                        "product_data": {"name": "Shipping — Canada Post Worldwide"},
+                        "unit_amount": 5000,
+                    },
+                    "quantity": 1,
+                },
+            ],
             mode="payment",
             success_url=f"{base_url}/shop?success=1",
             cancel_url=f"{base_url}/shop?cancelled=1",
@@ -532,15 +542,29 @@ def create_app() -> Flask:
         listing = next((l for l in all_listings if str(l.get("id")) == str(listing_id)), None)
         if not listing or listing.get("sold"):
             return jsonify({"ok": False, "error": "Listing not available"}), 400
-        price = f"{float(listing['price']):.2f}"
+        price_val = float(listing['price'])
+        shipping_val = 50.00
+        total_val = price_val + shipping_val
+        price = f"{price_val:.2f}"
+        shipping = f"{shipping_val:.2f}"
+        total = f"{total_val:.2f}"
         token = _paypal_token()
         r = _req.post(
             f"{_paypal_base()}/v2/checkout/orders",
             headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
             json={
                 "intent": "CAPTURE",
-                "purchase_units": [{"amount": {"currency_code": "USD", "value": price},
-                                    "description": listing["title"]}],
+                "purchase_units": [{
+                    "description": listing["title"],
+                    "amount": {
+                        "currency_code": "USD",
+                        "value": total,
+                        "breakdown": {
+                            "item_total": {"currency_code": "USD", "value": price},
+                            "shipping": {"currency_code": "USD", "value": shipping},
+                        },
+                    },
+                }],
             },
             timeout=10,
         )

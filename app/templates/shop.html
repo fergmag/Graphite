@@ -594,7 +594,7 @@
           actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#c62828;font-size:14px;padding:10px 0;">This item has sold.</div>`;
         } else {
           actions.innerHTML = `
-            <button class="btn-stripe" id="stripeBtn">Buy with card — ${fmt(listing.price)}</button>
+            <button class="btn-stripe" id="stripeBtn">Buy with card — ${fmt(listing.price + SHIPPING_USD)}</button>
             <div id="paypal-button-container"></div>
           `;
           document.getElementById('stripeBtn').addEventListener('click', () => handleStripe(listing.id));
@@ -674,18 +674,20 @@
       });
       document.addEventListener('click', () => sortMenu.classList.remove('open'));
 
-      const currSel = document.getElementById('currencySelect');
-      if (currSel) currSel.addEventListener('change', e => {
-        currentCurrency = e.target.value;
-        document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
-        document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
-        render();
-        if (document.getElementById('modalOverlay').classList.contains('open') && currentListing) {
-          document.getElementById('modalPrice').textContent = fmt(currentListing.price);
-          const sb = document.getElementById('stripeBtn');
-          if (sb) sb.textContent = `Buy with card — ${fmt(currentListing.price)}`;
-          renderBreakdown();
-        }
+      document.addEventListener('DOMContentLoaded', () => {
+        const currSel = document.getElementById('currencySelect');
+        if (currSel) currSel.addEventListener('change', e => {
+          currentCurrency = e.target.value;
+          document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
+          document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
+          render();
+          if (document.getElementById('modalOverlay').classList.contains('open') && currentListing) {
+            document.getElementById('modalPrice').textContent = fmt(currentListing.price);
+            const sb = document.getElementById('stripeBtn');
+            if (sb) sb.textContent = `Buy with card — ${fmt(currentListing.price + SHIPPING_USD)}`;
+            renderBreakdown();
+          }
+        });
       });
 
       // Show success/cancelled banner from Stripe redirect
