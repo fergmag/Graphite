@@ -316,15 +316,15 @@
       }
 
       /* ── Splash ── */
-      #splash { display:none; opacity:0; transition: opacity 0.4s ease; position:fixed; inset:0; z-index:9999; background:#283238; flex-direction:column; align-items:center; justify-content:center; gap:28px; }
-      #splash.gone { opacity:0; pointer-events:none; visibility:hidden; }
-      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; }
-      .splash-dots { display:flex; gap:7px; }
+      #splash { display:flex; opacity:1; transition: opacity 0.5s ease; position:fixed; inset:0; z-index:9999; background:#000000; flex-direction:column; align-items:center; justify-content:center; gap:28px; }
+      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
+      .splash-dots { display:flex; gap:7px; animation: splashContentIn 0.4s ease 0.35s both; }
+      @keyframes splashContentIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
       .splash-dot:nth-child(2) { animation-delay:0.2s; }
       .splash-dot:nth-child(3) { animation-delay:0.4s; }
       @keyframes sdot { 0%,80%,100% { opacity:0.3; transform:scale(0.8); } 40% { opacity:1; transform:scale(1); } }
-      .splash-msg { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 500; letter-spacing: 0.03em; opacity: 0; transition: opacity 0.6s; margin: 0; text-align: center; }
+
 
       /* ── Footer ── */
       .site-footer {
@@ -382,8 +382,8 @@
         <div class="splash-dot"></div>
         <div class="splash-dot"></div>
       </div>
-      <p class="splash-msg" id="splashMsg">Server is starting up — please wait a moment.</p>
     </div>
+    <script>if(sessionStorage.getItem('splashShown')){var _s=document.getElementById('splash');if(_s){_s.style.transition='none';_s.style.display='none';}}</script>
     <header class="site-header">
 
       <!-- Ticker: 6 copies → animate -50% = seamless 3-copy loop -->
@@ -716,10 +716,10 @@
         sessionStorage.setItem('splashShown', '1');
         const s = document.getElementById('splash');
         if (!s) return;
-        s.style.display = 'flex';
-        requestAnimationFrame(() => requestAnimationFrame(() => { s.style.opacity = '1'; }));
-        setTimeout(() => { s.classList.add('gone'); setTimeout(() => s.remove(), 450); }, 1500);
-        setTimeout(() => { const m = document.getElementById('splashMsg'); if (m && s.isConnected) m.style.opacity='1'; }, 3000);
+        setTimeout(() => {
+          s.style.opacity = '0';
+          setTimeout(() => { s.style.display = 'none'; }, 500);
+        }, 1800);
       })();
     </script>
 
