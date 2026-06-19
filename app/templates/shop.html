@@ -371,19 +371,24 @@
     </style>
   </head>
 
+  <script>
+    (function() {
+      if (sessionStorage.getItem('splashShown')) return;
+      sessionStorage.setItem('splashShown', '1');
+      var s = document.createElement('div');
+      s.id = 'splash';
+      s.innerHTML = '<div class="splash-logo">Gr</div><div class="splash-dots"><div class="splash-dot"></div><div class="splash-dot"></div><div class="splash-dot"></div></div>';
+      document.documentElement.appendChild(s);
+      setTimeout(function() {
+        s.style.opacity = '0';
+        setTimeout(function() { if (s.parentNode) s.parentNode.removeChild(s); }, 500);
+      }, 1800);
+    })();
+  </script>
   {% if paypal_client_id %}
   <script src="https://www.paypal.com/sdk/js?client-id={{ paypal_client_id }}&currency=USD" defer></script>
   {% endif %}
   <body>
-    <div id="splash">
-      <div class="splash-logo">Gr</div>
-      <div class="splash-dots">
-        <div class="splash-dot"></div>
-        <div class="splash-dot"></div>
-        <div class="splash-dot"></div>
-      </div>
-    </div>
-    <script>if(sessionStorage.getItem('splashShown')){var _s=document.getElementById('splash');if(_s){_s.style.transition='none';_s.style.display='none';}}</script>
     <header class="site-header">
 
       <!-- Ticker: 6 copies → animate -50% = seamless 3-copy loop -->
@@ -413,6 +418,7 @@
 
       <!-- Sort sub-bar -->
       <div class="sort-bar">
+        <span style="margin-right:auto;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.45);">All prices in USD</span>
         <div class="sort-wrap" id="sortWrap">
           <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
           <div class="sort-menu" id="sortMenu">
@@ -463,7 +469,7 @@
       }
 
       function fmt(usd) {
-        return 'US$\u00a0' + usd.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return '$' + usd.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
       }
       function toggleAccordion(btn) {
         const body = btn.nextElementSibling;
@@ -690,16 +696,6 @@
       }
 
       render();
-      (function() {
-        if (sessionStorage.getItem('splashShown')) return;
-        sessionStorage.setItem('splashShown', '1');
-        const s = document.getElementById('splash');
-        if (!s) return;
-        setTimeout(() => {
-          s.style.opacity = '0';
-          setTimeout(() => { s.style.display = 'none'; }, 500);
-        }, 1800);
-      })();
     </script>
 
     <footer class="site-footer">
