@@ -385,6 +385,7 @@
       </div>
       <p class="splash-msg" id="splashMsg">Server is starting up — please wait a moment.</p>
     </div>
+    <script>if(sessionStorage.getItem('splashShown'))document.getElementById('splash').style.display='none';</script>
     <header class="site-header">
 
       <!-- Ticker: 6 copies → animate -50% = seamless 3-copy loop -->
@@ -574,7 +575,6 @@
         el.innerHTML = `
           <div class="bk-row"><span class="bk-label">Subtotal</span><span class="bk-val">${fmt(p)}</span></div>
           <div class="bk-row"><span class="bk-label">Shipping</span><span class="bk-val">${fmt(SHIPPING_USD)}</span></div>
-          <div class="bk-row"><span class="bk-label">Tax & duties</span><span class="bk-val bk-note">May apply at destination</span></div>
           <div class="bk-row bk-total"><span class="bk-label">Total</span><span class="bk-val">${fmt(total)}</span></div>
         `;
       }
