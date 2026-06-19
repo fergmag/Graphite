@@ -364,7 +364,7 @@
         background-position: right 12px center;
         padding-right: 32px;
       }
-      .footer-copy { font-size: 11px; color: rgba(255,255,255,0.35); align-self: flex-end; }
+      .footer-copy { font-size: 11px; color: #ffffff; align-self: flex-end; }
       @media (max-width: 600px) {
         .site-footer { padding: 32px 20px; gap: 24px; }
         .footer-copy { width: 100%; }
@@ -670,6 +670,8 @@
       document.getElementById('sortBtn').addEventListener('click', e => {
         e.stopPropagation();
         sortMenu.classList.toggle('open');
+        document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
       });
       document.querySelectorAll('.sort-opt').forEach(opt => {
         opt.addEventListener('click', () => {
@@ -685,6 +687,8 @@
       const currSel = document.getElementById('currencySelect');
       if (currSel) currSel.addEventListener('change', e => {
         currentCurrency = e.target.value;
+        document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
         render();
         if (document.getElementById('modalOverlay').classList.contains('open') && currentListing) {
           document.getElementById('modalPrice').textContent = fmt(currentListing.price);
@@ -740,7 +744,7 @@
           <option value="VND">🇻🇳 VND — Vietnamese Dong</option>
           <option value="IDR">🇮🇩 IDR — Indonesian Rupiah</option>
         </select>
-        <div style="font-size:10px;color:rgba(255,255,255,0.4);margin-top:6px;">Rates are approximate</div>
+        <div style="font-size:10px;color:#ffffff;margin-top:6px;">Rates are approximate</div>
       </div>
       <div class="footer-col">
         <div class="footer-label">Shipping Policy</div>
