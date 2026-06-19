@@ -484,6 +484,8 @@ def create_app() -> Flask:
             return jsonify({"ok": False, "error": "Listing not available"}), 400
 
         price_cents = int(round(float(listing["price"]) * 100))
+        shipping_cents = 5000
+        fee_cents = int(round((price_cents + shipping_cents) * 0.035))
         base_url = request.host_url.rstrip("/")
 
         session_obj = stripe.checkout.Session.create(
@@ -504,7 +506,15 @@ def create_app() -> Flask:
                     "price_data": {
                         "currency": "usd",
                         "product_data": {"name": "Shipping — Canada Post Worldwide"},
-                        "unit_amount": 5000,
+                        "unit_amount": shipping_cents,
+                    },
+                    "quantity": 1,
+                },
+                {
+                    "price_data": {
+                        "currency": "usd",
+                        "product_data": {"name": "Payment processing fee (3.5%)"},
+                        "unit_amount": fee_cents,
                     },
                     "quantity": 1,
                 },
@@ -544,9 +554,11 @@ def create_app() -> Flask:
             return jsonify({"ok": False, "error": "Listing not available"}), 400
         price_val = float(listing['price'])
         shipping_val = 50.00
-        total_val = price_val + shipping_val
+        fee_val = round((price_val + shipping_val) * 0.035, 2)
+        total_val = price_val + shipping_val + fee_val
         price = f"{price_val:.2f}"
         shipping = f"{shipping_val:.2f}"
+        fee = f"{fee_val:.2f}"
         total = f"{total_val:.2f}"
         token = _paypal_token()
         r = _req.post(
@@ -562,6 +574,7 @@ def create_app() -> Flask:
                         "breakdown": {
                             "item_total": {"currency_code": "USD", "value": price},
                             "shipping": {"currency_code": "USD", "value": shipping},
+                            "handling": {"currency_code": "USD", "value": fee},
                         },
                     },
                 }],
