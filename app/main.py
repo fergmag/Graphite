@@ -485,7 +485,7 @@ def create_app() -> Flask:
 
         price_cents = int(round(float(listing["price"]) * 100))
         shipping_cents = 5000
-        fee_cents = int(round((price_cents + shipping_cents) * 0.035))
+        fee_cents = int(round((price_cents + shipping_cents) * 0.04))
         base_url = request.host_url.rstrip("/")
 
         session_obj = stripe.checkout.Session.create(
@@ -554,7 +554,7 @@ def create_app() -> Flask:
             return jsonify({"ok": False, "error": "Listing not available"}), 400
         price_val = float(listing['price'])
         shipping_val = 50.00
-        fee_val = round((price_val + shipping_val) * 0.035, 2)
+        fee_val = round((price_val + shipping_val) * 0.04, 2)
         total_val = price_val + shipping_val + fee_val
         price = f"{price_val:.2f}"
         shipping = f"{shipping_val:.2f}"

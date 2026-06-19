@@ -454,22 +454,16 @@
       const PAGE     = {{ page | tojson }};
       let currentSort = 'newest';
 
-      const RATES   = { USD:1, CAD:1.37, EUR:0.92, GBP:0.79, AUD:1.53, JPY:149, CHF:0.90, KRW:1320, HKD:7.82, SGD:1.34, NZD:1.63, THB:35, PHP:56, VND:25000, IDR:16000 };
-      const SYMBOLS = { USD:'$', CAD:'CA$', EUR:'€', GBP:'£', AUD:'A$', JPY:'¥', CHF:'CHF ', KRW:'₩', HKD:'HK$', SGD:'S$', NZD:'NZ$', THB:'฿', PHP:'₱', VND:'₫', IDR:'Rp' };
-      const DECIMALS = { JPY:0, KRW:0, VND:0, IDR:0 };
       const SHIPPING_USD = 50;
-      const PROCESSING_RATE = 0.035;
-      let currentCurrency = 'USD';
-      let currentListing  = null;
+      const PROCESSING_RATE = 0.04;
+      let currentListing = null;
 
       function calcFee(subtotal) {
         return Math.ceil(subtotal * PROCESSING_RATE * 100) / 100;
       }
 
-      function convert(cad) { return cad * RATES[currentCurrency]; }
-      function fmt(cad) {
-        const v = convert(cad), d = DECIMALS[currentCurrency] ?? 2;
-        return SYMBOLS[currentCurrency] + v.toFixed(d).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      function fmt(usd) {
+        return 'US$\u00a0' + usd.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
       }
       function toggleAccordion(btn) {
         const body = btn.nextElementSibling;
@@ -579,7 +573,7 @@
         el.innerHTML = `
           <div class="bk-row"><span class="bk-label">Subtotal</span><span class="bk-val">${fmt(p)}</span></div>
           <div class="bk-row"><span class="bk-label">Shipping</span><span class="bk-val">${fmt(SHIPPING_USD)}</span></div>
-          <div class="bk-row"><span class="bk-label">Payment processing (est. 3.5%)</span><span class="bk-val">${fmt(fee)}</span></div>
+          <div class="bk-row"><span class="bk-label">Payment processing (4%)</span><span class="bk-val">${fmt(fee)}</span></div>
           <div class="bk-row bk-total"><span class="bk-label">Total</span><span class="bk-val">${fmt(total)}</span></div>
         `;
       }
@@ -679,21 +673,6 @@
       });
       document.addEventListener('click', () => sortMenu.classList.remove('open'));
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const currSel = document.getElementById('currencySelect');
-        if (currSel) currSel.addEventListener('change', e => {
-          currentCurrency = e.target.value;
-          document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
-          document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
-          render();
-          if (document.getElementById('modalOverlay').classList.contains('open') && currentListing) {
-            document.getElementById('modalPrice').textContent = fmt(currentListing.price);
-            const sb = document.getElementById('stripeBtn');
-            if (sb) sb.textContent = `Buy with card — ${fmt(currentListing.price + SHIPPING_USD + calcFee(currentListing.price + SHIPPING_USD))}`;
-            renderBreakdown();
-          }
-        });
-      });
 
       // Show success/cancelled banner from Stripe redirect
       const params = new URLSearchParams(window.location.search);
@@ -724,27 +703,6 @@
     </script>
 
     <footer class="site-footer">
-      <div class="footer-col">
-        <div class="footer-label">Currency</div>
-        <select class="footer-select" id="currencySelect">
-          <option value="USD" selected>🇺🇸 USD — US Dollar</option>
-          <option value="CAD">🇨🇦 CAD — Canadian Dollar</option>
-          <option value="EUR">🇪🇺 EUR — Euro</option>
-          <option value="GBP">🇬🇧 GBP — British Pound</option>
-          <option value="AUD">🇦🇺 AUD — Australian Dollar</option>
-          <option value="JPY">🇯🇵 JPY — Japanese Yen</option>
-          <option value="CHF">🇨🇭 CHF — Swiss Franc</option>
-          <option value="KRW">🇰🇷 KRW — South Korean Won</option>
-          <option value="HKD">🇭🇰 HKD — Hong Kong Dollar</option>
-          <option value="SGD">🇸🇬 SGD — Singapore Dollar</option>
-          <option value="NZD">🇳🇿 NZD — New Zealand Dollar</option>
-          <option value="THB">🇹🇭 THB — Thai Baht</option>
-          <option value="PHP">🇵🇭 PHP — Philippine Peso</option>
-          <option value="VND">🇻🇳 VND — Vietnamese Dong</option>
-          <option value="IDR">🇮🇩 IDR — Indonesian Rupiah</option>
-        </select>
-        <div style="font-size:10px;color:#ffffff;margin-top:6px;">Rates are approximate</div>
-      </div>
       <div class="footer-col">
         <div class="footer-label">Shipping Policy</div>
         <div class="footer-accordion">
