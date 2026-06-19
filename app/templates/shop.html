@@ -316,8 +316,9 @@
       }
 
       /* ── Splash ── */
-      #splash { position:fixed; inset:0; z-index:9999; background:#283238; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; transition:opacity 0.4s; }
-      #splash.gone { opacity:0; pointer-events:none; }
+      #splash { position:fixed; inset:0; z-index:9999; background:#283238; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; transition:opacity 0.4s; animation: splashAuto 0.4s ease 1.8s forwards; }
+      #splash.gone { opacity:0; pointer-events:none; visibility:hidden; }
+      @keyframes splashAuto { to { opacity:0; pointer-events:none; visibility:hidden; } }
       .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:800; color:#fff; letter-spacing:-0.03em; }
       .splash-dots { display:flex; gap:7px; }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
@@ -681,7 +682,8 @@
       });
       document.addEventListener('click', () => sortMenu.classList.remove('open'));
 
-      document.getElementById('currencySelect').addEventListener('change', e => {
+      const currSel = document.getElementById('currencySelect');
+      if (currSel) currSel.addEventListener('change', e => {
         currentCurrency = e.target.value;
         render();
         if (document.getElementById('modalOverlay').classList.contains('open') && currentListing) {
@@ -708,26 +710,14 @@
       }
 
       render();
-      (function() {
+      setTimeout(() => {
         const s = document.getElementById('splash');
+        if (s) { s.classList.add('gone'); setTimeout(() => s.remove(), 450); }
+      }, 1500);
+      setTimeout(() => {
         const msg = document.getElementById('splashMsg');
-        let dismissed = false;
-        function hideSplash() {
-          if (dismissed) return;
-          dismissed = true;
-          s.classList.add('gone');
-          setTimeout(() => s && s.remove(), 450);
-        }
-        // Show "please wait" message if still loading after 3s
-        setTimeout(() => { if (!dismissed && msg) msg.style.opacity = '1'; }, 3000);
-        // Dismiss: minimum 1.5s, then wait for page ready
-        setTimeout(() => {
-          if (document.readyState === 'complete') { hideSplash(); }
-          else { window.addEventListener('load', hideSplash, { once: true }); }
-        }, 1500);
-        // Hard fallback: never stay more than 20s
-        setTimeout(hideSplash, 20000);
-      })();
+        if (msg && document.getElementById('splash')) msg.style.opacity = '1';
+      }, 3000);
     </script>
 
     <footer class="site-footer">
