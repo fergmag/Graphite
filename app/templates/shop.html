@@ -324,6 +324,7 @@
       .splash-dot:nth-child(2) { animation-delay:0.2s; }
       .splash-dot:nth-child(3) { animation-delay:0.4s; }
       @keyframes sdot { 0%,80%,100% { opacity:0.3; transform:scale(0.8); } 40% { opacity:1; transform:scale(1); } }
+      .splash-msg { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 500; letter-spacing: 0.03em; opacity: 0; transition: opacity 0.6s; margin: 0; text-align: center; }
 
       /* ── Footer ── */
       .site-footer {
@@ -381,6 +382,7 @@
         <div class="splash-dot"></div>
         <div class="splash-dot"></div>
       </div>
+      <p class="splash-msg" id="splashMsg">Server is starting up — please wait a moment.</p>
     </div>
     <header class="site-header">
 
@@ -706,10 +708,26 @@
       }
 
       render();
-      setTimeout(() => {
+      (function() {
         const s = document.getElementById('splash');
-        if (s) { s.classList.add('gone'); setTimeout(() => s.remove(), 450); }
-      }, 600);
+        const msg = document.getElementById('splashMsg');
+        let dismissed = false;
+        function hideSplash() {
+          if (dismissed) return;
+          dismissed = true;
+          s.classList.add('gone');
+          setTimeout(() => s && s.remove(), 450);
+        }
+        // Show "please wait" message if still loading after 3s
+        setTimeout(() => { if (!dismissed && msg) msg.style.opacity = '1'; }, 3000);
+        // Dismiss: minimum 1.5s, then wait for page ready
+        setTimeout(() => {
+          if (document.readyState === 'complete') { hideSplash(); }
+          else { window.addEventListener('load', hideSplash, { once: true }); }
+        }, 1500);
+        // Hard fallback: never stay more than 20s
+        setTimeout(hideSplash, 20000);
+      })();
     </script>
 
     <footer class="site-footer">
