@@ -41,6 +41,9 @@ from app.db import (
     db_add_section,
     db_update_section,
     db_delete_section,
+    get_alerts,
+    count_unseen_alerts,
+    mark_alerts_seen,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -421,6 +424,19 @@ def create_app() -> Flask:
         t = threading.Thread(target=refresh_all_watchlist, daemon=True)
         t.start()
         return jsonify({"ok": True, "message": "Refresh started in background"})
+
+    @app.get("/api/alerts")
+    @_login_required
+    def api_alerts():
+        unseen_only = request.args.get("unseen") == "1"
+        alerts = get_alerts(unseen_only=unseen_only, limit=100)
+        return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts()})
+
+    @app.post("/api/alerts/mark-seen")
+    @_login_required
+    def api_alerts_mark_seen():
+        mark_alerts_seen()
+        return jsonify({"ok": True})
 
     @app.post("/admin/populate-watchlist")
     @_login_required

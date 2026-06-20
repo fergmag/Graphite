@@ -154,6 +154,26 @@ def init_db() -> None:
         # Always migrate from JSON — INSERT OR IGNORE skips existing rows
         _migrate_archive_json(con)
 
+        # listing_alerts — active deals found on Depop / Grailed / Etsy
+        if not _table_exists(con, "listing_alerts"):
+            con.execute(
+                """
+                CREATE TABLE listing_alerts (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    query TEXT NOT NULL,
+                    source TEXT NOT NULL,
+                    title TEXT,
+                    price REAL,
+                    url TEXT,
+                    photo TEXT,
+                    casp REAL,
+                    deal_score INTEGER,
+                    seen INTEGER NOT NULL DEFAULT 0,
+                    created_at TEXT NOT NULL
+                )
+                """
+            )
+
         con.commit()
     finally:
         con.close()
@@ -560,6 +580,74 @@ def db_delete_section(section_id: str) -> None:
     con = _connect()
     try:
         con.execute("DELETE FROM archive_sections WHERE id=?", (section_id,))
+        con.commit()
+    finally:
+        con.close()
+
+
+# -----------------------------
+# Listing alerts helpers
+# -----------------------------
+
+def insert_alert(query: str, source: str, title: str, price: float,
+                 url: str, photo: Optional[str], casp: Optional[float],
+                 deal_score: Optional[int]) -> None:
+    """Insert a deal alert. Skips duplicates by URL."""
+    con = _connect()
+    try:
+        exists = con.execute("SELECT 1 FROM listing_alerts WHERE url=?", (url,)).fetchone()
+        if exists:
+            return
+        con.execute(
+            """INSERT INTO listing_alerts
+               (query, source, title, price, url, photo, casp, deal_score, seen, created_at)
+               VALUES (?,?,?,?,?,?,?,?,0,?)""",
+            (query, source, title, price, url, photo, casp, deal_score, _utc_now()),
+        )
+        con.commit()
+    finally:
+        con.close()
+
+
+def get_alerts(unseen_only: bool = False, limit: int = 100) -> List[Dict[str, Any]]:
+    con = _connect()
+    try:
+        where = "WHERE seen=0" if unseen_only else ""
+        rows = con.execute(
+            f"SELECT * FROM listing_alerts {where} ORDER BY created_at DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+
+def count_unseen_alerts() -> int:
+    con = _connect()
+    try:
+        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts WHERE seen=0").fetchone()
+        return row["n"] if row else 0
+    finally:
+        con.close()
+
+
+def mark_alerts_seen() -> None:
+    con = _connect()
+    try:
+        con.execute("UPDATE listing_alerts SET seen=1 WHERE seen=0")
+        con.commit()
+    finally:
+        con.close()
+
+
+def clear_old_alerts(days: int = 30) -> None:
+    """Remove alerts older than N days to keep DB tidy."""
+    con = _connect()
+    try:
+        con.execute(
+            "DELETE FROM listing_alerts WHERE created_at < datetime('now', ?)",
+            (f"-{days} days",),
+        )
         con.commit()
     finally:
         con.close()

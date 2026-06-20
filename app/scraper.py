@@ -12,11 +12,14 @@ from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 from app.scrape_ebay import scrape_ebay_sold, _make_session
+from app.scrape_depop import search_depop
+from app.scrape_grailed import search_grailed
+from app.scrape_etsy import search_etsy
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query
-from app.db import list_watches, insert_comps, insert_estimate
+from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
 
 log = logging.getLogger(__name__)
 
@@ -105,6 +108,55 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     return {"query": query, "ok": True, "n": summary.n, "casp": casp}
 
 
+def _deal_score(price: float, casp: float) -> int:
+    """Return deal score 1–5 based on how far below CASP the price is."""
+    if casp <= 0:
+        return 1
+    ratio = price / casp
+    if ratio <= 0.50:
+        return 5
+    if ratio <= 0.65:
+        return 4
+    if ratio <= 0.80:
+        return 3
+    if ratio <= 0.95:
+        return 2
+    return 1
+
+
+def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
+    """
+    Search Depop, Grailed, and Etsy for active listings matching query.
+    Saves any listing with deal_score >= 3 as an alert.
+    Returns count of alerts saved.
+    """
+    saved = 0
+    all_listings: List[Dict[str, Any]] = []
+    all_listings.extend(search_depop(query))
+    all_listings.extend(search_grailed(query))
+    all_listings.extend(search_etsy(query))
+
+    for listing in all_listings:
+        price = listing.get("price") or 0
+        if not price:
+            continue
+        score = _deal_score(price, casp or 0) if casp else 1
+        if score >= 3:
+            insert_alert(
+                query=query,
+                source=listing["source"],
+                title=listing.get("title", ""),
+                price=price,
+                url=listing.get("url", ""),
+                photo=listing.get("photo"),
+                casp=casp,
+                deal_score=score,
+            )
+            saved += 1
+
+    return saved
+
+
 def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
     """
     Iterate every watchlist query, scrape and save each one.
@@ -119,15 +171,22 @@ def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
     # One shared session per refresh run — keeps cookies across queries
     sess = _make_session()
 
+    clear_old_alerts(days=14)
+
     ok_count = 0
     fail_count = 0
+    alerts_saved = 0
     for i, q in enumerate(queries):
         result = scrape_and_save(q, session=sess)
         if result["ok"]:
             ok_count += 1
+            casp = result.get("casp")
+            try:
+                alerts_saved += scan_platforms_for_query(q, casp)
+            except Exception as e:
+                log.warning("[scheduler] platform scan failed for %r: %s", q, e)
         else:
             fail_count += 1
-        # Don't sleep after the last one
         if i < len(queries) - 1:
             time.sleep(delay_seconds)
 
@@ -137,8 +196,9 @@ def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
         "total": len(queries),
         "ok": ok_count,
         "failed": fail_count,
+        "alerts_saved": alerts_saved,
     }
-    log.info("[scheduler] Done — %d ok, %d failed", ok_count, fail_count)
+    log.info("[scheduler] Done — %d ok, %d failed, %d alerts", ok_count, fail_count, alerts_saved)
     return _last_summary
 
 
