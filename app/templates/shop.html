@@ -371,10 +371,9 @@
     </style>
   </head>
 
+  {% if show_splash %}
   <script>
     (function() {
-      if (sessionStorage.getItem('splashShown')) return;
-      sessionStorage.setItem('splashShown', '1');
       var s = document.createElement('div');
       s.id = 'splash';
       s.innerHTML = '<div class="splash-logo">Gr</div><div class="splash-dots"><div class="splash-dot"></div><div class="splash-dot"></div><div class="splash-dot"></div></div>';
@@ -385,6 +384,7 @@
       }, 1800);
     })();
   </script>
+  {% endif %}
   {% if paypal_client_id %}
   <script src="https://www.paypal.com/sdk/js?client-id={{ paypal_client_id }}&currency=USD" defer></script>
   {% endif %}

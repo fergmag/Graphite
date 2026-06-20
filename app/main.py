@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request, render_template, session, redirect, url_for, send_from_directory
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for, send_from_directory, make_response
 from functools import wraps
 from typing import Any, Dict, List, Optional, Sequence
 import json
@@ -269,18 +269,28 @@ def create_app() -> Flask:
     @app.get("/shop")
     def shop():
         all_listings = db_list_listings()
-        return render_template("shop.html",
+        show_splash = request.cookies.get("graphite_visited") != "1"
+        resp = make_response(render_template("shop.html",
             listings=[l for l in all_listings if not l.get("sold")],
             page="shop",
-            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
+            show_splash=show_splash))
+        if show_splash:
+            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
+        return resp
 
     @app.get("/sold")
     def sold():
         all_listings = db_list_listings()
-        return render_template("shop.html",
+        show_splash = request.cookies.get("graphite_visited") != "1"
+        resp = make_response(render_template("shop.html",
             listings=[l for l in all_listings if l.get("sold")],
             page="sold",
-            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
+            show_splash=show_splash))
+        if show_splash:
+            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
+        return resp
 
     @app.get("/archive")
     def archive():
