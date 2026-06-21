@@ -336,6 +336,7 @@
           <h3>Estimated Value</h3>
           <p class="big" id="casp">$—</p>
           <div class="sub" id="caspSub">Avg of recent eBay sold listings</div>
+          <div id="givenPrice" style="display:none;margin-top:8px;font-size:11px;font-weight:700;color:#555;letter-spacing:0.03em;border-top:1px solid #e0e0e0;padding-top:8px;"></div>
         </div>
         <div class="card">
           <h3>Accuracy</h3>
@@ -524,15 +525,32 @@
 
       function updateCards(resp) {
         const pub = resp && resp.public;
+        const givenEl = $('givenPrice');
         if (!pub) {
           $('casp').textContent = '$—'; $('acc').textContent = '—%';
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
           $('caspSub').textContent = 'Avg of recent eBay sold listings';
-          $('refPrice').style.display = 'none';
+          if (givenEl) givenEl.style.display = 'none';
           return;
         }
-        $('casp').textContent = fmtMoney(pub.casp);
+
+        // For known models: main number = eBay median, given price shown below
+        // pub.casp = given price (manual override); summary.median = eBay scraped median
+        const ebayMedian = resp.summary && resp.summary.median;
+        if (resp.is_manual && ebayMedian) {
+          $('casp').textContent = fmtMoney(ebayMedian);
+          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          if (givenEl) {
+            givenEl.style.display = 'block';
+            givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
+          }
+        } else {
+          $('casp').textContent = fmtMoney(pub.casp);
+          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          if (givenEl) givenEl.style.display = 'none';
+        }
+
         $('acc').textContent = `${pub.accuracy_pct ?? '—'}%`;
         $('accLabel').textContent = pub.accuracy_label ?? '—';
         if (pub.deal_score) {
@@ -541,14 +559,6 @@
         } else {
           $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
-        }
-        // Show "Given price" label for known models with manual CASP overrides
-        if (resp.is_manual) {
-          $('caspSub').textContent = 'Given price';
-          $('refPrice').style.display = 'none';
-        } else {
-          $('caspSub').textContent = 'Avg of recent eBay sold listings';
-          $('refPrice').style.display = 'none';
         }
       }
 
