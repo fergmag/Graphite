@@ -81,8 +81,8 @@ JUNK_TERMS = [
     "vest", "liner only",
 ]
 
-# Matches numeric jacket codes: J01, J97, J130, J183, etc.
-_NUMERIC_CODE_RE = re.compile(r"\bJ(\d{2,})\b", re.IGNORECASE)
+# Matches Carhartt jacket codes: J97, J65, JB0817, JS1237, JR0115, etc.
+_NUMERIC_CODE_RE = re.compile(r"\b(J[A-Z]?\d{2,})\b", re.IGNORECASE)
 
 
 def filter_comps(comps: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]]:
@@ -93,7 +93,7 @@ def filter_comps(comps: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]
       code to appear in the title too.
     """
     code_match = _NUMERIC_CODE_RE.search(query)
-    required_code = code_match.group(0).lower() if code_match else None
+    required_code = code_match.group(1).lower() if code_match else None
 
     filtered = []
     for comp in comps:

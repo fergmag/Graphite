@@ -101,10 +101,12 @@
       #panel-estimator { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
 
       #panel-estimator label { display: block; font-weight: 600; margin: 14px 0 6px; color: var(--fg); }
-      #panel-estimator input.est-input {
+      #panel-estimator input.est-input,
+      #panel-estimator select.est-input {
         width: 100%; padding: 10px 12px; border: 1px solid var(--line);
         border-radius: 12px; font-size: 14px; outline: none;
         background: #ffffff; color: #111111; font-family: inherit;
+        -webkit-appearance: none; appearance: none; height: 44px; box-sizing: border-box;
       }
       .est-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
       .est-btn {
@@ -119,9 +121,9 @@
       .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
       @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
       .card { border: none; border-radius: 14px; padding: 20px; background: #ffffff; color: #111111; box-shadow: 0 4px 20px rgba(0,0,0,0.18); border-top: 3px solid #283238; }
-      .card h3 { margin: 0 0 10px; font-size: 11px; color: #444; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+      .card h3 { margin: 0 0 10px; font-size: 11px; color: #111; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
       .big { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; line-height: 1; }
-      .sub { font-size: 12px; color: #444; margin-top: 8px; }
+      .sub { font-size: 12px; color: #111; margin-top: 8px; }
       .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 11px; margin-top: 10px; letter-spacing: 0.03em; }
 
       .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
@@ -336,7 +338,7 @@
           <h3>Estimated Value</h3>
           <p class="big" id="casp">$—</p>
           <div class="sub" id="caspSub">Avg of recent eBay sold listings</div>
-          <div id="givenPrice" style="display:none;margin-top:8px;font-size:11px;font-weight:700;color:#555;letter-spacing:0.03em;border-top:1px solid #e0e0e0;padding-top:8px;"></div>
+          <div id="givenPrice" style="display:none;margin-top:8px;font-size:11px;font-weight:700;color:#111;letter-spacing:0.03em;"></div>
         </div>
         <div class="card">
           <h3>Accuracy</h3>
@@ -369,8 +371,8 @@
           <span id="listingsSource" style="font-size:11px;color:#fff;"></span>
         </div>
         <div id="listingsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;"></div>
-        <p id="listingsEmpty" style="display:none;font-size:13px;color:#fff;text-align:center;padding:24px 0;">No listings found on Depop or Grailed for this query.</p>
-        <p id="listingsLoading" style="font-size:13px;color:#fff;text-align:center;padding:24px 0;">Scanning Depop &amp; Grailed…</p>
+        <p id="listingsEmpty" style="display:none;font-size:13px;color:#fff;text-align:center;padding:24px 0;">No listings found for this query.</p>
+        <p id="listingsLoading" style="font-size:13px;color:#fff;text-align:center;padding:24px 0;">Scanning Grailed…</p>
       </div>
 
       <!-- Alerts modal -->
@@ -539,19 +541,14 @@
         // pub.casp = given price (manual override); summary.median = eBay scraped median
         const ebayMedian = resp.summary && resp.summary.median;
         if (resp.is_manual) {
-          if (ebayMedian) {
-            // Have both — show eBay as main, given price as reference below
-            $('casp').textContent = fmtMoney(ebayMedian);
-            $('caspSub').textContent = 'Avg of recent eBay sold listings';
-            if (givenEl) {
-              givenEl.style.display = 'block';
-              givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
-            }
-          } else {
-            // No eBay data — show given price as the main number
-            $('casp').textContent = fmtMoney(pub.casp);
-            $('caspSub').textContent = 'Given price';
-            if (givenEl) givenEl.style.display = 'none';
+          // Known model: always show given price as primary
+          $('casp').textContent = fmtMoney(pub.casp);
+          $('caspSub').textContent = 'Given price';
+          if (givenEl && ebayMedian) {
+            givenEl.style.display = 'block';
+            givenEl.textContent = `eBay median: ${fmtMoney(ebayMedian)}`;
+          } else if (givenEl) {
+            givenEl.style.display = 'none';
           }
         } else {
           $('casp').textContent = fmtMoney(pub.casp);

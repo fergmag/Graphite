@@ -466,6 +466,9 @@ def create_app() -> Flask:
         except Exception as e:
             logging.getLogger(__name__).warning("[detail] etsy error: %s", e)
 
+        # Filter out irrelevant results (wrong model code, kids items, etc.)
+        listings = filter_comps(listings, query)
+
         # Score each listing against CASP
         def _score(price):
             if not casp or casp <= 0:
