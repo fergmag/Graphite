@@ -44,6 +44,7 @@ from app.db import (
     get_alerts,
     count_unseen_alerts,
     mark_alerts_seen,
+    count_alerts_per_query,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -425,12 +426,114 @@ def create_app() -> Flask:
         t.start()
         return jsonify({"ok": True, "message": "Refresh started in background"})
 
+    @app.get("/api/model-detail")
+    @_login_required
+    def api_model_detail():
+        from app.cache import read_cache
+        from app.db import get_casp_history
+        from app.scrape_depop import search_depop
+        from app.scrape_grailed import search_grailed
+        from app.scrape_etsy import search_etsy
+        from app.vision import grade_condition
+
+        raw_query = request.args.get("query", "")
+        if not raw_query:
+            return jsonify({"ok": False, "error": "Missing query"}), 400
+        query = normalize_query(raw_query)
+
+        # CASP from cache (fast, no live scrape)
+        cached = read_cache(query) or {}
+        public = cached.get("public") or {}
+        casp = public.get("casp")
+        accuracy = public.get("accuracy_pct")
+        n = cached.get("n")
+
+        # History from DB
+        history = get_casp_history(query, limit=60)
+
+        # Live platform listings
+        listings = []
+        try:
+            listings.extend(search_depop(query))
+        except Exception as e:
+            logging.getLogger(__name__).warning("[detail] depop error: %s", e)
+        try:
+            listings.extend(search_grailed(query))
+        except Exception as e:
+            logging.getLogger(__name__).warning("[detail] grailed error: %s", e)
+        try:
+            listings.extend(search_etsy(query))
+        except Exception as e:
+            logging.getLogger(__name__).warning("[detail] etsy error: %s", e)
+
+        # Score each listing against CASP
+        def _score(price):
+            if not casp or casp <= 0:
+                return 0
+            r = price / casp
+            if r <= 0.50: return 5
+            if r <= 0.65: return 4
+            if r <= 0.80: return 3
+            if r <= 0.95: return 2
+            return 1
+
+        for lst in listings:
+            lst["deal_score"] = _score(lst.get("price") or 0)
+
+        # Sort best deals first
+        listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)
+
+        # Claude Vision condition for top 5 with photos
+        graded = 0
+        for lst in listings:
+            if graded >= 5:
+                break
+            photo = lst.get("photo")
+            if photo:
+                result = grade_condition(photo)
+                if result:
+                    lst["vision"] = result
+                graded += 1
+
+        return jsonify({
+            "ok": True,
+            "query": query,
+            "casp": casp,
+            "accuracy": accuracy,
+            "n": n,
+            "history": history,
+            "listings": listings,
+        })
+
+    @app.get("/api/models")
+    @_login_required
+    def api_models():
+        profiles_path = os.path.join(os.path.dirname(__file__), "models.json")
+        try:
+            with open(profiles_path) as f:
+                models = json.load(f)
+            result = [
+                {"key": k, "casp": v.get("casp"), "note": v.get("note", "")}
+                for k, v in models.items()
+            ]
+            return jsonify({"ok": True, "models": result})
+        except Exception as e:
+            return jsonify({"ok": False, "error": str(e)}), 500
+
     @app.get("/api/alerts")
     @_login_required
     def api_alerts():
         unseen_only = request.args.get("unseen") == "1"
-        alerts = get_alerts(unseen_only=unseen_only, limit=100)
+        query_filter = request.args.get("query") or None
+        alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
         return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts()})
+
+    @app.post("/api/alerts/counts")
+    @_login_required
+    def api_alerts_counts():
+        queries = (request.get_json(silent=True) or {}).get("queries", [])
+        counts = count_alerts_per_query([q for q in queries if isinstance(q, str)])
+        return jsonify({"ok": True, "counts": counts})
 
     @app.post("/api/alerts/mark-seen")
     @_login_required
@@ -771,6 +874,12 @@ def create_app() -> Flask:
                     )
                     payload["public"] = pub
 
+                is_manual = False
+                if get_manual_casp_for_query:
+                    try:
+                        is_manual = get_manual_casp_for_query(query) is not None
+                    except Exception:
+                        pass
                 return jsonify(
                     {
                         "ok": True,
@@ -779,6 +888,7 @@ def create_app() -> Flask:
                         "from_cache": True,
                         "cached_at": cached.get("cached_at"),
                         "include_shipping": include_shipping,
+                        "is_manual": is_manual,
                         "note": "Served cached result (cache_first=true).",
                         **payload,
                     }
@@ -851,11 +961,13 @@ def create_app() -> Flask:
         summary_dict = to_dict(summary)
 
         casp = summary_dict.get("median")
+        is_manual = False
         if get_manual_casp_for_query:
             try:
                 override = get_manual_casp_for_query(query)
                 if override is not None:
                     casp = override
+                    is_manual = True
             except Exception:
                 pass
 
@@ -883,6 +995,7 @@ def create_app() -> Flask:
                 "query": query,
                 "from_cache": False,
                 "include_shipping": include_shipping,
+                "is_manual": is_manual,
                 **payload,
             }
         ), 200

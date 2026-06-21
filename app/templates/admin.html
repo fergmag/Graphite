@@ -119,9 +119,9 @@
       .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
       @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
       .card { border: none; border-radius: 14px; padding: 20px; background: #ffffff; color: #111111; box-shadow: 0 4px 20px rgba(0,0,0,0.18); border-top: 3px solid #283238; }
-      .card h3 { margin: 0 0 10px; font-size: 11px; color: #888; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
+      .card h3 { margin: 0 0 10px; font-size: 11px; color: #444; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
       .big { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; line-height: 1; }
-      .sub { font-size: 12px; color: #888; margin-top: 8px; }
+      .sub { font-size: 12px; color: #444; margin-top: 8px; }
       .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 11px; margin-top: 10px; letter-spacing: 0.03em; }
 
       .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
@@ -129,14 +129,14 @@
       .chart-wrap { margin-top: 20px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; display: none; }
       .chart-wrap.visible { display: block; }
       .chart-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
-      .chart-title { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-      .chart-range { font-size: 11px; color: var(--muted); }
+      .chart-title { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg); }
+      .chart-range { font-size: 11px; color: var(--fg); }
       .chart-svg { width: 100%; height: 80px; display: block; }
-      .chart-labels { display: flex; justify-content: space-between; margin-top: 4px; font-size: 10px; color: var(--muted); }
+      .chart-labels { display: flex; justify-content: space-between; margin-top: 4px; font-size: 10px; color: var(--fg); }
 
       .watch { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 24px; }
       .watch h2 { margin: 0 0 4px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #ffffff; }
-      .watch-sub { margin: 0 0 14px; font-size: 12px; color: rgba(255,255,255,0.55); }
+      .watch-sub { margin: 0 0 14px; font-size: 12px; color: #ffffff; }
       .watchrow { display: flex; gap: 10px; flex-wrap: wrap; }
       .watchrow .est-input { flex: 1; min-width: 0; }
       ul.watchul { margin: 14px 0 0; padding-left: 0; list-style: none; }
@@ -144,12 +144,13 @@
       .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #ffffff; color: #111111; font-weight: 700; font-size: 13px; cursor: pointer; transition: opacity 0.15s; }
       .pill:hover { opacity: 0.75; }
       .xbtn { margin-left: 10px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #ffffff; font-weight: 700; cursor: pointer; font-family: inherit; }
-      .tiny { font-size: 12px; color: var(--muted); margin-top: 6px; }
+      .tiny { font-size: 12px; color: var(--fg); margin-top: 6px; }
 
       /* ══════════════════════════════════════
          ARCHIVE TAB
       ══════════════════════════════════════ */
       #panel-archive { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
+
 
       .arc-row { background: var(--bg-card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
       .arc-row-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
@@ -306,8 +307,24 @@
       <label for="query">Jacket model</label>
       <input class="est-input" id="query" placeholder="e.g. J97 CRI, JB0817, J65 BRK" />
 
-      <label for="asking">Asking price <span style="font-weight:400;opacity:0.7;">— optional</span></label>
-      <input class="est-input" id="asking" placeholder="e.g. 2500" />
+      <div style="display:flex;gap:10px;margin-top:14px;">
+        <div style="flex:1;">
+          <label for="asking" style="margin-top:0;">Asking price <span style="font-weight:400;font-size:12px;">— optional</span></label>
+          <input class="est-input" id="asking" placeholder="e.g. 2500" />
+        </div>
+        <div style="width:110px;">
+          <label for="sizeSelect" style="margin-top:0;">Size <span style="font-weight:400;font-size:12px;">— optional</span></label>
+          <select class="est-input" id="sizeSelect" style="cursor:pointer;">
+            <option value="">Any</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+      </div>
 
       <div class="est-row">
         <button class="est-btn" id="estimateBtn">Get Estimate</button>
@@ -318,7 +335,7 @@
         <div class="card">
           <h3>Estimated Value</h3>
           <p class="big" id="casp">$—</p>
-          <div class="sub">Avg of recent eBay sold listings</div>
+          <div class="sub" id="caspSub">Avg of recent eBay sold listings</div>
         </div>
         <div class="card">
           <h3>Accuracy</h3>
@@ -344,6 +361,17 @@
         <div class="chart-labels" id="chartLabels"></div>
       </div>
 
+      <!-- Active Listings from Depop / Grailed / Etsy -->
+      <div id="listingsSection" style="display:none;margin-top:28px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+          <span style="font-size:12px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:#fff;">Live Listings — Best Deals First</span>
+          <span id="listingsSource" style="font-size:11px;color:#fff;"></span>
+        </div>
+        <div id="listingsGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;"></div>
+        <p id="listingsEmpty" style="display:none;font-size:13px;color:#fff;text-align:center;padding:24px 0;">No listings found on Depop or Grailed for this query.</p>
+        <p id="listingsLoading" style="font-size:13px;color:#fff;text-align:center;padding:24px 0;">Scanning Depop &amp; Grailed…</p>
+      </div>
+
       <!-- Alerts modal -->
       <div id="alertsOverlay" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;">
         <div style="background:#1e2a2f;border:1px solid rgba(255,255,255,0.15);border-radius:12px;width:90%;max-width:600px;max-height:80vh;overflow-y:auto;padding:24px;">
@@ -358,28 +386,23 @@
       </div>
 
       <div class="watch">
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
-          <div style="display:flex;align-items:center;gap:12px;">
-            <h2 style="margin:0;">Watchlist</h2>
-            <button id="bellBtn" onclick="openAlerts()" style="position:relative;background:none;border:none;cursor:pointer;font-size:20px;padding:0;line-height:1;" title="Deal alerts">
-              🔔<span id="bellCount" style="display:none;position:absolute;top:-5px;right:-8px;background:#e53935;color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px;font-family:inherit;line-height:1.4;"></span>
-            </button>
-          </div>
-          <button class="est-btn secondary" id="watchToggleBtn" style="padding:5px 10px;font-size:11px;">Hide</button>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+          <h2 style="margin:0;">Watchlist</h2>
+          <button id="bellBtn" onclick="openAlerts(null)" style="position:relative;background:none;border:none;cursor:pointer;font-size:20px;padding:0;line-height:1;" title="All deal alerts">
+            🔔<span id="bellCount" style="display:none;position:absolute;top:-5px;right:-8px;background:#e53935;color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px;font-family:inherit;line-height:1.4;"></span>
+          </button>
         </div>
-        <p class="watch-sub">Auto-refreshes every 6 hours. <span id="lastRefresh" style="color:var(--muted);"></span></p>
+        <p class="watch-sub">Auto-refreshes every 6 hours. <span id="lastRefresh"></span></p>
         <div id="watchBody">
           <div class="watchrow">
             <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
             <button class="est-btn" id="watchAddBtn">Save</button>
           </div>
-          <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
-            <button class="est-btn secondary" type="submit" style="width:100%;font-size:12px;">Load all 27 models</button>
-          </form>
           <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
         </div>
       </div>
+
 
     </div>
 
@@ -476,15 +499,7 @@
         else alert('Failed to remove photo — try again.');
       }
 
-      // ── Watchlist collapse ──
-      const watchToggleBtn = document.getElementById('watchToggleBtn');
-      const watchBody = document.getElementById('watchBody');
-      let watchVisible = true;
-      watchToggleBtn.addEventListener('click', () => {
-        watchVisible = !watchVisible;
-        watchBody.style.display = watchVisible ? 'block' : 'none';
-        watchToggleBtn.textContent = watchVisible ? 'Hide' : 'Show';
-      });
+      // (watchlist always visible — no toggle)
 
       // ── Photo count ──
       document.getElementById('photoInput').addEventListener('change', function() {
@@ -513,6 +528,8 @@
           $('casp').textContent = '$—'; $('acc').textContent = '—%';
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
+          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          $('refPrice').style.display = 'none';
           return;
         }
         $('casp').textContent = fmtMoney(pub.casp);
@@ -524,6 +541,14 @@
         } else {
           $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
+        }
+        // Show "Given price" label for known models with manual CASP overrides
+        if (resp.is_manual) {
+          $('caspSub').textContent = 'Given price';
+          $('refPrice').style.display = 'none';
+        } else {
+          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          $('refPrice').style.display = 'none';
         }
       }
 
@@ -539,7 +564,7 @@
         return { status: res.status, data };
       }
 
-      function renderWatchItems(items, counts) {
+      function renderWatchItems(items, alertCounts) {
         const clean = Array.isArray(items) ? items.filter(i => typeof i === 'string' && i.trim()) : [];
         if (!clean.length) { $('watchList').innerHTML = '<div class="tiny">No saved queries yet.</div>'; return; }
         const ul = document.createElement('ul');
@@ -548,18 +573,24 @@
           const li = document.createElement('li');
           const pill = document.createElement('span');
           pill.className = 'pill'; pill.title = 'Tap to load estimate';
-          pill.addEventListener('click', () => { $('query').value = q; runEstimate(q); switchTab('estimator'); });
+          pill.addEventListener('click', () => { $('query').value = q; runEstimate(q); loadListings(q); });
 
           const label = document.createElement('span');
           label.textContent = q;
           pill.appendChild(label);
 
+          const alertCount = alertCounts && alertCounts[q] != null ? alertCounts[q] : 0;
           const bell = document.createElement('button');
           bell.className = 'xbtn'; bell.style.fontSize = '13px'; bell.style.padding = '4px 8px';
-          const count = counts && counts[q] != null ? counts[q] : 0;
-          bell.textContent = count > 0 ? `🔔 ${count}` : '🔔';
-          bell.title = count > 0 ? `${count} scraped comps for ${q}` : `No comps yet for ${q}`;
-          bell.addEventListener('click', (e) => { e.stopPropagation(); /* future: open comps for this query */ });
+          bell.style.position = 'relative';
+          if (alertCount > 0) {
+            bell.innerHTML = `🔔 <span style="background:#e53935;color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px;">${alertCount}</span>`;
+            bell.title = `${alertCount} deal alert${alertCount > 1 ? 's' : ''} for ${q}`;
+          } else {
+            bell.textContent = '🔔';
+            bell.title = `No alerts for ${q}`;
+          }
+          bell.addEventListener('click', (e) => { e.stopPropagation(); openAlerts(q); });
 
           const x = document.createElement('button');
           x.className = 'xbtn'; x.textContent = '×';
@@ -576,28 +607,30 @@
         const { status, data } = await getJSON('/watchlist');
         if (status !== 200 || !data || !data.ok) return;
         const items = data.items || [];
-        // Fetch comp counts for all watchlist queries in one call
-        let counts = {};
+        // Fetch per-query alert counts
+        let alertCounts = {};
         if (items.length) {
-          const res = await fetch('/api/comps/counts', {
+          const res = await fetch('/api/alerts/counts', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ queries: items }),
           }).catch(() => null);
           if (res && res.ok) {
             const cd = await res.json().catch(() => null);
-            if (cd && cd.counts) counts = cd.counts;
+            if (cd && cd.counts) alertCounts = cd.counts;
           }
         }
-        renderWatchItems(items, counts);
+        renderWatchItems(items, alertCounts);
       }
 
       async function runEstimate(query) {
         $('estimateBtn').disabled = true;
         setStatus('Fetching estimate…');
         const asking = $('asking').value.trim();
+        const size = $('sizeSelect') ? $('sizeSelect').value.trim() : '';
+        const fullQuery = size ? `${query} ${size}` : query;
         const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : '';
-        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}`);
+        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(fullQuery)}&cache_first=true${askingParam}`);
         if (status !== 200 || !data || !data.ok) {
           setStatus('Error fetching estimate'); updateCards(null); renderChart(null);
         } else {
@@ -607,7 +640,7 @@
         $('estimateBtn').disabled = false;
       }
 
-      $('estimateBtn').addEventListener('click', () => { const q = $('query').value.trim(); if (q) runEstimate(q); });
+      $('estimateBtn').addEventListener('click', () => { const q = $('query').value.trim(); if (q) { runEstimate(q); loadListings(q); } });
       $('clearBtn').addEventListener('click', () => { $('asking').value = ''; updateCards(null); renderChart(null); setStatus('Ready'); });
       $('watchAddBtn').addEventListener('click', async () => {
         const q = $('watchInput').value;
@@ -720,6 +753,65 @@
       loadRefreshStatus();
       refreshWatchlist();
 
+      // ── Active Listings (Depop / Grailed / Etsy) ──
+      const SCORE_COLORS = ['','#5a3a1a','#3a3a1a','#1a3a2a','#0f3322','#0a2618'];
+      const SCORE_TEXT   = ['','#c8a06a','#c8c06a','#6fcf97','#4abe7e','#2ebd6b'];
+
+      async function loadListings(query) {
+        const section  = document.getElementById('listingsSection');
+        const grid     = document.getElementById('listingsGrid');
+        const empty    = document.getElementById('listingsEmpty');
+        const loading  = document.getElementById('listingsLoading');
+        const srcLabel = document.getElementById('listingsSource');
+
+        section.style.display = 'block';
+        grid.innerHTML = '';
+        empty.style.display = 'none';
+        loading.style.display = 'block';
+        srcLabel.textContent = '';
+
+        const { status, data } = await getJSON(`/api/model-detail?query=${encodeURIComponent(query)}`);
+        loading.style.display = 'none';
+
+        if (status !== 200 || !data || !data.ok) {
+          empty.style.display = 'block';
+          empty.textContent = 'Error loading listings — try again.';
+          return;
+        }
+
+        const listings = data.listings || [];
+        if (!listings.length) { empty.style.display = 'block'; return; }
+
+        const sources = [...new Set(listings.map(l => l.source))];
+        srcLabel.textContent = `${listings.length} listings · ${sources.join(', ')}`;
+
+        grid.innerHTML = listings.map(l => {
+          const score = l.deal_score || 0;
+          const bgCol = SCORE_COLORS[score] || 'rgba(255,255,255,0.05)';
+          const txCol = SCORE_TEXT[score] || '#ffffff';
+          const vision = l.vision ? `<div style="font-size:10px;color:#fff;margin-top:6px;line-height:1.4;">🤖 ${l.vision.grade} — ${l.vision.notes}</div>` : '';
+          const pct = data.casp && l.price ? Math.round((1 - l.price/data.casp)*100) : null;
+          const saveBadge = pct > 0 ? `<span style="font-size:10px;font-weight:700;color:#6fcf97;">−${pct}% vs CASP</span>` : '';
+          return `
+            <a href="${l.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+              <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;overflow:hidden;transition:transform 0.15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">
+                ${l.photo ? `<img src="${l.photo}" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;" loading="lazy" />` : '<div style="width:100%;aspect-ratio:1/1;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;">No photo</div>'}
+                <div style="padding:10px 12px;">
+                  <div style="font-size:12px;font-weight:700;line-height:1.3;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${l.title || '—'}</div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap;">
+                    <span style="font-size:16px;font-weight:800;">$${(l.price||0).toFixed(2)}</span>
+                    ${score > 0 ? `<span style="font-size:10px;font-weight:800;padding:2px 7px;border-radius:4px;background:${bgCol};color:${txCol};">Deal ${score}/5</span>` : ''}
+                  </div>
+                  ${saveBadge}
+                  <div style="font-size:10px;color:#fff;margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.condition ? ' · ' + l.condition : ''}</div>
+                  ${vision}
+                </div>
+              </div>
+            </a>
+          `;
+        }).join('');
+      }
+
       // ── Deal Alerts Bell ──
       async function loadBellCount() {
         try {
@@ -731,15 +823,18 @@
         } catch(e) {}
       }
 
-      async function openAlerts() {
+      async function openAlerts(queryFilter) {
         const overlay = document.getElementById('alertsOverlay');
         overlay.style.display = 'flex';
+        const modalTitle = overlay.querySelector('h3');
+        if (modalTitle) modalTitle.textContent = queryFilter ? `Deal Alerts — ${queryFilter}` : 'Deal Alerts';
         const list = document.getElementById('alertsList');
-        list.innerHTML = '<p style="color:var(--muted);font-size:13px;">Loading...</p>';
+        list.innerHTML = '<p style="color:#fff;font-size:13px;">Loading...</p>';
         try {
-          const { status, data } = await getJSON('/api/alerts');
+          const url = queryFilter ? `/api/alerts?query=${encodeURIComponent(queryFilter)}` : '/api/alerts';
+          const { status, data } = await getJSON(url);
           if (status !== 200 || !data.alerts.length) {
-            list.innerHTML = '<p style="color:var(--muted);font-size:13px;">No alerts yet. Alerts appear after a watchlist refresh finds deals on Depop, Grailed, or Etsy.</p>';
+            list.innerHTML = '<p style="color:#fff;font-size:13px;">No alerts yet. Alerts appear after a watchlist refresh finds deals on Depop or Grailed.</p>';
             return;
           }
           list.innerHTML = data.alerts.map(a => `
@@ -747,20 +842,22 @@
               ${a.photo ? `<img src="${a.photo}" style="width:64px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;" />` : '<div style="width:64px;height:64px;background:rgba(255,255,255,0.1);border-radius:6px;flex-shrink:0;"></div>'}
               <div style="flex:1;min-width:0;">
                 <div style="font-size:13px;font-weight:700;margin-bottom:4px;">${a.title || '—'}</div>
-                <div style="font-size:12px;color:var(--muted);margin-bottom:6px;">${a.source.toUpperCase()} · Query: ${a.query}</div>
-                <div style="display:flex;gap:12px;align-items:center;">
+                <div style="font-size:12px;color:#fff;margin-bottom:6px;">${a.source.toUpperCase()} · ${a.query}</div>
+                <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
                   <span style="font-size:16px;font-weight:800;">$${(a.price||0).toFixed(2)}</span>
-                  ${a.casp ? `<span style="font-size:11px;color:var(--muted);">CASP $${(a.casp).toFixed(0)}</span>` : ''}
+                  ${a.casp ? `<span style="font-size:11px;color:#fff;">CASP $${(a.casp).toFixed(0)}</span>` : ''}
                   <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${a.deal_score>=5?'#1b4332':a.deal_score>=4?'#2d4a1e':'#3a2d00'};color:${a.deal_score>=5?'#6fcf97':a.deal_score>=4?'#a8d08d':'#f5c842'};">Deal ${a.deal_score}/5</span>
                   <a href="${a.url}" target="_blank" rel="noopener" style="font-size:11px;color:#7eb8d4;text-decoration:none;font-weight:600;">View →</a>
                 </div>
               </div>
             </div>
           `).join('');
-          await fetch('/api/alerts/mark-seen', { method: 'POST' });
-          document.getElementById('bellCount').style.display = 'none';
+          if (!queryFilter) {
+            await fetch('/api/alerts/mark-seen', { method: 'POST' });
+            document.getElementById('bellCount').style.display = 'none';
+          }
         } catch(e) {
-          list.innerHTML = '<p style="color:var(--muted);">Error loading alerts.</p>';
+          list.innerHTML = '<p style="color:#fff;">Error loading alerts.</p>';
         }
       }
 

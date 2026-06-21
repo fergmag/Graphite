@@ -12,9 +12,11 @@ import requests
 
 log = logging.getLogger(__name__)
 
-# Grailed's public Algolia credentials (search-only, embedded in their JS)
-_ALGOLIA_APP_ID = "XW7SBCT9AD"
-_ALGOLIA_SEARCH_KEY = "a0b38c4e7f40fec1bd8f3beb44e21d9c"
+# Grailed's public Algolia credentials (search-only, embedded in window.PUBLIC_CONFIG)
+# These are rotated periodically — update by fetching https://www.grailed.com and
+# extracting window.PUBLIC_CONFIG.algolia.app_id / public_search_key
+_ALGOLIA_APP_ID = "MNRWEFSS2Q"
+_ALGOLIA_SEARCH_KEY = "c89dbaddf15fe70e1941a109bf7c2a3d"
 _ALGOLIA_INDEX = "Listing_production"
 _ALGOLIA_URL = f"https://{_ALGOLIA_APP_ID}-dsn.algolia.net/1/indexes/{_ALGOLIA_INDEX}/query"
 

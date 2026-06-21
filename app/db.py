@@ -609,15 +609,42 @@ def insert_alert(query: str, source: str, title: str, price: float,
         con.close()
 
 
-def get_alerts(unseen_only: bool = False, limit: int = 100) -> List[Dict[str, Any]]:
+def get_alerts(unseen_only: bool = False, limit: int = 100, query: Optional[str] = None) -> List[Dict[str, Any]]:
     con = _connect()
     try:
-        where = "WHERE seen=0" if unseen_only else ""
+        clauses = []
+        params: List[Any] = []
+        if unseen_only:
+            clauses.append("seen=0")
+        if query:
+            clauses.append("query=?")
+            params.append(query)
+        where = ("WHERE " + " AND ".join(clauses)) if clauses else ""
+        params.append(limit)
         rows = con.execute(
             f"SELECT * FROM listing_alerts {where} ORDER BY created_at DESC LIMIT ?",
-            (limit,),
+            params,
         ).fetchall()
         return [dict(r) for r in rows]
+    finally:
+        con.close()
+
+
+def count_alerts_per_query(queries: List[str]) -> Dict[str, int]:
+    """Return {query: alert_count} for the given list of queries."""
+    if not queries:
+        return {}
+    con = _connect()
+    try:
+        placeholders = ",".join("?" * len(queries))
+        rows = con.execute(
+            f"SELECT query, COUNT(*) as cnt FROM listing_alerts WHERE query IN ({placeholders}) GROUP BY query",
+            queries,
+        ).fetchall()
+        result = {q: 0 for q in queries}
+        for r in rows:
+            result[r["query"]] = r["cnt"]
+        return result
     finally:
         con.close()
 
