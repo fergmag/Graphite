@@ -308,13 +308,13 @@
       <input class="est-input" id="query" placeholder="e.g. J97 CRI, JB0817, J65 BRK" />
 
       <div style="display:flex;gap:10px;margin-top:14px;">
-        <div style="flex:1;">
+        <div style="flex:1;min-width:0;">
           <label for="asking" style="margin-top:0;">Asking price <span style="font-weight:400;font-size:12px;">— optional</span></label>
-          <input class="est-input" id="asking" placeholder="e.g. 2500" />
+          <input class="est-input" id="asking" placeholder="e.g. 2500" style="width:100%;" />
         </div>
-        <div style="width:110px;">
+        <div style="flex:1;min-width:0;">
           <label for="sizeSelect" style="margin-top:0;">Size <span style="font-weight:400;font-size:12px;">— optional</span></label>
-          <select class="est-input" id="sizeSelect" style="cursor:pointer;">
+          <select class="est-input" id="sizeSelect" style="cursor:pointer;width:100%;">
             <option value="">Any</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -538,12 +538,20 @@
         // For known models: main number = eBay median, given price shown below
         // pub.casp = given price (manual override); summary.median = eBay scraped median
         const ebayMedian = resp.summary && resp.summary.median;
-        if (resp.is_manual && ebayMedian) {
-          $('casp').textContent = fmtMoney(ebayMedian);
-          $('caspSub').textContent = 'Avg of recent eBay sold listings';
-          if (givenEl) {
-            givenEl.style.display = 'block';
-            givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
+        if (resp.is_manual) {
+          if (ebayMedian) {
+            // Have both — show eBay as main, given price as reference below
+            $('casp').textContent = fmtMoney(ebayMedian);
+            $('caspSub').textContent = 'Avg of recent eBay sold listings';
+            if (givenEl) {
+              givenEl.style.display = 'block';
+              givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
+            }
+          } else {
+            // No eBay data — show given price as the main number
+            $('casp').textContent = fmtMoney(pub.casp);
+            $('caspSub').textContent = 'Given price';
+            if (givenEl) givenEl.style.display = 'none';
           }
         } else {
           $('casp').textContent = fmtMoney(pub.casp);
