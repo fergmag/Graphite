@@ -148,9 +148,9 @@
       .watchrow .est-input { flex: 1; min-width: 0; }
       ul.watchul { margin: 14px 0 0; padding-left: 0; list-style: none; }
       ul.watchul li { margin: 8px 0; display: flex; align-items: center; gap: 8px; }
-      .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #ffffff; color: #111111; font-weight: 700; font-size: 13px; cursor: pointer; transition: opacity 0.15s; }
+      .pill { display: inline-block; padding: 6px 12px; border-radius: 8px; background: #ffffff; color: #111111; font-weight: 700; font-size: 13px; cursor: pointer; transition: opacity 0.15s; }
       .pill:hover { opacity: 0.75; }
-      .xbtn { margin-left: 10px; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #ffffff; font-weight: 700; cursor: pointer; font-family: inherit; }
+      .xbtn { margin-left: 10px; padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.12); color: #ffffff; font-weight: 700; cursor: pointer; font-family: inherit; }
       .tiny { font-size: 12px; color: var(--fg); margin-top: 6px; }
 
       /* ══════════════════════════════════════
@@ -491,9 +491,15 @@
           </div>
           <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
-          <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
-            <button type="submit" class="est-btn secondary" style="width:100%;font-size:12px;" onclick="return confirm('Add all 27 default models to watchlist?')">+ Restore 27 Default Models</button>
-          </form>
+          <div style="margin-top:8px;" id="restoreWrap">
+            <button type="button" class="est-btn secondary" style="width:100%;font-size:12px;" id="restoreBtn">+ Restore 27 Default Models</button>
+            <div id="restoreConfirm" style="display:none;margin-top:6px;display:none;">
+              <form method="POST" action="/admin/populate-watchlist" style="display:flex;gap:6px;">
+                <button type="submit" class="est-btn" style="flex:1;font-size:12px;">Yes, add them</button>
+                <button type="button" class="est-btn secondary" style="flex:1;font-size:12px;" id="restoreCancel">Cancel</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -978,6 +984,21 @@
       });
 
       loadBellCount();
+
+      // ── Restore confirm (no browser dialog) ──
+      const restoreBtn = document.getElementById('restoreBtn');
+      const restoreConfirm = document.getElementById('restoreConfirm');
+      const restoreCancel = document.getElementById('restoreCancel');
+      if (restoreBtn) {
+        restoreBtn.addEventListener('click', function() {
+          restoreBtn.style.display = 'none';
+          restoreConfirm.style.display = 'block';
+        });
+        restoreCancel.addEventListener('click', function() {
+          restoreConfirm.style.display = 'none';
+          restoreBtn.style.display = '';
+        });
+      }
 
       // ── Custom Dropdowns ──
       function initCustDD(dd) {
