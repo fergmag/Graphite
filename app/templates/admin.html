@@ -491,15 +491,9 @@
           </div>
           <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
-          <div style="margin-top:8px;" id="restoreWrap">
-            <button type="button" class="est-btn secondary" style="width:100%;font-size:12px;" id="restoreBtn">+ Restore 27 Default Models</button>
-            <div id="restoreConfirm" style="display:none;margin-top:6px;display:none;">
-              <form method="POST" action="/admin/populate-watchlist" style="display:flex;gap:6px;">
-                <button type="submit" class="est-btn" style="flex:1;font-size:12px;">Yes, add them</button>
-                <button type="button" class="est-btn secondary" style="flex:1;font-size:12px;" id="restoreCancel">Cancel</button>
-              </form>
-            </div>
-          </div>
+          <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
+            <button type="submit" class="est-btn secondary" style="width:100%;font-size:12px;">+ Restore 27 Default Models</button>
+          </form>
         </div>
       </div>
 
@@ -984,21 +978,6 @@
       });
 
       loadBellCount();
-
-      // ── Restore confirm (no browser dialog) ──
-      const restoreBtn = document.getElementById('restoreBtn');
-      const restoreConfirm = document.getElementById('restoreConfirm');
-      const restoreCancel = document.getElementById('restoreCancel');
-      if (restoreBtn) {
-        restoreBtn.addEventListener('click', function() {
-          restoreBtn.style.display = 'none';
-          restoreConfirm.style.display = 'block';
-        });
-        restoreCancel.addEventListener('click', function() {
-          restoreConfirm.style.display = 'none';
-          restoreBtn.style.display = '';
-        });
-      }
 
       // ── Custom Dropdowns ──
       function initCustDD(dd) {
