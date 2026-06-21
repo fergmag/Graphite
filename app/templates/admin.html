@@ -335,10 +335,10 @@
 
       <div class="cards">
         <div class="card">
-          <h3>Estimated Value</h3>
+          <h3 id="caspCardTitle">Estimated Value</h3>
           <p class="big" id="casp">$—</p>
           <div class="sub" id="caspSub">Avg of recent eBay sold listings</div>
-          <div id="givenPrice" style="display:none;margin-top:8px;font-size:11px;font-weight:700;color:#111;letter-spacing:0.03em;"></div>
+          <div id="givenPrice" style="display:none;margin-top:6px;font-size:11px;font-weight:700;color:#111;letter-spacing:0.03em;"></div>
         </div>
         <div class="card">
           <h3>Accuracy</h3>
@@ -403,6 +403,9 @@
           </div>
           <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
+          <form method="POST" action="/admin/populate-watchlist" style="margin-top:10px;text-align:right;">
+            <button type="submit" style="background:none;border:none;font-size:11px;color:#fff;cursor:pointer;font-family:inherit;text-decoration:underline;padding:0;" onclick="return confirm('Add all 27 default models to watchlist?')">+ restore default models</button>
+          </form>
         </div>
       </div>
 
@@ -525,32 +528,38 @@
         return Number.isFinite(v) ? `$${v.toFixed(0)}` : '$—';
       }
 
+      const MIN_COMPS = 3;
+
       function updateCards(resp) {
         const pub = resp && resp.public;
         const givenEl = $('givenPrice');
+        const titleEl = $('caspCardTitle');
         if (!pub) {
           $('casp').textContent = '$—'; $('acc').textContent = '—%';
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
           $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          if (titleEl) titleEl.textContent = 'Estimated Value';
           if (givenEl) givenEl.style.display = 'none';
           return;
         }
 
-        // For known models: main number = eBay median, given price shown below
-        // pub.casp = given price (manual override); summary.median = eBay scraped median
         const ebayMedian = resp.summary && resp.summary.median;
+        const n = resp.n || 0;
+
         if (resp.is_manual) {
-          // Known model: always show given price as primary
+          // Known model: show given price prominently; eBay estimate only when n >= MIN_COMPS
+          if (titleEl) titleEl.textContent = 'Given Price';
           $('casp').textContent = fmtMoney(pub.casp);
-          $('caspSub').textContent = 'Given price';
-          if (givenEl && ebayMedian) {
+          $('caspSub').textContent = 'Reference price';
+          if (givenEl && ebayMedian && n >= MIN_COMPS) {
             givenEl.style.display = 'block';
-            givenEl.textContent = `eBay median: ${fmtMoney(ebayMedian)}`;
-          } else if (givenEl) {
-            givenEl.style.display = 'none';
+            givenEl.textContent = `eBay estimate: ${fmtMoney(ebayMedian)} (${n} sold)`;
+          } else {
+            if (givenEl) givenEl.style.display = 'none';
           }
         } else {
+          if (titleEl) titleEl.textContent = 'Estimated Value';
           $('casp').textContent = fmtMoney(pub.casp);
           $('caspSub').textContent = 'Avg of recent eBay sold listings';
           if (givenEl) givenEl.style.display = 'none';
