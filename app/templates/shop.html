@@ -133,7 +133,6 @@
       .sort-btn:hover { border-color: var(--line); }
       .sort-caret { font-size: 13px; }
       .sort-menu {
-        display: none;
         position: absolute;
         left: 0;
         top: calc(100% + 4px);
@@ -144,8 +143,10 @@
         min-width: 180px;
         z-index: 200;
         box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        max-height: 0; opacity: 0; pointer-events: none;
+        transition: max-height 0.28s ease, opacity 0.22s ease;
       }
-      .sort-menu.open { display: block; }
+      .sort-menu.open { max-height: 200px; opacity: 1; pointer-events: auto; }
       .sort-opt {
         display: block; width: 100%;
         padding: 10px 16px; border: none;
@@ -344,8 +345,12 @@
       .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 9px 14px; background: transparent; border: none; color: #ffffff; font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
       .footer-acc-arrow { transition: transform 0.2s; display: inline-block; }
       .footer-acc-btn.open .footer-acc-arrow { transform: rotate(180deg); }
-      .footer-acc-body { display: none; padding: 10px 14px; font-size: 13px; color: #ffffff; line-height: 1.6; border-top: 1px solid var(--line); max-width: 280px; }
-      .footer-acc-body.open { display: block; }
+      .footer-acc-body {
+        overflow: hidden; max-height: 0; opacity: 0;
+        padding: 0 14px; font-size: 13px; color: #ffffff; line-height: 1.6; max-width: 280px;
+        transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
+      }
+      .footer-acc-body.open { max-height: 200px; opacity: 1; padding: 10px 14px; }
       .footer-select {
         background: var(--bg-light);
         border: 1px solid var(--line);

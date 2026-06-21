@@ -113,11 +113,6 @@
         background: #ffffff; color: #111111; font-family: inherit;
         -webkit-appearance: none; appearance: none; height: 44px; box-sizing: border-box;
       }
-      #panel-estimator select.est-input {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23111111' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-        background-repeat: no-repeat; background-position: right 12px center; background-size: 12px 7px;
-        padding-right: 34px; cursor: pointer;
-      }
       .est-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
       .est-btn {
         padding: 10px 14px; border-radius: 12px; border: 1px solid #ffffff;
@@ -133,7 +128,7 @@
       .card { border: none; border-radius: 14px; padding: 20px; background: #ffffff; color: #111111; box-shadow: 0 4px 20px rgba(0,0,0,0.18); border-top: 3px solid #283238; }
       .card h3 { margin: 0 0 10px; font-size: 11px; color: #111; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; }
       .big { font-size: 36px; font-weight: 800; letter-spacing: -0.03em; margin: 0; color: #111111; line-height: 1; }
-      .sub { font-size: 12px; color: #111; margin-top: 8px; }
+      .sub { font-size: 12px; font-weight: 700; color: #111; margin-top: 8px; }
       .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; background: #f0f0f0; color: #111111; font-weight: 700; font-size: 11px; margin-top: 10px; letter-spacing: 0.03em; }
 
       .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
@@ -183,6 +178,49 @@
 
       .arc-edit-form { margin-top: 10px; display: none; }
       .arc-edit-form.open { display: block; }
+
+      /* ── Custom Dropdown ── */
+      .cust-dd { position: relative; }
+      .cust-dd select { display: none; }
+      .cust-dd-trigger {
+        display: flex; align-items: center; justify-content: space-between;
+        width: 100%; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--line);
+        background: var(--bg); color: var(--fg); cursor: pointer;
+        font-family: inherit; font-size: 16px; user-select: none;
+        transition: border-color 0.15s; text-align: left;
+      }
+      .cust-dd-trigger:hover, .cust-dd-trigger.open { border-color: rgba(255,255,255,0.45); }
+      .cust-dd-arrow { flex-shrink: 0; margin-left: 8px; transition: transform 0.22s ease; }
+      .cust-dd-trigger.open .cust-dd-arrow { transform: rotate(180deg); }
+      .cust-dd-panel {
+        position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 400;
+        background: #1c2528; border: 1px solid rgba(255,255,255,0.18);
+        border-radius: 10px; overflow: hidden;
+        max-height: 0; opacity: 0; pointer-events: none;
+        transition: max-height 0.28s ease, opacity 0.22s ease;
+        box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+      }
+      .cust-dd-panel.open { max-height: 320px; opacity: 1; pointer-events: auto; overflow-y: auto; }
+      .cust-dd-opt {
+        display: block; width: 100%; padding: 13px 16px;
+        border: none; background: transparent; color: #fff;
+        font-family: inherit; font-size: 15px; font-weight: 600;
+        text-align: left; cursor: pointer; transition: background 0.1s;
+      }
+      .cust-dd-opt:hover { background: rgba(255,255,255,0.09); }
+      .cust-dd-opt.selected { background: rgba(255,255,255,0.14); font-weight: 800; }
+      /* Light theme (white bg, for estimator) */
+      .cust-dd.light .cust-dd-trigger {
+        background: #ffffff; color: #111111;
+        border-color: rgba(0,0,0,0.15); border-radius: 12px;
+        height: 44px; padding: 0 12px; font-size: 14px;
+      }
+      .cust-dd.light .cust-dd-trigger:hover,
+      .cust-dd.light .cust-dd-trigger.open { border-color: rgba(0,0,0,0.35); }
+      .cust-dd.light .cust-dd-panel { background: #ffffff; border-color: rgba(0,0,0,0.15); }
+      .cust-dd.light .cust-dd-opt { color: #111111; }
+      .cust-dd.light .cust-dd-opt:hover { background: rgba(0,0,0,0.06); }
+      .cust-dd.light .cust-dd-opt.selected { background: rgba(0,0,0,0.1); color: #111111; }
       .arc-edit-form input[type="text"], .arc-edit-form textarea {
         width: 100%; padding: 10px 12px; background: var(--bg); border: 1px solid var(--line);
         border-radius: 6px; color: var(--fg); font-family: inherit; font-size: 13px; outline: none; margin-bottom: 8px;
@@ -215,10 +253,23 @@
         </div>
         <div class="field">
           <label>Size</label>
-          <select name="size">
-            <option value="">— Select —</option>
-            <option>S</option><option>M</option><option>L</option><option>XL</option>
-          </select>
+          <div class="cust-dd">
+            <select name="size">
+              <option value="">— Select —</option>
+              <option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option>
+            </select>
+            <button type="button" class="cust-dd-trigger">
+              <span class="cust-dd-label">— Select —</span>
+              <svg class="cust-dd-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="cust-dd-panel">
+              <button type="button" class="cust-dd-opt selected" data-value="">— Select —</button>
+              <button type="button" class="cust-dd-opt" data-value="S">S</button>
+              <button type="button" class="cust-dd-opt" data-value="M">M</button>
+              <button type="button" class="cust-dd-opt" data-value="L">L</button>
+              <button type="button" class="cust-dd-opt" data-value="XL">XL</button>
+            </div>
+          </div>
         </div>
         <div class="field">
           <label>Price (USD)</label>
@@ -272,12 +323,24 @@
             <div class="field"><label>Title</label><input type="text" name="title" value="{{ l.title }}" required /></div>
             <div class="field">
               <label>Size</label>
-              <select name="size">
-                <option value="">— Select —</option>
-                {% for sz in ['S','M','L','XL'] %}
-                <option value="{{ sz }}" {% if l.size == sz %}selected{% endif %}>{{ sz }}</option>
-                {% endfor %}
-              </select>
+              <div class="cust-dd">
+                <select name="size">
+                  <option value="">— Select —</option>
+                  {% for sz in ['S','M','L','XL'] %}
+                  <option value="{{ sz }}" {% if l.size == sz %}selected{% endif %}>{{ sz }}</option>
+                  {% endfor %}
+                </select>
+                <button type="button" class="cust-dd-trigger">
+                  <span class="cust-dd-label">{{ l.size if l.size else '— Select —' }}</span>
+                  <svg class="cust-dd-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="cust-dd-panel">
+                  <button type="button" class="cust-dd-opt {% if not l.size %}selected{% endif %}" data-value="">— Select —</button>
+                  {% for sz in ['S','M','L','XL'] %}
+                  <button type="button" class="cust-dd-opt {% if l.size == sz %}selected{% endif %}" data-value="{{ sz }}">{{ sz }}</button>
+                  {% endfor %}
+                </div>
+              </div>
             </div>
             <div class="field"><label>Price (USD)</label><input type="number" name="price" value="{{ l.price }}" min="0" step="1" required /></div>
             <div class="field"><label>Description</label><textarea name="description">{{ l.description }}</textarea></div>
@@ -326,15 +389,30 @@
         </div>
         <div style="flex:1;min-width:0;">
           <label for="sizeSelect" style="margin-top:0;">Size <span style="font-weight:400;font-size:12px;">— optional</span></label>
-          <select class="est-input" id="sizeSelect" style="cursor:pointer;width:100%;">
-            <option value="">Any</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-          </select>
+          <div class="cust-dd light" style="width:100%;">
+            <select id="sizeSelect">
+              <option value="">Any</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="XXL">XXL</option>
+            </select>
+            <button type="button" class="cust-dd-trigger">
+              <span class="cust-dd-label">Any</span>
+              <svg class="cust-dd-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1l5 5 5-5" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="cust-dd-panel">
+              <button type="button" class="cust-dd-opt selected" data-value="">Any</button>
+              <button type="button" class="cust-dd-opt" data-value="XS">XS</button>
+              <button type="button" class="cust-dd-opt" data-value="S">S</button>
+              <button type="button" class="cust-dd-opt" data-value="M">M</button>
+              <button type="button" class="cust-dd-opt" data-value="L">L</button>
+              <button type="button" class="cust-dd-opt" data-value="XL">XL</button>
+              <button type="button" class="cust-dd-opt" data-value="XXL">XXL</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -900,6 +978,48 @@
       });
 
       loadBellCount();
+
+      // ── Custom Dropdowns ──
+      function initCustDD(dd) {
+        const trigger = dd.querySelector('.cust-dd-trigger');
+        const panel   = dd.querySelector('.cust-dd-panel');
+        const opts    = dd.querySelectorAll('.cust-dd-opt');
+        const hidden  = dd.querySelector('select');
+        const labelEl = trigger.querySelector('.cust-dd-label');
+
+        trigger.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const isOpen = panel.classList.contains('open');
+          // Close all other dropdowns first
+          document.querySelectorAll('.cust-dd-panel.open').forEach(function(p) {
+            p.classList.remove('open');
+            p.closest('.cust-dd').querySelector('.cust-dd-trigger').classList.remove('open');
+          });
+          if (!isOpen) {
+            panel.classList.add('open');
+            trigger.classList.add('open');
+          }
+        });
+
+        opts.forEach(function(opt) {
+          opt.addEventListener('click', function() {
+            opts.forEach(function(o) { o.classList.remove('selected'); });
+            opt.classList.add('selected');
+            labelEl.textContent = opt.textContent;
+            if (hidden) hidden.value = opt.dataset.value;
+            panel.classList.remove('open');
+            trigger.classList.remove('open');
+          });
+        });
+      }
+
+      document.querySelectorAll('.cust-dd').forEach(initCustDD);
+      document.addEventListener('click', function() {
+        document.querySelectorAll('.cust-dd-panel.open').forEach(function(p) {
+          p.classList.remove('open');
+          p.closest('.cust-dd').querySelector('.cust-dd-trigger').classList.remove('open');
+        });
+      });
     </script>
   </body>
 </html>
