@@ -21,3 +21,4 @@ urllib3==2.6.2
 Werkzeug==3.1.4
 zipp==3.23.0
 cloudinary==1.44.2
+anthropic>=0.40.0
