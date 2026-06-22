@@ -256,7 +256,7 @@
           <div class="cust-dd">
             <select name="size">
               <option value="">— Select —</option>
-              <option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option>
+              <option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
             </select>
             <button type="button" class="cust-dd-trigger">
               <span class="cust-dd-label">— Select —</span>
@@ -264,10 +264,10 @@
             </button>
             <div class="cust-dd-panel">
               <button type="button" class="cust-dd-opt selected" data-value="">— Select —</button>
-              <button type="button" class="cust-dd-opt" data-value="S">S</button>
               <button type="button" class="cust-dd-opt" data-value="M">M</button>
               <button type="button" class="cust-dd-opt" data-value="L">L</button>
               <button type="button" class="cust-dd-opt" data-value="XL">XL</button>
+              <button type="button" class="cust-dd-opt" data-value="XXL">XXL</button>
             </div>
           </div>
         </div>
@@ -326,7 +326,7 @@
               <div class="cust-dd">
                 <select name="size">
                   <option value="">— Select —</option>
-                  {% for sz in ['S','M','L','XL'] %}
+                  {% for sz in ['M','L','XL','XXL'] %}
                   <option value="{{ sz }}" {% if l.size == sz %}selected{% endif %}>{{ sz }}</option>
                   {% endfor %}
                 </select>
@@ -336,7 +336,7 @@
                 </button>
                 <div class="cust-dd-panel">
                   <button type="button" class="cust-dd-opt {% if not l.size %}selected{% endif %}" data-value="">— Select —</button>
-                  {% for sz in ['S','M','L','XL'] %}
+                  {% for sz in ['M','L','XL','XXL'] %}
                   <button type="button" class="cust-dd-opt {% if l.size == sz %}selected{% endif %}" data-value="{{ sz }}">{{ sz }}</button>
                   {% endfor %}
                 </div>
@@ -392,8 +392,6 @@
           <div class="cust-dd light" style="width:100%;">
             <select id="sizeSelect">
               <option value="">Any</option>
-              <option value="XS">XS</option>
-              <option value="S">S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
@@ -405,8 +403,6 @@
             </button>
             <div class="cust-dd-panel">
               <button type="button" class="cust-dd-opt selected" data-value="">Any</button>
-              <button type="button" class="cust-dd-opt" data-value="XS">XS</button>
-              <button type="button" class="cust-dd-opt" data-value="S">S</button>
               <button type="button" class="cust-dd-opt" data-value="M">M</button>
               <button type="button" class="cust-dd-opt" data-value="L">L</button>
               <button type="button" class="cust-dd-opt" data-value="XL">XL</button>
@@ -737,9 +733,9 @@
         setStatus('Fetching estimate…');
         const asking = $('asking').value.trim();
         const size = $('sizeSelect') ? $('sizeSelect').value.trim() : '';
-        const fullQuery = size ? `${query} ${size}` : query;
         const askingParam = asking ? `&asking=${encodeURIComponent(asking)}` : '';
-        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(fullQuery)}&cache_first=true${askingParam}`);
+        const sizeParam = size ? `&size=${encodeURIComponent(size)}` : '';
+        const { status, data } = await getJSON(`/estimate?query=${encodeURIComponent(query)}&cache_first=true${askingParam}${sizeParam}`);
         if (status !== 200 || !data || !data.ok) {
           setStatus('Error fetching estimate'); updateCards(null); renderChart(null);
         } else {
@@ -774,27 +770,51 @@
           return;
         }
 
-        const W = 600, H = 80, PAD = 6;
+        const W = 540, H = 80, PAD = 6, LEFT = 52;
+        const VW = W + LEFT;
+        svg.setAttribute('viewBox', `0 0 ${VW} ${H}`);
+
         const prices = history.map(d => d.casp);
         const minP = Math.min(...prices);
         const maxP = Math.max(...prices);
         const spread = maxP - minP || 1;
 
-        const toX = i => PAD + (i / (history.length - 1)) * (W - PAD * 2);
+        const toX = i => LEFT + PAD + (i / (history.length - 1)) * (W - PAD * 2);
         const toY = p => PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
+
+        // Y-axis reference lines + labels
+        const ns = 'http://www.w3.org/2000/svg';
+        const addYLabel = (price) => {
+          const y = toY(price);
+          const refLine = document.createElementNS(ns, 'line');
+          refLine.setAttribute('x1', LEFT); refLine.setAttribute('x2', LEFT + W - PAD);
+          refLine.setAttribute('y1', y); refLine.setAttribute('y2', y);
+          refLine.setAttribute('stroke', 'rgba(255,255,255,0.07)'); refLine.setAttribute('stroke-width', '1');
+          svg.appendChild(refLine);
+          const t = document.createElementNS(ns, 'text');
+          t.setAttribute('x', LEFT - 4); t.setAttribute('y', y);
+          t.setAttribute('text-anchor', 'end'); t.setAttribute('dominant-baseline', 'middle');
+          t.setAttribute('fill', 'rgba(255,255,255,0.5)'); t.setAttribute('font-size', '9');
+          t.setAttribute('font-family', 'inherit');
+          t.textContent = `$${price >= 1000 ? (price/1000).toFixed(1)+'k' : price.toFixed(0)}`;
+          svg.appendChild(t);
+        };
+        addYLabel(maxP);
+        if (maxP !== minP) addYLabel(Math.round((maxP + minP) / 2));
+        addYLabel(minP);
 
         const pts = history.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
 
         // shaded area under line
         const areaFirst = `${toX(0).toFixed(1)},${H}`;
         const areaLast  = `${toX(history.length-1).toFixed(1)},${H}`;
-        const area = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+        const area = document.createElementNS(ns, 'polygon');
         area.setAttribute('points', `${areaFirst} ${pts} ${areaLast}`);
         area.setAttribute('fill', 'rgba(255,255,255,0.06)');
         svg.appendChild(area);
 
         // line
-        const line = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+        const line = document.createElementNS(ns, 'polyline');
         line.setAttribute('points', pts);
         line.setAttribute('fill', 'none');
         line.setAttribute('stroke', '#ffffff');
@@ -803,7 +823,7 @@
         svg.appendChild(line);
 
         // end dot
-        const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        const dot = document.createElementNS(ns, 'circle');
         dot.setAttribute('cx', toX(history.length-1).toFixed(1));
         dot.setAttribute('cy', toY(prices[prices.length-1]).toFixed(1));
         dot.setAttribute('r', '3');
@@ -815,7 +835,7 @@
 
         // date labels: first and last
         const fmt = s => s ? s.slice(0,10) : '';
-        labels.innerHTML = `<span>${fmt(history[0].created_at)}</span><span>${fmt(history[history.length-1].created_at)}</span>`;
+        labels.innerHTML = `<span style="padding-left:${LEFT}px">${fmt(history[0].created_at)}</span><span>${fmt(history[history.length-1].created_at)}</span>`;
 
         wrap.classList.add('visible');
       }

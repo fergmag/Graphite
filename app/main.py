@@ -18,7 +18,10 @@ load_dotenv()
 from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
-from app.public_view import build_public_payload
+from app.public_view import build_public_payload, deal_score as _deal_score
+
+# Size multipliers: given prices in models.json are for M
+_SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
 from app.filters import filter_comps, normalize_query
 from app.db import (
     init_db,
@@ -502,17 +505,13 @@ def create_app() -> Flask:
         # Sort best deals first
         listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)
 
-        # Claude Vision condition for top 5 with photos
-        graded = 0
+        # Claude Vision condition grading for all listings with photos
         for lst in listings:
-            if graded >= 5:
-                break
             photo = lst.get("photo")
             if photo:
                 result = grade_condition(photo)
                 if result:
                     lst["vision"] = result
-                graded += 1
 
         return jsonify({
             "ok": True,
@@ -885,20 +884,21 @@ def create_app() -> Flask:
                 # If asking is provided, recompute deal score using cached CASP
                 pub = payload.get("public") or {}
                 casp = pub.get("casp")
-                if casp is not None and asking is not None:
-                    pub = build_public_payload(
-                        casp=float(casp),
-                        confidence=float(pub.get("confidence_raw") or payload.get("summary", {}).get("confidence") or 0.0),
-                        asking=asking,
-                    )
-                    payload["public"] = pub
-
                 is_manual = False
                 if get_manual_casp_for_query:
                     try:
                         is_manual = get_manual_casp_for_query(query) is not None
                     except Exception:
                         pass
+                if casp is not None and asking is not None:
+                    size_param = (request.args.get("size") or "").strip().upper()
+                    pub = build_public_payload(
+                        casp=float(casp),
+                        confidence=float(pub.get("confidence_raw") or payload.get("summary", {}).get("confidence") or 0.0),
+                    )
+                    score_casp = float(casp) * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else float(casp)
+                    pub.update(_deal_score(score_casp, asking))
+                    payload["public"] = pub
                 return jsonify(
                     {
                         "ok": True,
@@ -990,11 +990,14 @@ def create_app() -> Flask:
             except Exception:
                 pass
 
+        size_param = (request.args.get("size") or "").strip().upper()
         public = build_public_payload(
             casp=casp,
             confidence=float(summary_dict.get("confidence") or 0.0),
-            asking=asking,
         )
+        if asking is not None and casp:
+            score_casp = casp * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else casp
+            public.update(_deal_score(score_casp, asking))
 
         payload = {
             "n": summary.n,
