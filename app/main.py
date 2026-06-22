@@ -931,6 +931,40 @@ def create_app() -> Flask:
                     }
                 ), 200
 
+            # No cache — check manual profile before attempting slow eBay scrape.
+            # For the 27 known models this returns instantly; eBay scrape adds comps
+            # later when the scheduler runs.
+            if get_manual_casp_for_query:
+                try:
+                    profile_casp = get_manual_casp_for_query(query)
+                    if profile_casp is not None:
+                        is_manual = True
+                        size_param = (request.args.get("size") or "").strip().upper()
+                        score_casp = profile_casp * _SIZE_MULT.get(size_param, 1.0) if size_param in _SIZE_MULT else profile_casp
+                        public = build_public_payload(
+                            casp=profile_casp,
+                            confidence=0.0,
+                        )
+                        if asking is not None:
+                            public.update(_deal_score(score_casp, asking))
+                        insert_estimate(query, public_payload=public, summary_payload={})
+                        return jsonify(
+                            {
+                                "ok": True,
+                                "platform": "ebay",
+                                "query": query,
+                                "from_cache": False,
+                                "is_manual": True,
+                                "n": 0,
+                                "public": public,
+                                "summary": None,
+                                "sample": [],
+                                "note": "Estimate from model profile (no cache yet — run Refresh to add sold comps).",
+                            }
+                        ), 200
+                except Exception:
+                    pass
+
         # live scrape
         try:
             comps = scrape_ebay_sold(query, pages=pages, delay=0.5)

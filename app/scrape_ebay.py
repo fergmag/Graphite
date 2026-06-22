@@ -142,16 +142,16 @@ def fetch_html(url: str, timeout: int = 15, max_retries: int = 3,
 
         if r.status_code == 200:
             if _is_bot_page(r.text):
-                # Soft bot block — eBay returns 200 but with a challenge page
+                # Soft bot block — fail fast, Render has a 30s request timeout
                 if attempt < max_retries:
-                    time.sleep(30 * attempt)
+                    time.sleep(2)
                     continue
                 raise RuntimeError(f"eBay bot detection (soft block) for {url}")
             return r.text
 
         if r.status_code == 403:
             if attempt < max_retries:
-                time.sleep(45 * attempt)
+                time.sleep(3)
                 continue
             break
 
