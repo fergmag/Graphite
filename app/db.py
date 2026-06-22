@@ -1,8 +1,11 @@
 import json
+import logging
 import os
 import sqlite3
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
+
+log = logging.getLogger(__name__)
 
 DB_PATH = os.environ.get("GRAPHITE_DB", "graphite.db")
 
