@@ -1,15 +1,15 @@
 """
 scrape_depop.py — search Depop for active listings matching a query.
 
-Uses Depop's internal API (same endpoints their website calls).
-Returns a list of dicts: {title, price, url, photo, source}.
+NOTE: Depop's API (all versions, v1/v2/v3) returns 403 for unauthenticated
+requests as of mid-2025. Their search page also 403s without a session cookie.
+OAuth is required. search_depop() returns [] until this is resolved.
+
+TODO: implement Depop OAuth flow or find an alternative approach.
 """
 
 import logging
-import time
 from typing import Any, Dict, List
-
-import requests
 
 log = logging.getLogger(__name__)
 
@@ -34,7 +34,12 @@ def _make_session() -> requests.Session:
     return s
 
 
-def search_depop(query: str, limit: int = 24, session=None) -> List[Dict[str, Any]]:
+def search_depop(query: str, limit: int = 24, session=None) -> List[Dict[str, Any]]:  # noqa: ARG001
+    log.debug("[depop] skipped — API requires OAuth (returns 403)")
+    return []
+
+
+def _search_depop_disabled(query: str, limit: int = 24, session=None) -> List[Dict[str, Any]]:
     """
     Search Depop for active listings matching query.
     Returns list of {title, price, url, photo, source, condition}.

@@ -899,6 +899,8 @@ def create_app() -> Flask:
                     score_casp = float(casp) * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else float(casp)
                     pub.update(_deal_score(score_casp, asking))
                     payload["public"] = pub
+                # Record history even from cache so chart populates on manual queries
+                insert_estimate(query, public_payload=payload.get("public") or {}, summary_payload=payload.get("summary") or {})
                 return jsonify(
                     {
                         "ok": True,

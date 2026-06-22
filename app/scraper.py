@@ -20,6 +20,7 @@ from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query
 from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
+from app.vision import grade_condition
 
 log = logging.getLogger(__name__)
 
@@ -139,12 +140,21 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     # Filter out junk (wrong model code, kids items, etc.) same as estimator
     all_listings = filter_comps(all_listings, query)
 
+    vision_graded = 0
     for listing in all_listings:
         price = listing.get("price") or 0
         if not price:
             continue
         score = _deal_score(price, casp or 0) if casp else 1
         if score >= 3:
+            vision_grade = vision_notes = None
+            photo = listing.get("photo")
+            if photo and vision_graded < 3:
+                result = grade_condition(photo)
+                if result:
+                    vision_grade = result.get("grade")
+                    vision_notes = result.get("notes")
+                    vision_graded += 1
             insert_alert(
                 query=query,
                 source=listing["source"],
@@ -155,6 +165,8 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
                 casp=casp,
                 deal_score=score,
                 size=listing.get("size"),
+                vision_grade=vision_grade,
+                vision_notes=vision_notes,
             )
             saved += 1
 

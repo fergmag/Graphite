@@ -179,6 +179,8 @@ def init_db() -> None:
             )
         else:
             _ensure_column(con, "listing_alerts", "size", "TEXT")
+            _ensure_column(con, "listing_alerts", "vision_grade", "TEXT")
+            _ensure_column(con, "listing_alerts", "vision_notes", "TEXT")
         _migrate_alerts_json(con)
 
         con.commit()
@@ -624,7 +626,8 @@ def db_delete_section(section_id: str) -> None:
 
 def insert_alert(query: str, source: str, title: str, price: float,
                  url: str, photo: Optional[str], casp: Optional[float],
-                 deal_score: Optional[int], size: Optional[str] = None) -> None:
+                 deal_score: Optional[int], size: Optional[str] = None,
+                 vision_grade: Optional[str] = None, vision_notes: Optional[str] = None) -> None:
     """Insert a deal alert. Skips duplicates by URL."""
     con = _connect()
     try:
@@ -633,9 +636,9 @@ def insert_alert(query: str, source: str, title: str, price: float,
             return
         con.execute(
             """INSERT INTO listing_alerts
-               (query, source, title, price, url, photo, casp, deal_score, size, seen, created_at)
-               VALUES (?,?,?,?,?,?,?,?,?,0,?)""",
-            (query, source, title, price, url, photo, casp, deal_score, size, _utc_now()),
+               (query, source, title, price, url, photo, casp, deal_score, size, seen, created_at, vision_grade, vision_notes)
+               VALUES (?,?,?,?,?,?,?,?,?,0,?,?,?)""",
+            (query, source, title, price, url, photo, casp, deal_score, size, _utc_now(), vision_grade, vision_notes),
         )
         con.commit()
     finally:

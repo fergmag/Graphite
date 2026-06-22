@@ -979,6 +979,7 @@
                   <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${a.deal_score>=5?'#1b4332':a.deal_score>=4?'#2d4a1e':'#3a2d00'};color:${a.deal_score>=5?'#6fcf97':a.deal_score>=4?'#a8d08d':'#f5c842'};">Deal ${a.deal_score}/5</span>
                   <a href="${a.url}" target="_blank" rel="noopener" style="font-size:11px;color:#7eb8d4;text-decoration:none;font-weight:600;">View →</a>
                 </div>
+                ${a.vision_grade ? `<div style="font-size:10px;color:rgba(255,255,255,0.7);margin-top:6px;line-height:1.4;">🤖 ${a.vision_grade} — ${a.vision_notes || ''}</div>` : ''}
               </div>
             </div>
           `).join('');

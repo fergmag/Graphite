@@ -56,12 +56,15 @@ def grade_condition(photo_url: str) -> Optional[dict]:
                         {
                             "type": "text",
                             "text": (
-                                "This is a photo of a vintage Carhartt jacket listed for sale. "
-                                "Grade its visible condition from 1-10 "
-                                "(10=mint/unworn, 7=good used, 4=heavy wear, 1=damaged). "
-                                "Reply in exactly this format with no extra text:\n"
+                                "Grade this vintage Carhartt jacket's condition strictly 1-10:\n"
+                                "10=deadstock/unworn, 9=near-mint, 8=excellent (slight fading only), "
+                                "7=good (noticeable fading, no damage), 6=fair (visible wear/marks), "
+                                "5=well-worn (significant fading/staining/frays), "
+                                "4=heavy wear (repairs or clear flaws), 1-3=damaged.\n"
+                                "Be critical — resale photos flatter. Grade what you actually see. "
+                                "Reply in exactly this format:\n"
                                 "GRADE: X/10\n"
-                                "NOTES: [one brief sentence on key condition details]"
+                                "NOTES: [one brief sentence on the key condition details]"
                             ),
                         },
                     ],
