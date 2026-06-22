@@ -569,6 +569,10 @@
         tabBtns.forEach(b => b.classList.toggle('active', b.dataset.tab === name));
         panels.forEach(p => p.classList.toggle('active', p.id === `panel-${name}`));
         location.hash = name;
+        if (name === 'estimator') {
+          const q = $('query') && $('query').value.trim();
+          if (q) loadHistory(q); else renderChart([]);
+        }
       }
 
       tabBtns.forEach(b => b.addEventListener('click', () => switchTab(b.dataset.tab)));
@@ -576,6 +580,8 @@
       // Restore tab from hash
       const hash = location.hash.replace('#', '');
       if (['estimator', 'archive', 'listings'].includes(hash)) switchTab(hash);
+      // If we land directly on estimator and there's no query yet, show empty chart
+      if (!hash || hash === 'estimator') renderChart([]);
 
       function toggleEdit(id) {
         const el = document.getElementById(id);

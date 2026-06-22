@@ -43,8 +43,8 @@ def grade_condition(photo_url: str) -> Optional[dict]:
     try:
         import anthropic
         message = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=120,
+            model="claude-sonnet-4-6",
+            max_tokens=150,
             messages=[
                 {
                     "role": "user",
@@ -56,15 +56,20 @@ def grade_condition(photo_url: str) -> Optional[dict]:
                         {
                             "type": "text",
                             "text": (
-                                "Grade this vintage Carhartt jacket's condition strictly 1-10:\n"
-                                "10=deadstock/unworn, 9=near-mint, 8=excellent (slight fading only), "
-                                "7=good (noticeable fading, no damage), 6=fair (visible wear/marks), "
-                                "5=well-worn (significant fading/staining/frays), "
-                                "4=heavy wear (repairs or clear flaws), 1-3=damaged.\n"
-                                "Be critical — resale photos flatter. Grade what you actually see. "
-                                "Reply in exactly this format:\n"
+                                "You are grading a vintage Carhartt jacket for a resale buyer. "
+                                "Look carefully at the actual fabric, stitching, colour, and any visible damage.\n\n"
+                                "Scale (be strict — sellers always photograph in flattering light):\n"
+                                "9-10 = deadstock/unworn or near-mint with zero visible wear\n"
+                                "8 = excellent: only very faint fading, no marks or damage\n"
+                                "7 = good: noticeable fading or minor marks, no repairs needed\n"
+                                "6 = fair: clear wear, staining or small repairs visible\n"
+                                "5 = well-worn: significant fading, staining, fraying or multiple flaws\n"
+                                "4 = heavy wear: major repairs, holes, or prominent damage\n"
+                                "1-3 = damaged/wearable only for parts\n\n"
+                                "Describe specifically what you see (collar wear, cuffs, fading pattern, stains, etc). "
+                                "Reply in exactly this format with no extra text:\n"
                                 "GRADE: X/10\n"
-                                "NOTES: [one brief sentence on the key condition details]"
+                                "NOTES: [one sentence describing the specific condition details you can see]"
                             ),
                         },
                     ],
