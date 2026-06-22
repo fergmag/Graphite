@@ -561,6 +561,8 @@
     </div>
 
     <script>
+      const $ = id => document.getElementById(id);
+
       // ── Tab switching ──
       const tabBtns  = document.querySelectorAll('.tab-btn');
       const panels   = document.querySelectorAll('.tab-panel');
@@ -580,8 +582,6 @@
       // Restore tab from hash
       const hash = location.hash.replace('#', '');
       if (['estimator', 'archive', 'listings'].includes(hash)) switchTab(hash);
-      // If we land directly on estimator and there's no query yet, show empty chart
-      if (!hash || hash === 'estimator') renderChart([]);
 
       function toggleEdit(id) {
         const el = document.getElementById(id);
@@ -608,8 +608,6 @@
       });
 
       // ── Estimator ──
-      const $ = id => document.getElementById(id);
-
       function setStatus(msg) { $('status').textContent = `Status: ${msg}`; }
 
       function fmtMoney(x) {
