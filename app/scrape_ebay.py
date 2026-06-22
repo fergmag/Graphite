@@ -1,13 +1,19 @@
 import argparse
 import json
+import logging
+import os
 import re
 import time
 from dataclasses import asdict, dataclass
 from typing import List, Optional, Tuple
-from urllib.parse import urlencode
+from urllib.parse import urlencode, quote_plus
 
 import requests
 from bs4 import BeautifulSoup
+
+log = logging.getLogger(__name__)
+
+_FINDING_API_URL = "https://svcs.ebay.com/services/search/FindingService/v1"
 
 EBAY_SEARCH_URL = "https://www.ebay.com/sch/i.html"
 
@@ -80,18 +86,22 @@ _HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
+        "Chrome/125.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Cache-Control": "max-age=0",
     "Connection": "keep-alive",
     "DNT": "1",
-    "Upgrade-Insecure-Requests": "1",
+    "Sec-Ch-Ua": '"Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"macOS"',
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1",
 }
 
 
@@ -100,13 +110,20 @@ def _make_session() -> requests.Session:
     s = requests.Session()
     s.headers.update(_HEADERS)
     try:
-        s.get("https://www.ebay.com/", timeout=8)
+        r = s.get("https://www.ebay.com/", timeout=10)
+        # If warmup itself gets a bot page, add a delay
+        if "Pardon Our Interruption" in r.text:
+            time.sleep(5)
     except Exception:
-        pass  # If the warm-up fails, continue anyway
+        pass
     return s
 
 
-def fetch_html(url: str, timeout: int = 12, max_retries: int = 3,
+def _is_bot_page(text: str) -> bool:
+    return "Pardon Our Interruption" in text or "Robot Check" in text
+
+
+def fetch_html(url: str, timeout: int = 15, max_retries: int = 3,
                session: Optional[requests.Session] = None) -> str:
     own_session = session is None
     s = session or _make_session()
@@ -124,10 +141,15 @@ def fetch_html(url: str, timeout: int = 12, max_retries: int = 3,
         last_status = r.status_code
 
         if r.status_code == 200:
+            if _is_bot_page(r.text):
+                # Soft bot block — eBay returns 200 but with a challenge page
+                if attempt < max_retries:
+                    time.sleep(30 * attempt)
+                    continue
+                raise RuntimeError(f"eBay bot detection (soft block) for {url}")
             return r.text
 
         if r.status_code == 403:
-            # Bot detection — back off hard then retry
             if attempt < max_retries:
                 time.sleep(45 * attempt)
                 continue
@@ -188,8 +210,94 @@ def parse_sold_results(html: str) -> List[EbayComp]:
 
     return comps
 
+def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
+    """
+    Use the eBay Finding API (findCompletedItems) to get sold listings.
+    Requires EBAY_APP_ID env var. Works from datacenter IPs unlike HTML scraping.
+    """
+    app_id = os.environ.get("EBAY_APP_ID", "")
+    if not app_id:
+        raise RuntimeError("EBAY_APP_ID not configured")
+
+    params = {
+        "OPERATION-NAME": "findCompletedItems",
+        "SERVICE-VERSION": "1.0.0",
+        "SECURITY-APPNAME": app_id,
+        "RESPONSE-DATA-FORMAT": "JSON",
+        "REST-PAYLOAD": "",
+        "keywords": query,
+        "itemFilter(0).name": "SoldItemsOnly",
+        "itemFilter(0).value": "true",
+        "itemFilter(1).name": "Currency",
+        "itemFilter(1).value": "USD",
+        "sortOrder": "EndTimeSoonest",
+        "paginationInput.entriesPerPage": str(min(max_results, 100)),
+        "outputSelector": "SellerInfo",
+    }
+    r = requests.get(_FINDING_API_URL, params=params, timeout=15)
+    if r.status_code != 200:
+        raise RuntimeError(f"eBay Finding API returned {r.status_code}")
+
+    try:
+        data = r.json()
+    except Exception as e:
+        raise RuntimeError(f"eBay Finding API bad JSON: {e}") from e
+
+    try:
+        items = (
+            data
+            .get("findCompletedItemsResponse", [{}])[0]
+            .get("searchResult", [{}])[0]
+            .get("item", [])
+        )
+    except (IndexError, KeyError):
+        items = []
+
+    comps: List[EbayComp] = []
+    for item in items:
+        try:
+            title = item.get("title", [""])[0]
+            url = item.get("viewItemURL", [""])[0]
+            price_raw = float(
+                item.get("sellingStatus", [{}])[0]
+                    .get("convertedCurrentPrice", [{}])[0]
+                    .get("__value__", 0)
+            )
+            shipping_raw = item.get("shippingInfo", [{}])[0]
+            ship_cost_list = shipping_raw.get("shippingServiceCost", [])
+            if ship_cost_list:
+                shipping = float(ship_cost_list[0].get("__value__", 0))
+            else:
+                shipping = None
+            ended = item.get("listingInfo", [{}])[0].get("endTime", [""])[0]
+            comps.append(EbayComp(
+                title=title,
+                price=price_raw,
+                currency="USD",
+                shipping=shipping,
+                shipping_currency="USD" if shipping is not None else None,
+                url=url,
+                ended=ended,
+            ))
+        except Exception:
+            continue
+
+    log.info("[ebay-api] findCompletedItems query=%r → %d items", query, len(comps))
+    return comps
+
+
 def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
                      session: Optional[requests.Session] = None) -> List[EbayComp]:
+    # Try the official Finding API first — works from datacenter IPs
+    if os.environ.get("EBAY_APP_ID"):
+        try:
+            comps = _ebay_finding_api(query, max_results=pages * 50)
+            if comps:
+                return comps
+        except Exception as e:
+            log.warning("[ebay] Finding API failed, falling back to HTML scrape: %s", e)
+
+    # HTML scrape fallback (blocked from Render/AWS IPs without a proxy)
     s = session or _make_session()
     all_comps: List[EbayComp] = []
     for p in range(1, pages + 1):
@@ -210,6 +318,80 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
         unique.append(c)
 
     return unique
+
+def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
+    """
+    Search eBay for active (Buy It Now) listings using the Finding API.
+    Returns dicts compatible with the deal-alert pipeline.
+    Requires EBAY_APP_ID env var.
+    """
+    app_id = os.environ.get("EBAY_APP_ID", "")
+    if not app_id:
+        log.debug("[ebay] EBAY_APP_ID not set — skipping active scan")
+        return []
+
+    params = {
+        "OPERATION-NAME": "findItemsByKeywords",
+        "SERVICE-VERSION": "1.0.0",
+        "SECURITY-APPNAME": app_id,
+        "RESPONSE-DATA-FORMAT": "JSON",
+        "REST-PAYLOAD": "",
+        "keywords": query,
+        "itemFilter(0).name": "ListingType",
+        "itemFilter(0).value(0)": "FixedPrice",
+        "itemFilter(0).value(1)": "AuctionWithBIN",
+        "itemFilter(1).name": "Currency",
+        "itemFilter(1).value": "USD",
+        "itemFilter(2).name": "Condition",
+        "itemFilter(2).value(0)": "3000",
+        "itemFilter(2).value(1)": "4000",
+        "itemFilter(2).value(2)": "5000",
+        "sortOrder": "PricePlusShippingLowest",
+        "paginationInput.entriesPerPage": str(min(max_results, 100)),
+    }
+    try:
+        r = requests.get(_FINDING_API_URL, params=params, timeout=15)
+        if r.status_code != 200:
+            log.warning("[ebay] findItemsByKeywords %d", r.status_code)
+            return []
+        data = r.json()
+        items = (
+            data
+            .get("findItemsByKeywordsResponse", [{}])[0]
+            .get("searchResult", [{}])[0]
+            .get("item", [])
+        )
+    except Exception as e:
+        log.warning("[ebay] findItemsByKeywords error: %s", e)
+        return []
+
+    results = []
+    for item in items:
+        try:
+            title = item.get("title", [""])[0]
+            url = item.get("viewItemURL", [""])[0]
+            price_raw = float(
+                item.get("sellingStatus", [{}])[0]
+                    .get("convertedCurrentPrice", [{}])[0]
+                    .get("__value__", 0)
+            )
+            ship_list = item.get("shippingInfo", [{}])[0].get("shippingServiceCost", [])
+            shipping = float(ship_list[0].get("__value__", 0)) if ship_list else 0.0
+            photo_list = item.get("galleryURL", [])
+            photo = photo_list[0] if photo_list else None
+            results.append({
+                "title": title,
+                "price": price_raw + shipping,
+                "url": url,
+                "photo": photo,
+                "source": "ebay",
+            })
+        except Exception:
+            continue
+
+    log.info("[ebay] findItemsByKeywords query=%r → %d items", query, len(results))
+    return results
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape eBay SOLD listings for a query.")

@@ -11,10 +11,11 @@ import time
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from app.scrape_ebay import scrape_ebay_sold, _make_session
+from app.scrape_ebay import scrape_ebay_sold, search_ebay_active, _make_session
 from app.scrape_depop import search_depop
 from app.scrape_grailed import search_grailed
 from app.scrape_etsy import search_etsy
+from app.scrape_whatnot import search_whatnot
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
@@ -133,14 +134,15 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     """
     saved = 0
     all_listings: List[Dict[str, Any]] = []
+    all_listings.extend(search_ebay_active(query))
     all_listings.extend(search_depop(query))
     all_listings.extend(search_grailed(query))
     all_listings.extend(search_etsy(query))
+    all_listings.extend(search_whatnot(query))
 
     # Filter out junk (wrong model code, kids items, etc.) same as estimator
     all_listings = filter_comps(all_listings, query)
 
-    vision_graded = 0
     for listing in all_listings:
         price = listing.get("price") or 0
         if not price:
@@ -149,12 +151,11 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
         if score >= 3:
             vision_grade = vision_notes = None
             photo = listing.get("photo")
-            if photo and vision_graded < 3:
+            if photo:
                 result = grade_condition(photo)
                 if result:
                     vision_grade = result.get("grade")
                     vision_notes = result.get("notes")
-                    vision_graded += 1
             insert_alert(
                 query=query,
                 source=listing["source"],

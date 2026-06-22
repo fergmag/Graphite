@@ -765,21 +765,42 @@
         svg.innerHTML = '';
         labels.innerHTML = '';
 
-        if (!history || history.length < 2) {
+        if (!history) {
           wrap.classList.remove('visible');
           return;
         }
+
+        wrap.classList.add('visible');
+
+        if (history.length === 0) {
+          rangeEl.textContent = '';
+          const ns = 'http://www.w3.org/2000/svg';
+          svg.setAttribute('viewBox', '0 0 592 80');
+          const t = document.createElementNS(ns, 'text');
+          t.setAttribute('x', '296'); t.setAttribute('y', '44');
+          t.setAttribute('text-anchor', 'middle'); t.setAttribute('dominant-baseline', 'middle');
+          t.setAttribute('fill', 'rgba(255,255,255,0.3)'); t.setAttribute('font-size', '11');
+          t.setAttribute('font-family', 'inherit'); t.setAttribute('letter-spacing', '0.08em');
+          t.textContent = 'NO HISTORY YET — RUN A REFRESH';
+          svg.appendChild(t);
+          return;
+        }
+
+        // Pad a single data point so the chart renders as a flat line
+        const history2 = history.length === 1
+          ? [history[0], history[0]]
+          : history;
 
         const W = 540, H = 80, PAD = 6, LEFT = 52;
         const VW = W + LEFT;
         svg.setAttribute('viewBox', `0 0 ${VW} ${H}`);
 
-        const prices = history.map(d => d.casp);
+        const prices = history2.map(d => d.casp);
         const minP = Math.min(...prices);
         const maxP = Math.max(...prices);
         const spread = maxP - minP || 1;
 
-        const toX = i => LEFT + PAD + (i / (history.length - 1)) * (W - PAD * 2);
+        const toX = i => LEFT + PAD + (i / (history2.length - 1)) * (W - PAD * 2);
         const toY = p => PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
 
         // Y-axis reference lines + labels
@@ -803,11 +824,11 @@
         if (maxP !== minP) addYLabel(Math.round((maxP + minP) / 2));
         addYLabel(minP);
 
-        const pts = history.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
+        const pts = history2.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
 
         // shaded area under line
         const areaFirst = `${toX(0).toFixed(1)},${H}`;
-        const areaLast  = `${toX(history.length-1).toFixed(1)},${H}`;
+        const areaLast  = `${toX(history2.length-1).toFixed(1)},${H}`;
         const area = document.createElementNS(ns, 'polygon');
         area.setAttribute('points', `${areaFirst} ${pts} ${areaLast}`);
         area.setAttribute('fill', 'rgba(255,255,255,0.06)');
@@ -824,20 +845,18 @@
 
         // end dot
         const dot = document.createElementNS(ns, 'circle');
-        dot.setAttribute('cx', toX(history.length-1).toFixed(1));
+        dot.setAttribute('cx', toX(history2.length-1).toFixed(1));
         dot.setAttribute('cy', toY(prices[prices.length-1]).toFixed(1));
         dot.setAttribute('r', '3');
         dot.setAttribute('fill', '#ffffff');
         svg.appendChild(dot);
 
         // range label
-        rangeEl.textContent = `$${minP.toFixed(0)} – $${maxP.toFixed(0)} · ${history.length} runs`;
+        rangeEl.textContent = `$${minP.toFixed(0)} – $${maxP.toFixed(0)} · ${history.length} run${history.length === 1 ? '' : 's'}`;
 
         // date labels: first and last
         const fmt = s => s ? s.slice(0,10) : '';
         labels.innerHTML = `<span style="padding-left:${LEFT}px">${fmt(history[0].created_at)}</span><span>${fmt(history[history.length-1].created_at)}</span>`;
-
-        wrap.classList.add('visible');
       }
 
       async function loadHistory(query) {

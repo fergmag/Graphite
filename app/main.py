@@ -48,6 +48,8 @@ from app.db import (
     count_unseen_alerts,
     mark_alerts_seen,
     count_alerts_per_query,
+    get_all_estimates_for_persistence,
+    bulk_insert_estimates,
 )
 
 # Optional: Step 13 manual model overrides (keep compatibility)
@@ -123,6 +125,19 @@ def _persist_alerts() -> None:
     except Exception:
         pass
     _github_sync_file("app/alerts.json", content, "sync: alerts updated")
+
+
+def _persist_estimates() -> None:
+    """Write recent CASP history to JSON and sync to GitHub so chart survives redeploys."""
+    data = get_all_estimates_for_persistence(limit_per_query=60)
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    path = os.path.join(_APP_DATA_DIR, "estimates.json")
+    try:
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception:
+        pass
+    _github_sync_file("app/estimates.json", content, "sync: estimates updated")
 
 
 def _parse_bool(x: str, default: bool = False) -> bool:
@@ -441,6 +456,7 @@ def create_app() -> Flask:
         def _run():
             refresh_all_watchlist()
             _persist_alerts()
+            _persist_estimates()
         t = threading.Thread(target=_run, daemon=True)
         t.start()
         return jsonify({"ok": True, "message": "Refresh started in background"})
@@ -1036,6 +1052,7 @@ def create_app() -> Flask:
             def _scheduled_refresh():
                 _refresh()
                 _persist_alerts()
+                _persist_estimates()
             _sched = BackgroundScheduler(daemon=True)
             _sched.add_job(_scheduled_refresh, "interval", hours=6, id="watchlist_refresh",
                            misfire_grace_time=300)

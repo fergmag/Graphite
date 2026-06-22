@@ -182,6 +182,7 @@ def init_db() -> None:
             _ensure_column(con, "listing_alerts", "vision_grade", "TEXT")
             _ensure_column(con, "listing_alerts", "vision_notes", "TEXT")
         _migrate_alerts_json(con)
+        _migrate_estimates_json(con)
 
         con.commit()
     finally:
@@ -256,6 +257,37 @@ def _migrate_alerts_json(con: sqlite3.Connection) -> None:
         except Exception:
             pass
     log.info("[db] loaded %d alerts from alerts.json", len(alerts))
+
+
+def _migrate_estimates_json(con: sqlite3.Connection) -> None:
+    """Load persisted estimates from estimates.json into DB if table is currently empty."""
+    count = con.execute("SELECT COUNT(*) as n FROM estimates").fetchone()["n"]
+    if count > 0:
+        return
+    path = os.path.join(_APP_DIR, "estimates.json")
+    try:
+        with open(path) as f:
+            rows = json.load(f)
+    except Exception:
+        return
+    inserted = 0
+    for r in rows:
+        try:
+            con.execute(
+                """INSERT INTO estimates (query, casp, accuracy_pct, created_at)
+                   SELECT ?,?,?,?
+                   WHERE NOT EXISTS (
+                       SELECT 1 FROM estimates WHERE query=? AND created_at=?
+                   )""",
+                (r.get("query"), r.get("casp"), r.get("accuracy_pct"), r.get("created_at"),
+                 r.get("query"), r.get("created_at")),
+            )
+            if con.execute("SELECT changes()").fetchone()[0]:
+                inserted += 1
+        except Exception:
+            pass
+    if inserted:
+        log.info("[db] loaded %d estimates from estimates.json", inserted)
 
 
 def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
@@ -417,6 +449,67 @@ def get_casp_history(query: str, limit: int = 60) -> List[Dict[str, Any]]:
             (query, limit),
         ).fetchall()
         return [{"casp": r["casp"], "created_at": r["created_at"]} for r in rows]
+    finally:
+        con.close()
+
+
+def get_all_estimates_for_persistence(limit_per_query: int = 60) -> List[Dict[str, Any]]:
+    """Returns recent estimates for all queries (for JSON persistence)."""
+    con = _connect()
+    try:
+        rows = con.execute(
+            """
+            SELECT query, casp, accuracy_pct, created_at FROM estimates
+            WHERE casp IS NOT NULL
+            ORDER BY created_at DESC
+            LIMIT ?
+            """,
+            (limit_per_query * 50,),
+        ).fetchall()
+        seen: Dict[str, int] = {}
+        result = []
+        for r in rows:
+            q = r["query"]
+            seen[q] = seen.get(q, 0) + 1
+            if seen[q] <= limit_per_query:
+                result.append({
+                    "query": q,
+                    "casp": r["casp"],
+                    "accuracy_pct": r["accuracy_pct"],
+                    "created_at": r["created_at"],
+                })
+        result.sort(key=lambda x: x["created_at"])
+        return result
+    finally:
+        con.close()
+
+
+def bulk_insert_estimates(rows: List[Dict[str, Any]]) -> int:
+    """Insert estimates from JSON persistence; skips existing (query, created_at) pairs."""
+    if not rows:
+        return 0
+    con = _connect()
+    try:
+        inserted = 0
+        for r in rows:
+            try:
+                con.execute(
+                    """
+                    INSERT INTO estimates (query, casp, accuracy_pct, created_at)
+                    SELECT ?, ?, ?, ?
+                    WHERE NOT EXISTS (
+                        SELECT 1 FROM estimates WHERE query=? AND created_at=?
+                    )
+                    """,
+                    (r["query"], r["casp"], r.get("accuracy_pct"), r["created_at"],
+                     r["query"], r["created_at"]),
+                )
+                if con.execute("SELECT changes()").fetchone()[0]:
+                    inserted += 1
+            except Exception:
+                pass
+        con.commit()
+        return inserted
     finally:
         con.close()
 
