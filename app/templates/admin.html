@@ -912,7 +912,7 @@
                     ${score > 0 ? `<span style="font-size:10px;font-weight:800;padding:2px 7px;border-radius:4px;background:${bgCol};color:${txCol};">Deal ${score}/5</span>` : ''}
                   </div>
                   ${saveBadge}
-                  <div style="font-size:10px;color:#fff;margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.condition ? ' · ' + l.condition : ''}</div>
+                  <div style="font-size:10px;color:#fff;margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.size ? ' · ' + l.size : ''}${l.condition ? ' · ' + l.condition : ''}</div>
                   ${vision}
                 </div>
               </div>
@@ -952,8 +952,9 @@
               <div style="flex:1;min-width:0;">
                 <div style="font-size:13px;font-weight:700;margin-bottom:4px;">${a.title || '—'}</div>
                 <div style="font-size:12px;color:#fff;margin-bottom:6px;">${a.source.toUpperCase()} · ${a.query}</div>
-                <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
                   <span style="font-size:16px;font-weight:800;">$${(a.price||0).toFixed(2)}</span>
+                  ${a.size ? `<span style="font-size:11px;font-weight:800;background:#fff;color:#111;padding:2px 8px;border-radius:4px;">${a.size}</span>` : ''}
                   ${a.casp ? `<span style="font-size:11px;color:#fff;">CASP $${(a.casp).toFixed(0)}</span>` : ''}
                   <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${a.deal_score>=5?'#1b4332':a.deal_score>=4?'#2d4a1e':'#3a2d00'};color:${a.deal_score>=5?'#6fcf97':a.deal_score>=4?'#a8d08d':'#f5c842'};">Deal ${a.deal_score}/5</span>
                   <a href="${a.url}" target="_blank" rel="noopener" style="font-size:11px;color:#7eb8d4;text-decoration:none;font-weight:600;">View →</a>

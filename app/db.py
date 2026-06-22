@@ -168,11 +168,15 @@ def init_db() -> None:
                     photo TEXT,
                     casp REAL,
                     deal_score INTEGER,
+                    size TEXT,
                     seen INTEGER NOT NULL DEFAULT 0,
                     created_at TEXT NOT NULL
                 )
                 """
             )
+        else:
+            _ensure_column(con, "listing_alerts", "size", "TEXT")
+        _migrate_alerts_json(con)
 
         con.commit()
     finally:
@@ -221,6 +225,32 @@ def _migrate_archive_json(con: sqlite3.Connection) -> None:
             "INSERT OR IGNORE INTO archive_sections (id, title, text, photos, position) VALUES (?,?,?,?,?)",
             (section["id"], section.get("title", ""), section.get("text", ""), json.dumps(photos), si),
         )
+
+
+def _migrate_alerts_json(con: sqlite3.Connection) -> None:
+    """Load persisted alerts from alerts.json into DB if table is currently empty."""
+    count = con.execute("SELECT COUNT(*) as n FROM listing_alerts").fetchone()["n"]
+    if count > 0:
+        return
+    path = os.path.join(_APP_DIR, "alerts.json")
+    try:
+        with open(path) as f:
+            alerts = json.load(f)
+    except Exception:
+        return
+    for a in alerts:
+        try:
+            con.execute(
+                """INSERT OR IGNORE INTO listing_alerts
+                   (query, source, title, price, url, photo, casp, deal_score, size, seen, created_at)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+                (a.get("query"), a.get("source"), a.get("title"), a.get("price"),
+                 a.get("url"), a.get("photo"), a.get("casp"), a.get("deal_score"),
+                 a.get("size"), a.get("seen", 1), a.get("created_at")),
+            )
+        except Exception:
+            pass
+    log.info("[db] loaded %d alerts from alerts.json", len(alerts))
 
 
 def insert_comps(query: str, comps: List[Dict[str, Any]]) -> int:
@@ -591,7 +621,7 @@ def db_delete_section(section_id: str) -> None:
 
 def insert_alert(query: str, source: str, title: str, price: float,
                  url: str, photo: Optional[str], casp: Optional[float],
-                 deal_score: Optional[int]) -> None:
+                 deal_score: Optional[int], size: Optional[str] = None) -> None:
     """Insert a deal alert. Skips duplicates by URL."""
     con = _connect()
     try:
@@ -600,9 +630,9 @@ def insert_alert(query: str, source: str, title: str, price: float,
             return
         con.execute(
             """INSERT INTO listing_alerts
-               (query, source, title, price, url, photo, casp, deal_score, seen, created_at)
-               VALUES (?,?,?,?,?,?,?,?,0,?)""",
-            (query, source, title, price, url, photo, casp, deal_score, _utc_now()),
+               (query, source, title, price, url, photo, casp, deal_score, size, seen, created_at)
+               VALUES (?,?,?,?,?,?,?,?,?,0,?)""",
+            (query, source, title, price, url, photo, casp, deal_score, size, _utc_now()),
         )
         con.commit()
     finally:

@@ -136,6 +136,9 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     all_listings.extend(search_grailed(query))
     all_listings.extend(search_etsy(query))
 
+    # Filter out junk (wrong model code, kids items, etc.) same as estimator
+    all_listings = filter_comps(all_listings, query)
+
     for listing in all_listings:
         price = listing.get("price") or 0
         if not price:
@@ -151,6 +154,7 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
                 photo=listing.get("photo"),
                 casp=casp,
                 deal_score=score,
+                size=listing.get("size"),
             )
             saved += 1
 

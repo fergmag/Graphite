@@ -110,6 +110,8 @@ Goal: notify users when something is a deal.
 Goal: start saving image data so ML becomes possible.
 - Store image URLs and thumbnails (at least metadata)
 - Link images to comps/listings
+- claude vision 
+- end goal is to be able to identify misnamed or incorrectly listed grails, and to grade condition based on photos.
 
 ### Step 25: Condition grading (A–D)
 Goal: incorporate condition into CASP and deal scoring.

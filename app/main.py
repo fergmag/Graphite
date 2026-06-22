@@ -109,6 +109,19 @@ def _persist_archive() -> None:
     _github_sync_file("app/archive.json", content, "sync: archive updated")
 
 
+def _persist_alerts() -> None:
+    """Write current alerts to JSON and sync to GitHub so they survive redeploys."""
+    data = get_alerts(limit=500)
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    path = os.path.join(_APP_DATA_DIR, "alerts.json")
+    try:
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception:
+        pass
+    _github_sync_file("app/alerts.json", content, "sync: alerts updated")
+
+
 def _parse_bool(x: str, default: bool = False) -> bool:
     if x is None:
         return default
@@ -422,7 +435,10 @@ def create_app() -> Flask:
     @_login_required
     def admin_refresh_now():
         from app.scraper import refresh_all_watchlist
-        t = threading.Thread(target=refresh_all_watchlist, daemon=True)
+        def _run():
+            refresh_all_watchlist()
+            _persist_alerts()
+        t = threading.Thread(target=_run, daemon=True)
         t.start()
         return jsonify({"ok": True, "message": "Refresh started in background"})
 
@@ -1012,8 +1028,11 @@ def create_app() -> Flask:
         try:
             from apscheduler.schedulers.background import BackgroundScheduler
             from app.scraper import refresh_all_watchlist as _refresh
+            def _scheduled_refresh():
+                _refresh()
+                _persist_alerts()
             _sched = BackgroundScheduler(daemon=True)
-            _sched.add_job(_refresh, "interval", hours=6, id="watchlist_refresh",
+            _sched.add_job(_scheduled_refresh, "interval", hours=6, id="watchlist_refresh",
                            misfire_grace_time=300)
             _sched.start()
             logging.getLogger(__name__).info("[scheduler] Started — refresh every 6 h")
