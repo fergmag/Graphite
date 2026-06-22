@@ -9,7 +9,7 @@ A running log of everything implemented, so new sessions can orient quickly. ROA
 - **Hosting**: Render.com free tier — live at graphitevintage.com (Namecheap DNS wired to Render)
 - **Uptime monitoring**: UptimeRobot pinging the site
 - **Photo storage**: Cloudinary (uploaded via admin → stored as full URLs in DB/JSON)
-- **Data persistence across Render redeploys**: listings, archive, and alerts are synced to GitHub via API after every write (`_persist_listings`, `_persist_archive`, `_persist_alerts` in main.py). On startup `init_db` reloads from these JSON files.
+- **Data persistence across Render redeploys**: listings, archive, alerts, and CASP estimates are synced to GitHub via API after every write (`_persist_listings`, `_persist_archive`, `_persist_alerts`, `_persist_estimates` in main.py). On startup `init_db` reloads from these JSON files.
 - **GitHub**: https://github.com/fergmag/Graphite
 - **Background color**: `#283238` — locked in, do not change
 
@@ -66,18 +66,22 @@ A running log of everything implemented, so new sessions can orient quickly. ROA
 ## Scraping & pricing
 
 ### eBay (sold comps → CASP)
-- `scrape_ebay.py` — scrapes eBay sold listings with cookie warming + retry logic
-- 403 handling: backs off 45s per attempt
+- `scrape_ebay.py` — primary method: eBay Finding API (`findCompletedItems`); falls back to HTML scraping
+- **Requires `EBAY_APP_ID` env var** (free — register at developer.ebay.com → create app → copy "App ID")
+- Without `EBAY_APP_ID`, HTML scraping is used but is blocked from Render's AWS IPs
 - `scraper.py:scrape_and_save` — wraps eBay scrape, normalizes, filters, computes CASP, writes cache + DB
 - `pricing.py` — median + trimmed mean + confidence score
 - `filters.py` — drops junk (kids/women's/vest), requires jacket code in title if query has one
 - `model_profiles.py` + `models.json` — 27 manual CASP overrides for specific models (M price basis)
 
 ### Multi-platform deal scanning (active listings)
-- `scrape_depop.py` — Depop internal API
+- `scrape_ebay.py:search_ebay_active` — eBay active BIN listings via Finding API (`findItemsByKeywords`). Also needs `EBAY_APP_ID`
+- `scrape_depop.py` — Depop internal API (currently returning [] — requires OAuth, all v1/v2/v3 endpoints are 403)
 - `scrape_grailed.py` — Grailed via Algolia (public search key — rotates occasionally, update if broken)
-- `scrape_etsy.py` — Etsy API v3 (requires `ETSY_API_KEY` env var)
-- `scraper.py:scan_platforms_for_query` — fetches all three, filters, scores vs CASP, saves alerts with deal_score ≥ 3
+- `scrape_etsy.py` — Etsy API v3 (requires `ETSY_API_KEY` env var — user's key not activated yet)
+- `scrape_whatnot.py` — stub, returns [] (Whatnot uses Cloudflare — blocked without Playwright + CF bypass)
+- `scraper.py:scan_platforms_for_query` — fetches from all platforms, filters, scores vs CASP, saves alerts with deal_score ≥ 3
+- Vision grades ALL listings with photos (no cap — removed the old top-3 limit)
 
 ### Size-adjusted deal scoring
 - CASP in models.json is the **M (medium) price**
@@ -100,7 +104,8 @@ A running log of everything implemented, so new sessions can orient quickly. ROA
 
 - `vision.py` — Claude Haiku (`claude-haiku-4-5-20251001`) grades jacket condition from photo URLs
 - Returns `{grade: "7/10", notes: "..."}` or None if API key missing / request fails
-- Called for all listings with photos in the `/api/model-detail` endpoint
+- Called for ALL listings with photos in `/api/model-detail` and ALL deal alerts with score ≥ 3
+- Prompt uses strict anchors (10=deadstock, 5=well-worn, 4=heavy wear) to combat Haiku defaulting to 6-7
 - Requires `ANTHROPIC_API_KEY` env var
 
 ---
@@ -131,8 +136,9 @@ Key tables:
 | `PAYPAL_CLIENT_ID` | PayPal |
 | `PAYPAL_CLIENT_SECRET` | PayPal |
 | `PAYPAL_MODE` | `live` or `sandbox` |
-| `ETSY_API_KEY` | Etsy scraping |
+| `ETSY_API_KEY` | Etsy scraping (key not activated yet) |
 | `ANTHROPIC_API_KEY` | Claude Vision grading |
+| `EBAY_APP_ID` | eBay Finding API — **needed for eBay to work from Render** |
 | `GITHUB_TOKEN` | Data persistence sync |
 | `GITHUB_REPO` | `fergmag/Graphite` |
 
@@ -140,17 +146,21 @@ Key tables:
 
 ## Known issues / deferred
 
-- Render env vars (TOOL_PASSWORD, SECRET_KEY) may not be picked up by gunicorn — "graphite" still works as password fallback. Defer until auth system built.
+- **eBay broken without EBAY_APP_ID** — HTML scraping is IP-blocked by eBay on Render's AWS servers. Register at developer.ebay.com (free) and add `EBAY_APP_ID` to Render env vars to fix.
 - Grailed Algolia key rotates — if Grailed returns 0 results, fetch https://www.grailed.com and extract new `window.PUBLIC_CONFIG.algolia.public_search_key`
-- eBay occasionally returns 403 (bot detection) — scraper backs off and falls back to cache
-- Depop API endpoint may change — monitor for 4xx responses
-- Not enough CASP history yet to fully test the price chart
+- Depop fully blocked — all API endpoints return 403, requires OAuth. Returning [] for now.
+- Whatnot blocked by Cloudflare — needs Playwright + CF bypass. Returning [] for now.
+- Etsy key not yet activated — will work once `ETSY_API_KEY` is added to Render.
+- Vision grades still cluster around 6-7 despite updated prompt — may need further prompt tuning or a different model.
+- Render env vars (TOOL_PASSWORD, SECRET_KEY) may not be picked up by gunicorn — "graphite" still works as password fallback.
 
 ---
 
-## What to build next (from memory)
+## What to build next
 
-- Fix any live scraping issues (eBay 403, Depop/Grailed broken keys)
+- **Add `EBAY_APP_ID` to Render** — highest priority, unlocks eBay sold comps + deal alerts. Go to developer.ebay.com → My eBay Developers Program → get App ID.
+- Etsy: add `ETSY_API_KEY` to Render once key activates
+- Vision accuracy: investigate whether prompt changes or switching to Sonnet helps
 - Auth system: public landing page + owner-approved accounts to access estimator
 - Watchlist items: expandable to show current comps
-- AI image scraper: take a photo → find similar listings (Google Vision web detection)
+- Whatnot: revisit if Playwright becomes feasible (would need upgraded Render plan for RAM)
