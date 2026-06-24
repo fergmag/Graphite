@@ -327,6 +327,21 @@ def create_app() -> Flask:
             resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
         return resp
 
+    @app.get("/shop/item/<listing_id>")
+    def shop_item(listing_id):
+        all_listings = db_list_listings()
+        available = [l for l in all_listings if not l.get("sold")]
+        show_splash = request.cookies.get("graphite_visited") != "1"
+        resp = make_response(render_template("shop.html",
+            listings=available,
+            page="shop",
+            open_listing_id=listing_id,
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
+            show_splash=False))
+        if show_splash:
+            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
+        return resp
+
     @app.get("/archive")
     def archive():
         return render_template("archive.html", page="archive", archive=db_load_archive())
@@ -351,6 +366,7 @@ def create_app() -> Flask:
         size        = request.form.get("size", "").strip()
         price       = request.form.get("price", "").strip()
         description = request.form.get("description", "").strip()
+        condition   = request.form.get("condition", "").strip()
         if not title or not price:
             return redirect("/admin#listings")
         photos = []
@@ -363,6 +379,7 @@ def create_app() -> Flask:
             "size": size,
             "price": float(price),
             "description": description,
+            "condition": condition,
             "photos": photos,
             "sold": False,
             "created_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -387,15 +404,16 @@ def create_app() -> Flask:
     @app.post("/admin/edit/<listing_id>")
     @_login_required
     def admin_edit(listing_id):
-        title = request.form.get("title", "").strip()
-        size  = request.form.get("size", "").strip()
-        price = request.form.get("price", "").strip()
-        desc  = request.form.get("description", "").strip()
+        title     = request.form.get("title", "").strip()
+        size      = request.form.get("size", "").strip()
+        price     = request.form.get("price", "").strip()
+        desc      = request.form.get("description", "").strip()
+        condition = request.form.get("condition", "").strip()
         new_photos = []
         for f in request.files.getlist("photos"):
             if f and f.filename:
                 _p = _save_photo(f); new_photos.append(_p) if _p else None
-        fields: Dict[str, Any] = {"title": title, "size": size, "description": desc}
+        fields: Dict[str, Any] = {"title": title, "size": size, "description": desc, "condition": condition}
         if price:
             try: fields["price"] = float(price)
             except ValueError: pass
@@ -521,13 +539,17 @@ def create_app() -> Flask:
         # Sort best deals first
         listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)
 
-        # Claude Vision condition grading for all listings with photos
+        # Vision grade top 5 by deal score — grading all would exceed Render's 30s timeout
+        graded = 0
         for lst in listings:
+            if graded >= 5:
+                break
             photo = lst.get("photo")
             if photo:
                 result = grade_condition(photo)
                 if result:
                     lst["vision"] = result
+                graded += 1
 
         return jsonify({
             "ok": True,

@@ -135,6 +135,7 @@ def init_db() -> None:
                 )
                 """
             )
+        _ensure_column(con, "listings", "condition", "TEXT")
         # Always migrate from JSON — INSERT OR IGNORE skips existing rows
         _migrate_listings_json(con)
 
@@ -575,13 +576,14 @@ def db_insert_listing(listing: Dict[str, Any]) -> None:
     try:
         max_pos = con.execute("SELECT COALESCE(MIN(position)-1, 0) FROM listings").fetchone()[0]
         con.execute(
-            "INSERT INTO listings (id, title, size, price, description, photos, sold, created_at, position) VALUES (?,?,?,?,?,?,?,?,?)",
+            "INSERT INTO listings (id, title, size, price, description, condition, photos, sold, created_at, position) VALUES (?,?,?,?,?,?,?,?,?,?)",
             (
                 listing["id"],
                 listing.get("title", ""),
                 listing.get("size", ""),
                 listing.get("price"),
                 listing.get("description", ""),
+                listing.get("condition", ""),
                 json.dumps(listing.get("photos") or []),
                 1 if listing.get("sold") else 0,
                 listing.get("created_at", _utc_now()),
@@ -604,12 +606,13 @@ def db_update_listing(listing_id: str, fields: Dict[str, Any]) -> None:
         if new_photos is not None:
             existing_photos.extend(new_photos)
         con.execute(
-            """UPDATE listings SET title=?, size=?, price=?, description=?, photos=? WHERE id=?""",
+            """UPDATE listings SET title=?, size=?, price=?, description=?, condition=?, photos=? WHERE id=?""",
             (
                 fields.get("title"),
                 fields.get("size"),
                 fields.get("price"),
                 fields.get("description", ""),
+                fields.get("condition", ""),
                 json.dumps(existing_photos),
                 listing_id,
             ),

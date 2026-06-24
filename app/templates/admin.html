@@ -276,8 +276,10 @@
           <input type="number" name="price" placeholder="e.g. 2500" min="0" step="1" required />
         </div>
         <div class="field">
+          <label>Condition (optional) <span style="font-weight:400;font-size:11px;">e.g. 8/10 — Excellent, light fading</span></label>
+          <input type="text" name="condition" placeholder="8/10 — Excellent" />
           <label>Description (optional)</label>
-          <textarea name="description" placeholder="Condition notes, measurements, etc."></textarea>
+          <textarea name="description" placeholder="Measurements, other notes…"></textarea>
         </div>
         <div class="field">
           <label>Photos</label>
@@ -343,6 +345,7 @@
               </div>
             </div>
             <div class="field"><label>Price (USD)</label><input type="number" name="price" value="{{ l.price }}" min="0" step="1" required /></div>
+            <div class="field"><label>Condition <span style="font-weight:400;font-size:11px;">e.g. 8/10 — Excellent</span></label><input type="text" name="condition" value="{{ l.condition or '' }}" placeholder="8/10 — Excellent" /></div>
             <div class="field"><label>Description</label><textarea name="description">{{ l.description }}</textarea></div>
             {% if l.photos %}
             <div class="field">
@@ -487,9 +490,6 @@
           </div>
           <button class="est-btn secondary" id="refreshNowBtn" style="width:100%;font-size:12px;margin-top:6px;">Refresh All Now</button>
           <div id="watchList"></div>
-          <form method="POST" action="/admin/populate-watchlist" style="margin-top:8px;">
-            <button type="submit" class="est-btn secondary" style="width:100%;font-size:12px;">+ Restore 27 Default Models</button>
-          </form>
         </div>
       </div>
 
@@ -654,7 +654,7 @@
         $('accLabel').textContent = pub.accuracy_label ?? '—';
         if (pub.deal_score) {
           $('deal').textContent = `${pub.deal_score}/5`;
-          $('dealSub').textContent = `${pub.deal_label} • ${pub.delta > 0 ? '+' : ''}${pub.delta} (${pub.delta_pct}%)`;
+          $('dealSub').textContent = `${pub.deal_label} • ${pub.delta > 0 ? '+' : '-'}$${Math.abs(pub.delta).toFixed(0)} (${pub.delta_pct}%)`;
         } else {
           $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
@@ -799,53 +799,30 @@
         const VW = W + LEFT;
         svg.setAttribute('viewBox', `0 0 ${VW} ${H}`);
 
-        const prices = history2.map(d => d.casp);
-        const minP = Math.min(...prices);
-        const maxP = Math.max(...prices);
-        const spread = maxP - minP || 1;
+        // Fixed Y scale: 0–5000 with gridlines at 0, 1000, 3000, 5000
+        const Y_MAX = 5000;
+        const Y_TICKS = [0, 1000, 3000, 5000];
 
         const toX = i => LEFT + PAD + (i / (history2.length - 1)) * (W - PAD * 2);
-        const toY = p => maxP === minP ? H / 2 : PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
+        const toY = p => PAD + (1 - Math.min(p, Y_MAX) / Y_MAX) * (H - PAD * 2);
 
-        // Y-axis reference lines + labels
         const ns = 'http://www.w3.org/2000/svg';
-        const addYLabel = (price) => {
-          const y = toY(price);
+        Y_TICKS.forEach(tick => {
+          const y = toY(tick);
           const refLine = document.createElementNS(ns, 'line');
           refLine.setAttribute('x1', LEFT); refLine.setAttribute('x2', LEFT + W - PAD);
           refLine.setAttribute('y1', y); refLine.setAttribute('y2', y);
-          refLine.setAttribute('stroke', 'rgba(255,255,255,0.07)'); refLine.setAttribute('stroke-width', '1');
+          refLine.setAttribute('stroke', tick === 0 ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)');
+          refLine.setAttribute('stroke-width', '1');
           svg.appendChild(refLine);
           const t = document.createElementNS(ns, 'text');
           t.setAttribute('x', LEFT - 4); t.setAttribute('y', y);
           t.setAttribute('text-anchor', 'end'); t.setAttribute('dominant-baseline', 'middle');
-          t.setAttribute('fill', 'rgba(255,255,255,0.5)'); t.setAttribute('font-size', '9');
+          t.setAttribute('fill', 'rgba(255,255,255,0.45)'); t.setAttribute('font-size', '9');
           t.setAttribute('font-family', 'inherit');
-          t.textContent = `$${price >= 1000 ? (price/1000).toFixed(1)+'k' : price.toFixed(0)}`;
+          t.textContent = tick === 0 ? '$0' : `$${tick / 1000}k`;
           svg.appendChild(t);
-        };
-        if (maxP === minP) {
-          // Single price — draw one label centred vertically
-          const midLabel = (price) => {
-            const refLine = document.createElementNS(ns, 'line');
-            refLine.setAttribute('x1', LEFT); refLine.setAttribute('x2', LEFT + W - PAD);
-            refLine.setAttribute('y1', H / 2); refLine.setAttribute('y2', H / 2);
-            refLine.setAttribute('stroke', 'rgba(255,255,255,0.07)'); refLine.setAttribute('stroke-width', '1');
-            svg.appendChild(refLine);
-            const t = document.createElementNS(ns, 'text');
-            t.setAttribute('x', LEFT - 4); t.setAttribute('y', H / 2);
-            t.setAttribute('text-anchor', 'end'); t.setAttribute('dominant-baseline', 'middle');
-            t.setAttribute('fill', 'rgba(255,255,255,0.5)'); t.setAttribute('font-size', '9');
-            t.setAttribute('font-family', 'inherit');
-            t.textContent = `$${price >= 1000 ? (price/1000).toFixed(1)+'k' : price.toFixed(0)}`;
-            svg.appendChild(t);
-          };
-          midLabel(maxP);
-        } else {
-          addYLabel(maxP);
-          addYLabel(Math.round((maxP + minP) / 2));
-          addYLabel(minP);
-        }
+        });
 
         const pts = history2.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
 
@@ -875,11 +852,11 @@
         svg.appendChild(dot);
 
         // range label
-        rangeEl.textContent = `$${minP.toFixed(0)} – $${maxP.toFixed(0)} · ${history.length} run${history.length === 1 ? '' : 's'}`;
+        const lastCasp = history[history.length - 1].casp;
+        rangeEl.textContent = `$${lastCasp >= 1000 ? (lastCasp/1000).toFixed(1)+'k' : lastCasp.toFixed(0)} · ${history.length} run${history.length === 1 ? '' : 's'}`;
 
-        // date labels: first and last
-        const fmt = s => s ? s.slice(0,10) : '';
-        labels.innerHTML = `<span style="padding-left:${LEFT}px">${fmt(history[0].created_at)}</span><span>${fmt(history[history.length-1].created_at)}</span>`;
+        // date labels: fixed start / present
+        labels.innerHTML = `<span style="padding-left:${LEFT}px">June 2026</span><span>Present</span>`;
       }
 
       async function loadHistory(query) {

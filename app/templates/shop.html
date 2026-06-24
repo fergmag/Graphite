@@ -281,6 +281,7 @@
         font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;
         background: #f0f0f0; color: #333; border-radius: 6px; flex-shrink: 0;
       }
+      .modal-condition { font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #777; }
       .modal-desc { font-size: 13px; color: #555; line-height: 1.6; }
       .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
       .btn-stripe {
@@ -439,6 +440,7 @@
 
     <div class="page-content">
       <div id="flash" style="display:none;margin-bottom:20px;padding:14px 18px;border-radius:8px;font-size:13px;font-weight:700;letter-spacing:0.04em;"></div>
+      <div id="sizeFilter" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;"></div>
       <div class="listings-grid" id="grid"></div>
     </div>
 
@@ -453,6 +455,7 @@
             <div class="modal-price" id="modalPrice"></div>
             <span class="modal-size-badge" id="modalSize"></span>
           </div>
+          <div class="modal-condition"  id="modalCondition"></div>
           <div class="modal-desc"      id="modalDesc"></div>
           <div class="modal-breakdown" id="modalBreakdown"></div>
           <div class="modal-actions"   id="modalActions"></div>
@@ -462,9 +465,11 @@
     </div>
 
     <script>
-      const LISTINGS = {{ listings | tojson }};
-      const PAGE     = {{ page | tojson }};
+      const LISTINGS        = {{ listings | tojson }};
+      const PAGE            = {{ page | tojson }};
+      const OPEN_LISTING_ID = {{ (open_listing_id | tojson) if open_listing_id is defined else 'null' }};
       let currentSort = 'newest';
+      let currentSize = '';
 
       const SHIPPING_USD = 50;
       const PROCESSING_RATE = 0.04;
@@ -494,10 +499,25 @@
 
       function getItems() {
         let items = [...LISTINGS];
+        if (currentSize) items = items.filter(l => l.size === currentSize);
         if (currentSort === 'price-high') items.sort((a,b) => b.price - a.price);
         else if (currentSort === 'price-low') items.sort((a,b) => a.price - b.price);
         else items.sort((a,b) => new Date(b.created_at) - new Date(a.created_at));
         return items;
+      }
+
+      function buildSizeFilter() {
+        const sizes = ['M','L','XL','XXL'].filter(s => LISTINGS.some(l => l.size === s));
+        const wrap = document.getElementById('sizeFilter');
+        if (!sizes.length) { wrap.style.display = 'none'; return; }
+        const pillStyle = (active) =>
+          `display:inline-flex;align-items:center;padding:7px 18px;border-radius:999px;border:1.5px solid ${active ? '#ffffff' : 'rgba(255,255,255,0.3)'};background:${active ? '#ffffff' : 'transparent'};color:${active ? '#111' : '#fff'};font-family:inherit;font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:all 0.15s;`;
+        const all = `<button style="${pillStyle(!currentSize)}" data-size="">All</button>`;
+        const pills = sizes.map(s => `<button style="${pillStyle(currentSize===s)}" data-size="${s}">${s}</button>`).join('');
+        wrap.innerHTML = all + pills;
+        wrap.querySelectorAll('button').forEach(btn => {
+          btn.addEventListener('click', () => { currentSize = btn.dataset.size; buildSizeFilter(); render(); });
+        });
       }
 
       function photoSrc(p) {
@@ -596,6 +616,9 @@
         document.getElementById('modalTitle').textContent = listing.title;
         document.getElementById('modalPrice').textContent = fmt(listing.price);
         document.getElementById('modalSize').textContent  = listing.size;
+        const condEl = document.getElementById('modalCondition');
+        condEl.textContent   = listing.condition ? `Condition: ${listing.condition}` : '';
+        condEl.style.display = listing.condition ? 'block' : 'none';
         const descEl = document.getElementById('modalDesc');
         descEl.textContent   = listing.description || '';
         descEl.style.display = listing.description ? 'block' : 'none';
@@ -701,7 +724,14 @@
         flash.textContent = 'Payment cancelled. DM @graphitevintage on Instagram if you need help.';
       }
 
+      buildSizeFilter();
       render();
+
+      // Auto-open a specific listing (from /shop/item/<id> URL)
+      if (OPEN_LISTING_ID) {
+        const target = LISTINGS.find(l => l.id === OPEN_LISTING_ID);
+        if (target) openModal(target);
+      }
     </script>
 
     <footer class="site-footer">

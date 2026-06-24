@@ -87,5 +87,6 @@ def grade_condition(photo_url: str) -> Optional[dict]:
         if grade:
             return {"grade": grade, "notes": notes or ""}
     except Exception as e:
-        log.warning("[vision] grading failed for %s: %s", photo_url, e)
+        log.error("[vision] grading failed — model=claude-sonnet-4-6 url=%s error=%s: %s",
+                  photo_url[:80], type(e).__name__, e)
     return None
