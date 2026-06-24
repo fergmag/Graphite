@@ -805,7 +805,7 @@
         const spread = maxP - minP || 1;
 
         const toX = i => LEFT + PAD + (i / (history2.length - 1)) * (W - PAD * 2);
-        const toY = p => PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
+        const toY = p => maxP === minP ? H / 2 : PAD + (1 - (p - minP) / spread) * (H - PAD * 2);
 
         // Y-axis reference lines + labels
         const ns = 'http://www.w3.org/2000/svg';
@@ -824,9 +824,28 @@
           t.textContent = `$${price >= 1000 ? (price/1000).toFixed(1)+'k' : price.toFixed(0)}`;
           svg.appendChild(t);
         };
-        addYLabel(maxP);
-        if (maxP !== minP) addYLabel(Math.round((maxP + minP) / 2));
-        addYLabel(minP);
+        if (maxP === minP) {
+          // Single price — draw one label centred vertically
+          const midLabel = (price) => {
+            const refLine = document.createElementNS(ns, 'line');
+            refLine.setAttribute('x1', LEFT); refLine.setAttribute('x2', LEFT + W - PAD);
+            refLine.setAttribute('y1', H / 2); refLine.setAttribute('y2', H / 2);
+            refLine.setAttribute('stroke', 'rgba(255,255,255,0.07)'); refLine.setAttribute('stroke-width', '1');
+            svg.appendChild(refLine);
+            const t = document.createElementNS(ns, 'text');
+            t.setAttribute('x', LEFT - 4); t.setAttribute('y', H / 2);
+            t.setAttribute('text-anchor', 'end'); t.setAttribute('dominant-baseline', 'middle');
+            t.setAttribute('fill', 'rgba(255,255,255,0.5)'); t.setAttribute('font-size', '9');
+            t.setAttribute('font-family', 'inherit');
+            t.textContent = `$${price >= 1000 ? (price/1000).toFixed(1)+'k' : price.toFixed(0)}`;
+            svg.appendChild(t);
+          };
+          midLabel(maxP);
+        } else {
+          addYLabel(maxP);
+          addYLabel(Math.round((maxP + minP) / 2));
+          addYLabel(minP);
+        }
 
         const pts = history2.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
 
