@@ -127,6 +127,19 @@ def _persist_alerts() -> None:
     _github_sync_file("app/alerts.json", content, "sync: alerts updated")
 
 
+def _persist_watchlist() -> None:
+    """Write watchlist queries to JSON and sync to GitHub so they survive redeploys."""
+    data = list_watches()
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    path = os.path.join(_APP_DATA_DIR, "watchlist.json")
+    try:
+        with open(path, "w") as f:
+            f.write(content)
+    except Exception:
+        pass
+    _github_sync_file("app/watchlist.json", content, "sync: watchlist updated")
+
+
 def _persist_estimates() -> None:
     """Write recent CASP history to JSON and sync to GitHub so chart survives redeploys."""
     data = get_all_estimates_for_persistence(limit_per_query=60)
@@ -802,6 +815,7 @@ def create_app() -> Flask:
         if not raw_query.strip():
             return jsonify({"ok": False, "error": "Missing query"}), 400
         add_watch(raw_query)
+        _persist_watchlist()
         return jsonify({"ok": True, "items": list_watches()}), 200
 
     @app.delete("/watchlist")
@@ -813,6 +827,7 @@ def create_app() -> Flask:
             raw_query = str(raw_query)
         if raw_query.strip():
             delete_watch(raw_query)
+        _persist_watchlist()
         return jsonify({"ok": True, "items": list_watches()}), 200
 
     # -----------------------

@@ -507,16 +507,30 @@
       }
 
       function buildSizeFilter() {
-        const sizes = ['M','L','XL','XXL'].filter(s => LISTINGS.some(l => l.size === s));
+        const ALL_SIZES = ['M','L','XL','XXL'];
         const wrap = document.getElementById('sizeFilter');
-        if (!sizes.length) { wrap.style.display = 'none'; return; }
-        const pillStyle = (active) =>
-          `display:inline-flex;align-items:center;padding:7px 18px;border-radius:999px;border:1.5px solid ${active ? '#ffffff' : 'rgba(255,255,255,0.3)'};background:${active ? '#ffffff' : 'transparent'};color:${active ? '#111' : '#fff'};font-family:inherit;font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:all 0.15s;`;
-        const all = `<button style="${pillStyle(!currentSize)}" data-size="">All</button>`;
-        const pills = sizes.map(s => `<button style="${pillStyle(currentSize===s)}" data-size="${s}">${s}</button>`).join('');
+        const hasStock = s => LISTINGS.some(l => l.size === s);
+        const pillStyle = (active, empty) =>
+          `display:inline-flex;align-items:center;gap:5px;padding:7px 18px;border-radius:999px;` +
+          `border:1.5px solid ${active ? '#ffffff' : empty ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.3)'};` +
+          `background:${active ? '#ffffff' : 'transparent'};` +
+          `color:${active ? '#111' : empty ? 'rgba(255,255,255,0.3)' : '#fff'};` +
+          `font-family:inherit;font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;` +
+          `cursor:${empty && !active ? 'default' : 'pointer'};transition:all 0.15s;`;
+        const all = `<button style="${pillStyle(!currentSize, false)}" data-size="">All</button>`;
+        const pills = ALL_SIZES.map(s => {
+          const empty = !hasStock(s);
+          const label = empty ? `${s} <span style="font-size:10px;font-weight:400;text-transform:none;">none</span>` : s;
+          return `<button style="${pillStyle(currentSize===s, empty)}" data-size="${s}" data-empty="${empty}">${label}</button>`;
+        }).join('');
         wrap.innerHTML = all + pills;
         wrap.querySelectorAll('button').forEach(btn => {
-          btn.addEventListener('click', () => { currentSize = btn.dataset.size; buildSizeFilter(); render(); });
+          btn.addEventListener('click', () => {
+            if (btn.dataset.empty === 'true') return;
+            currentSize = btn.dataset.size;
+            buildSizeFilter();
+            render();
+          });
         });
       }
 
@@ -612,6 +626,7 @@
 
       function openModal(listing) {
         currentListing = listing;
+        history.pushState({ listingId: listing.id }, '', '/shop/item/' + listing.id);
         buildSlider(listing.photos, listing.title);
         document.getElementById('modalTitle').textContent = listing.title;
         document.getElementById('modalPrice').textContent = fmt(listing.price);
@@ -668,6 +683,9 @@
       function closeModal() {
         document.getElementById('modalOverlay').classList.remove('open');
         document.body.style.overflow = '';
+        if (window.location.pathname !== '/shop') {
+          history.replaceState(null, '', '/shop');
+        }
       }
 
       async function handleStripe(listingId) {
@@ -689,6 +707,9 @@
         if (e.target === document.getElementById('modalOverlay')) closeModal();
       });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+      window.addEventListener('popstate', () => {
+        if (window.location.pathname === '/shop') closeModal();
+      });
 
       const sortMenu = document.getElementById('sortMenu');
       document.getElementById('sortBtn').addEventListener('click', e => {

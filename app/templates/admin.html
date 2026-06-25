@@ -444,7 +444,7 @@
 
       <div class="chart-wrap" id="chartWrap">
         <div class="chart-header">
-          <span class="chart-title">CASP History</span>
+          <span class="chart-title">Price History</span>
           <span class="chart-range" id="chartRange"></span>
         </div>
         <svg class="chart-svg" id="chartSvg" viewBox="0 0 600 80" preserveAspectRatio="none"></svg>
@@ -778,6 +778,7 @@
 
         if (history.length === 0) {
           rangeEl.textContent = '';
+          labels.innerHTML = `<span style="padding-left:${52}px">June 2026</span><span>Present</span>`;
           const ns = 'http://www.w3.org/2000/svg';
           svg.setAttribute('viewBox', '0 0 592 80');
           const t = document.createElementNS(ns, 'text');

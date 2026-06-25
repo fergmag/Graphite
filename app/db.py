@@ -117,6 +117,7 @@ def init_db() -> None:
                 )
                 """
             )
+        _migrate_watchlist_json(con)
 
         # listings
         if not _table_exists(con, "listings"):
@@ -258,6 +259,42 @@ def _migrate_alerts_json(con: sqlite3.Connection) -> None:
         except Exception:
             pass
     log.info("[db] loaded %d alerts from alerts.json", len(alerts))
+
+
+def _migrate_watchlist_json(con: sqlite3.Connection) -> None:
+    """Load persisted watchlist from watchlist.json; fall back to models.json to seed defaults."""
+    count = con.execute("SELECT COUNT(*) as n FROM watchlist").fetchone()["n"]
+    if count > 0:
+        return
+    # Try persisted watchlist first
+    path = os.path.join(_APP_DIR, "watchlist.json")
+    queries = []
+    try:
+        with open(path) as f:
+            queries = json.load(f)
+    except Exception:
+        pass
+    # Fall back to models.json keys as defaults
+    if not queries:
+        models_path = os.path.join(_APP_DIR, "models.json")
+        try:
+            with open(models_path) as f:
+                models = json.load(f)
+            queries = list(models.keys())
+        except Exception:
+            pass
+    now = _utc_now()
+    for q in queries:
+        if q and isinstance(q, str):
+            try:
+                con.execute(
+                    "INSERT OR IGNORE INTO watchlist (query, created_at) VALUES (?, ?)",
+                    (q, now),
+                )
+            except Exception:
+                pass
+    if queries:
+        log.info("[db] loaded %d watchlist entries", len(queries))
 
 
 def _migrate_estimates_json(con: sqlite3.Connection) -> None:
