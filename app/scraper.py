@@ -19,7 +19,7 @@ from app.scrape_whatnot import search_whatnot
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
-from app.filters import filter_comps, normalize_query
+from app.filters import filter_comps, normalize_query, parse_size_from_title
 from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
 from app.vision import grade_condition
 
@@ -110,11 +110,15 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     return {"query": query, "ok": True, "n": summary.n, "casp": casp}
 
 
-def _deal_score(price: float, casp: float) -> int:
-    """Return deal score 1–5 based on how far below CASP the price is."""
+_SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
+
+
+def _deal_score(price: float, casp: float, size: Optional[str] = None) -> int:
+    """Return deal score 1–5 based on price vs size-adjusted CASP."""
     if casp <= 0:
         return 1
-    ratio = price / casp
+    adjusted = casp * _SIZE_MULT.get(size or "", 1.0)
+    ratio = price / adjusted
     if ratio <= 0.50:
         return 5
     if ratio <= 0.65:
@@ -147,7 +151,8 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
         price = listing.get("price") or 0
         if not price:
             continue
-        score = _deal_score(price, casp or 0) if casp else 1
+        size = listing.get("size") or parse_size_from_title(listing.get("title", ""))
+        score = _deal_score(price, casp or 0, size) if casp else 1
         if score >= 3:
             vision_grade = vision_notes = None
             photo = listing.get("photo")

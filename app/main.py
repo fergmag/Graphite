@@ -22,7 +22,7 @@ from app.public_view import build_public_payload, deal_score as _deal_score
 
 # Size multipliers: given prices in models.json are for M
 _SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
-from app.filters import filter_comps, normalize_query
+from app.filters import filter_comps, normalize_query, parse_size_from_title
 from app.db import (
     init_db,
     insert_comps,
@@ -535,11 +535,14 @@ def create_app() -> Flask:
         # Filter out irrelevant results (wrong model code, kids items, etc.)
         listings = filter_comps(listings, query)
 
-        # Score each listing against CASP
-        def _score(price):
+        # Score each listing against size-adjusted CASP
+        _SMULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
+
+        def _score(price, size=None):
             if not casp or casp <= 0:
                 return 0
-            r = price / casp
+            adjusted = casp * _SMULT.get(size or "", 1.0)
+            r = price / adjusted
             if r <= 0.50: return 5
             if r <= 0.65: return 4
             if r <= 0.80: return 3
@@ -547,7 +550,9 @@ def create_app() -> Flask:
             return 1
 
         for lst in listings:
-            lst["deal_score"] = _score(lst.get("price") or 0)
+            sz = lst.get("size") or parse_size_from_title(lst.get("title", ""))
+            lst["size"] = sz
+            lst["deal_score"] = _score(lst.get("price") or 0, sz)
 
         # Sort best deals first
         listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)

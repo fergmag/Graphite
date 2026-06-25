@@ -28,13 +28,18 @@ def search_etsy(query: str, limit: int = 25) -> List[Dict[str, Any]]:
         log.warning("[etsy] ETSY_API_KEY not set, skipping")
         return []
 
-    params = {
-        "keywords": query,
-        "limit": limit,
-        "sort_on": "score",
-        "includes": ["Images", "MainImage"],
-    }
+    # Prepend "carhartt" so Etsy finds the brand even when query is just a model code
+    search_terms = query if "carhartt" in query.lower() else f"carhartt {query}"
+
     headers = {"x-api-key": api_key}
+    # includes must be repeated params, not a list — use a list of tuples
+    params = [
+        ("keywords", search_terms),
+        ("limit", str(limit)),
+        ("sort_on", "score"),
+        ("includes[]", "Images"),
+        ("includes[]", "MainImage"),
+    ]
 
     try:
         r = requests.get(
@@ -43,6 +48,7 @@ def search_etsy(query: str, limit: int = 25) -> List[Dict[str, Any]]:
             headers=headers,
             timeout=12,
         )
+        log.debug("[etsy] GET %s → %d", r.url, r.status_code)
         r.raise_for_status()
         data = r.json()
     except Exception as e:

@@ -1,5 +1,5 @@
 import re
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 # ── Query normalization ───────────────────────────────────────────────────────
 
@@ -108,3 +108,26 @@ def filter_comps(comps: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]
         filtered.append(comp)
 
     return filtered
+
+
+# ── Size parsing from listing titles ─────────────────────────────────────────
+
+_SIZE_TITLE_RE = re.compile(
+    r'\b(?:size\s+)?(xxl|2xl|xx-large|xx\s+large|x-large|x\s+large|xl|large|medium)\b',
+    re.IGNORECASE,
+)
+_SIZE_TITLE_MAP = {
+    'xxl': 'XXL', '2xl': 'XXL', 'xx-large': 'XXL', 'xx large': 'XXL',
+    'x-large': 'XL', 'x large': 'XL', 'xl': 'XL',
+    'large': 'L',
+    'medium': 'M',
+}
+
+
+def parse_size_from_title(title: str) -> Optional[str]:
+    """Extract M/L/XL/XXL from a listing title. Returns None if not found."""
+    m = _SIZE_TITLE_RE.search(title or '')
+    if not m:
+        return None
+    key = m.group(1).lower().replace('-', '').replace(' ', '')
+    return _SIZE_TITLE_MAP.get(key)
