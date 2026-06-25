@@ -847,7 +847,7 @@
         // end dot
         const dot = document.createElementNS(ns, 'circle');
         dot.setAttribute('cx', toX(history2.length-1).toFixed(1));
-        dot.setAttribute('cy', toY(prices[prices.length-1]).toFixed(1));
+        dot.setAttribute('cy', toY(history2[history2.length-1].casp).toFixed(1));
         dot.setAttribute('r', '3');
         dot.setAttribute('fill', '#ffffff');
         svg.appendChild(dot);
