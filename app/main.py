@@ -497,10 +497,7 @@ def create_app() -> Flask:
     def api_model_detail():
         from app.cache import read_cache
         from app.db import get_casp_history
-        from app.scrape_depop import search_depop
-        from app.scrape_grailed import search_grailed
         from app.scrape_etsy import search_etsy
-        from app.vision import grade_condition
 
         raw_query = request.args.get("query", "")
         if not raw_query:
@@ -517,18 +514,10 @@ def create_app() -> Flask:
         # History from DB
         history = get_casp_history(query, limit=60)
 
-        # Live platform listings
+        # Live platform listings — short timeouts to stay inside Render's 30s limit
         listings = []
         try:
-            listings.extend(search_depop(query))
-        except Exception as e:
-            logging.getLogger(__name__).warning("[detail] depop error: %s", e)
-        try:
-            listings.extend(search_grailed(query))
-        except Exception as e:
-            logging.getLogger(__name__).warning("[detail] grailed error: %s", e)
-        try:
-            listings.extend(search_etsy(query))
+            listings.extend(search_etsy(query, timeout=8))
         except Exception as e:
             logging.getLogger(__name__).warning("[detail] etsy error: %s", e)
 
@@ -556,18 +545,6 @@ def create_app() -> Flask:
 
         # Sort best deals first
         listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)
-
-        # Vision grade top 5 by deal score — grading all would exceed Render's 30s timeout
-        graded = 0
-        for lst in listings:
-            if graded >= 5:
-                break
-            photo = lst.get("photo")
-            if photo:
-                result = grade_condition(photo)
-                if result:
-                    lst["vision"] = result
-                graded += 1
 
         return jsonify({
             "ok": True,

@@ -18,7 +18,7 @@ log = logging.getLogger(__name__)
 _ETSY_BASE = "https://openapi.etsy.com/v3/application"
 
 
-def search_etsy(query: str, limit: int = 25) -> List[Dict[str, Any]]:
+def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str, Any]]:
     """
     Search Etsy active listings matching query.
     Returns list of {title, price, url, photo, source}.
@@ -46,13 +46,15 @@ def search_etsy(query: str, limit: int = 25) -> List[Dict[str, Any]]:
             f"{_ETSY_BASE}/listings/active",
             params=params,
             headers=headers,
-            timeout=12,
+            timeout=timeout,
         )
-        log.debug("[etsy] GET %s → %d", r.url, r.status_code)
-        r.raise_for_status()
+        log.info("[etsy] GET %s → %d", r.url, r.status_code)
+        if r.status_code != 200:
+            log.warning("[etsy] non-200 for %r: %d %s", query, r.status_code, r.text[:200])
+            return []
         data = r.json()
     except Exception as e:
-        log.warning("[etsy] search failed for %r: %s", query, e)
+        log.warning("[etsy] request failed for %r: %s: %s", query, type(e).__name__, e)
         return []
 
     results = []
@@ -84,5 +86,6 @@ def search_etsy(query: str, limit: int = 25) -> List[Dict[str, Any]]:
             "condition": None,  # Etsy doesn't have a standard condition field
         })
 
-    log.info("[etsy] %r → %d listings", query, len(results))
+    raw_count = len(data.get("results", []))
+    log.info("[etsy] %r → %d raw / %d parsed", query, raw_count, len(results))
     return results
