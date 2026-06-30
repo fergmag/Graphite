@@ -64,5 +64,35 @@
     "casp": 900.0,
     "accuracy_pct": 0,
     "created_at": "2026-06-26T03:31:56.416787+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 900.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-06-30T20:11:49.522767+00:00"
+  },
+  {
+    "query": "js1207",
+    "casp": 500.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-06-30T20:20:06.012776+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-06-30T20:22:07.308525+00:00"
+  },
+  {
+    "query": "j97 petrol",
+    "casp": 600.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-06-30T20:29:02.415807+00:00"
+  },
+  {
+    "query": "j97 timber",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-06-30T20:30:05.623992+00:00"
   }
 ]
