@@ -160,5 +160,23 @@
     "casp": 700.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-02T14:37:57.615220+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 900.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T20:11:54.017066+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T20:22:11.717762+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 550.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T20:24:12.211138+00:00"
   }
 ]
