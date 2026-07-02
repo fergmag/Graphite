@@ -142,5 +142,23 @@
     "casp": 850.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-02T08:22:54.013612+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T14:21:49.416289+00:00"
+  },
+  {
+    "query": "j97 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T14:27:50.615300+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-02T14:37:57.615220+00:00"
   }
 ]
