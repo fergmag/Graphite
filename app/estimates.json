@@ -376,5 +376,29 @@
     "casp": 600.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-07T20:29:06.016470+00:00"
+  },
+  {
+    "query": "js1236",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-08T14:17:51.209095+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 550.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-08T14:23:52.621361+00:00"
+  },
+  {
+    "query": "j97 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-08T14:27:49.114947+00:00"
+  },
+  {
+    "query": "jb1236",
+    "casp": 1000.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-08T14:34:52.005530+00:00"
   }
 ]
