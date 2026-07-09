@@ -856,8 +856,28 @@
         const lastCasp = history[history.length - 1].casp;
         rangeEl.textContent = `$${lastCasp >= 1000 ? (lastCasp/1000).toFixed(1)+'k' : lastCasp.toFixed(0)} · ${history.length} run${history.length === 1 ? '' : 's'}`;
 
-        // date labels: fixed start / present
-        labels.innerHTML = `<span style="padding-left:${LEFT}px">June 2026</span><span>Present</span>`;
+        // date labels: evenly spaced from actual history timestamps
+        const fmtDate = iso => {
+          const d = new Date(iso);
+          return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        };
+        const totalW = W - PAD * 2;
+        const MAX_LABELS = 5;
+        const step = Math.max(1, Math.floor((history2.length - 1) / (MAX_LABELS - 1)));
+        const labelIndices = [];
+        for (let i = 0; i < history2.length; i += step) labelIndices.push(i);
+        if (labelIndices[labelIndices.length - 1] !== history2.length - 1) labelIndices.push(history2.length - 1);
+        labels.innerHTML = '';
+        const labelsWrap = document.createElement('div');
+        labelsWrap.style.cssText = `position:relative;width:${LEFT + W}px;height:14px;`;
+        labelIndices.forEach(idx => {
+          const xPx = LEFT + PAD + (idx / (history2.length - 1)) * totalW;
+          const span = document.createElement('span');
+          span.textContent = fmtDate(history2[idx].created_at);
+          span.style.cssText = `position:absolute;left:${xPx}px;transform:translateX(-50%);font-size:10px;white-space:nowrap;`;
+          labelsWrap.appendChild(span);
+        });
+        labels.appendChild(labelsWrap);
       }
 
       async function loadHistory(query) {

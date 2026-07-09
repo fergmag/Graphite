@@ -498,6 +498,8 @@ def create_app() -> Flask:
         from app.cache import read_cache
         from app.db import get_casp_history
         from app.scrape_etsy import search_etsy
+        from app.scrape_grailed import search_grailed
+        from app.scrape_depop import search_depop
 
         raw_query = request.args.get("query", "")
         if not raw_query:
@@ -514,12 +516,23 @@ def create_app() -> Flask:
         # History from DB
         history = get_casp_history(query, limit=60)
 
-        # Live platform listings — short timeouts to stay inside Render's 30s limit
+        # Live platform listings — run in parallel threads to stay inside Render's 30s limit
+        import concurrent.futures
         listings = []
-        try:
-            listings.extend(search_etsy(query, timeout=8))
-        except Exception as e:
-            logging.getLogger(__name__).warning("[detail] etsy error: %s", e)
+        def _fetch_grailed():
+            try: return search_grailed(query)
+            except Exception as e: logging.getLogger(__name__).warning("[detail] grailed: %s", e); return []
+        def _fetch_depop():
+            try: return search_depop(query)
+            except Exception as e: logging.getLogger(__name__).warning("[detail] depop: %s", e); return []
+        def _fetch_etsy():
+            try: return search_etsy(query, timeout=8)
+            except Exception as e: logging.getLogger(__name__).warning("[detail] etsy: %s", e); return []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+            futs = [ex.submit(_fetch_grailed), ex.submit(_fetch_depop), ex.submit(_fetch_etsy)]
+            for f in concurrent.futures.as_completed(futs, timeout=12):
+                try: listings.extend(f.result())
+                except Exception: pass
 
         # Filter out irrelevant results (wrong model code, kids items, etc.)
         listings = filter_comps(listings, query)

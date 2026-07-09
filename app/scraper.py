@@ -193,7 +193,7 @@ def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
     # One shared session per refresh run — keeps cookies across queries
     sess = _make_session()
 
-    clear_old_alerts(days=14)
+    clear_old_alerts(days=30)
 
     ok_count = 0
     fail_count = 0
