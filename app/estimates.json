@@ -472,5 +472,47 @@
     "casp": 2500.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-09T15:58:05.848994+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 900.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:08:36.742402+00:00"
+  },
+  {
+    "query": "j65 brick",
+    "casp": 2500.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:12:28.734817+00:00"
+  },
+  {
+    "query": "j65 blue",
+    "casp": 2500.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:13:49.136137+00:00"
+  },
+  {
+    "query": "js1236",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:16:26.744333+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 550.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:23:45.333499+00:00"
+  },
+  {
+    "query": "jb1215",
+    "casp": 1000.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:38:07.038877+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-09T19:40:41.636898+00:00"
   }
 ]
