@@ -290,12 +290,17 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
                      session: Optional[requests.Session] = None) -> List[EbayComp]:
     # Try the official Finding API first — works from datacenter IPs
     if os.environ.get("EBAY_APP_ID"):
+        log.info("[ebay] EBAY_APP_ID set — trying Finding API for %r", query)
         try:
             comps = _ebay_finding_api(query, max_results=pages * 50)
+            log.info("[ebay] Finding API returned %d comps for %r", len(comps), query)
             if comps:
                 return comps
+            log.warning("[ebay] Finding API returned 0 results for %r", query)
         except Exception as e:
-            log.warning("[ebay] Finding API failed, falling back to HTML scrape: %s", e)
+            log.warning("[ebay] Finding API failed for %r: %s", query, e)
+    else:
+        log.info("[ebay] EBAY_APP_ID not set — skipping Finding API for %r", query)
 
     # HTML scrape fallback (blocked from Render/AWS IPs without a proxy)
     s = session or _make_session()

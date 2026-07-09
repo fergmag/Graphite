@@ -193,7 +193,7 @@
         background: #e8e5e0;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
       }
-      .listing-photo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #e8e5e0; }
+      .listing-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
       .photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
       .sold-stamp {
         position: absolute; inset: 0;
@@ -241,7 +241,7 @@
         position: relative;
       }
       @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
-      .modal-photo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #e8e5e0; user-select: none; }
+      .modal-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; user-select: none; }
       .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
       .slide-arrow {
         position: absolute; top: 50%; transform: translateY(-50%);
