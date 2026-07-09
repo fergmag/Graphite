@@ -1,5 +1,23 @@
 [
   {
+    "id": "9bcd01e56f",
+    "title": "J43 CHT Medium",
+    "size": "M",
+    "price": 650.0,
+    "description": "1999 J43 Chestnut Detroit",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1783560522/graphite/iy1ouswkw0grwluaxcqv.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1783560524/graphite/yhcmqm2hpe6bmacjdcva.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1783560524/graphite/vmjomwgvejzx1agcdfqu.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1783560525/graphite/flrqs5lr01wmcbgggzjl.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1783560526/graphite/n5poiagtwk7xgbppduh3.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-07-09",
+    "position": -2,
+    "condition": "8/10"
+  },
+  {
     "id": "a890d975c4",
     "title": "J97 PTL Medium",
     "size": "M",
