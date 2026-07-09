@@ -11,7 +11,7 @@
     "sold": false,
     "created_at": "2026-06-19",
     "position": 0,
-    "condition": "9/10"
+    "condition": null
   },
   {
     "id": "b6ee1b362a",
@@ -28,7 +28,7 @@
     "sold": true,
     "created_at": "2026-06-19",
     "position": 1,
-    "condition": null
+    "condition": "9/10"
   },
   {
     "id": "d72a943788",
