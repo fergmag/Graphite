@@ -234,7 +234,11 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
         "paginationInput.entriesPerPage": str(min(max_results, 100)),
         "outputSelector": "SellerInfo",
     }
-    r = requests.get(_FINDING_API_URL, params=params, timeout=15)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; Graphite/1.0)",
+        "Accept": "application/json",
+    }
+    r = requests.get(_FINDING_API_URL, params=params, headers=headers, timeout=15)
     if r.status_code != 200:
         log.warning("[ebay-api] %d for %r — body: %s", r.status_code, query, r.text[:300])
         raise RuntimeError(f"eBay Finding API returned {r.status_code}")
