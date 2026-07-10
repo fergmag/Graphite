@@ -14,8 +14,8 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": -2,
-    "condition": "8/10"
+    "position": 0,
+    "condition": null
   },
   {
     "id": "a890d975c4",
@@ -32,21 +32,7 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": -1,
-    "condition": "8/10"
-  },
-  {
-    "id": "2f824c9468",
-    "title": "jb1215",
-    "size": "L",
-    "price": 1200.0,
-    "description": "",
-    "photos": [
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1781852423/graphite/kywq1uclbzhetsk3cqhg.jpg"
-    ],
-    "sold": false,
-    "created_at": "2026-06-19",
-    "position": 0,
+    "position": 1,
     "condition": null
   },
   {
@@ -63,8 +49,8 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 1,
-    "condition": "9/10"
+    "position": 3,
+    "condition": null
   },
   {
     "id": "d72a943788",
@@ -84,7 +70,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 2,
-    "condition": "10/10"
+    "position": 4,
+    "condition": null
   }
 ]
