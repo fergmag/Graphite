@@ -59,11 +59,13 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     Returns a small result dict (ok, n, casp, reason).
     """
     query = normalize_query(raw_query)
+    raw_comps = []
+    ebay_error = None
     try:
         raw_comps = scrape_ebay_sold(query, pages=1, delay=0.5, session=session)
     except RuntimeError as e:
-        log.warning("[scraper] %s — scrape failed: %s", query, e)
-        return {"query": query, "ok": False, "reason": str(e)}
+        ebay_error = str(e)
+        log.warning("[scraper] %s — eBay scrape failed: %s", query, e)
 
     # Normalise + dedupe
     seen: set = set()
@@ -105,6 +107,13 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     write_cache(query, payload)
     insert_comps(query, normalized)
     insert_estimate(query, public_payload=public, summary_payload=summary_dict)
+
+    # If eBay failed and we got no comps, only proceed if we have a manual CASP
+    if not normalized and ebay_error:
+        if casp is None:
+            return {"query": query, "ok": False, "reason": ebay_error}
+        log.info("[scraper] %s — eBay failed but manual CASP=%.0f, proceeding with platform scan", query, casp)
+        return {"query": query, "ok": True, "n": 0, "casp": casp}
 
     log.info("[scraper] %s — n=%d casp=%s", query, summary.n, casp)
     return {"query": query, "ok": True, "n": summary.n, "casp": casp}

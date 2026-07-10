@@ -236,6 +236,7 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     }
     r = requests.get(_FINDING_API_URL, params=params, timeout=15)
     if r.status_code != 200:
+        log.warning("[ebay-api] %d for %r — body: %s", r.status_code, query, r.text[:300])
         raise RuntimeError(f"eBay Finding API returned {r.status_code}")
 
     try:
