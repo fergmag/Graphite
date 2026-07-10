@@ -174,6 +174,8 @@ def init_db() -> None:
                     casp REAL,
                     deal_score INTEGER,
                     size TEXT,
+                    vision_grade TEXT,
+                    vision_notes TEXT,
                     seen INTEGER NOT NULL DEFAULT 0,
                     created_at TEXT NOT NULL
                 )
