@@ -1006,5 +1006,17 @@
     "casp": 700.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-10T08:58:24.506542+00:00"
+  },
+  {
+    "query": "j76 moss",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T08:58:52.918262+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T09:00:18.949988+00:00"
   }
 ]
