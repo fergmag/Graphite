@@ -1660,5 +1660,29 @@
     "casp": 700.0,
     "accuracy_pct": 0,
     "created_at": "2026-07-10T23:33:49.808652+00:00"
+  },
+  {
+    "query": "jb1236",
+    "casp": 1000.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T23:34:38.756112+00:00"
+  },
+  {
+    "query": "jb1215",
+    "casp": 1000.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T23:36:05.143065+00:00"
+  },
+  {
+    "query": "j76 moss",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T23:37:30.078911+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-07-10T23:39:12.996742+00:00"
   }
 ]
