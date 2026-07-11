@@ -332,77 +332,104 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
 
     return unique
 
+_browse_token: dict = {"token": None, "expires_at": 0.0}
+
+def _get_browse_token() -> Optional[str]:
+    """Get or refresh an eBay OAuth application token for the Browse API."""
+    import base64
+    import time as _time
+    app_id = os.environ.get("EBAY_APP_ID", "")
+    cert_id = os.environ.get("EBAY_CERT_ID", "")
+    if not app_id or not cert_id:
+        return None
+    now = _time.time()
+    if _browse_token["token"] and now < _browse_token["expires_at"] - 60:
+        return _browse_token["token"]
+    creds = base64.b64encode(f"{app_id}:{cert_id}".encode()).decode()
+    try:
+        r = requests.post(
+            "https://api.ebay.com/identity/v1/oauth2/token",
+            headers={
+                "Authorization": f"Basic {creds}",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            data="grant_type=client_credentials&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope",
+            timeout=10,
+        )
+        if r.status_code != 200:
+            log.warning("[ebay-browse] token request failed: %d %s", r.status_code, r.text[:200])
+            return None
+        d = r.json()
+        _browse_token["token"] = d.get("access_token")
+        _browse_token["expires_at"] = now + int(d.get("expires_in", 7200))
+        log.info("[ebay-browse] got application token, expires in %ds", d.get("expires_in", 0))
+        return _browse_token["token"]
+    except Exception as e:
+        log.warning("[ebay-browse] token error: %s", e)
+        return None
+
+
 def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
     """
-    Search eBay for active (Buy It Now) listings using the Finding API.
-    Returns dicts compatible with the deal-alert pipeline.
-    Requires EBAY_APP_ID env var.
+    Search eBay active listings via Browse API (api.ebay.com — different infra from svcs.ebay.com).
+    Requires EBAY_APP_ID + EBAY_CERT_ID env vars for OAuth application token.
     """
-    app_id = os.environ.get("EBAY_APP_ID", "")
-    if not app_id:
-        log.debug("[ebay] EBAY_APP_ID not set — skipping active scan")
+    token = _get_browse_token()
+    if not token:
+        log.debug("[ebay-browse] no token — skipping active scan (need EBAY_APP_ID + EBAY_CERT_ID)")
         return []
 
+    search_terms = f"carhartt {query}" if "carhartt" not in query.lower() else query
     params = {
-        "OPERATION-NAME": "findItemsByKeywords",
-        "SERVICE-VERSION": "1.0.0",
-        "SECURITY-APPNAME": app_id,
-        "RESPONSE-DATA-FORMAT": "JSON",
-        "REST-PAYLOAD": "",
-        "keywords": query,
-        "itemFilter(0).name": "ListingType",
-        "itemFilter(0).value(0)": "FixedPrice",
-        "itemFilter(0).value(1)": "AuctionWithBIN",
-        "itemFilter(1).name": "Currency",
-        "itemFilter(1).value": "USD",
-        "itemFilter(2).name": "Condition",
-        "itemFilter(2).value(0)": "3000",
-        "itemFilter(2).value(1)": "4000",
-        "itemFilter(2).value(2)": "5000",
-        "sortOrder": "PricePlusShippingLowest",
-        "paginationInput.entriesPerPage": str(min(max_results, 100)),
+        "q": search_terms,
+        "limit": str(min(max_results, 50)),
+        "filter": "conditions:{USED|VERY_GOOD|GOOD|ACCEPTABLE},buyingOptions:{FIXED_PRICE}",
+        "sort": "price",
     }
     try:
-        r = requests.get(_FINDING_API_URL, params=params, timeout=15)
+        r = requests.get(
+            "https://api.ebay.com/buy/browse/v1/item_summary/search",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+                "Content-Type": "application/json",
+            },
+            params=params,
+            timeout=12,
+        )
+        log.info("[ebay-browse] GET → %d for %r", r.status_code, query)
         if r.status_code != 200:
-            log.warning("[ebay] findItemsByKeywords %d", r.status_code)
+            log.warning("[ebay-browse] %d %s", r.status_code, r.text[:200])
             return []
         data = r.json()
-        items = (
-            data
-            .get("findItemsByKeywordsResponse", [{}])[0]
-            .get("searchResult", [{}])[0]
-            .get("item", [])
-        )
     except Exception as e:
-        log.warning("[ebay] findItemsByKeywords error: %s", e)
+        log.warning("[ebay-browse] request error: %s", e)
         return []
 
     results = []
-    for item in items:
+    for item in data.get("itemSummaries", []):
         try:
-            title = item.get("title", [""])[0]
-            url = item.get("viewItemURL", [""])[0]
-            price_raw = float(
-                item.get("sellingStatus", [{}])[0]
-                    .get("convertedCurrentPrice", [{}])[0]
-                    .get("__value__", 0)
-            )
-            ship_list = item.get("shippingInfo", [{}])[0].get("shippingServiceCost", [])
-            shipping = float(ship_list[0].get("__value__", 0)) if ship_list else 0.0
-            photo_list = item.get("galleryURL", [])
-            photo = photo_list[0] if photo_list else None
+            price_info = item.get("price", {})
+            price = float(price_info.get("value", 0))
+            if not price:
+                continue
+            shipping_options = item.get("shippingOptions", [])
+            ship_cost = 0.0
+            if shipping_options:
+                sc = shipping_options[0].get("shippingCost", {})
+                ship_cost = float(sc.get("value", 0))
+            image = item.get("image", {}).get("imageUrl")
             results.append({
-                "title": title,
-                "price": price_raw + shipping,
-                "url": url,
-                "photo": photo,
+                "title": item.get("title", ""),
+                "price": price + ship_cost,
+                "url": item.get("itemWebUrl", ""),
+                "photo": image,
                 "source": "ebay",
             })
         except Exception:
             continue
 
-    log.info("[ebay] findItemsByKeywords query=%r → %d items", query, len(results))
+    log.info("[ebay-browse] %r → %d active listings", query, len(results))
     return results
 
 
