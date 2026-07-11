@@ -219,12 +219,13 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     if not app_id:
         raise RuntimeError("EBAY_APP_ID not configured")
 
+    log.info("[ebay-api] using App ID prefix %s... for %r", app_id[:8], query)
+
     params = {
         "OPERATION-NAME": "findCompletedItems",
         "SERVICE-VERSION": "1.0.0",
         "SECURITY-APPNAME": app_id,
         "RESPONSE-DATA-FORMAT": "JSON",
-        "REST-PAYLOAD": "",
         "keywords": query,
         "itemFilter(0).name": "SoldItemsOnly",
         "itemFilter(0).value": "true",
@@ -241,10 +242,36 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
         "X-EBAY-SOA-SERVICE-NAME": "FindingService",
         "X-EBAY-SOA-OPERATION-NAME": "findCompletedItems",
     }
-    r = requests.get(_FINDING_API_URL, params=params, headers=headers, timeout=15)
-    if r.status_code != 200:
-        log.warning("[ebay-api] %d for %r — body: %s", r.status_code, query, r.text[:300])
-        raise RuntimeError(f"eBay Finding API returned {r.status_code}")
+
+    last_err = None
+    for attempt in range(1, 4):
+        try:
+            r = requests.get(_FINDING_API_URL, params=params, headers=headers, timeout=15)
+        except requests.RequestException as e:
+            last_err = str(e)
+            time.sleep(min(2 ** attempt, 8))
+            continue
+
+        if r.status_code == 200:
+            # If eBay returned HTML instead of JSON the App ID is wrong/blocked
+            if r.text.lstrip().startswith("<"):
+                log.error(
+                    "[ebay-api] Got HTML from Finding API for %r — App ID may be invalid or blocked. "
+                    "Make sure EBAY_APP_ID is the *Production* App ID (not Sandbox). Body: %s",
+                    query, r.text[:200],
+                )
+                raise RuntimeError("eBay Finding API returned HTML — check EBAY_APP_ID is a Production key")
+            break  # good JSON response
+        elif r.status_code in (429, 500, 502, 503, 504):
+            log.warning("[ebay-api] %d for %r (attempt %d) — body: %s", r.status_code, query, attempt, r.text[:200])
+            last_err = f"eBay Finding API returned {r.status_code}"
+            time.sleep(min(2 ** attempt, 8))
+            continue
+        else:
+            log.warning("[ebay-api] %d for %r — body: %s", r.status_code, query, r.text[:300])
+            raise RuntimeError(f"eBay Finding API returned {r.status_code}")
+    else:
+        raise RuntimeError(last_err or "eBay Finding API failed after retries")
 
     try:
         data = r.json()

@@ -146,21 +146,46 @@ Key tables:
 
 ## Known issues / deferred
 
-- **eBay broken without EBAY_APP_ID** — HTML scraping is IP-blocked by eBay on Render's AWS servers. Register at developer.ebay.com (free) and add `EBAY_APP_ID` to Render env vars to fix.
+- **eBay Finding API 503** — Getting HTML 503 error pages from `svcs.ebay.com`. Added retry logic (3 attempts with backoff) and HTML-response detection (means App ID is wrong or blocked). If you see "Got HTML from Finding API" in logs, verify that `EBAY_APP_ID` on Render is the **Production** App ID (not Sandbox) from developer.ebay.com. The Sandbox App ID will not work on the production Finding API endpoint.
+- **Etsy 403 "Shared secret required"** — Etsy API v3 requires `{keystring}:{shared_secret}` combined in the `x-api-key` header. Code now supports both `ETSY_API_KEY` (keystring) and `ETSY_SHARED_SECRET`. Both must be set on Render — find the shared secret in your Etsy developer console next to the keystring.
 - Grailed Algolia key rotates — if Grailed returns 0 results, fetch https://www.grailed.com and extract new `window.PUBLIC_CONFIG.algolia.public_search_key`
 - Depop fully blocked — all API endpoints return 403, requires OAuth. Returning [] for now.
 - Whatnot blocked by Cloudflare — needs Playwright + CF bypass. Returning [] for now.
-- Etsy key not yet activated — will work once `ETSY_API_KEY` is added to Render.
 - Vision grades still cluster around 6-7 despite updated prompt — may need further prompt tuning or a different model.
 - Render env vars (TOOL_PASSWORD, SECRET_KEY) may not be picked up by gunicorn — "graphite" still works as password fallback.
 
 ---
 
+## Environment variables — full list (updated)
+
+| Variable | Purpose |
+|---|---|
+| `SECRET_KEY` | Flask session secret |
+| `TOOL_PASSWORD` | Admin login password |
+| `CLOUDINARY_CLOUD_NAME` | Photo storage |
+| `CLOUDINARY_API_KEY` | Photo storage |
+| `CLOUDINARY_API_SECRET` | Photo storage |
+| `STRIPE_SECRET_KEY` | Stripe payments |
+| `STRIPE_PUBLISHABLE_KEY` | Stripe frontend |
+| `PAYPAL_CLIENT_ID` | PayPal |
+| `PAYPAL_CLIENT_SECRET` | PayPal |
+| `PAYPAL_MODE` | `live` or `sandbox` |
+| `ETSY_API_KEY` | Etsy keystring (from developer console) |
+| `ETSY_SHARED_SECRET` | Etsy shared secret — **required or Etsy returns 403** |
+| `ANTHROPIC_API_KEY` | Claude Vision grading |
+| `EBAY_APP_ID` | eBay Finding API — must be **Production** App ID, not Sandbox |
+| `EBAY_CERT_ID` | eBay Browse API OAuth (for active listing search) |
+| `GITHUB_TOKEN` | Data persistence sync |
+| `GITHUB_REPO` | `fergmag/Graphite` |
+
+---
+
 ## What to build next
 
-- **Add `EBAY_APP_ID` to Render** — highest priority, unlocks eBay sold comps + deal alerts. Go to developer.ebay.com → My eBay Developers Program → get App ID.
-- Etsy: add `ETSY_API_KEY` to Render once key activates
+- **Fix Etsy on Render**: add `ETSY_SHARED_SECRET` env var (copy from Etsy developer console, same page as the keystring/API key)
+- **Fix eBay on Render**: verify `EBAY_APP_ID` is the Production App ID (not Sandbox) — logs now show "using App ID prefix XXXXXXXX..." so you can confirm which key is loaded
 - Vision accuracy: investigate whether prompt changes or switching to Sonnet helps
+- **Vision jacket grading**: next major feature — use Claude Vision to grade condition from listing photos, return structured condition score to help decide buy/skip
 - Auth system: public landing page + owner-approved accounts to access estimator
 - Watchlist items: expandable to show current comps
 - Whatnot: revisit if Playwright becomes feasible (would need upgraded Render plan for RAM)

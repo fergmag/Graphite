@@ -24,15 +24,24 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
     Returns list of {title, price, url, photo, source}.
     """
     api_key = os.environ.get("ETSY_API_KEY", "")
+    shared_secret = os.environ.get("ETSY_SHARED_SECRET", "")
     if not api_key:
         log.warning("[etsy] ETSY_API_KEY not set, skipping")
         return []
 
+    # Etsy v3 requires "{keystring}:{shared_secret}" in x-api-key for public endpoints.
+    # If only the keystring is set, the API returns 403 "Shared secret is required".
+    if shared_secret:
+        auth_value = f"{api_key}:{shared_secret}"
+        log.info("[etsy] using keystring:sharedsecret format (key prefix %s...) for %r", api_key[:6], query)
+    else:
+        auth_value = api_key
+        log.warning("[etsy] ETSY_SHARED_SECRET not set — requests will likely fail with 403")
+
     # Prepend "carhartt" so Etsy finds the brand even when query is just a model code
     search_terms = query if "carhartt" in query.lower() else f"carhartt {query}"
 
-    log.info("[etsy] using key starting with %s... for %r", api_key[:6], query)
-    headers = {"x-api-key": api_key}
+    headers = {"x-api-key": auth_value}
     # includes must be repeated params, not a list — use a list of tuples
     params = [
         ("keywords", search_terms),
