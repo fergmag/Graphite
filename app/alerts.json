@@ -1,5 +1,21 @@
 [
   {
+    "id": 99,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt Southwest Jacket Quilt Lined Mens Medium JQ2472 Aztec Rare",
+    "price": 1199.0,
+    "url": "https://www.ebay.com/itm/178259851725?_skw=carhartt+jq2472&hash=item29811d79cd:g:zS0AAeSwhrZp71-L",
+    "photo": "https://i.ebayimg.com/images/g/zS0AAeSwhrZp71-L/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": "7/10",
+    "vision_notes": "The tapestry/southwestern-print bomber jacket shows generally well-preserved fabric with vibrant colors intact, though the ribbed cuffs and collar show some compression and light wear consistent with regular use, and the overall structure remains solid with no visible staining or damage.",
+    "seen": 0,
+    "created_at": "2026-07-11T15:32:50.530663+00:00"
+  },
+  {
     "id": 98,
     "query": "jr0115",
     "source": "grailed",
