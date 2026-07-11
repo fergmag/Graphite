@@ -1,5 +1,21 @@
 [
   {
+    "id": 100,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
+    "price": 2200.0,
+    "url": "https://www.ebay.com/itm/157810033648?_skw=carhartt+jp1017&hash=item24be3603f0:g:FKkAAeSwvTJpdtCo",
+    "photo": "https://i.ebayimg.com/images/g/FKkAAeSwvTJpdtCo/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": "6/10",
+    "vision_notes": "The jacket shows clear and uneven sun fading across the body giving it a washed-out charcoal appearance, with visible wear at the collar and cuffs, and the sherpa/fleece lining appears compressed and worn, though no major staining or repairs are visible from this angle.",
+    "seen": 0,
+    "created_at": "2026-07-11T15:34:50.216837+00:00"
+  },
+  {
     "id": 99,
     "query": "jq2472",
     "source": "ebay",
