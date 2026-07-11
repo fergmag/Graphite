@@ -237,6 +237,9 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; Graphite/1.0)",
         "Accept": "application/json",
+        "X-EBAY-SOA-GLOBAL-ID": "EBAY-US",
+        "X-EBAY-SOA-SERVICE-NAME": "FindingService",
+        "X-EBAY-SOA-OPERATION-NAME": "findCompletedItems",
     }
     r = requests.get(_FINDING_API_URL, params=params, headers=headers, timeout=15)
     if r.status_code != 200:

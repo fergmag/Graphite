@@ -213,7 +213,14 @@ def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
             ok_count += 1
             casp = result.get("casp")
             try:
-                alerts_saved += scan_platforms_for_query(q, casp)
+                n = scan_platforms_for_query(q, casp)
+                alerts_saved += n
+                if n > 0:
+                    try:
+                        from app.main import _persist_alerts
+                        _persist_alerts()
+                    except Exception:
+                        pass
             except Exception as e:
                 log.warning("[scheduler] platform scan failed for %r: %s", q, e)
         else:
