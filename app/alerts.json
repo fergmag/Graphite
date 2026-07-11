@@ -1,5 +1,37 @@
 [
   {
+    "id": 65,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0817 Men's Gray  Zipper Size X-Large Rare Hard Find",
+    "price": 420.0,
+    "url": "https://www.ebay.com/itm/257399947512?_skw=carhartt+jb0817&hash=item3bee3b80f8:g:pwIAAeSwm8Nouh8A",
+    "photo": "https://i.ebayimg.com/images/g/pwIAAeSwm8Nouh8A/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": "6/10",
+    "vision_notes": "The jacket shows significant overall fading and sun bleaching across the body giving it a washed-out grey-brown tone, with visible wear at the collar and cuffs, though no obvious holes or major staining are apparent from this angle.",
+    "seen": 0,
+    "created_at": "2026-07-11T08:20:25.080397+00:00"
+  },
+  {
+    "id": 64,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Full Zip Jacket Men’s 2X Large JB0817 Gray USA Made",
+    "price": 409.98,
+    "url": "https://www.ebay.com/itm/127888085380?_skw=carhartt+jb0817&hash=item1dc6b95184:g:Qo4AAeSwwilqFuHl",
+    "photo": "https://i.ebayimg.com/images/g/Qo4AAeSwwilqFuHl/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": "6/10",
+    "vision_notes": "Significant overall fading to a washed-out charcoal tone (originally darker black/brown), visible contrast fading on the chest pocket and collar area, corduroy collar shows moderate wear, and the canvas shows the typical heavy sun/wash fade pattern consistent with regular outdoor use.",
+    "seen": 0,
+    "created_at": "2026-07-11T08:20:22.359055+00:00"
+  },
+  {
     "id": 1,
     "query": "j76 moss",
     "source": "grailed",
