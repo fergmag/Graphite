@@ -986,7 +986,7 @@
         try {
           const { status, data } = await getJSON('/api/alerts?unseen=1');
           if (status !== 200) return;
-          const n = data.unseen || 0;
+          const n = data.total || 0;
           const bc = document.getElementById('bellCount');
           if (bc) { bc.textContent = n; bc.style.display = n > 0 ? 'inline' : 'none'; }
         } catch(e) {}
@@ -1025,7 +1025,6 @@
           `).join('');
           if (!queryFilter) {
             await fetch('/api/alerts/mark-seen', { method: 'POST' });
-            document.getElementById('bellCount').style.display = 'none';
           }
         } catch(e) {
           list.innerHTML = '<p style="color:#fff;">Error loading alerts.</p>';

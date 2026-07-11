@@ -219,7 +219,7 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     if not app_id:
         raise RuntimeError("EBAY_APP_ID not configured")
 
-    log.info("[ebay-api] using App ID prefix %s... for %r", app_id[:8], query)
+    log.warning("[ebay-api] using App ID prefix %s... for %r", app_id[:8], query)
 
     params = {
         "OPERATION-NAME": "findCompletedItems",

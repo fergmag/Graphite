@@ -46,6 +46,7 @@ from app.db import (
     db_delete_section,
     get_alerts,
     count_unseen_alerts,
+    count_total_alerts,
     mark_alerts_seen,
     count_alerts_per_query,
     get_all_estimates_for_persistence,
@@ -592,7 +593,7 @@ def create_app() -> Flask:
         unseen_only = request.args.get("unseen") == "1"
         query_filter = request.args.get("query") or None
         alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
-        return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts()})
+        return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts(), "total": count_total_alerts()})
 
     @app.post("/api/alerts/counts")
     @_login_required

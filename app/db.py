@@ -829,6 +829,15 @@ def count_unseen_alerts() -> int:
         con.close()
 
 
+def count_total_alerts() -> int:
+    con = _connect()
+    try:
+        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts").fetchone()
+        return row["n"] if row else 0
+    finally:
+        con.close()
+
+
 def mark_alerts_seen() -> None:
     con = _connect()
     try:

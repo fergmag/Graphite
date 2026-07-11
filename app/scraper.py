@@ -162,7 +162,7 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
             continue
         size = listing.get("size") or parse_size_from_title(listing.get("title", ""))
         score = _deal_score(price, casp or 0, size) if casp else 1
-        if score >= 3:
+        if score >= 1:
             vision_grade = vision_notes = None
             photo = listing.get("photo")
             if photo:
