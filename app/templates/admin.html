@@ -1006,7 +1006,21 @@
             list.innerHTML = '<p style="color:#fff;font-size:13px;">No alerts yet. Alerts appear after a watchlist refresh finds deals on Depop or Grailed.</p>';
             return;
           }
-          list.innerHTML = data.alerts.map(a => `
+          const _sizeMult = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
+          list.innerHTML = data.alerts.map(a => {
+            const mult = _sizeMult[a.size] || 1.0;
+            const adjCasp = a.casp ? (a.casp * mult) : null;
+            const sizeLabel = a.size || 'M';
+            const caspLabel = adjCasp ? `${sizeLabel} CASP $${adjCasp.toFixed(0)}` : '';
+            // Recalculate deal score client-side using size-adjusted CASP
+            let score = a.deal_score;
+            if (adjCasp && a.price) {
+              const r = a.price / adjCasp;
+              score = r <= 0.50 ? 5 : r <= 0.65 ? 4 : r <= 0.80 ? 3 : r <= 0.95 ? 2 : 1;
+            }
+            const scoreBg = score>=5?'#1b4332':score>=4?'#2d4a1e':'#3a2d00';
+            const scoreColor = score>=5?'#6fcf97':score>=4?'#a8d08d':'#f5c842';
+            return `
             <div style="display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,0.05);border-radius:8px;padding:12px;">
               ${a.photo ? `<img src="${a.photo}" style="width:64px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;" />` : '<div style="width:64px;height:64px;background:rgba(255,255,255,0.1);border-radius:6px;flex-shrink:0;"></div>'}
               <div style="flex:1;min-width:0;">
@@ -1014,15 +1028,15 @@
                 <div style="font-size:12px;color:#fff;margin-bottom:6px;">${a.source.toUpperCase()} · ${a.query}</div>
                 <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
                   <span style="font-size:16px;font-weight:800;">$${(a.price||0).toFixed(2)}</span>
-                  ${a.size ? `<span style="font-size:11px;font-weight:800;background:#fff;color:#111;padding:2px 8px;border-radius:4px;">${a.size}</span>` : ''}
-                  ${a.casp ? `<span style="font-size:11px;color:#fff;">CASP $${(a.casp).toFixed(0)}</span>` : ''}
-                  <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${a.deal_score>=5?'#1b4332':a.deal_score>=4?'#2d4a1e':'#3a2d00'};color:${a.deal_score>=5?'#6fcf97':a.deal_score>=4?'#a8d08d':'#f5c842'};">Deal ${a.deal_score}/5</span>
+                  ${a.size ? `<span style="font-size:11px;font-weight:800;background:#fff;color:#111;padding:2px 8px;border-radius:4px;">${a.size}</span>` : '<span style="font-size:10px;color:rgba(255,255,255,0.4);">size?</span>'}
+                  ${caspLabel ? `<span style="font-size:11px;color:rgba(255,255,255,0.6);">${caspLabel}</span>` : ''}
+                  <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${scoreBg};color:${scoreColor};">Deal ${score}/5</span>
                   <a href="${a.url}" target="_blank" rel="noopener" style="font-size:11px;color:#7eb8d4;text-decoration:none;font-weight:600;">View →</a>
                 </div>
                 ${a.vision_grade ? `<div style="font-size:10px;color:rgba(255,255,255,0.7);margin-top:6px;line-height:1.4;">🤖 ${a.vision_grade} — ${a.vision_notes || ''}</div>` : ''}
               </div>
-            </div>
-          `).join('');
+            </div>`;
+          }).join('');
           if (!queryFilter) {
             await fetch('/api/alerts/mark-seen', { method: 'POST' });
           }

@@ -759,6 +759,15 @@ def db_delete_section(section_id: str) -> None:
 # Listing alerts helpers
 # -----------------------------
 
+def alert_url_exists(url: str) -> bool:
+    """Return True if an alert with this URL is already in the DB."""
+    con = _connect()
+    try:
+        return bool(con.execute("SELECT 1 FROM listing_alerts WHERE url=?", (url,)).fetchone())
+    finally:
+        con.close()
+
+
 def insert_alert(query: str, source: str, title: str, price: float,
                  url: str, photo: Optional[str], casp: Optional[float],
                  deal_score: Optional[int], size: Optional[str] = None,

@@ -2,7 +2,7 @@
 vision.py — Claude Vision condition grading for jacket listings.
 
 Requires ANTHROPIC_API_KEY env var. Uses claude-haiku (fast + cheap).
-If the key is not set, all calls return None gracefully.
+If the key is not set or VISION_ENABLED=false, all calls return None gracefully.
 """
 
 import logging
@@ -11,7 +11,10 @@ from typing import Optional
 
 log = logging.getLogger(__name__)
 
+_VISION_MODEL = "claude-haiku-4-5-20251001"
+
 _client = None
+_credits_exhausted = False  # circuit breaker — set on first 400 credit error
 
 
 def _get_client():
@@ -32,9 +35,15 @@ def _get_client():
 def grade_condition(photo_url: str) -> Optional[dict]:
     """
     Grade the visible condition of a jacket from a photo URL.
-    Returns {"grade": "7/10", "notes": "Light fading on shoulders, clean overall"}
-    or None if grading is unavailable.
+    Returns {"grade": "7/10", "notes": "..."} or None if unavailable.
     """
+    global _credits_exhausted
+
+    if _credits_exhausted:
+        return None
+    if os.environ.get("VISION_ENABLED", "true").lower() != "true":
+        return None
+
     client = _get_client()
     if not client:
         return None
@@ -43,7 +52,7 @@ def grade_condition(photo_url: str) -> Optional[dict]:
     try:
         import anthropic
         message = client.messages.create(
-            model="claude-sonnet-4-6",
+            model=_VISION_MODEL,
             max_tokens=150,
             messages=[
                 {
@@ -87,6 +96,11 @@ def grade_condition(photo_url: str) -> Optional[dict]:
         if grade:
             return {"grade": grade, "notes": notes or ""}
     except Exception as e:
-        log.error("[vision] grading failed — model=claude-sonnet-4-6 url=%s error=%s: %s",
-                  photo_url[:80], type(e).__name__, e)
+        err_msg = str(e).lower()
+        if "credit balance is too low" in err_msg or ("400" in str(e) and "credit" in err_msg):
+            _credits_exhausted = True
+            log.warning("[vision] Credits exhausted — disabling vision for this process. Top up at console.anthropic.com")
+        else:
+            log.error("[vision] grading failed — model=%s url=%s error=%s: %s",
+                      _VISION_MODEL, photo_url[:80], type(e).__name__, e)
     return None
