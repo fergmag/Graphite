@@ -1,6 +1,6 @@
 [
   {
-    "id": 272,
+    "id": 1,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit J97 MOS Green Blanket Lined Jacket",
@@ -16,7 +16,7 @@
     "created_at": "2026-07-12T21:36:59.150013+00:00"
   },
   {
-    "id": 271,
+    "id": 2,
     "query": "j43 hunter green",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Mens Medium",
@@ -32,7 +32,7 @@
     "created_at": "2026-07-12T15:51:58.273958+00:00"
   },
   {
-    "id": 270,
+    "id": 3,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Mens Medium",
@@ -48,7 +48,7 @@
     "created_at": "2026-07-12T15:51:53.992789+00:00"
   },
   {
-    "id": 269,
+    "id": 4,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage CARHARTT Detroit Jacket Blanket Lined Mens 2XL J76 CMT Cement Gray RARE",
@@ -58,13 +58,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the body (particularly visible on the shoulders and chest), the corduroy collar appears intact with minimal wear, cuffs and pocket area look clean with no visible staining or fraying, but the overall canvas has clearly been washed multiple times giving it a washed-out grey tone rather than the original deeper colour.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-12T10:09:58.813424+00:00"
   },
   {
-    "id": 268,
+    "id": 5,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Jacket Mens 3XL Hunter Green Detroit Canvas Blanket Lined USA J43HTG",
@@ -74,13 +74,13 @@
     "casp": 900.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and sun bleaching across the body giving a washed-out teal/grey tone, the corduroy collar shows moderate wear, and the cuffs and lower hem appear darker with grime buildup, suggesting regular heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-12T10:00:23.393639+00:00"
   },
   {
-    "id": 267,
+    "id": 6,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Vintage Carhartt J65 BLU Blanket-Lined Detroit Jacket in Blue",
@@ -90,13 +90,13 @@
     "casp": 2500.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and color loss across the body giving it a washed-out appearance, with visible wear at the collar and probable cuff wear, though the Carhartt duck canvas structure appears intact with no obvious holes or major repairs visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-12T03:18:18.562829+00:00"
   },
   {
-    "id": 266,
+    "id": 7,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Mens XL Petrol Blue Detroit Jacket Made in USA Blanket Lined J97 PTL",
@@ -106,13 +106,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and significant weathering across the entire canvas body creating a bleached-out appearance, with the corduroy collar showing distinct wear and darkening, and visible soiling/patina throughout though no obvious holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T18:35:51.471953+00:00"
   },
   {
-    "id": 265,
+    "id": 8,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size Large Rare",
@@ -122,13 +122,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The grey duck canvas shows moderate overall fading with an even wash-out typical of regular use, the black corduroy collar appears intact with minimal wear, and the brass zipper and Carhartt patch look clean, though the photo angle obscures cuffs and lining condition.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:39.071668+00:00"
   },
   {
-    "id": 264,
+    "id": 9,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt J76 CMT Detroit Jacket Large Cement Grey Canvas Plaid Distress",
@@ -138,13 +138,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate uniform fading/sun bleaching across the body giving it a washed-out beige tone, the dark corduroy collar appears intact with no visible fraying, the chest zipper pocket and Carhartt logo patch look clean, but the overall heavy fading and minor soiling visible on the fabric prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:35.929883+00:00"
   },
   {
-    "id": 263,
+    "id": 10,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage 1999 J76 CMT Cement Grey Carhartt Detroit Jacket Size XL USA Made Rare",
@@ -154,13 +154,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows noticeable overall fading particularly across the chest and shoulders giving it a sun-bleached appearance, the corduroy collar appears intact with minimal wear, and the plaid lining is visible and undamaged, but the general patina and canvas fade prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:32.198233+00:00"
   },
   {
-    "id": 262,
+    "id": 11,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size XL Rare",
@@ -170,13 +170,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading to the canvas body with a noticeably darker contrast at the corduroy collar suggesting heavy neck wear, and while no major staining or holes are visible, the uneven sun-fading pattern and general patina indicate regular long-term use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:28.850328+00:00"
   },
   {
-    "id": 261,
+    "id": 12,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Kunichi Nomura Special Carhartt Detroit Jacket J76 Cmt Cement M Men JPN Limited",
@@ -186,13 +186,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas body shows moderate even fading consistent with regular use, the corduroy collar displays visible wear and darkening, and while no obvious staining or repairs are visible, the overall colour has shifted noticeably from the original tone.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:25.348368+00:00"
   },
   {
-    "id": 260,
+    "id": 13,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size 2XL Rare",
@@ -202,13 +202,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The grey duck canvas shows moderate even fading consistent with regular use, the black corduroy collar appears intact with minimal wear, the plaid flannel lining looks clean and undamaged, and no visible staining or repairs are present, though the overall patina suggests this has been worn regularly.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:21.798792+00:00"
   },
   {
-    "id": 259,
+    "id": 14,
     "query": "j76 cement",
     "source": "ebay",
     "title": "VTG 90s Carhartt  Detroit Jacket Cement Gray Size XL J76 CMT Blanket Lined ",
@@ -218,13 +218,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows noticeable uniform fading across the body giving it a washed-out grey tone, the black corduroy collar appears intact with minimal wear, and no visible staining or damage is apparent, though the overall fabric has clearly been washed and worn regularly.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:18.224519+00:00"
   },
   {
-    "id": 258,
+    "id": 15,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size M-L Rare",
@@ -234,13 +234,13 @@
     "casp": 700.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant uniform fading across the body (particularly on the chest and shoulders), the dark corduroy collar has visible wear and lint buildup, and there appears to be light soiling on the front panel, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:10:15.358076+00:00"
   },
   {
-    "id": 257,
+    "id": 16,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS Jacket XL blanket",
@@ -250,13 +250,13 @@
     "casp": 700.0,
     "deal_score": 2,
     "size": "xl",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uneven sun-fading across the chest and shoulders with visible blotchy discoloration/staining (particularly the teal-ish patches on the front), worn collar edges, and general canvas fatigue throughout, though stitching appears intact and no visible holes or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:08:23.652866+00:00"
   },
   {
-    "id": 256,
+    "id": 17,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Rare Crazy Vintage 00s Faded Carhartt Detroit Jacket J76 MOS",
@@ -266,13 +266,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "The olive canvas shows even, moderate fading across the chest panel consistent with regular use, the collar edges show light wear, the brass zipper hardware appears intact and functional, and no visible staining, fraying, or repairs are present in the visible areas, though the blanket lining shows some pilling.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:08:19.990097+00:00"
   },
   {
-    "id": 255,
+    "id": 18,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Rare Crazy Vintage 00s Faded Carhartt Detroit Jacket J76 MOS",
@@ -282,13 +282,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uneven sun fading across the entire body (particularly pronounced on the shoulders and lower hem), visible fraying along the bottom hem and cuffs, worn collar with dirt accumulation, though the zipper hardware and Carhartt patch appear intact with no visible holes or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:08:05.966150+00:00"
   },
   {
-    "id": 254,
+    "id": 19,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Vintage Faded Army Green Carhartt Detroit Jacket J76-MOS🌵",
@@ -298,13 +298,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "m",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy sun-fading across the entire body creating an uneven patchy appearance, noticeably darkened and worn corduroy collar, a faded graphic/logo remnant on the left chest suggesting a removed or worn-through embroidery, and general surface wear throughout, though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:58.848832+00:00"
   },
   {
-    "id": 253,
+    "id": 20,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt J76 MOS Detroit Jacket Moss Green XL",
@@ -314,13 +314,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate uniform fading with a mossy green patina typical of aged Carhartt, the plaid flannel lining appears intact, collar shows light wear, and overall structure is solid with no visible holes or staining, though the flatlay angle obscures cuffs and hem condition.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:47.607700+00:00"
   },
   {
-    "id": 252,
+    "id": 21,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS Moss Green Faded",
@@ -330,13 +330,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven sun-fading across the shoulders and chest (noticeably lighter than the lower body), the corduroy collar appears worn and slightly matted, and the open front panel reveals the plaid lining is intact but the overall canvas has that characteristic chalky, well-washed appearance typical of heavily used Carhartt workwear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:44.227768+00:00"
   },
   {
-    "id": 251,
+    "id": 22,
     "query": "j76 moss",
     "source": "ebay",
     "title": "VTG Carhartt Jacket Mens 2XL Detroit Blanket Lined J76 MOS Thrashed Moss USA",
@@ -346,13 +346,13 @@
     "casp": 700.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The olive/tan duck canvas shows moderate uniform fading across the body with the corduroy collar appearing slightly worn at the edges, no visible staining or damage, but the overall patina and softening of the fabric indicates regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:40.630659+00:00"
   },
   {
-    "id": 250,
+    "id": 23,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS Blanket Lined LARGE Moss Green",
@@ -362,13 +362,13 @@
     "casp": 700.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading across the body with the characteristic sun-bleached patina typical of heavily used Carhartt duck canvas, visible darkening/soiling around the collar and cuffs, though no obvious holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:37.722334+00:00"
   },
   {
-    "id": 249,
+    "id": 24,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS J97 Moss Green Faded",
@@ -378,13 +378,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The olive/dark green duck canvas shows even, moderate fading across the body consistent with regular use, the Carhartt patch appears intact, but the photo angle obscures cuffs and collar where typical wear points would confirm a more precise grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:34.308110+00:00"
   },
   {
-    "id": 248,
+    "id": 25,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vtg Carhartt Detroit Jacket J76 MOS Blanket Lined LARGE Moss Green Thrashed",
@@ -394,13 +394,13 @@
     "casp": 700.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy overall fading and colour loss throughout the duck canvas giving a washed-out olive/grey tone, visible surface soiling and grime buildup particularly around the collar, chest pocket, and front panels, with the fabric showing significant distressing consistent with years of hard work use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:07:31.195419+00:00"
   },
   {
-    "id": 247,
+    "id": 26,
     "query": "jb1215",
     "source": "grailed",
     "title": "Carhartt JB1215 Blue Detroit Jacket Rare Size Large Vintage",
@@ -410,13 +410,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "4/10",
-    "vision_notes": "Heavy distressing throughout including severely frayed/cropped hem with missing snap hardware, a large open zipper pocket on the lower left exposing worn plaid lining, significant uneven sun fading across the body, a contrasting worn corduroy collar suggesting mismatched reconstruction, and multiple stress points visible at the cuffs and seams.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:35.168469+00:00"
   },
   {
-    "id": 246,
+    "id": 27,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt JB1215 Detroit Jacket Size Large Made in USA Blue Rare",
@@ -426,13 +426,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy uneven fading across the entire body with a distinctly lighter wash on the large front pocket suggesting significant sun/wash exposure, visible distressing and fraying on the pocket edges, and the corduroy collar shows considerable wear, though the Carhartt label remains intact.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:29.736059+00:00"
   },
   {
-    "id": 245,
+    "id": 28,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt JB1215 Detroit Jacket [M] Carbon Blue",
@@ -442,13 +442,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The blanket-lined interior shows good overall preservation with the plaid lining appearing intact and unfaded, but the denim shell displays moderate overall fading consistent with regular use, and the corduroy collar trim shows visible wear and compression typical of a well-used Carhartt chore coat.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:26.774741+00:00"
   },
   {
-    "id": 244,
+    "id": 29,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB1215 Carbon Blue M Rare Vintage Workwear F/S",
@@ -458,13 +458,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven fading across the body with a noticeably worn and darkened corduroy collar, plus the denim has that characteristic heavy wash/work-worn patina with likely cuff wear, though no obvious staining or repairs are visible in the photo.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:23.259169+00:00"
   },
   {
-    "id": 243,
+    "id": 30,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB1215 Carbon Blue M Rare Vintage Workwear From JAPAN",
@@ -474,13 +474,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and heavy wash-out across the denim body with the characteristic Carhartt blanket lining visible, the corduroy collar shows distinct wear and color contrast from the faded body, and the cuffs and front panels display uneven distressing consistent with years of regular workwear use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:19.441332+00:00"
   },
   {
-    "id": 242,
+    "id": 31,
     "query": "jb1215",
     "source": "ebay",
     "title": "Masterpiece Carhartt Detroit Jb1215 Carbon Blue M No.ch1106",
@@ -490,13 +490,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant uniform fading across the denim body with a clearly worn and darkened corduroy collar, plus visible general soiling and wear consistent with regular heavy use, though no obvious holes or major repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:16.155020+00:00"
   },
   {
-    "id": 241,
+    "id": 32,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB1215 Carbon Blue Vintage Workwear Classic Japan",
@@ -506,13 +506,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and washing across the denim body with that characteristic sun-bleached patina, the corduroy collar shows visible wear and darkening, and the cuffs and lower hem display moderate distressing, though no obvious holes or major repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:13.356934+00:00"
   },
   {
-    "id": 240,
+    "id": 33,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB1215 Carbon Blue M Rare Vintage Workwear 2605TK",
@@ -522,13 +522,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading across the denim body with the classic sun-bleached patina, the corduroy collar shows visible wear and discoloration, and there are multiple small marks/staining visible on the front panel, though the stitching and zipper appear intact.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:05:10.611667+00:00"
   },
   {
-    "id": 239,
+    "id": 34,
     "query": "jb1236",
     "source": "ebay",
     "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
@@ -538,13 +538,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading with a washed-out, uneven patina across the body, the collar area appears worn and slightly distorted, and while no major staining or holes are visible, the fabric has lost significant color saturation suggesting moderate to heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:03:13.584077+00:00"
   },
   {
-    "id": 238,
+    "id": 35,
     "query": "jb1236",
     "source": "ebay",
     "title": "RARE Vintage JB1236?? Redwood Carhartt Detroit Jacket 90s Size 2XL Rare READ",
@@ -554,13 +554,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the body giving it a washed-out burgundy/mauve tone, the corduroy collar appears intact with minimal wear, and no visible staining or damage is apparent, though the overall fabric shows consistent use-related softening.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:03:10.516727+00:00"
   },
   {
-    "id": 237,
+    "id": 36,
     "query": "jb1236",
     "source": "ebay",
     "title": "Vintage Carhartt JB1236 Redwood Detroit Jacket Size Medium Extremely Rare J97",
@@ -570,13 +570,13 @@
     "casp": 1000.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant uniform fading across the body giving it a washed-out burgundy tone, with visible wear at the collar and chest area, though no obvious tears or repairs are apparent from this angle; cuffs and full detail are not visible but overall fabric appears intact.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:03:07.773438+00:00"
   },
   {
-    "id": 236,
+    "id": 37,
     "query": "j43 hunter green",
     "source": "etsy",
     "title": "Vintage 1998 Carhartt J43 HTG Hunter Green Detroit Jacket XXL Tall Teal Fade",
@@ -592,7 +592,7 @@
     "created_at": "2026-07-11T16:01:15.364900+00:00"
   },
   {
-    "id": 235,
+    "id": 38,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "RARE VTG 90s Hunter Green Carhartt Detroit Jacket J43 HTG",
@@ -602,13 +602,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire shell (particularly evident on the chest and sleeves) consistent with heavy washing, the corduroy collar shows wear and matting, cuffs appear darkened with grime, and while no visible holes or repairs are present, the overall patina and darkened pocket edges suggest years of regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:01:11.871022+00:00"
   },
   {
-    "id": 234,
+    "id": 39,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "vintage hunter green carhartt detroit jacket j43 htg medium",
@@ -618,13 +618,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": "m",
-    "vision_grade": "6/10",
-    "vision_notes": "Significant sun-fading across the entire shell giving a washed-out teal tone, the corduroy collar shows visible wear and matting, the blanket lining appears heavily soiled/stained with debris visible, and the brass hardware on the open left pocket shows oxidation, though no holes or repairs are evident.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:01:08.111852+00:00"
   },
   {
-    "id": 233,
+    "id": 40,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90’s J43 HTG Hunter Green Carhartt Detroit Jacket Size XL",
@@ -634,13 +634,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear uneven fading across the body with a noticeably lighter wash pattern on the front panel, the blanket lining appears worn and compressed, and while the corduroy collar looks intact, the overall duck canvas has lost significant color uniformity suggesting regular heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:01:04.340115+00:00"
   },
   {
-    "id": 232,
+    "id": 41,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket J43HTG Blanket Lined Hunter Green Mens XL ",
@@ -650,13 +650,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading with a washed-out blue-grey patina across the entire body, the collar shows darkening/wear, and while no major holes are visible, the duck canvas shows significant uniform sun and wash fading consistent with regular hard use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:01:01.471098+00:00"
   },
   {
-    "id": 231,
+    "id": 42,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit J43 Htg Hunter Green - Size Mens Medium Regular  (VG)",
@@ -666,13 +666,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate uniform fading particularly across the shoulders and chest giving it a washed-out appearance compared to original teal, the corduroy collar appears intact with minimal wear, and the cuffs look relatively clean with no visible fraying or staining.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:58.662255+00:00"
   },
   {
-    "id": 230,
+    "id": 43,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 HTG Hunter Green",
@@ -682,13 +682,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate even fading across the body giving it a washed-out teal tone, the corduroy collar appears intact with minimal wear, the plaid blanket lining is visible and looks clean, and no visible staining, fraying, or damage is apparent at the cuffs or zipper area from what the photo reveals.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:56.006352+00:00"
   },
   {
-    "id": 229,
+    "id": 44,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90’s Carhartt J43 HTG Detroit jacket USA Made size XL Tall Hunter Green",
@@ -698,13 +698,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant overall fading and color wash particularly across the chest and shoulders, the corduroy collar displays visible wear and lightening along the edges, and the fabric has the characteristic patchy sun-fading pattern consistent with heavy regular use, though no obvious tears or staining are visible in this shot.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:52.747805+00:00"
   },
   {
-    "id": 228,
+    "id": 45,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -714,13 +714,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows noticeable uniform fading across the body consistent with regular wear, the corduroy collar appears moderately worn, and while no visible staining or repairs are evident, the overall patina and slight darkening around the front zip area indicate honest use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:49.941400+00:00"
   },
   {
-    "id": 227,
+    "id": 46,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt J43 HTG Detroit Jacket Hunter Green Blanket Lined Size XL",
@@ -730,13 +730,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven fading across the body with a washed-out, patchy appearance typical of heavy use, the corduroy collar shows darkening and wear, and while no major damage or repairs are visible, the overall fabric has lost significant color uniformity suggesting regular heavy wear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:47.209594+00:00"
   },
   {
-    "id": 226,
+    "id": 47,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens XL J43 HTG Hunter Green",
@@ -746,13 +746,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the duck canvas body consistent with regular wear, the dark green colorway has mellowed noticeably especially on the chest and shoulders, with the sherpa/blanket lining appearing intact and the collar showing light surface wear, but no visible staining, repairs, or structural damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:44.106133+00:00"
   },
   {
-    "id": 225,
+    "id": 48,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size XL",
@@ -762,13 +762,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and color loss throughout the canvas, particularly visible on the shoulders and chest, with the dark green having weathered to a lighter, uneven patina, plus the collar shows clear wear and the patch appears worn, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:40.954871+00:00"
   },
   {
-    "id": 224,
+    "id": 49,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Men’s XL Distressed",
@@ -778,13 +778,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire duck canvas body giving a washed-out teal tone, the corduroy collar shows visible wear and darkening, and the cuffs and lower hem edges appear lightly frayed, though no major staining or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:37.515485+00:00"
   },
   {
-    "id": 223,
+    "id": 50,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket J43 Hunter Green Blanket Lined Size 2XL",
@@ -794,13 +794,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows noticeable uniform fading across the body giving it a washed-out teal tone, the corduroy collar appears intact with minimal wear, and no visible staining or structural damage is apparent, though the overall fabric fade prevents a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:34.727291+00:00"
   },
   {
-    "id": 222,
+    "id": 51,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Hunter Green 2XL J43HTG Made in USA",
@@ -810,13 +810,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the body giving a washed-out blue-grey tone, the corduroy collar shows visible wear and matting, and the duck canvas has the characteristic surface wear and minor soiling typical of regular work use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:31.627573+00:00"
   },
   {
-    "id": 221,
+    "id": 52,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "1998 J43HTG Detroit Jacket Men's in hunters green",
@@ -826,13 +826,13 @@
     "casp": 900.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading to a washed-out blue-grey tone, the corduroy collar appears noticeably worn and darkened with grime, and the canvas body has uneven sun-fading consistent with heavy outdoor use, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:29.123343+00:00"
   },
   {
-    "id": 220,
+    "id": 53,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90's Carhartt J43 HTG Hunter Green Detroit Blanket Lined Jacket Sz Large",
@@ -842,13 +842,13 @@
     "casp": 900.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The olive/dark green duck canvas shows moderate to heavy fading especially across the chest and shoulders, the corduroy collar appears worn and slightly matted, and the overall patina suggests regular long-term use with some potential light soiling visible on the body.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:25.532622+00:00"
   },
   {
-    "id": 219,
+    "id": 54,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "vintage 90s hunter green carhartt detroit jacket j43 htg medium rare flaw",
@@ -858,13 +858,13 @@
     "casp": 900.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "Even, uniform fading across the duck canvas giving a washed teal-grey tone, corduroy collar and lining appear intact with no visible fraying, cuffs look clean, and no obvious staining or repairs are detectable, though the overall sun-fade and general softening of the fabric places it solidly in \"good used\" condition.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:22.352256+00:00"
   },
   {
-    "id": 218,
+    "id": 55,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Size XL RARE",
@@ -874,13 +874,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant uniform fading/weathering across the body giving it a washed-out blue-grey appearance, the corduroy collar shows visible wear and darkening, and while no obvious holes or repairs are visible, the overall patina suggests heavy regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:18.516529+00:00"
   },
   {
-    "id": 217,
+    "id": 56,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 31X27 (3XL) J43 HTG Hunter Green",
@@ -890,13 +890,13 @@
     "casp": 900.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant overall fading from the original teal/green color, particularly visible on the front panels and shoulders, the corduroy collar appears worn and slightly matted, and the blanket lining shows exposure suggesting the jacket has seen substantial regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:15.850169+00:00"
   },
   {
-    "id": 216,
+    "id": 57,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green Blanket Lined XL USA Made",
@@ -906,13 +906,13 @@
     "casp": 900.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven sandstone fading across the shoulders and chest typical of heavy use, the collar exhibits visible wear and darkening, and while no major tears are apparent, the overall patina and soiling suggest consistent outdoor/workwear use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:12.715811+00:00"
   },
   {
-    "id": 215,
+    "id": 58,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "RARE 1990s Vintage Carhartt JB143 Blanket Lined Duck Jacket Hunter Green L J43",
@@ -922,13 +922,13 @@
     "casp": 900.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The denim shows moderate even fading across the body with the blanket/flannel collar lining appearing reasonably intact, though the cuffs show some wear and the overall denim has that characteristic washed-out patina consistent with regular use but no visible major staining or damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:09.904093+00:00"
   },
   {
-    "id": 214,
+    "id": 59,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43 HTG Detroit Jacket Hunter Green Size XL",
@@ -938,13 +938,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant uniform fading across the entire body giving it a washed-out teal/slate tone, the corduroy collar shows visible wear and matting, and there are minor surface marks visible on the chest panel, though no obvious holes or repairs are detectable.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:06.559736+00:00"
   },
   {
-    "id": 213,
+    "id": 60,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 1998 Carhartt J43 HTG Hunter Green Detroit Jacket XXL Tall Teal Fade",
@@ -954,13 +954,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading with a washed-out teal/blue patina across the entire body, the dark corduroy collar shows significant contrast wear, and the front panel and pocket areas display uneven sun fading and minor surface marks consistent with years of regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:03.504569+00:00"
   },
   {
-    "id": 212,
+    "id": 61,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -970,13 +970,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading/weathering to the duck canvas giving it a washed-out grey-green patina, the corduroy collar shows visible wear and matting, and while no major tears or stains are apparent, the heavy uniform fade and collar condition indicate substantial use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T16:00:00.759365+00:00"
   },
   {
-    "id": 211,
+    "id": 62,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size 2XL",
@@ -986,13 +986,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy and uneven sun-fading across the entire body giving a washed-out teal-grey patchy appearance, the corduroy collar shows wear and darkening, and the front panels display surface soiling and scuffing around the pocket areas, though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:58.100092+00:00"
   },
   {
-    "id": 210,
+    "id": 63,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -1002,13 +1002,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant overall fading and weathering to a washed-out grey-blue tone, the corduroy collar displays visible wear and slight matting, and the front chest area shows surface soiling, though the plaid flannel lining appears intact with no visible tears or major structural damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:54.858049+00:00"
   },
   {
-    "id": 209,
+    "id": 64,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43HTG Men’s XL 1999 Distressed",
@@ -1018,13 +1018,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate even fading across the body with a slightly washed-out blue-teal tone, the corduroy collar appears intact with minimal wear, pockets look clean, but overall patina and light surface wear throughout prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:51.827510+00:00"
   },
   {
-    "id": 208,
+    "id": 65,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage RARE Carhartt J43 HTG Hunter Green Tall Detroit Jacket Workwear 2XL Men",
@@ -1034,13 +1034,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows moderate and relatively even fading across the body typical of regular use, with the dark collar contrasting noticeably against the faded teal canvas, and slight wear visible at the cuffs, but no obvious staining, repairs, or structural damage is apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:48.935300+00:00"
   },
   {
-    "id": 207,
+    "id": 66,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green 1998 USA Made Size L Tall",
@@ -1050,13 +1050,13 @@
     "casp": 900.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The teal/duck canvas shows even, moderate fading across the body with the corduroy collar appearing intact, though the overall color wash and slight surface wear on the fabric suggest regular use without visible staining or structural damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:46.026150+00:00"
   },
   {
-    "id": 206,
+    "id": 67,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vtg Carhartt Mens Size XL Hunter Green J43HTG Faded Detroit Jacket Made USA",
@@ -1066,13 +1066,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading from what was likely a deeper teal/spruce green, with the characteristically heavy sun-bleaching visible across the shoulders and chest, a moderately worn corduroy collar, and while no obvious staining or repairs are visible, the uneven fading pattern and general wash-out suggest regular heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:43.460913+00:00"
   },
   {
-    "id": 205,
+    "id": 68,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Hunter Green Detroit Jacket Workwear 2XL Men *NO TAG*",
@@ -1082,13 +1082,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows moderate uniform fading across the body (particularly noticeable on the chest and shoulders), the corduroy collar appears intact with minimal wear, pockets look clean, and no visible staining or repairs are evident, but the overall color has shifted from the original deep teal suggesting regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:59:38.992337+00:00"
   },
   {
-    "id": 204,
+    "id": 69,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Detroit J43 Onyx Medium",
@@ -1098,13 +1098,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven fading throughout (particularly heavy on the shoulders and chest), the black dye has washed to a patchy charcoal-grey, and there is visible wear stress along the front zipper placket and pocket edges, though no obvious holes or repairs are detectable.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:29.221078+00:00"
   },
   {
-    "id": 203,
+    "id": 70,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket ONYX J43 Onx Blanket Lined USA Made Size Large",
@@ -1114,13 +1114,13 @@
     "casp": 900.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven fading across the canvas body (particularly heavy on the shoulders and chest), a custom embroidered logo on the left chest that reduces resale value, and while the flannel lining appears intact, the overall sun-bleaching and darkened collar area suggest years of regular wear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:25.884287+00:00"
   },
   {
-    "id": 202,
+    "id": 71,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Men's Jacket J43 Onyx Medium Black",
@@ -1130,13 +1130,13 @@
     "casp": 900.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and patina to the dark olive/brown waxed canvas exterior, the corduroy collar appears worn and slightly flattened, and the open front reveals a plaid flannel lining that looks intact but the general sun-fading and surface wear across the body panels indicates substantial use over time.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:22.999960+00:00"
   },
   {
-    "id": 201,
+    "id": 72,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 2XL J43 ONX Onyx Black",
@@ -1146,13 +1146,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and darkening across the black canvas (especially visible on the front panels and collar), the flannel lining shows some pulling/separation at the zip opening, and the collar shows typical edge wear consistent with regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:19.769442+00:00"
   },
   {
-    "id": 200,
+    "id": 73,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "90'S Carhartt Detroit Jacket J43-Onx Onyx No.ch1753",
@@ -1162,13 +1162,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and colour wash-out across the entire body giving a bleached brown tone, visible stress marks at the chest pocket corners, and likely cuff/collar wear consistent with heavy regular use, though no visible holes or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:16.711184+00:00"
   },
   {
-    "id": 199,
+    "id": 74,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "vintage 90’s carhartt j43 onx sandstone detroit jacket in onyx size Large",
@@ -1178,13 +1178,13 @@
     "casp": 900.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The black duck canvas shows significant overall fading to a washed-out charcoal tone, the cuffs and collar edges show visible wear and lightening, and there appears to be general surface soiling consistent with regular work use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:13.532490+00:00"
   },
   {
-    "id": 198,
+    "id": 75,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J43 ONX Onyx Carhartt Jacket XL",
@@ -1194,13 +1194,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows heavy overall fading and darkening consistent with significant use, particularly across the shoulders and chest, with the sandstone duck canvas having turned to a deep uneven brown, and while no obvious holes or repairs are visible, the collar area and general fabric show clear patina and wear throughout.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:57:10.411581+00:00"
   },
   {
-    "id": 197,
+    "id": 76,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 BRG Burgundy USA Made Union XL Rare VTG",
@@ -1210,13 +1210,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the body — particularly noticeable on the shoulders and chest — with the dark brown/plum canvas displaying the characteristic sun-bleached patina of regular use, the collar and cuffs appear intact with no visible fraying, and the Carhartt patch and zipper look undamaged, though the overall fading prevents a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:16.070181+00:00"
   },
   {
-    "id": 196,
+    "id": 77,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
@@ -1226,13 +1226,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The dark burgundy duck canvas shows moderate to significant overall fading (particularly visible on the chest and shoulders), the corduroy collar shows clear wear and flattening, and the flannel lining appears intact but the jacket has the patina of regular heavy use consistent with a working garment.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:12.295043+00:00"
   },
   {
-    "id": 195,
+    "id": 78,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Carhartt J43 BRG Detroit Jacket Men's Size XL Burgundy Blanket Lined Vintage USA",
@@ -1242,13 +1242,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows even, moderate fading particularly across the body panels giving a washed-out burgundy tone, the corduroy collar appears intact with minimal visible wear, and no obvious staining or repairs are detectable, though cuff condition cannot be fully assessed from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:09.007367+00:00"
   },
   {
-    "id": 194,
+    "id": 79,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt j43 brg sandstone Detroit jacket in burgundy size Large",
@@ -1258,13 +1258,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven sun fading across the body (particularly heavy on the shoulders and chest), the collar exhibits clear wear and darkening, and the overall fabric has a washed-out, heavily distressed appearance consistent with years of regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:06.053960+00:00"
   },
   {
-    "id": 193,
+    "id": 80,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG burgundy Detroit Jacket Burgundy 2XL ",
@@ -1274,13 +1274,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows moderate even fading across the dark brown duck canvas body with the color appearing slightly washed, the corduroy collar looks intact with minimal wear, and no visible staining or damage is apparent though the overall patina suggests regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:03.300489+00:00"
   },
   {
-    "id": 192,
+    "id": 81,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage 1998 Carhartt Detroit Jacket J43 BRG Burgundy RARE EXCELLENT CONDITION",
@@ -1290,13 +1290,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading from what appears to be a deeper plum/burgundy to a washed-out purple, with visible wear particularly around the collar area and general surface distressing across the canvas fabric, though no obvious holes or major repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:55:00.536986+00:00"
   },
   {
-    "id": 191,
+    "id": 82,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Jacket XL-Reg Burgundy Blanket Lined Detroit Jacket USA",
@@ -1306,13 +1306,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven sun-fading across the shoulders and chest (originally darker burgundy/wine), the corduroy collar appears worn and slightly matted, and the overall canvas fabric has a washed-out, tired appearance consistent with heavy regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:54:57.738812+00:00"
   },
   {
-    "id": 190,
+    "id": 83,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Men’s Detroit Blanket Line Jacket J43BRG Burgundy 2XL Logo Back",
@@ -1322,13 +1322,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading and color loss across the body (particularly noticeable on the chest and shoulders), the corduroy collar appears darkened and worn, and there is a printed graphic/logo on the left chest that reduces collector appeal, though no visible holes or major repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:54:54.970685+00:00"
   },
   {
-    "id": 189,
+    "id": 84,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 BRG Burgundy",
@@ -1338,13 +1338,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading on the duck canvas giving a washed-out purple tone, visible wear and darkening on the denim collar, and uneven sun-fading across the body panels, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:54:51.932867+00:00"
   },
   {
-    "id": 188,
+    "id": 85,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -1354,13 +1354,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and color washing across the body giving it a dusty/chalky appearance typical of heavy sun and wash exposure, with the fabric appearing noticeably lighter than original along the shoulders and chest, though no visible holes or major repairs are apparent from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:54:49.269068+00:00"
   },
   {
-    "id": 187,
+    "id": 86,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt Detroit J43 Chestnut XL Vintage 1998 USA",
@@ -1370,13 +1370,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": "xl",
-    "vision_grade": "5/10",
-    "vision_notes": "Significant fading throughout with uneven sun-bleaching across the body and sleeves, heavily frayed and distressed cuffs with visible thread unraveling on both sides, a dark corduroy collar showing wear, and general soiling/marks across the canvas — the Carhartt patch and zipper appear intact but the cuff damage alone drops this well into well-worn territory.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:55.461416+00:00"
   },
   {
-    "id": 186,
+    "id": 87,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J43 CHT Chestnut Brown EUC",
@@ -1386,13 +1386,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows moderate to heavy fading particularly across the chest and shoulders with an uneven sun-bleached pattern, the corduroy collar displays visible wear and matting, and the open jacket reveals the flannel lining appears intact but the overall canvas has lost significant color uniformity consistent with regular outdoor use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:51.358073+00:00"
   },
   {
-    "id": 185,
+    "id": 88,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined XL J43 CHT Chestnut Brown Faded",
@@ -1402,13 +1402,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant uniform fading and weathering across the body with a sun-bleached, washed-out appearance, the corduroy collar shows visible wear and darkening, and while there are no obvious holes or major repairs, the overall patina suggests heavy regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:47.807720+00:00"
   },
   {
-    "id": 184,
+    "id": 89,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
@@ -1418,13 +1418,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and discoloration across the body giving a washed-out grey tone, visible wear at the collar and cuffs, and the lining shows some distressing, though no obvious holes or major repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:45.021882+00:00"
   },
   {
-    "id": 183,
+    "id": 90,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J43 CHT Detroit Jacket Blanket Lined Chestnut Distressed",
@@ -1434,13 +1434,13 @@
     "casp": 600.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows heavy, uneven sun-fading across the entire canvas body giving it a washed-out slate-blue tone, with visible wear concentrated at the stress points, and while no obvious holes or staining are apparent, the significant colour loss and worn texture across the fabric surface place this firmly in fair condition.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:42.594941+00:00"
   },
   {
-    "id": 182,
+    "id": 91,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Mens XL Brown Chestnut Blanket Lined J43 CHT",
@@ -1450,13 +1450,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant sun-fading and browning across the entire duck canvas body creating an uneven patchy tone, the black corduroy collar shows moderate wear, there is visible soiling/staining on the chest pocket area near the Carhartt logo, and the overall fabric shows the kind of heavy field use typical of a well-worked work jacket.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:39.319749+00:00"
   },
   {
-    "id": 181,
+    "id": 92,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG Carhartt J43 CHT  (2 XL) Detroit Jacket - Chestnut 1998 Made In USA",
@@ -1466,13 +1466,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows clear overall fading and surface wear particularly visible across the chest and shoulders, with the brown color appearing uneven and lightened in high-contact areas, though no obvious holes or staining are visible from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:35.823835+00:00"
   },
   {
-    "id": 180,
+    "id": 93,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Workwear Jacket Chestnut Blanket Lined J43 CHT 2XL Reg.",
@@ -1482,13 +1482,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire canvas giving a washed-out olive/grey tone, visible paint spots or staining on the front body, and the collar and chest area show clear patina and wear consistent with heavy regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:32.963813+00:00"
   },
   {
-    "id": 179,
+    "id": 94,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J43CHT Chestnut Detroit Jacket Blanket lined, Corduroy Mens XL",
@@ -1498,13 +1498,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the body consistent with regular use, the dark corduroy collar appears intact with no visible fraying, front pockets and zipper look undamaged, but the overall canvas has lost significant original darkness indicating meaningful wear history.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:29.529973+00:00"
   },
   {
-    "id": 178,
+    "id": 95,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt 1999 J43 CHT Chestnut Detroit Jacket Medium M",
@@ -1514,13 +1514,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform sand-wash fading across the entire body giving a washed-out appearance, the sherpa/corduroy collar shows compression and darkening from neck oils, and while no obvious holes or repairs are visible, the overall patina and worn canvas texture suggest heavy regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:26.808093+00:00"
   },
   {
-    "id": 177,
+    "id": 96,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG Carhartt J43 CHT MEDIUM Detroit Jacket - Chestnut 1998 Made In USA",
@@ -1530,13 +1530,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and sun-bleaching across the body giving an uneven patchy appearance, the dark corduroy collar shows moderate wear, and the canvas fabric has that characteristic heavy wash-out particularly on the chest and shoulders suggesting regular longtime use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:23.640830+00:00"
   },
   {
-    "id": 176,
+    "id": 97,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90s Carhartt J43 CHT Chestnut Detroit Jacket Mens 2XL Blanket Lined Made USA",
@@ -1546,13 +1546,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and sun bleaching across the entire body giving a washed-out sandy tone, the corduroy collar shows visible wear and darkening, and there are minor marks/soiling visible on the front panels, though no obvious tears or repairs are evident.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:20.683157+00:00"
   },
   {
-    "id": 175,
+    "id": 98,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J43CHT Detroit Jacket Mens L Tall USA Made Chestnut Brown",
@@ -1562,13 +1562,13 @@
     "casp": 600.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uniform fading across the entire canvas body giving a washed-out olive/grey tone, the corduroy collar shows darkening and wear, and the overall patina suggests regular prolonged use, though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:52:17.874074+00:00"
   },
   {
-    "id": 174,
+    "id": 99,
     "query": "j97 timber",
     "source": "grailed",
     "title": "vintage 00's carhartt detroid J97 timber brown size L 🍂",
@@ -1578,13 +1578,13 @@
     "casp": 700.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading throughout the canvas with a distinct sun-bleached patchy pattern, the contrast collar shows significant wear and discolouration, the chest logo patch is partially peeling/damaged, and the cuffs show fraying and wear, though no visible holes or major repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:19.866389+00:00"
   },
   {
-    "id": 173,
+    "id": 100,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB Men’s 2XL",
@@ -1594,13 +1594,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and sun-bleaching across the shoulders and chest creating an uneven patina, the corduroy collar shows distinct wear and flattening, and the canvas fabric has significant general soiling throughout, though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:16.596583+00:00"
   },
   {
-    "id": 172,
+    "id": 101,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt J97 \"Timber\" Size XL *DISTRESSED*",
@@ -1610,13 +1610,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and significant sun-bleaching across the entire body giving a washed-out brown tone, visible distressing along the bottom hem with fraying, and the corduroy collar shows considerable wear, though no obvious holes or major staining are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:13.710165+00:00"
   },
   {
-    "id": 171,
+    "id": 102,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -1626,13 +1626,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and color loss evident across the entire body giving a washed-out olive/grey tone, the sherpa collar shows darkening/soiling, and the canvas fabric displays the typical heavy sun-fading pattern consistent with regular outdoor use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:10.414311+00:00"
   },
   {
-    "id": 170,
+    "id": 103,
     "query": "j97 timber",
     "source": "ebay",
     "title": "VTG 90s Carhartt Detroit Jacket J97 TMB Timber Blanket Lined Fit Size XL Faded",
@@ -1642,13 +1642,13 @@
     "casp": 700.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uniform fading/washing across the body giving it a dusty, lightened appearance, the collar shows wear and slight discoloration, and while no major holes or repairs are visible, the overall patina and the embroidered \"CEMENT\" work patch suggest heavy prior use in a work environment.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:07.479380+00:00"
   },
   {
-    "id": 169,
+    "id": 104,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -1658,13 +1658,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, overall fading consistent with regular use — particularly visible in the darker olive/brown duck canvas — with the corduroy collar appearing relatively clean, though the flat lay reveals general surface wear and slight lightening at stress points typical of a well-used Carhartt Detroit-style jacket.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:03.964368+00:00"
   },
   {
-    "id": 168,
+    "id": 105,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined USA Union Made 2XL",
@@ -1674,13 +1674,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant sun-fading and weathering across the body giving an uneven dark brown-to-grey patina, the corduroy collar appears worn and slightly lighter, and while no major holes or staining are visible, the overall heavy fading and fabric fatigue place this firmly in fair condition.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:50:00.725629+00:00"
   },
   {
-    "id": 167,
+    "id": 106,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt J97 TMB Vintage Detroit Jacket Timber Mens XL USA Workwear Honeycombed",
@@ -1690,13 +1690,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and sun-bleaching across the body with the characteristic sandstone duck canvas showing heavy pigment loss, the corduroy collar appears moderately worn, and there are visible surface marks and patina consistent with regular heavy use, though no obvious holes or repairs are detectable from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:49:57.622111+00:00"
   },
   {
-    "id": 166,
+    "id": 107,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97MOS Detroit Jacket Timber Blanket Lined Size XXL Moss USA",
@@ -1706,13 +1706,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading and color washing across the body with a noticeably worn corduroy collar, and while no major damage is visible, the uneven fading pattern and general dullness of the denim suggest significant regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:49:54.382654+00:00"
   },
   {
-    "id": 165,
+    "id": 108,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Petrol Black",
@@ -1728,7 +1728,7 @@
     "created_at": "2026-07-11T15:48:01.392379+00:00"
   },
   {
-    "id": 164,
+    "id": 109,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Petrol Black",
@@ -1744,7 +1744,7 @@
     "created_at": "2026-07-11T15:48:01.386333+00:00"
   },
   {
-    "id": 163,
+    "id": 110,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage carhartt detroit j97ptl petrol blanket lined jacket 1990s 2xl made in usa",
@@ -1760,7 +1760,7 @@
     "created_at": "2026-07-11T15:48:01.375994+00:00"
   },
   {
-    "id": 162,
+    "id": 111,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Petrol Detroit Jacket Grey Cahartt Detroit Jacket J97 PTL",
@@ -1770,13 +1770,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "Significant uniform sun-fading across the entire body giving a washed-out blue-grey appearance, with noticeably darker fading concentrated at the collar suggesting regular neck wear, while the cuffs, stitching, and hardware appear intact with no visible staining, fraying, or structural damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:48:01.369193+00:00"
   },
   {
-    "id": 161,
+    "id": 112,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Petrol Greey 🦍Carhartt Detroit Jacket J97-PTL",
@@ -1786,13 +1786,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": "m",
-    "vision_grade": "7/10",
-    "vision_notes": "Heavy sun-fading and uneven colour bleaching across the body and sleeves creating a mottled grey patina, contrasting corduroy collar shows darkening/soiling, but no visible holes, staining, fraying at cuffs, or structural damage is apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:54.130696+00:00"
   },
   {
-    "id": 160,
+    "id": 113,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "❌SOLD❌ Faded Petrol Grey Carhartt Detroit Jacket J97 PTL",
@@ -1802,13 +1802,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": "s",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uneven sun-fading and oxidation across the entire body creating a blotchy black-to-grey patina, the corduroy collar shows significant darkening and wear, cuffs appear stressed, and the canvas has that characteristic over-washed, oil-stained workwear texture suggesting years of heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:50.381867+00:00"
   },
   {
-    "id": 159,
+    "id": 114,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "faded Petrol Carhartt Detroit jacket J97 PTL",
@@ -1818,13 +1818,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy, uneven sun-fading across the entire body creating a mottled grey-black pattern, visible soiling particularly on the chest and lower front panels, worn cuffs, and overall canvas distress consistent with years of regular workwear use, though no visible holes or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:47.058221+00:00"
   },
   {
-    "id": 158,
+    "id": 115,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VTG 00’s Big Patch Petrol Grey Carhartt Detroit J97 PTL",
@@ -1834,13 +1834,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": "m",
-    "vision_grade": "7/10",
-    "vision_notes": "Heavy uniform fading across the entire canvas giving a washed-out charcoal tone (original color was likely black or dark navy), with noticeably darker fading concentrated at the collar and slightly uneven sun-fading across the chest and shoulders, though no visible staining, fraying, or damage is apparent from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:43.741810+00:00"
   },
   {
-    "id": 157,
+    "id": 116,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt J97 Detroit Jacket Petrol faded black M Union made",
@@ -1850,13 +1850,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": "m",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uniform fading across the entire body giving a washed-out grey tone, darkened/soiled collar, visible surface grime and spotting on the chest and sleeves, and the interior label appears worn/partially detached, though stitching and zippers appear intact with no visible holes or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:40.121020+00:00"
   },
   {
-    "id": 156,
+    "id": 117,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "J97 PTL Petrol Gray Carhartt Detroit Jacket",
@@ -1866,13 +1866,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy uneven fading throughout the black duck canvas with significant discolouration/staining across the chest and sleeves, fraying visible at the cuffs and hem, a small hole/tear on the left chest area, and the corduroy collar shows distinct fading contrast — while structurally intact, this jacket has multiple compounding flaws consistent with years of hard use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:21.439673+00:00"
   },
   {
-    "id": 155,
+    "id": 118,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 PTL Detroit Jacket XL TALL Petrol Duck Blanket Lined USA",
@@ -1882,13 +1882,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and color loss across the body giving a washed-out appearance, with the corduroy collar showing contrast wear, and the canvas fabric displaying the characteristic uneven sun-fading pattern consistent with regular outdoor use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:47:01.727819+00:00"
   },
   {
-    "id": 154,
+    "id": 119,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Duck Detroit Jacket 3XL Tall Petrol Gray Men's Made in USA VTG",
@@ -1898,13 +1898,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and color loss particularly across the shoulders and chest giving a bleached-out appearance, the corduroy collar shows visible wear and darkening, and the cuffs appear worn, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:58.614514+00:00"
   },
   {
-    "id": 153,
+    "id": 120,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt 2000 J97 PTL Petrol Detroit Jacket Medium M",
@@ -1914,13 +1914,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading to a washed-out grey tone with a noticeably uneven patina, the collar shows wear and the fabric has a tired, softened appearance consistent with frequent use, though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:55.660331+00:00"
   },
   {
-    "id": 152,
+    "id": 121,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XXL J97 PTL Petrol Gray",
@@ -1930,13 +1930,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and significant color loss throughout the black denim giving it a washed-out appearance, with visible crease wear patterns across the body and what appears to be surface scuffing, though no obvious holes or repairs are visible; the Carhartt patch and hardware appear intact.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:52.935633+00:00"
   },
   {
-    "id": 151,
+    "id": 122,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens Medium J97 PTL Petrol Gray",
@@ -1946,13 +1946,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even overall fading across the canvas duck fabric with the characteristic silvery-grey lightening on the shoulders and chest panel, the collar appears intact with no cracking, zipper and hardware look functional, and no visible staining or repairs are detectable, though the uniform fading suggests regular wear over time.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:48.995670+00:00"
   },
   {
-    "id": 150,
+    "id": 123,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vtg CARHARTT J97PTL DETROIT Blanket Lined Mens 2XL Canvas UNION MADE Jacket USA",
@@ -1962,13 +1962,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The denim shows significant overall fading and darkening/soiling particularly across the front panels, the corduroy collar appears worn and slightly compressed, and the fabric has a generally heavily-used patina consistent with years of work use, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:45.839903+00:00"
   },
   {
-    "id": 149,
+    "id": 124,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Vintage Detroit Jacket J97 PTL Mens Large Petrol Grey Blanket Lined HTF",
@@ -1978,13 +1978,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading to a washed-out olive-grey tone with uneven discoloration across the body, the collar shows darkening from wear and oils, and the cuffs appear worn, though no visible holes or repairs are detectable from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:42.929357+00:00"
   },
   {
-    "id": 148,
+    "id": 125,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage 90s Y2K Carhartt J97 PTL Petrol Blanket Lined Detroit Jacket SZ 2XL",
@@ -1994,13 +1994,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The navy duck canvas shows even, moderate fading across the body with the collar area appearing slightly darker/less faded suggesting typical wear pattern, no visible staining or repairs, but the overall sun-bleached, washed-out tone and small chest pocket area marks prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:39.842477+00:00"
   },
   {
-    "id": 147,
+    "id": 126,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Jacket Mens Size Large Gray Petrol Detroit Full Zip Honey Comb J97 PTL",
@@ -2010,13 +2010,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven fading across the canvas particularly on the shoulders and chest, the collar shows visible wear and slight distortion, and the cuffs appear darkened and worn, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:36.943223+00:00"
   },
   {
-    "id": 146,
+    "id": 127,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL Petrol Blanket Lined Men’s XL Faded Distressed Rare",
@@ -2026,13 +2026,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy uneven sun fading across the entire body giving a bleached grey patchy appearance, fraying visible along the bottom hem and pocket edges, with the collar showing significant wear and the duck canvas fabric displaying multiple stress marks throughout.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:34.423701+00:00"
   },
   {
-    "id": 145,
+    "id": 128,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J97 PTL Petrol Grey XL Flannel Lined 26x27” 90s",
@@ -2042,13 +2042,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even overall fading to a washed-out charcoal tone, particularly across the chest and shoulders, with the corduroy collar appearing lightly worn but intact, no visible staining or damage, and the chest pocket and zipper appearing functional.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:31.458663+00:00"
   },
   {
-    "id": 144,
+    "id": 129,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL Petrol Blanket Lined Men’s XL Tall Jacket USA Rare",
@@ -2058,13 +2058,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and color loss across the body giving it a washed-out dark grey tone, the corduroy collar appears moderately worn, and while no major holes or repairs are visible, the canvas fabric shows clear signs of heavy use and age consistent with a well-loved work jacket.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:28.311994+00:00"
   },
   {
-    "id": 143,
+    "id": 130,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J97 PTL Petrol Grey - Custom Tailored",
@@ -2074,13 +2074,13 @@
     "casp": 600.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "Even, overall fading to a worn charcoal grey consistent with regular use, the Carhartt patch and graphic appear intact, but collar and cuff wear is likely present though not fully visible, with no obvious staining or structural damage seen.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:25.185164+00:00"
   },
   {
-    "id": 142,
+    "id": 131,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Mens XXL Petrol  Detroit Jacket Made in USA Blanket Lined J97 PTL",
@@ -2090,13 +2090,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant uniform fading across the body giving it a washed-out grey tone, the corduroy collar appears slightly worn, and while no major staining or repairs are visible, the overall heavy canvas has clearly seen regular use with softening of the fabric structure throughout.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:21.476414+00:00"
   },
   {
-    "id": 141,
+    "id": 132,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Petrol Detroit Jacket Size Large Workwear Blanket Lined Coat",
@@ -2106,13 +2106,13 @@
     "casp": 600.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire body giving a washed-out grey tone, the corduroy collar shows darkening and wear, cuffs appear worn, and the canvas fabric has the characteristic sandstone fade pattern indicating heavy use over time.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:18.754614+00:00"
   },
   {
-    "id": 140,
+    "id": 133,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J97 PTL  ( Color Petrol)Vintage 2005 Size Large Regular",
@@ -2122,13 +2122,13 @@
     "casp": 600.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even overall fading consistent with regular wear, particularly visible across the chest and shoulders, with the black/charcoal canvas having softened to a grey tone, though no visible staining, fraying, or damage is apparent from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:15.952717+00:00"
   },
   {
-    "id": 139,
+    "id": 134,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Sandstone Detroit Jacket J97 PTL Petrol Blue Green Size L",
@@ -2138,13 +2138,13 @@
     "casp": 600.0,
     "deal_score": 4,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows moderate uniform fading across the body giving it a washed-out teal/slate tone, the corduroy collar appears intact with minimal visible wear, and no obvious staining or damage is detectable, though the overall color loss prevents a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:13.361019+00:00"
   },
   {
-    "id": 138,
+    "id": 135,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Mens XL Reg J97 Petrol PTL Zip Faded Workwear",
@@ -2154,13 +2154,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows significant and uneven fading across the body with a washed-out, chalky appearance typical of heavy use, the collar area shows darkening/soiling, and while no obvious holes or repairs are visible, the overall patina suggests years of regular wear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:10.663510+00:00"
   },
   {
-    "id": 137,
+    "id": 136,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 PTL Petrol Black Detroit Jacket Blanket Lined Size M",
@@ -2170,13 +2170,13 @@
     "casp": 600.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "9/10",
-    "vision_notes": "Appears to be new old stock or unworn with tags still attached, deep uniform navy color showing no fading, crisp clean cuffs and collar with no wear marks, and no visible staining or damage to the fabric or stitching.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:07.688828+00:00"
   },
   {
-    "id": 136,
+    "id": 137,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage 2004 Carhartt J97 PTL Petrol Gray Blanket Lined Detroit Jacket Size L",
@@ -2186,13 +2186,13 @@
     "casp": 600.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and sun bleaching across the entire jacket giving it an uneven washed-out appearance, with visible wear at the collar area and what appears to be a name/logo embroidered on the chest pocket, though no obvious holes or major repairs are visible at this resolution.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:05.088677+00:00"
   },
   {
-    "id": 135,
+    "id": 138,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL ‘Petrol Grey’ Jacket Men’s XL Tall Blanket Lined",
@@ -2202,13 +2202,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and color loss throughout the canvas fabric giving it a washed-out navy appearance, with the collar area showing heavier wear and some distressing, though no visible holes or staining are apparent in the photo.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:46:02.211960+00:00"
   },
   {
-    "id": 134,
+    "id": 139,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL ‘Petrol’ Jacket Men’s XL Blanket Lined Grey Work",
@@ -2218,13 +2218,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows moderate overall fading consistent with regular use, particularly visible across the chest and shoulders, with the dark navy/black fabric showing a slightly washed-out appearance, though no visible staining, fraying, or damage is apparent in the image.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:59.428876+00:00"
   },
   {
-    "id": 133,
+    "id": 140,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket XL Tall J97 PTL Petrol Gray Blue Faded",
@@ -2234,13 +2234,13 @@
     "casp": 600.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy uneven fading throughout the duck canvas body giving a bleached/washed-out appearance, particularly across the chest and shoulders, with a noticeably worn corduroy collar that appears lighter and compressed, plus general surface soiling consistent with regular workwear use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:53.656625+00:00"
   },
   {
-    "id": 132,
+    "id": 141,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "MENS VINTAGE CARHARTT DETROIT JACKET J97 PTL PETROL GRAY BLANKET LINED CANVAS XL",
@@ -2250,13 +2250,13 @@
     "casp": 600.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading across the body with a washed-out appearance, the collar shows darkening/wear, and while the structure appears intact, the denim has lost significant depth of color indicating regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:50.674845+00:00"
   },
   {
-    "id": 131,
+    "id": 142,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Mens Xl Petrol Gray Blanket Lined J97 PTL",
@@ -2266,13 +2266,13 @@
     "casp": 600.0,
     "deal_score": 3,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire jacket giving a washed-out dark grey appearance, visible embroidery/patches on chest and sleeve, and the collar and cuff areas show heavier wear consistent with regular use, though no obvious holes or major repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:47.969481+00:00"
   },
   {
-    "id": 130,
+    "id": 143,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 PTL Detroit Jacket Petrol Gray 3XL USA Made Plaid Faded",
@@ -2282,13 +2282,13 @@
     "casp": 600.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the black canvas body giving it a washed-out charcoal appearance, the corduroy collar appears intact with no visible fraying, cuffs look clean, and no obvious staining or repairs are visible, but the overall sun-fade and softening of the fabric prevents a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:45.301879+00:00"
   },
   {
-    "id": 129,
+    "id": 144,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol Grey Blanket Lined Mens 2XL Tall Vintage",
@@ -2298,13 +2298,13 @@
     "casp": 600.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear overall fading from original black to a washed grey tone, the collar exhibits visible wear and slight darkening, there is a faded/cracked embroidered patch on the left chest, and the cuffs and hem show signs of use, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:42.048079+00:00"
   },
   {
-    "id": 128,
+    "id": 145,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol Blue Blanket Lined Mens 3XL Tall Vintage",
@@ -2314,13 +2314,13 @@
     "casp": 600.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading from what appears to be original black to a washed-out charcoal grey, with visible wear concentrated across the chest and shoulders, plus embroidered/printed logos on the left chest that suggest heavy workwear use, and the collar area shows typical edge wear consistent with regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:45:39.180827+00:00"
   },
   {
-    "id": 127,
+    "id": 146,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "CARHARTT BURGUNDY PURPLE J97",
@@ -2330,13 +2330,13 @@
     "casp": 900.0,
     "deal_score": 5,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The purple canvas shows moderate even fading across the body with the corduroy collar appearing relatively clean, though the overall color has dulled noticeably from original, and the jacket appears structurally sound with no visible repairs or significant staining.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:43:40.586306+00:00"
   },
   {
-    "id": 126,
+    "id": 147,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -2346,13 +2346,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant overall fading and color washing — particularly evident across the shoulders and chest — consistent with heavy laundering, with the originally darker brown/purple duck canvas now appearing uniformly lightened and slightly patchy, though no obvious staining or structural damage is visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:43:38.102033+00:00"
   },
   {
-    "id": 125,
+    "id": 148,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;NAVY BLUE&#39; Unisex Jacket",
@@ -2368,7 +2368,7 @@
     "created_at": "2026-07-11T15:41:45.309573+00:00"
   },
   {
-    "id": 124,
+    "id": 149,
     "query": "j97 moss",
     "source": "etsy",
     "title": "J97 Carhartt Plaid Detroit Jacket - Petrol Black",
@@ -2384,7 +2384,7 @@
     "created_at": "2026-07-11T15:41:45.301361+00:00"
   },
   {
-    "id": 123,
+    "id": 150,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Moss Green",
@@ -2400,7 +2400,7 @@
     "created_at": "2026-07-11T15:41:45.293595+00:00"
   },
   {
-    "id": 122,
+    "id": 151,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Unisex Carhartt J97 Detroit Jacket Vintage Carhartt J97 Detroit Jacket Moss Grey , Carhartt Plaid Detroit Jacket Reworked Canvas Coat",
@@ -2416,7 +2416,7 @@
     "created_at": "2026-07-11T15:41:45.288100+00:00"
   },
   {
-    "id": 121,
+    "id": 152,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Jacket, Carhartt J97 Plaid Detroit Jacket, Moss Green Workwear Jacket, Reworked Canvas Coat Men",
@@ -2432,7 +2432,7 @@
     "created_at": "2026-07-11T15:41:45.282824+00:00"
   },
   {
-    "id": 120,
+    "id": 153,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Moss Green J97 Detroit Workwear Jacket Size XL",
@@ -2448,7 +2448,7 @@
     "created_at": "2026-07-11T15:41:45.277684+00:00"
   },
   {
-    "id": 119,
+    "id": 154,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit J97 Moss Green – Unisex Retro Canvas Jacket – Gift",
@@ -2464,7 +2464,7 @@
     "created_at": "2026-07-11T15:41:45.272708+00:00"
   },
   {
-    "id": 118,
+    "id": 155,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Distressed Carhartt moss green canvas work jacket  J97 Mos Detroit men’s - plaid blanket lining - work clothes - workwear jacket",
@@ -2480,7 +2480,7 @@
     "created_at": "2026-07-11T15:41:45.268169+00:00"
   },
   {
-    "id": 117,
+    "id": 156,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket Moss Green J97 MOS Men&#39;s Sz M",
@@ -2496,7 +2496,7 @@
     "created_at": "2026-07-11T15:41:45.264124+00:00"
   },
   {
-    "id": 116,
+    "id": 157,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Moss Green",
@@ -2512,7 +2512,7 @@
     "created_at": "2026-07-11T15:41:45.260607+00:00"
   },
   {
-    "id": 115,
+    "id": 158,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &quot;MOSS GREEN&quot; | Rare Workwear Coat | Unisex Vintage Jacket",
@@ -2528,7 +2528,7 @@
     "created_at": "2026-07-11T15:41:45.257930+00:00"
   },
   {
-    "id": 114,
+    "id": 159,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Jacket Moss Green, Carhartt Plaid Detroit Jacket, Unisex Workwear Jacket, Reworked Canvas Coat",
@@ -2544,7 +2544,7 @@
     "created_at": "2026-07-11T15:41:45.255271+00:00"
   },
   {
-    "id": 113,
+    "id": 160,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39; Unisex Jacket",
@@ -2560,7 +2560,7 @@
     "created_at": "2026-07-11T15:41:45.252817+00:00"
   },
   {
-    "id": 112,
+    "id": 161,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
@@ -2576,7 +2576,7 @@
     "created_at": "2026-07-11T15:41:45.250615+00:00"
   },
   {
-    "id": 111,
+    "id": 162,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
@@ -2592,7 +2592,7 @@
     "created_at": "2026-07-11T15:41:45.247943+00:00"
   },
   {
-    "id": 110,
+    "id": 163,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket XL",
@@ -2602,13 +2602,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "xl",
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows noticeable uniform fading across the canvas body (characteristic sun/wash fade shifting from original black to a grey-green), the corduroy collar shows moderate wear and darkening from use, the Carhartt leather patch has browned and aged, and the brass hardware shows oxidation, but no visible staining, fraying, or repairs are evident.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:29.569055+00:00"
   },
   {
-    "id": 109,
+    "id": 164,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket XL Men",
@@ -2618,13 +2618,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "xl",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uneven fading and significant blotchy discoloration across the entire body (particularly the chest and left sleeve), dark staining or wear marks visible on the left shoulder area, though the corduroy collar, brass hardware, and stitching all appear intact with no visible fraying or repairs.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:22.425143+00:00"
   },
   {
-    "id": 108,
+    "id": 165,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt J97 MOS Green Detroit Jacket Size Small",
@@ -2634,13 +2634,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "s",
-    "vision_grade": "7/10",
-    "vision_notes": "Significant sun-fading and oxidation across the entire body creating an uneven, blotchy patina (particularly visible on the shoulders and chest), corduroy collar shows darker wear discoloration, but no visible staining, fraying, or structural damage is apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:19.162950+00:00"
   },
   {
-    "id": 107,
+    "id": 166,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt J97 MOS Green Detroit Jacket Blanket Lined Large Regular Mens Workwear Casual 90s USA",
@@ -2650,13 +2650,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy uneven sun fading and oxidation across the entire body (particularly prominent on shoulders and front panels), the corduroy collar shows significant wear and discoloration, cuffs appear frayed, and the canvas has a blotchy, washed-out appearance throughout — partially offset by intact zippers and no visible holes.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:12.582854+00:00"
   },
   {
-    "id": 106,
+    "id": 167,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens XL Moss Green J97 Detroit Blanket Lined Made in USA",
@@ -2666,13 +2666,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "xl",
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading and sun-bleaching across the entire body creating an uneven mossy/olive patina, the brown corduroy collar shows significant darkening and wear, cuffs appear worn at the edges, and the canvas fabric has notable stress cracking and discoloration throughout — though no visible holes or repairs are apparent.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:08.816602+00:00"
   },
   {
-    "id": 105,
+    "id": 168,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97moss BNWT",
@@ -2682,13 +2682,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "xs",
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the canvas body with a noticeably darker corduroy collar indicating wear, the brass zipper and hardware appear intact, and while the hang tag is still attached suggesting limited use, the sun-faded olive/moss colorway and collar contrast suggest regular previous wear with no visible staining or structural damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:41:00.693768+00:00"
   },
   {
-    "id": 104,
+    "id": 169,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Mainline J97 Moss Green L Jacket",
@@ -2698,13 +2698,13 @@
     "casp": 700.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "Heavy overall fading and sun-bleaching across the body and sleeves with a characteristic washed-out pattern, the corduroy collar shows moderate wear and darkening, cuffs appear intact, no visible staining or repairs, and the hardware and Carhartt patch remain in good condition, but the \"GRANITE\" embroidery and general canvas fading keep this from a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:40:50.177949+00:00"
   },
   {
-    "id": 103,
+    "id": 170,
     "query": "j97 crimson",
     "source": "etsy",
     "title": "Vintage Crimson Red Carhartt Detroit Jacket J97 L Rare Distressed Heavy Duty",
@@ -2720,7 +2720,7 @@
     "created_at": "2026-07-11T15:38:40.098686+00:00"
   },
   {
-    "id": 102,
+    "id": 171,
     "query": "ju1005",
     "source": "ebay",
     "title": "Vintage Carhartt JU1005 BLK RARE Southwest 1994 Unlined USA M/L",
@@ -2730,13 +2730,13 @@
     "casp": 1500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even overall fading to a washed-out dark tone with some collar and cuff wear visible, the Carhartt patch appears intact, and while there are no obvious stains or repairs, the uniform sun-fade and light edge wear prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:36:45.992000+00:00"
   },
   {
-    "id": 101,
+    "id": 172,
     "query": "ju1005",
     "source": "ebay",
     "title": "Vintage Carhartt JU1005 BLK Jacket Mens M Southwest 1994 Unlined Duck Chore USA",
@@ -2746,13 +2746,13 @@
     "casp": 1500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy uniform fading across the entire jacket giving a bleached-grey appearance, visible soiling and wear particularly around the collar and chest pockets, with surface distressing and minor marks throughout the fabric suggesting regular heavy use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:36:43.063962+00:00"
   },
   {
-    "id": 100,
+    "id": 173,
     "query": "jp1017",
     "source": "ebay",
     "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
@@ -2762,13 +2762,13 @@
     "casp": 550.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven sun fading across the body giving it a washed-out charcoal appearance, with visible wear at the collar and cuffs, and the sherpa/fleece lining appears compressed and worn, though no major staining or repairs are visible from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:34:50.216837+00:00"
   },
   {
-    "id": 99,
+    "id": 174,
     "query": "jq2472",
     "source": "ebay",
     "title": "Vintage Carhartt Southwest Jacket Quilt Lined Mens Medium JQ2472 Aztec Rare",
@@ -2778,13 +2778,13 @@
     "casp": 850.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The tapestry/southwestern-print bomber jacket shows generally well-preserved fabric with vibrant colors intact, though the ribbed cuffs and collar show some compression and light wear consistent with regular use, and the overall structure remains solid with no visible staining or damage.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:32:50.530663+00:00"
   },
   {
-    "id": 98,
+    "id": 175,
     "query": "jr0115",
     "source": "grailed",
     "title": "Rare Vintage Carhartt Southwest Aztec Hooded Jacket JR0115",
@@ -2794,13 +2794,13 @@
     "casp": 500.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows moderate even fading/wash across the body and shoulders consistent with regular use, the black ribbed cuffs and hem appear intact with no visible fraying, the Southwestern stripe tape detail looks clean, and no visible staining or repairs are apparent, though the overall fading prevents a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:28:57.968227+00:00"
   },
   {
-    "id": 97,
+    "id": 176,
     "query": "jr0115",
     "source": "ebay",
     "title": "VTG Carhartt Blue Aztec Jacket RARE GRAIL JR0115 XL W/ Tags READ Needs Cleaning",
@@ -2810,13 +2810,13 @@
     "casp": 500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "8/10",
-    "vision_notes": "Appears in excellent condition with vibrant blue colorway showing minimal fading, the fair isle stripe band looks clean and intact, cuffs and hem ribbing show no visible fraying, and the price tag is still attached suggesting very light or no prior use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:28:54.442274+00:00"
   },
   {
-    "id": 96,
+    "id": 177,
     "query": "js1207",
     "source": "etsy",
     "title": "RARE 1989 Carhartt Detroit js1207 White Made in USA canvas full zip jacket 48 xl",
@@ -2832,7 +2832,7 @@
     "created_at": "2026-07-11T15:27:01.068409+00:00"
   },
   {
-    "id": 95,
+    "id": 178,
     "query": "js1207",
     "source": "grailed",
     "title": "Carhartt JS1207 Natural Large",
@@ -2842,13 +2842,13 @@
     "casp": 500.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, overall yellowing/patina from the original natural/white color, the collar and cuffs appear intact with no visible fraying, and while there are no obvious stains or repairs, the fabric has clearly been worn and washed multiple times given the uniform off-white discoloration throughout.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:27:01.064274+00:00"
   },
   {
-    "id": 94,
+    "id": 179,
     "query": "js1235",
     "source": "grailed",
     "title": "Carhartt JS1235 Spruce Large",
@@ -2858,13 +2858,13 @@
     "casp": 800.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven sun-fading across the shoulders and sleeves (notably lighter on the right arm), the collar shows wear and slight distortion, and the overall canvas has the washed-out, softened look of heavy regular use, though no visible staining, holes, or repairs are apparent from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:25:04.084093+00:00"
   },
   {
-    "id": 93,
+    "id": 180,
     "query": "js1235",
     "source": "grailed",
     "title": "Rare Carhartt \"Spruce\" JS1235 Detroit Jacket",
@@ -2874,13 +2874,13 @@
     "casp": 800.0,
     "deal_score": 1,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "Noticeable uniform sun fading across the entire shell (particularly visible on the shoulders and chest) giving the teal canvas a washed-out, uneven patina, with some light creasing throughout, but no visible staining, fraying, or damage to the cuffs, collar, or zipper hardware.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:25:00.816609+00:00"
   },
   {
-    "id": 92,
+    "id": 181,
     "query": "js1235",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens 2XL Green Full Zip Workwear JS1235 Spruce",
@@ -2890,13 +2890,13 @@
     "casp": 800.0,
     "deal_score": 1,
     "size": "xxl",
-    "vision_grade": "5/10",
-    "vision_notes": "Heavy overall fading and sun-bleaching throughout with visible dirt/grime accumulation especially on the collar, cuffs, and lower front panel, plus the zipper pull appears damaged/missing and there is fraying visible along the hem.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:24:57.607640+00:00"
   },
   {
-    "id": 91,
+    "id": 182,
     "query": "js1235",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Mens 2XL Green Full Zip JS1235 Workwear Vintage Spruce",
@@ -2906,13 +2906,13 @@
     "casp": 800.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading across the entire canvas body giving a washed-out sage/teal appearance, with visible wear and slight darkening around the pocket edges and zipper area, though no obvious holes or repairs are detectable from this angle.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:24:54.562269+00:00"
   },
   {
-    "id": 90,
+    "id": 183,
     "query": "js1236",
     "source": "grailed",
     "title": "Carhartt JS1236 Redwood Large",
@@ -2922,13 +2922,13 @@
     "casp": 800.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "Even, sun-faded wash across the entire canvas with the characteristic lighter blush tone of well-washed duck cloth, collar and cuffs appear intact with no fraying visible, no obvious staining or repairs, but the overall fading and a small area of distress visible on the left cuff/wrist area prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:23:01.531374+00:00"
   },
   {
-    "id": 89,
+    "id": 184,
     "query": "js1236",
     "source": "ebay",
     "title": "Vintage Carhartt JS1236 Redwood Detroit Canvas Jacket Sheet Lined SZ Large Rare",
@@ -2938,13 +2938,13 @@
     "casp": 800.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and uneven sun fading across the body (particularly visible on the shoulders and chest), the duck canvas has a noticeably worn, softened texture suggesting heavy previous use, and while no obvious tears or staining are visible, the overall color loss and fabric fatigue bring it firmly into \"fair\" territory.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:22:54.670453+00:00"
   },
   {
-    "id": 88,
+    "id": 185,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Neil Barrett Italian Deconstructed Blended Short Coat J65",
@@ -2954,13 +2954,13 @@
     "casp": 2500.0,
     "deal_score": 5,
     "size": "l",
-    "vision_grade": "8/10",
-    "vision_notes": "This appears to be a double-breasted wool blend peacoat (not Carhartt) in grey tweed with contrast stripe detailing on the sleeves, displayed unworn on a hanger with no visible staining, pilling, fraying at cuffs or collar, or damage, though the lapel shows slight fold creasing consistent with display handling.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:19:08.287273+00:00"
   },
   {
-    "id": 87,
+    "id": 186,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Vintage Carhartt J65BLU Sandstone Detroit Jacket Blue J65 BLU Size Large",
@@ -2970,13 +2970,13 @@
     "casp": 2500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The denim shows moderate even fading across the body with a worn corduroy collar that shows typical use darkening, no visible staining or damage in frame, but the overall patina and collar wear indicate regular use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:18:32.054190+00:00"
   },
   {
-    "id": 86,
+    "id": 187,
     "query": "j65 blue",
     "source": "ebay",
     "title": "vintage carhartt j65 blu sandstone detroit jacket in blue size xl",
@@ -2986,13 +2986,13 @@
     "casp": 2500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear uneven fading across the body with a noticeably lighter wash on the main panels contrasting against the darker collar and plaid chest pocket panel, suggesting significant sun/wash fading, and while no major holes or staining are visible, the patchwork-style contrast indicates considerable age and wear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:18:29.311695+00:00"
   },
   {
-    "id": 85,
+    "id": 188,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Vintage Carhartt J65BLU Sandstone Detroit Jacket Blue J65 BLU Sz XL",
@@ -3002,13 +3002,13 @@
     "casp": 2500.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The denim shows moderate uniform fading across the body consistent with regular use, the dark corduroy collar appears intact with minimal visible wear, cuffs look clean, and no obvious staining or repairs are visible, though the overall wash-out suggests meaningful prior wear.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:18:20.140021+00:00"
   },
   {
-    "id": 84,
+    "id": 189,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket JB0866 Rare Faded Green Blanket Lined Size L",
@@ -3018,13 +3018,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear uneven sun-fading across the body and sleeves (notably lighter on the front panels than the back/collar area), the corduroy collar appears worn and slightly flattened, and the plaid flannel lining is visible through what appears to be a partially open or stressed front zip area.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:24.905620+00:00"
   },
   {
-    "id": 83,
+    "id": 190,
     "query": "jb0866",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens Medium JB0866 Dark Olive Green Faded",
@@ -3034,13 +3034,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The olive/moss green duck canvas shows moderate uniform fading consistent with regular use, the corduroy collar appears slightly worn and darker with dirt/oils, and the flannel lining looks intact with no visible tears, though the overall patina and collar soiling prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:21.856942+00:00"
   },
   {
-    "id": 82,
+    "id": 191,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage 90’s Carhartt Green JB0866 Blanket Lined Detroit Jacket Sz XL Distressed",
@@ -3050,13 +3050,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows significant and uneven fading across the canvas fabric with a washed-out olive/khaki tone indicating heavy washing or sun exposure, and while no major holes or repairs are visible, the overall patina and likely cuff/collar wear (partially obscured) suggest clear use consistent with a fair-condition grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:18.685057+00:00"
   },
   {
-    "id": 81,
+    "id": 192,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage Carhartt Olive Green Detroit Jacket JB0866 2XL",
@@ -3066,13 +3066,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The olive duck canvas shows moderate uniform fading across the body with the corduroy collar displaying darker contrast wear typical of regular use, no visible staining or repairs but clear signs of consistent wear throughout.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:15.321420+00:00"
   },
   {
-    "id": 80,
+    "id": 193,
     "query": "jb0866",
     "source": "ebay",
     "title": "Carhartt Mens JB0866 Jacket Lined Canvas Trucker Style Size XL Graphic Print",
@@ -3082,13 +3082,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The duck canvas shows moderate to heavy fading throughout, particularly evident across the chest and shoulders with an uneven wash pattern, the corduroy collar appears worn and slightly matted, and while no obvious staining or holes are visible, the overall fading and softening of the fabric suggest significant prior use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:12.866393+00:00"
   },
   {
-    "id": 79,
+    "id": 194,
     "query": "jb0866",
     "source": "ebay",
     "title": "VINTAGE CARHARTT DETROIT JACKET 2XL MOSS GREEN BLANKET LINED USA MADE JB0866",
@@ -3098,13 +3098,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Heavy overall fading to an olive/moss tone with uneven sun bleaching across the body, the corduroy collar shows significant wear and darkening, and the cuffs display visible soiling and edge fraying consistent with years of hard use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:09.192112+00:00"
   },
   {
-    "id": 78,
+    "id": 195,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage 90’s Carhartt Green JB0866 Blanket Lined Detroit Jacket Sz XL Distressed",
@@ -3114,13 +3114,13 @@
     "casp": 750.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading and color washing across the entire body giving a bleached-out olive tone, visible wear and darkening along the collar corduroy, and general fabric distressing consistent with heavy regular use, though no obvious tears or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:06.100752+00:00"
   },
   {
-    "id": 77,
+    "id": 196,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage 90s Carhartt JB0866 Distressed Detroit Jacket Large Moss Green Blanket",
@@ -3130,13 +3130,13 @@
     "casp": 750.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant uniform fading/weathering across the entire canvas body giving a washed-out olive-grey appearance, the corduroy collar shows visible wear and darkening, and the overall patina suggests heavy regular use though no obvious holes or major staining are visible in this shot.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:14:03.277318+00:00"
   },
   {
-    "id": 76,
+    "id": 197,
     "query": "jb0873",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket JB0873 USA Made",
@@ -3146,13 +3146,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and fairly uniform fading across the duck canvas body giving it a washed-out grey tone, the corduroy collar displays noticeable wear and compression, and while no obvious holes or repairs are visible, the overall patina and dulled hardware suggest heavy previous use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:12:03.496744+00:00"
   },
   {
-    "id": 75,
+    "id": 198,
     "query": "jb0873",
     "source": "ebay",
     "title": "Kunichi Nomura Jb0873 Usa Made 90S Carhartt Detroit Jacket Men JPN Limited Editi",
@@ -3162,13 +3162,13 @@
     "casp": 1000.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "The jacket shows clear and even overall fading across the canvas body giving it a washed-out grey tone, the corduroy collar appears worn and slightly matted, and while no obvious holes or staining are visible, the zipper pull area and pocket patch show signs of consistent use consistent with a well-loved working jacket.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:12:00.518770+00:00"
   },
   {
-    "id": 74,
+    "id": 199,
     "query": "jb0817",
     "source": "grailed",
     "title": "90’s Carhartt Detroit Jacket JB0817 Rare",
@@ -3178,13 +3178,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": "m",
-    "vision_grade": "7/10",
-    "vision_notes": "Significant overall fading across the body with the classic sun-bleached navy-to-grey patina, particularly noticeable on the chest and shoulders, contrasting lighter denim collar shows moderate wear, but no visible staining, repairs, or structural damage to stitching or zippers.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:09:52.658019+00:00"
   },
   {
-    "id": 73,
+    "id": 200,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Graphite",
@@ -3194,13 +3194,13 @@
     "casp": 900.0,
     "deal_score": 2,
     "size": "l",
-    "vision_grade": "7/10",
-    "vision_notes": "The duck canvas shows even, uniform fading across the body consistent with regular wear, the corduroy collar has visible softening and light soiling, the flannel lining appears intact with no tears, and the brass zipper and leather patch are in good condition with no visible staining or repairs needed.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:09:49.497629+00:00"
   },
   {
-    "id": 72,
+    "id": 201,
     "query": "jb0817",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB0817 Men's Gray with Zipper Size Unknown(M) Pre-Owned",
@@ -3210,13 +3210,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "6/10",
-    "vision_notes": "Significant overall fading visible across the body giving a washed-out navy/charcoal tone, the corduroy collar shows distinct wear and lightening, and the cuffs and lower hem appear darker/dirtier suggesting uneven soiling, though no obvious holes or repairs are visible.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:09:37.643191+00:00"
   },
   {
-    "id": 71,
+    "id": 202,
     "query": "jb0817",
     "source": "ebay",
     "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
@@ -3226,13 +3226,13 @@
     "casp": 900.0,
     "deal_score": 1,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The jacket shows even, moderate fading across the canvas body giving it a washed-out slate/grey tone, the sherpa collar appears intact and reasonably clean, but the overall sun-bleached patina and light surface wear on the body panels prevent a higher grade.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:09:34.462136+00:00"
   },
   {
-    "id": 70,
+    "id": 203,
     "query": "jb0817",
     "source": "ebay",
     "title": "vintage 90’s carhartt jb0817 firm duck detroit jacket in graphite size medium",
@@ -3242,13 +3242,13 @@
     "casp": 900.0,
     "deal_score": 2,
     "size": null,
-    "vision_grade": "7/10",
-    "vision_notes": "The navy duck canvas shows even, moderate fading consistent with regular wear, the corduroy collar appears lightly worn, the flannel lining is visible and intact, and no obvious staining or damage is visible though the overall patina suggests significant use.",
+    "vision_grade": null,
+    "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-11T15:09:31.539401+00:00"
   },
   {
-    "id": 1,
+    "id": 204,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J65 BLU",
@@ -3264,7 +3264,7 @@
     "created_at": "2026-07-11T08:26:10.080391+00:00"
   },
   {
-    "id": 2,
+    "id": 205,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Vintage Carhartt J65BLU  Detroit Jacket Faded Blue Distressed Size Large",
@@ -3280,7 +3280,7 @@
     "created_at": "2026-07-11T08:26:07.160394+00:00"
   },
   {
-    "id": 3,
+    "id": 206,
     "query": "j65 blue",
     "source": "ebay",
     "title": "Vintage Carhartt Jacket Mens Medium Blue Detroit J65 J01 BLU NVY 80s 90s RARE",
@@ -3296,7 +3296,7 @@
     "created_at": "2026-07-11T08:26:04.195859+00:00"
   },
   {
-    "id": 4,
+    "id": 207,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Jb0866 Moss Faded Green XL  J97",
@@ -3312,7 +3312,7 @@
     "created_at": "2026-07-11T08:23:24.335334+00:00"
   },
   {
-    "id": 5,
+    "id": 208,
     "query": "jb0817",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket JB0817 Men's Gray  Zipper Size X-Large Rare Hard Find",
@@ -3328,7 +3328,7 @@
     "created_at": "2026-07-11T08:20:25.080397+00:00"
   },
   {
-    "id": 6,
+    "id": 209,
     "query": "jb0817",
     "source": "ebay",
     "title": "VTG Carhartt Detroit Full Zip Jacket Men’s 2X Large JB0817 Gray USA Made",
@@ -3344,7 +3344,7 @@
     "created_at": "2026-07-11T08:20:22.359055+00:00"
   },
   {
-    "id": 7,
+    "id": 210,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J76 Mos usa vintage og",
@@ -3360,7 +3360,7 @@
     "created_at": "2026-07-10T23:32:39.284988+00:00"
   },
   {
-    "id": 8,
+    "id": 211,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt J76 MOS Medium",
@@ -3376,7 +3376,7 @@
     "created_at": "2026-07-10T23:32:33.155885+00:00"
   },
   {
-    "id": 9,
+    "id": 212,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt J76 Mos 99’s Big Logo",
@@ -3392,7 +3392,7 @@
     "created_at": "2026-07-10T23:32:30.076622+00:00"
   },
   {
-    "id": 10,
+    "id": 213,
     "query": "j76 moss",
     "source": "grailed",
     "title": "moss green carhartt detroit jacket j76",
@@ -3408,7 +3408,7 @@
     "created_at": "2026-07-10T23:32:26.469630+00:00"
   },
   {
-    "id": 11,
+    "id": 214,
     "query": "j76 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt J76 MOS Jacket LARGE Moss Green Blanket Lined Thrashed 90s Mens",
@@ -3424,7 +3424,7 @@
     "created_at": "2026-07-10T23:32:22.731158+00:00"
   },
   {
-    "id": 12,
+    "id": 215,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit jacket J76 MOS ( military olive)",
@@ -3440,7 +3440,7 @@
     "created_at": "2026-07-10T23:32:19.201642+00:00"
   },
   {
-    "id": 13,
+    "id": 216,
     "query": "jb1215",
     "source": "grailed",
     "title": "Carhartt JB1215 Carbon Blue Large",
@@ -3456,7 +3456,7 @@
     "created_at": "2026-07-10T23:30:51.772299+00:00"
   },
   {
-    "id": 14,
+    "id": 217,
     "query": "jb1236",
     "source": "grailed",
     "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
@@ -3472,7 +3472,7 @@
     "created_at": "2026-07-10T23:29:25.284283+00:00"
   },
   {
-    "id": 15,
+    "id": 218,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt hunter jacket j43 HTG",
@@ -3488,7 +3488,7 @@
     "created_at": "2026-07-10T23:27:59.103335+00:00"
   },
   {
-    "id": 16,
+    "id": 219,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Medium",
@@ -3504,7 +3504,7 @@
     "created_at": "2026-07-10T23:26:32.923807+00:00"
   },
   {
-    "id": 17,
+    "id": 220,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Large",
@@ -3520,7 +3520,7 @@
     "created_at": "2026-07-10T23:26:29.416645+00:00"
   },
   {
-    "id": 18,
+    "id": 221,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX",
@@ -3536,7 +3536,7 @@
     "created_at": "2026-07-10T23:26:25.175067+00:00"
   },
   {
-    "id": 19,
+    "id": 222,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Black Detroit Jacket Vintage, Size X-Large",
@@ -3552,7 +3552,7 @@
     "created_at": "2026-07-10T23:26:20.895378+00:00"
   },
   {
-    "id": 20,
+    "id": 223,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J43 BRG 1990s Faded Burgundy Rare",
@@ -3568,7 +3568,7 @@
     "created_at": "2026-07-10T23:24:54.758806+00:00"
   },
   {
-    "id": 21,
+    "id": 224,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Timber” J97 TMB",
@@ -3584,7 +3584,7 @@
     "created_at": "2026-07-10T23:22:06.184620+00:00"
   },
   {
-    "id": 22,
+    "id": 225,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Petrol Carhartt Detroit Jacket Grey Blue Cahrartt Jacket J97",
@@ -3600,7 +3600,7 @@
     "created_at": "2026-07-10T23:20:39.735166+00:00"
   },
   {
-    "id": 23,
+    "id": 226,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "faded vintage petrol carhartt J97 detroit",
@@ -3616,7 +3616,7 @@
     "created_at": "2026-07-10T23:20:35.808065+00:00"
   },
   {
-    "id": 24,
+    "id": 227,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol” J97",
@@ -3632,7 +3632,7 @@
     "created_at": "2026-07-10T23:20:32.855200+00:00"
   },
   {
-    "id": 25,
+    "id": 228,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol” J97",
@@ -3648,7 +3648,7 @@
     "created_at": "2026-07-10T23:20:29.678352+00:00"
   },
   {
-    "id": 26,
+    "id": 229,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt J97 PTL Petrol Gray Blanket Lined Detroit Jacket Size L Mens Gray Jacket",
@@ -3664,7 +3664,7 @@
     "created_at": "2026-07-10T23:20:26.525427+00:00"
   },
   {
-    "id": 27,
+    "id": 230,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt j97 vintage petrol jacket",
@@ -3680,7 +3680,7 @@
     "created_at": "2026-07-10T23:20:23.408350+00:00"
   },
   {
-    "id": 28,
+    "id": 231,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt j97 vintage petrol jacket",
@@ -3696,7 +3696,7 @@
     "created_at": "2026-07-10T23:20:19.642158+00:00"
   },
   {
-    "id": 29,
+    "id": 232,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "❌SOLD OUT❌ Crazy Vintage Carhartt Detroit jacket J97 Petrol",
@@ -3712,7 +3712,7 @@
     "created_at": "2026-07-10T23:20:15.844083+00:00"
   },
   {
-    "id": 30,
+    "id": 233,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Jacket J97 - Petrol (PTL)",
@@ -3728,7 +3728,7 @@
     "created_at": "2026-07-10T23:20:13.026319+00:00"
   },
   {
-    "id": 31,
+    "id": 234,
     "query": "j97 burgundy",
     "source": "grailed",
     "title": "Carhartt J97 Detroit Jacket Maroon XL USA Like New",
@@ -3744,7 +3744,7 @@
     "created_at": "2026-07-10T23:18:46.050153+00:00"
   },
   {
-    "id": 32,
+    "id": 235,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green Detroit work wear jacket",
@@ -3760,7 +3760,7 @@
     "created_at": "2026-07-10T23:17:20.542753+00:00"
   },
   {
-    "id": 33,
+    "id": 236,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J97 Mos Green Size XL Used Condition",
@@ -3776,7 +3776,7 @@
     "created_at": "2026-07-10T23:17:16.942781+00:00"
   },
   {
-    "id": 34,
+    "id": 237,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket",
@@ -3792,7 +3792,7 @@
     "created_at": "2026-07-10T23:17:03.988250+00:00"
   },
   {
-    "id": 35,
+    "id": 238,
     "query": "j97 moss",
     "source": "grailed",
     "title": "DISTRESSED Carhartt J97 MOS Green Waxed Jacket",
@@ -3808,7 +3808,7 @@
     "created_at": "2026-07-10T23:16:59.879733+00:00"
   },
   {
-    "id": 36,
+    "id": 239,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket",
@@ -3824,7 +3824,7 @@
     "created_at": "2026-07-10T23:16:56.280238+00:00"
   },
   {
-    "id": 37,
+    "id": 240,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Moss Green” J97",
@@ -3840,7 +3840,7 @@
     "created_at": "2026-07-10T23:16:52.217124+00:00"
   },
   {
-    "id": 38,
+    "id": 241,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Moss Green” J97",
@@ -3856,7 +3856,7 @@
     "created_at": "2026-07-10T23:16:48.993417+00:00"
   },
   {
-    "id": 39,
+    "id": 242,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Detroit Carhart J97 Moss Green",
@@ -3872,7 +3872,7 @@
     "created_at": "2026-07-10T23:16:45.662408+00:00"
   },
   {
-    "id": 40,
+    "id": 243,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt detroit J97 Moss Size Medium",
@@ -3888,7 +3888,7 @@
     "created_at": "2026-07-10T23:16:42.138949+00:00"
   },
   {
-    "id": 41,
+    "id": 244,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J97 Moss Green 2006",
@@ -3904,7 +3904,7 @@
     "created_at": "2026-07-10T23:16:38.996395+00:00"
   },
   {
-    "id": 42,
+    "id": 245,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J97 Mos // J97 Moss Green 2006",
@@ -3920,7 +3920,7 @@
     "created_at": "2026-07-10T23:16:34.135093+00:00"
   },
   {
-    "id": 43,
+    "id": 246,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit J97 Moss Jacket (Large)",
@@ -3936,7 +3936,7 @@
     "created_at": "2026-07-10T23:16:30.805591+00:00"
   },
   {
-    "id": 44,
+    "id": 247,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt J97 Moss Green 2XL Full Zip Bomber Jacket Unisex Adults Winter Lined Polyester Canvas Workwear Green Jacket",
@@ -3952,7 +3952,7 @@
     "created_at": "2026-07-10T23:16:26.582608+00:00"
   },
   {
-    "id": 45,
+    "id": 248,
     "query": "j97 crimson",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit jacket J97 CRIMSON szXL",
@@ -3968,7 +3968,7 @@
     "created_at": "2026-07-10T23:15:00.449519+00:00"
   },
   {
-    "id": 46,
+    "id": 249,
     "query": "jq2472",
     "source": "grailed",
     "title": "Carhartt JQ2472 Aztec Large",
@@ -3984,7 +3984,7 @@
     "created_at": "2026-07-10T23:10:48.080453+00:00"
   },
   {
-    "id": 47,
+    "id": 250,
     "query": "jq2472",
     "source": "grailed",
     "title": "90s Carhartt JQ2472 Aztec AOP",
@@ -4000,7 +4000,7 @@
     "created_at": "2026-07-10T23:10:44.706152+00:00"
   },
   {
-    "id": 48,
+    "id": 251,
     "query": "jr0115",
     "source": "grailed",
     "title": "Carhartt JR0115 Carbon Blue",
@@ -4016,7 +4016,7 @@
     "created_at": "2026-07-10T23:07:55.765121+00:00"
   },
   {
-    "id": 49,
+    "id": 252,
     "query": "jr0115",
     "source": "grailed",
     "title": "Carhartt JR0115 Carbon Blue",
@@ -4032,7 +4032,7 @@
     "created_at": "2026-07-10T23:07:52.506567+00:00"
   },
   {
-    "id": 50,
+    "id": 253,
     "query": "js1236",
     "source": "grailed",
     "title": "Carhartt JS1236 Large Detroit",
@@ -4048,7 +4048,7 @@
     "created_at": "2026-07-10T23:03:40.724355+00:00"
   },
   {
-    "id": 51,
+    "id": 254,
     "query": "js1237",
     "source": "grailed",
     "title": "Carhartt JS1237 Carbon Blue Large",
@@ -4064,7 +4064,7 @@
     "created_at": "2026-07-10T23:02:15.063236+00:00"
   },
   {
-    "id": 52,
+    "id": 255,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Armani Exchange J65 Straight Jeans",
@@ -4080,7 +4080,7 @@
     "created_at": "2026-07-10T23:00:48.182486+00:00"
   },
   {
-    "id": 53,
+    "id": 256,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Carhartt J65 BLU Large",
@@ -4096,7 +4096,7 @@
     "created_at": "2026-07-10T23:00:45.429956+00:00"
   },
   {
-    "id": 54,
+    "id": 257,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Carhartt J65 BLU Large",
@@ -4112,7 +4112,7 @@
     "created_at": "2026-07-10T23:00:42.200282+00:00"
   },
   {
-    "id": 55,
+    "id": 258,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Yoji Yamamoto Yohji Yamamoto Jacket Textile Outerwear FE-J65-005 DUTY FREE for USA",
@@ -4128,7 +4128,7 @@
     "created_at": "2026-07-10T23:00:38.655908+00:00"
   },
   {
-    "id": 56,
+    "id": 259,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Vintage Carhartt J65 BLU XL",
@@ -4144,7 +4144,7 @@
     "created_at": "2026-07-10T23:00:35.415345+00:00"
   },
   {
-    "id": 57,
+    "id": 260,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Armani Exchange 36 X 31 Jeans J65 Easy Fit Made In USA Men S",
@@ -4160,7 +4160,7 @@
     "created_at": "2026-07-10T23:00:32.315899+00:00"
   },
   {
-    "id": 58,
+    "id": 261,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Number (N)ine 03AW Heart Tears Henley Top J65",
@@ -4176,7 +4176,7 @@
     "created_at": "2026-07-10T23:00:29.570499+00:00"
   },
   {
-    "id": 59,
+    "id": 262,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Number (N)ine Deconstructed Denim Trench Coat J65",
@@ -4192,7 +4192,7 @@
     "created_at": "2026-07-10T23:00:26.164518+00:00"
   },
   {
-    "id": 60,
+    "id": 263,
     "query": "j65 blue",
     "source": "grailed",
     "title": "The Soloist Paneled Plaid Three-Quarter Sleeve T-shirt J65",
@@ -4208,7 +4208,7 @@
     "created_at": "2026-07-10T23:00:22.234243+00:00"
   },
   {
-    "id": 61,
+    "id": 264,
     "query": "j65 blue",
     "source": "grailed",
     "title": "VINTAGE Armani Exchange Jeans Mens 36x32 Blue Straight Leg J65 Easy Fit Made in USA",
@@ -4224,7 +4224,7 @@
     "created_at": "2026-07-10T23:00:18.918345+00:00"
   },
   {
-    "id": 62,
+    "id": 265,
     "query": "jb0866",
     "source": "grailed",
     "title": "Carhartt JB0866",
@@ -4240,7 +4240,7 @@
     "created_at": "2026-07-10T22:57:27.538452+00:00"
   },
   {
-    "id": 63,
+    "id": 266,
     "query": "jb0866",
     "source": "grailed",
     "title": "Carhartt JB0866 Large",
@@ -4256,7 +4256,7 @@
     "created_at": "2026-07-10T22:57:24.521597+00:00"
   },
   {
-    "id": 64,
+    "id": 267,
     "query": "jb0866",
     "source": "grailed",
     "title": "Carhartt JB0866 Jacket",
@@ -4272,7 +4272,7 @@
     "created_at": "2026-07-10T22:57:21.262186+00:00"
   },
   {
-    "id": 65,
+    "id": 268,
     "query": "jb0873",
     "source": "grailed",
     "title": "Carhartt JB0873 Mocha",
@@ -4288,7 +4288,7 @@
     "created_at": "2026-07-10T22:55:56.044723+00:00"
   },
   {
-    "id": 66,
+    "id": 269,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Graphite",
@@ -4304,7 +4304,7 @@
     "created_at": "2026-07-10T22:54:29.733671+00:00"
   },
   {
-    "id": 67,
+    "id": 270,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Graphite",
@@ -4320,7 +4320,7 @@
     "created_at": "2026-07-10T22:54:26.343845+00:00"
   },
   {
-    "id": 68,
+    "id": 271,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Graphite",
@@ -4336,7 +4336,7 @@
     "created_at": "2026-07-10T22:54:23.259441+00:00"
   },
   {
-    "id": 69,
+    "id": 272,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Medium Graphite 1996",
