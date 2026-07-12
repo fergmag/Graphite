@@ -33,7 +33,7 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
     # If only the keystring is set, the API returns 403 "Shared secret is required".
     if shared_secret:
         auth_value = f"{api_key}:{shared_secret}"
-        log.info("[etsy] using keystring:sharedsecret format (key prefix %s...) for %r", api_key[:6], query)
+        log.warning("[etsy] using keystring:sharedsecret format (key prefix %s...) for %r", api_key[:6], query)
     else:
         auth_value = api_key
         log.warning("[etsy] ETSY_SHARED_SECRET not set — requests will likely fail with 403")
@@ -97,5 +97,5 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
         })
 
     raw_count = len(data.get("results", []))
-    log.info("[etsy] %r → %d raw / %d parsed", query, raw_count, len(results))
+    log.warning("[etsy] %r → %d raw / %d parsed", query, raw_count, len(results))
     return results

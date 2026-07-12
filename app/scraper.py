@@ -146,15 +146,21 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     Returns count of alerts saved.
     """
     saved = 0
-    all_listings: List[Dict[str, Any]] = []
-    all_listings.extend(search_ebay_active(query))
-    all_listings.extend(search_depop(query))
-    all_listings.extend(search_grailed(query))
-    all_listings.extend(search_etsy(query))
-    all_listings.extend(search_whatnot(query))
 
-    # Filter out junk (wrong model code, kids items, etc.) same as estimator
-    all_listings = filter_comps(all_listings, query)
+    # Platforms where sellers use model codes in titles → strict code filter
+    strict_listings: List[Dict[str, Any]] = []
+    strict_listings.extend(search_ebay_active(query))
+    strict_listings.extend(search_grailed(query))
+    strict_listings = filter_comps(strict_listings, query, require_code=True)
+
+    # Platforms with targeted search (already sent "carhartt {query}") → junk filter only
+    relaxed_listings: List[Dict[str, Any]] = []
+    relaxed_listings.extend(search_depop(query))
+    relaxed_listings.extend(search_etsy(query))
+    relaxed_listings.extend(search_whatnot(query))
+    relaxed_listings = filter_comps(relaxed_listings, query, require_code=False)
+
+    all_listings = strict_listings + relaxed_listings
 
     for listing in all_listings:
         price = listing.get("price") or 0

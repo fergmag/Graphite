@@ -838,6 +838,26 @@ def count_total_alerts() -> int:
         con.close()
 
 
+def get_last_refresh_time():
+    """Return the most recent estimate insertion time as a timezone-aware datetime, or None."""
+    from datetime import datetime, timezone
+    con = _connect()
+    try:
+        row = con.execute("SELECT MAX(created_at) as t FROM estimates").fetchone()
+        if row and row["t"]:
+            t = row["t"].rstrip("Z")
+            try:
+                dt = datetime.fromisoformat(t)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                return dt
+            except Exception:
+                return None
+        return None
+    finally:
+        con.close()
+
+
 def mark_alerts_seen() -> None:
     con = _connect()
     try:

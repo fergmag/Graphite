@@ -521,7 +521,7 @@ def create_app() -> Flask:
 
         # Live platform listings — run in parallel threads to stay inside Render's 30s limit
         import concurrent.futures
-        listings = []
+        grailed_results = depop_results = etsy_results = []
         def _fetch_grailed():
             try: return search_grailed(query)
             except Exception as e: logging.getLogger(__name__).warning("[detail] grailed: %s", e); return []
@@ -532,13 +532,19 @@ def create_app() -> Flask:
             try: return search_etsy(query, timeout=8)
             except Exception as e: logging.getLogger(__name__).warning("[detail] etsy: %s", e); return []
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
-            futs = [ex.submit(_fetch_grailed), ex.submit(_fetch_depop), ex.submit(_fetch_etsy)]
-            for f in concurrent.futures.as_completed(futs, timeout=12):
-                try: listings.extend(f.result())
-                except Exception: pass
+            g_fut = ex.submit(_fetch_grailed)
+            d_fut = ex.submit(_fetch_depop)
+            e_fut = ex.submit(_fetch_etsy)
+            concurrent.futures.wait([g_fut, d_fut, e_fut], timeout=12)
+            grailed_results = g_fut.result() if g_fut.done() else []
+            depop_results = d_fut.result() if d_fut.done() else []
+            etsy_results = e_fut.result() if e_fut.done() else []
 
-        # Filter out irrelevant results (wrong model code, kids items, etc.)
-        listings = filter_comps(listings, query)
+        # Strict filter for Grailed (sellers use model codes); relaxed for Etsy/Depop
+        listings = (
+            filter_comps(grailed_results, query, require_code=True)
+            + filter_comps(depop_results + etsy_results, query, require_code=False)
+        )
 
         # Score each listing against size-adjusted CASP
         _SMULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
@@ -1116,17 +1122,31 @@ def create_app() -> Flask:
     _should_schedule = not app.debug or _in_reloader_child
     if _should_schedule:
         try:
+            from datetime import datetime, timedelta, timezone
             from apscheduler.schedulers.background import BackgroundScheduler
             from app.scraper import refresh_all_watchlist as _refresh
+            from app.db import get_last_refresh_time
             def _scheduled_refresh():
                 _refresh()
                 _persist_alerts()
                 _persist_estimates()
             _sched = BackgroundScheduler(daemon=True)
+            # Smart first-fire: use last estimate time so deploys don't reset the 6h schedule
+            _now = datetime.now(timezone.utc)
+            _last = get_last_refresh_time()
+            if _last and (_now - _last) < timedelta(hours=6):
+                _first_fire = _last + timedelta(hours=6)
+                logging.getLogger(__name__).warning(
+                    "[scheduler] Last refresh %s, next auto-run at %s", _last.isoformat(), _first_fire.isoformat()
+                )
+            else:
+                _first_fire = _now + timedelta(seconds=90)
+                logging.getLogger(__name__).warning(
+                    "[scheduler] No recent refresh — auto-run in 90s"
+                )
             _sched.add_job(_scheduled_refresh, "interval", hours=6, id="watchlist_refresh",
-                           misfire_grace_time=300)
+                           misfire_grace_time=300, next_run_time=_first_fire)
             _sched.start()
-            logging.getLogger(__name__).info("[scheduler] Started — refresh every 6 h")
         except Exception as _e:
             logging.getLogger(__name__).warning("[scheduler] Could not start: %s", _e)
 

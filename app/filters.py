@@ -85,15 +85,16 @@ JUNK_TERMS = [
 _NUMERIC_CODE_RE = re.compile(r"\b(J[A-Z]?\d{2,})\b", re.IGNORECASE)
 
 
-def filter_comps(comps: List[Dict[str, Any]], query: str) -> List[Dict[str, Any]]:
+def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = True) -> List[Dict[str, Any]]:
     """
     Drop junk listings from comps.
     - Removes titles containing known irrelevant terms (kids, women's, vest, etc.)
-    - If the query contains a numeric jacket code (e.g. J01, J130), requires that
-      code to appear in the title too.
+    - If require_code=True (default) and query has a jacket code, that code must
+      appear in the title. Set require_code=False for platforms like Etsy/Depop
+      where the search is targeted and sellers don't put model codes in titles.
     """
     code_match = _NUMERIC_CODE_RE.search(query)
-    required_code = code_match.group(1).lower() if code_match else None
+    required_code = code_match.group(1).lower() if (code_match and require_code) else None
 
     filtered = []
     for comp in comps:
