@@ -1,5 +1,37 @@
 [
   {
+    "id": 292,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Vintage Carhartt Mesh-Lined Santa Fe Bomber Jacket “Petrol”",
+    "price": 269.99,
+    "url": "https://www.etsy.com/listing/4536905639/vintage-carhartt-mesh-lined-santa-fe",
+    "photo": null,
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-13T10:30:24.565927+00:00"
+  },
+  {
+    "id": 291,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol” J64",
+    "price": 419.99,
+    "url": "https://www.etsy.com/listing/4536932698/vintage-carhartt-blanket-lined-detroit",
+    "photo": null,
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-13T10:30:24.559408+00:00"
+  },
+  {
     "id": 290,
     "query": "j97 burgundy",
     "source": "etsy",
