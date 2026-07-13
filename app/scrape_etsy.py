@@ -84,8 +84,15 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
 
         url = listing.get("url") or f"https://www.etsy.com/listing/{listing_id}"
 
+        # Etsy v3 may return images under MainImage or images[]
+        photo = None
         main_image = listing.get("MainImage") or {}
         photo = main_image.get("url_570xN") or main_image.get("url_fullxfull")
+        if not photo:
+            images = listing.get("images") or []
+            if images:
+                first = images[0] if isinstance(images[0], dict) else {}
+                photo = first.get("url_570xN") or first.get("url_fullxfull") or first.get("url_170x135")
 
         results.append({
             "title": listing.get("title") or query,
@@ -93,9 +100,10 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
             "url": url,
             "photo": photo,
             "source": "etsy",
-            "condition": None,  # Etsy doesn't have a standard condition field
+            "condition": None,
         })
 
     raw_count = len(data.get("results", []))
-    log.warning("[etsy] %r → %d raw / %d parsed", query, raw_count, len(results))
+    photos = sum(1 for r in results if r.get("photo"))
+    log.warning("[etsy] %r → %d raw / %d parsed / %d with photo", query, raw_count, len(results), photos)
     return results

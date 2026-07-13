@@ -21,9 +21,6 @@ from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query, parse_size_from_title
 from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts, alert_url_exists
-from app.vision import grade_condition
-
-_VISION_CAP = 5  # max new vision API calls per query per scan
 
 log = logging.getLogger(__name__)
 
@@ -164,7 +161,6 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
 
     all_listings = strict_listings + relaxed_listings
 
-    vision_calls = 0
     for listing in all_listings:
         price = listing.get("price") or 0
         if not price:
@@ -173,27 +169,18 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
         size = listing.get("size") or parse_size_from_title(listing.get("title", ""))
         score = _deal_score(price, casp or 0, size) if casp else 1
         if score >= 1:
-            vision_grade = vision_notes = None
-            photo = listing.get("photo")
-            # Only call vision for new listings not already in DB, capped per scan
-            if photo and not alert_url_exists(url) and vision_calls < _VISION_CAP:
-                result = grade_condition(photo)
-                vision_calls += 1
-                if result:
-                    vision_grade = result.get("grade")
-                    vision_notes = result.get("notes")
             insert_alert(
                 query=query,
                 source=listing["source"],
                 title=listing.get("title", ""),
                 price=price,
                 url=url,
-                photo=photo,
+                photo=listing.get("photo"),
                 casp=casp,
                 deal_score=score,
                 size=size,
-                vision_grade=vision_grade,
-                vision_notes=vision_notes,
+                vision_grade=None,
+                vision_notes=None,
             )
             saved += 1
 
