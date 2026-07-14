@@ -503,6 +503,7 @@ def create_app() -> Flask:
         from app.scrape_etsy import search_etsy
         from app.scrape_grailed import search_grailed
         from app.scrape_depop import search_depop
+        from app.scrape_ebay import search_ebay_active
 
         raw_query = request.args.get("query", "")
         if not raw_query:
@@ -521,7 +522,7 @@ def create_app() -> Flask:
 
         # Live platform listings — run in parallel threads to stay inside Render's 30s limit
         import concurrent.futures
-        grailed_results = depop_results = etsy_results = []
+        grailed_results = depop_results = etsy_results = ebay_results = []
         def _fetch_grailed():
             try: return search_grailed(query)
             except Exception as e: logging.getLogger(__name__).warning("[detail] grailed: %s", e); return []
@@ -531,18 +532,23 @@ def create_app() -> Flask:
         def _fetch_etsy():
             try: return search_etsy(query, timeout=8)
             except Exception as e: logging.getLogger(__name__).warning("[detail] etsy: %s", e); return []
-        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
+        def _fetch_ebay():
+            try: return search_ebay_active(query)
+            except Exception as e: logging.getLogger(__name__).warning("[detail] ebay-active: %s", e); return []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
             g_fut = ex.submit(_fetch_grailed)
             d_fut = ex.submit(_fetch_depop)
             e_fut = ex.submit(_fetch_etsy)
-            concurrent.futures.wait([g_fut, d_fut, e_fut], timeout=12)
+            b_fut = ex.submit(_fetch_ebay)
+            concurrent.futures.wait([g_fut, d_fut, e_fut, b_fut], timeout=12)
             grailed_results = g_fut.result() if g_fut.done() else []
             depop_results = d_fut.result() if d_fut.done() else []
             etsy_results = e_fut.result() if e_fut.done() else []
+            ebay_results = b_fut.result() if b_fut.done() else []
 
-        # Strict filter for Grailed (sellers use model codes); relaxed for Etsy/Depop
+        # Strict filter for Grailed + eBay (sellers use model codes); relaxed for Etsy/Depop
         listings = (
-            filter_comps(grailed_results, query, require_code=True)
+            filter_comps(grailed_results + ebay_results, query, require_code=True)
             + filter_comps(depop_results + etsy_results, query, require_code=False)
         )
 

@@ -20,7 +20,7 @@ from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query, parse_size_from_title
-from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts, alert_url_exists
+from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
 
 log = logging.getLogger(__name__)
 

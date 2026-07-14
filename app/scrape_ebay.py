@@ -321,21 +321,78 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     return comps
 
 
+def _ebay_market_insights_sold(query: str, max_results: int = 50) -> List[EbayComp]:
+    """
+    Use eBay Marketplace Insights API for sold comps.
+    Lives on api.ebay.com — same infra as Browse API, not blocked from Render.
+    Requires EBAY_APP_ID + EBAY_CERT_ID env vars.
+    """
+    token = _get_browse_token()
+    if not token:
+        raise RuntimeError("EBAY_CERT_ID not set — needed for Marketplace Insights API")
+    search_terms = f"carhartt {query}" if "carhartt" not in query.lower() else query
+    params = {"q": search_terms, "limit": str(min(max_results, 50))}
+    try:
+        r = requests.get(
+            "https://api.ebay.com/buy/marketplace_insights/v1_beta/item_sales/search",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+                "Content-Type": "application/json",
+            },
+            params=params,
+            timeout=15,
+        )
+        log.warning("[ebay-insights] GET → %d for %r", r.status_code, query)
+        if r.status_code != 200:
+            log.warning("[ebay-insights] %d %s", r.status_code, r.text[:300])
+            raise RuntimeError(f"eBay Marketplace Insights returned {r.status_code}")
+        data = r.json()
+    except requests.RequestException as e:
+        raise RuntimeError(f"eBay Marketplace Insights request error: {e}") from e
+    comps: List[EbayComp] = []
+    for item in data.get("itemSales", []):
+        try:
+            price_info = item.get("lastSoldPrice", {})
+            price = float(price_info.get("value", 0))
+            if not price:
+                continue
+            comps.append(EbayComp(
+                title=item.get("title", ""),
+                price=price,
+                currency=price_info.get("currency", "USD"),
+                shipping=None,
+                shipping_currency=None,
+                url=item.get("itemWebUrl", ""),
+                ended=item.get("lastSoldDate", ""),
+            ))
+        except Exception:
+            continue
+    log.warning("[ebay-insights] %r → %d sold comps", query, len(comps))
+    return comps
+
+
 def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
                      session: Optional[requests.Session] = None) -> List[EbayComp]:
-    # Try the official Finding API first — works from datacenter IPs
+    # Try Marketplace Insights first (api.ebay.com — works from Render IPs)
+    if os.environ.get("EBAY_CERT_ID"):
+        try:
+            comps = _ebay_market_insights_sold(query, max_results=pages * 50)
+            if comps:
+                return comps
+            log.warning("[ebay] Marketplace Insights returned 0 sold for %r", query)
+        except Exception as e:
+            log.warning("[ebay] Marketplace Insights failed for %r: %s", query, e)
+
+    # Fallback: Finding API (svcs.ebay.com — blocked from Render/AWS IPs)
     if os.environ.get("EBAY_APP_ID"):
-        log.info("[ebay] EBAY_APP_ID set — trying Finding API for %r", query)
         try:
             comps = _ebay_finding_api(query, max_results=pages * 50)
-            log.info("[ebay] Finding API returned %d comps for %r", len(comps), query)
             if comps:
                 return comps
             log.warning("[ebay] Finding API returned 0 results for %r", query)
         except Exception as e:
             log.warning("[ebay] Finding API failed for %r: %s", query, e)
-    else:
-        log.info("[ebay] EBAY_APP_ID not set — skipping Finding API for %r", query)
 
     # HTML scrape fallback (blocked from Render/AWS IPs without a proxy)
     s = session or _make_session()
@@ -380,7 +437,11 @@ def _get_browse_token() -> Optional[str]:
                 "Authorization": f"Basic {creds}",
                 "Content-Type": "application/x-www-form-urlencoded",
             },
-            data="grant_type=client_credentials&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope",
+            data=(
+                "grant_type=client_credentials"
+                "&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
+                "%20https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fbuy.marketplace.insights"
+            ),
             timeout=10,
         )
         if r.status_code != 200:
@@ -424,7 +485,7 @@ def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
             params=params,
             timeout=12,
         )
-        log.info("[ebay-browse] GET → %d for %r", r.status_code, query)
+        log.warning("[ebay-browse] GET → %d for %r", r.status_code, query)
         if r.status_code != 200:
             log.warning("[ebay-browse] %d %s", r.status_code, r.text[:200])
             return []
@@ -446,17 +507,24 @@ def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
                 sc = shipping_options[0].get("shippingCost", {})
                 ship_cost = float(sc.get("value", 0))
             image = item.get("image", {}).get("imageUrl")
+            # Parse size from localizedAspects (eBay Browse API field)
+            size = None
+            for aspect in item.get("localizedAspects", []):
+                if aspect.get("name", "").lower() == "size":
+                    size = aspect.get("value")
+                    break
             results.append({
                 "title": item.get("title", ""),
                 "price": price + ship_cost,
                 "url": item.get("itemWebUrl", ""),
                 "photo": image,
                 "source": "ebay",
+                "size": size,
             })
         except Exception:
             continue
 
-    log.info("[ebay-browse] %r → %d active listings", query, len(results))
+    log.warning("[ebay-browse] %r → %d active listings", query, len(results))
     return results
 
 
