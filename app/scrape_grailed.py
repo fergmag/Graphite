@@ -9,6 +9,7 @@ import logging
 from typing import Any, Dict, List
 
 import requests
+from app.filters import normalize_size
 
 log = logging.getLogger(__name__)
 
@@ -86,7 +87,7 @@ def search_grailed(query: str, limit: int = 20) -> List[Dict[str, Any]]:
             "photo": photo,
             "source": "grailed",
             "condition": condition,
-            "size": hit.get("size"),
+            "size": normalize_size(hit.get("size")),
         })
 
     log.info("[grailed] %r → %d listings", query, len(results))

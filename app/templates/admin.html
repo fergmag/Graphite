@@ -1007,10 +1007,20 @@
             return;
           }
           const _sizeMult = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
+          const _normSize = s => {
+            if (!s) return null;
+            const k = s.trim().toUpperCase().replace(/[-\s]/g, '');
+            if (k === 'XXL' || k === '2XL' || k === 'XXLARGE') return 'XXL';
+            if (k === 'XL' || k === 'XLARGE') return 'XL';
+            if (k === 'L' || k === 'LARGE') return 'L';
+            if (k === 'M' || k === 'MEDIUM') return 'M';
+            return null;
+          };
           list.innerHTML = data.alerts.map(a => {
-            const mult = _sizeMult[a.size] || 1.0;
+            const normSize = _normSize(a.size);
+            const mult = _sizeMult[normSize] || 1.0;
             const adjCasp = a.casp ? (a.casp * mult) : null;
-            const sizeLabel = a.size || 'M';
+            const sizeLabel = normSize || a.size || 'M';
             const caspLabel = adjCasp ? `${sizeLabel} CASP $${adjCasp.toFixed(0)}` : '';
             // Recalculate deal score client-side using size-adjusted CASP
             let score = a.deal_score;
@@ -1028,7 +1038,7 @@
                 <div style="font-size:12px;color:#fff;margin-bottom:6px;">${a.source.toUpperCase()} · ${a.query}</div>
                 <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
                   <span style="font-size:16px;font-weight:800;">$${(a.price||0).toFixed(2)}</span>
-                  ${a.size ? `<span style="font-size:11px;font-weight:800;background:#fff;color:#111;padding:2px 8px;border-radius:4px;">${a.size}</span>` : '<span style="font-size:10px;color:rgba(255,255,255,0.4);">size?</span>'}
+                  ${normSize ? `<span style="font-size:11px;font-weight:800;background:#fff;color:#111;padding:2px 8px;border-radius:4px;">${normSize}</span>` : '<span style="font-size:10px;color:rgba(255,255,255,0.4);">size?</span>'}
                   ${caspLabel ? `<span style="font-size:11px;color:rgba(255,255,255,0.6);">${caspLabel}</span>` : ''}
                   <span style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;background:${scoreBg};color:${scoreColor};">Deal ${score}/5</span>
                   <a href="${a.url}" target="_blank" rel="noopener" style="font-size:11px;color:#7eb8d4;text-decoration:none;font-weight:600;">View →</a>

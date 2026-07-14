@@ -325,11 +325,11 @@ def _ebay_market_insights_sold(query: str, max_results: int = 50) -> List[EbayCo
     """
     Use eBay Marketplace Insights API for sold comps.
     Lives on api.ebay.com — same infra as Browse API, not blocked from Render.
-    Requires EBAY_APP_ID + EBAY_CERT_ID env vars.
+    Requires EBAY_APP_ID + EBAY_CERT_ID env vars and buy.marketplace.insights scope.
     """
-    token = _get_browse_token()
+    token = _get_insights_token()
     if not token:
-        raise RuntimeError("EBAY_CERT_ID not set — needed for Marketplace Insights API")
+        raise RuntimeError("Could not get Marketplace Insights token (scope may not be granted)")
     search_terms = f"carhartt {query}" if "carhartt" not in query.lower() else query
     params = {"q": search_terms, "limit": str(min(max_results, 50))}
     try:
@@ -417,9 +417,16 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
     return unique
 
 _browse_token: dict = {"token": None, "expires_at": 0.0}
+_insights_token: dict = {"token": None, "expires_at": 0.0}
 
-def _get_browse_token() -> Optional[str]:
-    """Get or refresh an eBay OAuth application token for the Browse API."""
+_BROWSE_SCOPE = "https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
+_INSIGHTS_SCOPE = (
+    "https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
+    "%20https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fbuy.marketplace.insights"
+)
+
+
+def _fetch_ebay_token(cache: dict, scope: str) -> Optional[str]:
     import base64
     import time as _time
     app_id = os.environ.get("EBAY_APP_ID", "")
@@ -427,8 +434,8 @@ def _get_browse_token() -> Optional[str]:
     if not app_id or not cert_id:
         return None
     now = _time.time()
-    if _browse_token["token"] and now < _browse_token["expires_at"] - 60:
-        return _browse_token["token"]
+    if cache["token"] and now < cache["expires_at"] - 60:
+        return cache["token"]
     creds = base64.b64encode(f"{app_id}:{cert_id}".encode()).decode()
     try:
         r = requests.post(
@@ -437,24 +444,30 @@ def _get_browse_token() -> Optional[str]:
                 "Authorization": f"Basic {creds}",
                 "Content-Type": "application/x-www-form-urlencoded",
             },
-            data=(
-                "grant_type=client_credentials"
-                "&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
-                "%20https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fbuy.marketplace.insights"
-            ),
+            data=f"grant_type=client_credentials&scope={scope}",
             timeout=10,
         )
         if r.status_code != 200:
-            log.warning("[ebay-browse] token request failed: %d %s", r.status_code, r.text[:200])
+            log.warning("[ebay-token] failed: %d %s", r.status_code, r.text[:200])
             return None
         d = r.json()
-        _browse_token["token"] = d.get("access_token")
-        _browse_token["expires_at"] = now + int(d.get("expires_in", 7200))
-        log.info("[ebay-browse] got application token, expires in %ds", d.get("expires_in", 0))
-        return _browse_token["token"]
+        cache["token"] = d.get("access_token")
+        cache["expires_at"] = now + int(d.get("expires_in", 7200))
+        log.warning("[ebay-token] got token (scope len=%d), expires in %ds", len(scope), d.get("expires_in", 0))
+        return cache["token"]
     except Exception as e:
-        log.warning("[ebay-browse] token error: %s", e)
+        log.warning("[ebay-token] error: %s", e)
         return None
+
+
+def _get_browse_token() -> Optional[str]:
+    """Standard scope — Browse API active listings."""
+    return _fetch_ebay_token(_browse_token, _BROWSE_SCOPE)
+
+
+def _get_insights_token() -> Optional[str]:
+    """Marketplace Insights scope — for sold comps. Returns None if not granted."""
+    return _fetch_ebay_token(_insights_token, _INSIGHTS_SCOPE)
 
 
 def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
@@ -511,7 +524,8 @@ def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
             size = None
             for aspect in item.get("localizedAspects", []):
                 if aspect.get("name", "").lower() == "size":
-                    size = aspect.get("value")
+                    from app.filters import normalize_size as _ns
+                    size = _ns(aspect.get("value"))
                     break
             results.append({
                 "title": item.get("title", ""),

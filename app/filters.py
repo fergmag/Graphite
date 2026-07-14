@@ -118,11 +118,19 @@ _SIZE_TITLE_RE = re.compile(
     re.IGNORECASE,
 )
 _SIZE_TITLE_MAP = {
-    'xxl': 'XXL', '2xl': 'XXL', 'xx-large': 'XXL', 'xx large': 'XXL',
-    'x-large': 'XL', 'x large': 'XL', 'xl': 'XL',
-    'large': 'L',
-    'medium': 'M',
+    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', 'xx-large': 'XXL', 'xx large': 'XXL',
+    'x-large': 'XL', 'x large': 'XL', 'xl': 'XL', 'xlarge': 'XL',
+    'large': 'L', 'l': 'L',
+    'medium': 'M', 'm': 'M',
 }
+
+
+def normalize_size(s: Optional[str]) -> Optional[str]:
+    """Normalize a raw size string (e.g. 'l', 'Large', 'X-Large') to M/L/XL/XXL."""
+    if not s:
+        return None
+    key = s.strip().lower().replace('-', '').replace(' ', '')
+    return _SIZE_TITLE_MAP.get(key)
 
 
 def parse_size_from_title(title: str) -> Optional[str]:
