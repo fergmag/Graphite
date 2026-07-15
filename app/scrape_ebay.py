@@ -321,70 +321,9 @@ def _ebay_finding_api(query: str, max_results: int = 50) -> List[EbayComp]:
     return comps
 
 
-def _ebay_market_insights_sold(query: str, max_results: int = 50) -> List[EbayComp]:
-    """
-    Use eBay Marketplace Insights API for sold comps.
-    Lives on api.ebay.com — same infra as Browse API, not blocked from Render.
-    Requires EBAY_APP_ID + EBAY_CERT_ID env vars and buy.marketplace.insights scope.
-    """
-    token = _get_insights_token()
-    if not token:
-        raise RuntimeError("Could not get Marketplace Insights token (scope may not be granted)")
-    search_terms = f"carhartt {query}" if "carhartt" not in query.lower() else query
-    params = {"q": search_terms, "limit": str(min(max_results, 50))}
-    try:
-        r = requests.get(
-            "https://api.ebay.com/buy/marketplace_insights/v1_beta/item_sales/search",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
-                "Content-Type": "application/json",
-            },
-            params=params,
-            timeout=15,
-        )
-        log.warning("[ebay-insights] GET → %d for %r", r.status_code, query)
-        if r.status_code != 200:
-            log.warning("[ebay-insights] %d %s", r.status_code, r.text[:300])
-            raise RuntimeError(f"eBay Marketplace Insights returned {r.status_code}")
-        data = r.json()
-    except requests.RequestException as e:
-        raise RuntimeError(f"eBay Marketplace Insights request error: {e}") from e
-    comps: List[EbayComp] = []
-    for item in data.get("itemSales", []):
-        try:
-            price_info = item.get("lastSoldPrice", {})
-            price = float(price_info.get("value", 0))
-            if not price:
-                continue
-            comps.append(EbayComp(
-                title=item.get("title", ""),
-                price=price,
-                currency=price_info.get("currency", "USD"),
-                shipping=None,
-                shipping_currency=None,
-                url=item.get("itemWebUrl", ""),
-                ended=item.get("lastSoldDate", ""),
-            ))
-        except Exception:
-            continue
-    log.warning("[ebay-insights] %r → %d sold comps", query, len(comps))
-    return comps
-
-
 def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
                      session: Optional[requests.Session] = None) -> List[EbayComp]:
-    # Try Marketplace Insights first (api.ebay.com — works from Render IPs)
-    if os.environ.get("EBAY_CERT_ID"):
-        try:
-            comps = _ebay_market_insights_sold(query, max_results=pages * 50)
-            if comps:
-                return comps
-            log.warning("[ebay] Marketplace Insights returned 0 sold for %r", query)
-        except Exception as e:
-            log.warning("[ebay] Marketplace Insights failed for %r: %s", query, e)
-
-    # Fallback: Finding API (svcs.ebay.com — blocked from Render/AWS IPs)
+    # Finding API (svcs.ebay.com — blocked from Render/AWS IPs, kept as best-effort)
     if os.environ.get("EBAY_APP_ID"):
         try:
             comps = _ebay_finding_api(query, max_results=pages * 50)
@@ -417,13 +356,8 @@ def scrape_ebay_sold(query: str, pages: int = 1, delay: float = 1.0,
     return unique
 
 _browse_token: dict = {"token": None, "expires_at": 0.0}
-_insights_token: dict = {"token": None, "expires_at": 0.0}
 
 _BROWSE_SCOPE = "https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
-_INSIGHTS_SCOPE = (
-    "https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
-    "%20https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope%2Fbuy.marketplace.insights"
-)
 
 
 def _fetch_ebay_token(cache: dict, scope: str) -> Optional[str]:
@@ -461,13 +395,8 @@ def _fetch_ebay_token(cache: dict, scope: str) -> Optional[str]:
 
 
 def _get_browse_token() -> Optional[str]:
-    """Standard scope — Browse API active listings."""
+    """OAuth application token for Browse API (active listings)."""
     return _fetch_ebay_token(_browse_token, _BROWSE_SCOPE)
-
-
-def _get_insights_token() -> Optional[str]:
-    """Marketplace Insights scope — for sold comps. Returns None if not granted."""
-    return _fetch_ebay_token(_insights_token, _INSIGHTS_SCOPE)
 
 
 def search_ebay_active(query: str, max_results: int = 30) -> List[dict]:
