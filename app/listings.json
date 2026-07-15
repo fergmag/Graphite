@@ -36,7 +36,7 @@
   },
   {
     "id": "a890d975c4",
-    "title": "J97 PTL Medium",
+    "title": "J97 PTL",
     "size": "M",
     "price": 650.0,
     "description": "2000 J97 Petrol Detroit",
@@ -50,7 +50,7 @@
     "sold": false,
     "created_at": "2026-07-09",
     "position": 1,
-    "condition": null
+    "condition": ""
   },
   {
     "id": "b6ee1b362a",
