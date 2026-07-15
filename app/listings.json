@@ -1,5 +1,22 @@
 [
   {
+    "id": "7957ee2f6e",
+    "title": "CU1058 Cactus Unlined Chore",
+    "size": "M",
+    "price": 400.0,
+    "description": "1993 CU1058 Cactus Unlined Chore",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784102448/graphite/itowvqqdzweei4xqfohn.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784102451/graphite/r6tedj8zizrkcrhrw2l2.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784102454/graphite/ck7mt3gfohjs00red8eu.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784102456/graphite/klk9k23h83iflbmg4tbe.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-07-15",
+    "position": -1,
+    "condition": "8/10"
+  },
+  {
     "id": "9bcd01e56f",
     "title": "J43 CHT Medium",
     "size": "M",
