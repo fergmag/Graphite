@@ -88,9 +88,10 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
 
         url = listing.get("url") or f"https://www.etsy.com/listing/{listing_id}"
 
-        # Etsy v3 may return images under MainImage or images[]
+        # Etsy v3 API: includes[]=MainImage returns field as 'main_image' (snake_case),
+        # includes[]=Images returns field as 'images'. Check both name styles.
         photo = None
-        main_image = listing.get("MainImage") or {}
+        main_image = listing.get("main_image") or listing.get("MainImage") or {}
         photo = main_image.get("url_570xN") or main_image.get("url_fullxfull")
         if not photo:
             images = listing.get("images") or []
@@ -110,6 +111,9 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
     raw_count = len(data.get("results", []))
     photos = sum(1 for r in results if r.get("photo"))
     log.warning("[etsy] %r → %d raw / %d parsed / %d with photo", query, raw_count, len(results), photos)
+    if raw_count > 0 and photos == 0:
+        first_keys = sorted(data["results"][0].keys())
+        log.warning("[etsy] first listing keys (for photo debug): %s", first_keys)
 
     # If Etsy returned 0 results for a model-code query, retry with descriptive color terms.
     # Etsy sellers don't use model codes — "carhartt j97 moss" finds nothing,
@@ -150,7 +154,7 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
                             continue
                         url = listing.get("url") or f"https://www.etsy.com/listing/{listing_id}"
                         photo = None
-                        main_image = listing.get("MainImage") or {}
+                        main_image = listing.get("main_image") or listing.get("MainImage") or {}
                         photo = main_image.get("url_570xN") or main_image.get("url_fullxfull")
                         if not photo:
                             images = listing.get("images") or []
