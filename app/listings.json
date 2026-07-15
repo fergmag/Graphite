@@ -18,7 +18,7 @@
   },
   {
     "id": "9bcd01e56f",
-    "title": "J43 CHT Medium",
+    "title": "J43 CHT",
     "size": "M",
     "price": 650.0,
     "description": "1999 J43 Chestnut Detroit",
@@ -32,7 +32,7 @@
     "sold": false,
     "created_at": "2026-07-09",
     "position": 0,
-    "condition": null
+    "condition": ""
   },
   {
     "id": "a890d975c4",
