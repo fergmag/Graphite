@@ -424,7 +424,7 @@
         <div class="card">
           <h3 id="caspCardTitle">Estimated Value</h3>
           <p class="big" id="casp">$—</p>
-          <div class="sub" id="caspSub">Avg of recent eBay sold listings</div>
+          <div class="sub" id="caspSub">Median asking price — Grailed + eBay</div>
           <div id="givenPrice" style="display:none;margin-top:6px;font-size:11px;font-weight:700;color:#111;letter-spacing:0.03em;"></div>
         </div>
         <div class="card">
@@ -444,7 +444,7 @@
 
       <div class="chart-wrap" id="chartWrap">
         <div class="chart-header">
-          <span class="chart-title">Price History</span>
+          <span class="chart-title">Listing Price Index</span>
           <span class="chart-range" id="chartRange"></span>
         </div>
         <svg class="chart-svg" id="chartSvg" viewBox="0 0 600 80" preserveAspectRatio="none"></svg>
@@ -626,7 +626,7 @@
           $('casp').textContent = '$—'; $('acc').textContent = '—%';
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
-          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          $('caspSub').textContent = 'Median asking price — Grailed + eBay';
           if (titleEl) titleEl.textContent = 'Estimated Value';
           if (givenEl) givenEl.style.display = 'none';
           return;
@@ -639,14 +639,14 @@
         if (resp.is_manual) {
           // Show eBay scraped estimate as main; given price always as subtext
           $('casp').textContent = (n >= MIN_COMPS && ebayMedian) ? fmtMoney(ebayMedian) : '$—';
-          $('caspSub').textContent = n >= MIN_COMPS ? `Avg of ${n} recent eBay sold listings` : 'Not enough eBay data yet';
+          $('caspSub').textContent = n >= MIN_COMPS ? `Median of ${n} active listings` : 'Not enough market data yet';
           if (givenEl) {
             givenEl.style.display = 'block';
             givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
           }
         } else {
           $('casp').textContent = fmtMoney(pub.casp);
-          $('caspSub').textContent = 'Avg of recent eBay sold listings';
+          $('caspSub').textContent = 'Median asking price — Grailed + eBay';
           if (givenEl) givenEl.style.display = 'none';
         }
 

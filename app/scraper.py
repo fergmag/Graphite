@@ -79,16 +79,41 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
         normalized.append(nc)
 
     normalized = filter_comps(normalized, query)
+
+    # eBay sold comps are blocked from Render IPs (Finding API 503).
+    # Fall back to active listing prices (Grailed + eBay Browse) as the
+    # primary market signal for CASP and the price-history graph.
+    if not normalized:
+        log.warning("[scraper] %s — no sold comps, using active listing prices for CASP", query)
+        try:
+            for g in filter_comps(search_grailed(query), query, require_code=True):
+                if g.get("price"):
+                    normalized.append({"title": g.get("title", ""), "price": g["price"],
+                                       "url": g.get("url", ""), "source": "grailed"})
+        except Exception as e:
+            log.warning("[scraper] %s — grailed active: %s", query, e)
+        try:
+            for item in filter_comps(search_ebay_active(query), query, require_code=True):
+                if item.get("price"):
+                    normalized.append({"title": item.get("title", ""), "price": item["price"],
+                                       "url": item.get("url", ""), "source": "ebay"})
+        except Exception as e:
+            log.warning("[scraper] %s — ebay browse active: %s", query, e)
+        if normalized:
+            log.warning("[scraper] %s — CASP from %d active listing prices", query, len(normalized))
+
     prices = comps_to_prices(normalized, include_shipping=False)
     summary = summarize_prices(prices)
     summary_dict = to_dict(summary)
 
     casp = summary_dict.get("median")
-    if get_manual_casp_for_query:
+    # Manual CASP is a last-resort fallback — only used when no live market data available
+    if casp is None and get_manual_casp_for_query:
         try:
             override = get_manual_casp_for_query(query)
             if override is not None:
                 casp = override
+                log.warning("[scraper] %s — no market data, using manual CASP %.0f", query, casp)
         except Exception:
             pass
 
