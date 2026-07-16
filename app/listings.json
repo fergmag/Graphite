@@ -13,8 +13,8 @@
     ],
     "sold": true,
     "created_at": "2026-07-15",
-    "position": -1,
-    "condition": "8/10"
+    "position": 0,
+    "condition": null
   },
   {
     "id": "9bcd01e56f",
@@ -31,13 +31,13 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": 0,
-    "condition": ""
+    "position": 1,
+    "condition": null
   },
   {
     "id": "a890d975c4",
     "title": "J97 PTL",
-    "size": "M",
+    "size": "XL",
     "price": 650.0,
     "description": "2000 J97 Petrol Detroit",
     "photos": [
@@ -49,7 +49,7 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": 1,
+    "position": 2,
     "condition": ""
   },
   {
@@ -66,8 +66,8 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 2,
-    "condition": ""
+    "position": 3,
+    "condition": null
   },
   {
     "id": "d72a943788",
@@ -87,7 +87,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 3,
-    "condition": ""
+    "position": 4,
+    "condition": null
   }
 ]
