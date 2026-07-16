@@ -1,5 +1,21 @@
 [
   {
+    "id": 314,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vtg Carhartt Detroit Jacket J97 PTL Canvas Flannel Wool Lined Dark Petrol Grey",
+    "price": 292.99,
+    "url": "https://www.ebay.com/itm/398179489487?_skw=carhartt+j97+petrol&hash=item5cb558d6cf:g:sq8AAeSwNKlqWGOH",
+    "photo": "https://i.ebayimg.com/images/g/sq8AAeSwNKlqWGOH/s-l225.jpg",
+    "casp": 380.32,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-16T13:40:04.264612+00:00"
+  },
+  {
     "id": 313,
     "query": "j97 petrol",
     "source": "etsy",
