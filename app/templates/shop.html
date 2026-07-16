@@ -430,6 +430,7 @@
           <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
           <div class="sort-menu" id="sortMenu">
             <button class="sort-opt active" data-sort="newest">Newest first</button>
+            <button class="sort-opt" data-sort="oldest">Oldest first</button>
             <button class="sort-opt" data-sort="price-high">Price: high to low</button>
             <button class="sort-opt" data-sort="price-low">Price: low to high</button>
           </div>
@@ -502,6 +503,7 @@
         if (currentSize) items = items.filter(l => l.size === currentSize);
         if (currentSort === 'price-high') items.sort((a,b) => b.price - a.price);
         else if (currentSort === 'price-low') items.sort((a,b) => a.price - b.price);
+        else if (currentSort === 'oldest') items.sort((a,b) => new Date(a.created_at) - new Date(b.created_at));
         else items.sort((a,b) => new Date(b.created_at) - new Date(a.created_at));
         return items;
       }
@@ -770,7 +772,7 @@
           <div class="footer-acc-body">All sales are final.</div>
         </div>
       </div>
-      <div class="footer-copy">© Graphite Vintage</div>
+      <div class="footer-copy">© Graphite Vintage &nbsp;·&nbsp; Made with Claude</div>
     </footer>
   </body>
 </html>

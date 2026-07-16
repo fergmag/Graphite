@@ -10,7 +10,7 @@ in a separate batch call to getListings?listing_ids=...&includes[]=Images.
 import logging
 import os
 import re
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Optional
 
 import requests
 
@@ -49,31 +49,25 @@ def _parse_etsy_listings(raw: List[dict], query: str) -> Tuple[List[Dict[str, An
 
 def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> Dict[int, str]:
     """
-    Batch-fetch Etsy image URLs via getListings endpoint with includes[]=Images.
-    findAllListingsActive ignores includes[], so this is a required second call.
-    Returns {listing_id: photo_url}.
+    Fetch images per-listing via GET /listings/{id}?includes[]=Images.
+    The batch /listings?listing_ids= endpoint returns 404 from Etsy's API.
+    URL built manually so square brackets are NOT percent-encoded by requests.
+    Runs concurrently (max 5 workers), capped at first 15 listings.
     """
     if not listing_ids:
         return {}
-    try:
-        r = requests.get(
-            f"{_ETSY_BASE}/listings",
-            params=[
-                ("listing_ids", ",".join(listing_ids)),
-                ("includes[]", "Images"),
-                ("includes[]", "MainImage"),
-            ],
-            headers=headers,
-            timeout=timeout,
-        )
-        if r.status_code != 200:
-            log.warning("[etsy] image batch %d: %s", r.status_code, r.text[:100])
-            return {}
-        image_map: Dict[int, str] = {}
-        for item in r.json().get("results", []):
-            lid = item.get("listing_id")
-            if not lid:
-                continue
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from typing import Optional, Tuple
+
+    def fetch_one(lid: str) -> Optional[Tuple[int, str]]:
+        try:
+            # Build URL manually — requests.get(params=...) would encode [] to %5B%5D
+            url = f"{_ETSY_BASE}/listings/{lid}?includes[]=MainImage&includes[]=Images"
+            r = requests.get(url, headers=headers, timeout=timeout)
+            if r.status_code != 200:
+                return None
+            item = r.json()
             main_img = item.get("main_image") or item.get("MainImage") or {}
             photo = main_img.get("url_570xN") or main_img.get("url_fullxfull")
             if not photo:
@@ -82,13 +76,21 @@ def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> D
                         photo = img.get("url_570xN") or img.get("url_fullxfull")
                         if photo:
                             break
-            if photo:
-                image_map[lid] = photo
-        log.warning("[etsy] image batch: %d/%d with photo", len(image_map), len(listing_ids))
-        return image_map
-    except Exception as e:
-        log.warning("[etsy] image batch error: %s", e)
-        return {}
+            return (int(lid), photo) if photo else None
+        except Exception:
+            return None
+
+    ids_to_fetch = listing_ids[:15]
+    image_map: Dict[int, str] = {}
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(fetch_one, lid): lid for lid in ids_to_fetch}
+        for future in as_completed(futures):
+            result = future.result()
+            if result:
+                image_map[result[0]] = result[1]
+
+    log.warning("[etsy] image fetch: %d/%d with photo", len(image_map), len(ids_to_fetch))
+    return image_map
 
 
 def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str, Any]]:

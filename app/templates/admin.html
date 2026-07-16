@@ -637,13 +637,24 @@
         const n = resp.n || 0;
 
         if (resp.is_manual) {
-          // Show eBay scraped estimate as main; given price always as subtext
-          $('casp').textContent = (n >= MIN_COMPS && ebayMedian) ? fmtMoney(ebayMedian) : '$—';
-          $('caspSub').textContent = n >= MIN_COMPS ? `Median of ${n} active listings` : 'Not enough market data yet';
-          if (givenEl) {
-            givenEl.style.display = 'block';
-            givenEl.textContent = `Given price: ${fmtMoney(pub.casp)}`;
-          }
+          // Show size-adjusted target price
+          const _sm = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
+          const _ns = s => {
+            if (!s) return null;
+            const k = s.trim().toUpperCase().replace(/[-\s]/g,'');
+            if (k==='XXL'||k==='2XL') return 'XXL';
+            if (k==='XL'||k==='XLARGE') return 'XL';
+            if (k==='L'||k==='LARGE') return 'L';
+            if (k==='M'||k==='MEDIUM') return 'M';
+            return null;
+          };
+          const selSz = ($('sizeSelect') ? $('sizeSelect').value : '').trim();
+          const normSz = _ns(selSz);
+          const mult = (normSz && _sm[normSz]) ? _sm[normSz] : 1.0;
+          const adjCasp = pub.casp != null ? pub.casp * mult : null;
+          $('casp').textContent = fmtMoney(adjCasp);
+          $('caspSub').textContent = normSz ? `Your target price — size ${normSz}` : 'Your target price';
+          if (givenEl) givenEl.style.display = 'none';
         } else {
           $('casp').textContent = fmtMoney(pub.casp);
           $('caspSub').textContent = 'Median asking price — Grailed + eBay';

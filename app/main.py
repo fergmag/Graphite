@@ -15,7 +15,6 @@ from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 load_dotenv()
 
-from app.scrape_ebay import scrape_ebay_sold
 from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import read_cache, write_cache
 from app.public_view import build_public_payload, deal_score as _deal_score
@@ -1012,114 +1011,48 @@ def create_app() -> Flask:
                 except Exception:
                     pass
 
-        # live scrape
-        try:
-            comps = scrape_ebay_sold(query, pages=pages, delay=0.5)
-        except RuntimeError as e:
-            cached = read_cache(query) if use_cache else None
-            if cached and cached.get("payload"):
-                payload = cached["payload"]
-                return jsonify(
-                    {
-                        "ok": True,
-                        "platform": "ebay",
-                        "query": query,
-                        "from_cache": True,
-                        "cached_at": cached.get("cached_at"),
-                        "include_shipping": include_shipping,
-                        "note": "Live scrape failed; served last cached result.",
-                        "reason": str(e),
-                        **payload,
-                    }
-                ), 200
-
-            # No cache — try model profile as last resort
+        # No cache_first path — same fallback chain (eBay sold comps removed)
+        cached = read_cache(query) if use_cache else None
+        if cached and cached.get("payload"):
+            payload = cached["payload"]
+            pub = payload.get("public") or {}
+            casp = pub.get("casp")
+            is_manual = False
             if get_manual_casp_for_query:
                 try:
-                    profile_casp = get_manual_casp_for_query(query)
-                    if profile_casp is not None:
-                        public = build_public_payload(casp=profile_casp, confidence=0.0, asking=asking)
-                        return jsonify(
-                            {
-                                "ok": True,
-                                "platform": "ebay",
-                                "query": query,
-                                "from_cache": False,
-                                "n": 0,
-                                "public": public,
-                                "summary": None,
-                                "sample": [],
-                                "note": "Scrape failed; estimate from model profile only.",
-                                "reason": str(e),
-                            }
-                        ), 200
+                    is_manual = get_manual_casp_for_query(query) is not None
                 except Exception:
                     pass
+            if casp is not None and asking is not None:
+                size_param = (request.args.get("size") or "").strip().upper()
+                pub = build_public_payload(
+                    casp=float(casp),
+                    confidence=float(pub.get("confidence_raw") or payload.get("summary", {}).get("confidence") or 0.0),
+                )
+                score_casp = float(casp) * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else float(casp)
+                pub.update(_deal_score(score_casp, asking))
+                payload["public"] = pub
+            insert_estimate(query, public_payload=payload.get("public") or {}, summary_payload=payload.get("summary") or {})
+            return jsonify({"ok": True, "platform": "ebay", "query": query, "from_cache": True,
+                            "cached_at": cached.get("cached_at"), "is_manual": is_manual, **payload}), 200
 
-            return jsonify(
-                {
-                    "ok": False,
-                    "platform": "ebay",
-                    "query": query,
-                    "n": 0,
-                    "public": None,
-                    "summary": None,
-                    "sample": [],
-                    "reason": str(e),
-                    "hint": "Try again later, or reduce pages. eBay sometimes rate-limits automated requests.",
-                }
-            ), 503
-
-        # compute
-        comps_dicts = [c.__dict__ for c in comps]
-        normalized_comps = _normalize_comps(comps_dicts, source="ebay")
-        normalized_comps = filter_comps(normalized_comps, query)
-        prices = comps_to_prices(normalized_comps, include_shipping=include_shipping)
-        summary = summarize_prices(prices)
-        summary_dict = to_dict(summary)
-
-        casp = summary_dict.get("median")
-        is_manual = False
         if get_manual_casp_for_query:
             try:
-                override = get_manual_casp_for_query(query)
-                if override is not None:
-                    casp = override
-                    is_manual = True
+                profile_casp = get_manual_casp_for_query(query)
+                if profile_casp is not None:
+                    size_param = (request.args.get("size") or "").strip().upper()
+                    score_casp = profile_casp * _SIZE_MULT.get(size_param, 1.0) if size_param in _SIZE_MULT else profile_casp
+                    public = build_public_payload(casp=profile_casp, confidence=0.0)
+                    if asking is not None:
+                        public.update(_deal_score(score_casp, asking))
+                    insert_estimate(query, public_payload=public, summary_payload={})
+                    return jsonify({"ok": True, "platform": "ebay", "query": query, "from_cache": False,
+                                    "is_manual": True, "n": 0, "public": public, "summary": None, "sample": []}), 200
             except Exception:
                 pass
 
-        size_param = (request.args.get("size") or "").strip().upper()
-        public = build_public_payload(
-            casp=casp,
-            confidence=float(summary_dict.get("confidence") or 0.0),
-        )
-        if asking is not None and casp:
-            score_casp = casp * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else casp
-            public.update(_deal_score(score_casp, asking))
-
-        payload = {
-            "n": summary.n,
-            "public": public,
-            "summary": summary_dict,
-            "sample": normalized_comps[:5],
-        }
-
-        write_cache(query, payload)
-        insert_comps(query, normalized_comps)
-        insert_estimate(query, public_payload=public, summary_payload=summary_dict)
-
-        return jsonify(
-            {
-                "ok": True,
-                "platform": "ebay",
-                "query": query,
-                "from_cache": False,
-                "include_shipping": include_shipping,
-                "is_manual": is_manual,
-                **payload,
-            }
-        ), 200
+        return jsonify({"ok": False, "platform": "ebay", "query": query, "n": 0,
+                        "public": None, "reason": "No estimate available for this model."}), 404
 
     # ── Background scheduler ──
     # Guard: in Flask debug mode the reloader forks a child process; only start

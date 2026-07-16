@@ -1,22 +1,23 @@
 """
-scraper.py — background scrape-and-save logic.
+scraper.py — background watchlist refresh and deal-alert scanning.
 
-Extracted from the /estimate route so it can be called by the APScheduler
-job without going through HTTP.  The scheduler lives in main.py.
+scrape_and_save: writes the manual CASP from models.json to cache + DB each
+refresh cycle. This is what populates the price-history graph.
+
+scan_platforms_for_query: scans Grailed, eBay Browse, Depop, Etsy, Whatnot
+for active listings and saves any good deals as alerts.
 """
 
 import logging
-import re
 import time
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
-from app.scrape_ebay import scrape_ebay_sold, search_ebay_active, _make_session
+from app.scrape_ebay import search_ebay_active
 from app.scrape_depop import search_depop
 from app.scrape_grailed import search_grailed
 from app.scrape_etsy import search_etsy
 from app.scrape_whatnot import search_whatnot
-from app.pricing import comps_to_prices, summarize_prices, to_dict
 from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query, parse_size_from_title
@@ -29,118 +30,40 @@ try:
 except Exception:
     get_manual_casp_for_query = None  # type: ignore
 
-# ── In-memory state (resets on process restart, good enough) ──
 _last_ran_at: Optional[str] = None
 _last_summary: Dict[str, Any] = {}
 
 
-def _normalize_comp(c: Dict[str, Any], source: str) -> Dict[str, Any]:
-    url = c.get("url")
-    m = re.search(r"/itm/(?:[^/]+/)?(\d+)", url or "")
-    listing_id = c.get("listing_id") or (m.group(1) if m else None)
-    return {
-        "title": c.get("title"),
-        "price": c.get("price"),
-        "shipping": c.get("shipping"),
-        "currency": c.get("currency") or c.get("shipping_currency"),
-        "url": url,
-        "ended": c.get("ended"),
-        "ended_at": c.get("ended_at") or c.get("ended"),
-        "source": source,
-        "model_guess": c.get("model_guess"),
-        "listing_id": listing_id,
-    }
-
-
 def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     """
-    Scrape eBay for one query, compute CASP, write to cache + DB.
-    Returns a small result dict (ok, n, casp, reason).
+    Write a CASP data point from models.json to the cache + DB.
+    Builds the price-history graph. session param unused; kept for compatibility.
     """
     query = normalize_query(raw_query)
-    raw_comps = []
-    ebay_error = None
-    try:
-        raw_comps = scrape_ebay_sold(query, pages=1, delay=0.5, session=session)
-    except RuntimeError as e:
-        ebay_error = str(e)
-        log.warning("[scraper] %s — eBay scrape failed: %s", query, e)
 
-    # Normalise + dedupe
-    seen: set = set()
-    normalized: List[Dict[str, Any]] = []
-    for c in raw_comps:
-        nc = _normalize_comp(c.__dict__, "ebay")
-        key = nc.get("listing_id") or nc.get("url")
-        if key and key in seen:
-            continue
-        if key:
-            seen.add(key)
-        normalized.append(nc)
-
-    normalized = filter_comps(normalized, query)
-
-    # eBay sold comps are blocked from Render IPs (Finding API 503).
-    # Fall back to active listing prices (Grailed + eBay Browse) as the
-    # primary market signal for CASP and the price-history graph.
-    if not normalized:
-        log.warning("[scraper] %s — no sold comps, using active listing prices for CASP", query)
+    casp = None
+    if get_manual_casp_for_query:
         try:
-            for g in filter_comps(search_grailed(query), query, require_code=True):
-                if g.get("price"):
-                    normalized.append({"title": g.get("title", ""), "price": g["price"],
-                                       "url": g.get("url", ""), "source": "grailed"})
-        except Exception as e:
-            log.warning("[scraper] %s — grailed active: %s", query, e)
-        try:
-            for item in filter_comps(search_ebay_active(query), query, require_code=True):
-                if item.get("price"):
-                    normalized.append({"title": item.get("title", ""), "price": item["price"],
-                                       "url": item.get("url", ""), "source": "ebay"})
-        except Exception as e:
-            log.warning("[scraper] %s — ebay browse active: %s", query, e)
-        if normalized:
-            log.warning("[scraper] %s — CASP from %d active listing prices", query, len(normalized))
-
-    prices = comps_to_prices(normalized, include_shipping=False)
-    summary = summarize_prices(prices)
-    summary_dict = to_dict(summary)
-
-    casp = summary_dict.get("median")
-    # Manual CASP is a last-resort fallback — only used when no live market data available
-    if casp is None and get_manual_casp_for_query:
-        try:
-            override = get_manual_casp_for_query(query)
-            if override is not None:
-                casp = override
-                log.warning("[scraper] %s — no market data, using manual CASP %.0f", query, casp)
+            casp = get_manual_casp_for_query(query)
         except Exception:
             pass
 
-    public = build_public_payload(
-        casp=casp,
-        confidence=float(summary_dict.get("confidence") or 0.0),
-    )
-    payload = {
-        "n": summary.n,
-        "public": public,
-        "summary": summary_dict,
-        "sample": normalized[:5],
+    if casp is None:
+        log.warning("[scraper] %s — no manual CASP configured, skipping", query)
+        return {"query": query, "ok": False, "reason": "no manual CASP configured"}
+
+    summary_dict: Dict[str, Any] = {
+        "median": casp, "confidence": 1.0, "n": 0, "mean": casp, "trimmed_mean": casp,
     }
+    public = build_public_payload(casp=casp, confidence=1.0)
+    payload = {"n": 0, "public": public, "summary": summary_dict, "sample": []}
 
     write_cache(query, payload)
-    insert_comps(query, normalized)
+    insert_comps(query, [])
     insert_estimate(query, public_payload=public, summary_payload=summary_dict)
 
-    # If eBay failed and we got no comps, only proceed if we have a manual CASP
-    if not normalized and ebay_error:
-        if casp is None:
-            return {"query": query, "ok": False, "reason": ebay_error}
-        log.info("[scraper] %s — eBay failed but manual CASP=%.0f, proceeding with platform scan", query, casp)
-        return {"query": query, "ok": True, "n": 0, "casp": casp}
-
-    log.info("[scraper] %s — n=%d casp=%s", query, summary.n, casp)
-    return {"query": query, "ok": True, "n": summary.n, "casp": casp}
+    log.warning("[scraper] %s — wrote manual CASP=%.0f", query, casp)
+    return {"query": query, "ok": True, "n": 0, "casp": casp}
 
 
 _SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
@@ -165,8 +88,8 @@ def _deal_score(price: float, casp: float, size: Optional[str] = None) -> int:
 
 def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     """
-    Search Depop, Grailed, and Etsy for active listings matching query.
-    Saves any listing with deal_score >= 3 as an alert.
+    Search all platforms for active listings matching query.
+    Saves any listing as an alert (deal_score >= 1 always saves for visibility).
     Returns count of alerts saved.
     """
     saved = 0
@@ -177,16 +100,14 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     strict_listings.extend(search_grailed(query))
     strict_listings = filter_comps(strict_listings, query, require_code=True)
 
-    # Platforms with targeted search (already sent "carhartt {query}") → junk filter only
+    # Platforms with targeted search (query already sent as "carhartt X") → junk filter only
     relaxed_listings: List[Dict[str, Any]] = []
     relaxed_listings.extend(search_depop(query))
     relaxed_listings.extend(search_etsy(query))
     relaxed_listings.extend(search_whatnot(query))
     relaxed_listings = filter_comps(relaxed_listings, query, require_code=False)
 
-    all_listings = strict_listings + relaxed_listings
-
-    for listing in all_listings:
+    for listing in strict_listings + relaxed_listings:
         price = listing.get("price") or 0
         if not price:
             continue
@@ -212,19 +133,16 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     return saved
 
 
-def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
+def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
     """
-    Iterate every watchlist query, scrape and save each one.
-    Called by the APScheduler job and the manual /admin/refresh-now endpoint.
-    delay_seconds: pause between queries to avoid eBay rate-limits.
+    Iterate every watchlist query, write CASP data point and scan for deals.
+    5s delay between queries — polite to Grailed/Etsy but fast enough for the
+    6h APScheduler interval to work without overlapping runs.
     """
     global _last_ran_at, _last_summary
 
     queries = list_watches()
     log.info("[scheduler] Starting refresh — %d queries", len(queries))
-
-    # One shared session per refresh run — keeps cookies across queries
-    sess = _make_session()
 
     clear_old_alerts(days=30)
 
@@ -232,7 +150,7 @@ def refresh_all_watchlist(delay_seconds: float = 55.0) -> Dict[str, Any]:
     fail_count = 0
     alerts_saved = 0
     for i, q in enumerate(queries):
-        result = scrape_and_save(q, session=sess)
+        result = scrape_and_save(q)
         if result["ok"]:
             ok_count += 1
             casp = result.get("casp")
