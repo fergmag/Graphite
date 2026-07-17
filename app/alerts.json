@@ -1,5 +1,21 @@
 [
   {
+    "id": 315,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket | Blanket Lined Duck Canvas Workwear Coat",
+    "price": 141.0,
+    "url": "https://www.etsy.com/listing/4538084917/vintage-carhartt-detroit-jacket-blanket",
+    "photo": "https://i.etsystatic.com/66956129/r/il/a60bf3/8301584359/il_570xN.8301584359_9d2v.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-17T11:36:28.182248+00:00"
+  },
+  {
     "id": 1,
     "query": "j97 petrol",
     "source": "ebay",
