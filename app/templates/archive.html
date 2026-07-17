@@ -61,6 +61,17 @@
         .page-content { padding: 40px 16px 80px; }
         .photo-grid { grid-template-columns: repeat(2, 1fr); }
       }
+      .site-footer { background: var(--bg-header); border-top: 1px solid var(--line); padding: 40px 40px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-start; }
+      .footer-col { display: flex; flex-direction: column; gap: 8px; }
+      .footer-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #ffffff; margin-bottom: 4px; }
+      .footer-accordion { border: 1px solid rgba(0,0,0,0.15); border-radius: 10px; overflow: hidden; min-width: 220px; }
+      .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: #ffffff; border: none; color: #111111; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+      .footer-acc-arrow { transition: transform 0.22s ease; display: inline-block; }
+      .footer-acc-btn.open .footer-acc-arrow { transform: rotate(180deg); }
+      .footer-acc-body { overflow: hidden; max-height: 0; opacity: 0; padding: 0 14px; font-size: 13px; color: #111111; line-height: 1.6; max-width: 280px; background: #ffffff; transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease; }
+      .footer-acc-body.open { max-height: 200px; opacity: 1; padding: 10px 14px; }
+      .footer-copy { font-size: 11px; color: #ffffff; align-self: flex-end; }
+      @media (max-width: 600px) { .site-footer { padding: 32px 20px; gap: 24px; } .footer-copy { width: 100%; } }
     </style>
   </head>
   <body>
@@ -111,6 +122,23 @@
       {% endif %}
     </div>
 
+    <footer class="site-footer">
+      <div class="footer-col">
+        <div class="footer-label">Shipping Policy</div>
+        <div class="footer-accordion">
+          <button class="footer-acc-btn" onclick="toggleAccordion(this)">Shipping <span class="footer-acc-arrow">▾</span></button>
+          <div class="footer-acc-body">All orders are shipped with Canada Post, unless contacted for a different shipping arrangement at the buyer's expense. Import duties, taxes, and customs fees at the destination are the sole responsibility of the buyer. We are not responsible for delays or fees imposed by customs. NO DUTIES OR TAX VIA DM.</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-label">Return Policy</div>
+        <div class="footer-accordion">
+          <button class="footer-acc-btn" onclick="toggleAccordion(this)">Returns <span class="footer-acc-arrow">▾</span></button>
+          <div class="footer-acc-body">All sales are final.</div>
+        </div>
+      </div>
+      <div class="footer-copy">© Graphite Vintage &nbsp;·&nbsp; <a href="https://www.instagram.com/graphitevintage/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:0.65;">report errors @graphitevintage</a></div>
+    </footer>
     <script>
       function toggleEntry(id) {
         const body = document.getElementById(id);
@@ -118,6 +146,13 @@
         const arr  = document.getElementById('arr-' + idx);
         const open = body.classList.toggle('open');
         arr.classList.toggle('open', open);
+      }
+      function toggleAccordion(btn) {
+        const body = btn.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        document.querySelectorAll('.footer-acc-btn').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.footer-acc-body').forEach(b => b.classList.remove('open'));
+        if (!isOpen) { btn.classList.add('open'); body.classList.add('open'); }
       }
     </script>
   </body>

@@ -943,26 +943,22 @@ def create_app() -> Flask:
             cached = read_cache(query)
             if cached and cached.get("payload"):
                 payload = cached["payload"]
-                # If asking is provided, recompute deal score using cached CASP
                 pub = payload.get("public") or {}
-                casp = pub.get("casp")
-                is_manual = False
-                if get_manual_casp_for_query:
-                    try:
-                        is_manual = get_manual_casp_for_query(query) is not None
-                    except Exception:
-                        pass
+                casp = pub.get("casp")  # market CASP — for display only
+                summary = payload.get("summary") or {}
+                manual_casp_cached = summary.get("manual_casp")
+                is_manual = manual_casp_cached is not None
                 if casp is not None and asking is not None:
                     size_param = (request.args.get("size") or "").strip().upper()
                     pub = build_public_payload(
                         casp=float(casp),
-                        confidence=float(pub.get("confidence_raw") or payload.get("summary", {}).get("confidence") or 0.0),
+                        confidence=float(pub.get("confidence_raw") or summary.get("confidence") or 0.0),
                     )
-                    score_casp = float(casp) * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else float(casp)
+                    # Deal score uses manual CASP × size mult (not the market median)
+                    score_base = float(manual_casp_cached) if manual_casp_cached else float(casp)
+                    score_casp = score_base * _SIZE_MULT.get(size_param, 1.0) if size_param in _SIZE_MULT else score_base
                     pub.update(_deal_score(score_casp, asking))
                     payload["public"] = pub
-                # Record history even from cache so chart populates on manual queries
-                insert_estimate(query, public_payload=payload.get("public") or {}, summary_payload=payload.get("summary") or {})
                 return jsonify(
                     {
                         "ok": True,
@@ -1016,23 +1012,20 @@ def create_app() -> Flask:
         if cached and cached.get("payload"):
             payload = cached["payload"]
             pub = payload.get("public") or {}
-            casp = pub.get("casp")
-            is_manual = False
-            if get_manual_casp_for_query:
-                try:
-                    is_manual = get_manual_casp_for_query(query) is not None
-                except Exception:
-                    pass
+            casp = pub.get("casp")  # market CASP — for display only
+            summary = payload.get("summary") or {}
+            manual_casp_cached = summary.get("manual_casp")
+            is_manual = manual_casp_cached is not None
             if casp is not None and asking is not None:
                 size_param = (request.args.get("size") or "").strip().upper()
                 pub = build_public_payload(
                     casp=float(casp),
-                    confidence=float(pub.get("confidence_raw") or payload.get("summary", {}).get("confidence") or 0.0),
+                    confidence=float(pub.get("confidence_raw") or summary.get("confidence") or 0.0),
                 )
-                score_casp = float(casp) * _SIZE_MULT.get(size_param, 1.0) if is_manual and size_param in _SIZE_MULT else float(casp)
+                score_base = float(manual_casp_cached) if manual_casp_cached else float(casp)
+                score_casp = score_base * _SIZE_MULT.get(size_param, 1.0) if size_param in _SIZE_MULT else score_base
                 pub.update(_deal_score(score_casp, asking))
                 payload["public"] = pub
-            insert_estimate(query, public_payload=payload.get("public") or {}, summary_payload=payload.get("summary") or {})
             return jsonify({"ok": True, "platform": "ebay", "query": query, "from_cache": True,
                             "cached_at": cached.get("cached_at"), "is_manual": is_manual, **payload}), 200
 

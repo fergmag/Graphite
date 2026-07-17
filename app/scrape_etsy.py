@@ -49,10 +49,8 @@ def _parse_etsy_listings(raw: List[dict], query: str) -> Tuple[List[Dict[str, An
 
 def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> Dict[int, str]:
     """
-    Fetch images per-listing via GET /listings/{id}?includes[]=Images.
-    The batch /listings?listing_ids= endpoint returns 404 from Etsy's API.
-    URL built manually so square brackets are NOT percent-encoded by requests.
-    Runs concurrently (max 5 workers), capped at first 15 listings.
+    Fetch images via GET /listings/{id}/images — the dedicated image endpoint.
+    Returns first image URL per listing. Runs concurrently, capped at 15.
     """
     if not listing_ids:
         return {}
@@ -62,21 +60,19 @@ def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> D
 
     def fetch_one(lid: str) -> Optional[Tuple[int, str]]:
         try:
-            # Build URL manually — requests.get(params=...) would encode [] to %5B%5D
-            url = f"{_ETSY_BASE}/listings/{lid}?includes[]=MainImage&includes[]=Images"
+            url = f"{_ETSY_BASE}/listings/{lid}/images"
             r = requests.get(url, headers=headers, timeout=timeout)
             if r.status_code != 200:
+                log.warning("[etsy] /images %s → %d", lid, r.status_code)
                 return None
-            item = r.json()
-            main_img = item.get("main_image") or item.get("MainImage") or {}
-            photo = main_img.get("url_570xN") or main_img.get("url_fullxfull")
-            if not photo:
-                for img in (item.get("images") or item.get("listing_images") or []):
-                    if isinstance(img, dict):
-                        photo = img.get("url_570xN") or img.get("url_fullxfull")
-                        if photo:
-                            break
-            return (int(lid), photo) if photo else None
+            images = r.json().get("results", [])
+            for img in images:
+                if not isinstance(img, dict):
+                    continue
+                photo = img.get("url_570xN") or img.get("url_fullxfull") or img.get("url_170x135")
+                if photo:
+                    return (int(lid), photo)
+            return None
         except Exception:
             return None
 

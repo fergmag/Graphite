@@ -99,6 +99,9 @@ def search_ebay_active(query: str, max_results: int = 30) -> List[Dict[str, Any]
     for item in data.get("itemSummaries", []):
         try:
             price_info = item.get("price", {})
+            # Skip non-USD listings — Browse API returns CAD/GBP/etc. from international sellers
+            if price_info.get("currency") not in ("USD", None):
+                continue
             price = float(price_info.get("value", 0))
             if not price:
                 continue

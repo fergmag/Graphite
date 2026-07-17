@@ -133,8 +133,9 @@
 
       .status { margin-top: 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; color: #ffffff; font-size: 13px; }
 
-      .chart-wrap { margin-top: 20px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; display: none; }
+      .chart-wrap { margin-top: 20px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; display: none; position: relative; }
       .chart-wrap.visible { display: block; }
+      .chart-tooltip { position: absolute; background: rgba(0,0,0,0.88); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.03em; padding: 5px 10px; border-radius: 6px; pointer-events: none; display: none; white-space: nowrap; z-index: 20; transform: translateX(-50%); }
       .chart-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 10px; }
       .chart-title { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg); }
       .chart-range { font-size: 11px; color: var(--fg); }
@@ -443,6 +444,7 @@
       <div class="status" id="status">Status: Ready</div>
 
       <div class="chart-wrap" id="chartWrap">
+        <div class="chart-tooltip" id="chartTooltip"></div>
         <div class="chart-header">
           <span class="chart-title">Listing Price Index</span>
           <span class="chart-range" id="chartRange"></span>
@@ -636,30 +638,10 @@
         const ebayMedian = resp.summary && resp.summary.median;
         const n = resp.n || 0;
 
-        if (resp.is_manual) {
-          // Show size-adjusted target price
-          const _sm = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
-          const _ns = s => {
-            if (!s) return null;
-            const k = s.trim().toUpperCase().replace(/[-\s]/g,'');
-            if (k==='XXL'||k==='2XL') return 'XXL';
-            if (k==='XL'||k==='XLARGE') return 'XL';
-            if (k==='L'||k==='LARGE') return 'L';
-            if (k==='M'||k==='MEDIUM') return 'M';
-            return null;
-          };
-          const selSz = ($('sizeSelect') ? $('sizeSelect').value : '').trim();
-          const normSz = _ns(selSz);
-          const mult = (normSz && _sm[normSz]) ? _sm[normSz] : 1.0;
-          const adjCasp = pub.casp != null ? pub.casp * mult : null;
-          $('casp').textContent = fmtMoney(adjCasp);
-          $('caspSub').textContent = normSz ? `Your target price — size ${normSz}` : 'Your target price';
-          if (givenEl) givenEl.style.display = 'none';
-        } else {
-          $('casp').textContent = fmtMoney(pub.casp);
-          $('caspSub').textContent = 'Median asking price — Grailed + eBay';
-          if (givenEl) givenEl.style.display = 'none';
-        }
+        $('casp').textContent = fmtMoney(pub.casp);
+        const n = resp.n || 0;
+        $('caspSub').textContent = n > 0 ? `Median of ${n} active listings — Grailed + eBay` : 'Active listing prices — Grailed + eBay';
+        if (givenEl) givenEl.style.display = 'none';
 
         $('acc').textContent = `${pub.accuracy_pct ?? '—'}%`;
         $('accLabel').textContent = pub.accuracy_label ?? '—';
@@ -855,13 +837,35 @@
         line.setAttribute('stroke-linejoin', 'round');
         svg.appendChild(line);
 
-        // end dot
-        const dot = document.createElementNS(ns, 'circle');
-        dot.setAttribute('cx', toX(history2.length-1).toFixed(1));
-        dot.setAttribute('cy', toY(history2[history2.length-1].casp).toFixed(1));
-        dot.setAttribute('r', '3');
-        dot.setAttribute('fill', '#ffffff');
-        svg.appendChild(dot);
+        // dots + hover targets at each data point
+        const tooltip = $('chartTooltip');
+        const fmtDt = iso => new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        history2.forEach((d, i) => {
+          const cx = toX(i), cy = toY(d.casp);
+          const dot = document.createElementNS(ns, 'circle');
+          dot.setAttribute('cx', cx.toFixed(1)); dot.setAttribute('cy', cy.toFixed(1));
+          dot.setAttribute('r', i === history2.length-1 ? '4' : '2.5');
+          dot.setAttribute('fill', '#ffffff');
+          dot.setAttribute('opacity', i === history2.length-1 ? '1' : '0.5');
+          svg.appendChild(dot);
+          const hit = document.createElementNS(ns, 'circle');
+          hit.setAttribute('cx', cx.toFixed(1)); hit.setAttribute('cy', cy.toFixed(1));
+          hit.setAttribute('r', '14'); hit.setAttribute('fill', 'transparent');
+          hit.style.cursor = 'pointer';
+          hit.addEventListener('mouseenter', () => {
+            if (!tooltip) return;
+            const svgRect = svg.getBoundingClientRect();
+            const wrapRect = $('chartWrap').getBoundingClientRect();
+            const xInWrap = (cx / (W + LEFT)) * svgRect.width + (svgRect.left - wrapRect.left);
+            const yInWrap = (cy / H) * svgRect.height + (svgRect.top - wrapRect.top);
+            tooltip.textContent = `${fmtDt(d.created_at)} · $${d.casp.toFixed(0)}`;
+            tooltip.style.display = 'block';
+            tooltip.style.left = `${xInWrap}px`;
+            tooltip.style.top = `${yInWrap - 34}px`;
+          });
+          hit.addEventListener('mouseleave', () => { if (tooltip) tooltip.style.display = 'none'; });
+          svg.appendChild(hit);
+        });
 
         // range label
         const lastCasp = history[history.length - 1].casp;

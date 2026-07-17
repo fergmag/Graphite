@@ -36,34 +36,69 @@ _last_summary: Dict[str, Any] = {}
 
 def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
     """
-    Write a CASP data point from models.json to the cache + DB.
-    Builds the price-history graph. session param unused; kept for compatibility.
+    Per refresh cycle:
+    - Fetch active Grailed + eBay listings → market_casp for display
+    - Write manual CASP from models.json to the graph (DB estimates)
+    - Cache market_casp (shown as Estimated Value) + manual_casp in summary (for deal scoring)
     """
     query = normalize_query(raw_query)
 
-    casp = None
+    # Manual CASP: flat reference price from models.json (for graph + deal scoring)
+    manual_casp: Optional[float] = None
     if get_manual_casp_for_query:
         try:
-            casp = get_manual_casp_for_query(query)
+            manual_casp = get_manual_casp_for_query(query)
         except Exception:
             pass
 
-    if casp is None:
-        log.warning("[scraper] %s — no manual CASP configured, skipping", query)
-        return {"query": query, "ok": False, "reason": "no manual CASP configured"}
+    # Market CASP: median of active Grailed + eBay Browse listings (for display)
+    active: List[Dict[str, Any]] = []
+    try:
+        for g in filter_comps(search_grailed(query), query, require_code=True):
+            if g.get("price"):
+                active.append(g)
+    except Exception as e:
+        log.warning("[scraper] %s — grailed: %s", query, e)
+    try:
+        for item in filter_comps(search_ebay_active(query), query, require_code=True):
+            if item.get("price"):
+                active.append(item)
+    except Exception as e:
+        log.warning("[scraper] %s — ebay active: %s", query, e)
 
+    prices = sorted(c["price"] for c in active if c.get("price"))
+    market_casp: Optional[float] = prices[len(prices) // 2] if prices else None
+
+    if manual_casp is None and market_casp is None:
+        log.warning("[scraper] %s — no CASP available, skipping", query)
+        return {"query": query, "ok": False, "reason": "no CASP available"}
+
+    # Graph always gets manual CASP so the history line is stable (not market noise)
+    graph_casp = manual_casp or market_casp
+    graph_public = build_public_payload(casp=graph_casp, confidence=1.0)
+    insert_estimate(query, public_payload=graph_public, summary_payload={"median": graph_casp, "confidence": 1.0, "n": 0})
+
+    # Cache stores market_casp for Estimated Value display; manual_casp for deal scoring
+    display_casp = market_casp or manual_casp
+    confidence = min(1.0, len(prices) / 10.0) if prices else 0.0
+    display_public = build_public_payload(casp=display_casp, confidence=confidence)
     summary_dict: Dict[str, Any] = {
-        "median": casp, "confidence": 1.0, "n": 0, "mean": casp, "trimmed_mean": casp,
+        "median": display_casp,
+        "confidence": confidence,
+        "n": len(active),
+        "manual_casp": manual_casp,
     }
-    public = build_public_payload(casp=casp, confidence=1.0)
-    payload = {"n": 0, "public": public, "summary": summary_dict, "sample": []}
-
+    payload: Dict[str, Any] = {
+        "n": len(active),
+        "public": display_public,
+        "summary": summary_dict,
+        "sample": active[:5],
+    }
     write_cache(query, payload)
-    insert_comps(query, [])
-    insert_estimate(query, public_payload=public, summary_payload=summary_dict)
+    insert_comps(query, active)
 
-    log.warning("[scraper] %s — wrote manual CASP=%.0f", query, casp)
-    return {"query": query, "ok": True, "n": 0, "casp": casp}
+    log.warning("[scraper] %s — market=%.0f (n=%d), manual=%s → graph", query, display_casp or 0, len(active), manual_casp)
+    return {"query": query, "ok": True, "n": len(active), "casp": display_casp, "manual_casp": manual_casp}
 
 
 _SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
@@ -153,7 +188,8 @@ def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
         result = scrape_and_save(q)
         if result["ok"]:
             ok_count += 1
-            casp = result.get("casp")
+            # Deal scoring uses manual CASP (owner's reference price), not the market median
+            casp = result.get("manual_casp") or result.get("casp")
             try:
                 n = scan_platforms_for_query(q, casp)
                 alerts_saved += n
