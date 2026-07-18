@@ -1,5 +1,21 @@
 [
   {
+    "id": 321,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Jacket Mens 2XL Hunter Green Canvas Blanket Lined USA Made J43HTG",
+    "price": 482.94,
+    "url": "https://www.ebay.com/itm/227436902013?_skw=carhartt+j43+hunter+green&hash=item34f44bb67d:g:ywgAAeSwms5qW7Su",
+    "photo": "https://i.ebayimg.com/images/g/ywgAAeSwms5qW7Su/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-18T23:37:36.310420+00:00"
+  },
+  {
     "id": 320,
     "query": "j76 moss",
     "source": "grailed",
