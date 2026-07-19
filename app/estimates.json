@@ -66,12 +66,6 @@
     "created_at": "2026-07-01T14:36:07.118711+00:00"
   },
   {
-    "query": "jb0817",
-    "casp": 900.0,
-    "accuracy_pct": 0,
-    "created_at": "2026-07-01T20:11:53.819567+00:00"
-  },
-  {
     "query": "j97 burgundy",
     "casp": 900.0,
     "accuracy_pct": 0,
@@ -7870,5 +7864,167 @@
     "casp": 700.0,
     "accuracy_pct": 100,
     "created_at": "2026-07-19T05:38:04.494705+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:09.768129+00:00"
+  },
+  {
+    "query": "jb0873",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:18.296882+00:00"
+  },
+  {
+    "query": "jb0866",
+    "casp": 750.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:26.877606+00:00"
+  },
+  {
+    "query": "j65 brick",
+    "casp": 2500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:35.904470+00:00"
+  },
+  {
+    "query": "j65 blue",
+    "casp": 2500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:42.895050+00:00"
+  },
+  {
+    "query": "js1237",
+    "casp": 2000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:34:51.786243+00:00"
+  },
+  {
+    "query": "js1236",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:00.407912+00:00"
+  },
+  {
+    "query": "js1235",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:09.414475+00:00"
+  },
+  {
+    "query": "js1207",
+    "casp": 500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:18.220801+00:00"
+  },
+  {
+    "query": "jr0115",
+    "casp": 500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:27.157692+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:36.081687+00:00"
+  },
+  {
+    "query": "jq2472",
+    "casp": 850.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:43.130803+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 550.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:35:51.838415+00:00"
+  },
+  {
+    "query": "ju1005",
+    "casp": 1500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:00.667283+00:00"
+  },
+  {
+    "query": "j97 crimson",
+    "casp": 2700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:10.046092+00:00"
+  },
+  {
+    "query": "j97 moss",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:19.875675+00:00"
+  },
+  {
+    "query": "j97 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:34.106995+00:00"
+  },
+  {
+    "query": "j97 petrol",
+    "casp": 600.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:43.273442+00:00"
+  },
+  {
+    "query": "j97 timber",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:36:53.646895+00:00"
+  },
+  {
+    "query": "j43 chestnut",
+    "casp": 600.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:02.428617+00:00"
+  },
+  {
+    "query": "j43 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:11.716155+00:00"
+  },
+  {
+    "query": "j43 onyx",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:20.680825+00:00"
+  },
+  {
+    "query": "j43 hunter green",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:30.122195+00:00"
+  },
+  {
+    "query": "jb1236",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:39.821692+00:00"
+  },
+  {
+    "query": "jb1215",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:48.971666+00:00"
+  },
+  {
+    "query": "j76 moss",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:37:57.730975+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T11:38:07.493268+00:00"
   }
 ]
