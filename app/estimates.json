@@ -108,12 +108,6 @@
     "created_at": "2026-07-02T14:37:57.615220+00:00"
   },
   {
-    "query": "jb0817",
-    "casp": 900.0,
-    "accuracy_pct": 0,
-    "created_at": "2026-07-02T20:11:54.017066+00:00"
-  },
-  {
     "query": "j110 darkstone",
     "casp": 800.0,
     "accuracy_pct": 0,
@@ -8026,5 +8020,167 @@
     "casp": 700.0,
     "accuracy_pct": 100,
     "created_at": "2026-07-19T11:38:07.493268+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:09.949211+00:00"
+  },
+  {
+    "query": "jb0873",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:19.259439+00:00"
+  },
+  {
+    "query": "jb0866",
+    "casp": 750.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:28.810531+00:00"
+  },
+  {
+    "query": "j65 brick",
+    "casp": 2500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:38.071309+00:00"
+  },
+  {
+    "query": "j65 blue",
+    "casp": 2500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:45.520713+00:00"
+  },
+  {
+    "query": "js1237",
+    "casp": 2000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:34:54.695082+00:00"
+  },
+  {
+    "query": "js1236",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:03.760539+00:00"
+  },
+  {
+    "query": "js1235",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:13.730273+00:00"
+  },
+  {
+    "query": "js1207",
+    "casp": 500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:22.914818+00:00"
+  },
+  {
+    "query": "jr0115",
+    "casp": 500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:31.453431+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:40.098829+00:00"
+  },
+  {
+    "query": "jq2472",
+    "casp": 850.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:47.441198+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 550.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:35:56.162620+00:00"
+  },
+  {
+    "query": "ju1005",
+    "casp": 1500.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:04.981527+00:00"
+  },
+  {
+    "query": "j97 crimson",
+    "casp": 2700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:13.675260+00:00"
+  },
+  {
+    "query": "j97 moss",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:23.776533+00:00"
+  },
+  {
+    "query": "j97 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:37.468149+00:00"
+  },
+  {
+    "query": "j97 petrol",
+    "casp": 600.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:46.514255+00:00"
+  },
+  {
+    "query": "j97 timber",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:36:57.528063+00:00"
+  },
+  {
+    "query": "j43 chestnut",
+    "casp": 600.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:06.501102+00:00"
+  },
+  {
+    "query": "j43 burgundy",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:15.658224+00:00"
+  },
+  {
+    "query": "j43 onyx",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:24.993612+00:00"
+  },
+  {
+    "query": "j43 hunter green",
+    "casp": 900.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:33.905673+00:00"
+  },
+  {
+    "query": "jb1236",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:43.425226+00:00"
+  },
+  {
+    "query": "jb1215",
+    "casp": 1000.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:37:53.291695+00:00"
+  },
+  {
+    "query": "j76 moss",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:38:02.617160+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 700.0,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-19T17:38:11.423140+00:00"
   }
 ]
