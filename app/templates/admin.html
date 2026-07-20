@@ -635,11 +635,9 @@
         }
 
         if (titleEl) titleEl.textContent = 'Estimated Value';
-        const ebayMedian = resp.summary && resp.summary.median;
         const n = resp.n || 0;
 
         $('casp').textContent = fmtMoney(pub.casp);
-        const n = resp.n || 0;
         $('caspSub').textContent = n > 0 ? `Median of ${n} active listings — Grailed + eBay` : 'Active listing prices — Grailed + eBay';
         if (givenEl) givenEl.style.display = 'none';
 
