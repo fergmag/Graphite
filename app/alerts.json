@@ -1,5 +1,21 @@
 [
   {
+    "id": 331,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Carhartt J97 PTL Detroit Jacket Petrol Grey S",
+    "price": 155.0,
+    "url": "https://www.grailed.com/listings/101279043",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/f0e36888647141bbb81ff8d66a21dc99",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-21T17:41:11.185676+00:00"
+  },
+  {
     "id": 330,
     "query": "j76 moss",
     "source": "grailed",
