@@ -509,12 +509,15 @@ def create_app() -> Flask:
             return jsonify({"ok": False, "error": "Missing query"}), 400
         query = normalize_query(raw_query)
 
-        # CASP from cache (fast, no live scrape)
-        cached = read_cache(query) or {}
-        public = cached.get("public") or {}
-        casp = public.get("casp")
+        # CASP from cache — fix: payload is nested under "payload" key
+        _cached_raw = read_cache(query) or {}
+        _cached_payload = _cached_raw.get("payload") or {}
+        public = _cached_payload.get("public") or {}
+        casp = public.get("casp")         # market CASP — for display
         accuracy = public.get("accuracy_pct")
-        n = cached.get("n")
+        n = _cached_payload.get("n")
+        # manual_casp from models.json is stored in summary; use it for deal scoring
+        manual_casp_score = (_cached_payload.get("summary") or {}).get("manual_casp") or casp
 
         # History from DB
         history = get_casp_history(query, limit=60)
@@ -551,13 +554,14 @@ def create_app() -> Flask:
             + filter_comps(depop_results + etsy_results, query, require_code=False)
         )
 
-        # Score each listing against size-adjusted CASP
+        # Score each listing against size-adjusted manual CASP (owner's reference price)
         _SMULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
 
         def _score(price, size=None):
-            if not casp or casp <= 0:
+            base = manual_casp_score
+            if not base or base <= 0:
                 return 0
-            adjusted = casp * _SMULT.get(size or "", 1.0)
+            adjusted = base * _SMULT.get(size or "", 1.0)
             r = price / adjusted
             if r <= 0.50: return 5
             if r <= 0.65: return 4
@@ -570,13 +574,14 @@ def create_app() -> Flask:
             lst["size"] = sz
             lst["deal_score"] = _score(lst.get("price") or 0, sz)
 
-        # Sort best deals first
+        # Default sort: best deals first
         listings.sort(key=lambda x: x.get("deal_score", 0), reverse=True)
 
         return jsonify({
             "ok": True,
             "query": query,
             "casp": casp,
+            "manual_casp": manual_casp_score,
             "accuracy": accuracy,
             "n": n,
             "history": history,

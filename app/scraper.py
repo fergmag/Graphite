@@ -67,7 +67,7 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
         log.warning("[scraper] %s — ebay active: %s", query, e)
 
     prices = sorted(c["price"] for c in active if c.get("price"))
-    market_casp: Optional[float] = prices[len(prices) // 2] if prices else None
+    market_casp: Optional[float] = sum(prices) / len(prices) if prices else None
 
     if manual_casp is None and market_casp is None:
         log.warning("[scraper] %s — no CASP available, skipping", query)
