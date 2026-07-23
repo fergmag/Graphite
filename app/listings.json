@@ -1,5 +1,23 @@
 [
   {
+    "id": "fd65784866",
+    "title": "J43 HTG",
+    "size": "M",
+    "price": 850.0,
+    "description": "1998 J43 Hunter Green Detroit",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784773556/graphite/genctdhhvdthlf0snvhg.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784773557/graphite/ufaxlfmodcnrnp04amdg.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784773558/graphite/m0jfanrmx7ndzodnawx0.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784773559/graphite/ib9wjb8zr59eebbituwz.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1784773560/graphite/cz3a4txceyqtxyt8kgy8.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-07-23",
+    "position": -1,
+    "condition": "6/10"
+  },
+  {
     "id": "7957ee2f6e",
     "title": "CU1058 Cactus",
     "size": "M",
@@ -50,7 +68,7 @@
     "sold": false,
     "created_at": "2026-07-09",
     "position": 2,
-    "condition": ""
+    "condition": null
   },
   {
     "id": "b6ee1b362a",
