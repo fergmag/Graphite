@@ -949,6 +949,17 @@
       let _allListings = [];
       let _listingsCasp = null;
       let _currentSort = 'deal';
+      let _modelsMap = {};
+      let _currentQuery = '';
+
+      async function _loadModels() {
+        try {
+          const { data } = await getJSON('/api/models');
+          if (data && data.ok && data.models) {
+            data.models.forEach(m => { if (m.key && m.casp) _modelsMap[m.key] = m.casp; });
+          }
+        } catch(e) {}
+      }
 
       function _normSz(s) {
         if (!s) return null;
@@ -978,12 +989,15 @@
         const sources = [...new Set(sorted.map(l => l.source))];
         srcLabel.textContent = `${sorted.length} listing${sorted.length===1?'':'s'} · ${sources.join(', ')}`;
 
+        const _smult = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
+        const manualCasp = _modelsMap[_currentQuery] || _listingsCasp;
         grid.innerHTML = sorted.map(l => {
           const score = l.deal_score || 0;
           const bgCol = SCORE_COLORS[score] || 'rgba(255,255,255,0.08)';
           const txCol = SCORE_TEXT[score] || 'rgba(255,255,255,0.5)';
-          const pct = _listingsCasp && l.price ? Math.round((1 - l.price/_listingsCasp)*100) : null;
-          const saveBadge = pct > 0 ? `<span style="font-size:10px;font-weight:700;color:#6fcf97;">−${pct}% vs market</span>` : '';
+          const normSz = _normSz(l.size || '');
+          const adjCasp = manualCasp ? manualCasp * (_smult[normSz] || 1.0) : null;
+          const caspTag = adjCasp ? `<span style="font-size:10px;color:rgba(255,255,255,0.6);font-weight:600;">${normSz||'M'} CASP $${adjCasp.toFixed(0)}</span>` : '';
           const scoreLabel = `<span style="font-size:10px;font-weight:800;padding:2px 7px;border-radius:4px;background:${bgCol};color:${txCol};">Deal ${score}/5</span>`;
           return `
             <a href="${l.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
@@ -991,12 +1005,14 @@
                 ${l.photo ? `<img src="${l.photo}" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;" loading="lazy" />` : '<div style="width:100%;aspect-ratio:1/1;background:rgba(255,255,255,0.05);display:flex;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.3);">No photo</div>'}
                 <div style="padding:10px 12px;">
                   <div style="font-size:12px;font-weight:700;line-height:1.3;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${l.title || '—'}</div>
-                  <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap;">
+                  <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px;">
                     <span style="font-size:16px;font-weight:800;">$${(l.price||0).toFixed(2)}</span>
                     ${scoreLabel}
                   </div>
-                  ${saveBadge}
-                  <div style="font-size:10px;color:rgba(255,255,255,0.6);margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.size ? ' · ' + l.size : ''}</div>
+                  <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+                    ${caspTag}
+                    <span style="font-size:10px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.size ? ' · ' + l.size : ''}</span>
+                  </div>
                 </div>
               </div>
             </a>
@@ -1036,6 +1052,7 @@
           return;
         }
 
+        _currentQuery = query;
         _listingsCasp = data.casp;
         let listings = data.listings || [];
 
@@ -1088,14 +1105,6 @@
             if (k === 'M' || k === 'MEDIUM') return 'M';
             return null;
           };
-          // Load models.json CASPs so all alerts for the same model show consistent CASP
-          let _modelsMap = {};
-          try {
-            const { data: mData } = await getJSON('/api/models');
-            if (mData && mData.ok && mData.models) {
-              mData.models.forEach(m => { if (m.key && m.casp) _modelsMap[m.key] = m.casp; });
-            }
-          } catch(e) {}
           list.innerHTML = data.alerts.map(a => {
             const normSize = _normSize(a.size);
             const mult = _sizeMult[normSize] || 1.0;
@@ -1143,6 +1152,7 @@
       });
 
       loadBellCount();
+      _loadModels();
 
       // ── Custom Dropdowns ──
       function initCustDD(dd) {

@@ -70,6 +70,7 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
 
     prices = sorted(c["price"] for c in active if c.get("price"))
     market_casp: Optional[float] = sum(prices) / len(prices) if prices else None
+    confidence = min(1.0, len(prices) / 10.0) if prices else 0.0
 
     if manual_casp is None and market_casp is None:
         log.warning("[scraper] %s — no CASP available, skipping", query)
@@ -83,7 +84,6 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
 
     # Cache stores market_casp for Estimated Value display; manual_casp for deal scoring
     display_casp = market_casp or manual_casp
-    confidence = min(1.0, len(prices) / 10.0) if prices else 0.0
     display_public = build_public_payload(casp=display_casp, confidence=confidence)
     summary_dict: Dict[str, Any] = {
         "median": display_casp,
