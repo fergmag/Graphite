@@ -503,6 +503,8 @@ def create_app() -> Flask:
         from app.scrape_grailed import search_grailed
         from app.scrape_depop import search_depop
         from app.scrape_ebay import search_ebay_active
+        from app.scrape_whatnot import search_whatnot
+        from app.db import get_alerts as _get_stored_alerts
 
         raw_query = request.args.get("query", "")
         if not raw_query:
@@ -531,7 +533,7 @@ def create_app() -> Flask:
 
         # Live platform listings — run in parallel threads to stay inside Render's 30s limit
         import concurrent.futures
-        grailed_results = depop_results = etsy_results = ebay_results = []
+        grailed_results = depop_results = etsy_results = ebay_results = whatnot_results = []
         def _fetch_grailed():
             try: return search_grailed(query)
             except Exception as e: logging.getLogger(__name__).warning("[detail] grailed: %s", e); return []
@@ -544,23 +546,48 @@ def create_app() -> Flask:
         def _fetch_ebay():
             try: return search_ebay_active(query)
             except Exception as e: logging.getLogger(__name__).warning("[detail] ebay-active: %s", e); return []
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
+        def _fetch_whatnot():
+            try: return search_whatnot(query)
+            except Exception as e: logging.getLogger(__name__).warning("[detail] whatnot: %s", e); return []
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:
             g_fut = ex.submit(_fetch_grailed)
             d_fut = ex.submit(_fetch_depop)
             e_fut = ex.submit(_fetch_etsy)
             b_fut = ex.submit(_fetch_ebay)
-            concurrent.futures.wait([g_fut, d_fut, e_fut, b_fut], timeout=12)
+            w_fut = ex.submit(_fetch_whatnot)
+            concurrent.futures.wait([g_fut, d_fut, e_fut, b_fut, w_fut], timeout=20)
             grailed_results = g_fut.result() if g_fut.done() else []
             depop_results = d_fut.result() if d_fut.done() else []
             etsy_results = e_fut.result() if e_fut.done() else []
             ebay_results = b_fut.result() if b_fut.done() else []
+            whatnot_results = w_fut.result() if w_fut.done() else []
 
         # All platforms use relaxed filter — search query is already specific enough,
         # and strict code filter removes most results since sellers rarely put codes in titles
         listings = filter_comps(
-            grailed_results + ebay_results + depop_results + etsy_results,
+            grailed_results + ebay_results + depop_results + etsy_results + whatnot_results,
             query, require_code=False
         )
+
+        # Merge stored DB alerts (from past scheduler scans) so Get Estimate shows same
+        # listings as bell notifs — live results take priority when URL matches
+        try:
+            stored_alerts = _get_stored_alerts(query=query, limit=200)
+            live_urls = {l["url"] for l in listings if l.get("url")}
+            for a in stored_alerts:
+                if a.get("url") and a["url"] not in live_urls and a.get("price"):
+                    listings.append({
+                        "title": a.get("title", ""),
+                        "price": a.get("price", 0),
+                        "url": a["url"],
+                        "photo": a.get("photo"),
+                        "source": a.get("source", ""),
+                        "size": a.get("size"),
+                        "deal_score": None,
+                    })
+                    live_urls.add(a["url"])
+        except Exception as e:
+            logging.getLogger(__name__).warning("[detail] stored alerts merge: %s", e)
 
         # Score each listing against size-adjusted manual CASP (owner's reference price)
         _SMULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}

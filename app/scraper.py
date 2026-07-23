@@ -182,7 +182,7 @@ def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
     queries = list_watches()
     log.info("[scheduler] Starting refresh — %d queries", len(queries))
 
-    clear_old_alerts(days=30)
+    clear_old_alerts(days=7)
 
     ok_count = 0
     fail_count = 0

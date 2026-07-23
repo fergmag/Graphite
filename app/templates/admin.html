@@ -1088,10 +1088,19 @@
             if (k === 'M' || k === 'MEDIUM') return 'M';
             return null;
           };
+          // Load models.json CASPs so all alerts for the same model show consistent CASP
+          let _modelsMap = {};
+          try {
+            const { data: mData } = await getJSON('/api/models');
+            if (mData && mData.ok && mData.models) {
+              mData.models.forEach(m => { if (m.key && m.casp) _modelsMap[m.key] = m.casp; });
+            }
+          } catch(e) {}
           list.innerHTML = data.alerts.map(a => {
             const normSize = _normSize(a.size);
             const mult = _sizeMult[normSize] || 1.0;
-            const adjCasp = a.casp ? (a.casp * mult) : null;
+            const canonicalCasp = _modelsMap[a.query] || a.casp;
+            const adjCasp = canonicalCasp ? (canonicalCasp * mult) : null;
             const sizeLabel = normSize || a.size || 'M';
             const caspLabel = adjCasp ? `${sizeLabel} CASP $${adjCasp.toFixed(0)}` : '';
             // Recalculate deal score client-side using size-adjusted CASP
