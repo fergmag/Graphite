@@ -51,16 +51,18 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
         except Exception:
             pass
 
-    # Market CASP: median of active Grailed + eBay Browse listings (for display)
+    # Market CASP: mean of active Grailed + eBay Browse listings (for display)
+    # Use require_code=False — search query is already specific; strict code filter
+    # removes most listings since Grailed/eBay sellers rarely put model codes in titles
     active: List[Dict[str, Any]] = []
     try:
-        for g in filter_comps(search_grailed(query), query, require_code=True):
+        for g in filter_comps(search_grailed(query), query, require_code=False):
             if g.get("price"):
                 active.append(g)
     except Exception as e:
         log.warning("[scraper] %s — grailed: %s", query, e)
     try:
-        for item in filter_comps(search_ebay_active(query), query, require_code=True):
+        for item in filter_comps(search_ebay_active(query), query, require_code=False):
             if item.get("price"):
                 active.append(item)
     except Exception as e:
@@ -73,10 +75,11 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
         log.warning("[scraper] %s — no CASP available, skipping", query)
         return {"query": query, "ok": False, "reason": "no CASP available"}
 
-    # Graph always gets manual CASP so the history line is stable (not market noise)
-    graph_casp = manual_casp or market_casp
-    graph_public = build_public_payload(casp=graph_casp, confidence=1.0)
-    insert_estimate(query, public_payload=graph_public, summary_payload={"median": graph_casp, "confidence": 1.0, "n": 0})
+    # Graph gets market CASP so the chart shows real price trends over time.
+    # Falls back to manual CASP if no market data was found this run.
+    graph_casp = market_casp or manual_casp
+    graph_public = build_public_payload(casp=graph_casp, confidence=confidence)
+    insert_estimate(query, public_payload=graph_public, summary_payload={"median": graph_casp, "confidence": confidence, "n": len(active)})
 
     # Cache stores market_casp for Estimated Value display; manual_casp for deal scoring
     display_casp = market_casp or manual_casp

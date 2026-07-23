@@ -17,6 +17,7 @@
         --line:      rgba(255,255,255,0.18);
       }
 
+      html, body { overflow-x: hidden; }
       body {
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
         margin: 0; padding: 0;
@@ -281,7 +282,6 @@
         font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;
         background: #f0f0f0; color: #333; border-radius: 6px; flex-shrink: 0;
       }
-      .modal-condition { font-size: 12px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #777; }
       .modal-desc { font-size: 13px; color: #555; line-height: 1.6; }
       .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
       .btn-stripe {
@@ -456,7 +456,6 @@
             <div class="modal-price" id="modalPrice"></div>
             <span class="modal-size-badge" id="modalSize"></span>
           </div>
-          <div class="modal-condition"  id="modalCondition"></div>
           <div class="modal-desc"      id="modalDesc"></div>
           <div class="modal-breakdown" id="modalBreakdown"></div>
           <div class="modal-actions"   id="modalActions"></div>
@@ -633,9 +632,6 @@
         document.getElementById('modalTitle').textContent = listing.title;
         document.getElementById('modalPrice').textContent = fmt(listing.price);
         document.getElementById('modalSize').textContent  = listing.size;
-        const condEl = document.getElementById('modalCondition');
-        condEl.textContent   = listing.condition ? `Condition: ${listing.condition}` : '';
-        condEl.style.display = listing.condition ? 'block' : 'none';
         const descEl = document.getElementById('modalDesc');
         descEl.textContent   = listing.description || '';
         descEl.style.display = listing.description ? 'block' : 'none';

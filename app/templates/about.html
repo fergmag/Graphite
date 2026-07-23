@@ -10,6 +10,7 @@
     <style>
       *, *::before, *::after { box-sizing: border-box; }
       :root { --bg-page: #283238; --bg-header: #1c2528; --bg-light: #2f3c42; --fg: #ffffff; --line: rgba(255,255,255,0.18); }
+      html, body { overflow-x: hidden; }
       body { font-family: 'Inter', system-ui, -apple-system, sans-serif; margin: 0; padding: 0; color: var(--fg); background-color: var(--bg-page); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E"); min-height: 100vh; }
       .site-header { position: sticky; top: 0; z-index: 100; }
       .ticker-wrap { overflow: hidden; white-space: nowrap; background: var(--bg-light); border-bottom: 1px solid var(--line); padding: 7px 0; }

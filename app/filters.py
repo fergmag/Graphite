@@ -113,16 +113,25 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
 
 # ── Size parsing from listing titles ─────────────────────────────────────────
 
-_SIZE_TITLE_RE = re.compile(
-    r'\b(?:size\s+)?(xxl|2xl|xx-large|xx\s+large|x-large|x\s+large|xl|large|medium)\b',
-    re.IGNORECASE,
-)
 _SIZE_TITLE_MAP = {
-    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', 'xx-large': 'XXL', 'xx large': 'XXL',
-    'x-large': 'XL', 'x large': 'XL', 'xl': 'XL', 'xlarge': 'XL',
+    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', 'xxlarge': 'XXL',
+    'xlarge': 'XL', 'xl': 'XL',
     'large': 'L', 'l': 'L',
     'medium': 'M', 'm': 'M',
 }
+
+# Ordered from most-specific to least to avoid 'XL' matching inside 'XXL'
+_SIZE_TITLE_RE = re.compile(
+    # "size XXL", "size: XL", "sz M" — prefixed by size/sz keyword
+    r'\b(?:size|sz)[:\s]+?(xxl|2xl|xx-?large|xl|x-?large|large|medium|[ml])\b'
+    # (XXL), (XL), (M), (L) — parenthesized
+    r'|\((xxl|2xl|xx-?large|xl|x-?large|large|medium|[ml])\)'
+    # full words without prefix
+    r'|\b(xxl|2xl|xx-?large|xl|x-?large|large|medium)\b'
+    # standalone M or L at a word boundary (last resort — most ambiguous)
+    r'|\b([ML])\b',
+    re.IGNORECASE,
+)
 
 
 def normalize_size(s: Optional[str]) -> Optional[str]:
@@ -138,5 +147,8 @@ def parse_size_from_title(title: str) -> Optional[str]:
     m = _SIZE_TITLE_RE.search(title or '')
     if not m:
         return None
-    key = m.group(1).lower().replace('-', '').replace(' ', '')
+    raw = next((g for g in m.groups() if g is not None), None)
+    if not raw:
+        return None
+    key = raw.lower().replace('-', '').replace(' ', '')
     return _SIZE_TITLE_MAP.get(key)

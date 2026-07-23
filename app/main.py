@@ -509,15 +509,22 @@ def create_app() -> Flask:
             return jsonify({"ok": False, "error": "Missing query"}), 400
         query = normalize_query(raw_query)
 
-        # CASP from cache — fix: payload is nested under "payload" key
+        # CASP from cache (payload is nested under "payload" key)
         _cached_raw = read_cache(query) or {}
         _cached_payload = _cached_raw.get("payload") or {}
         public = _cached_payload.get("public") or {}
         casp = public.get("casp")         # market CASP — for display
         accuracy = public.get("accuracy_pct")
         n = _cached_payload.get("n")
-        # manual_casp from models.json is stored in summary; use it for deal scoring
-        manual_casp_score = (_cached_payload.get("summary") or {}).get("manual_casp") or casp
+        # manual_casp from models.json stored in summary; fallback to direct lookup when cache is cold
+        manual_casp_score = (_cached_payload.get("summary") or {}).get("manual_casp")
+        if not manual_casp_score and get_manual_casp_for_query:
+            try:
+                manual_casp_score = get_manual_casp_for_query(query)
+            except Exception:
+                pass
+        if not manual_casp_score:
+            manual_casp_score = casp
 
         # History from DB
         history = get_casp_history(query, limit=60)
@@ -548,10 +555,11 @@ def create_app() -> Flask:
             etsy_results = e_fut.result() if e_fut.done() else []
             ebay_results = b_fut.result() if b_fut.done() else []
 
-        # Strict filter for Grailed + eBay (sellers use model codes); relaxed for Etsy/Depop
-        listings = (
-            filter_comps(grailed_results + ebay_results, query, require_code=True)
-            + filter_comps(depop_results + etsy_results, query, require_code=False)
+        # All platforms use relaxed filter — search query is already specific enough,
+        # and strict code filter removes most results since sellers rarely put codes in titles
+        listings = filter_comps(
+            grailed_results + ebay_results + depop_results + etsy_results,
+            query, require_code=False
         )
 
         # Score each listing against size-adjusted manual CASP (owner's reference price)

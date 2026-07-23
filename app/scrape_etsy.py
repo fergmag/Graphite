@@ -20,9 +20,25 @@ _ETSY_BASE = "https://openapi.etsy.com/v3/application"
 _MODEL_CODE_RE = re.compile(r'\b(?:carhartt\s+)?[a-z]{1,3}\d{3,5}\b', re.IGNORECASE)
 
 
+def _extract_inline_photo(listing: dict) -> Optional[str]:
+    """Pull image URL from inline includes[] data if Etsy returned it."""
+    main = listing.get("main_image") or listing.get("MainImage") or {}
+    if main:
+        return main.get("url_570xN") or main.get("url_fullxfull") or main.get("url_170x135")
+    for key in ("images", "listing_images", "Images"):
+        imgs = listing.get(key)
+        if imgs and isinstance(imgs, list):
+            for img in imgs:
+                if isinstance(img, dict):
+                    url = img.get("url_570xN") or img.get("url_fullxfull") or img.get("url_170x135")
+                    if url:
+                        return url
+    return None
+
+
 def _parse_etsy_listings(raw: List[dict], query: str) -> Tuple[List[Dict[str, Any]], List[str]]:
-    """Parse raw Etsy listing dicts. Returns (results, listing_id_strings). photo=None; caller fills."""
-    results, ids = [], []
+    """Parse raw Etsy listing dicts. Extracts inline photo if present; caller fetches missing ones."""
+    results, ids_needing_photo = [], []
     for listing in raw:
         listing_id = listing.get("listing_id")
         if not listing_id:
@@ -34,23 +50,24 @@ def _parse_etsy_listings(raw: List[dict], query: str) -> Tuple[List[Dict[str, An
             price = 0.0
         if not price:
             continue
+        photo = _extract_inline_photo(listing)
         results.append({
             "_lid": listing_id,
             "title": listing.get("title") or query,
             "price": price,
             "url": listing.get("url") or f"https://www.etsy.com/listing/{listing_id}",
-            "photo": None,
+            "photo": photo,
             "source": "etsy",
-            "condition": None,
         })
-        ids.append(str(listing_id))
-    return results, ids
+        if not photo:
+            ids_needing_photo.append(str(listing_id))
+    return results, ids_needing_photo
 
 
 def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> Dict[int, str]:
     """
-    Fetch images via GET /listings/{id}/images — the dedicated image endpoint.
-    Returns first image URL per listing. Runs concurrently, capped at 15.
+    Fetch images via GET /listings/{id}/images for listings that didn't get inline photos.
+    Capped at 6 listings with 3 workers to avoid rate-limiting.
     """
     if not listing_ids:
         return {}
@@ -63,7 +80,7 @@ def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> D
             url = f"{_ETSY_BASE}/listings/{lid}/images"
             r = requests.get(url, headers=headers, timeout=timeout)
             if r.status_code != 200:
-                log.warning("[etsy] /images %s → %d", lid, r.status_code)
+                log.warning("[etsy] /images %s → %d %s", lid, r.status_code, r.text[:80])
                 return None
             images = r.json().get("results", [])
             for img in images:
@@ -73,19 +90,20 @@ def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> D
                 if photo:
                     return (int(lid), photo)
             return None
-        except Exception:
+        except Exception as e:
+            log.warning("[etsy] /images %s error: %s", lid, e)
             return None
 
-    ids_to_fetch = listing_ids[:15]
+    ids_to_fetch = listing_ids[:6]  # reduced to avoid rate limiting
     image_map: Dict[int, str] = {}
-    with ThreadPoolExecutor(max_workers=5) as pool:
+    with ThreadPoolExecutor(max_workers=3) as pool:
         futures = {pool.submit(fetch_one, lid): lid for lid in ids_to_fetch}
         for future in as_completed(futures):
             result = future.result()
             if result:
                 image_map[result[0]] = result[1]
 
-    log.warning("[etsy] image fetch: %d/%d with photo", len(image_map), len(ids_to_fetch))
+    log.warning("[etsy] fallback image fetch: %d/%d with photo", len(image_map), len(ids_to_fetch))
     return image_map
 
 
@@ -111,16 +129,11 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
     headers = {"x-api-key": auth_value}
 
     try:
-        r = requests.get(
-            f"{_ETSY_BASE}/listings/active",
-            params=[
-                ("keywords", search_terms),
-                ("limit", str(limit)),
-                ("sort_on", "score"),
-            ],
-            headers=headers,
-            timeout=timeout,
-        )
+        # Build URL manually — requests.get(params=...) encodes [] as %5B%5D which Etsy ignores
+        from urllib.parse import quote as _quote
+        _kw = _quote(search_terms, safe='')
+        _url = f"{_ETSY_BASE}/listings/active?keywords={_kw}&limit={limit}&sort_on=score&includes[]=MainImage&includes[]=Images"
+        r = requests.get(_url, headers=headers, timeout=timeout)
         log.info("[etsy] GET → %d for %r", r.status_code, query)
         if r.status_code != 200:
             log.warning("[etsy] non-200 for %r: %d %s", query, r.status_code, r.text[:200])
@@ -130,19 +143,26 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
         log.warning("[etsy] request failed for %r: %s", query, e)
         return []
 
-    results, listing_ids = _parse_etsy_listings(data.get("results", []), query)
-    if results:
-        image_map = _fetch_etsy_images(listing_ids, headers, timeout)
-        for item in results:
-            item["photo"] = image_map.get(item.pop("_lid"))
+    # _parse_etsy_listings extracts inline photos if includes[] worked;
+    # ids_needing_photo lists those still missing a photo for the fallback fetch
+    results, ids_needing_photo = _parse_etsy_listings(data.get("results", []), query)
+    inline_photos = sum(1 for r in results if r.get("photo"))
+    log.warning("[etsy] %r → %d parsed, %d inline photos", query, len(results), inline_photos)
 
-    raw_count = len(data.get("results", []))
+    if ids_needing_photo:
+        image_map = _fetch_etsy_images(ids_needing_photo, headers, timeout)
+        for item in results:
+            if not item.get("photo"):
+                item["photo"] = image_map.get(item["_lid"])
+
+    # Remove internal _lid key
+    for item in results:
+        item.pop("_lid", None)
+
     photos = sum(1 for item in results if item.get("photo"))
-    log.warning("[etsy] %r → %d raw / %d parsed / %d with photo", query, raw_count, len(results), photos)
+    log.warning("[etsy] %r → %d raw / %d parsed / %d with photo", query, len(data.get("results", [])), len(results), photos)
 
     # If 0 results for a model-code query, strip the code and retry with color keywords.
-    # Etsy sellers don't use Carhartt model codes — "carhartt j97 moss" finds nothing,
-    # but "vintage carhartt moss" will find matching jackets.
     if not results and _MODEL_CODE_RE.search(search_terms):
         color_words = _MODEL_CODE_RE.sub('', search_terms).strip()
         color_words = re.sub(r'\bcarhartt\b', '', color_words, flags=re.IGNORECASE).strip()
@@ -150,25 +170,20 @@ def search_etsy(query: str, limit: int = 25, timeout: int = 12) -> List[Dict[str
             broader = f"vintage carhartt {color_words}"
             log.warning("[etsy] retrying broader: %r", broader)
             try:
-                r2 = requests.get(
-                    f"{_ETSY_BASE}/listings/active",
-                    params=[
-                        ("keywords", broader),
-                        ("limit", str(limit)),
-                        ("sort_on", "score"),
-                    ],
-                    headers=headers,
-                    timeout=timeout,
-                )
+                _kw2 = _quote(broader, safe='')
+                _url2 = f"{_ETSY_BASE}/listings/active?keywords={_kw2}&limit={limit}&sort_on=score&includes[]=MainImage&includes[]=Images"
+                r2 = requests.get(_url2, headers=headers, timeout=timeout)
                 if r2.status_code == 200:
                     data2 = r2.json()
-                    retry_results, retry_ids = _parse_etsy_listings(data2.get("results", []), query)
-                    if retry_results:
-                        image_map2 = _fetch_etsy_images(retry_ids, headers, timeout)
+                    retry_results, retry_ids2 = _parse_etsy_listings(data2.get("results", []), query)
+                    if retry_ids2:
+                        image_map2 = _fetch_etsy_images(retry_ids2, headers, timeout)
                         for item in retry_results:
-                            item["photo"] = image_map2.get(item.pop("_lid"))
-                    photos2 = sum(1 for item in retry_results if item.get("photo"))
-                    log.warning("[etsy] broader %r → %d parsed / %d with photo", broader, len(retry_results), photos2)
+                            if not item.get("photo"):
+                                item["photo"] = image_map2.get(item["_lid"])
+                    for item in retry_results:
+                        item.pop("_lid", None)
+                    log.warning("[etsy] broader %r → %d parsed", broader, len(retry_results))
                     results.extend(retry_results)
             except Exception as e:
                 log.warning("[etsy] broader retry error: %s", e)

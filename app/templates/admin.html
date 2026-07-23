@@ -279,8 +279,6 @@
           <input type="number" name="price" placeholder="e.g. 2500" min="0" step="1" required />
         </div>
         <div class="field">
-          <label>Condition (optional) <span style="font-weight:400;font-size:11px;">e.g. 8/10 — Excellent, light fading</span></label>
-          <input type="text" name="condition" placeholder="8/10 — Excellent" />
           <label>Description (optional)</label>
           <textarea name="description" placeholder="Measurements, other notes…"></textarea>
         </div>
@@ -348,7 +346,6 @@
               </div>
             </div>
             <div class="field"><label>Price (USD)</label><input type="number" name="price" value="{{ l.price }}" min="0" step="1" required /></div>
-            <div class="field"><label>Condition <span style="font-weight:400;font-size:11px;">e.g. 8/10 — Excellent</span></label><input type="text" name="condition" value="{{ l.condition or '' }}" placeholder="8/10 — Excellent" /></div>
             <div class="field"><label>Description</label><textarea name="description">{{ l.description }}</textarea></div>
             {% if l.photos %}
             <div class="field">
@@ -999,7 +996,7 @@
                     ${scoreLabel}
                   </div>
                   ${saveBadge}
-                  <div style="font-size:10px;color:rgba(255,255,255,0.6);margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.size ? ' · ' + l.size : ''}${l.condition ? ' · ' + l.condition : ''}</div>
+                  <div style="font-size:10px;color:rgba(255,255,255,0.6);margin-top:4px;text-transform:uppercase;letter-spacing:0.05em;">${l.source}${l.size ? ' · ' + l.size : ''}</div>
                 </div>
               </div>
             </a>
