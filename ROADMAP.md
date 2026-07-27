@@ -132,6 +132,7 @@ Goal: user chooses what to track and how.
 Goal: optional expansion, not needed for core value.
 - Listing, posting,  messaging
 - Trust features with profiles and kudos or likes and (eventually) escrow-style verified trades
+- Like instagram but for fashion/vintage nerds, let people show off their collection on their page, maybe sort by brand? Let people make sections and subsections for their different items. Formatting might be hard to get it to look good. *Advise that people take photos with their username written on paper to avoid people stealing pics.
 
 ### Step 29: Monetization + production hardening
 Goal: shipping-grade stability.
