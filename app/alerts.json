@@ -1,5 +1,21 @@
 [
   {
+    "id": 595,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL Detroit Jacket Petrol Gray Blue Blanket",
+    "price": 134.0,
+    "url": "https://www.grailed.com/listings/101825050",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/f98f8164de024db0a6b2f2ca1aee2d96",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-28T21:46:09.914067+00:00"
+  },
+  {
     "id": 594,
     "query": "j43 hunter green",
     "source": "ebay",
