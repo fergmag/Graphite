@@ -1,5 +1,21 @@
 [
   {
+    "id": 610,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J65 BLU Blue Size XL Used",
+    "price": 2691.0,
+    "url": "https://www.ebay.com/itm/366141921382?_skw=carhartt+j65+blue&hash=item553fc25866:g:xcoAAeSwisVpcauI",
+    "photo": "https://i.ebayimg.com/images/g/xcoAAeSwisVpcauI/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-29T15:44:04.502281+00:00"
+  },
+  {
     "id": 609,
     "query": "jb0866",
     "source": "ebay",
