@@ -1,5 +1,21 @@
 [
   {
+    "id": 618,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt JB0817 JB0873 JB0866 large",
+    "price": 7131.21,
+    "url": "https://www.ebay.com/itm/137538271778?_skw=carhartt+jb0817&hash=item2005eb7a22:g:V14AAeSwRydqYCc6",
+    "photo": "https://i.ebayimg.com/images/g/V14AAeSwRydqYCc6/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-07-30T03:43:29.207548+00:00"
+  },
+  {
     "id": 617,
     "query": "j97 petrol",
     "source": "ebay",
@@ -12,7 +28,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T21:46:06.670303+00:00"
   },
   {
@@ -28,7 +44,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T21:43:38.897883+00:00"
   },
   {
@@ -44,7 +60,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:47:36.664515+00:00"
   },
   {
@@ -60,7 +76,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:47:36.660762+00:00"
   },
   {
@@ -76,7 +92,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:47:17.352462+00:00"
   },
   {
@@ -92,7 +108,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:46:48.183889+00:00"
   },
   {
@@ -108,7 +124,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:44:40.851060+00:00"
   },
   {
@@ -124,7 +140,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:44:04.502281+00:00"
   },
   {
@@ -140,7 +156,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:47.868700+00:00"
   },
   {
@@ -156,7 +172,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:38.303186+00:00"
   },
   {
@@ -172,7 +188,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:38.295948+00:00"
   },
   {
@@ -188,7 +204,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:38.288646+00:00"
   },
   {
@@ -204,7 +220,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:28.808027+00:00"
   },
   {
@@ -220,7 +236,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T15:43:28.804109+00:00"
   },
   {
@@ -236,7 +252,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:47:20.900797+00:00"
   },
   {
@@ -252,7 +268,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:47:20.894822+00:00"
   },
   {
@@ -268,7 +284,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:47:20.886569+00:00"
   },
   {
@@ -284,7 +300,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:46:44.331303+00:00"
   },
   {
@@ -300,7 +316,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:46:35.162088+00:00"
   },
   {
@@ -316,7 +332,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:46:26.265481+00:00"
   },
   {
@@ -332,7 +348,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-29T03:46:06.557920+00:00"
   },
   {
@@ -348,7 +364,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-28T21:46:58.028601+00:00"
   },
   {
@@ -364,7 +380,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-28T21:46:09.914067+00:00"
   },
   {
@@ -380,7 +396,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-28T03:46:54.355717+00:00"
   },
   {
@@ -396,7 +412,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-28T03:46:44.589146+00:00"
   },
   {
@@ -412,7 +428,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.609436+00:00"
   },
   {
@@ -428,7 +444,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.605849+00:00"
   },
   {
@@ -444,7 +460,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.602474+00:00"
   },
   {
@@ -460,7 +476,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.598950+00:00"
   },
   {
@@ -476,7 +492,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.595279+00:00"
   },
   {
@@ -492,7 +508,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.591796+00:00"
   },
   {
@@ -508,7 +524,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.588157+00:00"
   },
   {
@@ -524,7 +540,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:47:08.584127+00:00"
   },
   {
@@ -540,7 +556,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.028194+00:00"
   },
   {
@@ -556,7 +572,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.023590+00:00"
   },
   {
@@ -572,7 +588,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.019057+00:00"
   },
   {
@@ -588,7 +604,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.015738+00:00"
   },
   {
@@ -604,7 +620,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.012569+00:00"
   },
   {
@@ -620,7 +636,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.008685+00:00"
   },
   {
@@ -636,7 +652,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.005317+00:00"
   },
   {
@@ -652,7 +668,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:59.002358+00:00"
   },
   {
@@ -668,7 +684,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.999547+00:00"
   },
   {
@@ -684,7 +700,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.996491+00:00"
   },
   {
@@ -700,7 +716,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.993242+00:00"
   },
   {
@@ -716,7 +732,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.989815+00:00"
   },
   {
@@ -732,7 +748,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.986432+00:00"
   },
   {
@@ -748,7 +764,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:58.982776+00:00"
   },
   {
@@ -764,7 +780,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.253617+00:00"
   },
   {
@@ -780,7 +796,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.242095+00:00"
   },
   {
@@ -796,7 +812,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.234603+00:00"
   },
   {
@@ -812,7 +828,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.222753+00:00"
   },
   {
@@ -828,7 +844,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.211383+00:00"
   },
   {
@@ -844,7 +860,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.205376+00:00"
   },
   {
@@ -860,7 +876,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.199238+00:00"
   },
   {
@@ -876,7 +892,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:49.192316+00:00"
   },
   {
@@ -892,7 +908,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:39.471565+00:00"
   },
   {
@@ -908,7 +924,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:39.467542+00:00"
   },
   {
@@ -924,7 +940,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:39.463535+00:00"
   },
   {
@@ -940,7 +956,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.740154+00:00"
   },
   {
@@ -956,7 +972,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.736643+00:00"
   },
   {
@@ -972,7 +988,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.733377+00:00"
   },
   {
@@ -988,7 +1004,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.728705+00:00"
   },
   {
@@ -1004,7 +1020,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.723633+00:00"
   },
   {
@@ -1020,7 +1036,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.720343+00:00"
   },
   {
@@ -1036,7 +1052,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.716859+00:00"
   },
   {
@@ -1052,7 +1068,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.712915+00:00"
   },
   {
@@ -1068,7 +1084,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.670461+00:00"
   },
   {
@@ -1084,7 +1100,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.666697+00:00"
   },
   {
@@ -1100,7 +1116,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.663376+00:00"
   },
   {
@@ -1116,7 +1132,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.659351+00:00"
   },
   {
@@ -1132,7 +1148,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.656026+00:00"
   },
   {
@@ -1148,7 +1164,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.652485+00:00"
   },
   {
@@ -1164,7 +1180,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.648951+00:00"
   },
   {
@@ -1180,7 +1196,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.645564+00:00"
   },
   {
@@ -1196,7 +1212,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.640540+00:00"
   },
   {
@@ -1212,7 +1228,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.636655+00:00"
   },
   {
@@ -1228,7 +1244,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.633259+00:00"
   },
   {
@@ -1244,7 +1260,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.630117+00:00"
   },
   {
@@ -1260,7 +1276,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.626263+00:00"
   },
   {
@@ -1276,7 +1292,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.622936+00:00"
   },
   {
@@ -1292,7 +1308,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.619849+00:00"
   },
   {
@@ -1308,7 +1324,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.615721+00:00"
   },
   {
@@ -1324,7 +1340,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.611881+00:00"
   },
   {
@@ -1340,7 +1356,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.565785+00:00"
   },
   {
@@ -1356,7 +1372,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.562773+00:00"
   },
   {
@@ -1372,7 +1388,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.558996+00:00"
   },
   {
@@ -1388,7 +1404,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.554904+00:00"
   },
   {
@@ -1404,7 +1420,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.551751+00:00"
   },
   {
@@ -1420,7 +1436,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:29.548238+00:00"
   },
   {
@@ -1436,7 +1452,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.030038+00:00"
   },
   {
@@ -1452,7 +1468,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.027105+00:00"
   },
   {
@@ -1468,7 +1484,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.024084+00:00"
   },
   {
@@ -1484,7 +1500,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.021181+00:00"
   },
   {
@@ -1500,7 +1516,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.018247+00:00"
   },
   {
@@ -1516,7 +1532,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:19.014020+00:00"
   },
   {
@@ -1532,7 +1548,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.332024+00:00"
   },
   {
@@ -1548,7 +1564,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.326655+00:00"
   },
   {
@@ -1564,7 +1580,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.323122+00:00"
   },
   {
@@ -1580,7 +1596,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.319248+00:00"
   },
   {
@@ -1596,7 +1612,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.315927+00:00"
   },
   {
@@ -1612,7 +1628,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.221727+00:00"
   },
   {
@@ -1628,7 +1644,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.217617+00:00"
   },
   {
@@ -1644,7 +1660,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:46:08.214085+00:00"
   },
   {
@@ -1660,7 +1676,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.719927+00:00"
   },
   {
@@ -1676,7 +1692,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.716466+00:00"
   },
   {
@@ -1692,7 +1708,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.713075+00:00"
   },
   {
@@ -1708,7 +1724,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.518451+00:00"
   },
   {
@@ -1724,7 +1740,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.515011+00:00"
   },
   {
@@ -1740,7 +1756,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.416426+00:00"
   },
   {
@@ -1756,7 +1772,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:57.412628+00:00"
   },
   {
@@ -1772,7 +1788,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.931494+00:00"
   },
   {
@@ -1788,7 +1804,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.925752+00:00"
   },
   {
@@ -1804,7 +1820,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.920301+00:00"
   },
   {
@@ -1820,7 +1836,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.912064+00:00"
   },
   {
@@ -1836,7 +1852,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.836319+00:00"
   },
   {
@@ -1852,7 +1868,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.830400+00:00"
   },
   {
@@ -1868,7 +1884,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.822866+00:00"
   },
   {
@@ -1884,7 +1900,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.816711+00:00"
   },
   {
@@ -1900,7 +1916,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.723662+00:00"
   },
   {
@@ -1916,7 +1932,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:45.717252+00:00"
   },
   {
@@ -1932,7 +1948,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.972496+00:00"
   },
   {
@@ -1948,7 +1964,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.905305+00:00"
   },
   {
@@ -1964,7 +1980,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.643758+00:00"
   },
   {
@@ -1980,7 +1996,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.553155+00:00"
   },
   {
@@ -1996,7 +2012,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.539818+00:00"
   },
   {
@@ -2012,7 +2028,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.394663+00:00"
   },
   {
@@ -2028,7 +2044,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.300795+00:00"
   },
   {
@@ -2044,7 +2060,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.262866+00:00"
   },
   {
@@ -2060,7 +2076,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.226318+00:00"
   },
   {
@@ -2076,7 +2092,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:35.171096+00:00"
   },
   {
@@ -2092,7 +2108,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.873074+00:00"
   },
   {
@@ -2108,7 +2124,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.860639+00:00"
   },
   {
@@ -2124,7 +2140,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.846810+00:00"
   },
   {
@@ -2140,7 +2156,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.816728+00:00"
   },
   {
@@ -2156,7 +2172,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.664741+00:00"
   },
   {
@@ -2172,7 +2188,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.552805+00:00"
   },
   {
@@ -2188,7 +2204,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.332426+00:00"
   },
   {
@@ -2204,7 +2220,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.246304+00:00"
   },
   {
@@ -2220,7 +2236,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.160640+00:00"
   },
   {
@@ -2236,7 +2252,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:34.038642+00:00"
   },
   {
@@ -2252,7 +2268,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.951673+00:00"
   },
   {
@@ -2268,7 +2284,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.676923+00:00"
   },
   {
@@ -2284,7 +2300,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.511269+00:00"
   },
   {
@@ -2300,7 +2316,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.396919+00:00"
   },
   {
@@ -2316,7 +2332,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.259265+00:00"
   },
   {
@@ -2332,7 +2348,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.193438+00:00"
   },
   {
@@ -2348,7 +2364,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.148704+00:00"
   },
   {
@@ -2364,7 +2380,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.117393+00:00"
   },
   {
@@ -2380,7 +2396,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.080057+00:00"
   },
   {
@@ -2396,7 +2412,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:33.029631+00:00"
   },
   {
@@ -2412,7 +2428,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.904931+00:00"
   },
   {
@@ -2428,7 +2444,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.793348+00:00"
   },
   {
@@ -2444,7 +2460,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.651938+00:00"
   },
   {
@@ -2460,7 +2476,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.573778+00:00"
   },
   {
@@ -2476,7 +2492,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.542087+00:00"
   },
   {
@@ -2492,7 +2508,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.392165+00:00"
   },
   {
@@ -2508,7 +2524,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.262571+00:00"
   },
   {
@@ -2524,7 +2540,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.159075+00:00"
   },
   {
@@ -2540,7 +2556,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:32.047651+00:00"
   },
   {
@@ -2556,7 +2572,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.928788+00:00"
   },
   {
@@ -2572,7 +2588,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.868863+00:00"
   },
   {
@@ -2588,7 +2604,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.791923+00:00"
   },
   {
@@ -2604,7 +2620,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.757944+00:00"
   },
   {
@@ -2620,7 +2636,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.737689+00:00"
   },
   {
@@ -2636,7 +2652,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:31.570519+00:00"
   },
   {
@@ -2652,7 +2668,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:19.957460+00:00"
   },
   {
@@ -2668,7 +2684,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:19.896276+00:00"
   },
   {
@@ -2684,7 +2700,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:19.788814+00:00"
   },
   {
@@ -2700,7 +2716,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:19.627325+00:00"
   },
   {
@@ -2716,7 +2732,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.230645+00:00"
   },
   {
@@ -2732,7 +2748,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.227483+00:00"
   },
   {
@@ -2748,7 +2764,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.221816+00:00"
   },
   {
@@ -2764,7 +2780,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.212811+00:00"
   },
   {
@@ -2780,7 +2796,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.193530+00:00"
   },
   {
@@ -2796,7 +2812,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.186194+00:00"
   },
   {
@@ -2812,7 +2828,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.182173+00:00"
   },
   {
@@ -2828,7 +2844,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.177831+00:00"
   },
   {
@@ -2844,7 +2860,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.173422+00:00"
   },
   {
@@ -2860,7 +2876,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.170074+00:00"
   },
   {
@@ -2876,7 +2892,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.162646+00:00"
   },
   {
@@ -2892,7 +2908,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.158668+00:00"
   },
   {
@@ -2908,7 +2924,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.154238+00:00"
   },
   {
@@ -2924,7 +2940,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.148725+00:00"
   },
   {
@@ -2940,7 +2956,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.140650+00:00"
   },
   {
@@ -2956,7 +2972,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.133888+00:00"
   },
   {
@@ -2972,7 +2988,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.065766+00:00"
   },
   {
@@ -2988,7 +3004,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.061404+00:00"
   },
   {
@@ -3004,7 +3020,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.056748+00:00"
   },
   {
@@ -3020,7 +3036,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.052014+00:00"
   },
   {
@@ -3036,7 +3052,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.045512+00:00"
   },
   {
@@ -3052,7 +3068,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.041384+00:00"
   },
   {
@@ -3068,7 +3084,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.036834+00:00"
   },
   {
@@ -3084,7 +3100,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.032614+00:00"
   },
   {
@@ -3100,7 +3116,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.028462+00:00"
   },
   {
@@ -3116,7 +3132,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.023957+00:00"
   },
   {
@@ -3132,7 +3148,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:09.018311+00:00"
   },
   {
@@ -3148,7 +3164,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.982637+00:00"
   },
   {
@@ -3164,7 +3180,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.976597+00:00"
   },
   {
@@ -3180,7 +3196,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.971258+00:00"
   },
   {
@@ -3196,7 +3212,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.965503+00:00"
   },
   {
@@ -3212,7 +3228,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.958666+00:00"
   },
   {
@@ -3228,7 +3244,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.952926+00:00"
   },
   {
@@ -3244,7 +3260,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.946547+00:00"
   },
   {
@@ -3260,7 +3276,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.942316+00:00"
   },
   {
@@ -3276,7 +3292,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:45:08.935801+00:00"
   },
   {
@@ -3292,7 +3308,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:54.612102+00:00"
   },
   {
@@ -3308,7 +3324,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:54.576308+00:00"
   },
   {
@@ -3324,7 +3340,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:54.570647+00:00"
   },
   {
@@ -3340,7 +3356,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:54.564748+00:00"
   },
   {
@@ -3356,7 +3372,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:54.558296+00:00"
   },
   {
@@ -3372,7 +3388,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:40.537704+00:00"
   },
   {
@@ -3388,7 +3404,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:40.531130+00:00"
   },
   {
@@ -3404,7 +3420,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:31.288344+00:00"
   },
   {
@@ -3420,7 +3436,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:22.125515+00:00"
   },
   {
@@ -3436,7 +3452,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:22.119739+00:00"
   },
   {
@@ -3452,7 +3468,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:22.113445+00:00"
   },
   {
@@ -3468,7 +3484,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:03.699692+00:00"
   },
   {
@@ -3484,7 +3500,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:03.690876+00:00"
   },
   {
@@ -3500,7 +3516,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:44:03.680069+00:00"
   },
   {
@@ -3516,7 +3532,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:53.061181+00:00"
   },
   {
@@ -3532,7 +3548,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:53.057454+00:00"
   },
   {
@@ -3548,7 +3564,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:41.313752+00:00"
   },
   {
@@ -3564,7 +3580,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:41.218482+00:00"
   },
   {
@@ -3580,7 +3596,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:41.213622+00:00"
   },
   {
@@ -3596,7 +3612,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:30.692097+00:00"
   },
   {
@@ -3612,7 +3628,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:30.686938+00:00"
   },
   {
@@ -3628,7 +3644,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:30.680347+00:00"
   },
   {
@@ -3644,7 +3660,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:20.899375+00:00"
   },
   {
@@ -3660,7 +3676,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.430471+00:00"
   },
   {
@@ -3676,7 +3692,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.416785+00:00"
   },
   {
@@ -3692,7 +3708,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.408897+00:00"
   },
   {
@@ -3708,7 +3724,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.403809+00:00"
   },
   {
@@ -3724,7 +3740,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.399115+00:00"
   },
   {
@@ -3740,7 +3756,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.387174+00:00"
   },
   {
@@ -3756,7 +3772,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.374245+00:00"
   },
   {
@@ -3772,7 +3788,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.362621+00:00"
   },
   {
@@ -3788,7 +3804,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.349774+00:00"
   },
   {
@@ -3804,7 +3820,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.341552+00:00"
   },
   {
@@ -3820,7 +3836,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.335935+00:00"
   },
   {
@@ -3836,7 +3852,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.323087+00:00"
   },
   {
@@ -3852,7 +3868,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.314014+00:00"
   },
   {
@@ -3868,7 +3884,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:43:09.300955+00:00"
   },
   {
@@ -3884,7 +3900,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.203513+00:00"
   },
   {
@@ -3900,7 +3916,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.200309+00:00"
   },
   {
@@ -3916,7 +3932,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.196708+00:00"
   },
   {
@@ -3932,7 +3948,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.193076+00:00"
   },
   {
@@ -3948,7 +3964,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.187810+00:00"
   },
   {
@@ -3964,7 +3980,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.182645+00:00"
   },
   {
@@ -3980,7 +3996,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.178315+00:00"
   },
   {
@@ -3996,7 +4012,7 @@
     "size": "XXL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.173752+00:00"
   },
   {
@@ -4012,7 +4028,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.168578+00:00"
   },
   {
@@ -4028,7 +4044,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.164479+00:00"
   },
   {
@@ -4044,7 +4060,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:49.159332+00:00"
   },
   {
@@ -4060,7 +4076,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:38.799721+00:00"
   },
   {
@@ -4076,7 +4092,7 @@
     "size": null,
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:38.792945+00:00"
   },
   {
@@ -4092,7 +4108,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.498399+00:00"
   },
   {
@@ -4108,7 +4124,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.495336+00:00"
   },
   {
@@ -4124,7 +4140,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.492118+00:00"
   },
   {
@@ -4140,7 +4156,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.488953+00:00"
   },
   {
@@ -4156,7 +4172,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.485946+00:00"
   },
   {
@@ -4172,7 +4188,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.482832+00:00"
   },
   {
@@ -4188,7 +4204,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.479725+00:00"
   },
   {
@@ -4204,7 +4220,7 @@
     "size": "M",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.476525+00:00"
   },
   {
@@ -4220,7 +4236,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.473251+00:00"
   },
   {
@@ -4236,7 +4252,7 @@
     "size": "L",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-27T21:42:28.469703+00:00"
   },
   {
@@ -4252,7 +4268,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-23T05:45:00.266716+00:00"
   },
   {
@@ -4268,199 +4284,7 @@
     "size": "XL",
     "vision_grade": null,
     "vision_notes": null,
-    "seen": 0,
+    "seen": 1,
     "created_at": "2026-07-23T01:05:54.267869+00:00"
-  },
-  {
-    "id": 3,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Rework Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
-    "price": 300.0,
-    "url": "https://www.etsy.com/listing/4534585469/rework-carhartt-detroit-blanket-lined",
-    "photo": "https://i.etsystatic.com/66547360/r/il/3a07b5/8274863329/il_570xN.8274863329_1vpa.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T23:44:59.370655+00:00"
-  },
-  {
-    "id": 4,
-    "query": "j43 burgundy",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket J43 BRG Burgundy Made in USA",
-    "price": 750.0,
-    "url": "https://www.ebay.com/itm/336702654305?_skw=carhartt+j43+burgundy&hash=item4e650ac761:g:EhEAAeSwhEBqYP3C",
-    "photo": "https://i.ebayimg.com/images/g/EhEAAeSwhEBqYP3C/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 2,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T17:41:35.141168+00:00"
-  },
-  {
-    "id": 5,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "VTG Carhartt Detroit J97 PTL ‘Petrol’ Jacket Men’s XL Blanket Lined Grey Work",
-    "price": 262.0,
-    "url": "https://www.ebay.com/itm/147454203297?_skw=carhartt+j97+petrol&hash=item2254f495a1:g:zwwAAeSw07tpwHD4",
-    "photo": "https://i.ebayimg.com/images/g/zwwAAeSw07tpwHD4/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 2,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T17:41:06.020921+00:00"
-  },
-  {
-    "id": 6,
-    "query": "j43 hunter green",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 HTG Hunter Green",
-    "price": 899.0,
-    "url": "https://www.ebay.com/itm/178334274191?_skw=carhartt+j43+hunter+green&hash=item29858d128f:g:QCsAAeSwLf5pv-75",
-    "photo": "https://i.ebayimg.com/images/g/QCsAAeSwLf5pv-75/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T11:41:48.623412+00:00"
-  },
-  {
-    "id": 7,
-    "query": "j43 chestnut",
-    "source": "etsy",
-    "title": "Vtg 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
-    "price": 425.0,
-    "url": "https://www.etsy.com/listing/4541795333/vtg-90s-carhartt-faded-detroit-jacket",
-    "photo": "https://i.etsystatic.com/65692878/r/il/3ce1d3/8329668173/il_570xN.8329668173_ssg7.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:41:24.319656+00:00"
-  },
-  {
-    "id": 8,
-    "query": "js1207",
-    "source": "ebay",
-    "title": "Carhartt JS1237 JS1236 JS1235 JS1207 Large",
-    "price": 10674.800000000001,
-    "url": "https://www.ebay.com/itm/137538275882?_skw=carhartt+js1207&hash=item2005eb8a2a:g:Yt8AAeSwmA5qYCjd",
-    "photo": "https://i.ebayimg.com/images/g/Yt8AAeSwmA5qYCjd/s-l225.jpg",
-    "casp": 500.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:39:34.010252+00:00"
-  },
-  {
-    "id": 9,
-    "query": "js1235",
-    "source": "ebay",
-    "title": "Carhartt JS1237 JS1236 JS1235 JS1207 Large",
-    "price": 10674.800000000001,
-    "url": "https://www.ebay.com/itm/137538275882?_skw=carhartt+js1235&hash=item2005eb8a2a:g:Yt8AAeSwmA5qYCjd",
-    "photo": "https://i.ebayimg.com/images/g/Yt8AAeSwmA5qYCjd/s-l225.jpg",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:39:24.450414+00:00"
-  },
-  {
-    "id": 10,
-    "query": "js1236",
-    "source": "ebay",
-    "title": "Carhartt JS1237 JS1236 JS1235 JS1207 Large",
-    "price": 10674.800000000001,
-    "url": "https://www.ebay.com/itm/137538275882?_skw=carhartt+js1236&hash=item2005eb8a2a:g:Yt8AAeSwmA5qYCjd",
-    "photo": "https://i.ebayimg.com/images/g/Yt8AAeSwmA5qYCjd/s-l225.jpg",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:39:14.217676+00:00"
-  },
-  {
-    "id": 11,
-    "query": "js1237",
-    "source": "ebay",
-    "title": "Carhartt JS1237 JS1236 JS1235 JS1207 Large",
-    "price": 10674.800000000001,
-    "url": "https://www.ebay.com/itm/137538275882?_skw=carhartt+js1237&hash=item2005eb8a2a:g:Yt8AAeSwmA5qYCjd",
-    "photo": "https://i.ebayimg.com/images/g/Yt8AAeSwmA5qYCjd/s-l225.jpg",
-    "casp": 2000.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:39:04.935469+00:00"
-  },
-  {
-    "id": 12,
-    "query": "jb0866",
-    "source": "ebay",
-    "title": "Carhartt JB0817 JB0873 JB0866 large",
-    "price": 7130.71,
-    "url": "https://www.ebay.com/itm/137538271778?_skw=carhartt+jb0866&hash=item2005eb7a22:g:V14AAeSwRydqYCc6",
-    "photo": "https://i.ebayimg.com/images/g/V14AAeSwRydqYCc6/s-l225.jpg",
-    "casp": 750.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:38:40.020673+00:00"
-  },
-  {
-    "id": 13,
-    "query": "jb0873",
-    "source": "ebay",
-    "title": "Carhartt JB0817 JB0873 JB0866 large",
-    "price": 7130.71,
-    "url": "https://www.ebay.com/itm/137538271778?_skw=carhartt+jb0873&hash=item2005eb7a22:g:V14AAeSwRydqYCc6",
-    "photo": "https://i.ebayimg.com/images/g/V14AAeSwRydqYCc6/s-l225.jpg",
-    "casp": 1000.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:38:30.722719+00:00"
-  },
-  {
-    "id": 14,
-    "query": "jb0817",
-    "source": "ebay",
-    "title": "Carhartt JB0817 JB0873 JB0866 large",
-    "price": 7130.71,
-    "url": "https://www.ebay.com/itm/137538271778?_skw=carhartt+jb0817&hash=item2005eb7a22:g:V14AAeSwRydqYCc6",
-    "photo": "https://i.ebayimg.com/images/g/V14AAeSwRydqYCc6/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-22T05:38:21.432596+00:00"
   }
 ]
