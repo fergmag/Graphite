@@ -237,7 +237,18 @@ def create_app() -> Flask:
 
     @app.get("/health")
     def health():
-        return jsonify({"status": "ok"})
+        from datetime import datetime, timedelta, timezone
+        from app.db import get_last_refresh_time
+        last = get_last_refresh_time()
+        due = not last or (datetime.now(timezone.utc) - last) > timedelta(hours=6)
+        if due:
+            from app.scraper import refresh_all_watchlist
+            def _bg():
+                refresh_all_watchlist()
+                _persist_alerts()
+                _persist_estimates()
+            threading.Thread(target=_bg, daemon=True).start()
+        return jsonify({"status": "ok", "refresh_due": due})
 
     @app.get("/login")
     def login():

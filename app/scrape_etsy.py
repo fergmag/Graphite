@@ -94,9 +94,9 @@ def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> D
             log.warning("[etsy] /images %s error: %s", lid, e)
             return None
 
-    ids_to_fetch = listing_ids[:6]  # reduced to avoid rate limiting
+    ids_to_fetch = listing_ids[:25]
     image_map: Dict[int, str] = {}
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    with ThreadPoolExecutor(max_workers=5) as pool:
         futures = {pool.submit(fetch_one, lid): lid for lid in ids_to_fetch}
         for future in as_completed(futures):
             result = future.result()

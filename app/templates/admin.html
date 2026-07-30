@@ -446,7 +446,10 @@
         <div class="chart-tooltip" id="chartTooltip"></div>
         <div class="chart-header">
           <span class="chart-title">Listing Price Index</span>
-          <span class="chart-range" id="chartRange"></span>
+          <div style="display:flex;align-items:baseline;gap:10px;">
+            <span style="font-size:10px;color:rgba(255,255,255,0.4);font-style:italic;" id="chartGivenLabel"></span>
+            <span class="chart-range" id="chartRange"></span>
+          </div>
         </div>
         <svg class="chart-svg" id="chartSvg" viewBox="0 0 600 80" preserveAspectRatio="none"></svg>
         <div class="chart-labels" id="chartLabels"></div>
@@ -798,12 +801,23 @@
         const VW = W + LEFT;
         svg.setAttribute('viewBox', `0 0 ${VW} ${H}`);
 
-        // Fixed Y scale: 0–5000 with gridlines at 0, 1000, 3000, 5000
-        const Y_MAX = 5000;
-        const Y_TICKS = [0, 1000, 3000, 5000];
+        // Dynamic Y scale based on actual data range, so small price movements are visible
+        const rawVals = history2.map(d => d.casp);
+        const givenRef = _modelsMap[_currentQuery] || null;
+        if (givenRef) rawVals.push(givenRef);
+        const dataMin = Math.min(...rawVals);
+        const dataMax = Math.max(...rawVals);
+        const spread = dataMax - dataMin || dataMax * 0.2 || 100;
+        const padV = spread * 0.25;
+        const Y_MIN = Math.max(0, Math.floor((dataMin - padV) / 25) * 25);
+        const Y_MAX = Math.ceil((dataMax + padV) / 25) * 25;
+        const Y_RANGE = Y_MAX - Y_MIN || 1;
+
+        // 4 evenly-spaced gridlines
+        const Y_TICKS = Array.from({length: 4}, (_, i) => Math.round(Y_MIN + (Y_RANGE / 3) * i));
 
         const toX = i => LEFT + PAD + (i / (history2.length - 1)) * (W - PAD * 2);
-        const toY = p => PAD + (1 - Math.min(p, Y_MAX) / Y_MAX) * (H - PAD * 2);
+        const toY = p => PAD + (1 - (Math.min(Math.max(p, Y_MIN), Y_MAX) - Y_MIN) / Y_RANGE) * (H - PAD * 2);
 
         const ns = 'http://www.w3.org/2000/svg';
         Y_TICKS.forEach(tick => {
@@ -811,7 +825,7 @@
           const refLine = document.createElementNS(ns, 'line');
           refLine.setAttribute('x1', LEFT); refLine.setAttribute('x2', LEFT + W - PAD);
           refLine.setAttribute('y1', y); refLine.setAttribute('y2', y);
-          refLine.setAttribute('stroke', tick === 0 ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)');
+          refLine.setAttribute('stroke', 'rgba(255,255,255,0.08)');
           refLine.setAttribute('stroke-width', '1');
           svg.appendChild(refLine);
           const t = document.createElementNS(ns, 'text');
@@ -819,9 +833,25 @@
           t.setAttribute('text-anchor', 'end'); t.setAttribute('dominant-baseline', 'middle');
           t.setAttribute('fill', 'rgba(255,255,255,0.45)'); t.setAttribute('font-size', '9');
           t.setAttribute('font-family', 'inherit');
-          t.textContent = tick === 0 ? '$0' : `$${tick / 1000}k`;
+          t.textContent = tick >= 1000 ? `$${(tick/1000).toFixed(1)}k` : `$${tick}`;
           svg.appendChild(t);
         });
+
+        // Dashed reference line for "given price (M)"
+        const givenLabelEl = document.getElementById('chartGivenLabel');
+        if (givenRef) {
+          const gy = toY(givenRef);
+          const gl = document.createElementNS(ns, 'line');
+          gl.setAttribute('x1', LEFT); gl.setAttribute('x2', LEFT + W - PAD);
+          gl.setAttribute('y1', gy); gl.setAttribute('y2', gy);
+          gl.setAttribute('stroke', 'rgba(255,255,255,0.35)');
+          gl.setAttribute('stroke-width', '1');
+          gl.setAttribute('stroke-dasharray', '4 4');
+          svg.appendChild(gl);
+          if (givenLabelEl) givenLabelEl.textContent = `Given price (M) $${givenRef.toFixed(0)}`;
+        } else {
+          if (givenLabelEl) givenLabelEl.textContent = '';
+        }
 
         const pts = history2.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
 
@@ -1054,16 +1084,7 @@
 
         _currentQuery = query;
         _listingsCasp = data.casp;
-        let listings = data.listings || [];
-
-        // Filter by size when one is selected
-        const normSelected = _normSz(size || '');
-        if (normSelected) {
-          listings = listings.filter(l => {
-            const lSz = _normSz(l.size || '');
-            return !lSz || lSz === normSelected;
-          });
-        }
+        const listings = data.listings || [];
 
         _allListings = listings;
         if (!listings.length) { empty.style.display = 'block'; return; }
