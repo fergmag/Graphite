@@ -952,23 +952,35 @@
         _chartZoomWindow = 0;
         _renderChartSlice();
 
-        // Wheel / trackpad zoom on the chart area
+        // Wheel / trackpad zoom on the chart area — zooms toward cursor position
         const wrap = document.getElementById('chartWrap');
         wrap._zoomHandler && wrap.removeEventListener('wheel', wrap._zoomHandler);
         wrap._zoomHandler = (e) => {
           e.preventDefault();
           const total = _fullHistory.length;
           if (total < 3) return;
-          // Current window
+
+          // deltaY > 0 = scroll down = zoom OUT (wider window); < 0 = zoom IN
+          const factor = e.deltaY > 0 ? 1.25 : (1 / 1.25);
           let win = _chartZoomWindow || total;
           let end = _chartZoomEnd || total;
-          // Zoom: pinch-in (deltaY < 0) zooms in (smaller window), scroll-out widens
-          const delta = e.deltaY > 0 ? 1.25 : (1 / 1.25);
-          win = Math.round(Math.max(3, Math.min(total, win * delta)));
-          // Clamp end so we don't go past the array
-          end = Math.min(total, Math.max(win, end));
-          _chartZoomWindow = win === total ? 0 : win;
-          _chartZoomEnd = (_chartZoomWindow === 0) ? 0 : end;
+
+          // Map cursor x to a fractional position [0,1] within the chart
+          const svgEl = document.getElementById('chartSvg');
+          const svgRect = svgEl ? svgEl.getBoundingClientRect() : null;
+          const frac = svgRect ? Math.max(0, Math.min(1, (e.clientX - svgRect.left) / svgRect.width)) : 1;
+
+          // The data index under the cursor
+          const startIdx = end - win;
+          const cursorIdx = Math.round(startIdx + frac * (win - 1));
+
+          const newWin = Math.round(Math.max(3, Math.min(total, win * factor)));
+          // Keep the data point under the cursor stationary
+          const newStart = Math.max(0, Math.min(total - newWin, cursorIdx - Math.round(frac * (newWin - 1))));
+          const newEnd = newStart + newWin;
+
+          _chartZoomWindow = newWin >= total ? 0 : newWin;
+          _chartZoomEnd = (_chartZoomWindow === 0) ? 0 : Math.min(total, newEnd);
           _renderChartSlice();
         };
         wrap.addEventListener('wheel', wrap._zoomHandler, { passive: false });

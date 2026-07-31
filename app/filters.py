@@ -44,6 +44,8 @@ _CODE_ALIASES = {
     "dol": "dark olive",
     "dst": "darkstone",
 }
+# Reverse: canonical full name → abbreviation (for search fallback)
+_ALIAS_TO_CODE: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 
 
 def normalize_query(query: str) -> str:
@@ -69,6 +71,21 @@ def normalize_query(query: str) -> str:
     # Collapse extra spaces
     q = re.sub(r"\s{2,}", " ", q).strip()
     return q
+
+
+def search_terms_for_query(query: str) -> List[str]:
+    """Return search terms to try for a normalized query.
+
+    Sellers often use abbreviations (j97 tmb) rather than the canonical name
+    (j97 timber) that normalize_query produces. Returns [canonical, abbrev]
+    so scrapers can try both and merge results.
+    """
+    terms = [query]
+    for full, code in _ALIAS_TO_CODE.items():
+        if full in query:
+            terms.append(query.replace(full, code))
+            break  # only one colorway per model typically
+    return terms
 
 
 # ── Junk filter ───────────────────────────────────────────────────────────────
@@ -113,56 +130,34 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
 
 # ── Size parsing from listing titles ─────────────────────────────────────────
 
-_SIZE_TITLE_MAP = {
-    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', '2xlarge': 'XXL', '2xlrg': 'XXL',
-    'xlarge': 'XL', 'xl': 'XL', 'xlrg': 'XL',
-    'large': 'L', 'l': 'L', 'lrg': 'L',
-    'medium': 'M', 'm': 'M', 'med': 'M',
-}
-
-# Ordered from most-specific to least to avoid 'XL' matching inside 'XXL'
-_XXL = r'(?:xxl|2xl|2x\s*large|2x\s*l|xx-?large)'
-_XL  = r'(?:xl|x-?large)'
-_L   = r'(?:large|lrg)'
-_M   = r'medium'
-
-_SIZE_TITLE_RE = re.compile(
-    # "size XXL", "size: XL", "sz M" — prefixed by size/sz keyword
-    rf'\b(?:size|sz)[:\s]+?({_XXL}|{_XL}|{_L}|{_M}|[ml])\b'
-    # (XXL), (XL), (M), (L) — parenthesized
-    rf'|\(({_XXL}|{_XL}|{_L}|{_M}|[ml])\)'
-    # full words without prefix
-    rf'|\b({_XXL}|{_XL}|{_L}|{_M})\b'
-    # standalone M or L at a word boundary (last resort — most ambiguous)
-    r'|\b([ML])\b',
-    re.IGNORECASE,
-)
+# Priority-ordered regexes: search for larger sizes first so "Large 2X" → XXL not L
+_RE_XXL = re.compile(r'\b(?:xxl|2\s*x\s*l(?:arge)?|2\s*xl|xx-?large|2\s*x\b)', re.IGNORECASE)
+_RE_XL  = re.compile(r'\b(?:xl|x-?large)\b', re.IGNORECASE)
+_RE_L   = re.compile(r'\b(?:large|lrg)\b', re.IGNORECASE)
+_RE_M   = re.compile(r'\b(?:medium|med)\b', re.IGNORECASE)
+_RE_ML  = re.compile(r'\b([ML])\b')
 
 
 def normalize_size(s: Optional[str]) -> Optional[str]:
     """Normalize a raw size string (e.g. 'l', 'Large', 'X-Large') to M/L/XL/XXL."""
     if not s:
         return None
-    key = s.strip().lower().replace('-', '').replace(' ', '')
-    return _SIZE_TITLE_MAP.get(key)
+    t = s.strip()
+    if _RE_XXL.search(t): return 'XXL'
+    if _RE_XL.search(t):  return 'XL'
+    if _RE_L.search(t):   return 'L'
+    if _RE_M.search(t):   return 'M'
+    m = _RE_ML.search(t)
+    return ('L' if m.group(1).upper() == 'L' else 'M') if m else None
 
 
 def parse_size_from_title(title: str) -> Optional[str]:
-    """Extract M/L/XL/XXL from a listing title. Returns None if not found."""
-    m = _SIZE_TITLE_RE.search(title or '')
-    if not m:
-        return None
-    raw = next((g for g in m.groups() if g is not None), None)
-    if not raw:
-        return None
-    key = raw.lower().replace('-', '').replace(' ', '').replace('\t', '')
-    # "2x large" → "2xlarge", "2xl" → "2xl"
-    result = _SIZE_TITLE_MAP.get(key)
-    if result:
-        return result
-    # Try stripping trailing 'l' for "2xlarge" → try "2xl" etc
-    if key.startswith('2x'):
-        return _SIZE_TITLE_MAP.get('2xl') or _SIZE_TITLE_MAP.get('xxl')
-    if key.startswith('xx'):
-        return _SIZE_TITLE_MAP.get('xxl')
-    return None
+    """Extract M/L/XL/XXL from a listing title. Checks larger sizes first so
+    '2X Large' beats 'Large' even when 'Large' appears earlier in the string."""
+    t = title or ''
+    if _RE_XXL.search(t): return 'XXL'
+    if _RE_XL.search(t):  return 'XL'
+    if _RE_L.search(t):   return 'L'
+    if _RE_M.search(t):   return 'M'
+    m = _RE_ML.search(t)
+    return ('L' if m.group(1).upper() == 'L' else 'M') if m else None

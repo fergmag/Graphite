@@ -20,7 +20,7 @@ from app.scrape_etsy import search_etsy
 from app.scrape_whatnot import search_whatnot
 from app.cache import write_cache
 from app.public_view import build_public_payload
-from app.filters import filter_comps, normalize_query, parse_size_from_title
+from app.filters import filter_comps, normalize_query, parse_size_from_title, search_terms_for_query
 from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
 
 log = logging.getLogger(__name__)
@@ -51,22 +51,26 @@ def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
         except Exception:
             pass
 
-    # Market CASP: mean of active Grailed + eBay Browse listings (for display)
-    # Use require_code=False — search query is already specific; strict code filter
-    # removes most listings since Grailed/eBay sellers rarely put model codes in titles
+    # Market CASP: mean of active Grailed + eBay Browse listings (for display).
+    # Search with both canonical name and abbreviation (e.g. "j97 timber" + "j97 tmb")
+    # because sellers often use abbreviations that the canonical search misses.
     active: List[Dict[str, Any]] = []
-    try:
-        for g in filter_comps(search_grailed(query), query, require_code=False):
-            if g.get("price"):
-                active.append(g)
-    except Exception as e:
-        log.warning("[scraper] %s — grailed: %s", query, e)
-    try:
-        for item in filter_comps(search_ebay_active(query), query, require_code=False):
-            if item.get("price"):
-                active.append(item)
-    except Exception as e:
-        log.warning("[scraper] %s — ebay active: %s", query, e)
+    seen_urls: set = set()
+    for term in search_terms_for_query(query):
+        try:
+            for g in filter_comps(search_grailed(term), query, require_code=False):
+                if g.get("price") and g.get("url") not in seen_urls:
+                    active.append(g)
+                    seen_urls.add(g.get("url", ""))
+        except Exception as e:
+            log.warning("[scraper] %s — grailed(%s): %s", query, term, e)
+        try:
+            for item in filter_comps(search_ebay_active(term), query, require_code=False):
+                if item.get("price") and item.get("url") not in seen_urls:
+                    active.append(item)
+                    seen_urls.add(item.get("url", ""))
+        except Exception as e:
+            log.warning("[scraper] %s — ebay(%s): %s", query, term, e)
 
     prices = sorted(c["price"] for c in active if c.get("price"))
     market_casp: Optional[float] = sum(prices) / len(prices) if prices else None
@@ -132,18 +136,30 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     """
     saved = 0
 
+    # Search with canonical name AND abbreviation to catch sellers using either form
+    search_aliases = search_terms_for_query(query)
+
     # Platforms where sellers use model codes in titles → strict code filter
-    strict_listings: List[Dict[str, Any]] = []
-    strict_listings.extend(search_ebay_active(query))
-    strict_listings.extend(search_grailed(query))
-    strict_listings = filter_comps(strict_listings, query, require_code=True)
+    strict_raw: List[Dict[str, Any]] = []
+    seen_strict: set = set()
+    for term in search_aliases:
+        for item in search_ebay_active(term) + search_grailed(term):
+            u = item.get("url", "")
+            if u not in seen_strict:
+                strict_raw.append(item)
+                seen_strict.add(u)
+    strict_listings = filter_comps(strict_raw, query, require_code=True)
 
     # Platforms with targeted search (query already sent as "carhartt X") → junk filter only
-    relaxed_listings: List[Dict[str, Any]] = []
-    relaxed_listings.extend(search_depop(query))
-    relaxed_listings.extend(search_etsy(query))
-    relaxed_listings.extend(search_whatnot(query))
-    relaxed_listings = filter_comps(relaxed_listings, query, require_code=False)
+    relaxed_raw: List[Dict[str, Any]] = []
+    seen_relaxed: set = set()
+    for term in search_aliases:
+        for item in search_depop(term) + search_etsy(term) + search_whatnot(term):
+            u = item.get("url", "")
+            if u not in seen_relaxed:
+                relaxed_raw.append(item)
+                seen_relaxed.add(u)
+    relaxed_listings = filter_comps(relaxed_raw, query, require_code=False)
 
     for listing in strict_listings + relaxed_listings:
         price = listing.get("price") or 0
