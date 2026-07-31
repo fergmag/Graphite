@@ -114,20 +114,25 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
 # ── Size parsing from listing titles ─────────────────────────────────────────
 
 _SIZE_TITLE_MAP = {
-    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', 'xxlarge': 'XXL',
-    'xlarge': 'XL', 'xl': 'XL',
-    'large': 'L', 'l': 'L',
-    'medium': 'M', 'm': 'M',
+    'xxl': 'XXL', '2xl': 'XXL', 'xxlarge': 'XXL', '2xlarge': 'XXL', '2xlrg': 'XXL',
+    'xlarge': 'XL', 'xl': 'XL', 'xlrg': 'XL',
+    'large': 'L', 'l': 'L', 'lrg': 'L',
+    'medium': 'M', 'm': 'M', 'med': 'M',
 }
 
 # Ordered from most-specific to least to avoid 'XL' matching inside 'XXL'
+_XXL = r'(?:xxl|2xl|2x\s*large|2x\s*l|xx-?large)'
+_XL  = r'(?:xl|x-?large)'
+_L   = r'(?:large|lrg)'
+_M   = r'medium'
+
 _SIZE_TITLE_RE = re.compile(
     # "size XXL", "size: XL", "sz M" — prefixed by size/sz keyword
-    r'\b(?:size|sz)[:\s]+?(xxl|2xl|xx-?large|xl|x-?large|large|medium|[ml])\b'
+    rf'\b(?:size|sz)[:\s]+?({_XXL}|{_XL}|{_L}|{_M}|[ml])\b'
     # (XXL), (XL), (M), (L) — parenthesized
-    r'|\((xxl|2xl|xx-?large|xl|x-?large|large|medium|[ml])\)'
+    rf'|\(({_XXL}|{_XL}|{_L}|{_M}|[ml])\)'
     # full words without prefix
-    r'|\b(xxl|2xl|xx-?large|xl|x-?large|large|medium)\b'
+    rf'|\b({_XXL}|{_XL}|{_L}|{_M})\b'
     # standalone M or L at a word boundary (last resort — most ambiguous)
     r'|\b([ML])\b',
     re.IGNORECASE,
@@ -150,5 +155,14 @@ def parse_size_from_title(title: str) -> Optional[str]:
     raw = next((g for g in m.groups() if g is not None), None)
     if not raw:
         return None
-    key = raw.lower().replace('-', '').replace(' ', '')
-    return _SIZE_TITLE_MAP.get(key)
+    key = raw.lower().replace('-', '').replace(' ', '').replace('\t', '')
+    # "2x large" → "2xlarge", "2xl" → "2xl"
+    result = _SIZE_TITLE_MAP.get(key)
+    if result:
+        return result
+    # Try stripping trailing 'l' for "2xlarge" → try "2xl" etc
+    if key.startswith('2x'):
+        return _SIZE_TITLE_MAP.get('2xl') or _SIZE_TITLE_MAP.get('xxl')
+    if key.startswith('xx'):
+        return _SIZE_TITLE_MAP.get('xxl')
+    return None

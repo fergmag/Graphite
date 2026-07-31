@@ -930,11 +930,48 @@
         labels.appendChild(labelsWrap);
       }
 
+      let _fullHistory = [];
+      let _chartZoomEnd = 0;   // index into _fullHistory; 0 = show all (most recent end)
+      let _chartZoomWindow = 0; // number of points to show; 0 = all
+
+      function _renderChartSlice() {
+        if (!_fullHistory.length) { renderChart([]); return; }
+        const data = _chartZoomWindow > 0
+          ? _fullHistory.slice(Math.max(0, _chartZoomEnd - _chartZoomWindow), _chartZoomEnd || _fullHistory.length)
+          : _fullHistory;
+        renderChart(data);
+      }
+
       async function loadHistory(query) {
         const res = await fetch(`/api/history?query=${encodeURIComponent(query)}`).catch(() => null);
         if (!res || !res.ok) return;
         const d = await res.json().catch(() => null);
-        if (d && d.history) renderChart(d.history);
+        if (!d || !d.history) return;
+        _fullHistory = d.history;
+        _chartZoomEnd = 0;
+        _chartZoomWindow = 0;
+        _renderChartSlice();
+
+        // Wheel / trackpad zoom on the chart area
+        const wrap = document.getElementById('chartWrap');
+        wrap._zoomHandler && wrap.removeEventListener('wheel', wrap._zoomHandler);
+        wrap._zoomHandler = (e) => {
+          e.preventDefault();
+          const total = _fullHistory.length;
+          if (total < 3) return;
+          // Current window
+          let win = _chartZoomWindow || total;
+          let end = _chartZoomEnd || total;
+          // Zoom: pinch-in (deltaY < 0) zooms in (smaller window), scroll-out widens
+          const delta = e.deltaY > 0 ? 1.25 : (1 / 1.25);
+          win = Math.round(Math.max(3, Math.min(total, win * delta)));
+          // Clamp end so we don't go past the array
+          end = Math.min(total, Math.max(win, end));
+          _chartZoomWindow = win === total ? 0 : win;
+          _chartZoomEnd = (_chartZoomWindow === 0) ? 0 : end;
+          _renderChartSlice();
+        };
+        wrap.addEventListener('wheel', wrap._zoomHandler, { passive: false });
       }
 
       // ── Refresh status ──

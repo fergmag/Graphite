@@ -66,6 +66,7 @@
       .element-logo {
         flex-shrink: 0;
         display: inline-flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border: 2px solid rgba(255,255,255,0.75);
@@ -74,8 +75,11 @@
         height: 58px;
         color: #ffffff;
         line-height: 1;
+        padding: 4px 0;
+        gap: 1px;
       }
-      .el-symbol { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; opacity: 0.7; align-self: flex-start; padding-left: 5px; }
+      .el-symbol { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; }
 
       /* ── Nav ── */
       .nav-links {
@@ -413,6 +417,7 @@
       <!-- Main nav row -->
       <div class="header-main">
         <div class="element-logo">
+          <span class="el-number">17</span>
           <span class="el-symbol">Gr</span>
         </div>
         <nav class="nav-links">

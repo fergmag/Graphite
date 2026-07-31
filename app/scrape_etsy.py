@@ -66,44 +66,54 @@ def _parse_etsy_listings(raw: List[dict], query: str) -> Tuple[List[Dict[str, An
 
 def _fetch_etsy_images(listing_ids: List[str], headers: dict, timeout: int) -> Dict[int, str]:
     """
-    Fetch images via GET /listings/{id}/images for listings that didn't get inline photos.
-    Capped at 6 listings with 3 workers to avoid rate-limiting.
+    Batch-fetch photos via GET /listings?listing_ids=...&includes[]=MainImage.
+    One request for up to 100 IDs — avoids per-listing rate limits.
+    Falls back to chunked requests if batch returns no images.
     """
     if not listing_ids:
         return {}
 
-    from concurrent.futures import ThreadPoolExecutor, as_completed
-    from typing import Optional, Tuple
-
-    def fetch_one(lid: str) -> Optional[Tuple[int, str]]:
-        try:
-            url = f"{_ETSY_BASE}/listings/{lid}/images"
-            r = requests.get(url, headers=headers, timeout=timeout)
-            if r.status_code != 200:
-                log.warning("[etsy] /images %s → %d %s", lid, r.status_code, r.text[:80])
-                return None
-            images = r.json().get("results", [])
-            for img in images:
-                if not isinstance(img, dict):
-                    continue
-                photo = img.get("url_570xN") or img.get("url_fullxfull") or img.get("url_170x135")
-                if photo:
-                    return (int(lid), photo)
-            return None
-        except Exception as e:
-            log.warning("[etsy] /images %s error: %s", lid, e)
-            return None
-
-    ids_to_fetch = listing_ids[:25]
     image_map: Dict[int, str] = {}
-    with ThreadPoolExecutor(max_workers=5) as pool:
-        futures = {pool.submit(fetch_one, lid): lid for lid in ids_to_fetch}
-        for future in as_completed(futures):
-            result = future.result()
-            if result:
-                image_map[result[0]] = result[1]
 
-    log.warning("[etsy] fallback image fetch: %d/%d with photo", len(image_map), len(ids_to_fetch))
+    def _extract_photo(listing: dict) -> Optional[str]:
+        main = listing.get("main_image") or listing.get("MainImage") or {}
+        if main:
+            return main.get("url_570xN") or main.get("url_fullxfull") or main.get("url_170x135")
+        for key in ("images", "listing_images", "Images"):
+            imgs = listing.get(key)
+            if imgs and isinstance(imgs, list):
+                for img in imgs:
+                    if isinstance(img, dict):
+                        url = img.get("url_570xN") or img.get("url_fullxfull") or img.get("url_170x135")
+                        if url:
+                            return url
+        return None
+
+    # Process in chunks of 100 (Etsy API max per request)
+    for i in range(0, len(listing_ids), 100):
+        chunk = listing_ids[i:i+100]
+        ids_csv = ",".join(chunk)
+        try:
+            url = (f"{_ETSY_BASE}/listings"
+                   f"?listing_ids={ids_csv}"
+                   f"&includes[]=MainImage&includes[]=Images")
+            r = requests.get(url, headers=headers, timeout=timeout)
+            if r.status_code == 429:
+                log.warning("[etsy] batch photo fetch 429 — backing off 2s")
+                import time as _time; _time.sleep(2)
+                r = requests.get(url, headers=headers, timeout=timeout)
+            if r.status_code != 200:
+                log.warning("[etsy] batch /listings → %d %s", r.status_code, r.text[:80])
+                continue
+            for listing in r.json().get("results", []):
+                lid = listing.get("listing_id")
+                photo = _extract_photo(listing)
+                if lid and photo:
+                    image_map[int(lid)] = photo
+        except Exception as e:
+            log.warning("[etsy] batch photo fetch error: %s", e)
+
+    log.warning("[etsy] batch image fetch: %d/%d with photo", len(image_map), len(listing_ids))
     return image_map
 
 
