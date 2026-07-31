@@ -1,11 +1,5 @@
 [
   {
-    "query": "j76 cement",
-    "casp": 700.0,
-    "accuracy_pct": 0,
-    "created_at": "2026-07-14T23:36:28.078479+00:00"
-  },
-  {
     "query": "jb0873",
     "casp": 1000.0,
     "accuracy_pct": 0,
@@ -9718,5 +9712,11 @@
     "casp": 485.35,
     "accuracy_pct": 100,
     "created_at": "2026-07-31T07:22:40.727660+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 586.21,
+    "accuracy_pct": 100,
+    "created_at": "2026-07-31T07:22:49.910574+00:00"
   }
 ]
