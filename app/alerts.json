@@ -1,5 +1,21 @@
 [
   {
+    "id": 524,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Medium Blue Detroit J65 J01 BLU NVY 80s 90s RARE",
+    "price": 1209.6,
+    "url": "https://www.ebay.com/itm/267662221519?_skw=carhartt+j65+blue&hash=item3e51e960cf:g:-LoAAeSw9cNp~AAi",
+    "photo": "https://i.ebayimg.com/images/g/-LoAAeSw9cNp~AAi/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-01T20:46:36.264843+00:00"
+  },
+  {
     "id": 523,
     "query": "jb0866",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:44:03.699692+00:00"
-  },
-  {
-    "id": 477,
-    "query": "jr0115",
-    "source": "grailed",
-    "title": "Carhartt JR0115 Carbon Blue",
-    "price": 400.0,
-    "url": "https://www.grailed.com/listings/86800960",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/15efb53253a04d68b67179c4c0921b30",
-    "casp": 500.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:44:03.690876+00:00"
   }
 ]
