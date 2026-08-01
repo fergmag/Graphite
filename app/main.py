@@ -559,7 +559,9 @@ def create_app() -> Flask:
         for a in stored_alerts:
             if not a.get("price"):
                 continue
-            sz = parse_size_from_title(a.get("title", "")) or a.get("size")
+            if a.get("source") == "etsy" and not a.get("photo"):
+                continue
+            sz = a.get("size") or parse_size_from_title(a.get("title", ""))
             price = float(a["price"])
             listings.append({
                 "title": a.get("title", ""),

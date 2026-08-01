@@ -159,14 +159,22 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
             if u not in seen_relaxed:
                 relaxed_raw.append(item)
                 seen_relaxed.add(u)
-    relaxed_listings = filter_comps(relaxed_raw, query, require_code=False)
+    # Require model code on relaxed platforms too when the query has one.
+    # Prevents e.g. "j110 dst" search from returning Carhartt shorts/pants
+    # that happen to be tagged with the model number.
+    from app.filters import _NUMERIC_CODE_RE as _CODE_RE
+    _has_code = bool(_CODE_RE.search(query))
+    relaxed_listings = filter_comps(relaxed_raw, query, require_code=_has_code)
 
     for listing in strict_listings + relaxed_listings:
         price = listing.get("price") or 0
         if not price:
             continue
+        # Skip Etsy listings without a photo — they're almost always scam/spam
+        if listing.get("source") == "etsy" and not listing.get("photo"):
+            continue
         url = listing.get("url", "")
-        size = parse_size_from_title(listing.get("title", "")) or listing.get("size")
+        size = listing.get("size") or parse_size_from_title(listing.get("title", ""))
         score = _deal_score(price, casp or 0, size) if casp else 1
         if score >= 1:
             insert_alert(
