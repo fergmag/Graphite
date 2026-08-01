@@ -96,6 +96,8 @@ JUNK_TERMS = [
     "women's", "womens", "woman's", "girls", "girl's",
     "boys", "boy's", "children", "child",
     "vest", "liner only",
+    "shorts", "short pants", "bib overalls", "bibs", "dungarees",
+    "pants", "jeans", "chaps", "hoodie", "sweatshirt", "tee ", "t-shirt",
 ]
 
 # Matches Carhartt jacket codes: J97, J65, JB0817, JS1237, JR0115, etc.
@@ -131,7 +133,7 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
 # ── Size parsing from listing titles ─────────────────────────────────────────
 
 # Priority-ordered regexes: search for larger sizes first so "Large 2X" → XXL not L
-_RE_XXL = re.compile(r'\b(?:xxl|2\s*x\s*l(?:arge)?|2\s*xl|xx-?large|2\s*x\b)', re.IGNORECASE)
+_RE_XXL = re.compile(r'\b(?:xxl|2\s*-?\s*x\s*l(?:arge)?|2\s*-?\s*xl|xx-?large|2\s*-?\s*x\b)', re.IGNORECASE)
 _RE_XL  = re.compile(r'\b(?:xl|x-?large)\b', re.IGNORECASE)
 _RE_L   = re.compile(r'\b(?:large|lrg)\b', re.IGNORECASE)
 _RE_M   = re.compile(r'\b(?:medium|med)\b', re.IGNORECASE)

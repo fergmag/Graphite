@@ -166,7 +166,7 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
         if not price:
             continue
         url = listing.get("url", "")
-        size = listing.get("size") or parse_size_from_title(listing.get("title", ""))
+        size = parse_size_from_title(listing.get("title", "")) or listing.get("size")
         score = _deal_score(price, casp or 0, size) if casp else 1
         if score >= 1:
             insert_alert(

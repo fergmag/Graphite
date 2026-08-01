@@ -960,8 +960,8 @@
           const total = _fullHistory.length;
           if (total < 3) return;
 
-          // deltaY > 0 = scroll down = zoom OUT (wider window); < 0 = zoom IN
-          const factor = e.deltaY > 0 ? 1.25 : (1 / 1.25);
+          // deltaY > 0 = scroll down = zoom IN (narrower window); < 0 = zoom OUT
+          const factor = e.deltaY > 0 ? (1 / 1.25) : 1.25;
           let win = _chartZoomWindow || total;
           let end = _chartZoomEnd || total;
 
