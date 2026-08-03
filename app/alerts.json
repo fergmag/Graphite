@@ -1,5 +1,21 @@
 [
   {
+    "id": 532,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Crimson Cri Size Medium",
+    "price": 3500.0,
+    "url": "https://www.ebay.com/itm/298207427968?_skw=carhartt+j97+cri&hash=item456e8c3d80:g:Y80AAeSwOhVp1yEd",
+    "photo": "https://i.ebayimg.com/images/g/Y80AAeSwOhVp1yEd/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T19:25:11.516106+00:00"
+  },
+  {
     "id": 531,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:45:33.259265+00:00"
-  },
-  {
-    "id": 469,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket J97 PTL Petrol Grey - Custom Tailored",
-    "price": 385.0,
-    "url": "https://www.ebay.com/itm/137419140643?_skw=carhartt+j97+petrol&hash=item1ffed1ae23:g:MecAAeSwIVVqMD1A",
-    "photo": "https://i.ebayimg.com/images/g/MecAAeSwIVVqMD1A/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 4,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:45:33.193438+00:00"
   }
 ]
