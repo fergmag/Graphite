@@ -1,5 +1,21 @@
 [
   {
+    "id": 532,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage J43 HTG Green Carhartt Detroit Jacket Size L Union Made 1990s Faded ",
+    "price": 498.0,
+    "url": "https://www.ebay.com/itm/336722098223?_skw=carhartt+j43+htg&hash=item4e6633782f:g:hlgAAeSwsIxqb6B-",
+    "photo": "https://i.ebayimg.com/images/g/hlgAAeSwsIxqb6B-/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T01:36:29.938513+00:00"
+  },
+  {
     "id": 531,
     "query": "j110 darkstone",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:44:54.564748+00:00"
-  },
-  {
-    "id": 469,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Vintage Carhartt Detroit jacket J97 CRIMSON szXL",
-    "price": 2000.0,
-    "url": "https://www.grailed.com/listings/95720098",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/af6db5244cd64a229d154942746b0ac5",
-    "casp": 2700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:44:54.558296+00:00"
   }
 ]
