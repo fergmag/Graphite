@@ -1,5 +1,37 @@
 [
   {
+    "id": 528,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Vintage Carhartt JU1005 BLK RARE Southwest 1994 Unlined USA M/L",
+    "price": 2000.0,
+    "url": "https://www.ebay.com/itm/336465148260?_skw=carhartt+ju1005&hash=item4e56e2b964:g:1PgAAeSwfKFpqck3",
+    "photo": "https://i.ebayimg.com/images/g/1PgAAeSwfKFpqck3/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T07:20:04.714175+00:00"
+  },
+  {
+    "id": 527,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Vintage Carhartt JU1005 BLK Jacket Mens M Southwest 1994 Unlined Duck Chore USA",
+    "price": 1510.8700000000001,
+    "url": "https://www.ebay.com/itm/318543410803?_skw=carhartt+ju1005&hash=item4a2aaab673:g:OEIAAeSwk1BqIgNs",
+    "photo": "https://i.ebayimg.com/images/g/OEIAAeSwk1BqIgNs/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T07:20:04.707163+00:00"
+  },
+  {
     "id": 526,
     "query": "jp1017",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:45:09.158668+00:00"
-  },
-  {
-    "id": 473,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "J97 Carhartt Plaid Detroit Jacket - Petrol Black",
-    "price": 169.0,
-    "url": "https://www.etsy.com/listing/4301561679/j97-carhartt-plaid-detroit-jacket-petrol",
-    "photo": "https://i.etsystatic.com/58445834/r/il/cec712/6842854024/il_570xN.6842854024_ooth.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:45:09.154238+00:00"
-  },
-  {
-    "id": 474,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
-    "price": 255.0,
-    "url": "https://www.etsy.com/listing/1774436066/vintage-carhartt-detroit-blanket-lined",
-    "photo": "https://i.etsystatic.com/53178016/r/il/4ae0c4/6407655398/il_570xN.6407655398_ei3m.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:45:09.148725+00:00"
   }
 ]
