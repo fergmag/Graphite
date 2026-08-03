@@ -103,6 +103,7 @@ JUNK_TERMS = [
     "vest", "liner only",
     "shorts", "short pants", "bib overalls", "bibs", "dungarees",
     "pants", "jeans", "chaps", "hoodie", "sweatshirt", "tee ", "t-shirt",
+    "quilted",
 ]
 
 # Matches Carhartt jacket codes: J97, J65, JB0817, JS1237, JR0115, etc.

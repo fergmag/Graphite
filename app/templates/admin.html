@@ -493,7 +493,8 @@
             🔔<span id="bellCount" style="display:none;position:absolute;top:-5px;right:-8px;background:#e53935;color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px;font-family:inherit;line-height:1.4;"></span>
           </button>
         </div>
-        <p class="watch-sub">Auto-refreshes every 6 hours. <span id="lastRefresh"></span></p>
+        <p class="watch-sub">Auto-refreshes every 6 hours. <span id="lastRefresh"></span> <button id="historyToggle" onclick="toggleRefreshHistory()" style="background:none;border:none;color:rgba(255,255,255,0.5);font-size:11px;font-weight:700;cursor:pointer;padding:0;letter-spacing:0.05em;text-transform:uppercase;display:none;">▾ History</button></p>
+        <div id="refreshHistory" style="display:none;margin-bottom:10px;border:1px solid rgba(255,255,255,0.12);border-radius:8px;overflow:hidden;"></div>
         <div id="watchBody">
           <div class="watchrow">
             <input class="est-input" id="watchInput" placeholder="e.g. J97 CRI" />
@@ -987,15 +988,48 @@
       }
 
       // ── Refresh status ──
+      let _refreshHistory = [];
+      let _historyOpen = false;
+
+      function fmtAgo(isoStr) {
+        const mins = Math.round((Date.now() - new Date(isoStr).getTime()) / 60000);
+        return mins < 60 ? `${mins}m ago` : `${Math.round(mins/60)}h ago`;
+      }
+
+      function toggleRefreshHistory() {
+        _historyOpen = !_historyOpen;
+        const hist = document.getElementById('refreshHistory');
+        const btn  = document.getElementById('historyToggle');
+        if (!hist) return;
+        if (_historyOpen && _refreshHistory.length) {
+          hist.style.display = 'block';
+          hist.innerHTML = _refreshHistory.map((r, i) => {
+            const ago = fmtAgo(r.ran_at);
+            const bg = i === 0 ? 'rgba(255,255,255,0.06)' : 'transparent';
+            return `<div style="padding:7px 12px;font-size:11px;font-weight:600;color:#fff;background:${bg};border-bottom:1px solid rgba(255,255,255,0.08);">
+              ${ago} · ${r.ok||0} ok / ${r.failed||0} failed · ${r.alerts_saved||0} alerts
+            </div>`;
+          }).join('');
+          if (btn) btn.textContent = '▴ History';
+        } else {
+          hist.style.display = 'none';
+          if (btn) btn.textContent = '▾ History';
+        }
+      }
+
       async function loadRefreshStatus() {
         const res = await fetch('/admin/refresh-status').catch(() => null);
         if (!res || !res.ok) return;
         const d = await res.json().catch(() => null);
         if (!d || !d.ran_at) return;
-        const ago = Math.round((Date.now() - new Date(d.ran_at).getTime()) / 60000);
-        const label = ago < 60 ? `${ago}m ago` : `${Math.round(ago/60)}h ago`;
+        const label = fmtAgo(d.ran_at);
         const stat = d.ok != null ? ` · ${d.ok} ok / ${d.failed} failed` : '';
         document.getElementById('lastRefresh').textContent = `Last run: ${label}${stat}`;
+        if (d.history && d.history.length > 1) {
+          _refreshHistory = d.history;
+          const btn = document.getElementById('historyToggle');
+          if (btn) btn.style.display = 'inline';
+        }
       }
 
       const refreshNowBtn = document.getElementById('refreshNowBtn');
@@ -1055,7 +1089,10 @@
         const empty    = document.getElementById('listingsEmpty');
         const srcLabel = document.getElementById('listingsSource');
 
-        let sorted = [...listings];
+        const filterSize = $('sizeSelect') ? $('sizeSelect').value.trim().toUpperCase() : '';
+        let sorted = filterSize
+          ? listings.filter(l => (l.size || '').trim().toUpperCase() === filterSize)
+          : [...listings];
         if (_currentSort === 'deal')    sorted.sort((a,b) => (b.deal_score||0) - (a.deal_score||0));
         else if (_currentSort === 'low')  sorted.sort((a,b) => (a.price||0) - (b.price||0));
         else if (_currentSort === 'high') sorted.sort((a,b) => (b.price||0) - (a.price||0));
@@ -1108,6 +1145,14 @@
           renderListingsGrid(_allListings);
         });
       });
+
+      // Wire size select → filter listings
+      const _sizeSelectEl = $('sizeSelect');
+      if (_sizeSelectEl) {
+        _sizeSelectEl.addEventListener('change', () => {
+          if (_allListings.length) renderListingsGrid(_allListings);
+        });
+      }
 
       async function loadListings(query, size) {
         const section  = document.getElementById('listingsSection');
