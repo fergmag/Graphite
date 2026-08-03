@@ -1,5 +1,21 @@
 [
   {
+    "id": 511,
+    "query": "js1237",
+    "source": "grailed",
+    "title": "Carhartt JS1237 Carbon Blue Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805758",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/5a6976244a8b459c940ecef009748085",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T07:18:52.287072+00:00"
+  },
+  {
     "id": 510,
     "query": "j65 blue",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:45:08.976597+00:00"
-  },
-  {
-    "id": 490,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Detroit Carhart J97 Moss Green",
-    "price": 360.0,
-    "url": "https://www.grailed.com/listings/74562396",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/13eca2450967486582db7e49965afa9c",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:45:08.971258+00:00"
   }
 ]
