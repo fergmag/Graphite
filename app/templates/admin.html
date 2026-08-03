@@ -445,7 +445,7 @@
       <div class="chart-wrap" id="chartWrap">
         <div class="chart-tooltip" id="chartTooltip"></div>
         <div class="chart-header">
-          <span class="chart-title">Listing Price Index</span>
+          <span class="chart-title">Listing Price History</span>
           <div style="display:flex;align-items:baseline;gap:10px;">
             <span style="font-size:10px;color:rgba(255,255,255,0.4);font-style:italic;" id="chartGivenLabel"></span>
             <span class="chart-range" id="chartRange"></span>
@@ -1165,6 +1165,12 @@
             list.innerHTML = '<p style="color:#fff;font-size:13px;">No alerts yet. Alerts appear after a watchlist refresh finds deals on Depop or Grailed.</p>';
             return;
           }
+          // Hide Etsy listings without a photo — they're almost always scam/spam
+          const alerts = data.alerts.filter(a => !(a.source === 'etsy' && !a.photo));
+          if (!alerts.length) {
+            list.innerHTML = '<p style="color:#fff;font-size:13px;">No alerts yet.</p>';
+            return;
+          }
           const _sizeMult = {M:1.0, L:0.80, XL:0.50, XXL:0.20};
           const _normSize = s => {
             if (!s) return null;
@@ -1175,7 +1181,7 @@
             if (k === 'M' || k === 'MEDIUM') return 'M';
             return null;
           };
-          list.innerHTML = data.alerts.map(a => {
+          list.innerHTML = alerts.map(a => {
             const normSize = _normSize(a.size);
             const mult = _sizeMult[normSize] || 1.0;
             const canonicalCasp = _modelsMap[a.query] || a.casp;

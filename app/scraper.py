@@ -159,12 +159,7 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
             if u not in seen_relaxed:
                 relaxed_raw.append(item)
                 seen_relaxed.add(u)
-    # Require model code on relaxed platforms too when the query has one.
-    # Prevents e.g. "j110 dst" search from returning Carhartt shorts/pants
-    # that happen to be tagged with the model number.
-    from app.filters import _NUMERIC_CODE_RE as _CODE_RE
-    _has_code = bool(_CODE_RE.search(query))
-    relaxed_listings = filter_comps(relaxed_raw, query, require_code=_has_code)
+    relaxed_listings = filter_comps(relaxed_raw, query, require_code=False)
 
     for listing in strict_listings + relaxed_listings:
         price = listing.get("price") or 0

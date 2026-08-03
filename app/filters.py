@@ -44,8 +44,13 @@ _CODE_ALIASES = {
     "dol": "dark olive",
     "dst": "darkstone",
 }
-# Reverse: canonical full name → abbreviation (for search fallback)
-_ALIAS_TO_CODE: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
+# Reverse: canonical full name → abbreviation for search fallback.
+# Only include aliases where the short form is unambiguous as a search term.
+# "dst" excluded — matches DST brand, "dusty", etc. and causes J110 junk.
+_ALIAS_TO_CODE: Dict[str, str] = {
+    v: k for k, v in _CODE_ALIASES.items()
+    if k not in ("dst", "brk", "blu")  # too ambiguous as standalone search terms
+}
 
 
 def normalize_query(query: str) -> str:
