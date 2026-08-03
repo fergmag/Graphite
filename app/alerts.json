@@ -1,5 +1,21 @@
 [
   {
+    "id": 526,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
+    "price": 2200.0,
+    "url": "https://www.ebay.com/itm/157810033648?_skw=carhartt+jp1017&hash=item24be3603f0:g:FKkAAeSwvTJpdtCo",
+    "photo": "https://i.ebayimg.com/images/g/FKkAAeSwvTJpdtCo/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-03T07:19:55.407803+00:00"
+  },
+  {
     "id": 525,
     "query": "jq2472",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-27T21:45:09.148725+00:00"
-  },
-  {
-    "id": 475,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Jacket J97 Moss Green Blanket Lined Corduroy Collar Chore Coat Unisex Workwear Canvas Jacket Distressed",
-    "price": 165.0,
-    "url": "https://www.etsy.com/listing/4542500278/vintage-carhartt-detroit-jacket-j97-moss",
-    "photo": "https://i.etsystatic.com/66956129/r/il/c90c53/8286752918/il_570xN.8286752918_nl74.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-27T21:45:09.140650+00:00"
   }
 ]
