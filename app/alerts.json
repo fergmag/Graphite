@@ -1,5 +1,21 @@
 [
   {
+    "id": 675,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 CRI Size Medium (Cropped)",
+    "price": 2750.0,
+    "url": "https://www.ebay.com/itm/227461393845?_skw=carhartt+j97+cri&hash=item34f5c16db5:g:9-gAAeSwzDRqcZ5l",
+    "photo": "https://i.ebayimg.com/images/g/9-gAAeSwzDRqcZ5l/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-04T13:25:08.622055+00:00"
+  },
+  {
     "id": 674,
     "query": "j97 petrol",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-07-29T21:43:38.897883+00:00"
-  },
-  {
-    "id": 326,
-    "query": "j76 cement",
-    "source": "ebay",
-    "title": "Vintage CARHARTT Detroit Jacket Blanket Lined Mens 2XL J76 CMT Cement Gray RARE",
-    "price": 449.99,
-    "url": "https://www.ebay.com/itm/327015180892?_skw=carhartt+j76+cement&hash=item4c239faa5c:g:7gUAAeSwqz1pm5qY",
-    "photo": "https://i.ebayimg.com/images/g/7gUAAeSwqz1pm5qY/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-07-29T15:47:36.664515+00:00"
   }
 ]
