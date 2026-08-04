@@ -1,5 +1,21 @@
 [
   {
+    "id": 678,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90s J43HTG Green Carhartt Detroit Jacket Size 2XL",
+    "price": 375.0,
+    "url": "https://www.ebay.com/itm/128010703108?_skw=carhartt+j43+htg&hash=item1dce085104:g:LDgAAeSwgPtqchJw",
+    "photo": "https://i.ebayimg.com/images/g/LDgAAeSwgPtqchJw/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-04T19:27:13.557547+00:00"
+  },
+  {
     "id": 677,
     "query": "j97 moss",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-30T03:43:37.931305+00:00"
-  },
-  {
-    "id": 323,
-    "query": "jb0817",
-    "source": "ebay",
-    "title": "Carhartt JB0817 JB0873 JB0866 large",
-    "price": 7131.21,
-    "url": "https://www.ebay.com/itm/137538271778?_skw=carhartt+jb0817&hash=item2005eb7a22:g:V14AAeSwRydqYCc6",
-    "photo": "https://i.ebayimg.com/images/g/V14AAeSwRydqYCc6/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-30T03:43:29.207548+00:00"
   }
 ]
