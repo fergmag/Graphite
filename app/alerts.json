@@ -1,5 +1,21 @@
 [
   {
+    "id": 686,
+    "query": "j97 timber",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Brown Detroit J97 TMB USA Workwear",
+    "price": 563.0,
+    "url": "https://www.grailed.com/listings/102448022",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/a3a7362b6f1049a5a7ff07c2eaa700b5",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-05T13:26:20.339550+00:00"
+  },
+  {
     "id": 685,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-30T03:46:04.791532+00:00"
-  },
-  {
-    "id": 315,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Retro Carhartt J97 MOS Moss Detroit Work Jacket",
-    "price": 59.34,
-    "url": "https://www.etsy.com/listing/4546555866/retro-carhartt-j97-mos-moss-detroit-work",
-    "photo": "https://i.etsystatic.com/63370309/r/il/5c262f/8315434402/il_570xN.8315434402_91ol.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-30T03:45:42.926211+00:00"
   }
 ]
