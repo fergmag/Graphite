@@ -1,5 +1,21 @@
 [
   {
+    "id": 688,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt WJ097 BGP Large Detroit Jacket ~ purple brg wj097bgp l j97 pink coat",
+    "price": 949.0,
+    "url": "https://www.ebay.com/itm/158153795662?_skw=carhartt+j97+brg&hash=item24d2b3684e:g:YPMAAeSwyXRqF9VK",
+    "photo": "https://i.ebayimg.com/images/g/YPMAAeSwyXRqF9VK/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-05T19:25:54.299014+00:00"
+  },
+  {
     "id": 687,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-30T03:46:25.161544+00:00"
-  },
-  {
-    "id": 313,
-    "query": "j97 petrol",
-    "source": "etsy",
-    "title": "Retro Carhartt J97 PTL Petrol Detroit Work Jacket",
-    "price": 59.34,
-    "url": "https://www.etsy.com/listing/4546560032/retro-carhartt-j97-ptl-petrol-detroit",
-    "photo": "https://i.etsystatic.com/63370309/r/il/33b317/8363385503/il_570xN.8363385503_fye6.jpg",
-    "casp": 600.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-30T03:46:05.116263+00:00"
   }
 ]
