@@ -21,7 +21,7 @@ from app.public_view import build_public_payload, deal_score as _deal_score
 
 # Size multipliers: given prices in models.json are for M
 _SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
-from app.filters import filter_comps, normalize_query, parse_size_from_title
+from app.filters import filter_comps, normalize_query, parse_size_from_title, JUNK_TERMS
 from app.db import (
     init_db,
     insert_comps,
@@ -561,6 +561,8 @@ def create_app() -> Flask:
                 continue
             if a.get("source") == "etsy" and not a.get("photo"):
                 continue
+            if any(term in (a.get("title") or "").lower() for term in JUNK_TERMS):
+                continue
             sz = a.get("size") or parse_size_from_title(a.get("title", ""))
             price = float(a["price"])
             listings.append({
@@ -609,6 +611,7 @@ def create_app() -> Flask:
         unseen_only = request.args.get("unseen") == "1"
         query_filter = request.args.get("query") or None
         alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
+        alerts = [a for a in alerts if not any(term in (a.get("title") or "").lower() for term in JUNK_TERMS)]
         return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts(), "total": count_total_alerts()})
 
     @app.post("/api/alerts/counts")

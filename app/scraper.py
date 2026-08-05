@@ -21,7 +21,7 @@ from app.scrape_whatnot import search_whatnot
 from app.cache import write_cache
 from app.public_view import build_public_payload
 from app.filters import filter_comps, normalize_query, parse_size_from_title, search_terms_for_query
-from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts
+from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts, insert_refresh_log, get_refresh_log
 
 log = logging.getLogger(__name__)
 
@@ -32,7 +32,6 @@ except Exception:
 
 _last_ran_at: Optional[str] = None
 _last_summary: Dict[str, Any] = {}
-_refresh_history: List[Dict[str, Any]] = []
 
 
 def scrape_and_save(raw_query: str, session=None) -> Dict[str, Any]:
@@ -197,7 +196,7 @@ def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
     5s delay between queries — polite to Grailed/Etsy but fast enough for the
     6h APScheduler interval to work without overlapping runs.
     """
-    global _last_ran_at, _last_summary, _refresh_history
+    global _last_ran_at, _last_summary
 
     queries = list_watches()
     log.info("[scheduler] Starting refresh — %d queries", len(queries))
@@ -237,12 +236,17 @@ def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
         "failed": fail_count,
         "alerts_saved": alerts_saved,
     }
-    _refresh_history.append(_last_summary.copy())
-    if len(_refresh_history) > 20:
-        _refresh_history.pop(0)
+    try:
+        insert_refresh_log(_last_summary)
+    except Exception as e:
+        log.warning("[scheduler] refresh_log insert failed: %s", e)
     log.info("[scheduler] Done — %d ok, %d failed, %d alerts", ok_count, fail_count, alerts_saved)
     return _last_summary
 
 
 def get_refresh_status() -> Dict[str, Any]:
-    return {"ran_at": _last_ran_at, **_last_summary, "history": list(reversed(_refresh_history))}
+    try:
+        history = get_refresh_log(limit=20)
+    except Exception:
+        history = []
+    return {"ran_at": _last_ran_at, **_last_summary, "history": history}

@@ -188,6 +188,21 @@ def init_db() -> None:
         _migrate_alerts_json(con)
         _migrate_estimates_json(con)
 
+        # refresh_log — history of background refresh runs
+        if not _table_exists(con, "refresh_log"):
+            con.execute(
+                """
+                CREATE TABLE refresh_log (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    ran_at TEXT NOT NULL,
+                    total INTEGER,
+                    ok INTEGER,
+                    failed INTEGER,
+                    alerts_saved INTEGER
+                )
+                """
+            )
+
         con.commit()
     finally:
         con.close()
@@ -818,7 +833,7 @@ def count_alerts_per_query(queries: List[str]) -> Dict[str, int]:
     try:
         placeholders = ",".join("?" * len(queries))
         rows = con.execute(
-            f"SELECT query, COUNT(*) as cnt FROM listing_alerts WHERE query IN ({placeholders}) GROUP BY query",
+            f"SELECT query, COUNT(*) as cnt FROM listing_alerts WHERE query IN ({placeholders}) AND NOT (source='etsy' AND (photo IS NULL OR photo='')) GROUP BY query",
             queries,
         ).fetchall()
         result = {q: 0 for q in queries}
@@ -832,8 +847,39 @@ def count_alerts_per_query(queries: List[str]) -> Dict[str, int]:
 def count_unseen_alerts() -> int:
     con = _connect()
     try:
-        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts WHERE seen=0").fetchone()
+        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts WHERE seen=0 AND NOT (source='etsy' AND (photo IS NULL OR photo=''))").fetchone()
         return row["n"] if row else 0
+    finally:
+        con.close()
+
+
+def insert_refresh_log(summary: Dict[str, Any]) -> None:
+    con = _connect()
+    try:
+        con.execute(
+            "INSERT INTO refresh_log (ran_at, total, ok, failed, alerts_saved) VALUES (?,?,?,?,?)",
+            (
+                summary.get("ran_at"),
+                summary.get("total", 0),
+                summary.get("ok", 0),
+                summary.get("failed", 0),
+                summary.get("alerts_saved", 0),
+            ),
+        )
+        con.execute("DELETE FROM refresh_log WHERE id NOT IN (SELECT id FROM refresh_log ORDER BY id DESC LIMIT 50)")
+        con.commit()
+    finally:
+        con.close()
+
+
+def get_refresh_log(limit: int = 20) -> List[Dict[str, Any]]:
+    con = _connect()
+    try:
+        rows = con.execute(
+            "SELECT ran_at, total, ok, failed, alerts_saved FROM refresh_log ORDER BY id DESC LIMIT ?",
+            (limit,),
+        ).fetchall()
+        return [dict(r) for r in rows]
     finally:
         con.close()
 
@@ -841,7 +887,7 @@ def count_unseen_alerts() -> int:
 def count_total_alerts() -> int:
     con = _connect()
     try:
-        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts").fetchone()
+        row = con.execute("SELECT COUNT(*) as n FROM listing_alerts WHERE NOT (source='etsy' AND (photo IS NULL OR photo=''))").fetchone()
         return row["n"] if row else 0
     finally:
         con.close()
