@@ -1,5 +1,21 @@
 [
   {
+    "id": 693,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt Detroit J97 MOS Forest Green Jacket Corduroy Collar Blanket Lined Men&#39;s L",
+    "price": 700.0,
+    "url": "https://www.etsy.com/listing/4550335018/carhartt-detroit-j97-mos-forest-green",
+    "photo": "https://i.etsystatic.com/63638630/r/il/b80ef3/8390310989/il_570xN.8390310989_8zzg.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-06T01:25:32.561486+00:00"
+  },
+  {
     "id": 692,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-07-30T19:18:26.550999+00:00"
-  },
-  {
-    "id": 308,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket Blanket Lined Mens XXL J97 PTL Petrol Gray",
-    "price": 524.98,
-    "url": "https://www.ebay.com/itm/236677618632?_skw=carhartt+j97+petrol&hash=item371b15dbc8:g:mW0AAeSw6YBpr0GK",
-    "photo": "https://i.ebayimg.com/images/g/mW0AAeSw6YBpr0GK/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-07-30T19:17:08.219307+00:00"
   }
 ]
