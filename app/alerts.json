@@ -1,5 +1,21 @@
 [
   {
+    "id": 708,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J43 Htg Hunter Green - Size Mens Medium Regular  (VG)",
+    "price": 600.0,
+    "url": "https://www.ebay.com/itm/336729119353?_skw=carhartt+j43+hunter+green&hash=item4e669e9a79:g:JfcAAeSw7EhqdCwU",
+    "photo": "https://i.ebayimg.com/images/g/JfcAAeSw7EhqdCwU/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-06T07:27:09.545016+00:00"
+  },
+  {
     "id": 707,
     "query": "j76 cement",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:27:28.948785+00:00"
-  },
-  {
-    "id": 293,
-    "query": "j65 brick",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Jacket Blanket lined J65 BRK Red Size XL/2XL Faded",
-    "price": 1119.99,
-    "url": "https://www.etsy.com/listing/4508600860/vintage-carhartt-detroit-jacket-blanket",
-    "photo": "https://i.etsystatic.com/65222494/r/il/db8141/8042048682/il_570xN.8042048682_rpba.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:27:16.899492+00:00"
   }
 ]
