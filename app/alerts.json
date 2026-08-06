@@ -1,5 +1,37 @@
 [
   {
+    "id": 712,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Early 2000s Carhartt Detroit Jacket, J97 TMB (Timber), Made in USA, XL",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/336729411686?_skw=carhartt+j97+tmb&hash=item4e66a31066:g:ZgMAAeSwaJdqdF2W",
+    "photo": "https://i.ebayimg.com/images/g/ZgMAAeSwaJdqdF2W/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-06T13:26:17.142552+00:00"
+  },
+  {
+    "id": 711,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Early 2000s Carhartt Detroit Jacket, J97 TMB (Timber), Made in USA, XL",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/336729411686?_skw=carhartt+j97+timber&hash=item4e66a31066:g:ZgMAAeSwaJdqdF2W",
+    "photo": "https://i.ebayimg.com/images/g/ZgMAAeSwaJdqdF2W/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-06T13:26:17.134811+00:00"
+  },
+  {
     "id": 710,
     "query": "j76 moss",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:27:28.974178+00:00"
-  },
-  {
-    "id": 289,
-    "query": "j65 blue",
-    "source": "ebay",
-    "title": "Carhartt J65 BLU BRK Large",
-    "price": 7174.95,
-    "url": "https://www.ebay.com/itm/137538274577?_skw=carhartt+j65+blu&hash=item2005eb8511:g:GaIAAeSwhEBqYChi",
-    "photo": "https://i.ebayimg.com/images/g/GaIAAeSwhEBqYChi/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:27:28.970018+00:00"
-  },
-  {
-    "id": 290,
-    "query": "j65 blue",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket J65 Blu Large",
-    "price": 2573.51,
-    "url": "https://www.ebay.com/itm/407096425329?_skw=carhartt+j65+blu&hash=item5ec8d67b71:g:bfsAAeSwAY9qY-0D",
-    "photo": "https://i.ebayimg.com/images/g/bfsAAeSwAY9qY-0D/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:27:28.966232+00:00"
   }
 ]
