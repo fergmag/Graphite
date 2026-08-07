@@ -1,5 +1,21 @@
 [
   {
+    "id": 728,
+    "query": "j76 moss",
+    "source": "grailed",
+    "title": "90s Carharrt Detroit J76 MOS",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/102049039",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b36bc3029dff4a2ea3a1f73694f16482",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T01:27:41.959194+00:00"
+  },
+  {
     "id": 727,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.616388+00:00"
-  },
-  {
-    "id": 273,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Carhartt Men’s 34x32 Relaxed Fit Distressed B172 DST Jeans",
-    "price": 15.0,
-    "url": "https://www.etsy.com/listing/4350279703/carhartt-mens-34x32-relaxed-fit",
-    "photo": "https://i.etsystatic.com/12816038/r/il/d00cc6/7100149982/il_570xN.7100149982_j7n2.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.610897+00:00"
   }
 ]
