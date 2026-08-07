@@ -1,5 +1,21 @@
 [
   {
+    "id": 724,
+    "query": "j43 chestnut",
+    "source": "etsy",
+    "title": "Vtg 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
+    "price": 425.0,
+    "url": "https://www.etsy.com/listing/4541795333/vtg-90s-carhartt-faded-detroit-jacket",
+    "photo": "https://i.etsystatic.com/65692878/r/il/3ce1d3/8329668173/il_570xN.8329668173_ssg7.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T01:26:33.053588+00:00"
+  },
+  {
     "id": 723,
     "query": "j97 petrol",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.593508+00:00"
-  },
-  {
-    "id": 277,
-    "query": "j110 darkstone",
-    "source": "grailed",
-    "title": "Carhartt J110 DST Large",
-    "price": 600.0,
-    "url": "https://www.grailed.com/listings/86800540",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/790a7daa9f5b40b5b40ad844e6a29450",
-    "casp": 800.0,
-    "deal_score": 2,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.587806+00:00"
   }
 ]
