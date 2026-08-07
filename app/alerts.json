@@ -1,5 +1,37 @@
 [
   {
+    "id": 727,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 HTG Hunter Green",
+    "price": 899.0,
+    "url": "https://www.ebay.com/itm/178334274191?_skw=carhartt+j43+hunter+green&hash=item29858d128f:g:QCsAAeSwLf5pv-75",
+    "photo": "https://i.ebayimg.com/images/g/QCsAAeSwLf5pv-75/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T01:27:10.036256+00:00"
+  },
+  {
+    "id": 726,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J43 HTG Big Logo Hunter Green XL",
+    "price": 707.07,
+    "url": "https://www.ebay.com/itm/287061356666?_skw=carhartt+j43+hunter+green&hash=item42d630b07a:g:MlEAAeSwR8tpX-VH",
+    "photo": "https://i.ebayimg.com/images/g/MlEAAeSwR8tpX-VH/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T01:27:10.029074+00:00"
+  },
+  {
     "id": 725,
     "query": "j43 onyx",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.610897+00:00"
-  },
-  {
-    "id": 274,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage 2000s Carhartt Denim Carpenter Pants – 40x32 – B130 DST Loose Fit Workwear Jeans – Utility Pockets",
-    "price": 44.0,
-    "url": "https://www.etsy.com/listing/4526538416/vintage-2000s-carhartt-denim-carpenter",
-    "photo": "https://i.etsystatic.com/61925502/r/il/d9ebe4/8216234499/il_570xN.8216234499_ksws.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.605032+00:00"
-  },
-  {
-    "id": 275,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage 90s Carhartt Denim Jacket / Mens Large Trucker Jacket / Blanket Lined Distressed Workwear Coat / J11 DST",
-    "price": 129.95,
-    "url": "https://www.etsy.com/listing/4534805821/vintage-90s-carhartt-denim-jacket-mens",
-    "photo": "https://i.etsystatic.com/66852319/r/il/162225/8276641203/il_570xN.8276641203_n03c.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.599309+00:00"
   }
 ]
