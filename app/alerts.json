@@ -1,5 +1,37 @@
 [
   {
+    "id": 730,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket MOS",
+    "price": 189.99,
+    "url": "https://www.etsy.com/listing/4551565035/carhartt-j97-detroit-jacket-mos",
+    "photo": "https://i.etsystatic.com/62161609/r/il/e284f7/8351355912/il_570xN.8351355912_fpbi.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T13:25:37.255222+00:00"
+  },
+  {
+    "id": 729,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Moss Green Detroit Blanket Lined Faded J97 MOS",
+    "price": 964.0,
+    "url": "https://www.grailed.com/listings/102606363",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/05061acad62b4d15a3e31a16e1d7641c",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-07T13:25:37.162010+00:00"
+  },
+  {
     "id": 728,
     "query": "j76 moss",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.627760+00:00"
-  },
-  {
-    "id": 271,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage 90’s Carhartt B18 DST Faded Wiskered Denim Jeans Men’s Size 38x29",
-    "price": 30.0,
-    "url": "https://www.etsy.com/listing/4385468367/vintage-90s-carhartt-b18-dst-faded",
-    "photo": "https://i.etsystatic.com/30454787/r/il/96865b/7278248172/il_570xN.7278248172_31mg.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.622171+00:00"
-  },
-  {
-    "id": 272,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage Carhartt B17 DST Relaxed Fit Men&#39;s Jeans 33x30 Light",
-    "price": 60.0,
-    "url": "https://www.etsy.com/listing/4545363467/vintage-carhartt-b17-dst-relaxed-fit",
-    "photo": "https://i.etsystatic.com/66101746/r/il/def051/8307077576/il_570xN.8307077576_2fq7.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.616388+00:00"
   }
 ]
