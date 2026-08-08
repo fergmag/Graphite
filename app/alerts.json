@@ -1,5 +1,21 @@
 [
   {
+    "id": 734,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Carhartt J97 MOS green Detroit work wear jacket",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/101477411",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/2cdf8a8450c04cc98205be1678d54efb",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-08T01:25:37.378158+00:00"
+  },
+  {
     "id": 733,
     "query": "j76 cement",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.654806+00:00"
-  },
-  {
-    "id": 267,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "VTG Carhartt B13 DST Denim Jeans 38x30 Original Dungaree Fit Carpenter Workwear",
-    "price": 32.0,
-    "url": "https://www.etsy.com/listing/4393966556/vtg-carhartt-b13-dst-denim-jeans-38x30",
-    "photo": "https://i.etsystatic.com/6548621/r/il/a2af0a/7376777087/il_570xN.7376777087_q0pj.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.649079+00:00"
   }
 ]
