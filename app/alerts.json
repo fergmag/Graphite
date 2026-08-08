@@ -1,5 +1,21 @@
 [
   {
+    "id": 742,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket MOS Moss Green Workwear Jacket",
+    "price": 210.0,
+    "url": "https://www.etsy.com/listing/4552264376/carhartt-j97-detroit-jacket-mos-moss",
+    "photo": "https://i.etsystatic.com/67274771/r/il/1fc17c/8404162549/il_570xN.8404162549_r72s.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-08T19:25:33.667069+00:00"
+  },
+  {
     "id": 741,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-01T19:28:37.701505+00:00"
-  },
-  {
-    "id": 259,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "NWT Vintage Carhartt B22 DST Men&#39;s Dungaree Fit Jeans 38x36 Dark Stone Denim",
-    "price": 39.0,
-    "url": "https://www.etsy.com/listing/4543374436/nwt-vintage-carhartt-b22-dst-mens",
-    "photo": "https://i.etsystatic.com/62239678/r/il/b11cf5/8293104266/il_570xN.8293104266_t8p8.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-01T19:28:37.695953+00:00"
   }
 ]
