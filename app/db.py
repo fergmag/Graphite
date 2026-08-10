@@ -202,6 +202,7 @@ def init_db() -> None:
                 )
                 """
             )
+        _migrate_refresh_log_json(con)
 
         con.commit()
     finally:
@@ -851,6 +852,28 @@ def count_unseen_alerts() -> int:
         return row["n"] if row else 0
     finally:
         con.close()
+
+
+def _migrate_refresh_log_json(con: sqlite3.Connection) -> None:
+    """Load persisted refresh history from refresh_log.json into DB if table is empty."""
+    count = con.execute("SELECT COUNT(*) as n FROM refresh_log").fetchone()["n"]
+    if count > 0:
+        return
+    path = os.path.join(_APP_DIR, "refresh_log.json")
+    try:
+        with open(path) as f:
+            entries = json.load(f)
+    except Exception:
+        return
+    for e in entries:
+        try:
+            con.execute(
+                "INSERT INTO refresh_log (ran_at, total, ok, failed, alerts_saved) VALUES (?,?,?,?,?)",
+                (e.get("ran_at"), e.get("total", 0), e.get("ok", 0), e.get("failed", 0), e.get("alerts_saved", 0)),
+            )
+        except Exception:
+            pass
+    log.info("[db] loaded %d refresh log entries from refresh_log.json", len(entries))
 
 
 def insert_refresh_log(summary: Dict[str, Any]) -> None:
