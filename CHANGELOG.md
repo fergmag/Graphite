@@ -132,6 +132,8 @@ Refresh log persists to `refresh_log.json` via GitHub sync — survives redeploy
 
 **Aug 2026 (current)** — Reverted bare model code search (adding "j110" as a bare search term was pulling j65 blu listings into j65 brk results — colorway cross-contamination). Bell notifs now apply the same model code filter as Get Estimate, fixing the "23 in modal but only 7 real listings" issue. Refresh log capped at 20 entries. CHANGELOG rewritten with personality.
 
+Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "brick"/"brk") in the title, not just the model code ("j65"). This stops j65 BLU listings from getting stored under j65 BRK at scan time — the root cause of cross-colorway contamination. Same check added at display time in Get Estimate and bell notifs. "brk" and "blu" re-added to the search alias map (only "dst" stays excluded) so Grailed searches now use both "j65 brick" AND "j65 brk" — should surface listings the owner posted with abbreviations in the title. Bell badge count now updates to the actual rendered count after opening the modal, fixing the badge-vs-modal mismatch. No-photo Etsy filter moved server-side so badge and rendered count stay aligned.
+
 ---
 
 ## Database Schema

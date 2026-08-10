@@ -21,7 +21,7 @@ from app.public_view import build_public_payload, deal_score as _deal_score
 
 # Size multipliers: given prices in models.json are for M
 _SIZE_MULT: Dict[str, float] = {"M": 1.0, "L": 0.80, "XL": 0.50, "XXL": 0.20}
-from app.filters import filter_comps, normalize_query, parse_size_from_title, JUNK_TERMS
+from app.filters import filter_comps, normalize_query, parse_size_from_title, JUNK_TERMS, colorway_terms_for_query
 from app.db import (
     init_db,
     insert_comps,
@@ -585,6 +585,7 @@ def create_app() -> Flask:
 
         _q_code = re.search(r'\b(J[A-Z]?\d{2,})\b', query, re.IGNORECASE)
         _required_code = _q_code.group(1).lower() if _q_code else None
+        _cw_terms = colorway_terms_for_query(query)
 
         stored_alerts = _get_stored_alerts(query=query, limit=200)
         listings = []
@@ -599,6 +600,8 @@ def create_app() -> Flask:
             if any(term in title_lower for term in JUNK_TERMS):
                 continue
             if _required_code and _required_code not in title_lower:
+                continue
+            if _cw_terms and not any(term in title_lower for term in _cw_terms):
                 continue
             sz = a.get("size") or parse_size_from_title(a.get("title", ""))
             price = float(a["price"])
@@ -652,11 +655,14 @@ def create_app() -> Flask:
         # no junk terms, and model code must appear in title when query has one.
         _af_code_m = re.search(r'\b(J[A-Z]?\d{2,})\b', query_filter or '', re.IGNORECASE)
         _af_req_code = _af_code_m.group(1).lower() if _af_code_m else None
+        _af_cw_terms = colorway_terms_for_query(normalize_query(query_filter)) if query_filter else []
         def _alert_ok(a):
             t = (a.get("title") or "").lower()
+            if a.get("source") == "etsy" and not a.get("photo"): return False
             if "carhartt" not in t: return False
             if any(term in t for term in JUNK_TERMS): return False
             if _af_req_code and _af_req_code not in t: return False
+            if _af_cw_terms and not any(term in t for term in _af_cw_terms): return False
             return True
         alerts = [a for a in alerts if _alert_ok(a)]
         return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts(), "total": count_total_alerts()})

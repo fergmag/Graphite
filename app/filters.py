@@ -45,12 +45,15 @@ _CODE_ALIASES = {
     "dst": "darkstone",
 }
 # Reverse: canonical full name → abbreviation for search fallback.
-# Only include aliases where the short form is unambiguous as a search term.
-# "dst" excluded — matches DST brand, "dusty", etc. and causes J110 junk.
+# "dst" excluded — matches DST brand, "dusty", etc. Brk/blu are fine when
+# qualified by a model code ("j65 brk"), so they're back in.
 _ALIAS_TO_CODE: Dict[str, str] = {
     v: k for k, v in _CODE_ALIASES.items()
-    if k not in ("dst", "brk", "blu")  # too ambiguous as standalone search terms
+    if k not in ("dst",)
 }
+
+# Full reverse map (no exclusions) — used for colorway-term matching in titles.
+_FULL_CANONICAL_TO_ABBREV: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 
 
 def normalize_query(query: str) -> str:
@@ -76,6 +79,25 @@ def normalize_query(query: str) -> str:
     # Collapse extra spaces
     q = re.sub(r"\s{2,}", " ", q).strip()
     return q
+
+
+def colorway_terms_for_query(query: str) -> List[str]:
+    """Return colorway terms that must appear in a listing title for this query.
+
+    For "j65 brick" returns ["brick", "brk"] so both canonical and abbreviated
+    forms are accepted. Returns [] when the query has no colorway component.
+    """
+    code_match = _NUMERIC_CODE_RE.search(query)
+    if not code_match:
+        return []
+    after_code = query[code_match.end():].strip()
+    if not after_code:
+        return []
+    terms = [after_code]
+    abbrev = _FULL_CANONICAL_TO_ABBREV.get(after_code)
+    if abbrev:
+        terms.append(abbrev)
+    return terms
 
 
 def search_terms_for_query(query: str) -> List[str]:
@@ -115,11 +137,14 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
     Drop junk listings from comps.
     - Removes titles containing known irrelevant terms (kids, women's, vest, etc.)
     - If require_code=True (default) and query has a jacket code, that code must
-      appear in the title. Set require_code=False for platforms like Etsy/Depop
-      where the search is targeted and sellers don't put model codes in titles.
+      appear in the title. Also enforces colorway (e.g. "brick"/"brk" for "j65 brick")
+      so cross-colorway contamination is stopped at scan time.
+    - Set require_code=False for platforms like Etsy/Depop where the search is
+      targeted and sellers don't put model codes in titles.
     """
     code_match = _NUMERIC_CODE_RE.search(query)
     required_code = code_match.group(1).lower() if (code_match and require_code) else None
+    cw_terms = colorway_terms_for_query(query) if require_code else []
 
     filtered = []
     for comp in comps:
@@ -132,6 +157,9 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
             continue
 
         if required_code and required_code not in title_lower:
+            continue
+
+        if cw_terms and not any(term in title_lower for term in cw_terms):
             continue
 
         filtered.append(comp)

@@ -694,6 +694,7 @@
           const bell = document.createElement('button');
           bell.className = 'xbtn'; bell.style.fontSize = '13px'; bell.style.padding = '4px 8px';
           bell.style.position = 'relative';
+          bell.dataset.alertQuery = q;
           if (alertCount > 0) {
             bell.innerHTML = `🔔 <span style="background:#e53935;color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:1px 5px;">${alertCount}</span>`;
             bell.title = `${alertCount} deal alert${alertCount > 1 ? 's' : ''} for ${q}`;
@@ -1243,6 +1244,18 @@
             if (k === 'M' || k === 'MEDIUM') return 'M';
             return null;
           };
+          // Update this query's bell badge to the actual rendered count (server + JS filters applied)
+          if (queryFilter) {
+            document.querySelectorAll('[data-alert-query]').forEach(bell => {
+              if (bell.dataset.alertQuery === queryFilter) {
+                const span = bell.querySelector('span');
+                if (span) {
+                  span.textContent = alerts.length;
+                  bell.title = `${alerts.length} deal alert${alerts.length !== 1 ? 's' : ''} for ${queryFilter}`;
+                }
+              }
+            });
+          }
           list.innerHTML = alerts.map(a => {
             const normSize = _normSize(a.size);
             const mult = _sizeMult[normSize] || 1.0;
