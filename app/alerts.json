@@ -1,5 +1,37 @@
 [
   {
+    "id": 633,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vtg '99 Carhartt J43 BRG Detroit Jacket Med Duck Blanket Burgundy Union Tag",
+    "price": 1150.0,
+    "url": "https://www.ebay.com/itm/227470134583?_skw=carhartt+j43+brg&hash=item34f646cd37:g:AF8AAeSwjWhqdOc3",
+    "photo": "https://i.ebayimg.com/images/g/AF8AAeSwjWhqdOc3/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-10T19:54:41.467131+00:00"
+  },
+  {
+    "id": 632,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vtg '99 Carhartt J43 BRG Detroit Jacket Med Duck Blanket Burgundy Union Tag",
+    "price": 1150.0,
+    "url": "https://www.ebay.com/itm/227470134583?_skw=carhartt+j43+burgundy&hash=item34f646cd37:g:AF8AAeSwjWhqdOc3",
+    "photo": "https://i.ebayimg.com/images/g/AF8AAeSwjWhqdOc3/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-10T19:54:41.455872+00:00"
+  },
+  {
     "id": 631,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-04T01:26:41.214276+00:00"
-  },
-  {
-    "id": 343,
-    "query": "j43 chestnut",
-    "source": "grailed",
-    "title": "Carhartt Detroit J43 Chestnut XL Vintage 1998 USA",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/95893233",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/e4e37d47a95a4c0ea8e3a4e3a6822783",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-04T01:26:29.853093+00:00"
-  },
-  {
-    "id": 344,
-    "query": "j43 chestnut",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Blanket Lined XL J43 CHT Chestnut Brown Faded",
-    "price": 489.99,
-    "url": "https://www.ebay.com/itm/297197846224?_skw=carhartt+j43+chestnut&hash=item45325f3ed0:g:wxkAAeSwgRxn9tSF",
-    "photo": "https://i.ebayimg.com/images/g/wxkAAeSwgRxn9tSF/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-04T01:26:29.847094+00:00"
   }
 ]
