@@ -889,7 +889,7 @@ def insert_refresh_log(summary: Dict[str, Any]) -> None:
                 summary.get("alerts_saved", 0),
             ),
         )
-        con.execute("DELETE FROM refresh_log WHERE id NOT IN (SELECT id FROM refresh_log ORDER BY id DESC LIMIT 50)")
+        con.execute("DELETE FROM refresh_log WHERE id NOT IN (SELECT id FROM refresh_log ORDER BY id DESC LIMIT 20)")
         con.commit()
     finally:
         con.close()

@@ -648,11 +648,17 @@ def create_app() -> Flask:
         unseen_only = request.args.get("unseen") == "1"
         query_filter = request.args.get("query") or None
         alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
-        alerts = [
-            a for a in alerts
-            if "carhartt" in (a.get("title") or "").lower()
-            and not any(term in (a.get("title") or "").lower() for term in JUNK_TERMS)
-        ]
+        # Apply same display-time filters as Get Estimate: carhartt required,
+        # no junk terms, and model code must appear in title when query has one.
+        _af_code_m = re.search(r'\b(J[A-Z]?\d{2,})\b', query_filter or '', re.IGNORECASE)
+        _af_req_code = _af_code_m.group(1).lower() if _af_code_m else None
+        def _alert_ok(a):
+            t = (a.get("title") or "").lower()
+            if "carhartt" not in t: return False
+            if any(term in t for term in JUNK_TERMS): return False
+            if _af_req_code and _af_req_code not in t: return False
+            return True
+        alerts = [a for a in alerts if _alert_ok(a)]
         return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts(), "total": count_total_alerts()})
 
     @app.post("/api/alerts/counts")

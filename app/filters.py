@@ -82,21 +82,14 @@ def search_terms_for_query(query: str) -> List[str]:
     """Return search terms to try for a normalized query.
 
     Sellers often use abbreviations (j97 tmb) rather than the canonical name
-    (j97 timber) that normalize_query produces. Returns [canonical, abbrev, bare_code]
-    so scrapers can try each and merge results.
+    (j97 timber) that normalize_query produces. Returns [canonical, abbrev]
+    so scrapers can try both and merge results.
     """
     terms = [query]
     for full, code in _ALIAS_TO_CODE.items():
         if full in query:
             terms.append(query.replace(full, code))
             break  # only one colorway per model typically
-    # Also search just the model code (e.g. "j110") to catch listings that
-    # omit the colorway in the title — filter_comps still requires the code.
-    code_match = _NUMERIC_CODE_RE.search(query)
-    if code_match:
-        bare = code_match.group(1).lower()
-        if bare not in terms and bare != query:
-            terms.append(bare)
     return terms
 
 

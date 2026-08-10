@@ -1,6 +1,8 @@
 # Graphite — Build Log
 
-A chronological record of everything built, fixed, and decided. Written for future sessions, LinkedIn documentation, and résumé context. The honest story of how this went from zero to a real tool.
+A running record of what's been built, broken, fixed, and shipped. Written for future sessions, for a LinkedIn writeup eventually, and because I like knowing what actually happened vs what I planned.
+
+This is a personal project. It runs on a 2022 MacBook Air and a Render free tier. No team, no sprints, no standups — just me and Claude figuring it out.
 
 ---
 
@@ -8,11 +10,9 @@ A chronological record of everything built, fixed, and decided. Written for futu
 
 Two projects in one repo:
 
-1. **Price estimator / deal scanner** — scrapes eBay, Grailed, Etsy, Depop, and Whatnot for active Carhartt jacket listings. Computes a CASP (Calculated Average Sold Price), deal scores each listing 1–5 against it, and stores alerts when good deals appear. The owner gets a live feed of the best finds across all platforms.
+**1. Price estimator / deal scanner** — scrapes eBay, Grailed, Etsy, Depop, and Whatnot for active Carhartt jacket listings. Computes a CASP (Calculated Average Sold Price), deal scores each listing 1–5, and stores alerts when good deals appear. I get a live feed of the best finds across all platforms.
 
-2. **Personal shop** — a storefront for [@graphitevintage](https://instagram.com/graphitevintage) with listings, Stripe checkout (card + Apple Pay + Google Pay), and PayPal integration. No Shopify. No platform fees beyond payment processor cut.
-
-Built by Fergal Maguire, a student and vintage Carhartt reseller based in Canada.
+**2. Personal shop** — storefront for [@graphitevintage](https://instagram.com/graphitevintage) with listings, Stripe checkout (card + Apple Pay + Google Pay), and PayPal. No Shopify. No platform fees beyond payment processors. Ships worldwide from Canada.
 
 ---
 
@@ -20,209 +20,170 @@ Built by Fergal Maguire, a student and vintage Carhartt reseller based in Canada
 
 | Concern | Solution |
 |---|---|
-| Hosting | Render.com — runs a persistent Python (gunicorn) process |
-| Domain | graphitevintage.com via Namecheap DNS → Render |
-| DB | SQLite (`graphite.db`) — ephemeral on Render, seeded from JSON on each deploy |
-| Photo storage | Cloudinary — photos uploaded via admin, stored as full URLs |
-| Data persistence | After every write, JSON files are pushed to GitHub via API; `init_db()` reloads them on startup. Files: `alerts.json`, `estimates.json`, `watchlist.json`, `listings.json`, `archive.json`, `refresh_log.json` |
-| Uptime | UptimeRobot pings `/health` every 5 min, which also triggers refresh if >6h since last run |
-| Secrets | All API keys stored in `.env` locally and in Render's environment variable dashboard — never committed to git |
-| Background jobs | APScheduler (`BackgroundScheduler`) + health-endpoint trigger as fallback |
+| Hosting | Render.com — persistent Python/gunicorn process |
+| Domain | graphitevintage.com via Namecheap DNS |
+| Database | SQLite (`graphite.db`) — ephemeral on Render, re-seeded from JSON files on each deploy |
+| Photo storage | Cloudinary — uploaded via admin panel, stored as CDN URLs |
+| Data persistence | All important data (alerts, estimates, watchlist, listings, archive, refresh log) written to JSON and pushed to GitHub via API after every change. `init_db()` reloads from those files on startup. Effectively git is the storage layer, which is both ridiculous and works perfectly. |
+| Uptime | UptimeRobot pings `/health` every 5 min — keeps the Render instance awake and triggers a background refresh if >6h since the last one |
+| Secrets | All API keys in `.env` locally and in Render's environment variable dashboard. `.env` is in `.gitignore` — never committed. Repo is public so this actually matters. |
+| Background jobs | APScheduler runs a 6h refresh cycle in a background thread. Health endpoint is the fallback if the scheduler dies on a restart (which happens). |
 
 ---
 
 ## API Access — How Keys Were Obtained
 
 ### eBay
-- Registered as an eBay Developer at developer.ebay.com
-- Created an app in the eBay Developer Program to get a `CLIENT_ID` and `CLIENT_SECRET`
-- Uses OAuth 2.0 client credentials flow to get a bearer token
-- Calls the **eBay Browse API** (`/buy/browse/v1/item_summary/search`) for active listings
-- Initially tried the **Finding API** (older REST) and **Marketplace Insights API** (sold comps) but the scope for Marketplace Insights was not granted, so it was removed
-- All keys stored in `.env` as `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`
+Registered as a developer at developer.ebay.com, created an app to get a `CLIENT_ID` and `CLIENT_SECRET`. Uses OAuth 2.0 client credentials flow for a bearer token, then calls the **eBay Browse API** for active listings. Originally tried the older Finding API for sold comps and attempted the **Marketplace Insights API** — that scope was never granted by eBay, so the whole feature got ripped out. Keys: `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`.
 
 ### Etsy
-- Applied for Etsy API v3 access at developers.etsy.com
-- Received API key after review — emailed back and forth with Etsy's developer team
-- Uses `x-api-key` header with the keystring (no OAuth needed for public listing reads)
-- Fetches listings via `/v3/application/listings/active` and photos via individual `/v3/application/listings/{id}/images`
-- Key stored as `ETSY_API_KEY` in `.env` and Render environment
+Applied for Etsy API v3 access at developers.etsy.com — had to email back and forth with their developer team and wait for approval. Once approved, got an API key that works for public listing reads with just an `x-api-key` header. Fetches listings via `/v3/application/listings/active` and photos via individual `/v3/application/listings/{id}/images`. Tried batching the image fetches but Etsy's v3 API returned 404 for the batch endpoint, so it's sequential with a 0.15s delay to avoid rate limits. Key: `ETSY_API_KEY`.
 
 ### Stripe
-- Account created at stripe.com
-- Live keys stored as `STRIPE_SECRET_KEY` and `STRIPE_PUBLISHABLE_KEY`
-- Integrated Stripe Checkout for card payments, Apple Pay, and Google Pay
-- Test mode used during development; switched to live for production
+Standard Stripe Checkout — card, Apple Pay, Google Pay. Created account, used test mode during development, live for production. Keys: `STRIPE_SECRET_KEY`, `STRIPE_PUBLISHABLE_KEY`.
 
 ### PayPal
-- Standard PayPal Checkout button integration (no server-side SDK)
-- Buyer pays directly via PayPal's hosted flow
-- Items priced to absorb the ~3% PayPal fee
-- No sandbox complexity — went straight to production button integration
+Standard PayPal Checkout button, no server-side SDK needed. Buyer pays via PayPal's hosted flow. Items priced to absorb the ~3% fee. Went straight to production — no sandbox detour needed.
 
 ### Cloudinary
-- Account created at cloudinary.com (free tier)
-- Photos uploaded via admin panel; stored as full CDN URLs in the DB
-- Key stored as `CLOUDINARY_URL` in `.env`
+Free tier. Photos uploaded through the admin panel and stored as full CDN URLs in the database. Key: `CLOUDINARY_URL`.
 
 ---
 
-## Chronological Build Log
+## Build Log
 
-### Dec 2025 — Project Foundation (Steps 1–19)
+Dates are from `git log` — not made up.
 
-**Dec 28** — Initial Flask project setup. Basic project structure, `requirements.txt`, `app/__init__.py`.
-
-**Dec 29** — Step 2: eBay sold listings scraper (`scrape_ebay.py`). Step 3: retries and backoff for scraping. Step 4: pricing summary and confidence scoring. Step 5: `/estimate` endpoint (eBay comps → price summary). Step 6: JSON file cache with fallback. Step 7: request timeouts + cache-first logic. Step 8: `/seed` endpoint for manually pasting comps JSON. Step 9: starter web UI. Added `ROADMAP.md`.
-
-**Dec 30** — Step 10: SQLite storage for comps and estimates (`db.py`). Step 11: public estimate endpoint with CASP, confidence level, and deal score. Step 12: quantized accuracy (0–100% in steps of 10), cleaner UI. Step 13: model profiles (`model_profiles.py` + `models.json`) with manual CASP overrides for 27 known jacket models.
-
-**Dec 31** — Step 14: watchlist with DB storage and migrations. Steps 15–16: watchlist UI polish, input validation.
-
-**Jan 2026** — Step 17: redefined CASP accuracy. Step 18: background watchlist refresh. Step 19: normalize comps (deduplication).
+The roadmap (`ROADMAP.md`) is the original vision from before any of this existed. The actual build did not follow those steps in order. At all.
 
 ---
 
-### May–Jun 2026 — Full Rebuild with Claude Code
+### Dec 2025 — Getting It Off The Ground
 
-**May 27** — Restarted the project from scratch using Claude Code as the development assistant. Switched from OpenAI (used earlier) to Claude.
-
-**Jun 6–8** — Dark mode UI overhaul. New color scheme (`#283238` graphite background). Typography refresh (Inter font). Initial shop page structure. Simplified estimator UI.
-
-**Jun 9** — Added gunicorn for production. Shop page layout work. Account planning (Stripe, PayPal, Cloudinary scoping).
-
-**Jun 11–12** — Stripe and PayPal live integration. Checkout flow working. About page written with shipping/return policies, Instagram link. `models.json` populated with jacket data.
-
-**Jun 13** — Merged estimator tool and admin dashboard into unified admin panel with tab navigation (Estimator, Listings, Archive, Watchlist).
-
-**Jun 15–16** — Bell icon for per-query deal alerts. DB schema updates. Scraper improvements.
-
-**Jun 17** — CASP history chart (SVG line graph showing price trend over time). Archive page with collapsible entries. Archive sections backed by DB + JSON persistence.
-
-**Jun 18** — Cloudinary photo upload working via admin. Splash page (went through many iterations — "I hate this splash page"). CAD/USD currency fix. Footer added.
-
-**Jun 19** — Splash page finalized (fade-in/fade-out). USD-only pricing. Footer polish.
-
-**Jun 20** — Grailed scraper wired up (`scrape_grailed.py`). Estimator UI polish. Per-query alert bells (each watchlist item shows its own bell with count). Given price card. Vision grading module added (`vision.py`) using Claude API to grade jacket condition from photos — experiment.
-
-**Jun 21** — Alerts persist across Render redeploys (JSON → GitHub sync pattern established). Junk listing filter (`filter_comps`). Size info shown on listings. Custom animated dropdowns on admin and shop. Watchlist UI: rectangular pills, inline restore without browser dialog.
-
-**Jun 22** — Vision grading: switched to Claude Sonnet for accuracy. Size-adjusted deal scores (M=1.0×, L=0.80×, XL=0.50×, XXL=0.20× vs CASP). Chart y-axis fixed. CASP estimate persistence. eBay API debugging (503 errors, scope issues). Fixed critical JS crash (temporal dead zone) that broke the entire estimator panel. Fixed estimate timeout by returning manual CASP immediately for known models. Updated CHANGELOG.
-
-**Jun 24** — Chart scale fixed (was showing flat line when only one price point existed). Size filter in UI. Condition field for listings. Vision cap to control Claude API costs.
-
-**Jun 25** — Chart x-axis dates fixed. Persist watchlist across redeploys. Shop size pills + listing URLs. Size-aware deal scores in Etsy integration. Renamed "Refund" to "Return Policy".
-
-**Jun 27** — Fixed model-detail timeout. Configurable Etsy timeout. Dropped vision grading from live detail view (too slow, too expensive).
+Built the core scraping and pricing engine before any real UI. eBay sold listings scraper, JSON file cache, `/estimate` endpoint, SQLite storage for comps and estimates, model profiles with manual CASP overrides for ~27 known jacket models, and a basic watchlist with background refresh. Also the public estimate endpoint: CASP, quantized accuracy (0–100% in steps of 10), and deal score 1–5.
 
 ---
 
-### Jul 2026 — Multi-Platform Expansion + Major Fixes
+### May–Jun 2026 — Restart + Real Features
 
-**Jul 8** — Photos fill listing card with cover crop. Real x-axis dates on chart. Restored Grailed/Depop to model-detail. Fixed alerts expiry logic.
+**May 27** — Restarted the whole project with Claude Code after switching from OpenAI. Much faster iteration.
 
-**Jul 9** — Fixed alerts never generating when eBay fails (was silently short-circuiting).
+**Jun 6–12** — Dark mode UI with the graphite color scheme (`#283238` — locked in permanently). Shop page. Stripe + PayPal live. About page with shipping and return policies. `models.json` populated with all the jackets.
 
-**Jul 10** — eBay Browse API for active listings (not just sold comps). Alert persistence fixed. Global-ID header for eBay. About page copy. User-Agent header added to eBay requests.
+**Jun 13** — Merged the estimator and admin into one dashboard with tab navigation (Estimator, Listings, Archive, Watchlist).
 
-**Jul 11** — Etsy API auth debugging (`x-api-key` header format). eBay Finding API retry logic. Saving all deal score ≥1 listings as alerts (previously only ≥3). Bell shows total alert count.
+**Jun 17** — CASP history chart as an SVG line graph. Archive page with collapsible sections and photo galleries.
 
-**Jul 12** — Vision grading circuit breaker (stops spending credits if too many failures). Fixed Etsy filter and scheduler persistence.
+**Jun 18–19** — Cloudinary photo uploads working. The splash page took an embarrassing number of commits — "I hate this splash page" is literally in the git history. CAD/USD currency fixed.
 
-**Jul 13** — Removed `vision.py` entirely. Vision grading was too expensive and unreliable — scrapped. Etsy photos fixed. Bell display cleaned up.
+**Jun 20** — Grailed scraper added. Per-query deal alert bells. Vision grading module added — used Claude to grade jacket condition from listing photos. Seemed like a good idea at the time.
 
-**Jul 14** — eBay Marketplace Insights attempted for sold comps — requested scope not granted by eBay, removed. eBay token scope fix. Size normalization. CASP size adjustment formula.
+**Jun 21** — Alerts persist across Render redeploys (the JSON → GitHub sync pattern). First version of the junk listing filter. Custom animated dropdowns.
 
-**Jul 15** — **Major pivot**: CASP now computed from mean of active listing prices (Grailed + eBay Browse) rather than sold comps. This gives a real-time market value rather than historical average. Etsy batch photo fetch attempted.
+**Jun 22** — Vision grading switched to Claude Sonnet for better accuracy. Size-adjusted deal scores: M=1.0×, L=0.80×, XL=0.50×, XXL=0.20×. Fixed a JS crash (temporal dead zone) that broke the entire estimator silently. Fixed estimate timeout by returning manual CASP immediately for known models.
 
-**Jul 16** — Scheduler debugging. Etsy photos fixed via batch image fetch. CASP display corrected. Shop sort added.
+**Jun 24–25** — Chart scale fixed, size filter, condition field for listings, real x-axis dates.
 
-**Jul 17** — Batch of miscellaneous fixes (deal score logic, scraper stability).
+**Jun 27** — Dropped vision grading from the live detail view — too slow, too expensive. It hung around until Jul 14 when `vision.py` was finally deleted entirely. Good riddance.
 
-**Jul 20** — Deal scores recalculated correctly. Size filter UI. Sort bar for listings (by deal score, price low/high, newest/oldest). Mean CASP (was median). Archive disclaimer added.
+---
 
-**Jul 20** — Critical JS fix: duplicate `const n` declaration caused SyntaxError that broke all tab button switching in admin panel.
+### Jul 2026 — Multi-Platform + A Lot Of Bug Fixing
 
-**Jul 22** — Deal scores fixed again. Size parsing from listing titles. Etsy photos. Market CASP shown as "Estimated Value". Condition field removed from listings (too subjective). Archive: photo lightbox (click to zoom) + "Updated July 2026" label. Mobile overflow-x fixed.
+**Jul 8–11** — eBay Browse API for active listings. Alert persistence fixes. Etsy API auth debugging — the header format took a few iterations. Retry logic for eBay.
 
-**Jul 23** — **Unified Get Estimate with Bell Notifs**: both now read from the same stored DB alerts instead of Get Estimate doing a live scrape. Eliminates the "59 vs 47" type count discrepancies. Fixed CASP inconsistency in bell notifs (was showing stale per-alert CASP, now loads canonical CASP from models.json at render time). Archive text color fixed (was gray-on-gray). CASP label added to listing grid cards.
+**Jul 12–14** — Vision grading fully removed. eBay Marketplace Insights attempted for sold comps — scope not granted, removed. Size normalization and CASP size adjustment finalized.
 
-**Jul 23** — Fixed `confidence` UnboundLocalError in scraper.py — was crashing the background scheduler, causing Estimated Value to always show manual CASP and graph to never update.
+**Jul 15** — **Big pivot**: CASP changed from historical sold comps to mean of active listing prices (Grailed + eBay Browse). Gives real-time market value instead of a trailing average. Etsy batch photo fetch attempted — 404 from Etsy, fell back to individual fetches with rate-limit delay.
 
-**Jul 27** — Added Instagram reels idea to roadmap.
+**Jul 16–17** — Scheduler debugging. Various scraper stability fixes.
 
-**Jul 30** — Dynamic chart Y-axis (was fixed 0–5000, too flat for $300–800 data). Removed listing size filter that was cutting results. Health endpoint auto-refresh: pinging `/health` now triggers a refresh if >6h since last run — meant to work with UptimeRobot. Etsy results cap added.
+**Jul 20** — Deal scores recalculated correctly. Sort bar for listings. CASP switched to mean (was median). Fixed a JS SyntaxError (`duplicate const n`) that broke all admin tab switching — took a while to track down.
 
-**Jul 31** — **Search aliases**: `search_terms_for_query()` now returns both canonical ("j97 timber") and abbreviated ("j97 tmb") forms, searches both on every platform. Added ~200 more listings for timber and similar colorways. Added periodic element logo: `17 / Gr / Graphite` (17 is the hex code for Graphite's brand color). Chart zoom (scroll wheel + trackpad pinch).
+**Jul 22** — Condition field removed from listings (too subjective). Archive: click-to-zoom photo lightbox. Market CASP labeled "Estimated Value".
 
-**Jul 31** — Size parsing priority rewrite: separate regex passes in order (XXL → XL → L → M) so "Large 2X" correctly parses as XXL instead of L. Etsy rate-limit fix (individual image fetches with 0.15s delay). Abbreviations reversed: added `_ALIAS_TO_CODE` reverse map so "j97 timber" also searches "j97 tmb".
+**Jul 23** — **Unified Get Estimate with bell notifs**: both now read from stored DB alerts instead of Get Estimate doing a live scrape with a 12-second timeout. Eliminated the persistent count mismatch between the two views. Fixed CASP inconsistency in bell notifs where stale per-alert values were showing instead of canonical values from `models.json`.
 
-**Aug 1** — Logo element number "17" and name "Graphite" fixed to white (was gray from `opacity: 0.7`). Size priority revert for JB0817 (new parse was re-parsing stored sizes and crashing deal scores). Scroll wheel direction flipped (user preference). Junk filter additions: shorts, pants, bibs, dungarees, hoodie, sweatshirt, etc. Etsy no-photo filter added (most no-photo Etsy listings are spam/scam).
+Fixed a `confidence` UnboundLocalError in `scraper.py` that was silently crashing the background scheduler — the reason Estimated Value always showed manual CASP and the graph never updated. Looked fine until you knew where to look.
 
-**Aug 1** — Fixed J110 pulling junk: removed ambiguous abbreviations ("dst", "brk", "blu") from `_ALIAS_TO_CODE` reverse map. Were generating searches like "j110 dst" which matched cargo shorts. Reverted brief attempt to require_code on relaxed platforms (would have broken JB0817 Etsy).
+**Jul 30** — Dynamic chart Y-axis (was fixed 0–5000, useless for $300–800 data). Health endpoint auto-refresh via UptimeRobot. Etsy, Depop, Whatnot scrapers added.
 
-**Aug 3** — "quilted" added to JUNK_TERMS (later refined — see below). Size select in Get Estimate now actually filters the listing grid client-side. Watchlist panel: "History" dropdown button added.
+**Jul 31** — Search aliases: `search_terms_for_query()` searches both "j97 timber" and "j97 tmb" per platform. Found ~200 more listings immediately. Periodic element logo added: `17 / Gr / Graphite` (17 is in Graphite's color code — it's a design detail, not a chemistry reference). Chart scroll-wheel zoom.
 
-**Aug 3** — J110 alias fix deployed. Graph title changed to "Listing Price History". Etsy no-photo filter added to bell notifs JS. Fixed `_ALIAS_TO_CODE` excluding dst/brk/blu.
+Size parsing priority order (XXL first so "Large 2X" doesn't parse as just L). Etsy individual image fetches with rate-limit delay. Abbreviation reverse map added.
 
-**Aug 4** — **JUNK_TERMS applied at display time**: previously only filtered at scan time, so old junk alerts in DB kept showing. Now applied in both Get Estimate and bell notifs API endpoints. Alert badge counts now exclude no-photo Etsy at SQL level (fixes persistent count mismatch). Refresh history persisted to `refresh_log` DB table.
+**Aug 1** — Logo "17" and "Graphite" text fixed to white (was gray from `opacity: 0.7` — the classic invisible bug). Scroll wheel zoom direction flipped. JUNK_TERMS additions: shorts, pants, bibs, hoodie, sweatshirt, etc. Etsy no-photo filter added — basically all no-photo Etsy listings are scam spam.
 
-**Aug 10** — "quilted" over-filtered J110 Detroit jackets (many have quilted liners). Replaced with "quilted vest", "quilted jacket", "quilted coat". Health endpoint now checks `refresh_log` DB (not estimates table) for last-run time — more reliable after restarts. `threading.Lock` added to prevent concurrent refresh runs from health pings and APScheduler overlapping. APScheduler `misfire_grace_time` raised from 5min to 1h so jobs missed during restarts fire immediately. Trackpad pinch (ctrlKey=true) direction fixed — pinch-open now zooms in correctly. History timestamps show date+time (e.g. "Aug 3, 14:32") not just "Xh ago".
+Removed ambiguous colorway abbreviations ("dst", "brk", "blu") from the reverse alias map — was generating searches like "j110 dst" that matched cargo shorts on eBay. Fixed at root.
 
-**Aug 10** — Refresh log now persisted to `refresh_log.json` via GitHub sync (same pattern as alerts/estimates). DB seeded from JSON on startup so history survives redeploys. `admin_refresh_now` uses shared lock. `search_terms_for_query` adds bare model code ("j110") alongside full query ("j110 darkstone") to catch listings that omit the colorway. Display-time model code enforcement for eBay/Grailed alerts.
+---
 
-**Aug 10 (this session)** — "carhartt" required in all listing titles at both scan time (`filter_comps`) and display time (Get Estimate + bell notifs). Eliminates junk that has model codes but isn't Carhartt. Code enforcement (require model code in title) now applied to all platforms including Etsy/Depop/Whatnot — was previously exempt. Watchlist history UI fixed: show button with 1+ history entries, stat line (ok/failed/alerts) shown in all display paths.
+### Aug 2026 — Filters, Reliability, Persistence
+
+**Aug 3** — "quilted" added to JUNK_TERMS. Size select in Get Estimate actually works now (was wired up but not filtering). Watchlist refresh history dropdown.
+
+**Aug 4** — JUNK_TERMS applied at display time — previously only at scan time, so old junk in the DB kept showing. Alert badge counts exclude no-photo Etsy at SQL level.
+
+**Aug 10** — "quilted" alone was over-filtering J110 Detroit jackets with quilted liners — fixed to "quilted vest/jacket/coat". Health endpoint now checks `refresh_log` DB instead of estimates table. Threading lock prevents concurrent refreshes. APScheduler `misfire_grace_time` raised to 1h. Trackpad pinch zoom direction fixed. Refresh history timestamps show date + time.
+
+Refresh log persists to `refresh_log.json` via GitHub sync — survives redeploys now.
+
+**Aug 10** — "carhartt" required in all listing titles at scan time and display time. Model code enforcement applied to all platforms (was only eBay/Grailed — Etsy, Depop, Whatnot now get the same treatment).
+
+**Aug 2026 (current)** — Reverted bare model code search (adding "j110" as a bare search term was pulling j65 blu listings into j65 brk results — colorway cross-contamination). Bell notifs now apply the same model code filter as Get Estimate, fixing the "23 in modal but only 7 real listings" issue. Refresh log capped at 20 entries. CHANGELOG rewritten with personality.
 
 ---
 
 ## Database Schema
 
-All tables created/migrated in `app/db.py → init_db()`. Schema is additive — always `ALTER TABLE ADD COLUMN`, never drop/recreate.
+Tables created/migrated in `app/db.py → init_db()`. Always `ALTER TABLE ADD COLUMN` — never drop/recreate.
 
-| Table | Key columns | Purpose |
-|---|---|---|
-| `watchlist` | `query TEXT` | Saved search queries (e.g. "j97 moss") |
-| `comps` | `query, price, title, url, source, created_at` | Raw scraped listing prices |
-| `estimates` | `query, casp, accuracy_pct, created_at` | CASP history data points (feeds the chart) |
-| `listing_alerts` | `query, source, title, price, url, photo, casp, deal_score, size, seen` | Active deal alerts from all platforms |
-| `archive_sections` | `title, text, photos (JSON)` | Archive page content |
-| `listings` | `title, price, size, condition, status, photos (JSON), stripe_price_id` | Shop inventory |
-| `refresh_log` | `ran_at, total, ok, failed, alerts_saved` | History of background refresh runs |
+| Table | Purpose |
+|---|---|
+| `watchlist` | Saved search queries ("j97 moss", "j110 darkstone", etc.) |
+| `comps` | Raw scraped listing prices per query |
+| `estimates` | CASP history per query — feeds the price chart |
+| `listing_alerts` | Active deal alerts from all platforms, 7-day retention |
+| `archive_sections` | Archive page content |
+| `listings` | Shop inventory with Stripe price IDs |
+| `refresh_log` | Last 20 background refresh runs |
 
 ---
 
 ## Key Design Decisions
 
-**Why SQLite not Postgres?** Simpler setup, no extra Render service needed. DB is ephemeral (wiped on redeploy) but all data is persisted via JSON files committed to GitHub via API. Effectively git is the persistent storage layer.
+**Why SQLite not Postgres?** Simpler, zero cost, no extra Render service. DB is ephemeral on Render but all data pushes to GitHub as JSON after every write — git is effectively the storage layer. Sounds insane, works fine. Also this is a personal project run entirely from a 2022 MacBook Air.
 
-**Why not Shopify?** No monthly platform fees. Stripe + PayPal together cover card, Apple Pay, Google Pay, and PayPal. Owner has full control.
+**Why not Shopify?** Monthly platform fees, limited control. Stripe + PayPal natively cover card, Apple Pay, Google Pay, and PayPal. Done.
 
-**Why Render not Vercel?** Flask requires a persistent process (APScheduler for background refresh). Vercel's serverless model kills processes between requests, making background jobs impossible.
+**Why Render not Vercel?** Flask needs a persistent process for background refresh jobs. Vercel's serverless model kills processes between requests — APScheduler would never survive.
 
-**Why all platforms instead of just eBay?** eBay is the best for volume but Grailed has the most knowledgeable buyers/sellers and better photos. Etsy has surprising Carhartt inventory. Depop skews younger, occasional good finds. Whatnot is live auction, still experimental.
+**Why all platforms?** eBay has volume. Grailed has knowledgeable sellers and better photos. Etsy has surprising Carhartt inventory. Depop skews younger. Whatnot is live auction, still experimental. More platforms = more data = better deal detection.
 
-**CASP formula**: mean of active listing prices (Grailed + eBay Browse). Previously used sold comps from eBay Finding API but eBay denied Marketplace Insights scope. Active listing mean gives a good proxy for market value and updates in real time.
+**CASP formula**: mean of active listing prices (Grailed + eBay Browse). Originally sold comps from eBay Finding API but eBay denied Marketplace Insights scope. Active listing mean is arguably better anyway — it's what you'd pay today.
 
-**Deal score thresholds** (price as % of size-adjusted CASP):
+**Deal score thresholds** (price vs size-adjusted CASP):
 - 5/5: ≤50% — steal
-- 4/5: 51–65% — great deal
+- 4/5: 51–65% — great deal  
 - 3/5: 66–80% — good deal
 - 2/5: 81–95% — fair
-- 1/5: >95% — market price
+- 1/5: >95% — market price or worse
 
-**Size multipliers**: M=1.0×, L=0.80×, XL=0.50×, XXL=0.20× (XL and XXL are significantly less desirable in vintage workwear market).
+**Size multipliers**: M=1.0×, L=0.80×, XL=0.50×, XXL=0.20×. XL and XXL go for significantly less in vintage workwear — not many people want oversized Carhartts.
+
+**The 854 vs 616 type discrepancy**: `alerts_saved` in the refresh log counts everything written to the DB during a run. The displayed count applies additional filters at render time (carhartt required, no junk terms, model code in title, no-photo Etsy out). Raw saves will always be higher. Not a bug.
 
 ---
 
 ## What's Not Built Yet
 
-- Scheduled email/push alerts when deal score threshold is met
-- Multi-user auth (currently single password for the whole admin)
-- Depop scraper (disabled — rate limits and login-wall issues)
-- Automatic condition grading (vision grading was built then scrapped — too expensive, too unreliable)
-- Sold page (different from Archive — shows recent sales with prices)
-- Mobile-optimized admin panel
+- Email/push alerts when a high deal score listing appears
+- Sold page (distinct from Archive — recent sales with prices)
+- Grailed: own listings sometimes don't appear in search results (possible Grailed deduplication of seller's own items)
+- Depop scraper (disabled — hits login walls aggressively)
+- Mobile admin panel
+- Multi-user auth (single password for now)
 
 ---
 
-*Last updated: Aug 2026*
+*Updated as things change. Dates are from `git log`.*
