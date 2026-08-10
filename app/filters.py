@@ -132,6 +132,9 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
     for comp in comps:
         title_lower = (comp.get("title") or "").lower()
 
+        if "carhartt" not in title_lower:
+            continue
+
         if any(term in title_lower for term in JUNK_TERMS):
             continue
 

@@ -583,24 +583,22 @@ def create_app() -> Flask:
             if r <= 0.95: return 2
             return 1
 
-        # For strict platforms (eBay, Grailed) the model code must appear in the
-        # title — sellers always include it there. For relaxed platforms (Etsy,
-        # Depop, Whatnot) we don't enforce this since e.g. JB0817 sellers write
-        # "Carhartt Detroit Jacket" without the SKU.
-        _STRICT_SOURCES = {"ebay", "grailed"}
         _q_code = re.search(r'\b(J[A-Z]?\d{2,})\b', query, re.IGNORECASE)
         _required_code = _q_code.group(1).lower() if _q_code else None
 
         stored_alerts = _get_stored_alerts(query=query, limit=200)
         listings = []
         for a in stored_alerts:
+            title_lower = (a.get("title") or "").lower()
             if not a.get("price"):
                 continue
             if a.get("source") == "etsy" and not a.get("photo"):
                 continue
-            if any(term in (a.get("title") or "").lower() for term in JUNK_TERMS):
+            if "carhartt" not in title_lower:
                 continue
-            if _required_code and a.get("source") in _STRICT_SOURCES and _required_code not in (a.get("title") or "").lower():
+            if any(term in title_lower for term in JUNK_TERMS):
+                continue
+            if _required_code and _required_code not in title_lower:
                 continue
             sz = a.get("size") or parse_size_from_title(a.get("title", ""))
             price = float(a["price"])
@@ -650,7 +648,11 @@ def create_app() -> Flask:
         unseen_only = request.args.get("unseen") == "1"
         query_filter = request.args.get("query") or None
         alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
-        alerts = [a for a in alerts if not any(term in (a.get("title") or "").lower() for term in JUNK_TERMS)]
+        alerts = [
+            a for a in alerts
+            if "carhartt" in (a.get("title") or "").lower()
+            and not any(term in (a.get("title") or "").lower() for term in JUNK_TERMS)
+        ]
         return jsonify({"ok": True, "alerts": alerts, "unseen": count_unseen_alerts(), "total": count_total_alerts()})
 
     @app.post("/api/alerts/counts")

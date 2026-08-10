@@ -1036,15 +1036,16 @@
           const latest = history[0];
           const stamp = fmtStamp(latest.ran_at);
           const ago = fmtAgo(latest.ran_at);
-          const stat = latest.ok != null ? ` · ${latest.ok} ok / ${latest.failed||0} failed` : '';
+          const stat = (latest.ok != null) ? ` · ${latest.ok} ok / ${latest.failed||0} failed · ${latest.alerts_saved||0} alerts` : '';
           document.getElementById('lastRefresh').textContent = `Last run: ${stamp} (${ago})${stat}`;
           _refreshHistory = history;
           const btn = document.getElementById('historyToggle');
-          if (btn && history.length > 1) btn.style.display = 'inline';
+          if (btn) btn.style.display = 'inline';
         } else if (d.ran_at) {
           const stamp = fmtStamp(d.ran_at);
           const ago = fmtAgo(d.ran_at);
-          document.getElementById('lastRefresh').textContent = `Last run: ${stamp} (${ago})`;
+          const stat = (d.ok != null) ? ` · ${d.ok} ok / ${d.failed||0} failed · ${d.alerts_saved||0} alerts` : '';
+          document.getElementById('lastRefresh').textContent = `Last run: ${stamp} (${ago})${stat}`;
         }
       }
 
