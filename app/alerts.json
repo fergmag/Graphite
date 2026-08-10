@@ -1,5 +1,21 @@
 [
   {
+    "id": 617,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit J97 TMB",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/102872173",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/583a85db8a824eb38720f2d75107f937",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-10T21:23:22.676961+00:00"
+  },
+  {
     "id": 616,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-07T01:26:07.787228+00:00"
-  },
-  {
-    "id": 384,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Rework Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
-    "price": 285.0,
-    "url": "https://www.etsy.com/listing/4534585469/rework-carhartt-detroit-blanket-lined",
-    "photo": "https://i.etsystatic.com/66547360/r/il/3a07b5/8274863329/il_570xN.8274863329_1vpa.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-07T01:25:39.356922+00:00"
   }
 ]
