@@ -1,5 +1,37 @@
 [
   {
+    "id": 565,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
+    "price": 1499.99,
+    "url": "https://www.ebay.com/itm/206008017526?_skw=carhartt+jb1236&hash=item2ff708e276:g:EZ8AAeSwinJpbZeA",
+    "photo": "https://i.ebayimg.com/images/g/EZ8AAeSwinJpbZeA/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-10T22:49:23.986873+00:00"
+  },
+  {
+    "id": 564,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "RARE Vintage JB1236?? Redwood Carhartt Detroit Jacket 90s Size 2XL Rare READ",
+    "price": 1114.99,
+    "url": "https://www.ebay.com/itm/168332528059?_skw=carhartt+jb1236&hash=item27316689bb:g:GTEAAeSwWslpVfJD",
+    "photo": "https://i.ebayimg.com/images/g/GTEAAeSwWslpVfJD/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-10T22:49:23.978648+00:00"
+  },
+  {
     "id": 563,
     "query": "j43 hunter green",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-09T01:25:33.377677+00:00"
-  },
-  {
-    "id": 436,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Crazy Vintage Carhartt Detroit Jacket J97 MOS",
-    "price": 2000.0,
-    "url": "https://www.grailed.com/listings/100349150",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/9fb542efe1ed4483a8c1849e10969613",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-09T01:25:33.371937+00:00"
-  },
-  {
-    "id": 437,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Vintage Carhartt Detroit Jacket J97 Mos Large Dated 2003",
-    "price": 432.0,
-    "url": "https://www.grailed.com/listings/100134255",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/a756064781e348fdb37f62df8f07c4a1",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-09T01:25:33.364287+00:00"
   }
 ]
