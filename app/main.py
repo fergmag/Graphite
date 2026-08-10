@@ -235,20 +235,38 @@ def create_app() -> Flask:
     app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-change-me")
     init_db()
 
+    _refresh_lock = threading.Lock()
+
+    def _run_refresh_bg():
+        """Run a full refresh in a background thread; no-ops if one is already running."""
+        if not _refresh_lock.acquire(blocking=False):
+            return
+        def _bg():
+            try:
+                from app.scraper import refresh_all_watchlist as _refresh
+                _refresh()
+                _persist_alerts()
+                _persist_estimates()
+            finally:
+                _refresh_lock.release()
+        threading.Thread(target=_bg, daemon=True).start()
+
     @app.get("/health")
     def health():
         from datetime import datetime, timedelta, timezone
-        from app.db import get_last_refresh_time
-        last = get_last_refresh_time()
-        due = not last or (datetime.now(timezone.utc) - last) > timedelta(hours=6)
+        from app.db import get_refresh_log
+        history = get_refresh_log(limit=1)
+        if history:
+            try:
+                last_ran = datetime.fromisoformat(history[0]["ran_at"].rstrip("Z")).replace(tzinfo=timezone.utc)
+                due = (datetime.now(timezone.utc) - last_ran) > timedelta(hours=6)
+            except Exception:
+                due = True
+        else:
+            due = True
         if due:
-            from app.scraper import refresh_all_watchlist
-            def _bg():
-                refresh_all_watchlist()
-                _persist_alerts()
-                _persist_estimates()
-            threading.Thread(target=_bg, daemon=True).start()
-        return jsonify({"status": "ok", "refresh_due": due})
+            _run_refresh_bg()
+        return jsonify({"status": "ok", "refresh_due": due, "running": _refresh_lock.locked()})
 
     @app.get("/login")
     def login():
@@ -1056,36 +1074,32 @@ def create_app() -> Flask:
                         "public": None, "reason": "No estimate available for this model."}), 404
 
     # ── Background scheduler ──
-    # Guard: in Flask debug mode the reloader forks a child process; only start
-    # the scheduler in the child (WERKZEUG_RUN_MAIN=true) or in production.
+    # Guard: only start in the reloader child (dev) or in production (not debug mode).
+    # Uses the shared _refresh_lock so the scheduler and health endpoint don't overlap.
     _in_reloader_child = os.environ.get("WERKZEUG_RUN_MAIN") == "true"
     _should_schedule = not app.debug or _in_reloader_child
     if _should_schedule:
         try:
             from datetime import datetime, timedelta, timezone
             from apscheduler.schedulers.background import BackgroundScheduler
-            from app.scraper import refresh_all_watchlist as _refresh
-            from app.db import get_last_refresh_time
+            from app.db import get_refresh_log as _get_log
             def _scheduled_refresh():
-                _refresh()
-                _persist_alerts()
-                _persist_estimates()
+                _run_refresh_bg()
             _sched = BackgroundScheduler(daemon=True)
-            # Smart first-fire: use last estimate time so deploys don't reset the 6h schedule
             _now = datetime.now(timezone.utc)
-            _last = get_last_refresh_time()
-            if _last and (_now - _last) < timedelta(hours=6):
-                _first_fire = _last + timedelta(hours=6)
-                logging.getLogger(__name__).warning(
-                    "[scheduler] Last refresh %s, next auto-run at %s", _last.isoformat(), _first_fire.isoformat()
-                )
+            _log = _get_log(limit=1)
+            if _log:
+                try:
+                    _last = datetime.fromisoformat(_log[0]["ran_at"].rstrip("Z")).replace(tzinfo=timezone.utc)
+                    _elapsed = _now - _last
+                    _first_fire = _last + timedelta(hours=6) if _elapsed < timedelta(hours=6) else _now + timedelta(seconds=90)
+                except Exception:
+                    _first_fire = _now + timedelta(seconds=90)
             else:
                 _first_fire = _now + timedelta(seconds=90)
-                logging.getLogger(__name__).warning(
-                    "[scheduler] No recent refresh — auto-run in 90s"
-                )
+            logging.getLogger(__name__).warning("[scheduler] First fire at %s", _first_fire.isoformat())
             _sched.add_job(_scheduled_refresh, "interval", hours=6, id="watchlist_refresh",
-                           misfire_grace_time=300, next_run_time=_first_fire)
+                           misfire_grace_time=3600, next_run_time=_first_fire)
             _sched.start()
         except Exception as _e:
             logging.getLogger(__name__).warning("[scheduler] Could not start: %s", _e)

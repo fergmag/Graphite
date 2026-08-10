@@ -961,8 +961,11 @@
           const total = _fullHistory.length;
           if (total < 3) return;
 
-          // deltaY > 0 = scroll down = zoom IN (narrower window); < 0 = zoom OUT
-          const factor = e.deltaY > 0 ? (1 / 1.25) : 1.25;
+          // Scroll wheel / two-finger swipe: deltaY > 0 = scroll down = zoom IN
+          // Trackpad pinch (ctrlKey=true): deltaY sign is inverted vs scroll, so flip it
+          const factor = e.ctrlKey
+            ? (e.deltaY < 0 ? (1 / 1.25) : 1.25)   // pinch open = zoom in
+            : (e.deltaY > 0 ? (1 / 1.25) : 1.25);  // scroll down = zoom in
           let win = _chartZoomWindow || total;
           let end = _chartZoomEnd || total;
 
@@ -991,6 +994,11 @@
       let _refreshHistory = [];
       let _historyOpen = false;
 
+      function fmtStamp(isoStr) {
+        const d = new Date(isoStr);
+        return d.toLocaleString('en-CA', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false });
+      }
+
       function fmtAgo(isoStr) {
         const mins = Math.round((Date.now() - new Date(isoStr).getTime()) / 60000);
         return mins < 60 ? `${mins}m ago` : `${Math.round(mins/60)}h ago`;
@@ -1004,10 +1012,11 @@
         if (_historyOpen && _refreshHistory.length) {
           hist.style.display = 'block';
           hist.innerHTML = _refreshHistory.map((r, i) => {
+            const stamp = fmtStamp(r.ran_at);
             const ago = fmtAgo(r.ran_at);
             const bg = i === 0 ? 'rgba(255,255,255,0.06)' : 'transparent';
             return `<div style="padding:7px 12px;font-size:11px;font-weight:600;color:#fff;background:${bg};border-bottom:1px solid rgba(255,255,255,0.08);">
-              ${ago} · ${r.ok||0} ok / ${r.failed||0} failed · ${r.alerts_saved||0} alerts
+              ${stamp} <span style="opacity:0.5;">(${ago})</span> · ${r.ok||0} ok · ${r.alerts_saved||0} alerts
             </div>`;
           }).join('');
           if (btn) btn.textContent = '▴ History';
@@ -1021,14 +1030,21 @@
         const res = await fetch('/admin/refresh-status').catch(() => null);
         if (!res || !res.ok) return;
         const d = await res.json().catch(() => null);
-        if (!d || !d.ran_at) return;
-        const label = fmtAgo(d.ran_at);
-        const stat = d.ok != null ? ` · ${d.ok} ok / ${d.failed} failed` : '';
-        document.getElementById('lastRefresh').textContent = `Last run: ${label}${stat}`;
-        if (d.history && d.history.length > 1) {
-          _refreshHistory = d.history;
+        if (!d) return;
+        const history = d.history || [];
+        if (history.length) {
+          const latest = history[0];
+          const stamp = fmtStamp(latest.ran_at);
+          const ago = fmtAgo(latest.ran_at);
+          const stat = latest.ok != null ? ` · ${latest.ok} ok / ${latest.failed||0} failed` : '';
+          document.getElementById('lastRefresh').textContent = `Last run: ${stamp} (${ago})${stat}`;
+          _refreshHistory = history;
           const btn = document.getElementById('historyToggle');
-          if (btn) btn.style.display = 'inline';
+          if (btn && history.length > 1) btn.style.display = 'inline';
+        } else if (d.ran_at) {
+          const stamp = fmtStamp(d.ran_at);
+          const ago = fmtAgo(d.ran_at);
+          document.getElementById('lastRefresh').textContent = `Last run: ${stamp} (${ago})`;
         }
       }
 
