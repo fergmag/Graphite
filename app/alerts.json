@@ -1,5 +1,21 @@
 [
   {
+    "id": 501,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39; Unisex Jacket",
+    "price": 130.0,
+    "url": "https://www.etsy.com/listing/4554161560/vintage-carhartt-detroit-blanket-lined",
+    "photo": "https://i.etsystatic.com/63482560/r/il/6b897d/8417855361/il_570xN.8417855361_r6ws.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-11T23:39:12.657218+00:00"
+  },
+  {
     "id": 1,
     "query": "j97 petrol",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:49:41.316146+00:00"
-  },
-  {
-    "id": 500,
-    "query": "j43 chestnut",
-    "source": "ebay",
-    "title": "Carhartt J43 HTG green Detroit work wear jacket XL",
-    "price": 614.98,
-    "url": "https://www.ebay.com/itm/407009665947?_skw=carhartt+j43&hash=item5ec3aaa39b:g:beAAAeSwArRqM0yc",
-    "photo": "https://i.ebayimg.com/images/g/beAAAeSwArRqM0yc/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:49:41.310450+00:00"
   }
 ]
