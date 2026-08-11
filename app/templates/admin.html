@@ -442,12 +442,18 @@
 
       <div class="status" id="status">Status: Ready</div>
 
+      <!-- Per-size deal breakdown: shown when asking price + manual CASP are both known -->
+      <div id="sizeBreakdown" style="display:none;margin-top:16px;">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px;">At this price — by size</div>
+        <div id="sizeBreakdownCols" style="display:flex;gap:6px;"></div>
+      </div>
+
       <div class="chart-wrap" id="chartWrap">
         <div class="chart-tooltip" id="chartTooltip"></div>
         <div class="chart-header">
-          <span class="chart-title">Listing Price History</span>
+          <span class="chart-title">Estimated Value History</span>
           <div style="display:flex;align-items:baseline;gap:10px;">
-            <span style="font-size:10px;color:rgba(255,255,255,0.4);font-style:italic;" id="chartGivenLabel"></span>
+            <span style="font-size:10px;color:rgba(255,255,255,0.4);font-style:italic;">Mean of active Grailed + eBay listings per refresh</span>
             <span class="chart-range" id="chartRange"></span>
           </div>
         </div>
@@ -631,6 +637,34 @@
 
       const MIN_COMPS = 3;
 
+      function renderSizeBreakdown(manualCasp, askingPrice) {
+        const panel = $('sizeBreakdown');
+        const cols = $('sizeBreakdownCols');
+        if (!panel || !cols) return;
+        if (!manualCasp || !askingPrice || isNaN(askingPrice) || askingPrice <= 0) {
+          panel.style.display = 'none';
+          return;
+        }
+        const SIZES = [{label:'M',mult:1.0},{label:'L',mult:0.80},{label:'XL',mult:0.50},{label:'XXL',mult:0.20}];
+        const LABELS = ['','Overpriced','Fair','Good deal','Great deal','Steal'];
+        const BG     = ['','rgba(180,40,40,0.25)','rgba(120,120,40,0.25)','rgba(40,120,80,0.25)','rgba(20,90,60,0.25)','rgba(10,60,40,0.25)'];
+        const CLR    = ['','#e87272','#c8c06a','#6fcf97','#4abe7e','#2ebd6b'];
+        cols.innerHTML = SIZES.map(({label, mult}) => {
+          const ref = manualCasp * mult;
+          const r = askingPrice / ref;
+          const score = r <= 0.50 ? 5 : r <= 0.65 ? 4 : r <= 0.80 ? 3 : r <= 0.95 ? 2 : 1;
+          const delta = ref - askingPrice;
+          const deltaStr = delta >= 0 ? `-$${Math.abs(delta).toFixed(0)}` : `+$${Math.abs(delta).toFixed(0)}`;
+          return `<div style="flex:1;background:${BG[score]};border-radius:8px;padding:10px 8px;text-align:center;border:1px solid rgba(255,255,255,0.06);">
+            <div style="font-size:11px;font-weight:800;letter-spacing:0.08em;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-bottom:4px;">${label}</div>
+            <div style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:4px;">Ref $${ref.toFixed(0)}</div>
+            <div style="font-size:13px;font-weight:800;color:${CLR[score]};">${LABELS[score]}</div>
+            <div style="font-size:10px;color:rgba(255,255,255,0.4);margin-top:3px;">${deltaStr} vs CASP</div>
+          </div>`;
+        }).join('');
+        panel.style.display = '';
+      }
+
       function updateCards(resp) {
         const pub = resp && resp.public;
         const givenEl = $('givenPrice');
@@ -639,9 +673,10 @@
           $('casp').textContent = '$—'; $('acc').textContent = '—%';
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
-          $('caspSub').textContent = 'Median asking price — Grailed + eBay';
+          $('caspSub').textContent = 'Mean of active Grailed + eBay listings';
           if (titleEl) titleEl.textContent = 'Estimated Value';
           if (givenEl) givenEl.style.display = 'none';
+          renderSizeBreakdown(null, 0);
           return;
         }
 
@@ -649,7 +684,7 @@
         const n = resp.n || 0;
 
         $('casp').textContent = fmtMoney(pub.casp);
-        $('caspSub').textContent = n > 0 ? `Median of ${n} active listings — Grailed + eBay` : 'Active listing prices — Grailed + eBay';
+        $('caspSub').textContent = n > 0 ? `Mean of ${n} active listings — Grailed + eBay` : 'Active listing prices — Grailed + eBay';
         if (givenEl) givenEl.style.display = 'none';
 
         $('acc').textContent = `${pub.accuracy_pct ?? '—'}%`;
@@ -661,6 +696,11 @@
           $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
         }
+
+        // Per-size breakdown: uses manual_casp (reference price from models.json)
+        const manualCasp = _modelsMap && _currentQuery ? (_modelsMap[_currentQuery] || null) : null;
+        const asking = parseFloat($('asking').value.trim()) || 0;
+        renderSizeBreakdown(manualCasp, asking);
       }
 
       async function getJSON(url) {
@@ -840,7 +880,6 @@
         });
 
         // Dashed reference line for "given price (M)"
-        const givenLabelEl = document.getElementById('chartGivenLabel');
         if (givenRef) {
           const gy = toY(givenRef);
           const gl = document.createElementNS(ns, 'line');
@@ -850,9 +889,6 @@
           gl.setAttribute('stroke-width', '1');
           gl.setAttribute('stroke-dasharray', '4 4');
           svg.appendChild(gl);
-          if (givenLabelEl) givenLabelEl.textContent = `Given price (M) $${givenRef.toFixed(0)}`;
-        } else {
-          if (givenLabelEl) givenLabelEl.textContent = '';
         }
 
         const pts = history2.map((d, i) => `${toX(i).toFixed(1)},${toY(d.casp).toFixed(1)}`).join(' ');
@@ -1012,7 +1048,9 @@
         if (!hist) return;
         if (_historyOpen && _refreshHistory.length) {
           hist.style.display = 'block';
-          hist.innerHTML = _refreshHistory.map((r, i) => {
+          // Sort newest first regardless of DB insert order
+          const sorted = [..._refreshHistory].sort((a, b) => new Date(b.ran_at) - new Date(a.ran_at));
+          hist.innerHTML = sorted.map((r, i) => {
             const stamp = fmtStamp(r.ran_at);
             const ago = fmtAgo(r.ran_at);
             const bg = i === 0 ? 'rgba(255,255,255,0.06)' : 'transparent';
@@ -1032,7 +1070,7 @@
         if (!res || !res.ok) return;
         const d = await res.json().catch(() => null);
         if (!d) return;
-        const history = d.history || [];
+        const history = (d.history || []).sort((a, b) => new Date(b.ran_at) - new Date(a.ran_at));
         if (history.length) {
           const latest = history[0];
           const stamp = fmtStamp(latest.ran_at);

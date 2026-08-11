@@ -889,7 +889,7 @@ def insert_refresh_log(summary: Dict[str, Any]) -> None:
                 summary.get("alerts_saved", 0),
             ),
         )
-        con.execute("DELETE FROM refresh_log WHERE id NOT IN (SELECT id FROM refresh_log ORDER BY id DESC LIMIT 20)")
+        con.execute("DELETE FROM refresh_log WHERE id NOT IN (SELECT id FROM refresh_log ORDER BY ran_at DESC LIMIT 20)")
         con.commit()
     finally:
         con.close()
@@ -899,7 +899,7 @@ def get_refresh_log(limit: int = 20) -> List[Dict[str, Any]]:
     con = _connect()
     try:
         rows = con.execute(
-            "SELECT ran_at, total, ok, failed, alerts_saved FROM refresh_log ORDER BY id DESC LIMIT ?",
+            "SELECT ran_at, total, ok, failed, alerts_saved FROM refresh_log ORDER BY ran_at DESC LIMIT ?",
             (limit,),
         ).fetchall()
         return [dict(r) for r in rows]

@@ -126,6 +126,7 @@ JUNK_TERMS = [
     "shorts", "short pants", "bib overalls", "bibs", "dungarees",
     "pants", "jeans", "chaps", "hoodie", "sweatshirt", "tee ", "t-shirt",
     "quilted vest", "quilted jacket", "quilted coat",
+    "rework", "reworked",
 ]
 
 # Matches Carhartt jacket codes: J97, J65, JB0817, JS1237, JR0115, etc.
@@ -144,7 +145,6 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
     """
     code_match = _NUMERIC_CODE_RE.search(query)
     required_code = code_match.group(1).lower() if (code_match and require_code) else None
-    cw_terms = colorway_terms_for_query(query) if require_code else []
 
     filtered = []
     for comp in comps:
@@ -157,9 +157,6 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
             continue
 
         if required_code and required_code not in title_lower:
-            continue
-
-        if cw_terms and not any(term in title_lower for term in cw_terms):
             continue
 
         filtered.append(comp)
