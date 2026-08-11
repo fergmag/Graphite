@@ -1,5 +1,21 @@
 [
   {
+    "id": 501,
+    "query": "j65 brick",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket Blanket lined J65 BRK Red Size XL/2XL Faded",
+    "price": 1119.99,
+    "url": "https://www.etsy.com/listing/4508600860/vintage-carhartt-detroit-jacket-blanket",
+    "photo": "https://i.etsystatic.com/65222494/r/il/db8141/8042048682/il_570xN.8042048682_rpba.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-11T05:31:55.809224+00:00"
+  },
+  {
     "id": 1,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:45:54.466252+00:00"
-  },
-  {
-    "id": 500,
-    "query": "j110 darkstone",
-    "source": "grailed",
-    "title": "o1loc1c0825 J1100 Size: 9 TF / Jago Low-Top Sneakers Black",
-    "price": 891.0,
-    "url": "https://www.grailed.com/listings/83793683",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/9a361ce6233d47f3b4d34acf99546059",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:45:54.460517+00:00"
   }
 ]
