@@ -1,5 +1,21 @@
 [
   {
+    "id": 512,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Super Rare 90S Usa Made Carhartt Detroit Jacket J76 Cement L No.ch592",
+    "price": 1250.75,
+    "url": "https://www.ebay.com/itm/147500796620?_skw=carhartt+j76+cement&hash=item2257bb8acc:g:sWAAAeSwvgtqfO34",
+    "photo": "https://i.ebayimg.com/images/g/sWAAAeSwvgtqfO34/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-12T23:41:34.315131+00:00"
+  },
+  {
     "id": 511,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:51:16.201655+00:00"
-  },
-  {
-    "id": 489,
-    "query": "j43 chestnut",
-    "source": "etsy",
-    "title": "Vintage Carhartt jacket, size large, work jacket, Carhartt jacket, Carhartt J43 WET jacket, vintage workwear, lined coat, vintage clothing",
-    "price": 199.0,
-    "url": "https://www.etsy.com/listing/4490401610/vintage-carhartt-jacket-size-large-work",
-    "photo": "https://i.etsystatic.com/13611332/r/il/728f0d/7924098402/il_570xN.7924098402_4mkm.jpg",
-    "casp": 600.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:49:41.381285+00:00"
   }
 ]
