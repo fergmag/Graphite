@@ -40,7 +40,7 @@
   },
   {
     "id": "7957ee2f6e",
-    "title": "CU1058 Cactus",
+    "title": "CU1058",
     "size": "M",
     "price": 400.0,
     "description": "1993 CU1058 Cactus Unlined Chore",
@@ -53,7 +53,7 @@
     "sold": true,
     "created_at": "2026-07-15",
     "position": 1,
-    "condition": null
+    "condition": ""
   },
   {
     "id": "9bcd01e56f",
