@@ -5,7 +5,14 @@
     "size": "M",
     "price": 850.0,
     "description": "1996 JB0817 Graphite Detroit",
-    "photos": [],
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570948/graphite/gzjctv1nlryx9av1crdm.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570949/graphite/aavg2dkzg1ecdn2tdesb.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570950/graphite/hn3tt2fe4y78aseud1mu.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570951/graphite/emnznqedjeadkiqztoji.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570952/graphite/ciwvwzez3wb3iuqqatuw.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1786570953/graphite/nrdju2hilurjmeud6asm.jpg"
+    ],
     "sold": false,
     "created_at": "2026-08-12",
     "position": -1,
