@@ -1,5 +1,21 @@
 [
   {
+    "id": 511,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt JB1998 Darkstone Denim Jacket Blanket Lined USA Large Tall",
+    "price": 192.0,
+    "url": "https://www.etsy.com/listing/4554824594/vintage-carhartt-jb1998-darkstone-denim",
+    "photo": "https://i.etsystatic.com/10356060/r/il/290df3/8422501337/il_570xN.8422501337_o0eg.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-12T23:38:05.432422+00:00"
+  },
+  {
     "id": 510,
     "query": "j65 brick",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:49:41.381285+00:00"
-  },
-  {
-    "id": 490,
-    "query": "j43 chestnut",
-    "source": "grailed",
-    "title": "Vintage 1990s Disney Mickey Mouse Skiing Knit Sweater 3D Knit Sweater Style j437 Size S (L)",
-    "price": 19.0,
-    "url": "https://www.grailed.com/listings/66436218",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/8b2840469f084286a4e8773e162f0933",
-    "casp": 600.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:49:41.372114+00:00"
   }
 ]
