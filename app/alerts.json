@@ -1,5 +1,21 @@
 [
   {
+    "id": 508,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J76 MOS Blanket Lined USA Made",
+    "price": 255.5,
+    "url": "https://www.ebay.com/itm/407137280674?_skw=carhartt+j76+mos&hash=item5ecb45e2a2:g:E00AAeSwFJ1qfFYp",
+    "photo": "https://i.ebayimg.com/images/g/E00AAeSwFJ1qfFYp/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-12T11:41:18.116018+00:00"
+  },
+  {
     "id": 507,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:49:41.358636+00:00"
-  },
-  {
-    "id": 493,
-    "query": "j43 chestnut",
-    "source": "ebay",
-    "title": "Vintage Carhartt J43HTG Detroit Jacket Sz. XL made In USA",
-    "price": 672.0,
-    "url": "https://www.ebay.com/itm/116979873787?_skw=carhartt+j43&hash=item1b3c8b37fb:g:M8MAAOSwzvdnjYqT",
-    "photo": "https://i.ebayimg.com/images/g/M8MAAOSwzvdnjYqT/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:49:41.352982+00:00"
   }
 ]
