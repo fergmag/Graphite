@@ -1,5 +1,17 @@
 [
   {
+    "id": "91adb4ed1b",
+    "title": "JB0817",
+    "size": "M",
+    "price": 850.0,
+    "description": "1996 JB0817 Graphite Detroit",
+    "photos": [],
+    "sold": false,
+    "created_at": "2026-08-12",
+    "position": -1,
+    "condition": ""
+  },
+  {
     "id": "0cfd908dea",
     "title": "J43 HTG",
     "size": "M",
