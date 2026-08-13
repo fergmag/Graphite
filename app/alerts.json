@@ -1,5 +1,21 @@
 [
   {
+    "id": 514,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90s J43HTG Green Carhartt Detroit Jacket Size XL.",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/327073680067?_skw=carhartt+j43+htg&hash=item4c271c4ac3:g:wO0AAeSwT1BpyGfJ",
+    "photo": "https://i.ebayimg.com/images/g/wO0AAeSwT1BpyGfJ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-13T05:40:55.862595+00:00"
+  },
+  {
     "id": 513,
     "query": "j97 petrol",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:51:16.307681+00:00"
-  },
-  {
-    "id": 487,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size M-L Rare",
-    "price": 312.98,
-    "url": "https://www.ebay.com/itm/198414349295?_skw=carhartt+j76&hash=item2e326ab3ef:g:89kAAeSwLUVqKKEC",
-    "photo": "https://i.ebayimg.com/images/g/89kAAeSwLUVqKKEC/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:51:16.294086+00:00"
   }
 ]
