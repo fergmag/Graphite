@@ -1,5 +1,21 @@
 [
   {
+    "id": 516,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite Medium",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/103028217",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/7d1aec772c274b79867c996319d24c38",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-13T17:36:24.473312+00:00"
+  },
+  {
     "id": 515,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:51:16.331609+00:00"
-  },
-  {
-    "id": 485,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "VTG Carhartt Sandstone Detroit Lined Jacket J76 STN Rare Farmer Used Distressed",
-    "price": 374.99,
-    "url": "https://www.ebay.com/itm/377246207824?_skw=carhartt+j76&hash=item57d5a04f50:g:YJsAAeSwj1xqJ3Dr",
-    "photo": "https://i.ebayimg.com/images/g/YJsAAeSwj1xqJ3Dr/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 4,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:51:16.317910+00:00"
   }
 ]
