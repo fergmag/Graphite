@@ -1,5 +1,21 @@
 [
   {
+    "id": 543,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size Large Rare",
+    "price": 388.7,
+    "url": "https://www.ebay.com/itm/318730362821?_skw=carhartt+j76+cement&hash=item4a35cf5fc5:g:IDgAAeSwahlqWnVn",
+    "photo": "https://i.ebayimg.com/images/g/IDgAAeSwahlqWnVn/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-14T23:41:59.715888+00:00"
+  },
+  {
     "id": 542,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T08:51:16.711601+00:00"
-  },
-  {
-    "id": 458,
-    "query": "j76 moss",
-    "source": "grailed",
-    "title": "J76-GT",
-    "price": 1350.0,
-    "url": "https://www.grailed.com/listings/96223855",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/0e6d322adc3c45cf82ac9a1655c3d141",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:51:16.702675+00:00"
   }
 ]
