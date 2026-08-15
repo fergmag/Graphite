@@ -1,5 +1,21 @@
 [
   {
+    "id": 547,
+    "query": "j43 hunter green",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Green Detroit Canvas Blanket Lined J43HTG Hunter Kanye",
+    "price": 787.0,
+    "url": "https://www.grailed.com/listings/103232747",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/77d1da3d7df24168877d3d08f79980b6",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-15T05:40:47.158944+00:00"
+  },
+  {
     "id": 546,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T14:47:37.633355+00:00"
-  },
-  {
-    "id": 454,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "VTG 80s Carhartt Detroit Jacket J01 J97 BRN Beige Canvas Hood 48 XL Mens Men Union USA Jacket",
-    "price": 277.0,
-    "url": "https://www.grailed.com/listings/101269552",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/9ca736dc87774f3b8b725f088fe0fc19",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T14:47:37.627924+00:00"
   }
 ]
