@@ -1,5 +1,37 @@
 [
   {
+    "id": 550,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Carhartt J97 PTL Detroit Jacket",
+    "price": 280.0,
+    "url": "https://www.grailed.com/listings/103280752",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b5e2d063159f4cf196a33036fd733e09",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-15T23:39:41.160928+00:00"
+  },
+  {
+    "id": 549,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens Large Tall J97 PTL Petrol Gray",
+    "price": 206.0,
+    "url": "https://www.ebay.com/itm/188798799175?_skw=carhartt+j97+petrol&hash=item2bf5490d47:g:pnUAAeSwUcpqgPK9",
+    "photo": "https://i.ebayimg.com/images/g/pnUAAeSwUcpqgPK9/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-15T23:39:41.072792+00:00"
+  },
+  {
     "id": 548,
     "query": "j97 moss",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T14:47:37.703545+00:00"
-  },
-  {
-    "id": 451,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Gravel” J97",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/101702806",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/93f5ec1613db42a4944a42f91b858661",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T14:47:37.701096+00:00"
-  },
-  {
-    "id": 452,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Vintage Carhartt J97 BLK Detroit Jacket.",
-    "price": 750.0,
-    "url": "https://www.grailed.com/listings/102786630",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/f3332186abb64e7b80b3f9cb5ce543a1",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T14:47:37.698550+00:00"
   }
 ]
