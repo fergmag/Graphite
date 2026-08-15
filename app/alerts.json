@@ -1,5 +1,21 @@
 [
   {
+    "id": 546,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J43 Cht No.ch2742",
+    "price": 632.23,
+    "url": "https://www.ebay.com/itm/147505716844?_skw=carhartt+j43+cht&hash=item2258069e6c:g:p4IAAeSwUrdqf9CG",
+    "photo": "https://i.ebayimg.com/images/g/p4IAAeSwUrdqf9CG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-15T05:40:09.545455+00:00"
+  },
+  {
     "id": 545,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T14:47:37.627924+00:00"
-  },
-  {
-    "id": 455,
-    "query": "j76 cement",
-    "source": "ebay",
-    "title": "Vintage 90s J76 CMT CARHARTT Detroit Workwear Jacket RARE JAPAN",
-    "price": 520.0,
-    "url": "https://www.ebay.com/itm/389887099371?_skw=carhartt+j76&hash=item5ac71501eb:g:qUoAAeSwDe5p3Y~A",
-    "photo": "https://i.ebayimg.com/images/g/qUoAAeSwDe5p3Y~A/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T08:51:30.203847+00:00"
   }
 ]
