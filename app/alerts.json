@@ -1,5 +1,21 @@
 [
   {
+    "id": 548,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Carhartt J97 Jacket Moss",
+    "price": 137.0,
+    "url": "https://www.grailed.com/listings/103282819",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/ac3358e07f914b31891acb17714b1b24",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-15T23:39:11.223981+00:00"
+  },
+  {
     "id": 547,
     "query": "j43 hunter green",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T14:47:37.698550+00:00"
-  },
-  {
-    "id": 453,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Vintage Sashiko Repaired Carhartt J97 TMB Detroit Jacket.",
-    "price": 1000.0,
-    "url": "https://www.grailed.com/listings/102787014",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/15d3fa07ea0b4f739d43a56bb9c8322b",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T14:47:37.633355+00:00"
   }
 ]
