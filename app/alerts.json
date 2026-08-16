@@ -1,5 +1,21 @@
 [
   {
+    "id": 568,
+    "query": "j43 hunter green",
+    "source": "etsy",
+    "title": "Vintage Carhartt Wool-Lined Detroit Jacket “Hunter Green” J43 HTG Men’s XL",
+    "price": 1299.99,
+    "url": "https://www.etsy.com/listing/4557067285/vintage-carhartt-wool-lined-detroit",
+    "photo": "https://i.etsystatic.com/27753259/r/il/da1703/8439240185/il_570xN.8439240185_ss20.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-16T23:40:45.559815+00:00"
+  },
+  {
     "id": 567,
     "query": "j97 petrol",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:20:22.499594+00:00"
-  },
-  {
-    "id": 433,
-    "query": "j65 blue",
-    "source": "grailed",
-    "title": "Carhartt J65 BLU Large",
-    "price": 1250.0,
-    "url": "https://www.grailed.com/listings/91822139",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/b2d17da32c9e45a89fa0ee72b5ffc8e6",
-    "casp": 2500.0,
-    "deal_score": 4,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:20:22.493844+00:00"
   }
 ]
