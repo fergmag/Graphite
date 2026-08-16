@@ -1,5 +1,21 @@
 [
   {
+    "id": 558,
+    "query": "j43 hunter green",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket Adult XL Hunter Green Canvas Blanket Lined J43HTG Kanye Mens",
+    "price": 787.0,
+    "url": "https://www.grailed.com/listings/103324046",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/a0d86662831843b98c75b3698f4641fe",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-16T11:40:40.461695+00:00"
+  },
+  {
     "id": 557,
     "query": "j97 moss",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T19:52:00.781761+00:00"
-  },
-  {
-    "id": 443,
-    "query": "j97 crimson",
-    "source": "etsy",
-    "title": "Carhartt J97 Detroit Jacket DNY",
-    "price": 249.51,
-    "url": "https://www.etsy.com/listing/4461047186/carhartt-j97-detroit-jacket-dny",
-    "photo": "https://i.etsystatic.com/63296149/r/il/de0589/8310908280/il_570xN.8310908280_97zz.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T19:52:00.763421+00:00"
   }
 ]
