@@ -1,5 +1,21 @@
 [
   {
+    "id": 557,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Crazy Distressed Carhartt J97 MOS",
+    "price": 350.0,
+    "url": "https://www.grailed.com/listings/103320761",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/c9371adf1bbc46e4a44fc8a2e82b84e4",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-16T11:39:11.360431+00:00"
+  },
+  {
     "id": 556,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T19:52:00.763421+00:00"
-  },
-  {
-    "id": 444,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Carhartt J97 DKB faded brown Detroit work wear jacket",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/101814465",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/e7f404bca64e446d8a94b243ba083707",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T19:52:00.739245+00:00"
   }
 ]
