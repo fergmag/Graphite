@@ -1,5 +1,37 @@
 [
   {
+    "id": 561,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 4XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/178413144917?_skw=carhartt+j43+cht&hash=item298a408b55:g:giYAAeSw5TlqgcOn",
+    "photo": "https://i.ebayimg.com/images/g/giYAAeSw5TlqgcOn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-16T17:40:09.852367+00:00"
+  },
+  {
+    "id": 560,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 4XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/178413144917?_skw=carhartt+j43+chestnut&hash=item298a408b55:g:giYAAeSw5TlqgcOn",
+    "photo": "https://i.ebayimg.com/images/g/giYAAeSw5TlqgcOn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-16T17:40:09.842831+00:00"
+  },
+  {
     "id": 559,
     "query": "j97 moss",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T19:54:41.467131+00:00"
-  },
-  {
-    "id": 440,
-    "query": "j43 burgundy",
-    "source": "ebay",
-    "title": "Vtg '99 Carhartt J43 BRG Detroit Jacket Med Duck Blanket Burgundy Union Tag",
-    "price": 1150.0,
-    "url": "https://www.ebay.com/itm/227470134583?_skw=carhartt+j43+burgundy&hash=item34f646cd37:g:AF8AAeSwjWhqdOc3",
-    "photo": "https://i.ebayimg.com/images/g/AF8AAeSwjWhqdOc3/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T19:54:41.455872+00:00"
-  },
-  {
-    "id": 441,
-    "query": "j43 chestnut",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
-    "price": 715.0,
-    "url": "https://www.ebay.com/itm/177855115464?_skw=carhartt+j43&hash=item2968fdb0c8:g:o~UAAeSwKfJoz0OB",
-    "photo": "https://i.ebayimg.com/images/g/o~UAAeSwKfJoz0OB/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T19:54:25.306736+00:00"
   }
 ]
