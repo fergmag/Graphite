@@ -1,5 +1,21 @@
 [
   {
+    "id": 577,
+    "query": "j97 timber",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit J97 TMB",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/103444995",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/583a85db8a824eb38720f2d75107f937",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-17T23:40:09.183483+00:00"
+  },
+  {
     "id": 576,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:21:01.280026+00:00"
-  },
-  {
-    "id": 424,
-    "query": "js1207",
-    "source": "grailed",
-    "title": "Carhartt JS1207 Natural Large",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/86805691",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/6d0f9f7914d64ffabb081d199527de4b",
-    "casp": 500.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:21:01.267114+00:00"
   }
 ]
