@@ -1,5 +1,21 @@
 [
   {
+    "id": 573,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vtg Carhartt Mens Jacket Detroit Canvas Hunter Green J43 Black Corduroy Collar L",
+    "price": 915.04,
+    "url": "https://www.ebay.com/itm/117364181212?_skw=carhartt+j43+hunter+green&hash=item1b537348dc:g:nn8AAeSwVf1qeezN",
+    "photo": "https://i.ebayimg.com/images/g/nn8AAeSwVf1qeezN/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-17T11:41:03.792262+00:00"
+  },
+  {
     "id": 572,
     "query": "j97 timber",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:20:51.147760+00:00"
-  },
-  {
-    "id": 428,
-    "query": "js1236",
-    "source": "grailed",
-    "title": "Carhartt JS1236 Redwood Large",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/86805724",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/bdd8f6a7c8ed4358b72c178df780fa97",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:20:41.785506+00:00"
   }
 ]
