@@ -1,5 +1,21 @@
 [
   {
+    "id": 576,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Unlined Denim Chore Coat “Darkstone” 8C",
+    "price": 289.99,
+    "url": "https://www.etsy.com/listing/4557566830/vintage-carhartt-unlined-denim-chore",
+    "photo": "https://i.etsystatic.com/27753259/r/il/62a0b4/8394945750/il_570xN.8394945750_ivtv.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-17T23:38:08.878850+00:00"
+  },
+  {
     "id": 575,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:21:01.267114+00:00"
-  },
-  {
-    "id": 425,
-    "query": "js1235",
-    "source": "grailed",
-    "title": "Carhartt JS1235 Spruce Large",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/86805852",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/789738daea6649768675d891d3657f0c",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:20:51.166983+00:00"
   }
 ]
