@@ -1,5 +1,21 @@
 [
   {
+    "id": 572,
+    "query": "j97 timber",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB",
+    "price": 395.99,
+    "url": "https://www.etsy.com/listing/4557118577/vintage-carhartt-blanket-lined-detroit",
+    "photo": "https://i.etsystatic.com/27753259/r/il/aa9446/8391721082/il_570xN.8391721082_705x.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-17T05:40:04.259444+00:00"
+  },
+  {
     "id": 571,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:20:41.785506+00:00"
-  },
-  {
-    "id": 429,
-    "query": "js1236",
-    "source": "grailed",
-    "title": "Carhartt JS1236 Large Detroit",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/96146723",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/2ed3bc8c75494b43a22e8c207e970ca6",
-    "casp": 800.0,
-    "deal_score": 3,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:20:41.779509+00:00"
   }
 ]
