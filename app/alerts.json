@@ -1,5 +1,21 @@
 [
   {
+    "id": 574,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Vintage 80s 90s Carhartt Detroit Lot Of 4 J97 J43 JB0866",
+    "price": 3080.0,
+    "url": "https://www.ebay.com/itm/318744907693?_skw=carhartt+jb0866&hash=item4a36ad4fad:g:uiwAAeSwlShqehBy",
+    "photo": "https://i.ebayimg.com/images/g/uiwAAeSwlShqehBy/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-17T23:36:44.827225+00:00"
+  },
+  {
     "id": 573,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-08-10T20:20:51.155446+00:00"
-  },
-  {
-    "id": 427,
-    "query": "js1235",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket Mens 2XL Green Full Zip JS1235 Workwear Vintage Spruce",
-    "price": 907.0,
-    "url": "https://www.ebay.com/itm/336602095722?_skw=carhartt+js1235&hash=item4e5f0c606a:g:B8UAAeSwGH9ohHEV",
-    "photo": "https://i.ebayimg.com/images/g/B8UAAeSwGH9ohHEV/s-l225.jpg",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-08-10T20:20:51.147760+00:00"
   }
 ]
