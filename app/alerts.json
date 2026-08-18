@@ -1,5 +1,37 @@
 [
   {
+    "id": 929,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage RARE Carhartt J43 HTG Hunter Green Tall Detroit Jacket Workwear 2XL Men",
+    "price": 620.76,
+    "url": "https://www.ebay.com/itm/147513203548?_skw=carhartt+j43+htg&hash=item225878db5c:g:4d8AAeSwur5p48E2",
+    "photo": "https://i.ebayimg.com/images/g/4d8AAeSwur5p48E2/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T17:41:07.261128+00:00"
+  },
+  {
+    "id": 928,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage RARE Carhartt J43 HTG Hunter Green Tall Detroit Jacket Workwear 2XL Men",
+    "price": 620.76,
+    "url": "https://www.ebay.com/itm/147513203548?_skw=carhartt+j43+hunter+green&hash=item225878db5c:g:4d8AAeSwur5p48E2",
+    "photo": "https://i.ebayimg.com/images/g/4d8AAeSwur5p48E2/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T17:41:07.215601+00:00"
+  },
+  {
     "id": 927,
     "query": "j43 hunter green",
     "source": "ebay",
