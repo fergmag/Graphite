@@ -1,5 +1,37 @@
 [
   {
+    "id": 634,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Vintage Carhartt Aztec Sherpa Faded Grey Canvas Jacket JP1017 XL Chore Detroit",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/800457607794?_skw=carhartt+jp1017&hash=itemba5efdca72:g:FVcAAeSwEaNpsRjy",
+    "photo": "https://i.ebayimg.com/images/g/FVcAAeSwEaNpsRjy/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T05:38:24.056131+00:00"
+  },
+  {
+    "id": 633,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
+    "price": 2200.0,
+    "url": "https://www.ebay.com/itm/157810033648?_skw=carhartt+jp1017&hash=item24be3603f0:g:FKkAAeSwvTJpdtCo",
+    "photo": "https://i.ebayimg.com/images/g/FKkAAeSwvTJpdtCo/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T05:38:24.052380+00:00"
+  },
+  {
     "id": 632,
     "query": "jq2472",
     "source": "grailed",
