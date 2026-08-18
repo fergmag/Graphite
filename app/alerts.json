@@ -1,5 +1,21 @@
 [
   {
+    "id": 930,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Carhartt J97 PTL Detroit Jacket",
+    "price": 325.0,
+    "url": "https://www.grailed.com/listings/103532118",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/79b41538ffbd41e196eb75dc9eb943ec",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T23:39:54.567601+00:00"
+  },
+  {
     "id": 929,
     "query": "j43 hunter green",
     "source": "ebay",
