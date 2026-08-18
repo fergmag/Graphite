@@ -1,5 +1,37 @@
 [
   {
+    "id": 925,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB",
+    "price": 395.99,
+    "url": "https://www.ebay.com/itm/327315793197?_skw=carhartt+j97+tmb&hash=item4c358aa52d:g:QMsAAeSwaclqhA0Z",
+    "photo": "https://i.ebayimg.com/images/g/QMsAAeSwaclqhA0Z/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T11:40:04.763336+00:00"
+  },
+  {
+    "id": 924,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB",
+    "price": 395.99,
+    "url": "https://www.ebay.com/itm/327315793197?_skw=carhartt+j97+timber&hash=item4c358aa52d:g:QMsAAeSwaclqhA0Z",
+    "photo": "https://i.ebayimg.com/images/g/QMsAAeSwaclqhA0Z/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-18T11:40:04.752909+00:00"
+  },
+  {
     "id": 923,
     "query": "j76 cement",
     "source": "ebay",
