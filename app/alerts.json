@@ -1,5 +1,21 @@
 [
   {
+    "id": 1008,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11DST Men’s XL",
+    "price": 168.29,
+    "url": "https://www.etsy.com/listing/4559567938/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/8a9f71/8457150025/il_570xN.8457150025_mrwq.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-20T23:38:09.056900+00:00"
+  },
+  {
     "id": 1007,
     "query": "j43 hunter green",
     "source": "ebay",
