@@ -1,5 +1,21 @@
 [
   {
+    "id": 996,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt JB1998 Darkstone Denim Jacket Blanket Lined USA Large Tall",
+    "price": 192.0,
+    "url": "https://www.etsy.com/listing/4554824594/vintage-carhartt-jb1998-darkstone-denim",
+    "photo": "https://i.etsystatic.com/10356060/r/il/290df3/8422501337/il_570xN.8422501337_o0eg.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-20T05:38:10.534363+00:00"
+  },
+  {
     "id": 995,
     "query": "j65 brick",
     "source": "ebay",
