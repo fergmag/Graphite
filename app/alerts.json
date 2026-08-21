@@ -1,5 +1,37 @@
 [
   {
+    "id": 1028,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Vintage carhartt detroit style faded jacket 2007 j97 ptl size large",
+    "price": 650.0,
+    "url": "https://www.etsy.com/listing/4560080255/vintage-carhartt-detroit-style-faded",
+    "photo": "https://i.etsystatic.com/44635747/r/il/1cf071/8413212636/il_570xN.8413212636_pcdo.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-21T17:40:02.965277+00:00"
+  },
+  {
+    "id": 1027,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL w/ Tan Collar, Large",
+    "price": 470.0,
+    "url": "https://www.grailed.com/listings/103775954",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/4e27b67cd8f342aa8a757b3e3c3b55c3",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-21T17:40:02.864634+00:00"
+  },
+  {
     "id": 1026,
     "query": "j97 moss",
     "source": "etsy",
