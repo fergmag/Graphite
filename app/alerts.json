@@ -1,5 +1,21 @@
 [
   {
+    "id": 1059,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J97 Mos Green XL Brand New With Tags",
+    "price": 1250.0,
+    "url": "https://www.grailed.com/listings/103794293",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/91b865f6c1ab467c9b7feccd6db96173",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-22T23:39:27.451134+00:00"
+  },
+  {
     "id": 1058,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-16T17:40:09.842831+00:00"
-  },
-  {
-    "id": 559,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt J97 MOS green detroit work wear jacket",
-    "price": 400.0,
-    "url": "https://www.grailed.com/listings/97896145",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/4f1664eb1fcf4b7ea33513753912530b",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-16T17:39:15.135770+00:00"
   }
 ]
