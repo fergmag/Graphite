@@ -1,5 +1,37 @@
 [
   {
+    "id": 1055,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt J97 Detroit Chore Jacket PTL Fade Distressed XL Petrol Vintage USA 2002",
+    "price": 411.95,
+    "url": "https://www.ebay.com/itm/198588420103?_skw=carhartt+j97+petrol&hash=item2e3ccad007:g:fJEAAeSwuQVqiOnf",
+    "photo": "https://i.ebayimg.com/images/g/fJEAAeSwuQVqiOnf/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-22T17:39:57.135449+00:00"
+  },
+  {
+    "id": 1054,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit J97 PTL ‘Petrol’ Jacket Men’s XL Blanket Lined Grey Work",
+    "price": 262.0,
+    "url": "https://www.ebay.com/itm/147521253144?_skw=carhartt+j97+petrol&hash=item2258f3af18:g:zwwAAeSw07tpwHD4",
+    "photo": "https://i.ebayimg.com/images/g/zwwAAeSw07tpwHD4/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-22T17:39:57.123707+00:00"
+  },
+  {
     "id": 1053,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-16T05:40:22.339496+00:00"
-  },
-  {
-    "id": 555,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Vintage Carhartt detroit blue Lined J97 PTL SMALL Jacket",
-    "price": 200.0,
-    "url": "https://www.grailed.com/listings/103297542",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/fdd3097d44b643b8824ae2a73069d0fa",
-    "casp": 600.0,
-    "deal_score": 3,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-16T05:39:57.882394+00:00"
-  },
-  {
-    "id": 554,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Carhartt J97 PTL gray Detroit work wear jacket",
-    "price": 250.0,
-    "url": "https://www.grailed.com/listings/103300866",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/00bc0299e55b4c119515cd2e5493391a",
-    "casp": 600.0,
-    "deal_score": 2,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-16T05:39:57.876675+00:00"
   }
 ]
