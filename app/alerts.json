@@ -1,5 +1,21 @@
 [
   {
+    "id": 1062,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "05’ J97 MOS Carhartt Detroit Jacket",
+    "price": 480.0,
+    "url": "https://www.grailed.com/listings/103881500",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/125c59c919784bb1a317a2095e41f891",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-23T05:39:29.225740+00:00"
+  },
+  {
     "id": 1061,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-16T23:38:02.912214+00:00"
-  },
-  {
-    "id": 562,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11 DST Men’s L",
-    "price": 241.99,
-    "url": "https://www.etsy.com/listing/4557073171/vintage-carhartt-blanket-lined-denim",
-    "photo": "https://i.etsystatic.com/27753259/r/il/ec6ab2/8391403726/il_570xN.8391403726_43xx.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-16T23:38:02.903187+00:00"
   }
 ]
