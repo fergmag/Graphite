@@ -1,5 +1,21 @@
 [
   {
+    "id": 1071,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J43 BRG",
+    "price": 540.0,
+    "url": "https://www.grailed.com/listings/103939015",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/fe356bd1420d421db2655af9797ba663",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-23T17:40:37.047397+00:00"
+  },
+  {
     "id": 1070,
     "query": "j97 petrol",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-17T05:40:04.259444+00:00"
-  },
-  {
-    "id": 571,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Moss Green” J97 MOS",
-    "price": 449.99,
-    "url": "https://www.etsy.com/listing/4557185562/vintage-carhartt-blanket-lined-detroit",
-    "photo": "https://i.etsystatic.com/27753259/r/il/59b712/8392100398/il_570xN.8392100398_k4k5.jpg",
-    "casp": 700.0,
-    "deal_score": 4,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-17T05:39:19.365107+00:00"
   }
 ]
