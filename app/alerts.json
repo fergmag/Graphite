@@ -1,5 +1,21 @@
 [
   {
+    "id": 1090,
+    "query": "j97 burgundy",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket BRG",
+    "price": 149.0,
+    "url": "https://www.etsy.com/listing/4561896950/carhartt-j97-detroit-jacket-brg",
+    "photo": "https://i.etsystatic.com/64095600/r/il/880565/8474198689/il_570xN.8474198689_nqq1.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-24T23:39:44.189028+00:00"
+  },
+  {
     "id": 1089,
     "query": "j97 moss",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:36:24.198451+00:00"
-  },
-  {
-    "id": 590,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Graphite",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/87389181",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/c73587c653c34c4dba33ac928041fb7e",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:36:24.190389+00:00"
   }
 ]
