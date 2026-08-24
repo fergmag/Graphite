@@ -1,5 +1,21 @@
 [
   {
+    "id": 1087,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Vintage Carharttt J97 MOS arctic quilted line jacket",
+    "price": 220.0,
+    "url": "https://www.grailed.com/listings/103986326",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/88f17b47e77542299c05a70145f2ead4",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-24T11:39:27.154546+00:00"
+  },
+  {
     "id": 1086,
     "query": "j43 hunter green",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:36:24.169863+00:00"
-  },
-  {
-    "id": 587,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Medium Graphite 1996",
-    "price": 600.0,
-    "url": "https://www.grailed.com/listings/97214266",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/e2e75d2e8fb44f32b459f204f8c4d5eb",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:36:24.163485+00:00"
   }
 ]
