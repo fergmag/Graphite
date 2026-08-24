@@ -1,5 +1,21 @@
 [
   {
+    "id": 1076,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Crimson Cri Size Medium",
+    "price": 3500.0,
+    "url": "https://www.ebay.com/itm/146618144753?_skw=carhartt+j97+cri&hash=item22231f57f1:g:bWIAAOSwXcRoO1D7",
+    "photo": "https://i.ebayimg.com/images/g/bWIAAOSwXcRoO1D7/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-24T05:39:00.446125+00:00"
+  },
+  {
     "id": 1075,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-17T23:40:09.183483+00:00"
-  },
-  {
-    "id": 576,
-    "query": "j110 darkstone",
-    "source": "etsy",
-    "title": "Vintage Carhartt Unlined Denim Chore Coat “Darkstone” 8C",
-    "price": 289.99,
-    "url": "https://www.etsy.com/listing/4557566830/vintage-carhartt-unlined-denim-chore",
-    "photo": "https://i.etsystatic.com/27753259/r/il/62a0b4/8394945750/il_570xN.8394945750_ivtv.jpg",
-    "casp": 800.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-17T23:38:08.878850+00:00"
   }
 ]
