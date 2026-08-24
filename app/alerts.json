@@ -1,5 +1,37 @@
 [
   {
+    "id": 1084,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 4XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/178413144917?_skw=carhartt+j43+cht&hash=item298a408b55:g:giYAAeSw5TlqgcOn",
+    "photo": "https://i.ebayimg.com/images/g/giYAAeSw5TlqgcOn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-24T05:40:33.950551+00:00"
+  },
+  {
+    "id": 1083,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 4XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/178413144917?_skw=carhartt+j43+chestnut&hash=item298a408b55:g:giYAAeSw5TlqgcOn",
+    "photo": "https://i.ebayimg.com/images/g/giYAAeSw5TlqgcOn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-24T05:40:33.938820+00:00"
+  },
+  {
     "id": 1082,
     "query": "j97 petrol",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:36:24.145331+00:00"
-  },
-  {
-    "id": 584,
-    "query": "jb0817",
-    "source": "ebay",
-    "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
-    "price": 1790.0,
-    "url": "https://www.ebay.com/itm/318089415631?_skw=carhartt+jb0817&hash=item4a0f9b4bcf:g:-E8AAeSwO05pzNto",
-    "photo": "https://i.ebayimg.com/images/g/-E8AAeSwO05pzNto/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:36:24.137067+00:00"
-  },
-  {
-    "id": 583,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Usa L Xlcarhartt Detroit J76 Mos 90S J97",
-    "price": 1737.33,
-    "url": "https://www.ebay.com/itm/407152003015?_skw=carhartt+j76+mos&hash=item5ecc2687c7:g:bQsAAeSwYQVqg4n9",
-    "photo": "https://i.ebayimg.com/images/g/bQsAAeSwYQVqg4n9/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-17T23:41:31.757281+00:00"
   }
 ]
