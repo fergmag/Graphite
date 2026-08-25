@@ -1,5 +1,21 @@
 [
   {
+    "id": 1104,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vtg Carhartt Mens Jacket Detroit Canvas Hunter Green J43 Black Corduroy Collar L",
+    "price": 915.04,
+    "url": "https://www.ebay.com/itm/117364181212?_skw=carhartt+j43+hunter+green&hash=item1b537348dc:g:nn8AAeSwVf1qeezN",
+    "photo": "https://i.ebayimg.com/images/g/nn8AAeSwVf1qeezN/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-25T05:41:07.466183+00:00"
+  },
+  {
     "id": 1103,
     "query": "j43 onyx",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:36:55.882730+00:00"
-  },
-  {
-    "id": 604,
-    "query": "j65 brick",
-    "source": "ebay",
-    "title": "Vintage Carhartt J65 BRK Jacket size X-Large 2001 Rare",
-    "price": 2500.0,
-    "url": "https://www.ebay.com/itm/267152257820?_skw=carhartt+j65+brk&hash=item3e3383f31c:g:Os0AAOSwD7NnquAl",
-    "photo": "https://i.ebayimg.com/images/g/Os0AAOSwD7NnquAl/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:36:55.875046+00:00"
   }
 ]
