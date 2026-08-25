@@ -1,5 +1,21 @@
 [
   {
+    "id": 1111,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
+    "price": 60.0,
+    "url": "https://www.etsy.com/listing/4548898536/vintage-carhartt-detroit-blanket-lined",
+    "photo": "https://i.etsystatic.com/67023717/r/il/f50808/8379930323/il_570xN.8379930323_pm48.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-25T17:39:36.066236+00:00"
+  },
+  {
     "id": 1110,
     "query": "j97 petrol",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:37:07.432275+00:00"
-  },
-  {
-    "id": 611,
-    "query": "j65 blue",
-    "source": "grailed",
-    "title": "Vintage Carhartt J65 BLU XL",
-    "price": 1400.0,
-    "url": "https://www.grailed.com/listings/98677063",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/34193d8d2541488194b30c578fae1800",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:37:07.425983+00:00"
   }
 ]
