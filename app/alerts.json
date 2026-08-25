@@ -1,5 +1,21 @@
 [
   {
+    "id": 1112,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage 2000s Carhartt J97 MOS Moss Green Detroit Jacket L",
+    "price": 350.0,
+    "url": "https://www.etsy.com/listing/4562626764/vintage-2000s-carhartt-j97-mos-moss",
+    "photo": "https://i.etsystatic.com/64376922/r/il/db8b4c/8431651450/il_570xN.8431651450_41s2.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-25T23:39:28.068825+00:00"
+  },
+  {
     "id": 1111,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:37:07.438838+00:00"
-  },
-  {
-    "id": 612,
-    "query": "j65 blue",
-    "source": "grailed",
-    "title": "Carhartt J65 BLU Large",
-    "price": 1250.0,
-    "url": "https://www.grailed.com/listings/91822139",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/b2d17da32c9e45a89fa0ee72b5ffc8e6",
-    "casp": 2500.0,
-    "deal_score": 4,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:37:07.432275+00:00"
   }
 ]
