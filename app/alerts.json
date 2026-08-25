@@ -1,5 +1,21 @@
 [
   {
+    "id": 1109,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Hooded Jacket “Darkstone”",
+    "price": 399.99,
+    "url": "https://www.etsy.com/listing/4562172461/vintage-carhartt-blanket-lined-hooded",
+    "photo": "https://i.etsystatic.com/27753259/r/il/bd1ff4/8476337683/il_570xN.8476337683_gpaq.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-25T11:38:11.655378+00:00"
+  },
+  {
     "id": 1108,
     "query": "j76 moss",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-18T05:37:07.419198+00:00"
-  },
-  {
-    "id": 609,
-    "query": "j65 blue",
-    "source": "ebay",
-    "title": "vintage carhartt j65 blu sandstone detroit jacket in blue size xl",
-    "price": 1700.0,
-    "url": "https://www.ebay.com/itm/376782222282?_skw=carhartt+j65+blue&hash=item57b9f873ca:g:17cAAeSwlfxpQa-M",
-    "photo": "https://i.ebayimg.com/images/g/17cAAeSwlfxpQa-M/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-18T05:37:07.412652+00:00"
   }
 ]
