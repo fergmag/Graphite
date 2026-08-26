@@ -1,5 +1,21 @@
 [
   {
+    "id": 1147,
+    "query": "js1237",
+    "source": "grailed",
+    "title": "Carhartt JS1237 Carbon Blue Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805758",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/5a6976244a8b459c940ecef009748085",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T05:37:18.609132+00:00"
+  },
+  {
     "id": 1146,
     "query": "j65 blue",
     "source": "ebay",
