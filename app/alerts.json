@@ -1,5 +1,37 @@
 [
   {
+    "id": 1155,
+    "query": "js1207",
+    "source": "etsy",
+    "title": "RARE 1989 Carhartt Detroit js1207 White Made in USA canvas full zip jacket 48 xl",
+    "price": 648.0,
+    "url": "https://www.etsy.com/listing/4464606796/rare-1989-carhartt-detroit-js1207-white",
+    "photo": "https://i.etsystatic.com/64085323/r/il/09e70c/7756837286/il_570xN.7756837286_p7t1.jpg",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T05:37:46.530724+00:00"
+  },
+  {
+    "id": 1154,
+    "query": "js1207",
+    "source": "grailed",
+    "title": "Carhartt JS1207 Natural Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805691",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6d0f9f7914d64ffabb081d199527de4b",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T05:37:46.524208+00:00"
+  },
+  {
     "id": 1153,
     "query": "js1235",
     "source": "grailed",
