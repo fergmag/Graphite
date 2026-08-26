@@ -1,5 +1,37 @@
 [
   {
+    "id": 1157,
+    "query": "jr0115",
+    "source": "grailed",
+    "title": "Carhartt JR0115 Carbon Blue",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/86800617",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/88ec956ab62a45429f9e0239c04c490a",
+    "casp": 500.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T05:37:56.147893+00:00"
+  },
+  {
+    "id": 1156,
+    "query": "jr0115",
+    "source": "grailed",
+    "title": "Carhartt JR0115 Carbon Blue",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/86800960",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/15efb53253a04d68b67179c4c0921b30",
+    "casp": 500.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T05:37:56.137710+00:00"
+  },
+  {
     "id": 1155,
     "query": "js1207",
     "source": "etsy",
