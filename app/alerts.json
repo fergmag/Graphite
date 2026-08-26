@@ -1,5 +1,37 @@
 [
   {
+    "id": 1418,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket J97 &quot;MOSS GREEN&quot; | Blanket Lined Workwear Coat | Rare Vintage Jacket | Unisex Carhartt Jacket",
+    "price": 215.0,
+    "url": "https://www.etsy.com/listing/4562928804/vintage-carhartt-detroit-jacket-j97-moss",
+    "photo": "https://i.etsystatic.com/67521884/r/il/188b53/8481625909/il_570xN.8481625909_1chc.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T11:39:35.074160+00:00"
+  },
+  {
+    "id": 1417,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Faded Moss Green Vintage Carhartt Detroit Jacket J97 MOS",
+    "price": 300.0,
+    "url": "https://www.grailed.com/listings/100811312",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b2135de01b9e4b61b5df75250486cde7",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-26T11:39:35.065352+00:00"
+  },
+  {
     "id": 1416,
     "query": "j76 cement",
     "source": "ebay",
