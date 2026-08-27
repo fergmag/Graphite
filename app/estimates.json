@@ -3,168 +3,6 @@
     "query": "jb0817",
     "casp": 835.22,
     "accuracy_pct": 90,
-    "created_at": "2026-08-13T05:36:22.846943+00:00"
-  },
-  {
-    "query": "jb0873",
-    "casp": 1076.16,
-    "accuracy_pct": 20,
-    "created_at": "2026-08-13T05:36:32.937403+00:00"
-  },
-  {
-    "query": "jb0866",
-    "casp": 789.45,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:36:42.451522+00:00"
-  },
-  {
-    "query": "j65 brick",
-    "casp": 1408.33,
-    "accuracy_pct": 60,
-    "created_at": "2026-08-13T05:36:53.024683+00:00"
-  },
-  {
-    "query": "j65 blue",
-    "casp": 1451.56,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:37:05.383575+00:00"
-  },
-  {
-    "query": "js1237",
-    "casp": 760.0,
-    "accuracy_pct": 60,
-    "created_at": "2026-08-13T05:37:15.712714+00:00"
-  },
-  {
-    "query": "js1236",
-    "casp": 751.67,
-    "accuracy_pct": 60,
-    "created_at": "2026-08-13T05:37:25.211929+00:00"
-  },
-  {
-    "query": "js1235",
-    "casp": 852.43,
-    "accuracy_pct": 70,
-    "created_at": "2026-08-13T05:37:35.082506+00:00"
-  },
-  {
-    "query": "js1207",
-    "casp": 700.0,
-    "accuracy_pct": 20,
-    "created_at": "2026-08-13T05:37:45.076746+00:00"
-  },
-  {
-    "query": "jr0115",
-    "casp": 390.0,
-    "accuracy_pct": 40,
-    "created_at": "2026-08-13T05:37:54.762341+00:00"
-  },
-  {
-    "query": "j110 darkstone",
-    "casp": 800.0,
-    "accuracy_pct": 0,
-    "created_at": "2026-08-13T05:38:04.856941+00:00"
-  },
-  {
-    "query": "jq2472",
-    "casp": 796.2,
-    "accuracy_pct": 50,
-    "created_at": "2026-08-13T05:38:15.566267+00:00"
-  },
-  {
-    "query": "jp1017",
-    "casp": 1350.0,
-    "accuracy_pct": 20,
-    "created_at": "2026-08-13T05:38:24.875462+00:00"
-  },
-  {
-    "query": "ju1005",
-    "casp": 1348.85,
-    "accuracy_pct": 80,
-    "created_at": "2026-08-13T05:38:34.272757+00:00"
-  },
-  {
-    "query": "j97 crimson",
-    "casp": 989.48,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:38:45.710751+00:00"
-  },
-  {
-    "query": "j97 moss",
-    "casp": 519.96,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:39:00.895946+00:00"
-  },
-  {
-    "query": "j97 burgundy",
-    "casp": 434.79,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:39:29.101685+00:00"
-  },
-  {
-    "query": "j97 petrol",
-    "casp": 400.76,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:39:40.523829+00:00"
-  },
-  {
-    "query": "j97 timber",
-    "casp": 368.92,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:39:58.893109+00:00"
-  },
-  {
-    "query": "j43 chestnut",
-    "casp": 433.67,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:40:14.716939+00:00"
-  },
-  {
-    "query": "j43 burgundy",
-    "casp": 998.48,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:40:27.318786+00:00"
-  },
-  {
-    "query": "j43 onyx",
-    "casp": 564.54,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:40:39.119260+00:00"
-  },
-  {
-    "query": "j43 hunter green",
-    "casp": 801.83,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:40:51.853214+00:00"
-  },
-  {
-    "query": "jb1236",
-    "casp": 1038.62,
-    "accuracy_pct": 80,
-    "created_at": "2026-08-13T05:41:04.267893+00:00"
-  },
-  {
-    "query": "jb1215",
-    "casp": 1105.0,
-    "accuracy_pct": 30,
-    "created_at": "2026-08-13T05:41:14.153169+00:00"
-  },
-  {
-    "query": "j76 moss",
-    "casp": 476.64,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:41:24.624766+00:00"
-  },
-  {
-    "query": "j76 cement",
-    "casp": 692.38,
-    "accuracy_pct": 100,
-    "created_at": "2026-08-13T05:41:35.388920+00:00"
-  },
-  {
-    "query": "jb0817",
-    "casp": 835.22,
-    "accuracy_pct": 90,
     "created_at": "2026-08-13T11:36:22.931303+00:00"
   },
   {
@@ -9718,5 +9556,167 @@
     "casp": 630.34,
     "accuracy_pct": 90,
     "created_at": "2026-08-27T17:47:33.856063+00:00"
+  },
+  {
+    "query": "jb0817",
+    "casp": 890.7,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:41:57.614799+00:00"
+  },
+  {
+    "query": "jb0873",
+    "casp": 1200.77,
+    "accuracy_pct": 30,
+    "created_at": "2026-08-27T23:42:06.918583+00:00"
+  },
+  {
+    "query": "jb0866",
+    "casp": 586.8,
+    "accuracy_pct": 90,
+    "created_at": "2026-08-27T23:42:16.561902+00:00"
+  },
+  {
+    "query": "j65 brick",
+    "casp": 1390.0,
+    "accuracy_pct": 50,
+    "created_at": "2026-08-27T23:42:27.343640+00:00"
+  },
+  {
+    "query": "j65 blue",
+    "casp": 1513.09,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:42:40.046396+00:00"
+  },
+  {
+    "query": "js1237",
+    "casp": 760.0,
+    "accuracy_pct": 60,
+    "created_at": "2026-08-27T23:42:51.557264+00:00"
+  },
+  {
+    "query": "js1236",
+    "casp": 766.43,
+    "accuracy_pct": 70,
+    "created_at": "2026-08-27T23:43:00.704143+00:00"
+  },
+  {
+    "query": "js1235",
+    "casp": 852.43,
+    "accuracy_pct": 70,
+    "created_at": "2026-08-27T23:43:10.233682+00:00"
+  },
+  {
+    "query": "js1207",
+    "casp": 700.0,
+    "accuracy_pct": 20,
+    "created_at": "2026-08-27T23:43:19.666952+00:00"
+  },
+  {
+    "query": "jr0115",
+    "casp": 358.25,
+    "accuracy_pct": 40,
+    "created_at": "2026-08-27T23:43:29.797537+00:00"
+  },
+  {
+    "query": "j110 darkstone",
+    "casp": 800.0,
+    "accuracy_pct": 0,
+    "created_at": "2026-08-27T23:43:38.742377+00:00"
+  },
+  {
+    "query": "jq2472",
+    "casp": 796.2,
+    "accuracy_pct": 50,
+    "created_at": "2026-08-27T23:43:54.045504+00:00"
+  },
+  {
+    "query": "jp1017",
+    "casp": 1350.0,
+    "accuracy_pct": 20,
+    "created_at": "2026-08-27T23:44:03.157534+00:00"
+  },
+  {
+    "query": "ju1005",
+    "casp": 882.31,
+    "accuracy_pct": 60,
+    "created_at": "2026-08-27T23:44:12.618401+00:00"
+  },
+  {
+    "query": "j97 crimson",
+    "casp": 951.62,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:44:23.288463+00:00"
+  },
+  {
+    "query": "j97 moss",
+    "casp": 543.52,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:44:39.466613+00:00"
+  },
+  {
+    "query": "j97 burgundy",
+    "casp": 425.07,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:45:13.143639+00:00"
+  },
+  {
+    "query": "j97 petrol",
+    "casp": 388.43,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:45:27.217285+00:00"
+  },
+  {
+    "query": "j97 timber",
+    "casp": 375.96,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:45:50.287551+00:00"
+  },
+  {
+    "query": "j43 chestnut",
+    "casp": 432.06,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:46:03.683843+00:00"
+  },
+  {
+    "query": "j43 burgundy",
+    "casp": 988.3,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:46:16.803192+00:00"
+  },
+  {
+    "query": "j43 onyx",
+    "casp": 545.63,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:46:28.402233+00:00"
+  },
+  {
+    "query": "j43 hunter green",
+    "casp": 786.9,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:46:40.983114+00:00"
+  },
+  {
+    "query": "jb1236",
+    "casp": 1038.62,
+    "accuracy_pct": 80,
+    "created_at": "2026-08-27T23:46:53.777779+00:00"
+  },
+  {
+    "query": "jb1215",
+    "casp": 1105.0,
+    "accuracy_pct": 30,
+    "created_at": "2026-08-27T23:47:03.372906+00:00"
+  },
+  {
+    "query": "j76 moss",
+    "casp": 549.88,
+    "accuracy_pct": 100,
+    "created_at": "2026-08-27T23:47:15.415639+00:00"
+  },
+  {
+    "query": "j76 cement",
+    "casp": 630.34,
+    "accuracy_pct": 90,
+    "created_at": "2026-08-27T23:47:28.414450+00:00"
   }
 ]
