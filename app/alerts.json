@@ -1,5 +1,37 @@
 [
   {
+    "id": 1429,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Lined Active Jacket “Darkstone” J08 ROCKY",
+    "price": 449.99,
+    "url": "https://www.etsy.com/listing/4558382959/vintage-carhartt-lined-active-jacket",
+    "photo": "https://i.etsystatic.com/27753259/r/il/1f28b1/8448613887/il_570xN.8448613887_73vt.jpg",
+    "casp": 800.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T05:38:12.152182+00:00"
+  },
+  {
+    "id": 1428,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Aztec Pile-Lined Denim Chore Jacket “Darkstone” JP1088",
+    "price": 445.49,
+    "url": "https://www.etsy.com/listing/4558416063/vintage-carhartt-aztec-pile-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/e75ba9/8400947554/il_570xN.8400947554_easi.jpg",
+    "casp": 800.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T05:38:12.142633+00:00"
+  },
+  {
     "id": 1427,
     "query": "j65 brick",
     "source": "etsy",
