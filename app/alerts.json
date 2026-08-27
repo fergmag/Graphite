@@ -1,5 +1,21 @@
 [
   {
+    "id": 489,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "vintage 90s hunter green carhartt detroit jacket j43 htg medium rare flaw",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/377026486439?_skw=carhartt+j43+htg&hash=item57c887a0a7:g:1PEAAeSwlAFpsdjM",
+    "photo": "https://i.ebayimg.com/images/g/1PEAAeSwlAFpsdjM/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T11:46:41.388368+00:00"
+  },
+  {
     "id": 488,
     "query": "j43 onyx",
     "source": "ebay",
