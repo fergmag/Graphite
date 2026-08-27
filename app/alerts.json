@@ -1,5 +1,21 @@
 [
   {
+    "id": 1427,
+    "query": "j65 brick",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket Blanket lined J65 BRK Red Size XL/2XL Faded",
+    "price": 1119.99,
+    "url": "https://www.etsy.com/listing/4508600860/vintage-carhartt-detroit-jacket-blanket",
+    "photo": "https://i.etsystatic.com/65222494/r/il/db8141/8042048682/il_570xN.8042048682_rpba.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T05:36:55.969339+00:00"
+  },
+  {
     "id": 1426,
     "query": "j97 petrol",
     "source": "etsy",
