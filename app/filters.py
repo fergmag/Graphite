@@ -55,6 +55,17 @@ _ALIAS_TO_CODE: Dict[str, str] = {
 # Full reverse map (no exclusions) — used for colorway-term matching in titles.
 _FULL_CANONICAL_TO_ABBREV: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 
+# All known colorway terms (canonical + abbreviation) with precompiled word-boundary patterns.
+# Used for the negative colorway check: reject only when a DIFFERENT colorway is explicit.
+_ALL_COLORWAY_TERMS: set = set()
+for _ck, _cv in _CODE_ALIASES.items():
+    _ALL_COLORWAY_TERMS.add(_ck)
+    _ALL_COLORWAY_TERMS.add(_cv)
+_COLORWAY_RE: Dict[str, re.Pattern] = {
+    t: re.compile(r'\b' + re.escape(t) + r'\b', re.IGNORECASE)
+    for t in _ALL_COLORWAY_TERMS
+}
+
 
 def normalize_query(query: str) -> str:
     """
@@ -98,6 +109,31 @@ def colorway_terms_for_query(query: str) -> List[str]:
     if abbrev:
         terms.append(abbrev)
     return terms
+
+
+def negative_colorway_filter(title_lower: str, query: str) -> bool:
+    """Return True (keep) if the listing passes the colorway check.
+
+    Accepts listings with the correct colorway OR no colorway at all.
+    Rejects ONLY when the title explicitly names a DIFFERENT known colorway.
+
+    This prevents j65 BLU listings appearing in j65 BRK results without
+    rejecting listings like 'Carhartt J110 Traditional Jacket' that simply
+    omit the colorway name (which is common for eBay/Grailed sellers).
+    Word-boundary matching so 'most' doesn't trigger 'mos', 'naturally' doesn't
+    trigger 'nat', etc.
+    """
+    cw_terms = colorway_terms_for_query(query)
+    if not cw_terms:
+        return True
+    for term in cw_terms:
+        if _COLORWAY_RE[term].search(title_lower):
+            return True  # correct colorway → keep
+    other_cw = _ALL_COLORWAY_TERMS - set(cw_terms)
+    for term in other_cw:
+        if _COLORWAY_RE[term].search(title_lower):
+            return False  # different colorway explicitly in title → reject
+    return True  # no colorway mentioned at all → keep
 
 
 def search_terms_for_query(query: str) -> List[str]:
@@ -157,6 +193,9 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
             continue
 
         if required_code and required_code not in title_lower:
+            continue
+
+        if require_code and not negative_colorway_filter(title_lower, query):
             continue
 
         filtered.append(comp)
