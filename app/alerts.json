@@ -1,5 +1,37 @@
 [
   {
+    "id": 494,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J76 MOS – Moss Green – XL – Made in USA",
+    "price": 495.0,
+    "url": "https://www.ebay.com/itm/366632277247?_skw=carhartt+j76+mos&hash=item555cfc94ff:g:0AAAAeSwGGJqkEmZ",
+    "photo": "https://i.ebayimg.com/images/g/0AAAAeSwGGJqkEmZ/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T17:47:24.949915+00:00"
+  },
+  {
+    "id": 493,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J76 MOS – Moss Green – XL – Made in USA",
+    "price": 495.0,
+    "url": "https://www.ebay.com/itm/366632277247?_skw=carhartt+j76+moss&hash=item555cfc94ff:g:0AAAAeSwGGJqkEmZ",
+    "photo": "https://i.ebayimg.com/images/g/0AAAAeSwGGJqkEmZ/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-27T17:47:24.939991+00:00"
+  },
+  {
     "id": 492,
     "query": "j97 petrol",
     "source": "grailed",
