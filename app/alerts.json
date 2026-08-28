@@ -1,5 +1,21 @@
 [
   {
+    "id": 510,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "VTG Carhartt J97MOS Detroit Jacket Timber Blanket Lined Size XXXL Moss USA 3X",
+    "price": 162.0,
+    "url": "https://www.ebay.com/itm/257708271462?_skw=carhartt+j97+timber&hash=item3c009c2766:g:10YAAeSwOzFqbqFb",
+    "photo": "https://i.ebayimg.com/images/g/10YAAeSwOzFqbqFb/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-28T17:45:57.893992+00:00"
+  },
+  {
     "id": 509,
     "query": "j97 petrol",
     "source": "ebay",
