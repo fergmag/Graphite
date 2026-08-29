@@ -1,5 +1,21 @@
 [
   {
+    "id": 537,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Carhartt j65 blu work jacket",
+    "price": 1890.0,
+    "url": "https://www.grailed.com/listings/104354136",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6808d3913354474eadbb1270f1061c99",
+    "casp": 2500.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-29T11:42:40.942745+00:00"
+  },
+  {
     "id": 536,
     "query": "j43 hunter green",
     "source": "ebay",
