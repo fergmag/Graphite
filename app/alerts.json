@@ -1,5 +1,37 @@
 [
   {
+    "id": 530,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
+    "price": 1499.0,
+    "url": "https://www.ebay.com/itm/178431046400?_skw=carhartt+j43+brg&hash=item298b51b300:g:YoIAAeSwH4hpcY8y",
+    "photo": "https://i.ebayimg.com/images/g/YoIAAeSwH4hpcY8y/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-29T05:46:13.892032+00:00"
+  },
+  {
+    "id": 529,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
+    "price": 1499.0,
+    "url": "https://www.ebay.com/itm/178431046400?_skw=carhartt+j43+burgundy&hash=item298b51b300:g:YoIAAeSwH4hpcY8y",
+    "photo": "https://i.ebayimg.com/images/g/YoIAAeSwH4hpcY8y/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-29T05:46:13.874307+00:00"
+  },
+  {
     "id": 528,
     "query": "j43 chestnut",
     "source": "ebay",
