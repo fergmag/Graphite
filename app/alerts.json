@@ -1,5 +1,21 @@
 [
   {
+    "id": 515,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "Vintage Carhartt JR0115 Aztec Southwestern Hooded Active Jacket Blue Mens XL US",
+    "price": 472.99,
+    "url": "https://www.ebay.com/itm/267763828336?_skw=carhartt+jr0115&hash=item3e57f7c670:g:9M0AAeSw0yNqiLSR",
+    "photo": "https://i.ebayimg.com/images/g/9M0AAeSw0yNqiLSR/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-29T05:43:25.361270+00:00"
+  },
+  {
     "id": 514,
     "query": "jb0817",
     "source": "grailed",
