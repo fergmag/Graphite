@@ -1,5 +1,23 @@
 [
   {
+    "id": "759681421d",
+    "title": "J97 MOS",
+    "size": "S",
+    "price": 800.0,
+    "description": "2001 J97 Moss Detroit",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788122536/graphite/ae6mhdvowpygikfnsum2.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788122536/graphite/ruexk7dcmvwv9q2n5bmh.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788122537/graphite/fj7dcgkjvevhihywqlys.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788122538/graphite/nglyqpmjqozsbuipf1kz.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788122539/graphite/htb33p8oytz9mztul2dr.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-08-30",
+    "position": -1,
+    "condition": ""
+  },
+  {
     "id": "f2c367059e",
     "title": "JR0057",
     "size": "L",
@@ -15,8 +33,8 @@
     ],
     "sold": false,
     "created_at": "2026-08-30",
-    "position": -1,
-    "condition": ""
+    "position": 0,
+    "condition": null
   },
   {
     "id": "91adb4ed1b",
@@ -33,7 +51,7 @@
     ],
     "sold": true,
     "created_at": "2026-08-12",
-    "position": 0,
+    "position": 1,
     "condition": null
   },
   {
@@ -53,7 +71,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-23",
-    "position": 1,
+    "position": 2,
     "condition": null
   },
   {
@@ -70,7 +88,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-15",
-    "position": 2,
+    "position": 3,
     "condition": null
   },
   {
@@ -88,7 +106,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-09",
-    "position": 3,
+    "position": 4,
     "condition": null
   },
   {
@@ -106,7 +124,7 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": 4,
+    "position": 5,
     "condition": null
   },
   {
@@ -123,7 +141,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 5,
+    "position": 6,
     "condition": null
   },
   {
@@ -144,7 +162,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 6,
+    "position": 7,
     "condition": null
   }
 ]
