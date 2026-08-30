@@ -195,9 +195,6 @@ def filter_comps(comps: List[Dict[str, Any]], query: str, require_code: bool = T
         if required_code and required_code not in title_lower:
             continue
 
-        if require_code and not negative_colorway_filter(title_lower, query):
-            continue
-
         filtered.append(comp)
 
     return filtered

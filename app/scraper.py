@@ -139,22 +139,23 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     # Search with canonical name AND abbreviation to catch sellers using either form
     search_aliases = search_terms_for_query(query)
 
-    # Platforms where sellers use model codes in titles → strict code filter
+    # Grailed sellers reliably include model codes in titles → strict code filter
     strict_raw: List[Dict[str, Any]] = []
     seen_strict: set = set()
     for term in search_aliases:
-        for item in search_ebay_active(term) + search_grailed(term):
+        for item in search_grailed(term):
             u = item.get("url", "")
             if u not in seen_strict:
                 strict_raw.append(item)
                 seen_strict.add(u)
     strict_listings = filter_comps(strict_raw, query, require_code=True)
 
-    # Platforms with targeted search (query already sent as "carhartt X") → junk filter only
+    # eBay/Etsy/Depop/Whatnot: search engine does the scoping, sellers often omit
+    # model codes from titles ("Detroit Jacket Moss" not "J97 Moss") → relaxed filter
     relaxed_raw: List[Dict[str, Any]] = []
     seen_relaxed: set = set()
     for term in search_aliases:
-        for item in search_depop(term) + search_etsy(term) + search_whatnot(term):
+        for item in search_ebay_active(term) + search_depop(term) + search_etsy(term) + search_whatnot(term):
             u = item.get("url", "")
             if u not in seen_relaxed:
                 relaxed_raw.append(item)

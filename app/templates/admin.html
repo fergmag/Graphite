@@ -259,7 +259,7 @@
           <div class="cust-dd">
             <select name="size">
               <option value="">— Select —</option>
-              <option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
+              <option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option>
             </select>
             <button type="button" class="cust-dd-trigger">
               <span class="cust-dd-label">— Select —</span>
@@ -267,6 +267,7 @@
             </button>
             <div class="cust-dd-panel">
               <button type="button" class="cust-dd-opt selected" data-value="">— Select —</button>
+              <button type="button" class="cust-dd-opt" data-value="S">S</button>
               <button type="button" class="cust-dd-opt" data-value="M">M</button>
               <button type="button" class="cust-dd-opt" data-value="L">L</button>
               <button type="button" class="cust-dd-opt" data-value="XL">XL</button>
@@ -329,7 +330,7 @@
               <div class="cust-dd">
                 <select name="size">
                   <option value="">— Select —</option>
-                  {% for sz in ['M','L','XL','XXL'] %}
+                  {% for sz in ['S','M','L','XL','XXL'] %}
                   <option value="{{ sz }}" {% if l.size == sz %}selected{% endif %}>{{ sz }}</option>
                   {% endfor %}
                 </select>
@@ -339,7 +340,7 @@
                 </button>
                 <div class="cust-dd-panel">
                   <button type="button" class="cust-dd-opt {% if not l.size %}selected{% endif %}" data-value="">— Select —</button>
-                  {% for sz in ['M','L','XL','XXL'] %}
+                  {% for sz in ['S','M','L','XL','XXL'] %}
                   <button type="button" class="cust-dd-opt {% if l.size == sz %}selected{% endif %}" data-value="{{ sz }}">{{ sz }}</button>
                   {% endfor %}
                 </div>
@@ -422,7 +423,7 @@
 
       <div class="cards">
         <div class="card">
-          <h3 id="caspCardTitle">Estimated Value</h3>
+          <h3 id="caspCardTitle">Current Estimated Value</h3>
           <p class="big" id="casp">$—</p>
           <div class="sub" id="caspSub">Median asking price — Grailed + eBay</div>
           <div id="givenPrice" style="display:none;margin-top:6px;font-size:11px;font-weight:700;color:#111;letter-spacing:0.03em;"></div>
@@ -639,7 +640,7 @@
           $('accLabel').textContent = '—'; $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
           $('caspSub').textContent = 'Mean of active Grailed + eBay listings';
-          if (titleEl) titleEl.textContent = 'Estimated Value';
+          if (titleEl) titleEl.textContent = 'Current Estimated Value';
           if (givenEl) givenEl.style.display = 'none';
           return;
         }
@@ -656,9 +657,12 @@
         if (pub.deal_score) {
           $('deal').textContent = `${pub.deal_score}/5`;
           const askingVal = parseFloat($('asking').value.trim()) || null;
-          const sizeVal = $('sizeSelect') ? $('sizeSelect').value.trim() : '';
-          const prefix = askingVal ? `$${askingVal.toFixed(0)} (${sizeVal || 'M'}) — ` : '';
-          $('dealSub').textContent = `${prefix}${pub.deal_label} · ${pub.delta > 0 ? '+' : '-'}$${Math.abs(pub.delta).toFixed(0)} (${pub.delta_pct}%)`;
+          const sizeVal = ($('sizeSelect') ? $('sizeSelect').value.trim() : '') || 'M';
+          if (askingVal) {
+            $('dealSub').textContent = `(${sizeVal}) given price: $${askingVal.toFixed(0)} · ${pub.delta > 0 ? '+' : '-'}$${Math.abs(pub.delta).toFixed(0)} (${pub.delta_pct}%)`;
+          } else {
+            $('dealSub').textContent = `${pub.deal_label} · ${pub.delta > 0 ? '+' : '-'}$${Math.abs(pub.delta).toFixed(0)} (${pub.delta_pct}%)`;
+          }
         } else {
           $('deal').textContent = '—';
           $('dealSub').textContent = 'Add an asking price to score the deal.';
@@ -893,7 +897,7 @@
             const wrapRect = $('chartWrap').getBoundingClientRect();
             const xInWrap = (cx / (W + LEFT)) * svgRect.width + (svgRect.left - wrapRect.left);
             const yInWrap = (cy / H) * svgRect.height + (svgRect.top - wrapRect.top);
-            tooltip.textContent = `${fmtDt(d.created_at)} · $${d.casp.toFixed(0)}`;
+            tooltip.textContent = `${fmtDt(d.created_at)} · Historical estimated value: $${d.casp.toFixed(0)}`;
             tooltip.style.display = 'block';
             tooltip.style.left = `${xInWrap}px`;
             tooltip.style.top = `${yInWrap - 34}px`;
@@ -1131,7 +1135,7 @@
           const txCol = SCORE_TEXT[score] || 'rgba(255,255,255,0.5)';
           const normSz = _normSz(l.size || '');
           const adjCasp = manualCasp ? manualCasp * (_smult[normSz] || 1.0) : null;
-          const caspTag = adjCasp ? `<span style="font-size:10px;color:rgba(255,255,255,0.6);font-weight:600;">${normSz||'M'} CASP $${adjCasp.toFixed(0)}</span>` : '';
+          const caspTag = adjCasp ? `<span style="font-size:10px;color:rgba(255,255,255,0.6);font-weight:600;">Est. value (${normSz||'M'}): $${adjCasp.toFixed(0)}</span>` : '';
           const scoreLabel = `<span style="font-size:10px;font-weight:800;padding:2px 7px;border-radius:4px;background:${bgCol};color:${txCol};">Deal ${score}/5</span>`;
           return `
             <a href="${l.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
@@ -1262,7 +1266,7 @@
             const canonicalCasp = _modelsMap[a.query] || a.casp;
             const adjCasp = canonicalCasp ? (canonicalCasp * mult) : null;
             const sizeLabel = normSize || a.size || 'M';
-            const caspLabel = adjCasp ? `${sizeLabel} CASP $${adjCasp.toFixed(0)}` : '';
+            const caspLabel = adjCasp ? `Est. value (${sizeLabel}): $${adjCasp.toFixed(0)}` : '';
             // Recalculate deal score client-side using size-adjusted CASP
             let score = a.deal_score;
             if (adjCasp && a.price) {
