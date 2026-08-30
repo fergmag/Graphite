@@ -1,5 +1,21 @@
 [
   {
+    "id": 561,
+    "query": "j97 burgundy",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket BRG",
+    "price": 149.0,
+    "url": "https://www.etsy.com/listing/4565534890/carhartt-j97-detroit-jacket-brg",
+    "photo": "https://i.etsystatic.com/66875366/r/il/da5f2b/8453061716/il_570xN.8453061716_r61m.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-30T17:45:17.279340+00:00"
+  },
+  {
     "id": 560,
     "query": "j97 moss",
     "source": "grailed",
