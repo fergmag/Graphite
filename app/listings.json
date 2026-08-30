@@ -1,5 +1,24 @@
 [
   {
+    "id": "f2c367059e",
+    "title": "JR0057",
+    "size": "L",
+    "price": 550.0,
+    "description": "1994 JR0057 Damson Aztec",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120815/graphite/bg0ygffmfw0hhsrlzzkl.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120816/graphite/nmcz6ty9bxxv7oai8bba.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120817/graphite/kt7xmbignr2dote5vjii.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120818/graphite/ptbf1lrqhhcexddyifmp.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120819/graphite/jqwwcsoponceok6ql5u1.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788120819/graphite/jjztjiyi13i9dl2wi3qv.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-08-30",
+    "position": -1,
+    "condition": ""
+  },
+  {
     "id": "91adb4ed1b",
     "title": "JB0817",
     "size": "M",
