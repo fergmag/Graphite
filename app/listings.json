@@ -14,8 +14,8 @@
     ],
     "sold": true,
     "created_at": "2026-08-12",
-    "position": -1,
-    "condition": ""
+    "position": 0,
+    "condition": null
   },
   {
     "id": "0cfd908dea",
@@ -32,9 +32,9 @@
       "https://res.cloudinary.com/dniduygdg/image/upload/v1784773666/graphite/zq330xw2p1pkwyjsanzi.jpg",
       "https://res.cloudinary.com/dniduygdg/image/upload/v1784773667/graphite/ugcjcnri2yeogusq2ofq.jpg"
     ],
-    "sold": false,
+    "sold": true,
     "created_at": "2026-07-23",
-    "position": 0,
+    "position": 1,
     "condition": null
   },
   {
@@ -51,8 +51,8 @@
     ],
     "sold": true,
     "created_at": "2026-07-15",
-    "position": 1,
-    "condition": ""
+    "position": 2,
+    "condition": null
   },
   {
     "id": "9bcd01e56f",
@@ -69,7 +69,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-09",
-    "position": 2,
+    "position": 3,
     "condition": null
   },
   {
@@ -87,7 +87,7 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": 3,
+    "position": 4,
     "condition": null
   },
   {
@@ -104,7 +104,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 4,
+    "position": 5,
     "condition": null
   },
   {
@@ -125,7 +125,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 5,
+    "position": 6,
     "condition": null
   }
 ]
