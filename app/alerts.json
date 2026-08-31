@@ -1,5 +1,21 @@
 [
   {
+    "id": 618,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Carhartt Hooded Flannel Shirt Jacket 4XL Green Check Workwear XXXXL Lumber",
+    "price": 37.89,
+    "url": "https://www.ebay.com/itm/188865418711?_skw=carhartt+j97+timber&hash=item2bf94195d7:g:9f4AAeSwxahp78cf",
+    "photo": "https://i.ebayimg.com/images/g/9f4AAeSwxahp78cf/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T11:51:27.733255+00:00"
+  },
+  {
     "id": 617,
     "query": "j97 petrol",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:39:27.442173+00:00"
-  },
-  {
-    "id": 379,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "VINTAGE Carhartt J97 Moss Green 2XL Full Zip Bomber Jacket Unisex Adults Winter Lined Polyester Canvas Workwear Green Jacket",
-    "price": 451.0,
-    "url": "https://www.grailed.com/listings/94769507",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/63f11419ee4749389306d252611afe86",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.432905+00:00"
   }
 ]
