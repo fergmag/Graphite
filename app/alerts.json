@@ -1,5 +1,21 @@
 [
   {
+    "id": 536,
+    "query": "js1237",
+    "source": "grailed",
+    "title": "Carhartt JS1237 Carbon Blue Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805758",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/5a6976244a8b459c940ecef009748085",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:55.410421+00:00"
+  },
+  {
     "id": 535,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:39:27.682805+00:00"
-  },
-  {
-    "id": 465,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "J97 MOS Carhartt Detroit Jacket - Mens Medium, Green (RARE 90s Vintage)",
-    "price": 422.29,
-    "url": "https://www.etsy.com/listing/4521297386/j97-mos-carhartt-detroit-jacket-mens",
-    "photo": "https://i.etsystatic.com/66480578/r/il/b46fe2/8179939891/il_570xN.8179939891_5xrw.jpg",
-    "casp": 700.0,
-    "deal_score": 4,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.676880+00:00"
   }
 ]
