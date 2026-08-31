@@ -1,5 +1,21 @@
 [
   {
+    "id": 608,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "05’ J97 MOS Carhartt Detroit Jacket",
+    "price": 480.0,
+    "url": "https://www.grailed.com/listings/103881500",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/125c59c919784bb1a317a2095e41f891",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T05:50:31.287724+00:00"
+  },
+  {
     "id": 607,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:38:53.353223+00:00"
-  },
-  {
-    "id": 389,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage Carhartt Crimson J97CRI Detroit Jacket",
-    "price": 1820.94,
-    "url": "https://www.ebay.com/itm/147220152487?_skw=carhartt+j97+cri&hash=item22470140a7:g:yMQAAeSwIIFpweUV",
-    "photo": "https://i.ebayimg.com/images/g/yMQAAeSwIIFpweUV/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:38:53.347232+00:00"
   }
 ]
