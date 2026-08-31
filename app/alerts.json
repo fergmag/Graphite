@@ -1,6 +1,134 @@
 [
   {
-    "id": 619,
+    "id": 508,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0817 Men's Gray  Zipper Size X-Large Rare Hard Find",
+    "price": 420.0,
+    "url": "https://www.ebay.com/itm/257399947512?_skw=carhartt+jb0817&hash=item3bee3b80f8:g:pwIAAeSwm8Nouh8A",
+    "photo": "https://i.ebayimg.com/images/g/pwIAAeSwm8Nouh8A/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.400214+00:00"
+  },
+  {
+    "id": 507,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0817 Men's Gray with Zipper Size Unknown(M) Pre-Owned",
+    "price": 1797.0,
+    "url": "https://www.ebay.com/itm/336137878470?_skw=carhartt+jb0817&hash=item4e4360fbc6:g:aPwAAeSw9vRopzsh",
+    "photo": "https://i.ebayimg.com/images/g/aPwAAeSw9vRopzsh/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.397371+00:00"
+  },
+  {
+    "id": 506,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
+    "price": 1790.0,
+    "url": "https://www.ebay.com/itm/318089415631?_skw=carhartt+jb0817&hash=item4a0f9b4bcf:g:-E8AAeSwO05pzNto",
+    "photo": "https://i.ebayimg.com/images/g/-E8AAeSwO05pzNto/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.393709+00:00"
+  },
+  {
+    "id": 505,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/86800690",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/148ba1a883ce4e58b455389de4c01683",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.390830+00:00"
+  },
+  {
+    "id": 504,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/87389181",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/c73587c653c34c4dba33ac928041fb7e",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.388327+00:00"
+  },
+  {
+    "id": 503,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/89386324",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/abac44b14591481ca1276f731472b76c",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.385707+00:00"
+  },
+  {
+    "id": 502,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/95120313",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/d05e03f0cf9e49289be9339c413fbd45",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.382571+00:00"
+  },
+  {
+    "id": 501,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Medium Graphite 1996",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/97214266",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/e2e75d2e8fb44f32b459f204f8c4d5eb",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:53:02.379175+00:00"
+  },
+  {
+    "id": 1,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt Jacket Adult XL Green Detroit Work wear J43 HTG Mens",
@@ -16,7 +144,7 @@
     "created_at": "2026-08-31T11:52:17.520441+00:00"
   },
   {
-    "id": 618,
+    "id": 2,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt Hooded Flannel Shirt Jacket 4XL Green Check Workwear XXXXL Lumber",
@@ -32,7 +160,7 @@
     "created_at": "2026-08-31T11:51:27.733255+00:00"
   },
   {
-    "id": 617,
+    "id": 3,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XXL J97 PTL Petrol Gray",
@@ -48,7 +176,7 @@
     "created_at": "2026-08-31T11:51:13.913789+00:00"
   },
   {
-    "id": 616,
+    "id": 4,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J43 BRG",
@@ -64,7 +192,7 @@
     "created_at": "2026-08-31T05:51:46.062988+00:00"
   },
   {
-    "id": 615,
+    "id": 5,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -80,7 +208,7 @@
     "created_at": "2026-08-31T05:51:21.816076+00:00"
   },
   {
-    "id": 614,
+    "id": 6,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -96,7 +224,7 @@
     "created_at": "2026-08-31T05:51:21.732230+00:00"
   },
   {
-    "id": 613,
+    "id": 7,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Work Jacket, Petrol Duck Canvas, Blanket Lined Men&#39;s Workwear Coat",
@@ -112,7 +240,7 @@
     "created_at": "2026-08-31T05:51:08.137636+00:00"
   },
   {
-    "id": 612,
+    "id": 8,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 Detroit Chore Jacket Fade Distressed Men XL Petrol USA 2002",
@@ -128,7 +256,7 @@
     "created_at": "2026-08-31T05:51:08.126146+00:00"
   },
   {
-    "id": 611,
+    "id": 9,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL ‘Petrol Grey’ Jacket Men’s XL Tall Blanket Lined",
@@ -144,7 +272,7 @@
     "created_at": "2026-08-31T05:51:08.113900+00:00"
   },
   {
-    "id": 610,
+    "id": 10,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt J97 PTL Detroit Jacket",
@@ -160,7 +288,7 @@
     "created_at": "2026-08-31T05:51:08.090110+00:00"
   },
   {
-    "id": 609,
+    "id": 11,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Adult XL Petrol J97 Detroit Chore Distressed Fade USA 2002 Mens",
@@ -176,7 +304,7 @@
     "created_at": "2026-08-31T05:51:08.078984+00:00"
   },
   {
-    "id": 608,
+    "id": 12,
     "query": "j97 moss",
     "source": "grailed",
     "title": "05’ J97 MOS Carhartt Detroit Jacket",
@@ -192,7 +320,7 @@
     "created_at": "2026-08-31T05:50:31.287724+00:00"
   },
   {
-    "id": 607,
+    "id": 13,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit J47 HTG Blanket Lined Full Zip Work Jacket Men's L Tall",
@@ -208,7 +336,7 @@
     "created_at": "2026-08-30T23:52:11.122237+00:00"
   },
   {
-    "id": 606,
+    "id": 14,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s J97PTL Blue Carhartt Detroit Jacket Size Large",
@@ -224,7 +352,7 @@
     "created_at": "2026-08-30T23:52:11.116496+00:00"
   },
   {
-    "id": 605,
+    "id": 15,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket J106 HTG Hunter Green Quilt  Lined Size L",
@@ -240,7 +368,7 @@
     "created_at": "2026-08-30T23:52:11.110860+00:00"
   },
   {
-    "id": 604,
+    "id": 16,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket J106 HTG Hunter Green Quilt  Lined Size L",
@@ -256,7 +384,7 @@
     "created_at": "2026-08-30T23:52:10.935388+00:00"
   },
   {
-    "id": 603,
+    "id": 17,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J97 CHT ‘Chestnut’ Detroit Blanket Lined Jacket MENS X LARGE",
@@ -272,7 +400,7 @@
     "created_at": "2026-08-30T23:51:33.796663+00:00"
   },
   {
-    "id": 602,
+    "id": 18,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J97 CHT ‘Chestnut’ Detroit Blanket Lined Jacket MENS X LARGE",
@@ -288,7 +416,7 @@
     "created_at": "2026-08-30T23:51:33.787310+00:00"
   },
   {
-    "id": 601,
+    "id": 19,
     "query": "j97 timber",
     "source": "ebay",
     "title": "vintage 2000s essential brown carhartt hooded jacket J06TMB size large rare usa",
@@ -304,7 +432,7 @@
     "created_at": "2026-08-30T23:51:21.222533+00:00"
   },
   {
-    "id": 600,
+    "id": 20,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage 01 J06 TMB Timber Brown Carhartt Hooded Jacket Quilted Men’s 4XL",
@@ -320,7 +448,7 @@
     "created_at": "2026-08-30T23:51:21.217123+00:00"
   },
   {
-    "id": 599,
+    "id": 21,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J69 TMB Jacket Men's XL Brown Nylon Quilted-Lined USA MADE",
@@ -336,7 +464,7 @@
     "created_at": "2026-08-30T23:51:21.160837+00:00"
   },
   {
-    "id": 598,
+    "id": 22,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage 01 J06 TMB Timber Brown Carhartt Hooded Jacket Quilted Men’s 4XL",
@@ -352,7 +480,7 @@
     "created_at": "2026-08-30T23:51:21.151147+00:00"
   },
   {
-    "id": 597,
+    "id": 23,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt Rugged Flex Hooded Flannel Jacket Mens XL Brown Plaid Workwear Lumber",
@@ -368,7 +496,7 @@
     "created_at": "2026-08-30T23:51:21.146906+00:00"
   },
   {
-    "id": 596,
+    "id": 24,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt Coat Rugged Flex Relax Fit 2XL Brown Canvas Lumber Patch",
@@ -384,7 +512,7 @@
     "created_at": "2026-08-30T23:51:21.143354+00:00"
   },
   {
-    "id": 595,
+    "id": 25,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt Men's Jacket 2XL Relaxed Fit. Rain Defender. Says Cal-tex Lumber.",
@@ -400,7 +528,7 @@
     "created_at": "2026-08-30T23:51:21.139984+00:00"
   },
   {
-    "id": 594,
+    "id": 26,
     "query": "j97 timber",
     "source": "ebay",
     "title": "CARHARTT DETROIT JACKET MEN’S 2XL BROWN PATINA “CHANNEL LUMBER CO.” USA MADE VTG",
@@ -416,7 +544,7 @@
     "created_at": "2026-08-30T23:51:21.133955+00:00"
   },
   {
-    "id": 593,
+    "id": 27,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt PTL Detroit Vintage Jacket Large Well Used.",
@@ -432,7 +560,7 @@
     "created_at": "2026-08-30T23:51:08.549778+00:00"
   },
   {
-    "id": 592,
+    "id": 28,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt 1990's Duck Canvas Jacket 3XL Tall Faded Black Blanket Lined",
@@ -448,7 +576,7 @@
     "created_at": "2026-08-30T23:51:08.540406+00:00"
   },
   {
-    "id": 591,
+    "id": 29,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Jacket Blue Size L",
@@ -464,7 +592,7 @@
     "created_at": "2026-08-30T23:51:08.534358+00:00"
   },
   {
-    "id": 590,
+    "id": 30,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Canvas Hooded Jacket Unisex L Sherpa Lined Zip Snap Front Gray Workwear",
@@ -480,7 +608,7 @@
     "created_at": "2026-08-30T23:51:08.528219+00:00"
   },
   {
-    "id": 589,
+    "id": 31,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Mens Large TALL Hooded Jacket J131 BRN Pockets Thermal Lined USA Logo",
@@ -496,7 +624,7 @@
     "created_at": "2026-08-30T23:51:08.521881+00:00"
   },
   {
-    "id": 588,
+    "id": 32,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Rain Defender Jacket Men Medium Gray Hooded Heavy Work Shirt Jacket NEW",
@@ -512,7 +640,7 @@
     "created_at": "2026-08-30T23:51:08.515820+00:00"
   },
   {
-    "id": 587,
+    "id": 33,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Shacket Mens Relaxed Fit Workwear Flannel Lined Shirt Jacket Gray L",
@@ -528,7 +656,7 @@
     "created_at": "2026-08-30T23:51:08.438744+00:00"
   },
   {
-    "id": 586,
+    "id": 34,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt 100th Anniversary Duck Hunter Camo Jacket ATTACHMENT ONLY Men's",
@@ -544,7 +672,7 @@
     "created_at": "2026-08-30T23:51:08.432584+00:00"
   },
   {
-    "id": 585,
+    "id": 35,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Mens Small Carhartt Twill Work Jacket Midweight Quilted Nylon Lined J293 KHI",
@@ -560,7 +688,7 @@
     "created_at": "2026-08-30T23:51:08.423111+00:00"
   },
   {
-    "id": 584,
+    "id": 36,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
@@ -576,7 +704,7 @@
     "created_at": "2026-08-30T23:50:47.235869+00:00"
   },
   {
-    "id": 583,
+    "id": 37,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Men's Jacket J43brg Size XXL Faded purple And Blanket Inline",
@@ -592,7 +720,7 @@
     "created_at": "2026-08-30T23:50:47.229701+00:00"
   },
   {
-    "id": 582,
+    "id": 38,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s Carhartt J06 BRG Distressed Active Burgundy Jacket Mens SZ XL",
@@ -608,7 +736,7 @@
     "created_at": "2026-08-30T23:50:47.223503+00:00"
   },
   {
-    "id": 581,
+    "id": 39,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s J14 BRG CARHARTT Santa Fe Workwear Jacket Rare",
@@ -624,7 +752,7 @@
     "created_at": "2026-08-30T23:50:47.217601+00:00"
   },
   {
-    "id": 580,
+    "id": 40,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s Carhartt J06BRG Burgundy Size 4XL Plum Purple Wine Workwear Jacket",
@@ -640,7 +768,7 @@
     "created_at": "2026-08-30T23:50:47.211640+00:00"
   },
   {
-    "id": 579,
+    "id": 41,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s J14 BRG CARHARTT Santa Fe Workwear Jacket Rare",
@@ -656,7 +784,7 @@
     "created_at": "2026-08-30T23:50:47.186696+00:00"
   },
   {
-    "id": 578,
+    "id": 42,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J06 (BRG, XL-Reg) Hooded Insulated Jacket",
@@ -672,7 +800,7 @@
     "created_at": "2026-08-30T23:50:47.178743+00:00"
   },
   {
-    "id": 577,
+    "id": 43,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Quilted Santa Fe Jacket “Burgundy” J14 BRG",
@@ -688,7 +816,7 @@
     "created_at": "2026-08-30T23:50:47.172736+00:00"
   },
   {
-    "id": 576,
+    "id": 44,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J06BRG Plum Purple Union Made Jacket Wine Burgundy Size L",
@@ -704,7 +832,7 @@
     "created_at": "2026-08-30T23:50:47.166789+00:00"
   },
   {
-    "id": 575,
+    "id": 45,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s CARHARTT J14 BRG  Santa Fe Workwear Jacket Distressed",
@@ -720,7 +848,7 @@
     "created_at": "2026-08-30T23:50:47.159726+00:00"
   },
   {
-    "id": 574,
+    "id": 46,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J06BRG Hooded Jacket Brown Quilted Lined USA XL Regular",
@@ -736,7 +864,7 @@
     "created_at": "2026-08-30T23:50:47.153661+00:00"
   },
   {
-    "id": 573,
+    "id": 47,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Barn Coat C08 BRG Chore Jacket XXL Quilt Lined Workwear",
@@ -752,7 +880,7 @@
     "created_at": "2026-08-30T23:50:47.145883+00:00"
   },
   {
-    "id": 572,
+    "id": 48,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "VTG 90s Mens 2XL CARHARTT Blanket Lined Barn Chore Coat Jacket C10 BRG USA MADE",
@@ -768,7 +896,7 @@
     "created_at": "2026-08-30T23:50:47.137805+00:00"
   },
   {
-    "id": 571,
+    "id": 49,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s EXTREMELY RARE Burgundy Clay Carhartt J130 Jacket Size Large",
@@ -784,7 +912,7 @@
     "created_at": "2026-08-30T23:50:47.130953+00:00"
   },
   {
-    "id": 570,
+    "id": 50,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Quilted Santa Fe Jacket “Burgundy” J14 BRG",
@@ -800,7 +928,7 @@
     "created_at": "2026-08-30T23:50:47.124944+00:00"
   },
   {
-    "id": 569,
+    "id": 51,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "VTG Carhartt J130 MDT Hooded Jacket Burgundy/Red, Quilted, Size XL",
@@ -816,7 +944,7 @@
     "created_at": "2026-08-30T23:50:47.118917+00:00"
   },
   {
-    "id": 568,
+    "id": 52,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J06BRG Plum Purple Union Made Jacket Wine Burgundy Size L",
@@ -832,7 +960,7 @@
     "created_at": "2026-08-30T23:50:47.111166+00:00"
   },
   {
-    "id": 567,
+    "id": 53,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt J130 DWN Dark Wine Crimson Lined Burgundy Hooded Work Jacket Size XL",
@@ -848,7 +976,7 @@
     "created_at": "2026-08-30T23:50:47.103393+00:00"
   },
   {
-    "id": 566,
+    "id": 54,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt burgundy jacket coat with black lining size small men’s",
@@ -864,7 +992,7 @@
     "created_at": "2026-08-30T23:50:47.097624+00:00"
   },
   {
-    "id": 565,
+    "id": 55,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Jacket XlT J14 CLY Y2K Burgundy Santa Fe tall",
@@ -880,7 +1008,7 @@
     "created_at": "2026-08-30T23:50:47.091780+00:00"
   },
   {
-    "id": 564,
+    "id": 56,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Burgundy Blanket Lined Chore Jacket L/XL Workwear USA",
@@ -896,7 +1024,7 @@
     "created_at": "2026-08-30T23:50:47.085463+00:00"
   },
   {
-    "id": 563,
+    "id": 57,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt chore jacket Burgundy Insulated No Spec Tag",
@@ -912,7 +1040,7 @@
     "created_at": "2026-08-30T23:50:47.079780+00:00"
   },
   {
-    "id": 562,
+    "id": 58,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Red Burgundy Men’s XlL Activewear Jacket With Hood Vintage 90s Heavy",
@@ -928,7 +1056,7 @@
     "created_at": "2026-08-30T23:50:47.074011+00:00"
   },
   {
-    "id": 561,
+    "id": 59,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "VTG Carhartt Jacket Hooded Burgundy Men's Size XL Full Zip Workwear USA Made",
@@ -944,7 +1072,7 @@
     "created_at": "2026-08-30T23:50:47.068276+00:00"
   },
   {
-    "id": 560,
+    "id": 60,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt burgundy jacket with hood, size L Measurements ( #workwear #outdoor",
@@ -960,7 +1088,7 @@
     "created_at": "2026-08-30T23:50:47.062148+00:00"
   },
   {
-    "id": 559,
+    "id": 61,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt WIP Men Nimbus Pullover Waterproof Burgundy Anorak Jacket - Medium",
@@ -976,7 +1104,7 @@
     "created_at": "2026-08-30T23:50:47.054199+00:00"
   },
   {
-    "id": 558,
+    "id": 62,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Hooded Fleece Lined Flannel Shacket Jacket Burgundy Check Large",
@@ -992,7 +1120,7 @@
     "created_at": "2026-08-30T23:50:47.048519+00:00"
   },
   {
-    "id": 557,
+    "id": 63,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Rare J43 Light Fade Blanket Lined Burgundy Detroit St Carhartt Jacket Size Large",
@@ -1008,7 +1136,7 @@
     "created_at": "2026-08-30T23:50:47.041993+00:00"
   },
   {
-    "id": 556,
+    "id": 64,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Distressed Carhartt Jacket XL Burgundy/ Wine  One Of A Kind.",
@@ -1024,7 +1152,7 @@
     "created_at": "2026-08-30T23:50:47.035895+00:00"
   },
   {
-    "id": 555,
+    "id": 65,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Vintage Men’s Burgundy Clay Santa Fe Grunge Jacket Size Large J14 CLY",
@@ -1040,7 +1168,7 @@
     "created_at": "2026-08-30T23:50:47.027822+00:00"
   },
   {
-    "id": 554,
+    "id": 66,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Burgundy Santa Fe Jacket Quilted Lined L Tall J14 BRK",
@@ -1056,7 +1184,7 @@
     "created_at": "2026-08-30T23:50:47.021975+00:00"
   },
   {
-    "id": 553,
+    "id": 67,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Unique Vintage Burgundy/Wine RedCarhartt JQ246 Medium regular ",
@@ -1072,7 +1200,7 @@
     "created_at": "2026-08-30T23:50:47.016204+00:00"
   },
   {
-    "id": 552,
+    "id": 68,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "VTG 90s Burgundy Red J141-CLY Carhartt Hooded Jacket with Sherpa Lining Size XL",
@@ -1088,7 +1216,7 @@
     "created_at": "2026-08-30T23:50:47.010334+00:00"
   },
   {
-    "id": 551,
+    "id": 69,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J130 DKR 2XL Duck Jacket Red Burgundy Hooded Workwear",
@@ -1104,7 +1232,7 @@
     "created_at": "2026-08-30T23:50:47.004250+00:00"
   },
   {
-    "id": 550,
+    "id": 70,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "VTG Carhartt JQ281 Jacket Burgundy Wine Red RARE Made in USA Size XXL Distressed",
@@ -1120,7 +1248,7 @@
     "created_at": "2026-08-30T23:50:46.997757+00:00"
   },
   {
-    "id": 549,
+    "id": 71,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt J174 RDW Mens Burgundy L Nylon Insulated Work Jacket chore coat",
@@ -1136,7 +1264,7 @@
     "created_at": "2026-08-30T23:50:46.990497+00:00"
   },
   {
-    "id": 548,
+    "id": 72,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Men's Rain Defender Burgundy/Brown Jacket Large",
@@ -1152,7 +1280,7 @@
     "created_at": "2026-08-30T23:50:46.984120+00:00"
   },
   {
-    "id": 547,
+    "id": 73,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "CARHARTT Rain Defender Burgundy Relaxed Fit Heavyweight Hooded Work Jacket XL",
@@ -1168,7 +1296,7 @@
     "created_at": "2026-08-30T23:50:46.977254+00:00"
   },
   {
-    "id": 546,
+    "id": 74,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Vtg Carhartt Hooded Quilted Lined Jacket Size 3XL Green Rancher's Coat J130 Mos",
@@ -1184,7 +1312,7 @@
     "created_at": "2026-08-30T23:50:32.942607+00:00"
   },
   {
-    "id": 545,
+    "id": 75,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Carhartt Men's Big & Tall Washed Duck Mock-Neck Best LB3 Navy Blue Size 4XL",
@@ -1200,7 +1328,7 @@
     "created_at": "2026-08-30T23:50:32.934223+00:00"
   },
   {
-    "id": 544,
+    "id": 76,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Mens Small Carhartt Twill Work Jacket Midweight Quilted Nylon Lined J293 KHI",
@@ -1216,7 +1344,7 @@
     "created_at": "2026-08-30T23:50:32.924938+00:00"
   },
   {
-    "id": 543,
+    "id": 77,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Vintage Distressed Carhartt Tan Detroit Work Jacket XL Men’s Insulated Worn",
@@ -1232,7 +1360,7 @@
     "created_at": "2026-08-30T23:50:32.915267+00:00"
   },
   {
-    "id": 542,
+    "id": 78,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Carhartt Men's Big & Tall Washed Duck Mock-Neck Best LB3 Navy Blue Size 4XL",
@@ -1248,7 +1376,7 @@
     "created_at": "2026-08-30T23:50:32.831931+00:00"
   },
   {
-    "id": 541,
+    "id": 79,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Mens Small Carhartt Twill Work Jacket Midweight Quilted Nylon Lined J293 KHI",
@@ -1264,7 +1392,7 @@
     "created_at": "2026-08-30T23:50:32.823543+00:00"
   },
   {
-    "id": 540,
+    "id": 80,
     "query": "j97 moss",
     "source": "ebay",
     "title": "Vintage Distressed Carhartt Tan Detroit Work Jacket XL Men’s Insulated Worn",
@@ -1280,7 +1408,7 @@
     "created_at": "2026-08-30T23:50:32.816221+00:00"
   },
   {
-    "id": 539,
+    "id": 81,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt J97 MOS Blanket-Lined Detroit Jacket",
@@ -1296,7 +1424,7 @@
     "created_at": "2026-08-30T23:50:32.728443+00:00"
   },
   {
-    "id": 538,
+    "id": 82,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt J68 Cri Jacket Size Large",
@@ -1312,7 +1440,7 @@
     "created_at": "2026-08-30T23:49:58.150934+00:00"
   },
   {
-    "id": 537,
+    "id": 83,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Active Jacket - J130 CRI - Crimson - Medium  🩸 🇺🇸",
@@ -1328,7 +1456,7 @@
     "created_at": "2026-08-30T23:49:58.145219+00:00"
   },
   {
-    "id": 536,
+    "id": 84,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "VTG Carhartt J130 CRI Crimson Red Workwear Hooded Active Jacket Large",
@@ -1344,7 +1472,7 @@
     "created_at": "2026-08-30T23:49:58.139330+00:00"
   },
   {
-    "id": 535,
+    "id": 85,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Quilted Hooded Active Jacket “Crimson Red” J130 CRI Men’s Large",
@@ -1360,7 +1488,7 @@
     "created_at": "2026-08-30T23:49:58.133403+00:00"
   },
   {
-    "id": 534,
+    "id": 86,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt J 130 Cri Crimson Red Size L Regular.",
@@ -1376,7 +1504,7 @@
     "created_at": "2026-08-30T23:49:58.125683+00:00"
   },
   {
-    "id": 533,
+    "id": 87,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Santa Fe J102CRI Jacket Crimson Red Size L  Faded USA",
@@ -1392,7 +1520,7 @@
     "created_at": "2026-08-30T23:49:58.117735+00:00"
   },
   {
-    "id": 532,
+    "id": 88,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Active Jacket - J130 CRI - Crimson - Medium  🩸 🇺🇸 DISTRESSED",
@@ -1408,7 +1536,7 @@
     "created_at": "2026-08-30T23:49:58.090198+00:00"
   },
   {
-    "id": 531,
+    "id": 89,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage J130 CRI Carhartt Zip Up Hooded Jacket Size XXL",
@@ -1424,7 +1552,7 @@
     "created_at": "2026-08-30T23:49:58.083921+00:00"
   },
   {
-    "id": 530,
+    "id": 90,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Jacket J130 CRI Crimson Red GRAIL RARE Quilted Lining XXL 30x28 Boxy",
@@ -1440,7 +1568,7 @@
     "created_at": "2026-08-30T23:49:58.078132+00:00"
   },
   {
-    "id": 529,
+    "id": 91,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Vintage J130 CRI Crimson Red Hooded  Zip Up Size XL Jacket",
@@ -1456,7 +1584,7 @@
     "created_at": "2026-08-30T23:49:58.072473+00:00"
   },
   {
-    "id": 528,
+    "id": 92,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt USA Made Crimson (CRI) Santa Fe 24\" Chest - Thrashed",
@@ -1472,7 +1600,7 @@
     "created_at": "2026-08-30T23:49:58.066781+00:00"
   },
   {
-    "id": 527,
+    "id": 93,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Crimson Hooded Jacket J130 Cri Size XL Tall  Quilted Rare",
@@ -1488,7 +1616,7 @@
     "created_at": "2026-08-30T23:49:58.057947+00:00"
   },
   {
-    "id": 526,
+    "id": 94,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt J130 CRI hooded active jacket",
@@ -1504,7 +1632,7 @@
     "created_at": "2026-08-30T23:49:58.052261+00:00"
   },
   {
-    "id": 525,
+    "id": 95,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "VTG Carhartt J130 J68 CRI Crimson Red Workwear Hooded Active Jacket Large",
@@ -1520,7 +1648,7 @@
     "created_at": "2026-08-30T23:49:58.046622+00:00"
   },
   {
-    "id": 524,
+    "id": 96,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Jacket Men XL J130 CRI Crimson Red 90s Workwear Active Coat",
@@ -1536,7 +1664,7 @@
     "created_at": "2026-08-30T23:49:58.040986+00:00"
   },
   {
-    "id": 523,
+    "id": 97,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt J130 CRI Crimson Red Workwear Hooded Active Jacket 2XL",
@@ -1552,7 +1680,7 @@
     "created_at": "2026-08-30T23:49:58.035171+00:00"
   },
   {
-    "id": 522,
+    "id": 98,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Chore Coat (Code 82C / C01 CRI – Washed Crimson Red)",
@@ -1568,7 +1696,7 @@
     "created_at": "2026-08-30T23:49:58.029459+00:00"
   },
   {
-    "id": 521,
+    "id": 99,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "VINTAGE CARHARTT J140 RED QUILTED HOODED WORKWEAR JACKET 2XL Has Stains See Phot",
@@ -1584,7 +1712,7 @@
     "created_at": "2026-08-30T23:49:58.022799+00:00"
   },
   {
-    "id": 520,
+    "id": 100,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Red Canvas Quilt Lined Jacket Vintage J140 Size 4XL",
@@ -1600,7 +1728,7 @@
     "created_at": "2026-08-30T23:49:58.014876+00:00"
   },
   {
-    "id": 519,
+    "id": 101,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Hooded Jacket Men’s Red Full Zip Lined J131 RED Company XXL",
@@ -1616,7 +1744,7 @@
     "created_at": "2026-08-30T23:49:58.008994+00:00"
   },
   {
-    "id": 518,
+    "id": 102,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Men`s Carhartt L/S Davis Shirts Jac Bomber Jacket Size M",
@@ -1632,7 +1760,7 @@
     "created_at": "2026-08-30T23:49:58.003092+00:00"
   },
   {
-    "id": 517,
+    "id": 103,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "VTG Carhartt J140 RED Quilt Lined Hooded Jacket Small ? P2P 20",
@@ -1648,7 +1776,7 @@
     "created_at": "2026-08-30T23:49:57.997438+00:00"
   },
   {
-    "id": 516,
+    "id": 104,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt J140 Duck Canvas Hooded Jacket Men’s 3XL USA",
@@ -1664,7 +1792,7 @@
     "created_at": "2026-08-30T23:49:57.991641+00:00"
   },
   {
-    "id": 515,
+    "id": 105,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Fleece Jacket MENS XL Tall Black Red 1/4 Zip OUTDOOR Pullover Plaid NWT",
@@ -1680,7 +1808,7 @@
     "created_at": "2026-08-30T23:49:57.985869+00:00"
   },
   {
-    "id": 514,
+    "id": 106,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Fleece Jacket MENS Small Black Red 1/4 Zip OUTDOOR Pullover Plaid NWT",
@@ -1696,7 +1824,7 @@
     "created_at": "2026-08-30T23:49:57.980104+00:00"
   },
   {
-    "id": 513,
+    "id": 107,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Fleece Jacket MENS 3XL Black Red 1/4 Zip OUTDOOR Pullover Plaid NWT",
@@ -1712,7 +1840,7 @@
     "created_at": "2026-08-30T23:49:57.974173+00:00"
   },
   {
-    "id": 512,
+    "id": 108,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "VTG 90s Mens 2XL CARHARTT Blanket Lined Barn Chore Coat Jacket C10 BRG USA MADE",
@@ -1728,7 +1856,7 @@
     "created_at": "2026-08-30T23:49:57.968355+00:00"
   },
   {
-    "id": 511,
+    "id": 109,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Red Jacket Fleece-Lined Hooded Zip-Up Size XL",
@@ -1744,7 +1872,7 @@
     "created_at": "2026-08-30T23:49:57.962430+00:00"
   },
   {
-    "id": 510,
+    "id": 110,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage 90's Carhartt Skeleton Red Baggy Fit Zip hooded chase jacket Y2K LGB",
@@ -1760,7 +1888,7 @@
     "created_at": "2026-08-30T23:49:57.956565+00:00"
   },
   {
-    "id": 509,
+    "id": 111,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt J174 RDW Mens Burgundy L Nylon Insulated Work Jacket chore coat",
@@ -1776,7 +1904,7 @@
     "created_at": "2026-08-30T23:49:57.950885+00:00"
   },
   {
-    "id": 508,
+    "id": 112,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Men's Rain Defender Burgundy/Brown Jacket Large",
@@ -1792,7 +1920,7 @@
     "created_at": "2026-08-30T23:49:57.945011+00:00"
   },
   {
-    "id": 507,
+    "id": 113,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Men’s size L Jacket/Coat Maroon Insulated Nylon Full-Zip Work J174 RDW",
@@ -1808,7 +1936,7 @@
     "created_at": "2026-08-30T23:49:57.937158+00:00"
   },
   {
-    "id": 506,
+    "id": 114,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Hubbard Red Plaid Sherpa Lined Flannel Jacket Men’s Large Regular Fit",
@@ -1824,7 +1952,7 @@
     "created_at": "2026-08-30T23:49:57.931293+00:00"
   },
   {
-    "id": 505,
+    "id": 115,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "CARHARTT Rain Defender Burgundy Relaxed Fit Heavyweight Hooded Work Jacket XL",
@@ -1840,7 +1968,7 @@
     "created_at": "2026-08-30T23:49:57.925553+00:00"
   },
   {
-    "id": 504,
+    "id": 116,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Fleece Lined Flannel Shacket Shirt Jacket Mens XL Red Plaid Snap Up",
@@ -1856,7 +1984,7 @@
     "created_at": "2026-08-30T23:49:57.919803+00:00"
   },
   {
-    "id": 503,
+    "id": 117,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt J73 RED Nylon Bomber Jacket Mens L Large Tractor Embroidered",
@@ -1872,7 +2000,7 @@
     "created_at": "2026-08-30T23:49:57.913837+00:00"
   },
   {
-    "id": 502,
+    "id": 118,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vintage Carhartt Shirt Jacket Medium Red Canvas Snap Button Flannel Lined 2XL",
@@ -1888,7 +2016,7 @@
     "created_at": "2026-08-30T23:49:57.907992+00:00"
   },
   {
-    "id": 501,
+    "id": 119,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Rugged Flex Flannel Fleece, Lined, Size Large Shacket",
@@ -1904,7 +2032,7 @@
     "created_at": "2026-08-30T23:49:57.902239+00:00"
   },
   {
-    "id": 500,
+    "id": 120,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Flannel Jacket Mens 2XL Red Plaid Insulated Fleece Lined WARM 103315",
@@ -1920,7 +2048,7 @@
     "created_at": "2026-08-30T23:49:57.896350+00:00"
   },
   {
-    "id": 499,
+    "id": 121,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Carhartt Red Black Checker Heavy Flannel Men's Size Medium Original Fit",
@@ -1936,7 +2064,7 @@
     "created_at": "2026-08-30T23:49:57.888413+00:00"
   },
   {
-    "id": 498,
+    "id": 122,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "CARHARTT Fleece Lined Shirt Jacket Mens Size 2XL Maroon Plaid Lined Relaxed Fit",
@@ -1952,7 +2080,7 @@
     "created_at": "2026-08-30T23:49:57.881970+00:00"
   },
   {
-    "id": 497,
+    "id": 123,
     "query": "js1235",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Green Special No.CR263 HTF Rare",
@@ -1968,7 +2096,7 @@
     "created_at": "2026-08-30T23:48:42.783024+00:00"
   },
   {
-    "id": 1,
+    "id": 124,
     "query": "j97 burgundy",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket BRG",
@@ -1984,7 +2112,7 @@
     "created_at": "2026-08-30T17:45:17.279340+00:00"
   },
   {
-    "id": 2,
+    "id": 125,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt detroit jacket J97 Mos vintage",
@@ -2000,7 +2128,7 @@
     "created_at": "2026-08-30T11:44:58.571223+00:00"
   },
   {
-    "id": 3,
+    "id": 126,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vtg 90s Carhartt J43HTG Detroit Jacket XLT USA Green Blanket Lined Distressed",
@@ -2016,7 +2144,7 @@
     "created_at": "2026-08-30T05:46:32.689610+00:00"
   },
   {
-    "id": 4,
+    "id": 127,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43HTG Men’s XL 90s Distressed",
@@ -2032,7 +2160,7 @@
     "created_at": "2026-08-30T05:46:32.621332+00:00"
   },
   {
-    "id": 5,
+    "id": 128,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "VTG Carhartt Detroit Hunter Green Kanye Canvas Blanket Lined Jacket J43HTG XL",
@@ -2048,7 +2176,7 @@
     "created_at": "2026-08-30T05:46:32.611647+00:00"
   },
   {
-    "id": 6,
+    "id": 129,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 3XL J43 CHT Chestnut Brown NWT NOS",
@@ -2064,7 +2192,7 @@
     "created_at": "2026-08-30T05:45:56.095464+00:00"
   },
   {
-    "id": 7,
+    "id": 130,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 3XL J43 CHT Chestnut Brown NWT NOS",
@@ -2080,7 +2208,7 @@
     "created_at": "2026-08-30T05:45:56.086058+00:00"
   },
   {
-    "id": 8,
+    "id": 131,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt Detroit Style J97 PTL Men's Jacket",
@@ -2096,7 +2224,7 @@
     "created_at": "2026-08-30T05:45:30.898086+00:00"
   },
   {
-    "id": 9,
+    "id": 132,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "J97 PTL Carhartt Detroit Jacket Petrol BlanketLined XL Regular 2001 LikeNew",
@@ -2112,7 +2240,7 @@
     "created_at": "2026-08-30T05:45:30.817490+00:00"
   },
   {
-    "id": 10,
+    "id": 133,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Jacket Mens Size Large Gray Petrol Detroit Full Zip Honey Comb J97 PTL",
@@ -2128,7 +2256,7 @@
     "created_at": "2026-08-30T05:45:30.809389+00:00"
   },
   {
-    "id": 11,
+    "id": 134,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL ‘Petrol’ Jacket Men’s XL Blanket Lined Grey Work",
@@ -2144,7 +2272,7 @@
     "created_at": "2026-08-30T05:45:30.795612+00:00"
   },
   {
-    "id": 12,
+    "id": 135,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J97 Mos Green XL Brand New With Tags",
@@ -2160,7 +2288,7 @@
     "created_at": "2026-08-30T05:44:56.077658+00:00"
   },
   {
-    "id": 13,
+    "id": 136,
     "query": "j97 crimson",
     "source": "etsy",
     "title": "Vintage Carhartt J97 CRI Carhartt Detroit Jacket Crimson Workwear",
@@ -2176,7 +2304,7 @@
     "created_at": "2026-08-30T05:44:22.760890+00:00"
   },
   {
-    "id": 14,
+    "id": 137,
     "query": "jb0866",
     "source": "ebay",
     "title": "Vintage 90s Carhartt JB0866 Distressed Detroit Jacket Large Moss Green Blanket",
@@ -2192,7 +2320,7 @@
     "created_at": "2026-08-30T05:42:17.030744+00:00"
   },
   {
-    "id": 15,
+    "id": 138,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "GRAIL RARE VINTAGE CARHARTT J43 HTG DETROIT MINT XL",
@@ -2208,7 +2336,7 @@
     "created_at": "2026-08-29T23:46:38.193090+00:00"
   },
   {
-    "id": 16,
+    "id": 139,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90's Carhartt J43 HTG Hunter Green Detroit Blanket Lined Jacket Sz Large",
@@ -2224,7 +2352,7 @@
     "created_at": "2026-08-29T23:46:38.190105+00:00"
   },
   {
-    "id": 17,
+    "id": 140,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt Detroit J43 ONX Men’s Large Workwear USA Made",
@@ -2240,7 +2368,7 @@
     "created_at": "2026-08-29T23:46:25.667748+00:00"
   },
   {
-    "id": 18,
+    "id": 141,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt J43 CHT Chestnut Brown Blanket Lined Jacket—Missing Tag-Fits Medium",
@@ -2256,7 +2384,7 @@
     "created_at": "2026-08-29T23:46:02.378140+00:00"
   },
   {
-    "id": 19,
+    "id": 142,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt J43 CHT Chestnut Brown Blanket Lined Jacket—Missing Tag-Fits Medium",
@@ -2272,7 +2400,7 @@
     "created_at": "2026-08-29T23:46:02.369220+00:00"
   },
   {
-    "id": 20,
+    "id": 143,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt WJ097 Detroit Jacket Grey",
@@ -2288,7 +2416,7 @@
     "created_at": "2026-08-29T23:45:01.492047+00:00"
   },
   {
-    "id": 21,
+    "id": 144,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage 2000s Carhartt J97 MOS Moss Green Detroit Jacket L",
@@ -2304,7 +2432,7 @@
     "created_at": "2026-08-29T23:45:01.403107+00:00"
   },
   {
-    "id": 22,
+    "id": 145,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage 2000s Carhartt J97 MOS Moss Green Detroit Jacket L",
@@ -2320,7 +2448,7 @@
     "created_at": "2026-08-29T23:45:01.382749+00:00"
   },
   {
-    "id": 23,
+    "id": 146,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt J43 CHT Chestnut Brown Blanket Lined Jacket—Missing Tag-Fits Medium",
@@ -2336,7 +2464,7 @@
     "created_at": "2026-08-29T17:46:01.874010+00:00"
   },
   {
-    "id": 24,
+    "id": 147,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt J43 CHT Chestnut Brown Blanket Lined Jacket—Missing Tag-Fits Medium",
@@ -2352,7 +2480,7 @@
     "created_at": "2026-08-29T17:46:01.856004+00:00"
   },
   {
-    "id": 25,
+    "id": 148,
     "query": "j65 blue",
     "source": "grailed",
     "title": "Carhartt j65 blu work jacket",
@@ -2368,7 +2496,7 @@
     "created_at": "2026-08-29T11:42:40.942745+00:00"
   },
   {
-    "id": 26,
+    "id": 149,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Hunter Green Detroit Jacket Workwear 2XL Mens Rare",
@@ -2384,7 +2512,7 @@
     "created_at": "2026-08-29T05:46:38.498658+00:00"
   },
   {
-    "id": 27,
+    "id": 150,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Men’s Carhartt J43HTG blanket lined detroit jacket size XL",
@@ -2400,7 +2528,7 @@
     "created_at": "2026-08-29T05:46:38.494305+00:00"
   },
   {
-    "id": 28,
+    "id": 151,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Hunter Green Detroit Jacket Workwear 2XL Mens Rare",
@@ -2416,7 +2544,7 @@
     "created_at": "2026-08-29T05:46:38.425758+00:00"
   },
   {
-    "id": 29,
+    "id": 152,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "RARE 1990s Vintage Carhartt JB143 Blanket Lined Duck Jacket Hunter Green L J43",
@@ -2432,7 +2560,7 @@
     "created_at": "2026-08-29T05:46:38.422010+00:00"
   },
   {
-    "id": 30,
+    "id": 153,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 2XL J43 ONX Onyx Black",
@@ -2448,7 +2576,7 @@
     "created_at": "2026-08-29T05:46:25.666057+00:00"
   },
   {
-    "id": 31,
+    "id": 154,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 2XL J43 ONX Onyx Black",
@@ -2464,7 +2592,7 @@
     "created_at": "2026-08-29T05:46:25.658009+00:00"
   },
   {
-    "id": 32,
+    "id": 155,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
@@ -2480,7 +2608,7 @@
     "created_at": "2026-08-29T05:46:13.892032+00:00"
   },
   {
-    "id": 33,
+    "id": 156,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
@@ -2496,7 +2624,7 @@
     "created_at": "2026-08-29T05:46:13.874307+00:00"
   },
   {
-    "id": 34,
+    "id": 157,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J43 CHT Chestnut Brown EUC",
@@ -2512,7 +2640,7 @@
     "created_at": "2026-08-29T05:46:02.681747+00:00"
   },
   {
-    "id": 35,
+    "id": 158,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J43 CHT Chestnut Brown EUC",
@@ -2528,7 +2656,7 @@
     "created_at": "2026-08-29T05:46:02.668539+00:00"
   },
   {
-    "id": 36,
+    "id": 159,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Blanked Lined Jacket - J97 TMB",
@@ -2544,7 +2672,7 @@
     "created_at": "2026-08-29T05:45:50.100297+00:00"
   },
   {
-    "id": 37,
+    "id": 160,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97 TMB (Timber) Detroit jacket , SIZE 2XL Regular",
@@ -2560,7 +2688,7 @@
     "created_at": "2026-08-29T05:45:50.090423+00:00"
   },
   {
-    "id": 38,
+    "id": 161,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97 TMB (Timber) Detroit jacket , SIZE 2XL Regular",
@@ -2576,7 +2704,7 @@
     "created_at": "2026-08-29T05:45:50.079656+00:00"
   },
   {
-    "id": 39,
+    "id": 162,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Jacket &quot;PTL PETROL&quot; | Rare Workwear Coat | Unisex Vintage Jacket",
@@ -2592,7 +2720,7 @@
     "created_at": "2026-08-29T05:45:36.998550+00:00"
   },
   {
-    "id": 40,
+    "id": 163,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens Large Gray J97 PTL Detroit USA Made Canvas Cotton Zip Bomber",
@@ -2608,7 +2736,7 @@
     "created_at": "2026-08-29T05:45:36.988930+00:00"
   },
   {
-    "id": 41,
+    "id": 164,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Blanket Lined Detroit Jacket Mens XLT Petrol Blue Workwear Coat",
@@ -2624,7 +2752,7 @@
     "created_at": "2026-08-29T05:45:36.883967+00:00"
   },
   {
-    "id": 42,
+    "id": 165,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Jacket MOS Green",
@@ -2640,7 +2768,7 @@
     "created_at": "2026-08-29T05:45:00.295208+00:00"
   },
   {
-    "id": 43,
+    "id": 166,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt WJ097 Detroit Jacket Camel",
@@ -2656,7 +2784,7 @@
     "created_at": "2026-08-29T05:45:00.288785+00:00"
   },
   {
-    "id": 44,
+    "id": 167,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Blanked Lined Jacket - J97 MOS",
@@ -2672,7 +2800,7 @@
     "created_at": "2026-08-29T05:45:00.250224+00:00"
   },
   {
-    "id": 45,
+    "id": 168,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage 90s Carhartt Moss Green J97 Detroit Jacket",
@@ -2688,7 +2816,7 @@
     "created_at": "2026-08-29T05:45:00.178304+00:00"
   },
   {
-    "id": 46,
+    "id": 169,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "RARE VTG Faded Distressed Carhartt J97 CRI Crimson Red Detroit Jacket Size XL",
@@ -2704,7 +2832,7 @@
     "created_at": "2026-08-29T05:44:23.069025+00:00"
   },
   {
-    "id": 47,
+    "id": 170,
     "query": "jr0115",
     "source": "ebay",
     "title": "Vintage Carhartt JR0115 Aztec Southwestern Hooded Active Jacket Blue Mens XL US",
@@ -2720,7 +2848,7 @@
     "created_at": "2026-08-29T05:43:25.361270+00:00"
   },
   {
-    "id": 48,
+    "id": 171,
     "query": "jb0817",
     "source": "grailed",
     "title": "Carhartt JB0817 Graphite Medium",
@@ -2736,7 +2864,7 @@
     "created_at": "2026-08-29T05:41:58.785478+00:00"
   },
   {
-    "id": 49,
+    "id": 172,
     "query": "jb0817",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket JB0817 Graphite Size Large Faded Distressed",
@@ -2752,7 +2880,7 @@
     "created_at": "2026-08-29T05:41:58.777228+00:00"
   },
   {
-    "id": 50,
+    "id": 173,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit J43 HTG  Jacket Hunter Green Union Made  XL  workwear",
@@ -2768,7 +2896,7 @@
     "created_at": "2026-08-28T23:46:40.490853+00:00"
   },
   {
-    "id": 51,
+    "id": 174,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit J43 HTG  Jacket Hunter Green Union Made  XL  workwear",
@@ -2784,7 +2912,7 @@
     "created_at": "2026-08-28T23:46:40.397781+00:00"
   },
   {
-    "id": 52,
+    "id": 175,
     "query": "j97 timber",
     "source": "ebay",
     "title": "VTG Carhartt J97MOS Detroit Jacket Timber Blanket Lined Size XXXL Moss USA 3X",
@@ -2800,7 +2928,7 @@
     "created_at": "2026-08-28T17:45:57.893992+00:00"
   },
   {
-    "id": 53,
+    "id": 176,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol Grey Blanket Lined Mens 2XL Tall Vintage",
@@ -2816,7 +2944,7 @@
     "created_at": "2026-08-28T17:45:43.580349+00:00"
   },
   {
-    "id": 54,
+    "id": 177,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 31X27 (3XL) J43 HTG Hunter Green",
@@ -2832,7 +2960,7 @@
     "created_at": "2026-08-28T05:46:36.394897+00:00"
   },
   {
-    "id": 55,
+    "id": 178,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43HTG Men’s Size Large Tall Clean",
@@ -2848,7 +2976,7 @@
     "created_at": "2026-08-28T05:46:36.307186+00:00"
   },
   {
-    "id": 56,
+    "id": 179,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens 31X27 (3XL) J43 HTG Hunter Green",
@@ -2864,7 +2992,7 @@
     "created_at": "2026-08-28T05:46:36.298396+00:00"
   },
   {
-    "id": 57,
+    "id": 180,
     "query": "j97 timber",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens XL Brown Detroit J97 TMB USA Workwear",
@@ -2880,7 +3008,7 @@
     "created_at": "2026-08-28T05:45:48.309087+00:00"
   },
   {
-    "id": 58,
+    "id": 181,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt J97 PTL Detroit Jacket Size XL",
@@ -2896,7 +3024,7 @@
     "created_at": "2026-08-28T05:45:35.188298+00:00"
   },
   {
-    "id": 59,
+    "id": 182,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Crazy Vintage Carhartt Detroit Jacket J97 - PTL🥶",
@@ -2912,7 +3040,7 @@
     "created_at": "2026-08-28T05:45:35.104541+00:00"
   },
   {
-    "id": 60,
+    "id": 183,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Men's Medium Petrol Gray Good Condition",
@@ -2928,7 +3056,7 @@
     "created_at": "2026-08-28T05:45:35.088940+00:00"
   },
   {
-    "id": 61,
+    "id": 184,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vtg Carhartt Detroit Jacket J97 MOS Blanket Lined Men’s 2XL USA",
@@ -2944,7 +3072,7 @@
     "created_at": "2026-08-28T05:44:58.410124+00:00"
   },
   {
-    "id": 62,
+    "id": 185,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Retro Carhartt J97 Detroit Jacket Moss Green",
@@ -2960,7 +3088,7 @@
     "created_at": "2026-08-28T05:44:58.395699+00:00"
   },
   {
-    "id": 63,
+    "id": 186,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt J97 Detroit Jackets Moss Green - Carhart Jacket Workwear Outerwear",
@@ -2976,7 +3104,7 @@
     "created_at": "2026-08-28T05:44:58.389430+00:00"
   },
   {
-    "id": 64,
+    "id": 187,
     "query": "j97 crimson",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Crimson Red Street Wear Outer Wear Gift",
@@ -2992,7 +3120,7 @@
     "created_at": "2026-08-28T05:44:24.485626+00:00"
   },
   {
-    "id": 65,
+    "id": 188,
     "query": "j110 darkstone",
     "source": "etsy",
     "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11DST Men’s XL",
@@ -3008,7 +3136,7 @@
     "created_at": "2026-08-28T05:43:41.359523+00:00"
   },
   {
-    "id": 66,
+    "id": 189,
     "query": "j110 darkstone",
     "source": "etsy",
     "title": "Vintage Carhartt JB1998 Darkstone Denim Jacket Blanket Lined USA Large Tall",
@@ -3024,7 +3152,7 @@
     "created_at": "2026-08-28T05:43:41.352361+00:00"
   },
   {
-    "id": 67,
+    "id": 190,
     "query": "j65 brick",
     "source": "ebay",
     "title": "VERY RARE Vintage 2001 Carhartt J65 BRK red Detroit Work Wear Jacket Sz. 2XL",
@@ -3040,7 +3168,7 @@
     "created_at": "2026-08-28T05:42:29.796542+00:00"
   },
   {
-    "id": 68,
+    "id": 191,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS – Moss Green – XL – Made in USA",
@@ -3056,7 +3184,7 @@
     "created_at": "2026-08-27T17:47:24.949915+00:00"
   },
   {
-    "id": 69,
+    "id": 192,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS – Moss Green – XL – Made in USA",
@@ -3072,7 +3200,7 @@
     "created_at": "2026-08-27T17:47:24.939991+00:00"
   },
   {
-    "id": 70,
+    "id": 193,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "DETROIT CARHARTT J97 PTL FADED",
@@ -3088,7 +3216,7 @@
     "created_at": "2026-08-27T17:45:48.291959+00:00"
   },
   {
-    "id": 71,
+    "id": 194,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket Moss green",
@@ -3104,7 +3232,7 @@
     "created_at": "2026-08-27T17:45:09.596334+00:00"
   },
   {
-    "id": 72,
+    "id": 195,
     "query": "js1236",
     "source": "ebay",
     "title": "RARE Vintage Carhartt Detroit Jacket JS1236-Made in USA-Large-Printed Lining",
@@ -3120,7 +3248,7 @@
     "created_at": "2026-08-27T17:43:04.852748+00:00"
   },
   {
-    "id": 73,
+    "id": 196,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "vintage 90s hunter green carhartt detroit jacket j43 htg medium rare flaw",
@@ -3136,7 +3264,7 @@
     "created_at": "2026-08-27T11:46:41.388368+00:00"
   },
   {
-    "id": 74,
+    "id": 197,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Vtg Carhartt J43 ONX Detroit Jacket USA Canvas Black Onyx Blanket Lined Mens XXL",
@@ -3152,7 +3280,7 @@
     "created_at": "2026-08-27T11:46:27.073879+00:00"
   },
   {
-    "id": 75,
+    "id": 198,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Vtg Carhartt J43 ONX Detroit Jacket USA Canvas Black Onyx Blanket Lined Mens XXL",
@@ -3168,7 +3296,7 @@
     "created_at": "2026-08-27T11:46:27.062549+00:00"
   },
   {
-    "id": 76,
+    "id": 199,
     "query": "jq2472",
     "source": "ebay",
     "title": "Vintage Carhartt Southwest Jacket Quilt Lined Mens Medium JQ2472 Aztec Rare",
@@ -3184,7 +3312,7 @@
     "created_at": "2026-08-27T11:43:52.190358+00:00"
   },
   {
-    "id": 77,
+    "id": 200,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt Detroit x J76MOS",
@@ -3200,7 +3328,7 @@
     "created_at": "2026-08-27T05:41:44.792254+00:00"
   },
   {
-    "id": 78,
+    "id": 201,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket, Blanket Lined, Men's XL Green USA J76MOS",
@@ -3216,7 +3344,7 @@
     "created_at": "2026-08-27T05:41:44.784182+00:00"
   },
   {
-    "id": 79,
+    "id": 202,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt J76 MOS Detroit Jacket Moss Green XL",
@@ -3232,7 +3360,7 @@
     "created_at": "2026-08-27T05:41:44.778301+00:00"
   },
   {
-    "id": 80,
+    "id": 203,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt J76 MOS Detroit Jacket 2XL USA Blanket Lined Faded Distressed",
@@ -3248,7 +3376,7 @@
     "created_at": "2026-08-27T05:41:44.769668+00:00"
   },
   {
-    "id": 81,
+    "id": 204,
     "query": "j76 moss",
     "source": "ebay",
     "title": "VTG Carhartt Jacket Mens 2XL Detroit Blanket Lined J76 MOS Thrashed Moss USA",
@@ -3264,7 +3392,7 @@
     "created_at": "2026-08-27T05:41:44.763785+00:00"
   },
   {
-    "id": 82,
+    "id": 205,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Kunichi Nomura Carhartt Detroit Jacket J76 Mos Usa J97 Men JPN Limited Edition R",
@@ -3280,7 +3408,7 @@
     "created_at": "2026-08-27T05:41:44.756742+00:00"
   },
   {
-    "id": 83,
+    "id": 206,
     "query": "j76 moss",
     "source": "ebay",
     "title": "carhartt jacket J76MOS",
@@ -3296,7 +3424,7 @@
     "created_at": "2026-08-27T05:41:44.712693+00:00"
   },
   {
-    "id": 84,
+    "id": 207,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS Blanket Lined LARGE Moss Green",
@@ -3312,7 +3440,7 @@
     "created_at": "2026-08-27T05:41:44.706526+00:00"
   },
   {
-    "id": 85,
+    "id": 208,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS J97 Moss Green Faded",
@@ -3328,7 +3456,7 @@
     "created_at": "2026-08-27T05:41:44.698758+00:00"
   },
   {
-    "id": 86,
+    "id": 209,
     "query": "j76 moss",
     "source": "ebay",
     "title": "USA Carhartt Detroit jacket J76 MOS Size XL Vtg/grunge/Y2K/UFCW/ Blanket Lined",
@@ -3344,7 +3472,7 @@
     "created_at": "2026-08-27T05:41:44.689713+00:00"
   },
   {
-    "id": 87,
+    "id": 210,
     "query": "jb1236",
     "source": "ebay",
     "title": "vintage 90’s carhartt jb1236 firm duck detroit jacket in redwood size medium",
@@ -3360,7 +3488,7 @@
     "created_at": "2026-08-27T05:41:23.410236+00:00"
   },
   {
-    "id": 88,
+    "id": 211,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43HTG Detroit Jacket",
@@ -3376,7 +3504,7 @@
     "created_at": "2026-08-27T05:41:13.785411+00:00"
   },
   {
-    "id": 89,
+    "id": 212,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43 HTG Large",
@@ -3392,7 +3520,7 @@
     "created_at": "2026-08-27T05:41:13.778820+00:00"
   },
   {
-    "id": 90,
+    "id": 213,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit J43 HTG XL",
@@ -3408,7 +3536,7 @@
     "created_at": "2026-08-27T05:41:13.770207+00:00"
   },
   {
-    "id": 91,
+    "id": 214,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43 HTG Large",
@@ -3424,7 +3552,7 @@
     "created_at": "2026-08-27T05:41:13.760940+00:00"
   },
   {
-    "id": 92,
+    "id": 215,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43 HTG",
@@ -3440,7 +3568,7 @@
     "created_at": "2026-08-27T05:41:13.735695+00:00"
   },
   {
-    "id": 93,
+    "id": 216,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Vintage Carhartt J43 HTG w/ MF Doom illust",
@@ -3456,7 +3584,7 @@
     "created_at": "2026-08-27T05:41:13.729336+00:00"
   },
   {
-    "id": 94,
+    "id": 217,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "1998 Vintage Carhartt Detroit Jacket (VERY RARE 🔥) - J43 HTG",
@@ -3472,7 +3600,7 @@
     "created_at": "2026-08-27T05:41:13.722039+00:00"
   },
   {
-    "id": 95,
+    "id": 218,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43 HTG green Detroit work wear jacket",
@@ -3488,7 +3616,7 @@
     "created_at": "2026-08-27T05:41:13.715941+00:00"
   },
   {
-    "id": 96,
+    "id": 219,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt J43 HTG Medium",
@@ -3504,7 +3632,7 @@
     "created_at": "2026-08-27T05:41:13.704269+00:00"
   },
   {
-    "id": 97,
+    "id": 220,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Size XL RARE",
@@ -3520,7 +3648,7 @@
     "created_at": "2026-08-27T05:41:13.692873+00:00"
   },
   {
-    "id": 98,
+    "id": 221,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Green Detroit Carhartt Jacket J43HTG Union Made size Large Mens ",
@@ -3536,7 +3664,7 @@
     "created_at": "2026-08-27T05:41:13.684759+00:00"
   },
   {
-    "id": 99,
+    "id": 222,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43 HTG Detroit Jacket Hunter Green Size XL",
@@ -3552,7 +3680,7 @@
     "created_at": "2026-08-27T05:41:13.674558+00:00"
   },
   {
-    "id": 100,
+    "id": 223,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "90’s Carhartt Detroit J43HTG",
@@ -3568,7 +3696,7 @@
     "created_at": "2026-08-27T05:41:13.666122+00:00"
   },
   {
-    "id": 101,
+    "id": 224,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 1998 Carhartt J43 HTG Hunter Green Detroit Jacket XXL Tall Teal Fade",
@@ -3584,7 +3712,7 @@
     "created_at": "2026-08-27T05:41:13.659375+00:00"
   },
   {
-    "id": 102,
+    "id": 225,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green Blanket Lined",
@@ -3600,7 +3728,7 @@
     "created_at": "2026-08-27T05:41:13.607623+00:00"
   },
   {
-    "id": 103,
+    "id": 226,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vtg J43HTG Green Carhartt Detroit Jacket Size L  Tall Union Made Great Condition",
@@ -3616,7 +3744,7 @@
     "created_at": "2026-08-27T05:41:13.597790+00:00"
   },
   {
-    "id": 104,
+    "id": 227,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vtg. Carhartt J43HTG GREEN Detroit Jacket Blanket Lined USA Corduroy Collar 2XL",
@@ -3632,7 +3760,7 @@
     "created_at": "2026-08-27T05:41:13.590356+00:00"
   },
   {
-    "id": 105,
+    "id": 228,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -3648,7 +3776,7 @@
     "created_at": "2026-08-27T05:41:13.581903+00:00"
   },
   {
-    "id": 106,
+    "id": 229,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage J43 HTG Carhartt Detroit Jacket ",
@@ -3664,7 +3792,7 @@
     "created_at": "2026-08-27T05:41:13.567849+00:00"
   },
   {
-    "id": 107,
+    "id": 230,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket Burgundy XL Coat",
@@ -3680,7 +3808,7 @@
     "created_at": "2026-08-27T05:40:47.733676+00:00"
   },
   {
-    "id": 108,
+    "id": 231,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket Burgundy XL Coat",
@@ -3696,7 +3824,7 @@
     "created_at": "2026-08-27T05:40:47.723121+00:00"
   },
   {
-    "id": 109,
+    "id": 232,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Men’s Detroit Blanket Line Jacket J43BRG Burgundy 2XL Logo Back",
@@ -3712,7 +3840,7 @@
     "created_at": "2026-08-27T05:40:35.628867+00:00"
   },
   {
-    "id": 110,
+    "id": 233,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J02 Quilted Arctic Jacket Black Distressed Work Size Medium/Large 44 Corduroy Collar Detroit Style Work Coat",
@@ -3728,7 +3856,7 @@
     "created_at": "2026-08-27T05:40:09.940849+00:00"
   },
   {
-    "id": 111,
+    "id": 234,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "VTG Carhartt J97 PTL Detroit Jacket Sz 2XL Gray Duck Canvas Blanket Lined Faded",
@@ -3744,7 +3872,7 @@
     "created_at": "2026-08-27T05:40:09.857532+00:00"
   },
   {
-    "id": 112,
+    "id": 235,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "RARE Vintage Carhartt J97 PTL 00s Detroit Jacket",
@@ -3760,7 +3888,7 @@
     "created_at": "2026-08-27T05:40:09.779617+00:00"
   },
   {
-    "id": 113,
+    "id": 236,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "DETROIT CARHARTT J97 PTL FADED",
@@ -3776,7 +3904,7 @@
     "created_at": "2026-08-27T05:40:09.771329+00:00"
   },
   {
-    "id": 114,
+    "id": 237,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Men L Petrol Grey Detroit J97 PTL Blanket Lined USA Y2K",
@@ -3792,7 +3920,7 @@
     "created_at": "2026-08-27T05:40:09.762353+00:00"
   },
   {
-    "id": 115,
+    "id": 238,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "‘06 VTG Y2k Carhartt Detroit Jacket Blanket Lined Mens XL J97 PTL Petrol Gray",
@@ -3808,7 +3936,7 @@
     "created_at": "2026-08-27T05:40:09.743466+00:00"
   },
   {
-    "id": 116,
+    "id": 239,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens Medium J97 BRG Burgundy",
@@ -3824,7 +3952,7 @@
     "created_at": "2026-08-27T05:39:46.587930+00:00"
   },
   {
-    "id": 117,
+    "id": 240,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Carhartt WJ097 BGP Large Detroit Jacket ~ purple brg wj097bgp l j97 pink coat",
@@ -3840,7 +3968,7 @@
     "created_at": "2026-08-27T05:39:46.580089+00:00"
   },
   {
-    "id": 118,
+    "id": 241,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J97 BRG burgundy blanket lined Detroit jacket Mens XL Regular",
@@ -3856,7 +3984,7 @@
     "created_at": "2026-08-27T05:39:46.567670+00:00"
   },
   {
-    "id": 119,
+    "id": 242,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J97 BRG burgundy blanket lined Detroit jacket Mens XL Regular",
@@ -3872,7 +4000,7 @@
     "created_at": "2026-08-27T05:39:46.547093+00:00"
   },
   {
-    "id": 120,
+    "id": 243,
     "query": "j97 moss",
     "source": "etsy",
     "title": "vtg Y2K CARHARTT J130 MOS JACKET // Green deadstock canvas quilted insulated lining sleeves workwear country utility farmer vintage coat",
@@ -3888,7 +4016,7 @@
     "created_at": "2026-08-27T05:39:30.965811+00:00"
   },
   {
-    "id": 121,
+    "id": 244,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket MOS",
@@ -3904,7 +4032,7 @@
     "created_at": "2026-08-27T05:39:30.959677+00:00"
   },
   {
-    "id": 122,
+    "id": 245,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE CARHARTT Jacket Mens 3XL Green Detroit Blanket Lined Duck Canvas J97 MOS Y2K",
@@ -3920,7 +4048,7 @@
     "created_at": "2026-08-27T05:39:30.876345+00:00"
   },
   {
-    "id": 123,
+    "id": 246,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Detroit jacket j97 MOS vintage 00s",
@@ -3936,7 +4064,7 @@
     "created_at": "2026-08-27T05:39:30.868993+00:00"
   },
   {
-    "id": 124,
+    "id": 247,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt Jacket Mens XL Green Detroit Work Wear J97 MOS",
@@ -3952,7 +4080,7 @@
     "created_at": "2026-08-27T05:39:30.862662+00:00"
   },
   {
-    "id": 125,
+    "id": 248,
     "query": "j97 moss",
     "source": "grailed",
     "title": "The Iconic Carhartt Detroit Jacket J97 MOS green cut tag",
@@ -3968,7 +4096,7 @@
     "created_at": "2026-08-27T05:39:30.851483+00:00"
   },
   {
-    "id": 126,
+    "id": 249,
     "query": "j97 crimson",
     "source": "ebay",
     "title": "Vtg Carhartt jacketJ97CRICrimsonRedDetroit Sz XL(missing the MetalZipper slider)",
@@ -3984,7 +4112,7 @@
     "created_at": "2026-08-27T05:38:56.344722+00:00"
   },
   {
-    "id": 127,
+    "id": 250,
     "query": "j110 darkstone",
     "source": "etsy",
     "title": "Vintage Carhartt Lined Active Jacket “Darkstone” J08 ROCKY",
@@ -4000,7 +4128,7 @@
     "created_at": "2026-08-27T05:38:12.152182+00:00"
   },
   {
-    "id": 128,
+    "id": 251,
     "query": "j110 darkstone",
     "source": "etsy",
     "title": "Vintage Carhartt Aztec Pile-Lined Denim Chore Jacket “Darkstone” JP1088",
@@ -4016,7 +4144,7 @@
     "created_at": "2026-08-27T05:38:12.142633+00:00"
   },
   {
-    "id": 129,
+    "id": 252,
     "query": "j65 brick",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket Blanket lined J65 BRK Red Size XL/2XL Faded",
@@ -4032,7 +4160,7 @@
     "created_at": "2026-08-27T05:36:55.969339+00:00"
   },
   {
-    "id": 130,
+    "id": 253,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 BLUE",
@@ -4048,7 +4176,7 @@
     "created_at": "2026-08-26T23:40:01.578386+00:00"
   },
   {
-    "id": 131,
+    "id": 254,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt Workwear J97 PTL Detroit Blanket Lined JKT small",
@@ -4064,7 +4192,7 @@
     "created_at": "2026-08-26T23:40:01.559705+00:00"
   },
   {
-    "id": 132,
+    "id": 255,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket BRG",
@@ -4080,7 +4208,7 @@
     "created_at": "2026-08-26T23:39:27.757863+00:00"
   },
   {
-    "id": 133,
+    "id": 256,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Black Jacket J97",
@@ -4096,7 +4224,7 @@
     "created_at": "2026-08-26T23:39:27.686488+00:00"
   },
   {
-    "id": 134,
+    "id": 257,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Jacket J97 Light Brown",
@@ -4112,7 +4240,7 @@
     "created_at": "2026-08-26T23:39:27.677753+00:00"
   },
   {
-    "id": 135,
+    "id": 258,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
@@ -4128,7 +4256,7 @@
     "created_at": "2026-08-26T23:39:27.668524+00:00"
   },
   {
-    "id": 136,
+    "id": 259,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90’s Carhartt J43 HTG Detroit jacket USA Made size XL Tall Hunter Green",
@@ -4144,7 +4272,7 @@
     "created_at": "2026-08-26T11:41:20.879461+00:00"
   },
   {
-    "id": 137,
+    "id": 260,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Retro Carhartt J97 Detroit Jacket PTL",
@@ -4160,7 +4288,7 @@
     "created_at": "2026-08-26T11:40:16.170488+00:00"
   },
   {
-    "id": 138,
+    "id": 261,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket J97 &quot;MOSS GREEN&quot; | Blanket Lined Workwear Coat | Rare Vintage Jacket | Unisex Carhartt Jacket",
@@ -4176,7 +4304,7 @@
     "created_at": "2026-08-26T11:39:35.074160+00:00"
   },
   {
-    "id": 139,
+    "id": 262,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Faded Moss Green Vintage Carhartt Detroit Jacket J97 MOS",
@@ -4192,7 +4320,7 @@
     "created_at": "2026-08-26T11:39:35.065352+00:00"
   },
   {
-    "id": 140,
+    "id": 263,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size Large Rare",
@@ -4208,7 +4336,7 @@
     "created_at": "2026-08-26T05:41:44.952022+00:00"
   },
   {
-    "id": 141,
+    "id": 264,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt J76 CMT Detroit Jacket Large Cement Grey Canvas Plaid Distress",
@@ -4224,7 +4352,7 @@
     "created_at": "2026-08-26T05:41:44.946207+00:00"
   },
   {
-    "id": 142,
+    "id": 265,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage 1999 J76 CMT Cement Grey Carhartt Detroit Jacket Size XL USA Made Rare",
@@ -4240,7 +4368,7 @@
     "created_at": "2026-08-26T05:41:44.940064+00:00"
   },
   {
-    "id": 143,
+    "id": 266,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size XL Rare",
@@ -4256,7 +4384,7 @@
     "created_at": "2026-08-26T05:41:44.932100+00:00"
   },
   {
-    "id": 144,
+    "id": 267,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage CARHARTT Detroit Jacket Blanket Lined Mens 2XL J76 CMT Cement Gray RARE",
@@ -4272,7 +4400,7 @@
     "created_at": "2026-08-26T05:41:44.926086+00:00"
   },
   {
-    "id": 145,
+    "id": 268,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Kunichi Nomura Special Carhartt Detroit Jacket J76 Cmt Cement M Men JPN Limited",
@@ -4288,7 +4416,7 @@
     "created_at": "2026-08-26T05:41:44.917811+00:00"
   },
   {
-    "id": 146,
+    "id": 269,
     "query": "j76 cement",
     "source": "ebay",
     "title": "VTG 90s Carhartt  Detroit Jacket Cement Gray Size XL J76 CMT Blanket Lined ",
@@ -4304,7 +4432,7 @@
     "created_at": "2026-08-26T05:41:44.908298+00:00"
   },
   {
-    "id": 147,
+    "id": 270,
     "query": "j76 cement",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size M-L Rare",
@@ -4320,7 +4448,7 @@
     "created_at": "2026-08-26T05:41:44.899568+00:00"
   },
   {
-    "id": 148,
+    "id": 271,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS Moss Green Faded",
@@ -4336,7 +4464,7 @@
     "created_at": "2026-08-26T05:41:35.500319+00:00"
   },
   {
-    "id": 149,
+    "id": 272,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS Jacket XL blanket",
@@ -4352,7 +4480,7 @@
     "created_at": "2026-08-26T05:41:35.491044+00:00"
   },
   {
-    "id": 150,
+    "id": 273,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J76 Mos usa vintage og",
@@ -4368,7 +4496,7 @@
     "created_at": "2026-08-26T05:41:35.485292+00:00"
   },
   {
-    "id": 151,
+    "id": 274,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Carhartt J76 MOS Medium",
@@ -4384,7 +4512,7 @@
     "created_at": "2026-08-26T05:41:35.479282+00:00"
   },
   {
-    "id": 152,
+    "id": 275,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Rare Crazy Vintage 00s Faded Carhartt Detroit Jacket J76 MOS",
@@ -4400,7 +4528,7 @@
     "created_at": "2026-08-26T05:41:35.473563+00:00"
   },
   {
-    "id": 153,
+    "id": 276,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Rare Crazy Vintage 00s Faded Carhartt Detroit Jacket J76 MOS",
@@ -4416,7 +4544,7 @@
     "created_at": "2026-08-26T05:41:35.467841+00:00"
   },
   {
-    "id": 154,
+    "id": 277,
     "query": "j76 moss",
     "source": "grailed",
     "title": "J76 MOS CARHARTT DETROIT JACKET",
@@ -4432,7 +4560,7 @@
     "created_at": "2026-08-26T05:41:35.462217+00:00"
   },
   {
-    "id": 155,
+    "id": 278,
     "query": "j76 moss",
     "source": "grailed",
     "title": "moss green carhartt detroit jacket j76",
@@ -4448,7 +4576,7 @@
     "created_at": "2026-08-26T05:41:35.456227+00:00"
   },
   {
-    "id": 156,
+    "id": 279,
     "query": "j76 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit jacket J76 MOS ( military olive)",
@@ -4464,7 +4592,7 @@
     "created_at": "2026-08-26T05:41:35.450317+00:00"
   },
   {
-    "id": 157,
+    "id": 280,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt J76 MOS Detroit Jacket Moss Green XL",
@@ -4480,7 +4608,7 @@
     "created_at": "2026-08-26T05:41:35.444479+00:00"
   },
   {
-    "id": 158,
+    "id": 281,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS Moss Green Faded",
@@ -4496,7 +4624,7 @@
     "created_at": "2026-08-26T05:41:35.438463+00:00"
   },
   {
-    "id": 159,
+    "id": 282,
     "query": "j76 moss",
     "source": "ebay",
     "title": "VTG Carhartt Jacket Mens 2XL Detroit Blanket Lined J76 MOS Thrashed Moss USA",
@@ -4512,7 +4640,7 @@
     "created_at": "2026-08-26T05:41:35.432383+00:00"
   },
   {
-    "id": 160,
+    "id": 283,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J76 MOS Blanket Lined LARGE Moss Green",
@@ -4528,7 +4656,7 @@
     "created_at": "2026-08-26T05:41:35.423530+00:00"
   },
   {
-    "id": 161,
+    "id": 284,
     "query": "j76 moss",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J76 MOS J97 Moss Green Faded",
@@ -4544,7 +4672,7 @@
     "created_at": "2026-08-26T05:41:35.416906+00:00"
   },
   {
-    "id": 162,
+    "id": 285,
     "query": "jb1215",
     "source": "grailed",
     "title": "Carhartt JB1215 Carbon Blue Large",
@@ -4560,7 +4688,7 @@
     "created_at": "2026-08-26T05:41:24.020271+00:00"
   },
   {
-    "id": 163,
+    "id": 286,
     "query": "jb1215",
     "source": "grailed",
     "title": "Carhartt JB1215 Blue Detroit Jacket Rare Size Large Vintage",
@@ -4576,7 +4704,7 @@
     "created_at": "2026-08-26T05:41:24.014195+00:00"
   },
   {
-    "id": 164,
+    "id": 287,
     "query": "jb1215",
     "source": "ebay",
     "title": "Carhartt JB1215 Detroit Jacket Size Large Made in USA Blue Rare",
@@ -4592,7 +4720,7 @@
     "created_at": "2026-08-26T05:41:24.007513+00:00"
   },
   {
-    "id": 165,
+    "id": 288,
     "query": "jb1236",
     "source": "ebay",
     "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
@@ -4608,7 +4736,7 @@
     "created_at": "2026-08-26T05:41:15.148410+00:00"
   },
   {
-    "id": 166,
+    "id": 289,
     "query": "jb1236",
     "source": "ebay",
     "title": "Vintage Carhartt Jacket Mens 2XL XXL Redwood Detroit Lined Canvas Union JB1236",
@@ -4624,7 +4752,7 @@
     "created_at": "2026-08-26T05:41:15.141840+00:00"
   },
   {
-    "id": 167,
+    "id": 290,
     "query": "jb1236",
     "source": "ebay",
     "title": "RARE Vintage JB1236?? Redwood Carhartt Detroit Jacket 90s Size 2XL Rare READ",
@@ -4640,7 +4768,7 @@
     "created_at": "2026-08-26T05:41:15.135950+00:00"
   },
   {
-    "id": 168,
+    "id": 291,
     "query": "jb1236",
     "source": "ebay",
     "title": "Vintage Carhartt JB1236 Redwood Detroit Jacket Size Medium Extremely Rare J97",
@@ -4656,7 +4784,7 @@
     "created_at": "2026-08-26T05:41:15.128272+00:00"
   },
   {
-    "id": 169,
+    "id": 292,
     "query": "j43 hunter green",
     "source": "etsy",
     "title": "Vintage Carhartt J43 GRN Detroit Jacket: Hunter Green",
@@ -4672,7 +4800,7 @@
     "created_at": "2026-08-26T05:41:05.759569+00:00"
   },
   {
-    "id": 170,
+    "id": 293,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43HTG Detroit Jacket Sz. XL made In USA",
@@ -4688,7 +4816,7 @@
     "created_at": "2026-08-26T05:41:05.705394+00:00"
   },
   {
-    "id": 171,
+    "id": 294,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size 2XL",
@@ -4704,7 +4832,7 @@
     "created_at": "2026-08-26T05:41:05.699612+00:00"
   },
   {
-    "id": 172,
+    "id": 295,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -4720,7 +4848,7 @@
     "created_at": "2026-08-26T05:41:05.693792+00:00"
   },
   {
-    "id": 173,
+    "id": 296,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage RARE Carhartt J43 HTG Hunter Green Tall Detroit Jacket Workwear 2XL Men",
@@ -4736,7 +4864,7 @@
     "created_at": "2026-08-26T05:41:05.685865+00:00"
   },
   {
-    "id": 174,
+    "id": 297,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43 HTG green Detroit work wear jacket XL",
@@ -4752,7 +4880,7 @@
     "created_at": "2026-08-26T05:41:05.679594+00:00"
   },
   {
-    "id": 175,
+    "id": 298,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Y2K Carhartt J43 HTG green Detroit work wear jacket",
@@ -4768,7 +4896,7 @@
     "created_at": "2026-08-26T05:41:05.673463+00:00"
   },
   {
-    "id": 176,
+    "id": 299,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green 1998 USA Made Size L Tall",
@@ -4784,7 +4912,7 @@
     "created_at": "2026-08-26T05:41:05.667496+00:00"
   },
   {
-    "id": 177,
+    "id": 300,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43HTG Detroit Jacket Sz. XL made In USA",
@@ -4800,7 +4928,7 @@
     "created_at": "2026-08-26T05:41:05.661442+00:00"
   },
   {
-    "id": 178,
+    "id": 301,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -4816,7 +4944,7 @@
     "created_at": "2026-08-26T05:41:05.642118+00:00"
   },
   {
-    "id": 179,
+    "id": 302,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Green Carhartt Plaid Blanket Lined Jacket J43 HTG XLT X-Large Tall",
@@ -4832,7 +4960,7 @@
     "created_at": "2026-08-26T05:41:05.635941+00:00"
   },
   {
-    "id": 180,
+    "id": 303,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "Carhartt hunter jacket j43 HTG",
@@ -4848,7 +4976,7 @@
     "created_at": "2026-08-26T05:41:05.627641+00:00"
   },
   {
-    "id": 181,
+    "id": 304,
     "query": "j43 hunter green",
     "source": "grailed",
     "title": "RARE VTG 90s Hunter Green Carhartt Detroit Jacket J43 HTG",
@@ -4864,7 +4992,7 @@
     "created_at": "2026-08-26T05:41:05.621591+00:00"
   },
   {
-    "id": 182,
+    "id": 305,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J43 HTG Big Logo Hunter Green XL",
@@ -4880,7 +5008,7 @@
     "created_at": "2026-08-26T05:41:05.615697+00:00"
   },
   {
-    "id": 183,
+    "id": 306,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43HTG Mens XL Blanket Lined RARE",
@@ -4896,7 +5024,7 @@
     "created_at": "2026-08-26T05:41:05.610040+00:00"
   },
   {
-    "id": 184,
+    "id": 307,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens XL J43 HTG Hunter Green",
@@ -4912,7 +5040,7 @@
     "created_at": "2026-08-26T05:41:05.603460+00:00"
   },
   {
-    "id": 185,
+    "id": 308,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size XL",
@@ -4928,7 +5056,7 @@
     "created_at": "2026-08-26T05:41:05.597574+00:00"
   },
   {
-    "id": 186,
+    "id": 309,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt Jacket Mens 3XL Hunter Green Detroit Canvas Blanket Lined USA J43HTG",
@@ -4944,7 +5072,7 @@
     "created_at": "2026-08-26T05:41:05.587431+00:00"
   },
   {
-    "id": 187,
+    "id": 310,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Men’s XL Distressed",
@@ -4960,7 +5088,7 @@
     "created_at": "2026-08-26T05:41:05.581431+00:00"
   },
   {
-    "id": 188,
+    "id": 311,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90's Carhartt J43 HTG Hunter Green Detroit Blanket Lined Jacket Sz Large",
@@ -4976,7 +5104,7 @@
     "created_at": "2026-08-26T05:41:05.575051+00:00"
   },
   {
-    "id": 189,
+    "id": 312,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "vintage 90s hunter green carhartt detroit jacket j43 htg medium rare flaw",
@@ -4992,7 +5120,7 @@
     "created_at": "2026-08-26T05:41:05.569253+00:00"
   },
   {
-    "id": 190,
+    "id": 313,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 90s Carhartt Detroit Jacket J43 Hunter Green Blanket Lined Size 2XL",
@@ -5008,7 +5136,7 @@
     "created_at": "2026-08-26T05:41:05.563252+00:00"
   },
   {
-    "id": 191,
+    "id": 314,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Size XL RARE",
@@ -5024,7 +5152,7 @@
     "created_at": "2026-08-26T05:41:05.526823+00:00"
   },
   {
-    "id": 192,
+    "id": 315,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43 HTG Detroit Jacket Hunter Green Size XL",
@@ -5040,7 +5168,7 @@
     "created_at": "2026-08-26T05:41:05.519892+00:00"
   },
   {
-    "id": 193,
+    "id": 316,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage 1998 Carhartt J43 HTG Hunter Green Detroit Jacket XXL Tall Teal Fade",
@@ -5056,7 +5184,7 @@
     "created_at": "2026-08-26T05:41:05.513431+00:00"
   },
   {
-    "id": 194,
+    "id": 317,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green Blanket Lined",
@@ -5072,7 +5200,7 @@
     "created_at": "2026-08-26T05:41:05.507475+00:00"
   },
   {
-    "id": 195,
+    "id": 318,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -5088,7 +5216,7 @@
     "created_at": "2026-08-26T05:41:05.501399+00:00"
   },
   {
-    "id": 196,
+    "id": 319,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size 2XL",
@@ -5104,7 +5232,7 @@
     "created_at": "2026-08-26T05:41:05.495496+00:00"
   },
   {
-    "id": 197,
+    "id": 320,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -5120,7 +5248,7 @@
     "created_at": "2026-08-26T05:41:05.489421+00:00"
   },
   {
-    "id": 198,
+    "id": 321,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage RARE Carhartt J43 HTG Hunter Green Tall Detroit Jacket Workwear 2XL Men",
@@ -5136,7 +5264,7 @@
     "created_at": "2026-08-26T05:41:05.481240+00:00"
   },
   {
-    "id": 199,
+    "id": 322,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green 1998 USA Made Size L Tall",
@@ -5152,7 +5280,7 @@
     "created_at": "2026-08-26T05:41:05.475193+00:00"
   },
   {
-    "id": 200,
+    "id": 323,
     "query": "j43 hunter green",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
@@ -5168,7 +5296,7 @@
     "created_at": "2026-08-26T05:41:05.468792+00:00"
   },
   {
-    "id": 201,
+    "id": 324,
     "query": "j43 onyx",
     "source": "etsy",
     "title": "Vtg Rare 90’s Carhartt Detroit Jacket J43 ONX Black Size XL USA",
@@ -5184,7 +5312,7 @@
     "created_at": "2026-08-26T05:40:52.295843+00:00"
   },
   {
-    "id": 202,
+    "id": 325,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "VTG Rare 90’s Carhartt Detroit Jacket J43 ONX Black Size XL USA",
@@ -5200,7 +5328,7 @@
     "created_at": "2026-08-26T05:40:52.290059+00:00"
   },
   {
-    "id": 203,
+    "id": 326,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Vintage 90’s Carhartt J43 ONX Blanket Lined Full Zip-Up Workwear Jacket Men’s XL",
@@ -5216,7 +5344,7 @@
     "created_at": "2026-08-26T05:40:52.283872+00:00"
   },
   {
-    "id": 204,
+    "id": 327,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Vintage 1990s Carhartt Detroit Blanket Lined Canvas Black Jacket Large J43 ONX",
@@ -5232,7 +5360,7 @@
     "created_at": "2026-08-26T05:40:52.277093+00:00"
   },
   {
-    "id": 205,
+    "id": 328,
     "query": "j43 onyx",
     "source": "ebay",
     "title": "Carhartt J43 ONX Black Detroit Jacket Vintage, Size X-Large",
@@ -5248,7 +5376,7 @@
     "created_at": "2026-08-26T05:40:52.271317+00:00"
   },
   {
-    "id": 206,
+    "id": 329,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Medium",
@@ -5264,7 +5392,7 @@
     "created_at": "2026-08-26T05:40:52.265276+00:00"
   },
   {
-    "id": 207,
+    "id": 330,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Large",
@@ -5280,7 +5408,7 @@
     "created_at": "2026-08-26T05:40:52.259233+00:00"
   },
   {
-    "id": 208,
+    "id": 331,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX",
@@ -5296,7 +5424,7 @@
     "created_at": "2026-08-26T05:40:52.253247+00:00"
   },
   {
-    "id": 209,
+    "id": 332,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Carhartt J43 ONX Black Detroit Jacket Vintage, Size X-Large",
@@ -5312,7 +5440,7 @@
     "created_at": "2026-08-26T05:40:52.247258+00:00"
   },
   {
-    "id": 210,
+    "id": 333,
     "query": "j43 onyx",
     "source": "grailed",
     "title": "Vintage Carhartt J43 ONX Detroit Jacket L",
@@ -5328,7 +5456,7 @@
     "created_at": "2026-08-26T05:40:52.238467+00:00"
   },
   {
-    "id": 211,
+    "id": 334,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "90s Distressed Carhartt Detroit Jacket J43BRG Burgundy",
@@ -5344,7 +5472,7 @@
     "created_at": "2026-08-26T05:40:41.067597+00:00"
   },
   {
-    "id": 212,
+    "id": 335,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "90s Distressed Carhartt Detroit Jacket J43BRG Burgundy",
@@ -5360,7 +5488,7 @@
     "created_at": "2026-08-26T05:40:41.061636+00:00"
   },
   {
-    "id": 213,
+    "id": 336,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt J43 BRG Large",
@@ -5376,7 +5504,7 @@
     "created_at": "2026-08-26T05:40:41.053717+00:00"
   },
   {
-    "id": 214,
+    "id": 337,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt J43 BRG Large",
@@ -5392,7 +5520,7 @@
     "created_at": "2026-08-26T05:40:41.047930+00:00"
   },
   {
-    "id": 215,
+    "id": 338,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt J43 BRG Large",
@@ -5408,7 +5536,7 @@
     "created_at": "2026-08-26T05:40:41.042027+00:00"
   },
   {
-    "id": 216,
+    "id": 339,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J43 BRG usa vintage og",
@@ -5424,7 +5552,7 @@
     "created_at": "2026-08-26T05:40:41.036253+00:00"
   },
   {
-    "id": 217,
+    "id": 340,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt J43 BRG M Detroit",
@@ -5440,7 +5568,7 @@
     "created_at": "2026-08-26T05:40:41.030474+00:00"
   },
   {
-    "id": 218,
+    "id": 341,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit J43 BRG",
@@ -5456,7 +5584,7 @@
     "created_at": "2026-08-26T05:40:41.024821+00:00"
   },
   {
-    "id": 219,
+    "id": 342,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Carhartt Detroit jacket J43 BRG Flannel Lined Collared Zip Men's Size Large ",
@@ -5472,7 +5600,7 @@
     "created_at": "2026-08-26T05:40:41.018707+00:00"
   },
   {
-    "id": 220,
+    "id": 343,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 BRG Burgundy USA Made Union XL Rare VTG",
@@ -5488,7 +5616,7 @@
     "created_at": "2026-08-26T05:40:41.012945+00:00"
   },
   {
-    "id": 221,
+    "id": 344,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Carhartt Men's Jacket J43brg Size XXL Faded purple And Blanket Inline",
@@ -5504,7 +5632,7 @@
     "created_at": "2026-08-26T05:40:41.006641+00:00"
   },
   {
-    "id": 222,
+    "id": 345,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt j43 brg sandstone Detroit jacket in burgundy size Large",
@@ -5520,7 +5648,7 @@
     "created_at": "2026-08-26T05:40:40.997603+00:00"
   },
   {
-    "id": 223,
+    "id": 346,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Men’s Detroit Blanket Line Jacket J43BRG Burgundy 2XL Logo Back",
@@ -5536,7 +5664,7 @@
     "created_at": "2026-08-26T05:40:40.990599+00:00"
   },
   {
-    "id": 224,
+    "id": 347,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 BRG Burgundy",
@@ -5552,7 +5680,7 @@
     "created_at": "2026-08-26T05:40:40.984472+00:00"
   },
   {
-    "id": 225,
+    "id": 348,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -5568,7 +5696,7 @@
     "created_at": "2026-08-26T05:40:40.978668+00:00"
   },
   {
-    "id": 226,
+    "id": 349,
     "query": "j43 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J43 BRG 1990s Faded Burgundy Rare",
@@ -5584,7 +5712,7 @@
     "created_at": "2026-08-26T05:40:40.972695+00:00"
   },
   {
-    "id": 227,
+    "id": 350,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J43 BRG Burgundy USA Made Union XL Rare VTG",
@@ -5600,7 +5728,7 @@
     "created_at": "2026-08-26T05:40:40.964559+00:00"
   },
   {
-    "id": 228,
+    "id": 351,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt j43 brg sandstone Detroit jacket in burgundy size Large",
@@ -5616,7 +5744,7 @@
     "created_at": "2026-08-26T05:40:40.958219+00:00"
   },
   {
-    "id": 229,
+    "id": 352,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Men’s Detroit Blanket Line Jacket J43BRG Burgundy 2XL Logo Back",
@@ -5632,7 +5760,7 @@
     "created_at": "2026-08-26T05:40:40.952048+00:00"
   },
   {
-    "id": 230,
+    "id": 353,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 BRG Burgundy",
@@ -5648,7 +5776,7 @@
     "created_at": "2026-08-26T05:40:40.946018+00:00"
   },
   {
-    "id": 231,
+    "id": 354,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -5664,7 +5792,7 @@
     "created_at": "2026-08-26T05:40:40.937752+00:00"
   },
   {
-    "id": 232,
+    "id": 355,
     "query": "j43 burgundy",
     "source": "ebay",
     "title": "Rare J43 Light Fade Blanket Lined Burgundy Detroit St Carhartt Jacket Size Large",
@@ -5680,7 +5808,7 @@
     "created_at": "2026-08-26T05:40:40.930889+00:00"
   },
   {
-    "id": 233,
+    "id": 356,
     "query": "j43 chestnut",
     "source": "etsy",
     "title": "Vtg 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
@@ -5696,7 +5824,7 @@
     "created_at": "2026-08-26T05:40:28.593004+00:00"
   },
   {
-    "id": 234,
+    "id": 357,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt J43 CHT Medium",
@@ -5712,7 +5840,7 @@
     "created_at": "2026-08-26T05:40:28.586945+00:00"
   },
   {
-    "id": 235,
+    "id": 358,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt J43 CHT",
@@ -5728,7 +5856,7 @@
     "created_at": "2026-08-26T05:40:28.581040+00:00"
   },
   {
-    "id": 236,
+    "id": 359,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt Detroit Jacket J43 CHT",
@@ -5744,7 +5872,7 @@
     "created_at": "2026-08-26T05:40:28.575074+00:00"
   },
   {
-    "id": 237,
+    "id": 360,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Vintage Sun faded Carhartt J43 CHT Detroit Jacket –",
@@ -5760,7 +5888,7 @@
     "created_at": "2026-08-26T05:40:28.566817+00:00"
   },
   {
-    "id": 238,
+    "id": 361,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt J43 CHT Medium",
@@ -5776,7 +5904,7 @@
     "created_at": "2026-08-26T05:40:28.559749+00:00"
   },
   {
-    "id": 239,
+    "id": 362,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt J43 CHT brown XL Detroit work wear jacket",
@@ -5792,7 +5920,7 @@
     "created_at": "2026-08-26T05:40:28.548896+00:00"
   },
   {
-    "id": 240,
+    "id": 363,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt Jacket XL Brown Detroit Work Wear J43 CHT Mens",
@@ -5808,7 +5936,7 @@
     "created_at": "2026-08-26T05:40:28.537226+00:00"
   },
   {
-    "id": 241,
+    "id": 364,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "vintage carhartt detroit jacket j43cht mens medium",
@@ -5824,7 +5952,7 @@
     "created_at": "2026-08-26T05:40:28.525214+00:00"
   },
   {
-    "id": 242,
+    "id": 365,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VINTAGE Carhartt Jacket Mens Large Brown Detroit Blanket Lined J43 CHT USA 90s",
@@ -5840,7 +5968,7 @@
     "created_at": "2026-08-26T05:40:28.519144+00:00"
   },
   {
-    "id": 243,
+    "id": 366,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage 90s J43 CHT CARHARTT Detroit Workwear Jacket RARE JAPAN",
@@ -5856,7 +5984,7 @@
     "created_at": "2026-08-26T05:40:28.507189+00:00"
   },
   {
-    "id": 244,
+    "id": 367,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VINTAGE Carhartt Detroit, M Brown Detroit Blanket Lined J43 CHT USA 90s Mocha",
@@ -5872,7 +6000,7 @@
     "created_at": "2026-08-26T05:40:28.501290+00:00"
   },
   {
-    "id": 245,
+    "id": 368,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit J43 CHT Vintage 90s Brown Jacket Size XL Made in USA",
@@ -5888,7 +6016,7 @@
     "created_at": "2026-08-26T05:40:28.488757+00:00"
   },
   {
-    "id": 246,
+    "id": 369,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
@@ -5904,7 +6032,7 @@
     "created_at": "2026-08-26T05:40:28.478872+00:00"
   },
   {
-    "id": 247,
+    "id": 370,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J43 CHT Men's Size M 90's Vintage Workwear Made in USA",
@@ -5920,7 +6048,7 @@
     "created_at": "2026-08-26T05:40:28.472779+00:00"
   },
   {
-    "id": 248,
+    "id": 371,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Jacket Aztec Blanket-Lined  Chore Coat Detroit L 90s J43 CHT",
@@ -5936,7 +6064,7 @@
     "created_at": "2026-08-26T05:40:28.466636+00:00"
   },
   {
-    "id": 249,
+    "id": 372,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Mens XL Brown Chestnut Blanket Lined J43 CHT",
@@ -5952,7 +6080,7 @@
     "created_at": "2026-08-26T05:40:28.455406+00:00"
   },
   {
-    "id": 250,
+    "id": 373,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Workwear Jacket Chestnut Blanket Lined J43 CHT 2XL Reg.",
@@ -5968,7 +6096,7 @@
     "created_at": "2026-08-26T05:40:28.449357+00:00"
   },
   {
-    "id": 251,
+    "id": 374,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt J43 CHT Brown Detroit Jacket Sz Large Blanket Lined USA G2U",
@@ -5984,7 +6112,7 @@
     "created_at": "2026-08-26T05:40:28.442784+00:00"
   },
   {
-    "id": 252,
+    "id": 375,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Carhartt J43 CHT brown XL Detroit work wear jacket",
@@ -6000,7 +6128,7 @@
     "created_at": "2026-08-26T05:40:28.436559+00:00"
   },
   {
-    "id": 253,
+    "id": 376,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket cht j43 Moss Faded Green XL  ",
@@ -6016,7 +6144,7 @@
     "created_at": "2026-08-26T05:40:28.430578+00:00"
   },
   {
-    "id": 254,
+    "id": 377,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90s Carhartt J43 CHT Chestnut Detroit Jacket Mens 2XL Blanket Lined Made USA",
@@ -6032,7 +6160,7 @@
     "created_at": "2026-08-26T05:40:28.419802+00:00"
   },
   {
-    "id": 255,
+    "id": 378,
     "query": "j43 chestnut",
     "source": "grailed",
     "title": "Carhartt Detroit J43 Chestnut XL Vintage 1998 USA",
@@ -6048,7 +6176,7 @@
     "created_at": "2026-08-26T05:40:28.399300+00:00"
   },
   {
-    "id": 256,
+    "id": 379,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
@@ -6064,7 +6192,7 @@
     "created_at": "2026-08-26T05:40:28.385583+00:00"
   },
   {
-    "id": 257,
+    "id": 380,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Mens XL Brown Chestnut Blanket Lined J43 CHT",
@@ -6080,7 +6208,7 @@
     "created_at": "2026-08-26T05:40:28.370665+00:00"
   },
   {
-    "id": 258,
+    "id": 381,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Workwear Jacket Chestnut Blanket Lined J43 CHT 2XL Reg.",
@@ -6096,7 +6224,7 @@
     "created_at": "2026-08-26T05:40:28.364440+00:00"
   },
   {
-    "id": 259,
+    "id": 382,
     "query": "j43 chestnut",
     "source": "ebay",
     "title": "VTG 90s Carhartt J43 CHT Chestnut Detroit Jacket Mens 2XL Blanket Lined Made USA",
@@ -6112,7 +6240,7 @@
     "created_at": "2026-08-26T05:40:28.357528+00:00"
   },
   {
-    "id": 260,
+    "id": 383,
     "query": "j97 timber",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket TMB",
@@ -6128,7 +6256,7 @@
     "created_at": "2026-08-26T05:40:15.904665+00:00"
   },
   {
-    "id": 261,
+    "id": 384,
     "query": "j97 timber",
     "source": "grailed",
     "title": "00’s Carhartt Detroit J97 TMB Big logo",
@@ -6144,7 +6272,7 @@
     "created_at": "2026-08-26T05:40:15.898557+00:00"
   },
   {
-    "id": 262,
+    "id": 385,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt J97 TMB Wood XXL",
@@ -6160,7 +6288,7 @@
     "created_at": "2026-08-26T05:40:15.891119+00:00"
   },
   {
-    "id": 263,
+    "id": 386,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt J97 TMB Distressed Detroit Jacked",
@@ -6176,7 +6304,7 @@
     "created_at": "2026-08-26T05:40:15.885252+00:00"
   },
   {
-    "id": 264,
+    "id": 387,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Sashiko Repaired Carhartt J97 TMB Detroit Jacket.",
@@ -6192,7 +6320,7 @@
     "created_at": "2026-08-26T05:40:15.879496+00:00"
   },
   {
-    "id": 265,
+    "id": 388,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit J97 TMB",
@@ -6208,7 +6336,7 @@
     "created_at": "2026-08-26T05:40:15.873792+00:00"
   },
   {
-    "id": 266,
+    "id": 389,
     "query": "j97 timber",
     "source": "ebay",
     "title": "vintage 2000s brown carhartt detroit jacket J97 TMB made in usa size xl grail",
@@ -6224,7 +6352,7 @@
     "created_at": "2026-08-26T05:40:15.866819+00:00"
   },
   {
-    "id": 267,
+    "id": 390,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB",
@@ -6240,7 +6368,7 @@
     "created_at": "2026-08-26T05:40:15.860800+00:00"
   },
   {
-    "id": 268,
+    "id": 391,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Workwear J97 TMB Fade Men’s Size XL",
@@ -6256,7 +6384,7 @@
     "created_at": "2026-08-26T05:40:15.852523+00:00"
   },
   {
-    "id": 269,
+    "id": 392,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -6272,7 +6400,7 @@
     "created_at": "2026-08-26T05:40:15.846658+00:00"
   },
   {
-    "id": 270,
+    "id": 393,
     "query": "j97 timber",
     "source": "ebay",
     "title": "VTG 90s Carhartt Detroit Jacket J97 TMB Timber Blanket Lined Fit Size XL Faded",
@@ -6288,7 +6416,7 @@
     "created_at": "2026-08-26T05:40:15.840859+00:00"
   },
   {
-    "id": 271,
+    "id": 394,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -6304,7 +6432,7 @@
     "created_at": "2026-08-26T05:40:15.834734+00:00"
   },
   {
-    "id": 272,
+    "id": 395,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined USA Union Made 2XL",
@@ -6320,7 +6448,7 @@
     "created_at": "2026-08-26T05:40:15.826927+00:00"
   },
   {
-    "id": 273,
+    "id": 396,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt J97 TMB Vintage Detroit Jacket Timber Mens XL USA Workwear Honeycombed",
@@ -6336,7 +6464,7 @@
     "created_at": "2026-08-26T05:40:15.821257+00:00"
   },
   {
-    "id": 274,
+    "id": 397,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket J97 TMB Fade Men’s Size XL",
@@ -6352,7 +6480,7 @@
     "created_at": "2026-08-26T05:40:15.815569+00:00"
   },
   {
-    "id": 275,
+    "id": 398,
     "query": "j97 timber",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Timber” J97 TMB",
@@ -6368,7 +6496,7 @@
     "created_at": "2026-08-26T05:40:15.809750+00:00"
   },
   {
-    "id": 276,
+    "id": 399,
     "query": "j97 timber",
     "source": "grailed",
     "title": "vintage 00's carhartt detroit J97 timber brown size L 🪵",
@@ -6384,7 +6512,7 @@
     "created_at": "2026-08-26T05:40:15.801811+00:00"
   },
   {
-    "id": 277,
+    "id": 400,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB",
@@ -6400,7 +6528,7 @@
     "created_at": "2026-08-26T05:40:15.796118+00:00"
   },
   {
-    "id": 278,
+    "id": 401,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -6416,7 +6544,7 @@
     "created_at": "2026-08-26T05:40:15.789845+00:00"
   },
   {
-    "id": 279,
+    "id": 402,
     "query": "j97 timber",
     "source": "ebay",
     "title": "VTG 90s Carhartt Detroit Jacket J97 TMB Timber Blanket Lined Fit Size XL Faded",
@@ -6432,7 +6560,7 @@
     "created_at": "2026-08-26T05:40:15.782116+00:00"
   },
   {
-    "id": 280,
+    "id": 403,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined Size XXL Brown USA",
@@ -6448,7 +6576,7 @@
     "created_at": "2026-08-26T05:40:15.776289+00:00"
   },
   {
-    "id": 281,
+    "id": 404,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined USA Union Made 2XL",
@@ -6464,7 +6592,7 @@
     "created_at": "2026-08-26T05:40:15.768588+00:00"
   },
   {
-    "id": 282,
+    "id": 405,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Carhartt J97 TMB Vintage Detroit Jacket Timber Mens XL USA Workwear Honeycombed",
@@ -6480,7 +6608,7 @@
     "created_at": "2026-08-26T05:40:15.760450+00:00"
   },
   {
-    "id": 283,
+    "id": 406,
     "query": "j97 timber",
     "source": "ebay",
     "title": "Vintage Carhartt J97MOS Detroit Jacket Timber Blanket Lined Size XXL Moss USA",
@@ -6496,7 +6624,7 @@
     "created_at": "2026-08-26T05:40:15.751946+00:00"
   },
   {
-    "id": 284,
+    "id": 407,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage Y2K Carhartt Detroit Canvas Jacket Men’s Large USA Made Faded J97 PTL",
@@ -6512,7 +6640,7 @@
     "created_at": "2026-08-26T05:40:02.281059+00:00"
   },
   {
-    "id": 285,
+    "id": 408,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Replica Blanket Lined Jacket J97 &#39;NAVY BLUE&#39; Unisex Jacket",
@@ -6528,7 +6656,7 @@
     "created_at": "2026-08-26T05:40:02.273866+00:00"
   },
   {
-    "id": 286,
+    "id": 409,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket PTL",
@@ -6544,7 +6672,7 @@
     "created_at": "2026-08-26T05:40:02.263957+00:00"
   },
   {
-    "id": 287,
+    "id": 410,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Rare Carhartt J97 PTL Sandstone Plaid Lined Detroit Jacket Mens XL Distressed",
@@ -6560,7 +6688,7 @@
     "created_at": "2026-08-26T05:40:02.231912+00:00"
   },
   {
-    "id": 288,
+    "id": 411,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Petrol Black",
@@ -6576,7 +6704,7 @@
     "created_at": "2026-08-26T05:40:02.225272+00:00"
   },
   {
-    "id": 289,
+    "id": 412,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Petrol Black",
@@ -6592,7 +6720,7 @@
     "created_at": "2026-08-26T05:40:02.219064+00:00"
   },
   {
-    "id": 290,
+    "id": 413,
     "query": "j97 petrol",
     "source": "etsy",
     "title": "Vintage carhartt detroit j97ptl petrol blanket lined jacket 1990s 2xl made in usa",
@@ -6608,7 +6736,7 @@
     "created_at": "2026-08-26T05:40:02.206177+00:00"
   },
   {
-    "id": 291,
+    "id": 414,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "J97 PTL Carhartt Detroit Jacket",
@@ -6624,7 +6752,7 @@
     "created_at": "2026-08-26T05:40:02.192473+00:00"
   },
   {
-    "id": 292,
+    "id": 415,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens M Gray 90s USA J97 PTL USA Bomber Lined Canvas Coal Gray Coat",
@@ -6640,7 +6768,7 @@
     "created_at": "2026-08-26T05:40:02.186005+00:00"
   },
   {
-    "id": 293,
+    "id": 416,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Mens Carhartt J97 PTL Blanket Lined Detroit Jacket Large Tall Black",
@@ -6656,7 +6784,7 @@
     "created_at": "2026-08-26T05:40:02.179812+00:00"
   },
   {
-    "id": 294,
+    "id": 417,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens 2XL XXL Detroit J97 PTL Gray Canvas Workwear Embroidered Full Zip Logo Streetwear",
@@ -6672,7 +6800,7 @@
     "created_at": "2026-08-26T05:40:02.167902+00:00"
   },
   {
-    "id": 295,
+    "id": 418,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Distressed Faded Gray Carhartt J97 PTL Detroit Jacket",
@@ -6688,7 +6816,7 @@
     "created_at": "2026-08-26T05:40:02.161583+00:00"
   },
   {
-    "id": 296,
+    "id": 419,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Jacket J97 PTL Faded Black 90s",
@@ -6704,7 +6832,7 @@
     "created_at": "2026-08-26T05:40:02.151370+00:00"
   },
   {
-    "id": 297,
+    "id": 420,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt J97 PTL Medium",
@@ -6720,7 +6848,7 @@
     "created_at": "2026-08-26T05:40:02.144198+00:00"
   },
   {
-    "id": 298,
+    "id": 421,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "2000s Vintage Carhartt Detroit Jacket J97 PTL",
@@ -6736,7 +6864,7 @@
     "created_at": "2026-08-26T05:40:02.137854+00:00"
   },
   {
-    "id": 299,
+    "id": 422,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Petrol Carhartt Detroit Jacket Grey Blue Cahrartt Jacket J97",
@@ -6752,7 +6880,7 @@
     "created_at": "2026-08-26T05:40:02.128440+00:00"
   },
   {
-    "id": 300,
+    "id": 423,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Petrol Greey 🦍Carhartt Detroit Jacket J97-PTL",
@@ -6768,7 +6896,7 @@
     "created_at": "2026-08-26T05:40:02.122421+00:00"
   },
   {
-    "id": 301,
+    "id": 424,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "❌SOLD❌ Faded Petrol Grey Carhartt Detroit Jacket J97 PTL",
@@ -6784,7 +6912,7 @@
     "created_at": "2026-08-26T05:40:02.116487+00:00"
   },
   {
-    "id": 302,
+    "id": 425,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "faded Petrol Carhartt Detroit jacket J97 PTL",
@@ -6800,7 +6928,7 @@
     "created_at": "2026-08-26T05:40:02.110645+00:00"
   },
   {
-    "id": 303,
+    "id": 426,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VTG 00’s Big Patch Petrol Grey Carhartt Detroit J97 PTL",
@@ -6816,7 +6944,7 @@
     "created_at": "2026-08-26T05:40:02.101497+00:00"
   },
   {
-    "id": 304,
+    "id": 427,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "VTG 00’s Big Patch Petrol Grey Carhartt Detroit J97 PTL",
@@ -6832,7 +6960,7 @@
     "created_at": "2026-08-26T05:40:02.095637+00:00"
   },
   {
-    "id": 305,
+    "id": 428,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Carhartt J97 Detroit Jacket Petrol faded black M Union made",
@@ -6848,7 +6976,7 @@
     "created_at": "2026-08-26T05:40:02.089384+00:00"
   },
   {
-    "id": 306,
+    "id": 429,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Petrol Grey” J97",
@@ -6864,7 +6992,7 @@
     "created_at": "2026-08-26T05:40:02.083597+00:00"
   },
   {
-    "id": 307,
+    "id": 430,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol” J97",
@@ -6880,7 +7008,7 @@
     "created_at": "2026-08-26T05:40:02.075710+00:00"
   },
   {
-    "id": 308,
+    "id": 431,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol” J97",
@@ -6896,7 +7024,7 @@
     "created_at": "2026-08-26T05:40:02.068066+00:00"
   },
   {
-    "id": 309,
+    "id": 432,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "J97 PTL Petrol Gray Carhartt Detroit Jacket",
@@ -6912,7 +7040,7 @@
     "created_at": "2026-08-26T05:40:02.060407+00:00"
   },
   {
-    "id": 310,
+    "id": 433,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "❌SOLD OUT❌ Crazy Vintage Carhartt Detroit jacket J97 Petrol",
@@ -6928,7 +7056,7 @@
     "created_at": "2026-08-26T05:40:02.054123+00:00"
   },
   {
-    "id": 311,
+    "id": 434,
     "query": "j97 petrol",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit Jacket J97 - Petrol (PTL)",
@@ -6944,7 +7072,7 @@
     "created_at": "2026-08-26T05:40:02.047984+00:00"
   },
   {
-    "id": 312,
+    "id": 435,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Men L J97 PTL Petrol Grey Blanket Lined USA Y2K",
@@ -6960,7 +7088,7 @@
     "created_at": "2026-08-26T05:40:02.041739+00:00"
   },
   {
-    "id": 313,
+    "id": 436,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vtg CARHARTT J97PTL DETROIT Blanket Lined Mens 2XL Canvas UNION MADE Jacket USA",
@@ -6976,7 +7104,7 @@
     "created_at": "2026-08-26T05:40:02.035702+00:00"
   },
   {
-    "id": 314,
+    "id": 437,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vtg Carhartt J97 PTL Detroit Jacket Petrol Gray Blue Blanket Lined XL Crop 28x26",
@@ -6992,7 +7120,7 @@
     "created_at": "2026-08-26T05:40:02.029954+00:00"
   },
   {
-    "id": 315,
+    "id": 438,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket Blanket Lined Mens Medium J97 PTL Petrol Gray",
@@ -7008,7 +7136,7 @@
     "created_at": "2026-08-26T05:40:02.024182+00:00"
   },
   {
-    "id": 316,
+    "id": 439,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage 90s Y2K Carhartt J97 PTL Petrol Blanket Lined Detroit Jacket SZ 2XL",
@@ -7024,7 +7152,7 @@
     "created_at": "2026-08-26T05:40:02.016185+00:00"
   },
   {
-    "id": 317,
+    "id": 440,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "VTG Carhartt Detroit J97 PTL Petrol Blanket Lined Men’s XL Faded Distressed Rare",
@@ -7040,7 +7168,7 @@
     "created_at": "2026-08-26T05:40:02.008891+00:00"
   },
   {
-    "id": 318,
+    "id": 441,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Detroit Jacket J97 PTL Petrol Grey - Custom Tailored",
@@ -7056,7 +7184,7 @@
     "created_at": "2026-08-26T05:40:02.002587+00:00"
   },
   {
-    "id": 319,
+    "id": 442,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Mens XL Petrol Blue Detroit Jacket Made in USA Blanket Lined J97 PTL",
@@ -7072,7 +7200,7 @@
     "created_at": "2026-08-26T05:40:01.994616+00:00"
   },
   {
-    "id": 320,
+    "id": 443,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt Mens XXL Petrol  Detroit Jacket Made in USA Blanket Lined J97 PTL",
@@ -7088,7 +7216,7 @@
     "created_at": "2026-08-26T05:40:01.986803+00:00"
   },
   {
-    "id": 321,
+    "id": 444,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Rare Vintage Carhartt J97 PTL Plaid Lined Detroit Jacket Petrol Mens Large Y2K",
@@ -7104,7 +7232,7 @@
     "created_at": "2026-08-26T05:40:01.978288+00:00"
   },
   {
-    "id": 322,
+    "id": 445,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Sandstone Detroit Jacket J97 PTL Petrol Blue Green Size L",
@@ -7120,7 +7248,7 @@
     "created_at": "2026-08-26T05:40:01.966519+00:00"
   },
   {
-    "id": 323,
+    "id": 446,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol  Blanket Lined Men's 3XL Regular 2003",
@@ -7136,7 +7264,7 @@
     "created_at": "2026-08-26T05:40:01.960537+00:00"
   },
   {
-    "id": 324,
+    "id": 447,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 PTL Petrol Black Detroit Jacket Blanket Lined Size M",
@@ -7152,7 +7280,7 @@
     "created_at": "2026-08-26T05:40:01.954515+00:00"
   },
   {
-    "id": 325,
+    "id": 448,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt J97 PTL Detroit Jacket 2XL USA Made Petrol Blanket Lined Faded ",
@@ -7168,7 +7296,7 @@
     "created_at": "2026-08-26T05:40:01.948370+00:00"
   },
   {
-    "id": 326,
+    "id": 449,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vtg Carhartt Detroit Jacket J97 PTL Canvas Flannel Wool Lined Dark Petrol Grey",
@@ -7184,7 +7312,7 @@
     "created_at": "2026-08-26T05:40:01.941514+00:00"
   },
   {
-    "id": 327,
+    "id": 450,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Vintage Carhartt Detroit Jacket Blanket XL Tall J97 PTL Petrol Gray Blue Faded",
@@ -7200,7 +7328,7 @@
     "created_at": "2026-08-26T05:40:01.935390+00:00"
   },
   {
-    "id": 328,
+    "id": 451,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "MENS VINTAGE CARHARTT DETROIT JACKET J97 PTL PETROL GRAY BLANKET LINED CANVAS XL",
@@ -7216,7 +7344,7 @@
     "created_at": "2026-08-26T05:40:01.929259+00:00"
   },
   {
-    "id": 329,
+    "id": 452,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Blanket-Lined Petrol Canvas 12/2003",
@@ -7232,7 +7360,7 @@
     "created_at": "2026-08-26T05:40:01.922631+00:00"
   },
   {
-    "id": 330,
+    "id": 453,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol Grey Blanket Lined Mens 2XL Tall Vintage",
@@ -7248,7 +7376,7 @@
     "created_at": "2026-08-26T05:40:01.909511+00:00"
   },
   {
-    "id": 331,
+    "id": 454,
     "query": "j97 petrol",
     "source": "ebay",
     "title": "Carhartt J97 PTL Detroit Jacket Petrol Blue Blanket Lined Mens 3XL Tall Vintage",
@@ -7264,7 +7392,7 @@
     "created_at": "2026-08-26T05:40:01.741457+00:00"
   },
   {
-    "id": 332,
+    "id": 455,
     "query": "j97 burgundy",
     "source": "etsy",
     "title": "Vintage 1990s Carhartt Detroit Jacket: Burgundy Denim Chore Coat",
@@ -7280,7 +7408,7 @@
     "created_at": "2026-08-26T05:39:41.608125+00:00"
   },
   {
-    "id": 333,
+    "id": 456,
     "query": "j97 burgundy",
     "source": "grailed",
     "title": "Vintage Carhartt Jacket XL Purple Distressed J97BRG Detroit",
@@ -7296,7 +7424,7 @@
     "created_at": "2026-08-26T05:39:41.599466+00:00"
   },
   {
-    "id": 334,
+    "id": 457,
     "query": "j97 burgundy",
     "source": "grailed",
     "title": "Carhartt Detroit XL J97BRG",
@@ -7312,7 +7440,7 @@
     "created_at": "2026-08-26T05:39:41.589918+00:00"
   },
   {
-    "id": 335,
+    "id": 458,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage 90s Blanket Lined Carhartt Detroit J97 BRG Burgundy Super RARE Mens Sz M",
@@ -7328,7 +7456,7 @@
     "created_at": "2026-08-26T05:39:41.583178+00:00"
   },
   {
-    "id": 336,
+    "id": 459,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -7344,7 +7472,7 @@
     "created_at": "2026-08-26T05:39:41.577045+00:00"
   },
   {
-    "id": 337,
+    "id": 460,
     "query": "j97 burgundy",
     "source": "grailed",
     "title": "Carhartt J97 Detroit Jacket Maroon XL USA Like New",
@@ -7360,7 +7488,7 @@
     "created_at": "2026-08-26T05:39:41.570551+00:00"
   },
   {
-    "id": 338,
+    "id": 461,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "CARHARTT BURGUNDY PURPLE J97",
@@ -7376,7 +7504,7 @@
     "created_at": "2026-08-26T05:39:41.564506+00:00"
   },
   {
-    "id": 339,
+    "id": 462,
     "query": "j97 burgundy",
     "source": "ebay",
     "title": "Vintage Carhartt J43 BRG Burgundy Detroit Jacket 90s J97 Textbook Fade",
@@ -7392,7 +7520,7 @@
     "created_at": "2026-08-26T05:39:41.557918+00:00"
   },
   {
-    "id": 340,
+    "id": 463,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt 1990s j99 Trucker Jacket Dark Tank Duck Retro Workwear StreetWear",
@@ -7408,7 +7536,7 @@
     "created_at": "2026-08-26T05:39:27.688638+00:00"
   },
   {
-    "id": 341,
+    "id": 464,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket MOS",
@@ -7424,7 +7552,7 @@
     "created_at": "2026-08-26T05:39:27.682805+00:00"
   },
   {
-    "id": 342,
+    "id": 465,
     "query": "j97 moss",
     "source": "etsy",
     "title": "J97 MOS Carhartt Detroit Jacket - Mens Medium, Green (RARE 90s Vintage)",
@@ -7440,7 +7568,7 @@
     "created_at": "2026-08-26T05:39:27.676880+00:00"
   },
   {
-    "id": 343,
+    "id": 466,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage 2000s Distressed Carhartt Sherpa Lined C70 Field Coat Men&#39;s 2XL / Thrashed  / Outerwear / 00s  Workwear / Y2K Chore Jacket",
@@ -7456,7 +7584,7 @@
     "created_at": "2026-08-26T05:39:27.670753+00:00"
   },
   {
-    "id": 344,
+    "id": 467,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt Detroit J97 MOS Forest Green Jacket Corduroy Collar Blanket Lined Men&#39;s L",
@@ -7472,7 +7600,7 @@
     "created_at": "2026-08-26T05:39:27.664232+00:00"
   },
   {
-    "id": 345,
+    "id": 468,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket MOS",
@@ -7488,7 +7616,7 @@
     "created_at": "2026-08-26T05:39:27.657694+00:00"
   },
   {
-    "id": 346,
+    "id": 469,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;NAVY BLUE&#39; Unisex Jacket",
@@ -7504,7 +7632,7 @@
     "created_at": "2026-08-26T05:39:27.634825+00:00"
   },
   {
-    "id": 347,
+    "id": 470,
     "query": "j97 moss",
     "source": "etsy",
     "title": "J97 Carhartt Plaid Detroit Jacket - Petrol Black",
@@ -7520,7 +7648,7 @@
     "created_at": "2026-08-26T05:39:27.628698+00:00"
   },
   {
-    "id": 348,
+    "id": 471,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Moss Green",
@@ -7536,7 +7664,7 @@
     "created_at": "2026-08-26T05:39:27.622599+00:00"
   },
   {
-    "id": 349,
+    "id": 472,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Distressed Carhartt moss green canvas work jacket  J97 Mos Detroit men’s - plaid blanket lining - work clothes - workwear jacket",
@@ -7552,7 +7680,7 @@
     "created_at": "2026-08-26T05:39:27.615678+00:00"
   },
   {
-    "id": 350,
+    "id": 473,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket Moss Green J97 MOS Men&#39;s Sz M",
@@ -7568,7 +7696,7 @@
     "created_at": "2026-08-26T05:39:27.609848+00:00"
   },
   {
-    "id": 351,
+    "id": 474,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Moss Green” J97 MOS",
@@ -7584,7 +7712,7 @@
     "created_at": "2026-08-26T05:39:27.603573+00:00"
   },
   {
-    "id": 352,
+    "id": 475,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Plaid Detroit Jacket Moss Green",
@@ -7600,7 +7728,7 @@
     "created_at": "2026-08-26T05:39:27.597072+00:00"
   },
   {
-    "id": 353,
+    "id": 476,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Jacket MOS Moss Green Workwear Jacket",
@@ -7616,7 +7744,7 @@
     "created_at": "2026-08-26T05:39:27.591268+00:00"
   },
   {
-    "id": 354,
+    "id": 477,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &quot;MOSS GREEN&quot; | Rare Workwear Coat | Unisex Vintage Jacket",
@@ -7632,7 +7760,7 @@
     "created_at": "2026-08-26T05:39:27.585504+00:00"
   },
   {
-    "id": 355,
+    "id": 478,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Carhartt J97 Detroit Moss Green Jacket",
@@ -7648,7 +7776,7 @@
     "created_at": "2026-08-26T05:39:27.579810+00:00"
   },
   {
-    "id": 356,
+    "id": 479,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39; Unisex Jacket",
@@ -7664,7 +7792,7 @@
     "created_at": "2026-08-26T05:39:27.574051+00:00"
   },
   {
-    "id": 357,
+    "id": 480,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39;",
@@ -7680,7 +7808,7 @@
     "created_at": "2026-08-26T05:39:27.568209+00:00"
   },
   {
-    "id": 358,
+    "id": 481,
     "query": "j97 moss",
     "source": "etsy",
     "title": "Vintage Carhartt Detroit Jacket J97 Moss Green Blanket Lined Corduroy Collar Chore Coat",
@@ -7696,7 +7824,7 @@
     "created_at": "2026-08-26T05:39:27.562413+00:00"
   },
   {
-    "id": 359,
+    "id": 482,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Detroit jacket j97 mos",
@@ -7712,7 +7840,7 @@
     "created_at": "2026-08-26T05:39:27.556713+00:00"
   },
   {
-    "id": 360,
+    "id": 483,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt J97 MOS detroit jacket.",
@@ -7728,7 +7856,7 @@
     "created_at": "2026-08-26T05:39:27.549287+00:00"
   },
   {
-    "id": 361,
+    "id": 484,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt J97 MOS Detroit Jacket Blanket Lined L",
@@ -7744,7 +7872,7 @@
     "created_at": "2026-08-26T05:39:27.543503+00:00"
   },
   {
-    "id": 362,
+    "id": 485,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Thrashed Repaired Vintage Carhartt Detroit Jacket J97 MOS",
@@ -7760,7 +7888,7 @@
     "created_at": "2026-08-26T05:39:27.537085+00:00"
   },
   {
-    "id": 363,
+    "id": 486,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens XL Moss Green Detroit Blanket Lined Faded J97 MOS",
@@ -7776,7 +7904,7 @@
     "created_at": "2026-08-26T05:39:27.531032+00:00"
   },
   {
-    "id": 364,
+    "id": 487,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt J97 MOS Green Detroit Jacket Blanket Lined Large Regular Mens Workwear Casual 90s USA",
@@ -7792,7 +7920,7 @@
     "created_at": "2026-08-26T05:39:27.524312+00:00"
   },
   {
-    "id": 365,
+    "id": 488,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Moss Green” J97",
@@ -7808,7 +7936,7 @@
     "created_at": "2026-08-26T05:39:27.518536+00:00"
   },
   {
-    "id": 366,
+    "id": 489,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket XL",
@@ -7824,7 +7952,7 @@
     "created_at": "2026-08-26T05:39:27.512676+00:00"
   },
   {
-    "id": 367,
+    "id": 490,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Carhartt J97 MOS green detroit work wear jacket XL Men",
@@ -7840,7 +7968,7 @@
     "created_at": "2026-08-26T05:39:27.506858+00:00"
   },
   {
-    "id": 368,
+    "id": 491,
     "query": "j97 moss",
     "source": "grailed",
     "title": "VINTAGE Carhartt Jacket Mens XL Moss Green J97 Detroit Blanket Lined Made in USA",
@@ -7856,7 +7984,7 @@
     "created_at": "2026-08-26T05:39:27.501299+00:00"
   },
   {
-    "id": 369,
+    "id": 492,
     "query": "j97 moss",
     "source": "grailed",
     "title": "Vintage Carhartt Blanketed Detroit Jacket “Moss Green” J97",
@@ -7870,133 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:39:27.495610+00:00"
-  },
-  {
-    "id": 370,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Vintage Y2K Carhartt J97 MOS green Detroit work wear jacket",
-    "price": 450.0,
-    "url": "https://www.grailed.com/listings/102417028",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/4d974834630c498cbfb4ad14f76e16af",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.489793+00:00"
-  },
-  {
-    "id": 371,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Mos Green XL Brand New With Tags",
-    "price": 1250.0,
-    "url": "https://www.grailed.com/listings/101017014",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/91b865f6c1ab467c9b7feccd6db96173",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.483664+00:00"
-  },
-  {
-    "id": 372,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt J97 MOS green Detroit work wear jacket",
-    "price": 400.0,
-    "url": "https://www.grailed.com/listings/101477411",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/2cdf8a8450c04cc98205be1678d54efb",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.477843+00:00"
-  },
-  {
-    "id": 373,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt J97 MOS green detroit work wear jacket",
-    "price": 400.0,
-    "url": "https://www.grailed.com/listings/103473845",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/5696592ce8f94e479072b1a93300afed",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.471749+00:00"
-  },
-  {
-    "id": 374,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt J97moss BNWT",
-    "price": 1100.0,
-    "url": "https://www.grailed.com/listings/74059561",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/b108f840c0c34668bd2a215f0dfe3a32",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.466064+00:00"
-  },
-  {
-    "id": 375,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Vintage Carhartt Mainline J97 Moss Green L Jacket",
-    "price": 675.0,
-    "url": "https://www.grailed.com/listings/95887877",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/ff1fb0db55b34c60aefe8011ace60032",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.460406+00:00"
-  },
-  {
-    "id": 376,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Moss Green 2006",
-    "price": 523.0,
-    "url": "https://www.grailed.com/listings/87520127",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/f5e1f513439b47f69ff2d7f8e6c800b5",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.454604+00:00"
-  },
-  {
-    "id": 377,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Mos // J97 Moss Green 2006",
-    "price": 523.0,
-    "url": "https://www.grailed.com/listings/87630676",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/0bee339618f84a61a111e5a0b4992443",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.448599+00:00"
   }
 ]
