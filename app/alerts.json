@@ -1,5 +1,37 @@
 [
   {
+    "id": 581,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 BRG Detroit Jacket XL 27x26 Burgundy Rare Faded 90s",
+    "price": 1250.6299999999999,
+    "url": "https://www.ebay.com/itm/267772268937?_skw=carhartt+j97+brg&hash=item3e58789189:g:768AAeSwSUlqlaat",
+    "photo": "https://i.ebayimg.com/images/g/768AAeSwSUlqlaat/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:56:23.089576+00:00"
+  },
+  {
+    "id": 580,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 BRG Detroit Jacket XL 27x26 Burgundy Rare Faded 90s",
+    "price": 1250.6299999999999,
+    "url": "https://www.ebay.com/itm/267772268937?_skw=carhartt+j97+burgundy&hash=item3e58789189:g:768AAeSwSUlqlaat",
+    "photo": "https://i.ebayimg.com/images/g/768AAeSwSUlqlaat/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:56:23.053740+00:00"
+  },
+  {
     "id": 579,
     "query": "j97 moss",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:40:02.151370+00:00"
-  },
-  {
-    "id": 420,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Carhartt J97 PTL Medium",
-    "price": 650.0,
-    "url": "https://www.grailed.com/listings/100529734",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/45e81d5cb31b4d688155ed8dd048237e",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:40:02.144198+00:00"
-  },
-  {
-    "id": 421,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "2000s Vintage Carhartt Detroit Jacket J97 PTL",
-    "price": 685.0,
-    "url": "https://www.grailed.com/listings/101349874",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/f755a176292d4d47b3d984320400add8",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:40:02.137854+00:00"
   }
 ]
