@@ -1,5 +1,21 @@
 [
   {
+    "id": 619,
+    "query": "j43 hunter green",
+    "source": "grailed",
+    "title": "Carhartt Jacket Adult XL Green Detroit Work wear J43 HTG Mens",
+    "price": 856.0,
+    "url": "https://www.grailed.com/listings/104585551",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/fd9900aa514045f0a6adb1a059ec1e19",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T11:52:17.520441+00:00"
+  },
+  {
     "id": 618,
     "query": "j97 timber",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:39:27.448599+00:00"
-  },
-  {
-    "id": 378,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Vintage Carhartt Detroit J97 Moss Jacket (Large)",
-    "price": 428.0,
-    "url": "https://www.grailed.com/listings/99151980",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/7da89044c7f34973a8ff822be50ad9fc",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:27.442173+00:00"
   }
 ]
