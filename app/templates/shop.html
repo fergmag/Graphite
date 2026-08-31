@@ -236,18 +236,19 @@
       .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
       .modal {
         background: #ffffff; color: #111111; border-radius: 12px;
-        width: 100%; max-width: 780px; overflow: hidden;
-        display: grid; grid-template-columns: 1fr 1fr;
+        width: 100%; max-width: 860px; overflow: hidden;
+        display: grid; grid-template-columns: 3fr 2fr;
         box-shadow: 0 24px 60px rgba(0,0,0,0.4); position: relative; margin: auto;
+        max-height: calc(100vh - 48px);
       }
       @media (max-width: 640px) { .modal { grid-template-columns: 1fr; } }
       .modal-photo {
-        aspect-ratio: 4 / 5; background: #e8e5e0;
+        background: #e8e5e0;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
-        position: relative;
+        position: relative; min-height: 0;
       }
       @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
-      .modal-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; user-select: none; }
+      .modal-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; user-select: none; background: #e8e5e0; }
       .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; }
       .slide-arrow {
         position: absolute; top: 50%; transform: translateY(-50%);
@@ -268,7 +269,7 @@
         background: rgba(255,255,255,0.5); transition: background 0.15s;
       }
       .slide-dot.active { background: #fff; }
-      .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; }
+      .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; max-height: calc(100vh - 48px); }
       .modal-close {
         position: absolute; top: 14px; right: 14px;
         width: 32px; height: 32px; border-radius: 999px; border: none;
@@ -769,10 +770,10 @@
         </div>
       </div>
       <div class="footer-col">
-        <div class="footer-label">Return Policy</div>
+        <div class="footer-label">Terms of Sale</div>
         <div class="footer-accordion">
-          <button class="footer-acc-btn" onclick="toggleAccordion(this)">Returns <span class="footer-acc-arrow">▾</span></button>
-          <div class="footer-acc-body">All sales are final.</div>
+          <button class="footer-acc-btn" onclick="toggleAccordion(this)">Returns &amp; Disputes <span class="footer-acc-arrow">▾</span></button>
+          <div class="footer-acc-body" style="max-height:320px;">All sales are final. We do not facilitate returns for documented flaws, sizing misunderstandings, or packages damaged in transit. Our responsibility ends once the correct item has been shipped. Please review all photos carefully — measurements are available on request before purchase. Items are shipped unwashed to preserve their original vintage condition; please handle accordingly.</div>
         </div>
       </div>
       <div class="footer-copy">© Graphite Vintage &nbsp;·&nbsp; <a href="https://www.instagram.com/graphitevintage/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;opacity:0.65;">Personal project, report errors @graphitevintage</a></div>
