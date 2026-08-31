@@ -1,5 +1,37 @@
 [
   {
+    "id": 546,
+    "query": "jr0115",
+    "source": "grailed",
+    "title": "Carhartt JR0115 Carbon Blue",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/86800617",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/88ec956ab62a45429f9e0239c04c490a",
+    "casp": 500.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:54:33.567104+00:00"
+  },
+  {
+    "id": 545,
+    "query": "jr0115",
+    "source": "grailed",
+    "title": "Carhartt JR0115 Carbon Blue",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/86800960",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/15efb53253a04d68b67179c4c0921b30",
+    "casp": 500.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-08-31T17:54:33.563820+00:00"
+  },
+  {
     "id": 544,
     "query": "js1207",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:40:01.741457+00:00"
-  },
-  {
-    "id": 455,
-    "query": "j97 burgundy",
-    "source": "etsy",
-    "title": "Vintage 1990s Carhartt Detroit Jacket: Burgundy Denim Chore Coat",
-    "price": 255.0,
-    "url": "https://www.etsy.com/listing/4447429884/1990s-carhartt-j97-brg-detroit-jacket",
-    "photo": "https://i.etsystatic.com/58939000/r/il/18b525/7642696904/il_570xN.7642696904_selj.jpg",
-    "casp": 900.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:41.608125+00:00"
-  },
-  {
-    "id": 456,
-    "query": "j97 burgundy",
-    "source": "grailed",
-    "title": "Vintage Carhartt Jacket XL Purple Distressed J97BRG Detroit",
-    "price": 2000.0,
-    "url": "https://www.grailed.com/listings/90436295",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/62082daf6c74439a81723685634fa61d",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:39:41.599466+00:00"
   }
 ]
