@@ -1,5 +1,37 @@
 [
   {
+    "id": 715,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J43 WET Sandstone Detroit Jacket Blanket Lined USA Medium",
+    "price": 264.94,
+    "url": "https://www.ebay.com/itm/267773305346?_skw=carhartt+j43&hash=item3e58886202:g:1qYAAeSwaGNqlv5F",
+    "photo": "https://i.ebayimg.com/images/g/1qYAAeSwaGNqlv5F/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-01T18:09:56.017521+00:00"
+  },
+  {
+    "id": 714,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J43HTG",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/104541318",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/8e95d6ff06c5486c85d412c5cc66efd5",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-01T18:09:55.891020+00:00"
+  },
+  {
     "id": 713,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:32.728443+00:00"
-  },
-  {
-    "id": 286,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage Carhartt J68 Cri Jacket Size Large",
-    "price": 1000.0,
-    "url": "https://www.ebay.com/itm/236636687674?_skw=carhartt+j97+cri&hash=item3718a54d3a:g:hnsAAeSw7thpkR3W",
-    "photo": "https://i.ebayimg.com/images/g/hnsAAeSw7thpkR3W/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:49:58.150934+00:00"
-  },
-  {
-    "id": 287,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Carhartt Active Jacket - J130 CRI - Crimson - Medium  🩸 🇺🇸",
-    "price": 555.55,
-    "url": "https://www.ebay.com/itm/326963310341?_skw=carhartt+j97+cri&hash=item4c20882f05:g:ef8AAeSwikZpb7iP",
-    "photo": "https://i.ebayimg.com/images/g/ef8AAeSwikZpb7iP/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:49:58.145219+00:00"
   }
 ]
