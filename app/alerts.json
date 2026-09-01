@@ -1,5 +1,21 @@
 [
   {
+    "id": 501,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "90s Carhartt Aztec JR0115 Hooded Zip Up Jacket  Thermal Lined Royal Blue Jacket",
+    "price": 469.0,
+    "url": "https://www.ebay.com/itm/307156014156?_skw=carhartt+jr0115&hash=item4783ecd44c:g:TUoAAeSwJ9tqlgjJ",
+    "photo": "https://i.ebayimg.com/images/g/TUoAAeSwJ9tqlgjJ/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-01T00:00:01.009078+00:00"
+  },
+  {
     "id": 1,
     "query": "j76 moss",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-26T05:40:15.821257+00:00"
-  },
-  {
-    "id": 500,
-    "query": "j97 timber",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket J97 TMB Fade Men’s Size XL",
-    "price": 282.99,
-    "url": "https://www.ebay.com/itm/318643532535?_skw=carhartt+j97+tmb&hash=item4a30a272f7:g:L9IAAeSwfE5qZ9Qz",
-    "photo": "https://i.ebayimg.com/images/g/L9IAAeSwfE5qZ9Qz/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 2,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-26T05:40:15.815569+00:00"
   }
 ]
