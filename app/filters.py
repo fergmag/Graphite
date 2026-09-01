@@ -139,15 +139,25 @@ def negative_colorway_filter(title_lower: str, query: str) -> bool:
 def search_terms_for_query(query: str) -> List[str]:
     """Return search terms to try for a normalized query.
 
-    Sellers often use abbreviations (j97 tmb) rather than the canonical name
-    (j97 timber) that normalize_query produces. Returns [canonical, abbrev]
-    so scrapers can try both and merge results.
+    Returns [canonical, abbrev, bare_code] so scrapers cast a wide net:
+    - "j97 moss" → ["j97 moss", "j97 mos", "j97"]
+    - "j110 darkstone" → ["j110 darkstone", "j110"]
+    - "j65 brick" → ["j65 brick", "j65 brk", "j65"]
+
+    Bare model code catches listings where sellers omit the colorway name
+    entirely (very common on eBay). Display-time colorway filter handles
+    any cross-colorway noise that gets saved to DB.
     """
     terms = [query]
     for full, code in _ALIAS_TO_CODE.items():
         if full in query:
             terms.append(query.replace(full, code))
             break  # only one colorway per model typically
+    code_match = _NUMERIC_CODE_RE.search(query)
+    if code_match:
+        bare = code_match.group(1).lower()
+        if bare not in terms:
+            terms.append(bare)
     return terms
 
 
