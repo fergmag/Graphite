@@ -1,5 +1,21 @@
 [
   {
+    "id": 718,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket XL J97 PTL Gray Petrol Blanket Lined Bomber Y2k",
+    "price": 252.98,
+    "url": "https://www.ebay.com/itm/398348345396?_skw=carhartt+j97+petrol&hash=item5cbf696034:g:cC0AAeSw7SlqlyOQ",
+    "photo": "https://i.ebayimg.com/images/g/cC0AAeSw7SlqlyOQ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-02T00:08:53.411424+00:00"
+  },
+  {
     "id": 717,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:32.831931+00:00"
-  },
-  {
-    "id": 283,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Mens Small Carhartt Twill Work Jacket Midweight Quilted Nylon Lined J293 KHI",
-    "price": 46.74,
-    "url": "https://www.ebay.com/itm/407169398785?_skw=carhartt+j97+moss&hash=item5ecd2ff801:g:oUMAAeSwQHtpxHIp",
-    "photo": "https://i.ebayimg.com/images/g/oUMAAeSwQHtpxHIp/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:32.823543+00:00"
   }
 ]
