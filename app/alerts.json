@@ -1,5 +1,37 @@
 [
   {
+    "id": 739,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt Twill Work Jacket Large Midweight Quilted Nylon Lined J293 BLACK",
+    "price": 94.0,
+    "url": "https://www.ebay.com/itm/257210751091?_skw=carhartt+j97+ptl&hash=item3be2f49873:g:Jl8AAeSw3lxpGVPn",
+    "photo": "https://i.ebayimg.com/images/g/Jl8AAeSw3lxpGVPn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-02T18:09:06.388299+00:00"
+  },
+  {
+    "id": 738,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vtg Carhartt Detroit Jacket J97 PTL Blanket Lined Men 2XLT Grey Rio Tint G2U",
+    "price": 90.2,
+    "url": "https://www.ebay.com/itm/178204622661?_skw=carhartt+j97+ptl&hash=item297dd2bf45:g:d3wAAOSwgrloWU5H",
+    "photo": "https://i.ebayimg.com/images/g/d3wAAOSwgrloWU5H/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-02T18:09:06.311247+00:00"
+  },
+  {
     "id": 737,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:47.079780+00:00"
-  },
-  {
-    "id": 262,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Carhartt Red Burgundy Men’s XlL Activewear Jacket With Hood Vintage 90s Heavy",
-    "price": 125.0,
-    "url": "https://www.ebay.com/itm/800373646233?_skw=carhartt+j97+burgundy&hash=itemba59fca399:g:klcAAeSwEFNqXVVM",
-    "photo": "https://i.ebayimg.com/images/g/klcAAeSwEFNqXVVM/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:47.074011+00:00"
-  },
-  {
-    "id": 263,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "VTG Carhartt Jacket Hooded Burgundy Men's Size XL Full Zip Workwear USA Made",
-    "price": 108.0,
-    "url": "https://www.ebay.com/itm/157637576992?_skw=carhartt+j97+burgundy&hash=item24b3ee8920:g:EYkAAeSwI59pdqVI",
-    "photo": "https://i.ebayimg.com/images/g/EYkAAeSwI59pdqVI/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:47.068276+00:00"
   }
 ]
