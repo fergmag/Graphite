@@ -1,5 +1,21 @@
 [
   {
+    "id": 737,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Super rare Vintage Burgundy Wine Carhartt JQ246 hooded jacket Size XXL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/236835603423?_skw=carhartt+j97+burgundy&hash=item37248083df:g:SOUAAeSw-8pqE5w7",
+    "photo": "https://i.ebayimg.com/images/g/SOUAAeSw-8pqE5w7/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-02T18:08:28.319510+00:00"
+  },
+  {
     "id": 736,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:47.068276+00:00"
-  },
-  {
-    "id": 264,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Carhartt burgundy jacket with hood, size L Measurements ( #workwear #outdoor",
-    "price": 100.0,
-    "url": "https://www.ebay.com/itm/358873098575?_skw=carhartt+j97+burgundy&hash=item538e80e94f:g:VBQAAeSwPAZqbrOu",
-    "photo": "https://i.ebayimg.com/images/g/VBQAAeSwPAZqbrOu/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:47.062148+00:00"
   }
 ]
