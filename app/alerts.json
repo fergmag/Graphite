@@ -1,5 +1,21 @@
 [
   {
+    "id": 734,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage 90s J76 CMT CARHARTT Detroit Workwear Jacket RARE JAPAN",
+    "price": 520.0,
+    "url": "https://www.ebay.com/itm/389887099371?_skw=carhartt+j76&hash=item5ac71501eb:g:qUoAAeSwDe5p3Y~A",
+    "photo": "https://i.ebayimg.com/images/g/qUoAAeSwDe5p3Y~A/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-02T12:11:12.427526+00:00"
+  },
+  {
     "id": 733,
     "query": "j97 petrol",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:47.048519+00:00"
-  },
-  {
-    "id": 267,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Rare J43 Light Fade Blanket Lined Burgundy Detroit St Carhartt Jacket Size Large",
-    "price": 850.0,
-    "url": "https://www.ebay.com/itm/128016124668?_skw=carhartt+j97+burgundy&hash=item1dce5b0afc:g:F4UAAeSw3BxqdnFX",
-    "photo": "https://i.ebayimg.com/images/g/F4UAAeSw3BxqdnFX/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:47.041993+00:00"
   }
 ]
