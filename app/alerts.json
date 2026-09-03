@@ -1,5 +1,21 @@
 [
   {
+    "id": 809,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men’s eggplant purple burgundy Work Jacket Corduroy Collar Zip XL",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/800607059829?_skw=carhartt+j97+burgundy&hash=itemba67e63f75:g:il8AAeSw7BNqmYz0",
+    "photo": "https://i.ebayimg.com/images/g/il8AAeSw7BNqmYz0/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T18:08:39.326603+00:00"
+  },
+  {
     "id": 808,
     "query": "j97 moss",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:53:21.739445+00:00"
-  },
-  {
-    "id": 192,
-    "query": "jb0866",
-    "source": "grailed",
-    "title": "Carhartt JB0866",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/92930855",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/781b3189eaa94bc481984502e21ef3ae",
-    "casp": 750.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:53:21.732897+00:00"
   }
 ]
