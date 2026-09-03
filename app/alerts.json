@@ -1,5 +1,21 @@
 [
   {
+    "id": 795,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket J97 Moss Green | Blanket Lined Workwear Coat | Rare Vintage Unisex Jacket",
+    "price": 99.0,
+    "url": "https://www.etsy.com/listing/4563114546/carhartt-moss-green-workwear-jacket-mens",
+    "photo": "https://i.etsystatic.com/66477524/r/il/c441b1/8483045951/il_570xN.8483045951_gxad.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T06:07:40.816932+00:00"
+  },
+  {
     "id": 794,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T11:52:17.520441+00:00"
-  },
-  {
-    "id": 206,
-    "query": "j97 timber",
-    "source": "ebay",
-    "title": "Carhartt Hooded Flannel Shirt Jacket 4XL Green Check Workwear XXXXL Lumber",
-    "price": 37.89,
-    "url": "https://www.ebay.com/itm/188865418711?_skw=carhartt+j97+timber&hash=item2bf94195d7:g:9f4AAeSwxahp78cf",
-    "photo": "https://i.ebayimg.com/images/g/9f4AAeSwxahp78cf/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T11:51:27.733255+00:00"
   }
 ]
