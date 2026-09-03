@@ -1,5 +1,21 @@
 [
   {
+    "id": 797,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Rare Vtg Carhartt J97 TMB Detroit Blanket Lined Jacket Size XL Gray Tombstone",
+    "price": 355.49,
+    "url": "https://www.ebay.com/itm/198614539164?_skw=carhartt+j97+tmb&hash=item2e3e595b9c:g:9msAAeSwdK5qmO8i",
+    "photo": "https://i.ebayimg.com/images/g/9msAAeSwdK5qmO8i/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T06:09:16.416411+00:00"
+  },
+  {
     "id": 796,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:53:02.382571+00:00"
-  },
-  {
-    "id": 204,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Medium Graphite 1996",
-    "price": 600.0,
-    "url": "https://www.grailed.com/listings/97214266",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/e2e75d2e8fb44f32b459f204f8c4d5eb",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:53:02.379175+00:00"
   }
 ]
