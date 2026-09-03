@@ -1,5 +1,21 @@
 [
   {
+    "id": 796,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "VTG Carhartt Jacket Thermal Lined Hooded Full Zip Faded Burgundy Men's Size XL",
+    "price": 65.0,
+    "url": "https://www.ebay.com/itm/377466974672?_skw=carhartt+j97+burgundy&hash=item57e2c8f1d0:g:UcYAAeSwIR1qmPyu",
+    "photo": "https://i.ebayimg.com/images/g/UcYAAeSwIR1qmPyu/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T06:08:11.108953+00:00"
+  },
+  {
     "id": 795,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:53:02.379175+00:00"
-  },
-  {
-    "id": 205,
-    "query": "j43 hunter green",
-    "source": "grailed",
-    "title": "Carhartt Jacket Adult XL Green Detroit Work wear J43 HTG Mens",
-    "price": 856.0,
-    "url": "https://www.grailed.com/listings/104585551",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/fd9900aa514045f0a6adb1a059ec1e19",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T11:52:17.520441+00:00"
   }
 ]
