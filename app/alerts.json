@@ -1,5 +1,21 @@
 [
   {
+    "id": 751,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Burgundy Rain Defender Relaxed Fit Heavyweight Jacket W/hood Mens Med",
+    "price": 74.99,
+    "url": "https://www.ebay.com/itm/800603012699?_skw=carhartt+j97+burgundy&hash=itemba67a87e5b:g:elAAAeSwoxhqmGck",
+    "photo": "https://i.ebayimg.com/images/g/elAAAeSwoxhqmGck/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T00:08:18.510611+00:00"
+  },
+  {
     "id": 750,
     "query": "j97 moss",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-30T23:50:47.159726+00:00"
-  },
-  {
-    "id": 250,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Vintage Carhartt J06BRG Hooded Jacket Brown Quilted Lined USA XL Regular",
-    "price": 262.96,
-    "url": "https://www.ebay.com/itm/336495558231?_skw=carhartt+j97+brg&hash=item4e58b2be57:g:NQIAAeSwIpVpk~9v",
-    "photo": "https://i.ebayimg.com/images/g/NQIAAeSwIpVpk~9v/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 4,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-30T23:50:47.153661+00:00"
   }
 ]
