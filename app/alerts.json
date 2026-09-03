@@ -1,5 +1,21 @@
 [
   {
+    "id": 802,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Green Carhartt Plaid Blanket Lined Jacket J43 HTG XLT X-Large Tall",
+    "price": 359.0,
+    "url": "https://www.ebay.com/itm/257720481614?_skw=carhartt+j43+htg&hash=item3c0156774e:g:G44AAeSwNXFqHsdM",
+    "photo": "https://i.ebayimg.com/images/g/G44AAeSwNXFqHsdM/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T12:10:32.315618+00:00"
+  },
+  {
     "id": 801,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:53:02.397371+00:00"
-  },
-  {
-    "id": 199,
-    "query": "jb0817",
-    "source": "ebay",
-    "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
-    "price": 1790.0,
-    "url": "https://www.ebay.com/itm/318089415631?_skw=carhartt+jb0817&hash=item4a0f9b4bcf:g:-E8AAeSwO05pzNto",
-    "photo": "https://i.ebayimg.com/images/g/-E8AAeSwO05pzNto/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:53:02.393709+00:00"
   }
 ]
