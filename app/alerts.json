@@ -1,5 +1,37 @@
 [
   {
+    "id": 800,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket  Chocolate Brown",
+    "price": 65.0,
+    "url": "https://www.etsy.com/listing/4565558914/carhartt-j97-detroit-jacket-chocolate",
+    "photo": "https://i.etsystatic.com/67203400/r/il/1cd68b/8501092255/il_570xN.8501092255_9r5i.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T12:06:56.120446+00:00"
+  },
+  {
+    "id": 799,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket L Mens Brown J97 CML Blanket Lined Distressed Workwear Psych Patches",
+    "price": 370.0,
+    "url": "https://www.grailed.com/listings/104840050",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/e35163087a9b45aa942ada8d10f044e2",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-03T12:06:55.816993+00:00"
+  },
+  {
     "id": 798,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:53:02.390830+00:00"
-  },
-  {
-    "id": 201,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Graphite",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/87389181",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/c73587c653c34c4dba33ac928041fb7e",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:53:02.388327+00:00"
-  },
-  {
-    "id": 202,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Graphite",
-    "price": 600.0,
-    "url": "https://www.grailed.com/listings/89386324",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/abac44b14591481ca1276f731472b76c",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:53:02.385707+00:00"
   }
 ]
