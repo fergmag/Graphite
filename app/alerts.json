@@ -1,5 +1,21 @@
 [
   {
+    "id": 896,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 HTG Detroit Grail Jacket Faded Distressed Men Large Reg",
+    "price": 462.49,
+    "url": "https://www.ebay.com/itm/366649653565?_skw=carhartt+j43&hash=item555e05b93d:g:2QoAAeSwrmBqm0Qw",
+    "photo": "https://i.ebayimg.com/images/g/2QoAAeSwrmBqm0Qw/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-04T22:36:33.926082+00:00"
+  },
+  {
     "id": 895,
     "query": "j97 moss",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:58:19.489235+00:00"
-  },
-  {
-    "id": 105,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Rare Carhartt Moss Green Detroit Jacket J76 Mos Short Length J97",
-    "price": 879.95,
-    "url": "https://www.ebay.com/itm/407152009259?_skw=carhartt+j76+moss&hash=item5ecc26a02b:g:QBMAAeSwO6xqg4rH",
-    "photo": "https://i.ebayimg.com/images/g/QBMAAeSwO6xqg4rH/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:58:19.468429+00:00"
   }
 ]
