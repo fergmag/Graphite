@@ -1,5 +1,37 @@
 [
   {
+    "id": 925,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Carhartt Detroit Jacket J97 PTL Petrol Blue Canvas Blanket Lined Mens Medium Y2K",
+    "price": 497.0,
+    "url": "https://www.etsy.com/listing/4569596972/carhartt-detroit-jacket-j97-ptl-petrol",
+    "photo": "https://i.etsystatic.com/25866292/r/il/c0bb4b/8481023838/il_570xN.8481023838_1ylq.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T18:08:49.917248+00:00"
+  },
+  {
+    "id": 924,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens Large Grey Petrol Distressed Faded J97",
+    "price": 259.98,
+    "url": "https://www.ebay.com/itm/128063923599?_skw=carhartt+j97+petrol&hash=item1dd134658f:g:poMAAeSwc59qnEaR",
+    "photo": "https://i.ebayimg.com/images/g/poMAAeSwc59qnEaR/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T18:08:49.818246+00:00"
+  },
+  {
     "id": 923,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.368393+00:00"
-  },
-  {
-    "id": 76,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Moss Green” J97 MOS",
-    "price": 544.49,
-    "url": "https://www.etsy.com/listing/4557722281/vintage-carhartt-blanket-lined-detroit",
-    "photo": "https://i.etsystatic.com/27753259/r/il/3e2dc0/8443981591/il_570xN.8443981591_5pmn.jpg",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.360160+00:00"
-  },
-  {
-    "id": 77,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Carhartt J97 Plaid Detroit Jacket Moss Green",
-    "price": 169.0,
-    "url": "https://www.etsy.com/listing/4302603335/carhartt-j97-plaid-detroit-jacket-moss",
-    "photo": "https://i.etsystatic.com/58445834/r/il/0b39e9/6847994280/il_570xN.6847994280_8l29.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.353494+00:00"
   }
 ]
