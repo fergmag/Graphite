@@ -1,5 +1,37 @@
 [
   {
+    "id": 902,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Carhartt J97 Plaid Detroit Jacket Crimson Red Street Wear Outer Wear Gift",
+    "price": 120.0,
+    "url": "https://www.etsy.com/listing/4554359913/carhartt-j97-plaid-detroit-jacket",
+    "photo": "https://i.etsystatic.com/66376665/r/il/5b41cc/8371438984/il_570xN.8371438984_mfh3.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T00:06:50.818689+00:00"
+  },
+  {
+    "id": 901,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Brown Detroit J97 TMB USA Workwear",
+    "price": 511.0,
+    "url": "https://www.grailed.com/listings/102972350",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/3710d789b57e494f9496931ae10f1039",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T00:06:50.734476+00:00"
+  },
+  {
     "id": 900,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.197378+00:00"
-  },
-  {
-    "id": 99,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Moss Green 2006",
-    "price": 523.0,
-    "url": "https://www.grailed.com/listings/87520127",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/f5e1f513439b47f69ff2d7f8e6c800b5",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.188767+00:00"
-  },
-  {
-    "id": 100,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Mos // J97 Moss Green 2006",
-    "price": 523.0,
-    "url": "https://www.grailed.com/listings/87630676",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/0bee339618f84a61a111e5a0b4992443",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.179605+00:00"
   }
 ]
