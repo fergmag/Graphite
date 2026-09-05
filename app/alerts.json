@@ -1,5 +1,37 @@
 [
   {
+    "id": 923,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Carhartt J97 MOS Detroit Jacket Moss Green Blanket Lined Mens Large Regular Y2K",
+    "price": 398.0,
+    "url": "https://www.etsy.com/listing/4569594534/carhartt-j97-mos-detroit-jacket-moss",
+    "photo": "https://i.etsystatic.com/25866292/r/il/da4e96/8528909661/il_570xN.8528909661_8llo.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T18:06:54.318770+00:00"
+  },
+  {
+    "id": 922,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Vintage Carharttt J97 MOS arctic quilted line jacket",
+    "price": 198.0,
+    "url": "https://www.grailed.com/listings/105051446",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/88f17b47e77542299c05a70145f2ead4",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T18:06:54.014408+00:00"
+  },
+  {
     "id": 921,
     "query": "j110 darkstone",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.353494+00:00"
-  },
-  {
-    "id": 78,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Carhartt J97 Detroit Jacket MOS Moss Green Workwear Jacket",
-    "price": 210.0,
-    "url": "https://www.etsy.com/listing/4552264376/carhartt-j97-detroit-jacket-mos-moss",
-    "photo": "https://i.etsystatic.com/67274771/r/il/029e8a/8365122374/il_570xN.8365122374_bfby.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.345777+00:00"
-  },
-  {
-    "id": 79,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Carhartt J97 Detroit Moss Green Jacket",
-    "price": 199.0,
-    "url": "https://www.etsy.com/listing/4553462461/carhartt-j97-detroit-moss-green-jacket",
-    "photo": "https://i.etsystatic.com/64147012/r/il/64d5ba/8402745018/il_570xN.8402745018_jxr6.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.337209+00:00"
   }
 ]
