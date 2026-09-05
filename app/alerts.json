@@ -1,5 +1,21 @@
 [
   {
+    "id": 921,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "GRAIL Carhartt J110 DST Detroit blanket lined jacket  mens size 2x- Made in USA",
+    "price": 1149.99,
+    "url": "https://www.ebay.com/itm/237051418905?_skw=carhartt+j110&hash=item37315d9919:g:tyIAAeSwGGJqnCx0",
+    "photo": "https://i.ebayimg.com/images/g/tyIAAeSwGGJqnCx0/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T18:05:55.670053+00:00"
+  },
+  {
     "id": 920,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.337209+00:00"
-  },
-  {
-    "id": 80,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &#39;MOSS GREEN&#39; Unisex Jacket",
-    "price": 130.0,
-    "url": "https://www.etsy.com/listing/4469241781/carhartt-j97-detroit-jacket-moss-green",
-    "photo": "https://i.etsystatic.com/63482560/r/il/8a520a/8390996984/il_570xN.8390996984_fz2q.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.328761+00:00"
   }
 ]
