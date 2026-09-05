@@ -1,5 +1,37 @@
 [
   {
+    "id": 900,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11DST Men’s XL",
+    "price": 168.29,
+    "url": "https://www.etsy.com/listing/4559567938/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/8a9f71/8457150025/il_570xN.8457150025_mrwq.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T00:05:52.875065+00:00"
+  },
+  {
+    "id": 899,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt JB1998 Darkstone Denim Jacket Blanket Lined USA Large Tall",
+    "price": 192.0,
+    "url": "https://www.etsy.com/listing/4554824594/vintage-carhartt-jb1998-darkstone-denim",
+    "photo": "https://i.etsystatic.com/10356060/r/il/290df3/8422501337/il_570xN.8422501337_o0eg.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T00:05:52.869092+00:00"
+  },
+  {
     "id": 898,
     "query": "j65 brick",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.179605+00:00"
-  },
-  {
-    "id": 101,
-    "query": "jr0115",
-    "source": "ebay",
-    "title": "90s Carhartt Aztec JR0115 Hooded Zip Up Jacket  Thermal Lined Royal Blue Jacket",
-    "price": 469.0,
-    "url": "https://www.ebay.com/itm/307156014156?_skw=carhartt+jr0115&hash=item4783ecd44c:g:TUoAAeSwJ9tqlgjJ",
-    "photo": "https://i.ebayimg.com/images/g/TUoAAeSwJ9tqlgjJ/s-l225.jpg",
-    "casp": 500.0,
-    "deal_score": 2,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:00:01.009078+00:00"
-  },
-  {
-    "id": 102,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Usa L Xlcarhartt Detroit J76 Mos 90S J97",
-    "price": 1566.1,
-    "url": "https://www.ebay.com/itm/407152003015?_skw=carhartt+j76+mos&hash=item5ecc2687c7:g:bQsAAeSwYQVqg4n9",
-    "photo": "https://i.ebayimg.com/images/g/bQsAAeSwYQVqg4n9/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:58:19.507731+00:00"
   }
 ]
