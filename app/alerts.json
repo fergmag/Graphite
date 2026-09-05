@@ -1,5 +1,21 @@
 [
   {
+    "id": 920,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Carhartt Work Jacket Brown Blanket Lined Canvas J97 DKB Size 2XL Mens",
+    "price": 586.0,
+    "url": "https://www.grailed.com/listings/103142251",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/3cc363c29bf749f5b29ba6e505a594d0",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T12:06:44.714564+00:00"
+  },
+  {
     "id": 919,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.328761+00:00"
-  },
-  {
-    "id": 81,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Blanket Lined Jacket J97 &quot;MOSS GREEN&quot; | Rare Workwear Coat | Unisex Vintage Jacket",
-    "price": 233.33,
-    "url": "https://www.etsy.com/listing/4520391524/vintage-carhartt-detroit-blanket-lined",
-    "photo": "https://i.etsystatic.com/66353992/r/il/654abd/8125882846/il_570xN.8125882846_3mfc.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.320814+00:00"
   }
 ]
