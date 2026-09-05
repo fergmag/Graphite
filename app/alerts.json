@@ -1,5 +1,21 @@
 [
   {
+    "id": 916,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Jefferson Quick Duck Traditional Jacket  Charcoal Gray Mens Size 2XL",
+    "price": 101.25,
+    "url": "https://www.ebay.com/itm/157877112752?_skw=carhartt+j97+ptl&hash=item24c2358fb0:g:I0gAAeSw6oxp8CC2",
+    "photo": "https://i.ebayimg.com/images/g/I0gAAeSw6oxp8CC2/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T06:08:43.109902+00:00"
+  },
+  {
     "id": 915,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.288833+00:00"
-  },
-  {
-    "id": 85,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Vintage Carhartt J97 MOS detroit jacket.",
-    "price": 530.0,
-    "url": "https://www.grailed.com/listings/101517745",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/c915a622724b4230a6949a8b6d499354",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.281831+00:00"
   }
 ]
