@@ -1,5 +1,21 @@
 [
   {
+    "id": 898,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "VERY RARE Vintage 2001 Carhartt J65 BRK red Detroit Work Wear Jacket Sz. 2XL",
+    "price": 989.0,
+    "url": "https://www.ebay.com/itm/377413537433?_skw=carhartt+j65+brk&hash=item57df998e99:g:JlUAAeSwtxVqc3-w",
+    "photo": "https://i.ebayimg.com/images/g/JlUAAeSwtxVqc3-w/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-05T00:04:34.015802+00:00"
+  },
+  {
     "id": 897,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-08-31T17:58:19.507731+00:00"
-  },
-  {
-    "id": 103,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Rare Carhartt Moss Green Detroit Jacket J76 Mos Short Length J97",
-    "price": 879.95,
-    "url": "https://www.ebay.com/itm/407152009259?_skw=carhartt+j76+mos&hash=item5ecc26a02b:g:QBMAAeSwO6xqg4rH",
-    "photo": "https://i.ebayimg.com/images/g/QBMAAeSwO6xqg4rH/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-08-31T17:58:19.497889+00:00"
   }
 ]
