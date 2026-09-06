@@ -1,5 +1,37 @@
 [
   {
+    "id": 966,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Chestnut Brown J43 Detroit Paper Tag Size L Jacket",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/237053701914?_skw=carhartt+j43+chestnut&hash=item3731806f1a:g:tNwAAeSwG7ZqnaOU",
+    "photo": "https://i.ebayimg.com/images/g/tNwAAeSwG7ZqnaOU/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T18:09:39.616567+00:00"
+  },
+  {
+    "id": 965,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Vintage 90s Carhartt Chestnut Brown J43 Detroit Jacket",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/105170286",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/df207674992f4087aa6614ace73ad379",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T18:09:39.604118+00:00"
+  },
+  {
     "id": 964,
     "query": "jr0115",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:02:13.363657+00:00"
-  },
-  {
-    "id": 35,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Carhartt J97 PTL Washed Canvas Jacket.",
-    "price": 2068.0,
-    "url": "https://www.grailed.com/listings/94982583",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/807b241499fd4ba9b59f869b8be6e5c4",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.360505+00:00"
-  },
-  {
-    "id": 36,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "J97 PTL Carhartt Detroit Jacket",
-    "price": 600.0,
-    "url": "https://www.grailed.com/listings/98440533",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/6085a8b1c0514e00ace5869f177bbc68",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.356257+00:00"
   }
 ]
