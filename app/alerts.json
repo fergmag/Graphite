@@ -1,5 +1,37 @@
 [
   {
+    "id": 959,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Vintage Faded Thrashed Carhartt Detroit Jacket J97 CML",
+    "price": 1200.0,
+    "url": "https://www.grailed.com/listings/105096774",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/305004090ed545a0ac0b3343815375ad",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T06:06:45.997025+00:00"
+  },
+  {
+    "id": 958,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket Faded Moss Green J97 MOS",
+    "price": 388.0,
+    "url": "https://www.grailed.com/listings/105101580",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/8af151d9c79649148cf5cc5671719130",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T06:06:45.990239+00:00"
+  },
+  {
     "id": 957,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:02:13.339555+00:00"
-  },
-  {
-    "id": 42,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Carhartt J97 PTL Medium",
-    "price": 650.0,
-    "url": "https://www.grailed.com/listings/100529734",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/45e81d5cb31b4d688155ed8dd048237e",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.336020+00:00"
-  },
-  {
-    "id": 43,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "2000s Vintage Carhartt Detroit Jacket J97 PTL",
-    "price": 685.0,
-    "url": "https://www.grailed.com/listings/101349874",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/f755a176292d4d47b3d984320400add8",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.331481+00:00"
   }
 ]
