@@ -1,5 +1,37 @@
 [
   {
+    "id": 927,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Detroit Jacket JB0817 Graphite Size Large Faded Distressed",
+    "price": 899.95,
+    "url": "https://www.ebay.com/itm/206489133339?_skw=carhartt+jb0817&hash=item3013b6211b:g:7mwAAeSwseNqfk8Z",
+    "photo": "https://i.ebayimg.com/images/g/7mwAAeSwseNqfk8Z/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T00:03:59.196006+00:00"
+  },
+  {
+    "id": 926,
+    "query": "jb0817",
+    "source": "grailed",
+    "title": "Carhartt JB0817 Graphite Medium",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/103028217",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/7d1aec772c274b79867c996319d24c38",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T00:03:59.187097+00:00"
+  },
+  {
     "id": 925,
     "query": "j97 petrol",
     "source": "etsy",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:01:35.383601+00:00"
-  },
-  {
-    "id": 74,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Distressed Carhartt moss green canvas work jacket  J97 Mos Detroit men’s - plaid blanket lining - work clothes - workwear jacket",
-    "price": 250.0,
-    "url": "https://www.etsy.com/listing/4522661744/distressed-carhartt-moss-green-canvas",
-    "photo": "https://i.etsystatic.com/6681805/r/il/f2db89/8189763953/il_570xN.8189763953_c1ex.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.376479+00:00"
-  },
-  {
-    "id": 75,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Jacket Moss Green J97 MOS Men&#39;s Sz M",
-    "price": 699.99,
-    "url": "https://www.etsy.com/listing/4524302505/vintage-carhartt-detroit-jacket-moss",
-    "photo": "https://i.etsystatic.com/18381065/r/il/277d67/8153582012/il_570xN.8153582012_9n8z.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:01:35.368393+00:00"
   }
 ]
