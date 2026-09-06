@@ -1,24 +1,5 @@
 [
   {
-    "id": "2281d989a4",
-    "title": "JR0005",
-    "size": "XL",
-    "price": 550.0,
-    "description": "1994 JR0005 Black Aztec",
-    "photos": [
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720318/graphite/mlmfzjyztrjasdboyqwo.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720319/graphite/m1knqahxdthf6rnic62s.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720320/graphite/oe2c7txjzwtlquk6ro6n.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720322/graphite/yibxcqzdzp6soleoxguq.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720322/graphite/oro4ht8k3iqptxq881ur.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720323/graphite/ow4xy6h5ybmp4ug6ovtm.jpg"
-    ],
-    "sold": false,
-    "created_at": "2026-09-06",
-    "position": -1,
-    "condition": ""
-  },
-  {
     "id": "759681421d",
     "title": "J97 MOS",
     "size": "S",
