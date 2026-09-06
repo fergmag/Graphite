@@ -1,5 +1,24 @@
 [
   {
+    "id": "2281d989a4",
+    "title": "JR0005",
+    "size": "XL",
+    "price": 550.0,
+    "description": "1994 JR0005 Black Aztec",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720318/graphite/mlmfzjyztrjasdboyqwo.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720319/graphite/m1knqahxdthf6rnic62s.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720320/graphite/oe2c7txjzwtlquk6ro6n.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720322/graphite/yibxcqzdzp6soleoxguq.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720322/graphite/oro4ht8k3iqptxq881ur.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1788720323/graphite/ow4xy6h5ybmp4ug6ovtm.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-09-06",
+    "position": -1,
+    "condition": ""
+  },
+  {
     "id": "759681421d",
     "title": "J97 MOS",
     "size": "S",
@@ -14,8 +33,8 @@
     ],
     "sold": true,
     "created_at": "2026-08-30",
-    "position": -1,
-    "condition": ""
+    "position": 0,
+    "condition": null
   },
   {
     "id": "f2c367059e",
@@ -33,7 +52,7 @@
     ],
     "sold": false,
     "created_at": "2026-08-30",
-    "position": 0,
+    "position": 1,
     "condition": null
   },
   {
@@ -51,7 +70,7 @@
     ],
     "sold": true,
     "created_at": "2026-08-12",
-    "position": 1,
+    "position": 2,
     "condition": null
   },
   {
@@ -71,7 +90,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-23",
-    "position": 2,
+    "position": 3,
     "condition": null
   },
   {
@@ -88,7 +107,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-15",
-    "position": 3,
+    "position": 4,
     "condition": null
   },
   {
@@ -106,7 +125,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-09",
-    "position": 4,
+    "position": 5,
     "condition": null
   },
   {
@@ -124,7 +143,7 @@
     ],
     "sold": false,
     "created_at": "2026-07-09",
-    "position": 5,
+    "position": 6,
     "condition": null
   },
   {
@@ -141,7 +160,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 6,
+    "position": 7,
     "condition": null
   },
   {
@@ -162,7 +181,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 7,
+    "position": 8,
     "condition": null
   }
 ]
