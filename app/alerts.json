@@ -1,5 +1,21 @@
 [
   {
+    "id": 960,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 CHT Traditional Jacket – Men's Large Regular",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/307165437823?_skw=carhartt+j43+cht&hash=item47847c9f7f:g:~QwAAeSwmvhqnPDI",
+    "photo": "https://i.ebayimg.com/images/g/~QwAAeSwmvhqnPDI/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T06:09:29.509753+00:00"
+  },
+  {
     "id": 959,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:02:13.342693+00:00"
-  },
-  {
-    "id": 41,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Vintage Carhartt Detroit Jacket J97 PTL Faded Black 90s",
-    "price": 575.0,
-    "url": "https://www.grailed.com/listings/99376754",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/65cdc9b893784cf296baca19c1c1d9cd",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.339555+00:00"
   }
 ]
