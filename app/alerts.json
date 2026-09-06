@@ -1,5 +1,21 @@
 [
   {
+    "id": 964,
+    "query": "jr0115",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt JR0115 Aztec Southwestern Hooded Active Jacket Blue Mens XL",
+    "price": 674.0,
+    "url": "https://www.grailed.com/listings/105142646",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/d87634c013294a5d957daf1974222fd4",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-06T12:05:30.581756+00:00"
+  },
+  {
     "id": 963,
     "query": "j76 moss",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T00:02:13.356257+00:00"
-  },
-  {
-    "id": 37,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "VINTAGE Carhartt Jacket Mens M Gray 90s USA J97 PTL USA Bomber Lined Canvas Coal Gray Coat",
-    "price": 789.0,
-    "url": "https://www.grailed.com/listings/96115247",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/12dae8175a4b4afcbde0b4e26e214a8f",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T00:02:13.352722+00:00"
   }
 ]
