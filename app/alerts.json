@@ -1,5 +1,21 @@
 [
   {
+    "id": 1187,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J43 BRG",
+    "price": 540.0,
+    "url": "https://www.grailed.com/listings/103939015",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/fe356bd1420d421db2655af9797ba663",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-08T00:10:08.075762+00:00"
+  },
+  {
     "id": 1186,
     "query": "j43 chestnut",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T06:43:23.059132+00:00"
-  },
-  {
-    "id": 687,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Kunichi Nomura Noriichi Nomura 90S Carhartt Detroit Jacket J76Cmt Xxl Men JPN Li",
-    "price": 949.9399999999999,
-    "url": "https://www.ebay.com/itm/398033905617?_skw=carhartt+j76&hash=item5cacab67d1:g:d6QAAeSw-JNqJDIj",
-    "photo": "https://i.ebayimg.com/images/g/d6QAAeSw-JNqJDIj/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T06:43:23.050830+00:00"
   }
 ]
