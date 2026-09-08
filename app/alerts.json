@@ -1,5 +1,21 @@
 [
   {
+    "id": 1191,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Carhartt J97 CML brown Detroit work wear jacket",
+    "price": 300.0,
+    "url": "https://www.grailed.com/listings/105288772",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/a7b7b5cbfc984d359f871a739e4829e1",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-08T06:06:54.727869+00:00"
+  },
+  {
     "id": 1190,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T06:43:23.083216+00:00"
-  },
-  {
-    "id": 691,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Kunichi Nomura Special Carhartt Detroit Jacket J76 Cmt Cement M Men JPN Limited",
-    "price": 1339.42,
-    "url": "https://www.ebay.com/itm/287378199127?_skw=carhartt+j76&hash=item42e9135257:g:RPgAAeSw-LRqJDDS",
-    "photo": "https://i.ebayimg.com/images/g/RPgAAeSw-LRqJDDS/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T06:43:23.077011+00:00"
   }
 ]
