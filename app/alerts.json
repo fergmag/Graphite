@@ -1,5 +1,21 @@
 [
   {
+    "id": 1196,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men’s L USA Made Brown Duck Canvas Workwear Coat",
+    "price": 86.97999999999999,
+    "url": "https://www.ebay.com/itm/157715652969?_skw=carhartt+j97+ptl&hash=item24b895e169:g:eCoAAeSwQA9paxFd",
+    "photo": "https://i.ebayimg.com/images/g/eCoAAeSwQA9paxFd/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-08T12:08:50.417205+00:00"
+  },
+  {
     "id": 1195,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-01T06:43:23.137464+00:00"
-  },
-  {
-    "id": 696,
-    "query": "j76 moss",
-    "source": "ebay",
-    "title": "Kunichi Nomura Dead Stock Made In Usa Carhartt J76Cmt Xl Noriichi Nomura Men JPN",
-    "price": 5681.46,
-    "url": "https://www.ebay.com/itm/287378199193?_skw=carhartt+j76&hash=item42e9135299:g:AggAAeSwsD9qJDHZ",
-    "photo": "https://i.ebayimg.com/images/g/AggAAeSwsD9qJDHZ/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-01T06:43:23.131409+00:00"
   }
 ]
