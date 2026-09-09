@@ -141,7 +141,7 @@
       "https://res.cloudinary.com/dniduygdg/image/upload/v1783560387/graphite/gphwc94ytmrxutpbmmwu.jpg",
       "https://res.cloudinary.com/dniduygdg/image/upload/v1783560388/graphite/x6z3x2abijrp9e3ja2bf.jpg"
     ],
-    "sold": false,
+    "sold": true,
     "created_at": "2026-07-09",
     "position": 6,
     "condition": null
