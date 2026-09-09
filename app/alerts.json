@@ -1,5 +1,37 @@
 [
   {
+    "id": 1471,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Deadstock Vintage 1994 Carhartt JB181 Blanket Lined Trucker Jacket Plum Purple",
+    "price": 335.0,
+    "url": "https://www.ebay.com/itm/336785861822?_skw=carhartt+j43&hash=item4e6a006cbe:g:OQoAAeSwZU5qoM9j",
+    "photo": "https://i.ebayimg.com/images/g/OQoAAeSwZU5qoM9j/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-09T06:09:59.816384+00:00"
+  },
+  {
+    "id": 1470,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Vintage carhartt j43 wet detroit jacket",
+    "price": 315.0,
+    "url": "https://www.grailed.com/listings/105386828",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/968799caa0584fb1aba9de5cca69254c",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-09T06:09:59.751997+00:00"
+  },
+  {
     "id": 1469,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-07T00:06:50.367037+00:00"
-  },
-  {
-    "id": 971,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "Rare Carhartt J97PTL Sandstone Plaid Lined Detroit Jacket XL",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/105177497",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/2f619b20a6364d2fb10493a6eeb27446",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:06:50.358548+00:00"
-  },
-  {
-    "id": 970,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "VTG 00’s Big Patch Petrol Grey Carhartt Detroit J97 PTL",
-    "price": 580.0,
-    "url": "https://www.grailed.com/listings/105081730",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/05084bb69e534124b109404b67797bec",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:06:50.354991+00:00"
   }
 ]
