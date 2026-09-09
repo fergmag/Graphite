@@ -1,5 +1,21 @@
 [
   {
+    "id": 1486,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Carhartt J02 Quilted Arctic Jacket Black Distressed Work Size Medium/Large 44 Corduroy Collar Detroit Style Work Coat",
+    "price": 250.0,
+    "url": "https://www.etsy.com/listing/4332352413/carhartt-j02-quilted-arctic-jacket-black",
+    "photo": "https://i.etsystatic.com/6992997/r/il/fdfbdb/7004680902/il_570xN.7004680902_s8wi.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-09T18:09:31.317427+00:00"
+  },
+  {
     "id": 1485,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-07T00:06:50.454515+00:00"
-  },
-  {
-    "id": 986,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "VTG 90s Mens 2XL CARHARTT Blanket Lined Barn Chore Coat Jacket C10 BRG USA MADE",
-    "price": 114.94,
-    "url": "https://www.ebay.com/itm/397229757967?_skw=carhartt+j97+crimson&hash=item5c7cbd160f:g:IUkAAeSwpd9o-v9Z",
-    "photo": "https://i.ebayimg.com/images/g/IUkAAeSwpd9o-v9Z/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:06:50.451352+00:00"
   }
 ]
