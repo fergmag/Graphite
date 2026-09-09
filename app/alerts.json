@@ -1,5 +1,21 @@
 [
   {
+    "id": 1477,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket 90s Detroit J43 CHT Mens Medium Tall Brown Bomber Thrashed HTF",
+    "price": 553.0,
+    "url": "https://www.grailed.com/listings/105430017",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/52710fa633a24d79be7b4f1da6bda6e6",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-09T12:09:49.313809+00:00"
+  },
+  {
     "id": 1476,
     "query": "j97 petrol",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-07T00:06:50.421314+00:00"
-  },
-  {
-    "id": 977,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage Carhartt Shirt Jacket Medium Red Canvas Snap Button Flannel Lined 2XL",
-    "price": 50.0,
-    "url": "https://www.ebay.com/itm/306552877829?_skw=carhartt+j97+crimson&hash=item475ff9b305:g:O6QAAeSwx0Jo8Srz",
-    "photo": "https://i.ebayimg.com/images/g/O6QAAeSwx0Jo8Srz/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:06:50.417747+00:00"
   }
 ]
