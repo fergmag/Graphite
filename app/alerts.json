@@ -1,5 +1,37 @@
 [
   {
+    "id": 1525,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit, M TALL Brown Detroit Blanket Lined J43 CHT  ",
+    "price": 398.38,
+    "url": "https://www.ebay.com/itm/227514605447?_skw=carhartt+j43&hash=item34f8ed5f87:g:aYgAAeSwZoJqogoo",
+    "photo": "https://i.ebayimg.com/images/g/aYgAAeSwZoJqogoo/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-10T06:09:42.310086+00:00"
+  },
+  {
+    "id": 1524,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit, M TALL Brown Detroit Blanket Lined J43 CHT  ",
+    "price": 398.38,
+    "url": "https://www.ebay.com/itm/227514605447?_skw=carhartt+j43+cht&hash=item34f8ed5f87:g:aYgAAeSwZoJqogoo",
+    "photo": "https://i.ebayimg.com/images/g/aYgAAeSwZoJqogoo/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-10T06:09:42.215999+00:00"
+  },
+  {
     "id": 1523,
     "query": "j97 petrol",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-07T00:08:10.974662+00:00"
-  },
-  {
-    "id": 1025,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Carhartt Hooded Fleece Lined Flannel Shacket Jacket Burgundy Check Large",
-    "price": 48.65,
-    "url": "https://www.ebay.com/itm/188594065507?_skw=carhartt+j97+burgundy&hash=item2be9151063:g:tK4AAeSw5WJpr-j8",
-    "photo": "https://i.ebayimg.com/images/g/tK4AAeSw5WJpr-j8/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:08:10.965782+00:00"
-  },
-  {
-    "id": 1024,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Distressed Carhartt Jacket XL Burgundy/ Wine  One Of A Kind.",
-    "price": 790.0,
-    "url": "https://www.ebay.com/itm/198569820194?_skw=carhartt+j97+burgundy&hash=item2e3baf0022:g:mKMAAeSwfP9phq06",
-    "photo": "https://i.ebayimg.com/images/g/mKMAAeSwfP9phq06/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-07T00:08:10.959022+00:00"
   }
 ]
