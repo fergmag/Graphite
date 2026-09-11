@@ -1,5 +1,37 @@
 [
   {
+    "id": 512,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0873 Canvas Blanket Lined USA Made Brown Mens 2XL",
+    "price": 1450.0,
+    "url": "https://www.ebay.com/itm/327315396468?_skw=carhartt+jb0873&hash=item4c35849774:g:RnAAAeSwR7pqg7FN",
+    "photo": "https://i.ebayimg.com/images/g/RnAAAeSwR7pqg7FN/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-11T17:14:17.111702+00:00"
+  },
+  {
+    "id": 511,
+    "query": "jb0873",
+    "source": "grailed",
+    "title": "Carhartt JB0873 Mocha Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/94419939",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/7288e194de0946fab36b98f8a897eab7",
+    "casp": 1000.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-11T17:14:17.106364+00:00"
+  },
+  {
     "id": 510,
     "query": "jb0817",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-08T00:04:51.508816+00:00"
-  },
-  {
-    "id": 489,
-    "query": "j65 blue",
-    "source": "ebay",
-    "title": "vintage carhartt j65 blu sandstone detroit jacket in blue size xl",
-    "price": 1700.0,
-    "url": "https://www.ebay.com/itm/376782222282?_skw=carhartt+j65+blu&hash=item57b9f873ca:g:17cAAeSwlfxpQa-M",
-    "photo": "https://i.ebayimg.com/images/g/17cAAeSwlfxpQa-M/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-08T00:04:51.499462+00:00"
-  },
-  {
-    "id": 490,
-    "query": "j65 blue",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket J65 BLU",
-    "price": 1500.0,
-    "url": "https://www.ebay.com/itm/188018993256?_skw=carhartt+j65+blu&hash=item2bc6ce2868:g:QHoAAeSw1WRpgN96",
-    "photo": "https://i.ebayimg.com/images/g/QHoAAeSw1WRpgN96/s-l225.jpg",
-    "casp": 2500.0,
-    "deal_score": 4,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-08T00:04:51.490903+00:00"
   }
 ]
