@@ -6,7 +6,7 @@
     <title>Graphite{% if page == 'sold' %} — Sold{% endif %}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
       *, *::before, *::after { box-sizing: border-box; }
       :root {
@@ -71,7 +71,7 @@
         justify-content: center;
         background: #F56F27;
         border: none;
-        border-radius: 5px;
+        border-radius: 3px;
         width: 58px;
         height: 58px;
         line-height: 1;
@@ -79,8 +79,8 @@
         gap: 1px;
       }
       .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #4F2911; align-self: flex-start; padding-left: 5px; }
-      .el-symbol { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: #4F2911; }
-      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.08em; color: #4F2911; }
+      .el-symbol { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: #4F2911; }
+      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.18em; color: #4F2911; }
 
       /* ── Nav ── */
       .nav-links {
@@ -325,7 +325,7 @@
 
       /* ── Splash ── */
       #splash { display:flex; opacity:1; transition: opacity 0.5s ease; position:fixed; inset:0; z-index:9999; background:#283238; flex-direction:column; align-items:center; justify-content:center; gap:28px; font-family:'Inter',system-ui,-apple-system,sans-serif; }
-      .splash-logo { width:96px; height:96px; background:#F56F27; border:none; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:800; color:#4F2911; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
+      .splash-logo { width:96px; height:96px; background:#F56F27; border:none; border-radius:5px; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:900; color:#4F2911; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
       .splash-dots { display:flex; gap:7px; animation: splashContentIn 0.4s ease 0.35s both; }
       @keyframes splashContentIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
