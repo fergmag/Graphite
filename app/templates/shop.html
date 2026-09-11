@@ -69,18 +69,18 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 2px solid rgba(255,255,255,0.75);
+        background: #F56F27;
+        border: none;
         border-radius: 5px;
         width: 58px;
         height: 58px;
-        color: #ffffff;
         line-height: 1;
         padding: 4px 0;
         gap: 1px;
       }
-      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #ffffff; align-self: flex-start; padding-left: 5px; }
-      .el-symbol { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
-      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.08em; color: #ffffff; }
+      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #4F2911; align-self: flex-start; padding-left: 5px; }
+      .el-symbol { font-size: 28px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; color: #4F2911; }
+      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.08em; color: #4F2911; }
 
       /* ── Nav ── */
       .nav-links {
@@ -325,7 +325,7 @@
 
       /* ── Splash ── */
       #splash { display:flex; opacity:1; transition: opacity 0.5s ease; position:fixed; inset:0; z-index:9999; background:#283238; flex-direction:column; align-items:center; justify-content:center; gap:28px; font-family:'Inter',system-ui,-apple-system,sans-serif; }
-      .splash-logo { width:96px; height:96px; border:2px solid rgba(255,255,255,0.75); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:800; color:#fff; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
+      .splash-logo { width:96px; height:96px; background:#F56F27; border:none; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:32px; font-weight:800; color:#4F2911; letter-spacing:-0.03em; animation: splashContentIn 0.4s ease 0.15s both; }
       .splash-dots { display:flex; gap:7px; animation: splashContentIn 0.4s ease 0.35s both; }
       @keyframes splashContentIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
       .splash-dot { width:6px; height:6px; border-radius:50%; background:#fff; animation:sdot 1.2s ease-in-out infinite; opacity:0.3; }
