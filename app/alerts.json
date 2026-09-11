@@ -1,5 +1,21 @@
 [
   {
+    "id": 740,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "vintage 90’s carhartt jb1236 firm duck detroit jacket in redwood size medium",
+    "price": 1800.0,
+    "url": "https://www.ebay.com/itm/227472173520?_skw=carhartt+jb1236&hash=item34f665e9d0:g:s3QAAeSwiodqe63q",
+    "photo": "https://i.ebayimg.com/images/g/s3QAAeSwiodqe63q/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-11T17:21:11.372987+00:00"
+  },
+  {
     "id": 739,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-09T00:10:30.332455+00:00"
-  },
-  {
-    "id": 261,
-    "query": "j43 chestnut",
-    "source": "grailed",
-    "title": "Carhartt J43 CHT",
-    "price": 500.0,
-    "url": "https://www.grailed.com/listings/91585268",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/342523bfaca849c29519ab6ab4c832f4",
-    "casp": 600.0,
-    "deal_score": 2,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-09T00:10:30.325855+00:00"
   }
 ]
