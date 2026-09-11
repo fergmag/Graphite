@@ -20,7 +20,7 @@ from app.scrape_etsy import search_etsy
 from app.scrape_whatnot import search_whatnot
 from app.cache import write_cache
 from app.public_view import build_public_payload
-from app.filters import filter_comps, normalize_query, parse_size_from_title, search_terms_for_query
+from app.filters import filter_comps, normalize_query, parse_size_from_title, search_terms_for_query, negative_colorway_filter
 from app.db import list_watches, insert_comps, insert_estimate, insert_alert, clear_old_alerts, insert_refresh_log, get_refresh_log
 
 log = logging.getLogger(__name__)
@@ -136,7 +136,7 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     """
     saved = 0
 
-    # Search with canonical name AND abbreviation to catch sellers using either form
+    # Search with canonical name, abbreviation, and bare model code
     search_aliases = search_terms_for_query(query)
 
     # Grailed sellers reliably include model codes in titles → strict code filter
@@ -168,6 +168,11 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
             continue
         # Skip Etsy listings without a photo — they're almost always scam/spam
         if listing.get("source") == "etsy" and not listing.get("photo"):
+            continue
+        # Reject listings that explicitly name a DIFFERENT colorway at insert time
+        # so the DB stays clean and bell badge counts match what actually displays
+        title_lower = (listing.get("title") or "").lower()
+        if not negative_colorway_filter(title_lower, query):
             continue
         url = listing.get("url", "")
         size = listing.get("size") or parse_size_from_title(listing.get("title", ""))

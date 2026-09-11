@@ -136,28 +136,34 @@ def negative_colorway_filter(title_lower: str, query: str) -> bool:
     return True  # no colorway mentioned at all → keep
 
 
-def search_terms_for_query(query: str) -> List[str]:
+def search_terms_for_query(query: str, include_bare_code: bool = True) -> List[str]:
     """Return search terms to try for a normalized query.
 
-    Returns [canonical, abbrev, bare_code] so scrapers cast a wide net:
+    With include_bare_code=True (default):
     - "j97 moss" → ["j97 moss", "j97 mos", "j97"]
     - "j110 darkstone" → ["j110 darkstone", "j110"]
     - "j65 brick" → ["j65 brick", "j65 brk", "j65"]
 
-    Bare model code catches listings where sellers omit the colorway name
-    entirely (very common on eBay). Display-time colorway filter handles
-    any cross-colorway noise that gets saved to DB.
+    With include_bare_code=False (for Grailed / strict platforms):
+    - "j97 moss" → ["j97 moss", "j97 mos"]
+    - "j110 darkstone" → ["j110 darkstone"]
+
+    Bare model code catches eBay/Depop sellers who omit the colorway name
+    ("Detroit Jacket Moss" not "J97 Moss"). On Grailed, sellers reliably
+    include colorway names, so bare code pulls in wrong-colorway listings
+    and inflates alert counts.
     """
     terms = [query]
     for full, code in _ALIAS_TO_CODE.items():
         if full in query:
             terms.append(query.replace(full, code))
             break  # only one colorway per model typically
-    code_match = _NUMERIC_CODE_RE.search(query)
-    if code_match:
-        bare = code_match.group(1).lower()
-        if bare not in terms:
-            terms.append(bare)
+    if include_bare_code:
+        code_match = _NUMERIC_CODE_RE.search(query)
+        if code_match:
+            bare = code_match.group(1).lower()
+            if bare not in terms:
+                terms.append(bare)
     return terms
 
 
