@@ -1,5 +1,21 @@
 [
   {
+    "id": 1606,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket J97 - Workwear Jacket",
+    "price": 199.9,
+    "url": "https://www.etsy.com/listing/4573125247/vintage-carhartt-detroit-jacket-j97",
+    "photo": "https://i.etsystatic.com/53774804/r/il/b7decc/8555328267/il_570xN.8555328267_4ohf.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-11T12:07:46.618867+00:00"
+  },
+  {
     "id": 1605,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-08T00:04:36.115834+00:00"
-  },
-  {
-    "id": 1106,
-    "query": "j65 brick",
-    "source": "grailed",
-    "title": "Carhartt J65 BRK Large",
-    "price": 1000.0,
-    "url": "https://www.grailed.com/listings/87388942",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/d3e6c83ab7cd4d2bbea59f257548aed2",
-    "casp": 2500.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-08T00:04:36.112313+00:00"
   }
 ]
