@@ -1,5 +1,21 @@
 [
   {
+    "id": 523,
+    "query": "js1237",
+    "source": "grailed",
+    "title": "Carhartt JS1237 Carbon Blue Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805758",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/5a6976244a8b459c940ecef009748085",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-12T00:20:10.696812+00:00"
+  },
+  {
     "id": 522,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-09T00:10:30.591438+00:00"
-  },
-  {
-    "id": 478,
-    "query": "j43 chestnut",
-    "source": "ebay",
-    "title": "Carhartt J43HTG Detroit Jacket Vintage Hunter Green Blanket Lined Size 2XL",
-    "price": 660.99,
-    "url": "https://www.ebay.com/itm/157279358628?_skw=carhartt+j43&hash=item249e948ea4:g:5i0AAeSwfmFosMA9",
-    "photo": "https://i.ebayimg.com/images/g/5i0AAeSwfmFosMA9/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-09T00:10:30.585399+00:00"
   }
 ]
