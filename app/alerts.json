@@ -1,5 +1,37 @@
 [
   {
+    "id": 748,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "vintage 90’s carhartt j43 htg sandstone detroit jacket in hunter green size larg",
+    "price": 800.0,
+    "url": "https://www.ebay.com/itm/227504838461?_skw=carhartt+j43&hash=item34f858573d:g:SP4AAeSwpSVqmgje",
+    "photo": "https://i.ebayimg.com/images/g/SP4AAeSwpSVqmgje/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-12T18:25:09.875558+00:00"
+  },
+  {
+    "id": 747,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "1999 Carhartt J43 BRG Detroit Jacket - Sz XXL",
+    "price": 525.0,
+    "url": "https://www.grailed.com/listings/105728846",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/222c6286df3d415db3ada1a11b70b22b",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-12T18:25:09.750234+00:00"
+  },
+  {
     "id": 746,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-11T17:14:07.401588+00:00"
-  },
-  {
-    "id": 253,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Graphite Medium",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/103028217",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/7d1aec772c274b79867c996319d24c38",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-11T17:14:07.398225+00:00"
-  },
-  {
-    "id": 254,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt Detroit Jacket J97 - Workwear Jacket",
-    "price": 199.9,
-    "url": "https://www.etsy.com/listing/4573125247/vintage-carhartt-detroit-jacket-j97",
-    "photo": "https://i.etsystatic.com/53774804/r/il/b7decc/8555328267/il_570xN.8555328267_4ohf.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-11T12:07:46.618867+00:00"
   }
 ]
