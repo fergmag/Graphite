@@ -1,5 +1,37 @@
 [
   {
+    "id": 746,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "(5) Carhartt Replacement YKK #5 Zipper Pulls Sliders J97 Jacket Repair Genuine",
+    "price": 25.0,
+    "url": "https://www.ebay.com/itm/137728823682?_skw=carhartt+j97&hash=item2011471182:g:dXIAAeSwDOdoXSoJ",
+    "photo": "https://i.ebayimg.com/images/g/dXIAAeSwDOdoXSoJ/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-12T18:22:21.186277+00:00"
+  },
+  {
+    "id": 745,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Leather Replacement Patch 1.25” Active J140 Detroit J97 Jacket",
+    "price": 20.0,
+    "url": "https://www.ebay.com/itm/137728823149?_skw=carhartt+j97&hash=item2011470f6d:g:L6QAAeSw7udpWu6Y",
+    "photo": "https://i.ebayimg.com/images/g/L6QAAeSw7udpWu6Y/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-12T18:22:21.180242+00:00"
+  },
+  {
     "id": 744,
     "query": "j97 crimson",
     "source": "grailed",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-11T12:07:46.618867+00:00"
-  },
-  {
-    "id": 255,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "VINTAGE Carhartt Detroit Jacket Mens 3XL Green Blanket Lined J97 MOS Asplundh",
-    "price": 586.0,
-    "url": "https://www.grailed.com/listings/105611082",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/36b520fef7984acc8cd6ecd18d97c92c",
-    "casp": 2700.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-11T12:06:57.272535+00:00"
-  },
-  {
-    "id": 256,
-    "query": "j97 crimson",
-    "source": "etsy",
-    "title": "Vintage Carhartt j97 Detroit Jacket: Brown Workwear",
-    "price": 75.0,
-    "url": "https://www.etsy.com/listing/4471544376/vintage-carhartt-j97-detroit-jacket",
-    "photo": "https://i.etsystatic.com/57516733/r/il/14b2de/7850288165/il_570xN.7850288165_tmlf.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-11T06:06:58.433396+00:00"
   }
 ]
