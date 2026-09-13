@@ -1,5 +1,21 @@
 [
   {
+    "id": 752,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Jacket – Distressed Workwear Canvas, Washed Gray Streetwear",
+    "price": 199.0,
+    "url": "https://www.etsy.com/listing/4574147027/vintage-carhartt-j97-jacket-distressed",
+    "photo": "https://i.etsystatic.com/67544539/r/il/bc6e3c/8562937971/il_570xN.8562937971_n41h.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-13T00:22:01.885609+00:00"
+  },
+  {
     "id": 751,
     "query": "j65 blue",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-11T17:14:07.415170+00:00"
-  },
-  {
-    "id": 249,
-    "query": "jb0817",
-    "source": "grailed",
-    "title": "Carhartt JB0817 Graphite",
-    "price": 700.0,
-    "url": "https://www.grailed.com/listings/87389181",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/c73587c653c34c4dba33ac928041fb7e",
-    "casp": 900.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-11T17:14:07.412257+00:00"
   }
 ]
