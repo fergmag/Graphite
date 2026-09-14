@@ -670,7 +670,21 @@ def create_app() -> Flask:
     @_login_required
     def api_alerts_counts():
         queries = (request.get_json(silent=True) or {}).get("queries", [])
-        counts = count_alerts_per_query([q for q in queries if isinstance(q, str)])
+        queries = [q for q in queries if isinstance(q, str)]
+        raw_counts = count_alerts_per_query(queries)
+        counts = {}
+        for q in queries:
+            norm_q = normalize_query(q)
+            if colorway_terms_for_query(norm_q):
+                # Apply colorway filter in Python so count matches what's displayed
+                q_alerts = get_alerts(query=q, limit=5000)
+                counts[q] = sum(
+                    1 for a in q_alerts
+                    if not (a.get("source") == "etsy" and not a.get("photo"))
+                    and negative_colorway_filter((a.get("title") or "").lower(), norm_q)
+                )
+            else:
+                counts[q] = raw_counts.get(q, 0)
         return jsonify({"ok": True, "counts": counts})
 
     @app.post("/api/alerts/mark-seen")

@@ -43,6 +43,7 @@ _CODE_ALIASES = {
     "spc": "spruce",
     "dol": "dark olive",
     "dst": "darkstone",
+    "cmt": "cement",
 }
 # Reverse: canonical full name → abbreviation for search fallback.
 # All abbreviations included — when used with a model code prefix ("j110 dst")
@@ -52,16 +53,36 @@ _ALIAS_TO_CODE: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 # Full reverse map (no exclusions) — used for colorway-term matching in titles.
 _FULL_CANONICAL_TO_ABBREV: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 
+# Colorway terms that appear in listing titles but are NOT tracked watchlist queries.
+# Adding them here lets the filter reject them from unrelated queries (e.g. "J43 WET"
+# won't bleed into "j43 hunter green"; "J97 DKB" won't bleed into "j97 moss").
+_EXTRA_COLORWAY_TERMS: set = {"wet", "dkb", "mtl", "gvl", "gravel"}
+
 # All known colorway terms (canonical + abbreviation) with precompiled word-boundary patterns.
 # Used for the negative colorway check: reject only when a DIFFERENT colorway is explicit.
 _ALL_COLORWAY_TERMS: set = set()
 for _ck, _cv in _CODE_ALIASES.items():
     _ALL_COLORWAY_TERMS.add(_ck)
     _ALL_COLORWAY_TERMS.add(_cv)
+_ALL_COLORWAY_TERMS |= _EXTRA_COLORWAY_TERMS
 _COLORWAY_RE: Dict[str, re.Pattern] = {
     t: re.compile(r'\b' + re.escape(t) + r'\b', re.IGNORECASE)
     for t in _ALL_COLORWAY_TERMS
 }
+
+# Matches a colorway term directly following a model code with no space, e.g. "J43HTG".
+# Used as a fallback when word-boundary matching fails.
+_CONCAT_COLORWAY_RE_PREFIX = re.compile(r'j[a-z]?\d{2,}', re.IGNORECASE)
+
+
+def _title_has_colorway(title_lower: str, colorway_term: str) -> bool:
+    """True if title contains colorway_term at a word boundary OR immediately after a model code."""
+    pattern = _COLORWAY_RE.get(colorway_term) or re.compile(r'\b' + re.escape(colorway_term) + r'\b', re.IGNORECASE)
+    if pattern.search(title_lower):
+        return True
+    # e.g. "j43htg" → "htg" directly follows "j43" with no word boundary
+    concat = re.compile(r'j[a-z]?\d{2,}' + re.escape(colorway_term) + r'\b', re.IGNORECASE)
+    return bool(concat.search(title_lower))
 
 
 def normalize_query(query: str) -> str:
@@ -124,13 +145,11 @@ def negative_colorway_filter(title_lower: str, query: str) -> bool:
     if not cw_terms:
         return True
     for term in cw_terms:
-        # Fall back to a fresh pattern if the term isn't a known colorway (e.g. user typed "cmt")
-        pattern = _COLORWAY_RE.get(term) or re.compile(r'\b' + re.escape(term) + r'\b', re.IGNORECASE)
-        if pattern.search(title_lower):
+        if _title_has_colorway(title_lower, term):
             return True  # correct colorway → keep
     other_cw = _ALL_COLORWAY_TERMS - set(cw_terms)
     for term in other_cw:
-        if _COLORWAY_RE[term].search(title_lower):
+        if _title_has_colorway(title_lower, term):
             return False  # different colorway explicitly in title → reject
     return True  # no colorway mentioned at all → keep
 

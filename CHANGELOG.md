@@ -150,6 +150,12 @@ Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "
 
 **Alert persistence cap raised** — `_persist_alerts()` was saving only 500 alerts to `alerts.json` (and therefore restoring only 500 on redeploy). Raised to 5000 — actual alert count now matches what was in the DB before the last deploy.
 
+**Concatenated model+colorway format fixed** — eBay/Grailed listings sometimes write "J43HTG" with no space between model code and colorway abbreviation. The existing `\b` word-boundary regex couldn't match "htg" inside "j43htg" (digit→letter is NOT a word boundary in regex). Added `_title_has_colorway()` helper that also tries matching the colorway when it directly follows a model code pattern. Now "J43HTG" is correctly identified as hunter green and properly kept/rejected per query.
+
+**Untracked colorways reject correctly** — "J43 WET" listings were leaking into all j43 tabs because "wet" wasn't a known colorway term, so the filter treated it as a no-colorway listing (kept for all queries). Same for j97 DKB/MTL/GVL variants. Added `_EXTRA_COLORWAY_TERMS = {"wet", "dkb", "mtl", "gvl", "gravel"}` — known terms that trigger rejection from unrelated queries even though they're not tracked watchlist models. Also added "cement"/"cmt" to `_CODE_ALIASES` so j76 cement and j76 moss no longer cross-contaminate.
+
+**Per-model alert count now matches display** — `count_alerts_per_query` was counting raw DB rows without applying the colorway filter. The display applied the filter, so counts diverged. For queries that have a colorway component, the `/api/alerts/counts` endpoint now loads the alerts in Python and applies `negative_colorway_filter` before counting, matching what the UI actually shows. Stable across `refresh_all`.
+
 ---
 
 ## Database Schema
