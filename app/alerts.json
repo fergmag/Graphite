@@ -1,5 +1,21 @@
 [
   {
+    "id": 534,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Vintage Carhartt JU1005 BLK Jacket Mens M Southwest 1994 Unlined Duck Chore USA",
+    "price": 910.87,
+    "url": "https://www.ebay.com/itm/318826798919?_skw=carhartt+ju1005&hash=item4a3b8edf47:g:OEIAAeSwk1BqIgNs",
+    "photo": "https://i.ebayimg.com/images/g/OEIAAeSwk1BqIgNs/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T07:44:00.661836+00:00"
+  },
+  {
     "id": 533,
     "query": "jq2472",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-11T17:17:10.330242+00:00"
-  },
-  {
-    "id": 467,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage Carhartt Crimson Hooded Jacket J130 Cri Size XL Tall  Quilted Rare",
-    "price": 414.99,
-    "url": "https://www.ebay.com/itm/227249381903?_skw=carhartt+j97+cri&hash=item34e91e620f:g:IqMAAeSwpO5pr6DK",
-    "photo": "https://i.ebayimg.com/images/g/IqMAAeSwpO5pr6DK/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-11T17:17:10.278212+00:00"
   }
 ]
