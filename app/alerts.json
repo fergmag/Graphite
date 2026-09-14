@@ -1,5 +1,21 @@
 [
   {
+    "id": 1616,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
+    "price": 1499.99,
+    "url": "https://www.ebay.com/itm/206008017526?_skw=carhartt+jb1236&hash=item2ff708e276:g:EZ8AAeSwinJpbZeA&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZL6tgSmgB6g7b%2F0hrfTKto%2FUXap%2FP6r8KsweRl34fT5%2F5kKDi9Ukz9qZeByOQ1W2kRw0Am3DgMRKI5JFCtLaxD8kzN3rVYYuFRrqAeOTup9fKuqZiST7SPb2VQuzhpnZyxP5vcCuNtra17myrZMLRPn3NeiJCSMmzxp8SJZ6Mk6gpA6RydpHCt551l9ZwmYpqZpJLv0A3c4H9XfQoqw5EF9a4e%2FVq6OTZ92nHK5NAUh7Recu1imgzCJzte%2FI%2B2cZg2jwYk%2Bz%2BotGm%2BIqWErxbxvbmWcDYhXd0kxYMa7Cl1%2BA%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/EZ8AAeSwinJpbZeA/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T13:56:17.357060+00:00"
+  },
+  {
     "id": 1615,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-14T08:36:27.464951+00:00"
-  },
-  {
-    "id": 1116,
-    "query": "j43 hunter green",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket J43 HTG Hunter Green Blanket Lined Size XL RARE",
-    "price": 499.99,
-    "url": "https://www.ebay.com/itm/236713227232?_skw=carhartt+j43+htg&hash=item371d3533e0:g:F84AAeSwthdpxH53&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGacqZDhqmAr6acmiwINqbTUiltd28DfU1%2BT1LIJlE275Xzx1%2FZGOlTsgPTlCcSiYBESfEfi7o8yff97JW03fRpYHh0PTCfvtPCjQlWAwICvyJvEUenRLxuMySJy4Fscq%2BZLuVOFnithFxLCtEAj%2BFaCESKw5LEjqTjrf96DPknGU5Vy6xxOr5L2WHP8c5NgEG5uUTim89jzPEp3ZurVSaomXuXFM9Od3jk3X0kW0vBQhpEsvocIMQjjWl0gFjpbtCZZjPZfwUz9mVNbaKIBYgi82O3zdeceFD0Cu9ghJjg7PA%3D%3D",
-    "photo": "https://i.ebayimg.com/images/g/F84AAeSwthdpxH53/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-14T08:36:27.459010+00:00"
   }
 ]
