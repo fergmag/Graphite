@@ -80,9 +80,8 @@ def search_ebay_active(query: str, max_results: int = 30) -> List[Dict[str, Any]
             },
             params={
                 "q": search_terms,
-                "limit": str(min(max_results, 50)),
+                "limit": "50",
                 "filter": "conditions:{USED|VERY_GOOD|GOOD|ACCEPTABLE},buyingOptions:{FIXED_PRICE}",
-                "sort": "price",
             },
             timeout=12,
         )

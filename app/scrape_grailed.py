@@ -28,7 +28,7 @@ _HEADERS = {
 }
 
 
-def search_grailed(query: str, limit: int = 20) -> List[Dict[str, Any]]:
+def search_grailed(query: str, limit: int = 40) -> List[Dict[str, Any]]:
     """
     Search Grailed for active listings matching query.
     Returns list of {title, price, url, photo, source, condition, size}.
