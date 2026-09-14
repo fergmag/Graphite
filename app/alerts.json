@@ -1,5 +1,21 @@
 [
   {
+    "id": 1184,
+    "query": "js1235",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Green Special No.CR263 HTF Rare",
+    "price": 1229.99,
+    "url": "https://www.ebay.com/itm/405061940457?_skw=carhartt+js1235&hash=item5e4f92b4e9:g:B9wAAOSw1rtl08cd&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYYCA3xuAHW%2FqtkshgKC4nXjcyUHAcrzzBa1genoEVfMugD%2FDWeQNoSi0fhiOh2Oe4%2F4%2Fnu4%2F7rI7rbLyKmJl%2FyYi4vVyFgKAY2bf339463OJAcjFok0EHiVLKk62uElmpeqa4JPdpzYQ5bTn%2BT%2Fy10UyXqpJcqTzKhzSIHWvWfsQ1TuvluxVkEZQTy7WN9G%2BEEjtj0wZkvnUImrm5pW1Sryb5c1WvIiPWG5CW1e2iEYbV%2BUae4qb4anFeYlLkx1b2TVNQHicnH4jrtdKMmWpqaDwnzC6Cev8%2FL4QUtrutsNA%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/B9wAAOSw1rtl08cd/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T08:54:38.483885+00:00"
+  },
+  {
     "id": 1183,
     "query": "j65 brick",
     "source": "ebay",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T08:33:38.809235+00:00"
-  },
-  {
-    "id": 684,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt J97 MOS Detroit Jacket Mens Large Moss Green Blanket Lined RARE",
-    "price": 568.99,
-    "url": "https://www.ebay.com/itm/366660914470?_skw=carhartt+j97+moss&hash=item555eb18d26:g:4v4AAeSwyYNqoiE2",
-    "photo": "https://i.ebayimg.com/images/g/4v4AAeSwyYNqoiE2/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-14T08:33:38.802682+00:00"
   }
 ]
