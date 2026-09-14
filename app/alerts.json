@@ -1,5 +1,37 @@
 [
   {
+    "id": 512,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0873 Canvas Blanket Lined USA Made Brown Mens 2XL",
+    "price": 1450.0,
+    "url": "https://www.ebay.com/itm/327315396468?_skw=carhartt+jb0873&hash=item4c35849774:g:RnAAAeSwR7pqg7FN",
+    "photo": "https://i.ebayimg.com/images/g/RnAAAeSwR7pqg7FN/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T07:41:45.952587+00:00"
+  },
+  {
+    "id": 511,
+    "query": "jb0873",
+    "source": "grailed",
+    "title": "Carhartt JB0873 Mocha Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/94419939",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/7288e194de0946fab36b98f8a897eab7",
+    "casp": 1000.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T07:41:45.945894+00:00"
+  },
+  {
     "id": 510,
     "query": "jb0817",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-11T17:17:10.137389+00:00"
-  },
-  {
-    "id": 489,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Carhartt Men’s size L Jacket/Coat Maroon Insulated Nylon Full-Zip Work J174 RDW",
-    "price": 65.0,
-    "url": "https://www.ebay.com/itm/298310143867?_skw=carhartt+j97+crimson&hash=item4574ab8f7b:g:f2gAAeSw0rNqAqVn",
-    "photo": "https://i.ebayimg.com/images/g/f2gAAeSw0rNqAqVn/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-11T17:17:10.133894+00:00"
-  },
-  {
-    "id": 490,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Carhartt Hubbard Red Plaid Sherpa Lined Flannel Jacket Men’s Large Regular Fit",
-    "price": 62.99,
-    "url": "https://www.ebay.com/itm/257396552268?_skw=carhartt+j97+crimson&hash=item3bee07b24c:g:D1QAAeSwrtFprci-",
-    "photo": "https://i.ebayimg.com/images/g/D1QAAeSwrtFprci-/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-11T17:17:10.131002+00:00"
   }
 ]
