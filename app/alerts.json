@@ -1,5 +1,37 @@
 [
   {
+    "id": 1382,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
+    "price": 1790.0,
+    "url": "https://www.ebay.com/itm/318089415631?_skw=carhartt+jb0817&hash=item4a0f9b4bcf:g:-E8AAeSwO05pzNto&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZ3%2FdmZkj8tLhvmr%2FSj9c%2F5tjl9zmpvdvJzVPPmxrgv9KIOR7lqnz6xBNNY%2F3n8nr3YTtbnKnSmz05XTzKI%2BAkDuV0Me78EKvo48euHukPcKa76vzHvWo9IfUDJJSc3bmvyJ%2BSJ9K7fX2kTLzBzpCrf1Z6YmySzOku2cnJs%2BkF1F3iIyi%2F%2B6jVtlcHCs0YsNuNYoXrTfRZqi3yeS0zP3IGj2M5jYLmJKky2TjWfnb4Q6mZfiQgUcnlnjmrn61LAGiQzt7s37C45SFO3iPTIGcZXH9MxJi0PpE%2BWe6LOWEF7%2Fg%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/-E8AAeSwO05pzNto/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T13:49:04.229764+00:00"
+  },
+  {
+    "id": 1381,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0817 Men's Gray with Zipper Size Unknown(M) Pre-Owned",
+    "price": 1797.0,
+    "url": "https://www.ebay.com/itm/336137878470?_skw=carhartt+jb0817&hash=item4e4360fbc6:g:aPwAAeSw9vRopzsh&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaWZFvRDA32WaRV%2BpIpa%2B6yyJnuEJTZ5ougIxTuef7gCZbJtx4fDY5QeHQSP4oKL9XiGKOFpTwbQ%2Bubr7Onhp7%2BmkDx%2BkIRndtRp1tGGSZDidUueRfDXBZgHbjDEMXwI2DmjZYzIJX6Mo1lqS7pbjzkQ7X%2BTiA1n6%2F9saVWVp%2FHRUm5QHf0%2FuNeIRbZiRkHdulakflfJ4wGnus1GDkgdyHaLqAvlcLrBjeK8noKFIzKbPHQYjOVwAucKhov%2BKopK4OCdssjk0apBdZiN6rRFHvQAM2pAJyq8ha96oAAWMr4Xw%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/aPwAAeSw9vRopzsh/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T13:49:04.215384+00:00"
+  },
+  {
     "id": 1380,
     "query": "j76 moss",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-14T08:34:46.461904+00:00"
-  },
-  {
-    "id": 882,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Vintage \"2003\"Carhartt J97 PTL Detroit Jacket Mens Xl Blue Grey No Cuff Fray",
-    "price": 369.99,
-    "url": "https://www.ebay.com/itm/398378272965?_skw=carhartt+j97+petrol&hash=item5cc13208c5:g:EAQAAeSwwyhqoaor",
-    "photo": "https://i.ebayimg.com/images/g/EAQAAeSwwyhqoaor/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-14T08:34:46.456030+00:00"
-  },
-  {
-    "id": 881,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "VTG Carhartt Detroit J97 PTL ‘Petrol’ Jacket Men’s XL Blanket Lined Grey Work",
-    "price": 262.0,
-    "url": "https://www.ebay.com/itm/147521253144?_skw=carhartt+j97+petrol&hash=item2258f3af18:g:zwwAAeSw07tpwHD4",
-    "photo": "https://i.ebayimg.com/images/g/zwwAAeSw07tpwHD4/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 2,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-14T08:34:46.448090+00:00"
   }
 ]
