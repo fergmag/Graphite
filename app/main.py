@@ -116,7 +116,7 @@ def _persist_archive() -> None:
 
 def _persist_alerts() -> None:
     """Write current alerts to JSON and sync to GitHub so they survive redeploys."""
-    data = get_alerts(limit=500)
+    data = get_alerts(limit=5000)
     if not data:
         return  # never overwrite with empty — keeps last known-good file intact
     content = json.dumps(data, indent=2, ensure_ascii=False)

@@ -136,8 +136,9 @@ def scan_platforms_for_query(query: str, casp: Optional[float]) -> int:
     """
     saved = 0
 
-    # Search with canonical name, abbreviation, and bare model code
-    search_aliases = search_terms_for_query(query)
+    # Search with canonical name and abbreviation only — bare model code (e.g. "j97")
+    # pulls ALL colorways and floods colorway-specific queries with unrelated listings.
+    search_aliases = search_terms_for_query(query, include_bare_code=False)
 
     # Grailed sellers reliably include model codes in titles → strict code filter
     strict_raw: List[Dict[str, Any]] = []
@@ -207,7 +208,7 @@ def refresh_all_watchlist(delay_seconds: float = 5.0) -> Dict[str, Any]:
     queries = list_watches()
     log.info("[scheduler] Starting refresh — %d queries", len(queries))
 
-    clear_old_alerts(days=7)
+    clear_old_alerts(days=30)
 
     ok_count = 0
     fail_count = 0

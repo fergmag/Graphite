@@ -45,12 +45,9 @@ _CODE_ALIASES = {
     "dst": "darkstone",
 }
 # Reverse: canonical full name → abbreviation for search fallback.
-# "dst" excluded — matches DST brand, "dusty", etc. Brk/blu are fine when
-# qualified by a model code ("j65 brk"), so they're back in.
-_ALIAS_TO_CODE: Dict[str, str] = {
-    v: k for k, v in _CODE_ALIASES.items()
-    if k not in ("dst",)
-}
+# All abbreviations included — when used with a model code prefix ("j110 dst")
+# they are specific enough to avoid false matches.
+_ALIAS_TO_CODE: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
 
 # Full reverse map (no exclusions) — used for colorway-term matching in titles.
 _FULL_CANONICAL_TO_ABBREV: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.items()}
@@ -127,7 +124,9 @@ def negative_colorway_filter(title_lower: str, query: str) -> bool:
     if not cw_terms:
         return True
     for term in cw_terms:
-        if _COLORWAY_RE[term].search(title_lower):
+        # Fall back to a fresh pattern if the term isn't a known colorway (e.g. user typed "cmt")
+        pattern = _COLORWAY_RE.get(term) or re.compile(r'\b' + re.escape(term) + r'\b', re.IGNORECASE)
+        if pattern.search(title_lower):
             return True  # correct colorway → keep
     other_cw = _ALL_COLORWAY_TERMS - set(cw_terms)
     for term in other_cw:

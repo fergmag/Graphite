@@ -136,6 +136,22 @@ Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "
 
 ---
 
+### Sep 2026 — Logo, Scraper Accuracy, Alert Fixes
+
+**Sep 2026** — Logo redesigned: capital "G" in "Gr" replaced with an SVG approximation of the Carhartt C mark — outer filled circle masked on the right to create the C opening, small inner counter circle inside the upper arm. Applied across `shop.html`, `archive.html`, `about.html`, and the splash screen. Instagram PNG (`graphite_logo_ig.png`) regenerated via headless Chrome screenshot at 4× DPR, centered on 1080×1080 graphite canvas.
+
+**Bare model code search removed (again)** — Adding "j43" or "j97" as bare search terms pulls every colorway variant into a single query's alert feed. No-colorway listings pass the colorway filter by design (sellers often omit colorway names), so this produced false positives across all colorway-specific queries. Removed `include_bare_code` from all platform searches. The abbreviated colorway terms ("j97 mos", "j110 dst") are sufficient for discovery.
+
+**"dst" re-added to search alias map** — Was excluded in Aug because bare "j110 dst" matched cargo shorts on eBay. Now that bare-code search is removed entirely, qualified searches like "j110 dst" are safe and necessary — Grailed sellers write "J110 DST" in titles but not "darkstone", so without this alias the scraper missed those listings completely.
+
+**Colorway filter crash fixed** — `negative_colorway_filter` raised a `KeyError` when the watchlist query contained an unknown colorway abbreviation (e.g. "j76 cmt"). The crash silently prevented any alerts from being saved for that model. Fixed with a `.get()` fallback that compiles a fresh regex for unrecognized terms.
+
+**Alert retention extended** — `clear_old_alerts` raised from 7 days to 30 days. On Render free tier the APScheduler sometimes misses runs when the instance sleeps; 7-day retention was too aggressive and wiped valid data before the next refresh cycle.
+
+**Alert persistence cap raised** — `_persist_alerts()` was saving only 500 alerts to `alerts.json` (and therefore restoring only 500 on redeploy). Raised to 5000 — actual alert count now matches what was in the DB before the last deploy.
+
+---
+
 ## Database Schema
 
 Tables created/migrated in `app/db.py → init_db()`. Always `ALTER TABLE ADD COLUMN` — never drop/recreate.
@@ -145,7 +161,7 @@ Tables created/migrated in `app/db.py → init_db()`. Always `ALTER TABLE ADD CO
 | `watchlist` | Saved search queries ("j97 moss", "j110 darkstone", etc.) |
 | `comps` | Raw scraped listing prices per query |
 | `estimates` | CASP history per query — feeds the price chart |
-| `listing_alerts` | Active deal alerts from all platforms, 7-day retention |
+| `listing_alerts` | Active deal alerts from all platforms, 30-day retention |
 | `archive_sections` | Archive page content |
 | `listings` | Shop inventory with Stripe price IDs |
 | `refresh_log` | Last 20 background refresh runs |
