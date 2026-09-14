@@ -1,5 +1,21 @@
 [
   {
+    "id": 784,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens J97 PTL Petrol/grey Size XL Blanket Lined",
+    "price": 396.0,
+    "url": "https://www.ebay.com/itm/318868298000?_skw=carhartt+j97+petrol&hash=item4a3e081910:g:aaEAAeSwr9Jqp4YQ",
+    "photo": "https://i.ebayimg.com/images/g/aaEAAeSwr9Jqp4YQ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T06:24:09.479000+00:00"
+  },
+  {
     "id": 783,
     "query": "j97 crimson",
     "source": "etsy",
@@ -7982,21 +7998,5 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-11T17:17:10.095087+00:00"
-  },
-  {
-    "id": 217,
-    "query": "j97 crimson",
-    "source": "grailed",
-    "title": "RARE Vintage Carhartt J97 Detroit Jacket Brown / Grey Faded",
-    "price": 765.0,
-    "url": "https://www.grailed.com/listings/103779885",
-    "photo": "https://media-assets.grailed.com/prd/listing/47026234/b25d3aac7f524923a8a73b74d92077be",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-09-11T17:17:10.092051+00:00"
   }
 ]
