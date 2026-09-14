@@ -1,5 +1,37 @@
 [
   {
+    "id": 1046,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Made In USA Carhartt Detroit Jacket JB0817 L Vintage USED From Japan",
+    "price": 1790.0,
+    "url": "https://www.ebay.com/itm/318089415631?_skw=carhartt+jb0817&hash=item4a0f9b4bcf:g:-E8AAeSwO05pzNto&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZ3%2FdmZkj8tLhvmr%2FSj9c%2F5tjl9zmpvdvJzVPPmxrgv9KIOR7lqnz6xBNNY%2F3n8nr3YTtbnKnSmz05XTzKI%2BAkDuV0Me78EKvo48euHukPcKa76vzHvWo9IfUDJJSc3bmvhjMi6r6wGGUJsyIB60opOkEdQXdsaUZznG4Ud6NGosV2IHDvHH6EC9LERWBCBq9eV6tM0i9jBdHiK%2FYAZ%2FfBdkzvLvuZ2m11jzOfsvj9oH%2BaNgRT6ea8fHdt%2FJhR6oijdsBFfksKju2uq3ztbMixk4xbgnsghnfYU3aTQeElAjQ%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/-E8AAeSwO05pzNto/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T19:23:23.972903+00:00"
+  },
+  {
+    "id": 1045,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0817 Men's Gray with Zipper Size Unknown(M) Pre-Owned",
+    "price": 1797.0,
+    "url": "https://www.ebay.com/itm/336137878470?_skw=carhartt+jb0817&hash=item4e4360fbc6:g:aPwAAeSw9vRopzsh&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaWZFvRDA32WaRV%2BpIpa%2B6yyJnuEJTZ5ougIxTuef7gCZbJtx4fDY5QeHQSP4oKL9XiGKOFpTwbQ%2Bubr7Onhp7%2BmkDx%2BkIRndtRp1tGGSZDidUueRfDXBZgHbjDEMXwI2DM%2Bx5n4EOme00vRo1ltwasXVIcXmrTubxhKlSJzsPF8ggG%2F402zTic4yougi1QR%2FAr%2FzCqUpZwd4bNyMW6xNMBYcPEiZ6T49zR9W0ckBKtUb1OKKCdiNUupAfqz4WUxDBfr3NWiFknsbFBlZecomZ8IthDxlH20g8yiPayDipKJA%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/aPwAAeSw9vRopzsh/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T19:23:23.963034+00:00"
+  },
+  {
     "id": 1044,
     "query": "j76 cement",
     "source": "ebay",
