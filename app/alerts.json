@@ -1,5 +1,37 @@
 [
   {
+    "id": 1186,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "Carhartt  rn 1480 BRN Size Measured 25'' PTP See Pics USA UFCW",
+    "price": 89.99,
+    "url": "https://www.ebay.com/itm/127833135447?_skw=carhartt+jr0115&hash=item1dc372d957:g:JvkAAeSwDeVp8A88&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbchmxlFMRqIV757ng7eMx9ijJLy1pF%2FGuEoWVK%2BEiIuWsyRJdDtBNIodEcUXcSrZZsb0BbQEyk8d%2B5d60JLk8jSNm1Od0%2BLWxOh%2BxQBynx%2BkVTbNxMH8WMkzgM4raxmi2V9Oq1rgQDAVHx7Kr1qstPeqPTFz6Mrk5vO1zZfrK968OMjqvucHk2vQZUxX6Vft%2FN6E%2Ftpt1EYFCn0PFfMXQERQMxhGWka6TlL2QbP64MJKisGvnzu40x9ZTST7vlq4dEBuxNwniV%2FFLnDSjbX9p1pdYZwmo5KoMuRYkHIKbj5Q%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/JvkAAeSwDeVp8A88/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T08:54:59.974481+00:00"
+  },
+  {
+    "id": 1185,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "Vintage 1995 Carhartt Aztec Jacket JR0115 Workwear Coat Southwest Rare Blue XXL",
+    "price": 709.98,
+    "url": "https://www.ebay.com/itm/128064252583?_skw=carhartt+jr0115&hash=item1dd1396aa7:g:bGwAAeSwTatqnFiR&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZysbw2iOJL99fOH7Uh%2FQXVZ5lu452ecIYSPRG7%2BJ7cM7MF%2BMjvs8BCwnUGUavOfYEneBvBE8sU7IHfH%2BDRx%2BFqhiuyQbeahxmE5GSiddF%2BgDw3dtww6xUfrnYzczHjhVMFT26kgVan74RgXWYnQ5HbM6vnwWVVK0NmPsbnKOy%2B9c4VjyHso3ZagSr4F6Tp08qOpg1eKih7TOmsdPrAK2SEX5S424CD7KDyIOtOOqiRV7Bs8PyHkW4ok1x32wsN5wa0fFuBqJauBcq%2FnQZfqOekHzNbHNpWxdcEVRAcOFqODA%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/bGwAAeSwTatqnFiR/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-14T08:54:59.968084+00:00"
+  },
+  {
     "id": 1184,
     "query": "js1235",
     "source": "ebay",
@@ -7966,37 +7998,5 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T08:33:38.820384+00:00"
-  },
-  {
-    "id": 686,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt J97 Detroit Jacket Brown Faded Medium M Blanket Lined Workwear",
-    "price": 199.99,
-    "url": "https://www.ebay.com/itm/407214587714?_skw=carhartt+j97+moss&hash=item5ecfe17f42:g:RBoAAeSwyXtqpzBM",
-    "photo": "https://i.ebayimg.com/images/g/RBoAAeSwyXtqpzBM/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-14T08:33:38.814810+00:00"
-  },
-  {
-    "id": 685,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green Blanket Lined Mens XL Reg",
-    "price": 384.99,
-    "url": "https://www.ebay.com/itm/307173022460?_skw=carhartt+j97+moss&hash=item4784f05afc:g:lrkAAeSwUARqo3lr",
-    "photo": "https://i.ebayimg.com/images/g/lrkAAeSwUARqo3lr/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 1,
-    "created_at": "2026-09-14T08:33:38.809235+00:00"
   }
 ]
