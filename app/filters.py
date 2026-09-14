@@ -56,7 +56,8 @@ _FULL_CANONICAL_TO_ABBREV: Dict[str, str] = {v: k for k, v in _CODE_ALIASES.item
 # Colorway terms that appear in listing titles but are NOT tracked watchlist queries.
 # Adding them here lets the filter reject them from unrelated queries (e.g. "J43 WET"
 # won't bleed into "j43 hunter green"; "J97 DKB" won't bleed into "j97 moss").
-_EXTRA_COLORWAY_TERMS: set = {"wet", "dkb", "mtl", "gvl", "gravel"}
+_EXTRA_COLORWAY_TERMS: set = {"wet", "dkb", "gvl", "gravel"}
+# "mtl" deliberately excluded — sellers in Montreal/Quebec use "MTL" in titles
 
 # All known colorway terms (canonical + abbreviation) with precompiled word-boundary patterns.
 # Used for the negative colorway check: reject only when a DIFFERENT colorway is explicit.
