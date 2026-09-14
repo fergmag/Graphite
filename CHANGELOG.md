@@ -138,7 +138,7 @@ Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "
 
 ### Sep 2026 — Logo, Scraper Accuracy, Alert Fixes
 
-**Sep 2026** — Logo redesigned: capital "G" in "Gr" replaced with an SVG approximation of the Carhartt C mark — outer filled circle masked on the right to create the C opening, small inner counter circle inside the upper arm. Applied across `shop.html`, `archive.html`, `about.html`, and the splash screen. Instagram PNG (`graphite_logo_ig.png`) regenerated via headless Chrome screenshot at 4× DPR, centered on 1080×1080 graphite canvas.
+**Sep 2026** — Logo redesigned: capital "G" in "Gr" replaced with an SVG approximation of the Carhartt C mark — outer filled circle masked on the right to create the C opening, inner counter is now a crescent/C shape (not a solid circle) created by a second mask that bites the right side of the inner orange circle. Applied across `shop.html`, `archive.html`, `about.html`, and the splash screen. Instagram PNG (`graphite_logo_ig.png`) regenerated via headless Chrome screenshot, 1080×1080.
 
 **Bare model code search removed (again)** — Adding "j43" or "j97" as bare search terms pulls every colorway variant into a single query's alert feed. No-colorway listings pass the colorway filter by design (sellers often omit colorway names), so this produced false positives across all colorway-specific queries. Removed `include_bare_code` from all platform searches. The abbreviated colorway terms ("j97 mos", "j110 dst") are sufficient for discovery.
 
