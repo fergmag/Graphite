@@ -1,5 +1,21 @@
 [
   {
+    "id": 1607,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
+    "price": 1499.99,
+    "url": "https://www.ebay.com/itm/206008017526?_skw=carhartt+jb1236&hash=item2ff708e276:g:EZ8AAeSwinJpbZeA&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZL6tgSmgB6g7b%2F0hrfTKto%2FUXap%2FP6r8KsweRl34fT5%2F5kKDi9Ukz9qZeByOQ1W2kRw0Am3DgMRKI5JFCtLaxD8kzN3rVYYuFRrqAeOTup9fKuqZiST7SPb2VQuzhpnZx6OAyZNeGHnvHT6kHsVXKACfz%2F5E6oOoJNoUE3%2F1VACGEvWUvT7Leuxjn6TMzaTwfJFWzistAX5QxJhDGgupW9EKECB5SUUL%2FeDNzuM01tFMiXLoyYB6lbWBbSh5GkyWMuR6S7tuDT7BVqaRlwc%2BYvoQ8ENRYaCUX479MSeqYnww%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/EZ8AAeSwinJpbZeA/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-15T04:02:37.891245+00:00"
+  },
+  {
     "id": 1606,
     "query": "j43 hunter green",
     "source": "ebay",
