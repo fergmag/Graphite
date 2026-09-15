@@ -1,5 +1,37 @@
 [
   {
+    "id": 1769,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "Carhartt Nvy .",
+    "price": 108.15,
+    "url": "https://www.ebay.com/itm/326564042072?_skw=carhartt+jr0115&hash=item4c08bbd558:g:8q0AAeSwm1VoF050&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaSeOhEaJcO2sO39yW7n3XwP4tOtb1BIZTth6sFmdVSoqE3vhXDtRkQUyISQlrDrFR7Y6OqV8xrb9nX70xGNsq0NfS4vEXjh%2BHhm5IMzj0vvvoQE1JWd2eNoz4MtPWArp4o63bE1SId0bUFbCm93EgWKK%2BI6%2BsRTNULGH%2F4nmb3LXMiSN9X79wMfD1ZfAyWpmIUOLiTs9NiMbfkfmCx%2FCL17lkCX4iTxMXwkLzxkfnmUr6O3YvOYv4XvbII%2BsFCza3n%2BpkDBBPV3JY85Mbjift1Eg%2FkknMCMyMf1NmUoqUGdw%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/8q0AAeSwm1VoF050/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-15T15:58:05.508310+00:00"
+  },
+  {
+    "id": 1768,
+    "query": "jr0115",
+    "source": "ebay",
+    "title": "Carhartt  rn 1480 BRN Size Measured 25'' PTP See Pics USA UFCW",
+    "price": 89.99,
+    "url": "https://www.ebay.com/itm/127833135447?_skw=carhartt+jr0115&hash=item1dc372d957:g:JvkAAeSwDeVp8A88&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbchmxlFMRqIV757ng7eMx9ijJLy1pF%2FGuEoWVK%2BEiIuWsyRJdDtBNIodEcUXcSrZZsb0BbQEyk8d%2B5d60JLk8jSNm1Od0%2BLWxOh%2BxQBynx%2BkVTbNxMH8WMkzgM4raxmi25o3RQc0o9KXO765RwT9%2BHT%2B2B8qCxdZU1zQfFGoWU%2BVw5wRbK1hiifDm6kFKbdCqWi4adDOt%2F0HFgQnzJorJ6ywQ4MSUQRimpDWMG0YgEbbLbrQLHMKXHl8UbWdthCOLdhYn1r%2FhuoQpUybE2AElKmmgaXHy23X6o366LeEU5dg%3D%3D",
+    "photo": "https://i.ebayimg.com/images/g/JvkAAeSwDeVp8A88/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-15T15:58:05.498102+00:00"
+  },
+  {
     "id": 1767,
     "query": "js1235",
     "source": "ebay",
