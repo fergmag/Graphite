@@ -365,43 +365,28 @@ def create_app() -> Flask:
     @app.get("/shop")
     def shop():
         all_listings = db_list_listings()
-        show_splash = request.cookies.get("graphite_visited") != "1"
-        resp = make_response(render_template("shop.html",
+        return render_template("shop.html",
             listings=[l for l in all_listings if not l.get("sold")],
             page="shop",
-            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
-            show_splash=show_splash))
-        if show_splash:
-            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
-        return resp
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
 
     @app.get("/sold")
     def sold():
         all_listings = db_list_listings()
-        show_splash = request.cookies.get("graphite_visited") != "1"
-        resp = make_response(render_template("shop.html",
+        return render_template("shop.html",
             listings=[l for l in all_listings if l.get("sold")],
             page="sold",
-            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
-            show_splash=show_splash))
-        if show_splash:
-            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
-        return resp
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
 
     @app.get("/shop/item/<listing_id>")
     def shop_item(listing_id):
         all_listings = db_list_listings()
         available = [l for l in all_listings if not l.get("sold")]
-        show_splash = request.cookies.get("graphite_visited") != "1"
-        resp = make_response(render_template("shop.html",
+        return render_template("shop.html",
             listings=available,
             page="shop",
             open_listing_id=listing_id,
-            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""),
-            show_splash=False))
-        if show_splash:
-            resp.set_cookie("graphite_visited", "1", samesite="Lax", httponly=True)
-        return resp
+            paypal_client_id=os.environ.get("PAYPAL_CLIENT_ID", ""))
 
     @app.get("/archive")
     def archive():
