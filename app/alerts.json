@@ -1,5 +1,37 @@
 [
   {
+    "id": 2794,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage USA Carhartt J97 TMB Blanket Lined Detroit Jacket Dark Brown Size XL Y2K",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/137740284061",
+    "photo": "https://i.ebayimg.com/images/g/8qYAAeSwJs5qqcWd/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-16T17:10:38.601054+00:00"
+  },
+  {
+    "id": 2793,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Carhartt Rugged Flex Hooded Flannel Jacket Mens XL Brown Plaid Workwear Lumber",
+    "price": 39.07,
+    "url": "https://www.ebay.com/itm/188628265435",
+    "photo": "https://i.ebayimg.com/images/g/AQEAAeSwkFNpxFKG/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-16T17:10:38.594218+00:00"
+  },
+  {
     "id": 2792,
     "query": "j97 petrol",
     "source": "ebay",
