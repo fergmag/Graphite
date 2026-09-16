@@ -982,13 +982,22 @@ def mark_alerts_seen() -> None:
 
 
 def clear_old_alerts(days: int = 30) -> None:
-    """Remove alerts older than N days to keep DB tidy."""
+    """Remove alerts older than N days, then dedup identical listings."""
     con = _connect()
     try:
         con.execute(
             "DELETE FROM listing_alerts WHERE created_at < datetime('now', ?)",
             (f"-{days} days",),
         )
+        # Keep only the newest row per (query, source, title, price) group.
+        # Catches same listing stored twice under a new URL (relist, slug change).
+        con.execute("""
+            DELETE FROM listing_alerts
+            WHERE id NOT IN (
+                SELECT MAX(id) FROM listing_alerts
+                GROUP BY query, source, title, price
+            )
+        """)
         con.commit()
     finally:
         con.close()

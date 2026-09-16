@@ -634,7 +634,7 @@ def create_app() -> Flask:
     def api_alerts():
         unseen_only = request.args.get("unseen") == "1"
         query_filter = request.args.get("query") or None
-        alerts = get_alerts(unseen_only=unseen_only, limit=100, query=query_filter)
+        alerts = get_alerts(unseen_only=unseen_only, limit=2000, query=query_filter)
         # Apply same display-time filters as Get Estimate: carhartt required,
         # no junk terms, and model code must appear in title when query has one.
         _af_code_m = re.search(r'\b(J[A-Z]?\d{2,})\b', query_filter or '', re.IGNORECASE)
