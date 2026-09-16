@@ -16,14 +16,25 @@ def _utc_now() -> str:
 
 
 def _normalize_url(url: str) -> str:
-    """Strip tracking query params from eBay item URLs so the same listing
-    isn't stored twice when eBay appends different tracking parameters."""
-    if not url or "ebay.com" not in url:
+    """Normalize eBay URLs to canonical item-ID form, stripping title slugs and tracking params.
+    e.g. ebay.com/itm/carhartt-j110/123456789?hash=abc → ebay.com/itm/123456789
+    """
+    if not url:
         return url
     try:
         p = urlparse(url)
-        if "/itm/" in p.path:
-            return urlunparse((p.scheme, p.netloc, p.path, "", "", ""))
+        if "ebay.com" in (p.netloc or ""):
+            if "/itm/" in p.path:
+                parts = [x for x in p.path.split('/') if x]
+                try:
+                    itm_idx = parts.index('itm')
+                    after_itm = parts[itm_idx + 1:]
+                    numeric = [x for x in after_itm if x.isdigit()]
+                    if numeric:
+                        return f"https://www.ebay.com/itm/{numeric[-1]}"
+                except (ValueError, IndexError):
+                    pass
+                return urlunparse((p.scheme, p.netloc, p.path, "", "", ""))
     except Exception:
         pass
     return url
@@ -804,12 +815,20 @@ def insert_alert(query: str, source: str, title: str, price: float,
                  url: str, photo: Optional[str], casp: Optional[float],
                  deal_score: Optional[int], size: Optional[str] = None,
                  vision_grade: Optional[str] = None, vision_notes: Optional[str] = None) -> None:
-    """Insert a deal alert. Skips duplicates by URL."""
+    """Insert a deal alert. Deduplicates by (url, query) pair, then by (source, query, title, price)."""
     url = _normalize_url(url)
     con = _connect()
     try:
-        exists = con.execute("SELECT 1 FROM listing_alerts WHERE url=?", (url,)).fetchone()
-        if exists:
+        # Primary dedup: same URL already stored for this specific query
+        if con.execute(
+            "SELECT 1 FROM listing_alerts WHERE url=? AND query=?", (url, query)
+        ).fetchone():
+            return
+        # Fallback dedup: identical listing (source+title+price) already stored for this query
+        if title and price is not None and con.execute(
+            "SELECT 1 FROM listing_alerts WHERE source=? AND query=? AND title=? AND price=?",
+            (source, query, title, price)
+        ).fetchone():
             return
         con.execute(
             """INSERT INTO listing_alerts
