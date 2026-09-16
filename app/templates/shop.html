@@ -10,11 +10,11 @@
     <style>
       *, *::before, *::after { box-sizing: border-box; }
       :root {
-        --bg-page:   #424d8f;
-        --bg-header: #424d8f;
-        --bg-light:  #424d8f;
-        --fg:        #aeb59f;
-        --line:      rgba(174,181,159,0.18);
+        --bg-page:   #393e59;
+        --bg-header: #393e59;
+        --bg-light:  #393e59;
+        --fg:        #dee3c8;
+        --line:      rgba(222,227,200,0.18);
       }
 
       html, body { overflow-x: hidden; }
@@ -31,8 +31,8 @@
       .ticker-wrap {
         overflow: hidden;
         white-space: nowrap;
-        background: #424d8f;
-        border-bottom: 1px solid rgba(174,181,159,0.1);
+        background: #393e59;
+        border-bottom: 1px solid rgba(222,227,200,0.1);
         padding: 7px 0;
       }
       .ticker-track {
@@ -44,7 +44,7 @@
         font-weight: 600;
         letter-spacing: 0.07em;
         text-transform: uppercase;
-        color: #aeb59f;
+        color: #dee3c8;
       }
       .ticker-dot { font-size: 16px; vertical-align: middle; margin: 0 16px; opacity: 0.6; }
       @keyframes ticker {
@@ -55,7 +55,7 @@
       /* ── Main header ── */
       .site-header { position: sticky; top: 0; z-index: 100; }
       .header-main {
-        background: #aeb59f;
+        background: #dee3c8;
         border-bottom: 1px solid rgba(0,0,0,0.08);
         display: flex;
         align-items: center;
@@ -69,7 +69,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: #424d8f;
+        background: #393e59;
         border-radius: 4px;
         width: 58px;
         height: 58px;
@@ -77,10 +77,10 @@
         padding: 4px 0;
         gap: 1px;
       }
-      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #aeb59f; align-self: flex-start; padding-left: 5px; }
-      .el-symbol { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: #aeb59f; display: inline-flex; align-items: baseline; gap: 1px; }
+      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #dee3c8; align-self: flex-start; padding-left: 5px; }
+      .el-symbol { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: #dee3c8; display: inline-flex; align-items: baseline; gap: 1px; }
       .el-carhartt-c { display: inline-block; vertical-align: middle; flex-shrink: 0; }
-      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.18em; color: #aeb59f; }
+      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.18em; color: #dee3c8; }
 
       /* ── Nav ── */
       .nav-links {
@@ -95,7 +95,7 @@
         border-radius: 6px;
         border: none;
         background: transparent;
-        color: #424d8f;
+        color: #393e59;
         font-family: inherit;
         font-size: 15px;
         font-weight: 700;
@@ -106,8 +106,8 @@
         transition: color 0.15s, background 0.15s;
         white-space: nowrap;
       }
-      .nav-link:hover { color: #424d8f; }
-      .nav-link.active { background: rgba(0,0,0,0.07); color: #424d8f; }
+      .nav-link:hover { color: #393e59; }
+      .nav-link.active { background: rgba(0,0,0,0.07); color: #393e59; }
 
       /* ── Sort sub-bar (lighter bg, matches ticker + page) ── */
       .sort-bar {
@@ -126,8 +126,8 @@
         padding: 10px 14px;
         border-radius: 10px;
         border: 1px solid rgba(0,0,0,0.15);
-        background: #aeb59f;
-        color: #424d8f;
+        background: #dee3c8;
+        color: #393e59;
         font-family: inherit;
         font-size: 14px;
         font-weight: 700;
@@ -137,12 +137,12 @@
         transition: border-color 0.15s;
       }
       .sort-btn:hover { border-color: rgba(0,0,0,0.3); }
-      .sort-caret { font-size: 13px; color: #424d8f; }
+      .sort-caret { font-size: 13px; color: #393e59; }
       .sort-menu {
         position: absolute;
         left: 0;
         top: calc(100% + 4px);
-        background: #aeb59f;
+        background: #dee3c8;
         border: 1px solid rgba(0,0,0,0.15);
         border-radius: 10px;
         overflow: hidden;
@@ -156,7 +156,7 @@
       .sort-opt {
         display: block; width: 100%;
         padding: 13px 16px; border: none;
-        background: transparent; color: #424d8f;
+        background: transparent; color: #393e59;
         font-family: inherit; font-size: 14px; font-weight: 600;
         text-align: left; cursor: pointer;
         transition: background 0.1s;
@@ -183,8 +183,8 @@
 
       /* ── Card ── */
       .listing-card {
-        background: #aeb59f;
-        color: #424d8f;
+        background: #dee3c8;
+        color: #393e59;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 20px rgba(0,0,0,0.18);
@@ -196,18 +196,18 @@
       .listing-card.sold { opacity: 0.72; }
       .listing-photo {
         position: relative; width: 100%; aspect-ratio: 1 / 1;
-        background: #aeb59f;
+        background: #dee3c8;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
       }
       .listing-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
-      .photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #424d8f; }
+      .photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #393e59; }
       .sold-stamp {
         position: absolute; inset: 0;
         display: flex; align-items: center; justify-content: center;
         background: rgba(0,0,0,0.3);
       }
       .sold-stamp span {
-        background: #424d8f; color: #aeb59f;
+        background: #393e59; color: #dee3c8;
         font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
         padding: 5px 14px; border-radius: 3px; transform: rotate(-12deg);
       }
@@ -216,7 +216,7 @@
       .listing-meta { display: flex; align-items: center; justify-content: space-between; }
       .listing-size {
         font-size: 14px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.05em; background: #aeb59f; color: #424d8f;
+        letter-spacing: 0.05em; background: #dee3c8; color: #393e59;
         padding: 5px 11px; border-radius: 4px;
       }
       .listing-price { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
@@ -224,7 +224,7 @@
       /* ── Empty ── */
       .empty {
         grid-column: 1 / -1; text-align: center; padding: 60px 24px;
-        font-size: 13px; color: rgba(174,181,159,0.5); font-weight: 600; letter-spacing: 0.04em;
+        font-size: 13px; color: rgba(222,227,200,0.5); font-weight: 600; letter-spacing: 0.04em;
       }
 
       /* ── Modal ── */
@@ -235,7 +235,7 @@
       }
       .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
       .modal {
-        background: #aeb59f; color: #424d8f; border-radius: 12px;
+        background: #dee3c8; color: #393e59; border-radius: 12px;
         width: 100%; max-width: 860px; overflow: hidden;
         display: grid; grid-template-columns: 3fr 2fr;
         box-shadow: 0 24px 60px rgba(0,0,0,0.4); position: relative; margin: auto;
@@ -243,21 +243,21 @@
       }
       @media (max-width: 640px) { .modal { grid-template-columns: 1fr; } }
       .modal-photo {
-        background: #aeb59f;
+        background: #dee3c8;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
         position: relative; min-height: 0;
       }
       @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
-      .modal-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; user-select: none; background: #aeb59f; }
-      .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #424d8f; }
+      .modal-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; user-select: none; background: #dee3c8; }
+      .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #393e59; }
       .slide-arrow {
         position: absolute; top: 50%; transform: translateY(-50%);
         width: 48px; height: 48px; border-radius: 999px; border: none;
-        background: rgba(174,181,159,0.9); color: #111; font-size: 24px; font-weight: 700;
+        background: rgba(222,227,200,0.9); color: #111; font-size: 24px; font-weight: 700;
         cursor: pointer; display: flex; align-items: center; justify-content: center;
         z-index: 5; transition: background 0.15s; box-shadow: 0 2px 12px rgba(0,0,0,0.2);
       }
-      .slide-arrow:hover { background: #aeb59f; }
+      .slide-arrow:hover { background: #dee3c8; }
       .slide-prev { left: 10px; }
       .slide-next { right: 10px; }
       .slide-dots {
@@ -266,14 +266,14 @@
       }
       .slide-dot {
         width: 6px; height: 6px; border-radius: 999px;
-        background: rgba(174,181,159,0.5); transition: background 0.15s;
+        background: rgba(222,227,200,0.5); transition: background 0.15s;
       }
-      .slide-dot.active { background: #aeb59f; }
+      .slide-dot.active { background: #dee3c8; }
       .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; max-height: calc(100vh - 48px); }
       .modal-close {
         position: absolute; top: 14px; right: 14px;
         width: 32px; height: 32px; border-radius: 999px; border: none;
-        background: rgba(0,0,0,0.12); color: #424d8f;
+        background: rgba(0,0,0,0.12); color: #393e59;
         font-size: 14px; font-weight: 700; cursor: pointer;
         display: flex; align-items: center; justify-content: center; z-index: 10;
         transition: background 0.15s;
@@ -286,32 +286,32 @@
         display: inline-flex; align-items: center; justify-content: center;
         min-width: 44px; height: 44px; padding: 0 12px;
         font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;
-        background: #aeb59f; color: #424d8f; border-radius: 6px; flex-shrink: 0;
+        background: #dee3c8; color: #393e59; border-radius: 6px; flex-shrink: 0;
       }
-      .modal-desc { font-size: 13px; color: #424d8f; line-height: 1.6; }
+      .modal-desc { font-size: 13px; color: #393e59; line-height: 1.6; }
       .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
       .btn-stripe {
         width: 100%; padding: 14px; border-radius: 8px; border: none;
-        background: #424d8f; color: #aeb59f;
+        background: #393e59; color: #dee3c8;
         font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
         transition: background 0.15s;
       }
       .btn-stripe:hover { background: #2a2a2a; }
       .btn-paypal {
         width: 100%; padding: 14px; border-radius: 8px; border: 2px solid #f0c040;
-        background: #ffd140; color: #424d8f;
+        background: #ffd140; color: #393e59;
         font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
         transition: background 0.15s;
       }
       .btn-paypal:hover { background: #f5c800; }
-      .payment-note { font-size: 11px; color: #424d8f; text-align: center; }
-      .modal-breakdown { display: flex; flex-direction: column; gap: 5px; border-top: 1px solid #aeb59f; border-bottom: 1px solid #aeb59f; padding: 12px 0; }
-      .ship-to-sel { font-size: 12px; background: #aeb59f; border: 1px solid #aeb59f; border-radius: 4px; padding: 5px 8px; color: #424d8f; font-family: inherit; cursor: pointer; width: 100%; margin-bottom: 6px; }
+      .payment-note { font-size: 11px; color: #393e59; text-align: center; }
+      .modal-breakdown { display: flex; flex-direction: column; gap: 5px; border-top: 1px solid #dee3c8; border-bottom: 1px solid #dee3c8; padding: 12px 0; }
+      .ship-to-sel { font-size: 12px; background: #dee3c8; border: 1px solid #dee3c8; border-radius: 4px; padding: 5px 8px; color: #393e59; font-family: inherit; cursor: pointer; width: 100%; margin-bottom: 6px; }
       .bk-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
-      .bk-label { color: #424d8f; }
+      .bk-label { color: #393e59; }
       .bk-val { font-weight: 700; color: #111; }
-      .bk-note { font-size: 11px; color: #424d8f; font-weight: 400; }
-      .bk-total { border-top: 1px solid #aeb59f; padding-top: 8px; margin-top: 4px; }
+      .bk-note { font-size: 11px; color: #393e59; font-weight: 400; }
+      .bk-total { border-top: 1px solid #dee3c8; padding-top: 8px; margin-top: 4px; }
       .bk-total .bk-label { color: #111; font-weight: 700; font-size: 14px; }
       .bk-total .bk-val { font-size: 15px; }
 
@@ -327,7 +327,7 @@
 
       /* ── Footer ── */
       .site-footer {
-        background: #aeb59f;
+        background: #dee3c8;
         border-top: 1px solid rgba(0,0,0,0.08);
         padding: 40px 40px;
         display: flex;
@@ -337,16 +337,16 @@
         align-items: flex-start;
       }
       .footer-col { display: flex; flex-direction: column; gap: 8px; }
-      .footer-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #424d8f; margin-bottom: 4px; }
-      .footer-text { font-size: 13px; color: #424d8f; line-height: 1.6; max-width: 280px; }
+      .footer-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #393e59; margin-bottom: 4px; }
+      .footer-text { font-size: 13px; color: #393e59; line-height: 1.6; max-width: 280px; }
       .footer-accordion { border: 1px solid rgba(0,0,0,0.15); border-radius: 10px; overflow: hidden; min-width: 220px; }
-      .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: #aeb59f; border: none; color: #424d8f; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+      .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: #dee3c8; border: none; color: #393e59; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
       .footer-acc-arrow { transition: transform 0.22s ease; display: inline-block; }
       .footer-acc-btn.open .footer-acc-arrow { transform: rotate(180deg); }
       .footer-acc-body {
         overflow: hidden; max-height: 0; opacity: 0;
-        padding: 0 14px; font-size: 13px; color: #424d8f; line-height: 1.6; max-width: 280px;
-        background: #aeb59f;
+        padding: 0 14px; font-size: 13px; color: #393e59; line-height: 1.6; max-width: 280px;
+        background: #dee3c8;
         transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
       }
       .footer-acc-body.open { max-height: 400px; opacity: 1; padding: 10px 14px; }
@@ -354,7 +354,7 @@
         background: var(--bg-light);
         border: 1px solid var(--line);
         border-radius: 6px;
-        color: #aeb59f;
+        color: #dee3c8;
         font-family: inherit;
         font-size: 13px;
         font-weight: 600;
@@ -367,7 +367,7 @@
         background-position: right 12px center;
         padding-right: 32px;
       }
-      .footer-copy { font-size: 11px; color: #424d8f; align-self: flex-end; }
+      .footer-copy { font-size: 11px; color: #393e59; align-self: flex-end; }
       @media (max-width: 600px) {
         .site-footer { padding: 32px 20px; gap: 24px; }
         .footer-copy { width: 100%; }
@@ -397,7 +397,7 @@
       <div class="header-main">
         <div class="element-logo">
           <span class="el-number">17</span>
-          <span class="el-symbol"><svg class="el-carhartt-c" viewBox="0 0 22 26" height="0.88em" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="crh"><path d="M11.432 25.298Q8.321 25.298 5.978 23.921Q3.634 22.545 2.317 19.993Q1 17.44 1 13.943Q1 10.342 2.369 7.79Q3.738 5.238 6.074 3.884Q8.411 2.53 11.327 2.53Q13.202 2.53 14.817 3.073Q16.432 3.616 17.689 4.613Q18.946 5.61 19.743 6.972Q20.539 8.333 20.777 9.985H16.164Q15.926 9.182 15.501 8.549Q15.077 7.917 14.475 7.47Q13.872 7.024 13.098 6.793Q12.324 6.562 11.402 6.562Q9.69 6.562 8.381 7.418Q7.071 8.274 6.342 9.911Q5.613 11.548 5.613 13.899Q5.613 16.25 6.335 17.894Q7.057 19.539 8.366 20.402Q9.676 21.265 11.461 21.265Q13.068 21.265 14.214 20.685Q15.36 20.104 15.978 19.025Q16.595 17.946 16.595 16.503L17.548 16.637H11.774V13.185H21V15.952Q21 18.869 19.765 20.96Q18.53 23.051 16.372 24.174Q14.214 25.298 11.432 25.298Z"/></clipPath><mask id="crh2"><rect width="22" height="26" fill="white"/><circle cx="10" cy="10" r="3.5" fill="black"/><circle cx="14" cy="10" r="4.5" fill="white"/></mask></defs><rect width="22" height="26" fill="#aeb59f" clip-path="url(#crh)" mask="url(#crh2)"/></svg><span style="font-weight:600">r</span></span>
+          <span class="el-symbol"><svg class="el-carhartt-c" viewBox="0 0 22 26" height="0.88em" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="crh"><path d="M11.432 25.298Q8.321 25.298 5.978 23.921Q3.634 22.545 2.317 19.993Q1 17.44 1 13.943Q1 10.342 2.369 7.79Q3.738 5.238 6.074 3.884Q8.411 2.53 11.327 2.53Q13.202 2.53 14.817 3.073Q16.432 3.616 17.689 4.613Q18.946 5.61 19.743 6.972Q20.539 8.333 20.777 9.985H16.164Q15.926 9.182 15.501 8.549Q15.077 7.917 14.475 7.47Q13.872 7.024 13.098 6.793Q12.324 6.562 11.402 6.562Q9.69 6.562 8.381 7.418Q7.071 8.274 6.342 9.911Q5.613 11.548 5.613 13.899Q5.613 16.25 6.335 17.894Q7.057 19.539 8.366 20.402Q9.676 21.265 11.461 21.265Q13.068 21.265 14.214 20.685Q15.36 20.104 15.978 19.025Q16.595 17.946 16.595 16.503L17.548 16.637H11.774V13.185H21V15.952Q21 18.869 19.765 20.96Q18.53 23.051 16.372 24.174Q14.214 25.298 11.432 25.298Z"/></clipPath><mask id="crh2"><rect width="22" height="26" fill="white"/><circle cx="10" cy="10" r="3.5" fill="black"/><circle cx="14" cy="10" r="4.5" fill="white"/></mask></defs><rect width="22" height="26" fill="#dee3c8" clip-path="url(#crh)" mask="url(#crh2)"/></svg><span style="font-weight:600">r</span></span>
           <span class="el-name">Graphite</span>
         </div>
         <nav class="nav-links">
@@ -410,7 +410,7 @@
 
       <!-- Sort sub-bar -->
       <div class="sort-bar">
-        <span style="margin-right:auto;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#aeb59f;">All prices in USD</span>
+        <span style="margin-right:auto;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#dee3c8;">All prices in USD</span>
         <div class="sort-wrap" id="sortWrap">
           <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
           <div class="sort-menu" id="sortMenu">
@@ -498,9 +498,9 @@
         const hasStock = s => LISTINGS.some(l => l.size === s);
         const pillStyle = (active, empty) =>
           `display:inline-flex;align-items:center;gap:5px;padding:7px 18px;border-radius:999px;` +
-          `border:1.5px solid ${active ? '#aeb59f' : empty ? 'rgba(174,181,159,0.15)' : 'rgba(174,181,159,0.3)'};` +
-          `background:${active ? '#aeb59f' : 'transparent'};` +
-          `color:${active ? '#111' : empty ? 'rgba(174,181,159,0.3)' : '#fff'};` +
+          `border:1.5px solid ${active ? '#dee3c8' : empty ? 'rgba(222,227,200,0.15)' : 'rgba(222,227,200,0.3)'};` +
+          `background:${active ? '#dee3c8' : 'transparent'};` +
+          `color:${active ? '#111' : empty ? 'rgba(222,227,200,0.3)' : '#fff'};` +
           `font-family:inherit;font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;` +
           `cursor:${empty && !active ? 'default' : 'pointer'};transition:all 0.15s;`;
         const all = `<button style="${pillStyle(!currentSize, false)}" data-size="">All</button>`;
@@ -623,7 +623,7 @@
         renderBreakdown();
         const actions = document.getElementById('modalActions');
         if (listing.sold) {
-          actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#424d8f;font-size:14px;padding:10px 0;">This item has sold.</div>`;
+          actions.innerHTML = `<div style="text-align:center;font-weight:700;color:#393e59;font-size:14px;padding:10px 0;">This item has sold.</div>`;
         } else {
           actions.innerHTML = `
             <button class="btn-stripe" id="stripeBtn">Buy with card — ${fmt(listing.price + SHIPPING_USD + calcFee(listing.price + SHIPPING_USD))}</button>
