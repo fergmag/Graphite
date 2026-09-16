@@ -4,6 +4,7 @@ import os
 import sqlite3
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional, Tuple
+from urllib.parse import urlparse, urlunparse
 
 log = logging.getLogger(__name__)
 
@@ -12,6 +13,20 @@ DB_PATH = os.environ.get("GRAPHITE_DB", "graphite.db")
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _normalize_url(url: str) -> str:
+    """Strip tracking query params from eBay item URLs so the same listing
+    isn't stored twice when eBay appends different tracking parameters."""
+    if not url or "ebay.com" not in url:
+        return url
+    try:
+        p = urlparse(url)
+        if "/itm/" in p.path:
+            return urlunparse((p.scheme, p.netloc, p.path, "", "", ""))
+    except Exception:
+        pass
+    return url
 
 
 def _connect() -> sqlite3.Connection:
@@ -777,6 +792,7 @@ def db_delete_section(section_id: str) -> None:
 
 def alert_url_exists(url: str) -> bool:
     """Return True if an alert with this URL is already in the DB."""
+    url = _normalize_url(url)
     con = _connect()
     try:
         return bool(con.execute("SELECT 1 FROM listing_alerts WHERE url=?", (url,)).fetchone())
@@ -789,6 +805,7 @@ def insert_alert(query: str, source: str, title: str, price: float,
                  deal_score: Optional[int], size: Optional[str] = None,
                  vision_grade: Optional[str] = None, vision_notes: Optional[str] = None) -> None:
     """Insert a deal alert. Skips duplicates by URL."""
+    url = _normalize_url(url)
     con = _connect()
     try:
         exists = con.execute("SELECT 1 FROM listing_alerts WHERE url=?", (url,)).fetchone()

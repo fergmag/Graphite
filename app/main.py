@@ -656,20 +656,27 @@ def create_app() -> Flask:
     def api_alerts_counts():
         queries = (request.get_json(silent=True) or {}).get("queries", [])
         queries = [q for q in queries if isinstance(q, str)]
-        raw_counts = count_alerts_per_query(queries)
         counts = {}
         for q in queries:
             norm_q = normalize_query(q)
-            if colorway_terms_for_query(norm_q):
-                # Apply colorway filter in Python so count matches what's displayed
-                q_alerts = get_alerts(query=q, limit=5000)
-                counts[q] = sum(
-                    1 for a in q_alerts
-                    if not (a.get("source") == "etsy" and not a.get("photo"))
-                    and negative_colorway_filter((a.get("title") or "").lower(), norm_q)
-                )
-            else:
-                counts[q] = raw_counts.get(q, 0)
+            code_m = re.search(r'\b(J[A-Z]?\d{2,})\b', q, re.IGNORECASE)
+            req_code = code_m.group(1).lower() if code_m else None
+            q_alerts = get_alerts(query=q, limit=5000)
+            n = 0
+            for a in q_alerts:
+                t = (a.get("title") or "").lower()
+                if a.get("source") == "etsy" and not a.get("photo"):
+                    continue
+                if "carhartt" not in t:
+                    continue
+                if any(term in t for term in JUNK_TERMS):
+                    continue
+                if req_code and req_code not in t:
+                    continue
+                if not negative_colorway_filter(t, norm_q):
+                    continue
+                n += 1
+            counts[q] = n
         return jsonify({"ok": True, "counts": counts})
 
     @app.post("/api/alerts/mark-seen")
