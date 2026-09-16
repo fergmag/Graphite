@@ -95,13 +95,13 @@ Requirements:
 
 The site uses **exactly two colors**:
 - `#393e59` — Indigo-slate (page background, logo box, ticker background, dark elements)
-- `#dee3c8` — Sage/olive (header, footer, text on dark backgrounds, logo text/SVG fill)
+- `#ced1cb` — Sage/olive (header, footer, text on dark backgrounds, logo text/SVG fill)
 
 **No other colors anywhere in the page chrome** (header, footer, ticker, nav, logo). This applies to all pages: shop.html, archive.html, about.html. Any third color introduced in header/footer/ticker/logo is a bug. Content UI (listing cards, payment buttons, sold stamps) may use minimal additional colors where functionally required.
 
-The logo box has: `background: #393e59`, `border-radius: 4px` (no border — the dark box is self-defining on the sage header). Text and SVG fill inside the logo are `color: #dee3c8` / `fill="#dee3c8"`.
+The logo box has: `background: #393e59`, `border-radius: 4px` (no border — the dark box is self-defining on the sage header). Text and SVG fill inside the logo are `color: #ced1cb` / `fill="#ced1cb"`.
 
-**SVG mask exception**: Inside `<mask>` elements, `fill="white"` and `fill="black"` must remain as CSS keywords (not hex). Mask opacity is luminance-based — using `#dee3c8` (67% luminance) would partially show the mask hole instead of fully punching it out.
+**SVG mask exception**: Inside `<mask>` elements, `fill="white"` and `fill="black"` must remain as CSS keywords (not hex). Mask opacity is luminance-based — using `#ced1cb` (67% luminance) would partially show the mask hole instead of fully punching it out.
 
 ---
 

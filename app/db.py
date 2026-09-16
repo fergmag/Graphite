@@ -854,7 +854,7 @@ def get_alerts(unseen_only: bool = False, limit: int = 100, query: Optional[str]
         where = ("WHERE " + " AND ".join(clauses)) if clauses else ""
         params.append(limit)
         rows = con.execute(
-            f"SELECT * FROM listing_alerts {where} ORDER BY created_at DESC LIMIT ?",
+            f"SELECT * FROM listing_alerts {where} ORDER BY deal_score DESC, price ASC, created_at DESC LIMIT ?",
             params,
         ).fetchall()
         return [dict(r) for r in rows]
