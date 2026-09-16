@@ -1,5 +1,37 @@
 [
   {
+    "id": 2770,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Style Faded Jacket 2007 J97 PTL Size Large",
+    "price": 650.0,
+    "url": "https://www.ebay.com/itm/227523851895",
+    "photo": "https://i.ebayimg.com/images/g/bycAAeSwSbhqqkjm/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-16T09:13:58.991070+00:00"
+  },
+  {
+    "id": 2769,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol Blue” J204 PTB",
+    "price": 449.99,
+    "url": "https://www.ebay.com/itm/327316465823",
+    "photo": "https://i.ebayimg.com/images/g/UpwAAeSwJ9tqhJ06/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-16T09:13:58.500358+00:00"
+  },
+  {
     "id": 2768,
     "query": "j97 moss",
     "source": "ebay",
