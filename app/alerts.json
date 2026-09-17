@@ -8304,6 +8304,22 @@
     "created_at": "2026-09-16T17:11:41.194317+00:00"
   },
   {
+    "id": 962,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "vintage 90’s carhartt j43 htg sandstone detroit jacket in hunter green size larg",
+    "price": 750.0,
+    "url": "https://www.ebay.com/itm/227504838461",
+    "photo": "https://i.ebayimg.com/images/g/SP4AAeSwpSVqmgje/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-17T16:26:27.924497+00:00"
+  },
+  {
     "id": 607,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -10894,6 +10910,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.380568+00:00"
+  },
+  {
+    "id": 963,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage J43 HTG Green Carhartt Detroit Jacket Size XL Union Made 90s Faded Boxy",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/147557764864",
+    "photo": "https://i.ebayimg.com/images/g/68UAAeSwdbtqnzOk/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-17T16:26:28.098882+00:00"
   },
   {
     "id": 137,
