@@ -960,6 +960,22 @@
     "created_at": "2026-09-14T17:20:02.390257+00:00"
   },
   {
+    "id": 976,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "VTG Carhartt Jacket Hooded Burgundy Men's Size XL Full Zip Workwear USA Made",
+    "price": 108.0,
+    "url": "https://www.ebay.com/itm/157637576992",
+    "photo": "https://i.ebayimg.com/images/g/EYkAAeSwI59pdqVI/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-17T22:24:34.504844+00:00"
+  },
+  {
     "id": 422,
     "query": "ju1005",
     "source": "ebay",
@@ -4430,6 +4446,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T21:53:01.976846+00:00"
+  },
+  {
+    "id": 977,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J06BRG Hooded Jacket Burgandy Quilted Lined USA XL Regular",
+    "price": 230.91,
+    "url": "https://www.ebay.com/itm/318883407571",
+    "photo": "https://i.ebayimg.com/images/g/pnwAAeSwMyBqrB3s/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-17T22:24:34.597958+00:00"
   },
   {
     "id": 952,
