@@ -5232,6 +5232,22 @@
     "created_at": "2026-09-14T17:18:54.977970+00:00"
   },
   {
+    "id": 994,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "vintage Carhartt J97 Sandstone Detroit Jacket Black gray workwear jacket Grail",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/377500599552",
+    "photo": "https://i.ebayimg.com/images/g/rpEAAeSwDW5qqtcd/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-18T10:24:12.795084+00:00"
+  },
+  {
     "id": 83,
     "query": "j97 moss",
     "source": "ebay",
@@ -5918,6 +5934,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:47.329189+00:00"
+  },
+  {
+    "id": 995,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Jb0866 Moss Faded Green XL  J97",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/366296989431",
+    "photo": "https://i.ebayimg.com/images/g/0rIAAeSwbkVpocIF/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-18T10:24:12.808242+00:00"
   },
   {
     "id": 955,
@@ -13536,6 +13568,22 @@
     "created_at": "2026-09-14T17:55:04.121563+00:00"
   },
   {
+    "id": 993,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "01’s Carhartt J97 MOS Detroit Jacket.",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/106183179",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/56d52b14aa324d1f803c8eb32e4eb47d",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-18T10:24:12.499740+00:00"
+  },
+  {
     "id": 145,
     "query": "j97 moss",
     "source": "ebay",
@@ -14398,6 +14446,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:21:04.007184+00:00"
+  },
+  {
+    "id": 996,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage early 1990s J97MOS Carhartt Detroit Jacket Size Small JAPAN RARE",
+    "price": 1050.0,
+    "url": "https://www.ebay.com/itm/188945856016",
+    "photo": "https://i.ebayimg.com/images/g/1iQAAeSwN55qrMjg/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-18T10:24:12.996449+00:00"
   },
   {
     "id": 853,
