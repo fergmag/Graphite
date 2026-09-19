@@ -720,6 +720,22 @@
     "created_at": "2026-09-14T17:18:55.269727+00:00"
   },
   {
+    "id": 1053,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Veg Carhartt C08 Burgundy Western Chore Coat Quilted Lining Men’s Large",
+    "price": 99.0,
+    "url": "https://www.ebay.com/itm/257753466188",
+    "photo": "https://i.ebayimg.com/images/g/KZ8AAeSwvMFqru9F/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-19T22:24:30.097899+00:00"
+  },
+  {
     "id": 239,
     "query": "j97 moss",
     "source": "etsy",
