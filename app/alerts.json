@@ -9664,6 +9664,22 @@
     "created_at": "2026-09-16T03:07:19.089560+00:00"
   },
   {
+    "id": 1059,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Carhartt Mens Vintage Denim Jacket J139-DST 2XL Hooded Lined ASAP Rocky",
+    "price": 225.0,
+    "url": "https://www.etsy.com/listing/4578828338/carhartt-mens-vintage-denim-jacket-j139",
+    "photo": "https://i.etsystatic.com/64464969/r/il/d9cca1/8549795838/il_570xN.8549795838_n7k8.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-20T04:22:36.196037+00:00"
+  },
+  {
     "id": 785,
     "query": "j97 petrol",
     "source": "ebay",
