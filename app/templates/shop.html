@@ -13,8 +13,8 @@
         --bg-page:   #393e59;
         --bg-header: #393e59;
         --bg-light:  #393e59;
-        --fg:        #d5d5e0;
-        --line:      rgba(213,213,224,0.18);
+        --fg:        #e1e1e3;
+        --line:      rgba(225,225,227,0.18);
       }
 
       html, body { overflow-x: hidden; }
@@ -32,7 +32,7 @@
         overflow: hidden;
         white-space: nowrap;
         background: #393e59;
-        border-bottom: 1px solid rgba(213,213,224,0.1);
+        border-bottom: 1px solid rgba(225,225,227,0.1);
         padding: 7px 0;
       }
       .ticker-track {
@@ -44,7 +44,7 @@
         font-weight: 600;
         letter-spacing: 0.07em;
         text-transform: uppercase;
-        color: #d5d5e0;
+        color: #e1e1e3;
       }
       .ticker-dot { font-size: 16px; vertical-align: middle; margin: 0 16px; opacity: 0.6; }
       @keyframes ticker {
@@ -55,7 +55,7 @@
       /* ── Main header ── */
       .site-header { position: sticky; top: 0; z-index: 100; }
       .header-main {
-        background: #d5d5e0;
+        background: #e1e1e3;
         border-bottom: 1px solid rgba(0,0,0,0.08);
         display: flex;
         align-items: center;
@@ -77,9 +77,9 @@
         padding: 4px 0;
         gap: 1px;
       }
-      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #d5d5e0; align-self: flex-start; padding-left: 5px; }
-      .el-symbol { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: #d5d5e0; display: inline-flex; align-items: baseline; gap: 1px; }
-      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.18em; color: #d5d5e0; }
+      .el-number { font-size: 9px; font-weight: 700; letter-spacing: 0.04em; color: #e1e1e3; align-self: flex-start; padding-left: 5px; }
+      .el-symbol { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: #e1e1e3; display: inline-flex; align-items: baseline; gap: 1px; }
+      .el-name { font-size: 7px; font-weight: 700; letter-spacing: 0.18em; color: #e1e1e3; }
 
       /* ── Nav ── */
       .nav-links {
@@ -125,7 +125,7 @@
         padding: 10px 14px;
         border-radius: 10px;
         border: 1px solid rgba(0,0,0,0.15);
-        background: #d5d5e0;
+        background: #e1e1e3;
         color: #393e59;
         font-family: inherit;
         font-size: 14px;
@@ -141,7 +141,7 @@
         position: absolute;
         left: 0;
         top: calc(100% + 4px);
-        background: #d5d5e0;
+        background: #e1e1e3;
         border: 1px solid rgba(0,0,0,0.15);
         border-radius: 10px;
         overflow: hidden;
@@ -182,7 +182,7 @@
 
       /* ── Card ── */
       .listing-card {
-        background: #d5d5e0;
+        background: #e1e1e3;
         color: #393e59;
         border-radius: 8px;
         overflow: hidden;
@@ -195,7 +195,7 @@
       .listing-card.sold { opacity: 0.72; }
       .listing-photo {
         position: relative; width: 100%; aspect-ratio: 1 / 1;
-        background: #d5d5e0;
+        background: #e1e1e3;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
       }
       .listing-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
@@ -206,7 +206,7 @@
         background: rgba(0,0,0,0.3);
       }
       .sold-stamp span {
-        background: #393e59; color: #d5d5e0;
+        background: #393e59; color: #e1e1e3;
         font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
         padding: 5px 14px; border-radius: 3px; transform: rotate(-12deg);
       }
@@ -215,7 +215,7 @@
       .listing-meta { display: flex; align-items: center; justify-content: space-between; }
       .listing-size {
         font-size: 14px; font-weight: 700; text-transform: uppercase;
-        letter-spacing: 0.05em; background: #d5d5e0; color: #393e59;
+        letter-spacing: 0.05em; background: #e1e1e3; color: #393e59;
         padding: 5px 11px; border-radius: 4px;
       }
       .listing-price { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
@@ -223,7 +223,7 @@
       /* ── Empty ── */
       .empty {
         grid-column: 1 / -1; text-align: center; padding: 60px 24px;
-        font-size: 13px; color: rgba(213,213,224,0.5); font-weight: 600; letter-spacing: 0.04em;
+        font-size: 13px; color: rgba(225,225,227,0.5); font-weight: 600; letter-spacing: 0.04em;
       }
 
       /* ── Modal ── */
@@ -234,7 +234,7 @@
       }
       .modal-overlay.open { display: flex; align-items: flex-start; justify-content: center; }
       .modal {
-        background: #d5d5e0; color: #393e59; border-radius: 12px;
+        background: #e1e1e3; color: #393e59; border-radius: 12px;
         width: 100%; max-width: 860px; overflow: hidden;
         display: grid; grid-template-columns: 3fr 2fr;
         box-shadow: 0 24px 60px rgba(0,0,0,0.4); position: relative; margin: auto;
@@ -242,21 +242,21 @@
       }
       @media (max-width: 640px) { .modal { grid-template-columns: 1fr; } }
       .modal-photo {
-        background: #d5d5e0;
+        background: #e1e1e3;
         display: flex; align-items: center; justify-content: center; overflow: hidden;
         position: relative; min-height: 0;
       }
       @media (max-width: 640px) { .modal-photo { aspect-ratio: 1 / 1; } }
-      .modal-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; user-select: none; background: #d5d5e0; }
+      .modal-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; display: block; user-select: none; background: #e1e1e3; }
       .modal-photo-placeholder { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #393e59; }
       .slide-arrow {
         position: absolute; top: 50%; transform: translateY(-50%);
         width: 48px; height: 48px; border-radius: 999px; border: none;
-        background: rgba(213,213,224,0.9); color: #111; font-size: 24px; font-weight: 700;
+        background: rgba(225,225,227,0.9); color: #111; font-size: 24px; font-weight: 700;
         cursor: pointer; display: flex; align-items: center; justify-content: center;
         z-index: 5; transition: background 0.15s; box-shadow: 0 2px 12px rgba(0,0,0,0.2);
       }
-      .slide-arrow:hover { background: #d5d5e0; }
+      .slide-arrow:hover { background: #e1e1e3; }
       .slide-prev { left: 10px; }
       .slide-next { right: 10px; }
       .slide-dots {
@@ -265,9 +265,9 @@
       }
       .slide-dot {
         width: 6px; height: 6px; border-radius: 999px;
-        background: rgba(213,213,224,0.5); transition: background 0.15s;
+        background: rgba(225,225,227,0.5); transition: background 0.15s;
       }
-      .slide-dot.active { background: #d5d5e0; }
+      .slide-dot.active { background: #e1e1e3; }
       .modal-body { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; max-height: calc(100vh - 48px); }
       .modal-close {
         position: absolute; top: 14px; right: 14px;
@@ -285,13 +285,13 @@
         display: inline-flex; align-items: center; justify-content: center;
         min-width: 44px; height: 44px; padding: 0 12px;
         font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em;
-        background: #d5d5e0; color: #393e59; border-radius: 6px; flex-shrink: 0;
+        background: #e1e1e3; color: #393e59; border-radius: 6px; flex-shrink: 0;
       }
       .modal-desc { font-size: 13px; color: #393e59; line-height: 1.6; }
       .modal-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
       .btn-stripe {
         width: 100%; padding: 14px; border-radius: 8px; border: none;
-        background: #393e59; color: #d5d5e0;
+        background: #393e59; color: #e1e1e3;
         font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
         transition: background 0.15s;
       }
@@ -304,21 +304,21 @@
       }
       .btn-paypal:hover { background: #f5c800; }
       .payment-note { font-size: 11px; color: #393e59; text-align: center; }
-      .modal-breakdown { display: flex; flex-direction: column; gap: 5px; border-top: 1px solid #d5d5e0; border-bottom: 1px solid #d5d5e0; padding: 12px 0; }
-      .ship-to-sel { font-size: 12px; background: #d5d5e0; border: 1px solid #d5d5e0; border-radius: 4px; padding: 5px 8px; color: #393e59; font-family: inherit; cursor: pointer; width: 100%; margin-bottom: 6px; }
+      .modal-breakdown { display: flex; flex-direction: column; gap: 5px; border-top: 1px solid #e1e1e3; border-bottom: 1px solid #e1e1e3; padding: 12px 0; }
+      .ship-to-sel { font-size: 12px; background: #e1e1e3; border: 1px solid #e1e1e3; border-radius: 4px; padding: 5px 8px; color: #393e59; font-family: inherit; cursor: pointer; width: 100%; margin-bottom: 6px; }
       .bk-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
       .bk-label { color: #393e59; }
       .bk-val { font-weight: 700; color: #111; }
       .bk-note { font-size: 11px; color: #393e59; font-weight: 400; }
-      .bk-total { border-top: 1px solid #d5d5e0; padding-top: 8px; margin-top: 4px; }
+      .bk-total { border-top: 1px solid #e1e1e3; padding-top: 8px; margin-top: 4px; }
       .bk-total .bk-label { color: #111; font-weight: 700; font-size: 14px; }
       .bk-total .bk-val { font-size: 15px; }
 
       @media (max-width: 600px) {
-        .header-main { padding: 14px 20px; }
+        .header-main { padding: 12px 14px; }
         .sort-bar { padding: 7px 20px; }
-        .nav-link { font-size: 13px; padding: 6px 8px; }
-        .nav-links { padding-left: 10%; }
+        .nav-link { font-size: 12px; padding: 5px 6px; }
+        .nav-links { padding-left: 0; }
         .page-content { width: 100%; padding: 20px 12px 60px; }
       }
 
@@ -326,7 +326,7 @@
 
       /* ── Footer ── */
       .site-footer {
-        background: #d5d5e0;
+        background: #e1e1e3;
         border-top: 1px solid rgba(0,0,0,0.08);
         padding: 40px 40px;
         display: flex;
@@ -339,13 +339,13 @@
       .footer-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #393e59; margin-bottom: 4px; }
       .footer-text { font-size: 13px; color: #393e59; line-height: 1.6; max-width: 280px; }
       .footer-accordion { border: 1px solid rgba(0,0,0,0.15); border-radius: 10px; overflow: hidden; min-width: 220px; }
-      .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: #d5d5e0; border: none; color: #393e59; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+      .footer-acc-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: #e1e1e3; border: none; color: #393e59; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
       .footer-acc-arrow { transition: transform 0.22s ease; display: inline-block; }
       .footer-acc-btn.open .footer-acc-arrow { transform: rotate(180deg); }
       .footer-acc-body {
         overflow: hidden; max-height: 0; opacity: 0;
         padding: 0 14px; font-size: 13px; color: #393e59; line-height: 1.6; max-width: 280px;
-        background: #d5d5e0;
+        background: #e1e1e3;
         transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.25s ease;
       }
       .footer-acc-body.open { max-height: 400px; opacity: 1; padding: 10px 14px; }
@@ -353,7 +353,7 @@
         background: var(--bg-light);
         border: 1px solid var(--line);
         border-radius: 6px;
-        color: #d5d5e0;
+        color: #e1e1e3;
         font-family: inherit;
         font-size: 13px;
         font-weight: 600;
@@ -409,7 +409,7 @@
 
       <!-- Sort sub-bar -->
       <div class="sort-bar">
-        <span style="margin-right:auto;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#d5d5e0;">All prices in USD</span>
+        <span style="margin-right:auto;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#e1e1e3;">All prices in USD</span>
         <div class="sort-wrap" id="sortWrap">
           <button class="sort-btn" id="sortBtn">Sort <span class="sort-caret">▾</span></button>
           <div class="sort-menu" id="sortMenu">
@@ -497,9 +497,9 @@
         const hasStock = s => LISTINGS.some(l => l.size === s);
         const pillStyle = (active, empty) =>
           `display:inline-flex;align-items:center;gap:5px;padding:7px 18px;border-radius:999px;` +
-          `border:1.5px solid ${active ? '#d5d5e0' : empty ? 'rgba(213,213,224,0.15)' : 'rgba(213,213,224,0.3)'};` +
-          `background:${active ? '#d5d5e0' : 'transparent'};` +
-          `color:${active ? '#111' : empty ? 'rgba(213,213,224,0.3)' : '#fff'};` +
+          `border:1.5px solid ${active ? '#e1e1e3' : empty ? 'rgba(225,225,227,0.15)' : 'rgba(225,225,227,0.3)'};` +
+          `background:${active ? '#e1e1e3' : 'transparent'};` +
+          `color:${active ? '#111' : empty ? 'rgba(225,225,227,0.3)' : '#fff'};` +
           `font-family:inherit;font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;` +
           `cursor:${empty && !active ? 'default' : 'pointer'};transition:all 0.15s;`;
         const all = `<button style="${pillStyle(!currentSize, false)}" data-size="">All</button>`;

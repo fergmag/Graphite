@@ -139,5 +139,10 @@ Goal: shipping-grade stability.
 - Freemium limits + Pro features
 - Deploy production server + observability + rate-limits + safer scraping
 
+### Step 30: Pull from 130 Point or Gem?
+Goal: pull sold only from these two sites while relying on what I have for live listings
+- Probably redundant
+- Only really useful for upgrading the sold history graph
+
 
 ## Will figure out how to meet the rest of the goals later, EVERYTHING IS SUBJECT TO CHANGE
