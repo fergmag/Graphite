@@ -6784,6 +6784,22 @@
     "created_at": "2026-09-14T17:58:47.329189+00:00"
   },
   {
+    "id": 1118,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Camel Brown” J97 CML Men’s XL",
+    "price": 279.99,
+    "url": "https://www.ebay.com/itm/327368214696",
+    "photo": "https://i.ebayimg.com/images/g/cjcAAeSwFqxqsVmv/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-21T16:30:59.206794+00:00"
+  },
+  {
     "id": 413,
     "query": "j97 moss",
     "source": "ebay",
@@ -10478,6 +10494,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T20:48:16.043671+00:00"
+  },
+  {
+    "id": 1117,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket j97 MOS",
+    "price": 300.0,
+    "url": "https://www.grailed.com/listings/96183929",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6ae27b50173f4bcf8084a66962b3f4ed",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-21T16:30:59.108228+00:00"
   },
   {
     "id": 638,
