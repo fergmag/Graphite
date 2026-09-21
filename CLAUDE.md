@@ -94,12 +94,12 @@ Requirements:
 ## Brand Colors — ABSOLUTE RULE
 
 The site uses **exactly two colors**:
-- `#393e59` — Indigo-slate (page background, logo box, ticker background, dark elements)
+- `#494457` — Indigo-slate (page background, logo box, ticker background, dark elements)
 - `#e1e1e3` — Sage/olive (header, footer, text on dark backgrounds, logo text/SVG fill)
 
 **No other colors anywhere in the page chrome** (header, footer, ticker, nav, logo). This applies to all pages: shop.html, archive.html, about.html. Any third color introduced in header/footer/ticker/logo is a bug. Content UI (listing cards, payment buttons, sold stamps) may use minimal additional colors where functionally required.
 
-The logo box has: `background: #393e59`, `border-radius: 4px` (no border — the dark box is self-defining on the sage header). Text and SVG fill inside the logo are `color: #e1e1e3` / `fill="#e1e1e3"`.
+The logo box has: `background: #494457`, `border-radius: 4px` (no border — the dark box is self-defining on the sage header). Text and SVG fill inside the logo are `color: #e1e1e3` / `fill="#e1e1e3"`.
 
 **SVG mask exception**: Inside `<mask>` elements, `fill="white"` and `fill="black"` must remain as CSS keywords (not hex). Mask opacity is luminance-based — using `#e1e1e3` (67% luminance) would partially show the mask hole instead of fully punching it out.
 
