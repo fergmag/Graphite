@@ -11648,6 +11648,22 @@
     "created_at": "2026-09-14T17:58:47.494608+00:00"
   },
   {
+    "id": 1141,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "VTG 90s Carhartt J76 CMT Detroit Jacket Cement Gray Blanket Lined Size XL",
+    "price": 385.0,
+    "url": "https://www.ebay.com/itm/206573479533",
+    "photo": "https://i.ebayimg.com/images/g/aS8AAeSwyD9qsgTc/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T04:40:19.134349+00:00"
+  },
+  {
     "id": 700,
     "query": "j76 moss",
     "source": "ebay",
