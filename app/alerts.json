@@ -1440,6 +1440,22 @@
     "created_at": "2026-09-14T17:19:18.659434+00:00"
   },
   {
+    "id": 1150,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "90s Carhartt 6QLJ / J02 Detroit Tan Red Lining Jacket Men’s Size L/XL Vintage 48",
+    "price": 149.99,
+    "url": "https://www.ebay.com/itm/298559353873",
+    "photo": "https://i.ebayimg.com/images/g/rs0AAeSwJM5qchU8/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:37:44.203994+00:00"
+  },
+  {
     "id": 88,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -1662,6 +1678,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:14.944341+00:00"
+  },
+  {
+    "id": 1151,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Barn Jacket Large Red Quilt Lined Thrashed Corduroy Collar",
+    "price": 155.0,
+    "url": "https://www.ebay.com/itm/318482268747",
+    "photo": "https://i.ebayimg.com/images/g/20cAAeSwVm5pRy2n/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:37:44.292823+00:00"
   },
   {
     "id": 101,
