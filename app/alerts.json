@@ -736,6 +736,22 @@
     "created_at": "2026-09-14T17:18:55.269727+00:00"
   },
   {
+    "id": 1155,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Detroit Jacket DNY | Moss Green Workwear Jacket | Blanket Lined Carhartt Coat | Vintage Y2K Streetwear | Unisex Jacket",
+    "price": 99.0,
+    "url": "https://www.etsy.com/listing/4580387013/vintage-carhartt-j97-detroit-jacket-dny",
+    "photo": "https://i.etsystatic.com/67617089/r/il/597b43/8561636450/il_570xN.8561636450_mlok.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:38:22.798198+00:00"
+  },
+  {
     "id": 46,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -2814,6 +2830,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:25.148860+00:00"
+  },
+  {
+    "id": 1154,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Detroit Jacket Moss Green Cotton Duck Workwear",
+    "price": 202.8,
+    "url": "https://www.etsy.com/listing/4580387949/vintage-carhartt-j97-detroit-jacket-moss",
+    "photo": "https://i.etsystatic.com/68092475/r/il/f4fbc5/8609479201/il_570xN.8609479201_29sk.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:38:22.793872+00:00"
   },
   {
     "id": 167,
@@ -7040,6 +7072,22 @@
     "created_at": "2026-09-22T04:37:35.391404+00:00"
   },
   {
+    "id": 1153,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Moss Green Detroit Jacket Men’s XL Workwear J97 MOS",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/820158464312",
+    "photo": "https://i.ebayimg.com/images/g/f8cAAeSwtLZqrFfR/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:38:22.696350+00:00"
+  },
+  {
     "id": 413,
     "query": "j97 moss",
     "source": "ebay",
@@ -10462,6 +10510,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:47.562376+00:00"
+  },
+  {
+    "id": 1152,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Detroit Jacket Mens 2XL Brown Duck Canvas Blanket Lined J97 SDL Carhartt",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/377515579676",
+    "photo": "https://i.ebayimg.com/images/g/Z9QAAeSwtPdqsqoI/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T16:38:22.688440+00:00"
   },
   {
     "id": 621,
