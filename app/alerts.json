@@ -3760,6 +3760,22 @@
     "created_at": "2026-09-16T15:13:20.001428+00:00"
   },
   {
+    "id": 1147,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage J97 Carhartt Detroit PTL Blanket Lined Jacket",
+    "price": 273.5,
+    "url": "https://www.ebay.com/itm/398414846154",
+    "photo": "https://i.ebayimg.com/images/g/ac4AAeSw9TBqsFtw/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T10:38:20.186968+00:00"
+  },
+  {
     "id": 1126,
     "query": "j76 cement",
     "source": "ebay",
