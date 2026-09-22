@@ -3264,6 +3264,22 @@
     "created_at": "2026-09-14T17:58:02.261336+00:00"
   },
   {
+    "id": 1136,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket – Blanket Lined Cascade Division USFS/BLM J97 PT",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/800697390801",
+    "photo": "https://i.ebayimg.com/images/g/FQsAAeSwahRqsdyk/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T04:38:18.487870+00:00"
+  },
+  {
     "id": 199,
     "query": "j97 moss",
     "source": "ebay",
@@ -6686,6 +6702,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T21:20:51.589137+00:00"
+  },
+  {
+    "id": 1135,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Detroit Jacket PTL Petrol Blanket Lined Men's XL",
+    "price": 210.0,
+    "url": "https://www.ebay.com/itm/800696813127",
+    "photo": "https://i.ebayimg.com/images/g/VGUAAeSwj7pqsbIX/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T04:38:18.189053+00:00"
   },
   {
     "id": 401,
@@ -12592,6 +12624,22 @@
     "created_at": "2026-09-14T17:18:24.999790+00:00"
   },
   {
+    "id": 1138,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt J97 PTL Detroit Jacket Large Tall ",
+    "price": 462.13,
+    "url": "https://www.ebay.com/itm/287600832783",
+    "photo": "https://i.ebayimg.com/images/g/OTEAAeSwGClqsc~y/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T04:38:18.595805+00:00"
+  },
+  {
     "id": 757,
     "query": "j97 petrol",
     "source": "ebay",
@@ -14430,6 +14478,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-19T04:24:19.203675+00:00"
+  },
+  {
+    "id": 1137,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J97 PTL Petrol Gray sz medium Regular",
+    "price": 625.87,
+    "url": "https://www.ebay.com/itm/287600839929",
+    "photo": "https://i.ebayimg.com/images/g/SxAAAeSwl9hqsdHK/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-22T04:38:18.502820+00:00"
   },
   {
     "id": 868,
