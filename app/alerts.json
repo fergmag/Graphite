@@ -9408,6 +9408,22 @@
     "created_at": "2026-09-14T17:18:24.679118+00:00"
   },
   {
+    "id": 1173,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 MOS Moss Green Faded Distressed Men’s L Rare",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/800702087745",
+    "photo": "https://i.ebayimg.com/images/g/ppMAAeSwZ~1qsxOw/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-23T04:37:48.689893+00:00"
+  },
+  {
     "id": 546,
     "query": "j76 cement",
     "source": "ebay",
@@ -11150,6 +11166,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.167725+00:00"
+  },
+  {
+    "id": 1175,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket 2XL Blanket Lined Duck Canvas Workwear *",
+    "price": 301.98,
+    "url": "https://www.ebay.com/itm/336744422740",
+    "photo": "https://i.ebayimg.com/images/g/wNoAAeSwE-hqgNvK/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-23T04:37:49.090342+00:00"
   },
   {
     "id": 646,
@@ -13726,6 +13758,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T05:28:03.495549+00:00"
+  },
+  {
+    "id": 1174,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Brown Faded Distressed Detroit Jacket Workwear XL Rare",
+    "price": 514.99,
+    "url": "https://www.ebay.com/itm/820160511172",
+    "photo": "https://i.ebayimg.com/images/g/zZIAAeSwyLRqszOv/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-23T04:37:48.794161+00:00"
   },
   {
     "id": 1134,
