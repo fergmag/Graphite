@@ -1,5 +1,23 @@
 [
   {
+    "id": "877e89b0e1",
+    "title": "J65 BLU",
+    "size": "M",
+    "price": 3000.0,
+    "description": "2001 J65 Blue Detroit",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1790267570/graphite/f8wvk0pptnxv2twxqsv5.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1790267571/graphite/w9nd0q7kymkch70az8mg.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1790267573/graphite/b7n6q1g0fzjovfdeuqky.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1790267574/graphite/qb5ilupwysp7bdgbdk05.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1790267575/graphite/shn9t2oulrenkl0srkum.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-09-24",
+    "position": -2,
+    "condition": ""
+  },
+  {
     "id": "3ad9bd7a07",
     "title": "J110 DST",
     "size": "L",
