@@ -6064,6 +6064,22 @@
     "created_at": "2026-09-14T17:58:47.458616+00:00"
   },
   {
+    "id": 1170,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "90s Carhartt Detroit Jacket J97 PTL Black Distressed",
+    "price": 360.5,
+    "url": "https://www.ebay.com/itm/188975673619",
+    "photo": "https://i.ebayimg.com/images/g/ErwAAeSwQLZqtGOL/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.915208+00:00"
+  },
+  {
     "id": 354,
     "query": "j97 moss",
     "source": "ebay",
@@ -7216,6 +7232,22 @@
     "created_at": "2026-09-14T17:18:25.195141+00:00"
   },
   {
+    "id": 1168,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Vintage J97 BLK Detroit Jacket Full Zip Men's Large",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/407240027110",
+    "photo": "https://i.ebayimg.com/images/g/QB4AAeSwxlxqtEeg/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.824246+00:00"
+  },
+  {
     "id": 423,
     "query": "j97 petrol",
     "source": "ebay",
@@ -7758,6 +7790,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T16:01:00.644886+00:00"
+  },
+  {
+    "id": 1172,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Charcoal Gray Duck Canvas Blanket Lined J97 PTL Mens M",
+    "price": 435.0,
+    "url": "https://www.ebay.com/itm/188916626328",
+    "photo": "https://i.ebayimg.com/images/g/ysoAAeSw7fFqpAe5/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.931782+00:00"
   },
   {
     "id": 456,
@@ -10672,6 +10720,22 @@
     "created_at": "2026-09-16T03:07:19.089560+00:00"
   },
   {
+    "id": 1169,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Men’s Gray Lined Full Zip Work Jacket Size 2XL Regular Embroidered",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/407240302954",
+    "photo": "https://i.ebayimg.com/images/g/0OsAAeSw1E5qtHOL/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.834611+00:00"
+  },
+  {
     "id": 624,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -11470,6 +11534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T15:13:19.898509+00:00"
+  },
+  {
+    "id": 1171,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Men’s Green Lined Full Zip Work Jacket Size 2XL 54\" Chest Regular",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/407240292880",
+    "photo": "https://i.ebayimg.com/images/g/iHEAAeSwS5VqtHIG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.922640+00:00"
   },
   {
     "id": 1163,
@@ -15998,6 +16078,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:55:04.121563+00:00"
+  },
+  {
+    "id": 1167,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket J97 PTL",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/106635737",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/760b06f90e5e498dae005215d119a348",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:01:18.431989+00:00"
   },
   {
     "id": 934,
