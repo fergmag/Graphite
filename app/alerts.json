@@ -7232,6 +7232,22 @@
     "created_at": "2026-09-14T17:18:25.195141+00:00"
   },
   {
+    "id": 1173,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt J43 ONX Black Detroit Jacket Vintage, Size X-Large",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/117316604365",
+    "photo": "https://i.ebayimg.com/images/g/UEMAAeSwYwRqYOd0/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-24T01:02:17.389166+00:00"
+  },
+  {
     "id": 1168,
     "query": "j97 petrol",
     "source": "ebay",
