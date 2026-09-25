@@ -10576,6 +10576,22 @@
     "created_at": "2026-09-23T19:00:36.214180+00:00"
   },
   {
+    "id": 1241,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43 HTG Men's L Regular Blanket Lined Full Detroit jacket",
+    "price": 600.0,
+    "url": "https://www.ebay.com/itm/318917522518",
+    "photo": "https://i.ebayimg.com/images/g/SpcAAeSwvOBqtrcH/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T19:09:47.414243+00:00"
+  },
+  {
     "id": 632,
     "query": "j97 moss",
     "source": "ebay",
@@ -17232,6 +17248,22 @@
     "created_at": "2026-09-14T17:55:55.608499+00:00"
   },
   {
+    "id": 1242,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43HTG Men's Work Jacket L Regular Green Zip Front Lined Pockets",
+    "price": 814.98,
+    "url": "https://www.ebay.com/itm/377522356344",
+    "photo": "https://i.ebayimg.com/images/g/kfgAAeSwdd1qto73/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T19:09:47.687179+00:00"
+  },
+  {
     "id": 1033,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -19038,6 +19070,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:20:37.334513+00:00"
+  },
+  {
+    "id": 1240,
+    "query": "j43 hunter green",
+    "source": "grailed",
+    "title": "Distressed Vintage Carhartt Detroit J43 HTG",
+    "price": 1500.0,
+    "url": "https://www.grailed.com/listings/106871076",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/729ce74c288c4c518ff8a3ea8ca07e6f",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T19:09:47.402535+00:00"
   },
   {
     "id": 1144,
