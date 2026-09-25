@@ -17376,6 +17376,22 @@
     "created_at": "2026-09-14T17:20:24.349317+00:00"
   },
   {
+    "id": 1209,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Duck Blanket-Lined Detroit Jacket Size Mens 2XL Style J43 BRG",
+    "price": 999.99,
+    "url": "https://www.ebay.com/itm/407243341597",
+    "photo": "https://i.ebayimg.com/images/g/k4YAAeSwp05qtaUl/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T01:08:55.563891+00:00"
+  },
+  {
     "id": 1072,
     "query": "j43 hunter green",
     "source": "ebay",
