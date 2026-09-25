@@ -14080,6 +14080,22 @@
     "created_at": "2026-09-14T17:20:24.473374+00:00"
   },
   {
+    "id": 1231,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97TMB Detroit Jacket Timber Blanket Lined USA Union Made 2XL",
+    "price": 499.99,
+    "url": "https://www.ebay.com/itm/197339983412",
+    "photo": "https://i.ebayimg.com/images/g/s3oAAeSwlZpoLVnJ/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T13:08:31.282172+00:00"
+  },
+  {
     "id": 852,
     "query": "j43 hunter green",
     "source": "ebay",
