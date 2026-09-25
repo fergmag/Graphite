@@ -64,6 +64,22 @@
     "created_at": "2026-09-14T17:17:41.889623+00:00"
   },
   {
+    "id": 1193,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Shirt Jacket MEN'S SIZE L S96DKB Duck Canvas Flannel Lined EUC",
+    "price": 24.99,
+    "url": "https://www.ebay.com/itm/366690161103",
+    "photo": "https://i.ebayimg.com/images/g/AbkAAeSw-RdqtZZW/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T01:06:44.195860+00:00"
+  },
+  {
     "id": 5,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -1422,6 +1438,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T10:24:31.797783+00:00"
+  },
+  {
+    "id": 1195,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Men's Santa Fe Jacket - Large",
+    "price": 140.0,
+    "url": "https://www.ebay.com/itm/397632094560",
+    "photo": "https://i.ebayimg.com/images/g/XzsAAeSwFd1pmKUE/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T01:06:44.455120+00:00"
   },
   {
     "id": 90,
@@ -3198,6 +3230,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:15.001656+00:00"
+  },
+  {
+    "id": 1194,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Rare Vintage Carhartt Quilted Lined Hooded Jacket Salmon Cotton Unisex Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/267794920057",
+    "photo": "https://i.ebayimg.com/images/g/FFEAAeSwywJqtcMN/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-25T01:06:44.300737+00:00"
   },
   {
     "id": 201,
