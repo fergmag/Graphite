@@ -12144,6 +12144,22 @@
     "created_at": "2026-09-19T16:24:50.701875+00:00"
   },
   {
+    "id": 1245,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "carhartt mens jacket XXL J97PTL",
+    "price": 337.0,
+    "url": "https://www.ebay.com/itm/188984470769",
+    "photo": "https://i.ebayimg.com/images/g/gW8AAeSwsfJqttyX/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-26T01:08:09.300819+00:00"
+  },
+  {
     "id": 726,
     "query": "j97 moss",
     "source": "ebay",
@@ -12286,6 +12302,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T15:13:19.898509+00:00"
+  },
+  {
+    "id": 1244,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 PTL Detroit Jacket XXL",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/800715306285",
+    "photo": "https://i.ebayimg.com/images/g/MNYAAeSwNjpqttGd/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-26T01:08:09.293597+00:00"
   },
   {
     "id": 735,
