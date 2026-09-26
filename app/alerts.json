@@ -2192,6 +2192,22 @@
     "created_at": "2026-09-14T17:57:03.025318+00:00"
   },
   {
+    "id": 1253,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Blanket Lined J97 Jacket MOS &quot;MOSS GREEN&quot; Unisex vintage jacket",
+    "price": 169.0,
+    "url": "https://www.etsy.com/listing/4582920316/vintage-carhartt-detroit-blanket-lined",
+    "photo": "https://i.etsystatic.com/67819701/r/il/bb2db1/8628293259/il_570xN.8628293259_7wb1.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-26T13:07:28.098814+00:00"
+  },
+  {
     "id": 128,
     "query": "j97 moss",
     "source": "etsy",
@@ -10768,6 +10784,22 @@
     "created_at": "2026-09-15T16:00:09.933336+00:00"
   },
   {
+    "id": 1254,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Y2K Carhartt J97 MOS green THRASHED Detroit work wear jacket",
+    "price": 614.47,
+    "url": "https://www.ebay.com/itm/406888696207",
+    "photo": "https://i.ebayimg.com/images/g/ZsUAAeSwXBNp755P/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-26T13:07:28.393905+00:00"
+  },
+  {
     "id": 638,
     "query": "j97 moss",
     "source": "ebay",
@@ -11582,6 +11614,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.344649+00:00"
+  },
+  {
+    "id": 1252,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97MOS Detroit Jacket Timber Blanket Lined Size XXL Moss USA",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/307200097427",
+    "photo": "https://i.ebayimg.com/images/g/83oAAeSw6OVqty~u/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-26T13:07:27.994555+00:00"
   },
   {
     "id": 687,
