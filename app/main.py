@@ -362,6 +362,9 @@ def create_app() -> Flask:
         return send_from_directory(_PHOTOS_DIR, filename)
 
     @app.get("/")
+    def splash():
+        return render_template("splash.html")
+
     @app.get("/shop")
     def shop():
         all_listings = db_list_listings()
