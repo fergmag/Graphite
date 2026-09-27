@@ -5088,6 +5088,22 @@
     "created_at": "2026-09-14T17:17:42.253854+00:00"
   },
   {
+    "id": 1268,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Men's Bomber Jacket",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/318922508758",
+    "photo": "https://i.ebayimg.com/images/g/GyoAAeSwWphquGII/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-27T01:07:19.394815+00:00"
+  },
+  {
     "id": 1264,
     "query": "j97 crimson",
     "source": "ebay",
@@ -6880,6 +6896,22 @@
     "created_at": "2026-09-15T20:47:29.656666+00:00"
   },
   {
+    "id": 1267,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 Duck Canvas Blanket Lined 2 Tone Detroit Jacket Distressed MED",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/267796548984",
+    "photo": "https://i.ebayimg.com/images/g/aPAAAeSwCjBquBXu/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-27T01:07:19.388086+00:00"
+  },
+  {
     "id": 403,
     "query": "j97 moss",
     "source": "grailed",
@@ -8478,6 +8510,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:55:04.101574+00:00"
+  },
+  {
+    "id": 1269,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Black” Leupold J001 BLK Men's LRG",
+    "price": 429.99,
+    "url": "https://www.ebay.com/itm/327376058167",
+    "photo": "https://i.ebayimg.com/images/g/c1kAAeSw9KNqhJ~j/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-27T01:07:19.497308+00:00"
   },
   {
     "id": 496,
@@ -12558,6 +12606,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T15:13:19.898509+00:00"
+  },
+  {
+    "id": 1270,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J97 MOS Distressed Faded Cropped Workwear Jacket Sz XL",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/117432944775",
+    "photo": "https://i.ebayimg.com/images/g/YyIAAeSwWw1quBd1/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-27T01:07:19.691664+00:00"
   },
   {
     "id": 1244,
