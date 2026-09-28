@@ -688,6 +688,22 @@
     "created_at": "2026-09-14T17:59:09.128595+00:00"
   },
   {
+    "id": 1328,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Replica Carhartt Detroit J97 PTL Small S",
+    "price": 84.85,
+    "url": "https://www.ebay.com/itm/398440334785",
+    "photo": "https://i.ebayimg.com/images/g/GDQAAeSwZPtqum58/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-28T19:15:08.203112+00:00"
+  },
+  {
     "id": 44,
     "query": "j97 crimson",
     "source": "ebay",
@@ -8192,6 +8208,22 @@
     "created_at": "2026-09-18T04:24:58.603412+00:00"
   },
   {
+    "id": 1327,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens Large Tall J97 PTL Petrol Gray Harley",
+    "price": 325.0,
+    "url": "https://www.ebay.com/itm/117436232199",
+    "photo": "https://i.ebayimg.com/images/g/p9QAAeSwG2Nqup-v/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-28T19:15:07.814214+00:00"
+  },
+  {
     "id": 493,
     "query": "j97 petrol",
     "source": "ebay",
@@ -13054,6 +13086,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:47.664014+00:00"
+  },
+  {
+    "id": 1326,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "VTG Carhartt J97 PTL Petrol Grey Detroit Jacket Mens XL",
+    "price": 340.0,
+    "url": "https://www.grailed.com/listings/107251266",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/26fa4aeeacdf43fc8a3c267406f2d034",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-28T19:15:07.689683+00:00"
   },
   {
     "id": 783,
