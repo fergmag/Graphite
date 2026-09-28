@@ -8256,6 +8256,22 @@
     "created_at": "2026-09-14T17:17:42.068516+00:00"
   },
   {
+    "id": 1301,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 Plaid Blanket Lined Brown Collar Duck Detroit Jacket Mens L ",
+    "price": 375.0,
+    "url": "https://www.ebay.com/itm/227542131588",
+    "photo": "https://i.ebayimg.com/images/g/cscAAeSw2eNquap5/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-28T01:15:19.115880+00:00"
+  },
+  {
     "id": 503,
     "query": "j97 moss",
     "source": "ebay",
