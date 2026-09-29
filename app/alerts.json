@@ -17840,6 +17840,22 @@
     "created_at": "2026-09-14T17:18:24.966658+00:00"
   },
   {
+    "id": 1336,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Men's XL J43 Htg Hunter Green Zip Lined Work Jacket Short Relaxed Fit",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/800730714905",
+    "photo": "https://i.ebayimg.com/images/g/JvgAAeSwihBquvUW/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T01:16:13.507669+00:00"
+  },
+  {
     "id": 1060,
     "query": "j97 petrol",
     "source": "ebay",
@@ -19406,6 +19422,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:20:24.754522+00:00"
+  },
+  {
+    "id": 1337,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "GRAIL RARE VINTAGE CARHARTT J43 HTG DETROIT MINT XL 90s HUNTER GREEN WORKWEAR",
+    "price": 1000.0,
+    "url": "https://www.ebay.com/itm/188910368470",
+    "photo": "https://i.ebayimg.com/images/g/PxAAAeSwBJhqoe36/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T01:16:13.528892+00:00"
   },
   {
     "id": 1157,
