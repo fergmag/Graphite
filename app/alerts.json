@@ -4512,6 +4512,22 @@
     "created_at": "2026-09-14T17:57:03.067312+00:00"
   },
   {
+    "id": 1341,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 CML, Men’s Medium Regular, Blanket Lined Duc",
+    "price": 290.0,
+    "url": "https://www.ebay.com/itm/168737762141",
+    "photo": "https://i.ebayimg.com/images/g/9FAAAeSwLuRqu2bV/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T13:14:20.907436+00:00"
+  },
+  {
     "id": 273,
     "query": "j97 petrol",
     "source": "ebay",
@@ -10430,6 +10446,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:47.631935+00:00"
+  },
+  {
+    "id": 1342,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green Canvas Blanket Lined Mens XL",
+    "price": 320.0,
+    "url": "https://www.ebay.com/itm/147494821620",
+    "photo": "https://i.ebayimg.com/images/g/~eIAAeSwgvRqeW69/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T13:14:20.920858+00:00"
   },
   {
     "id": 619,
