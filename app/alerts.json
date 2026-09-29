@@ -3808,6 +3808,38 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 1330,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt ‘JQ282’ Chestnut Brown Quilt Lined Active Jacket",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/318930793408",
+    "photo": "https://i.ebayimg.com/images/g/V4cAAeSw7fpqutUr/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T01:12:48.967775+00:00"
+  },
+  {
+    "id": 1329,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt ‘JQ283’ Navy Quilt Lined Active Jacket",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/318930860540",
+    "photo": "https://i.ebayimg.com/images/g/YMYAAeSwLTVqutpv/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-29T01:12:48.959444+00:00"
+  },
+  {
     "id": 231,
     "query": "j97 petrol",
     "source": "ebay",
