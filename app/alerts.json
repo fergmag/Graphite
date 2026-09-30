@@ -13136,6 +13136,22 @@
     "created_at": "2026-09-15T20:48:16.043671+00:00"
   },
   {
+    "id": 1389,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J97 PTL",
+    "price": 300.0,
+    "url": "https://www.grailed.com/listings/107413718",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/c60f5b283c1f4456832577ce544e81f1",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-30T13:15:00.004640+00:00"
+  },
+  {
     "id": 1310,
     "query": "j97 petrol",
     "source": "ebay",
@@ -17776,6 +17792,22 @@
     "created_at": "2026-09-18T22:25:03.691857+00:00"
   },
   {
+    "id": 1391,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 PTL Blanket Lined Detroit Gray Workwear Jacket Size M",
+    "price": 612.0,
+    "url": "https://www.ebay.com/itm/206592085943",
+    "photo": "https://i.ebayimg.com/images/g/rwYAAeSwCAtqvMJd/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-30T13:15:00.704125+00:00"
+  },
+  {
     "id": 1017,
     "query": "j97 petrol",
     "source": "grailed",
@@ -19406,6 +19438,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:20:02.383268+00:00"
+  },
+  {
+    "id": 1390,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket M Gray Workwear J97 PTL Blanket Lined Detroit Mens 90s",
+    "price": 856.0,
+    "url": "https://www.grailed.com/listings/107405054",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6e755881115e4ed0a5ef1c9e0218a0ef",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-30T13:15:00.035781+00:00"
   },
   {
     "id": 1112,
