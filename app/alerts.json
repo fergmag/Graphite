@@ -1520,6 +1520,22 @@
     "created_at": "2026-09-14T17:57:03.157354+00:00"
   },
   {
+    "id": 1387,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VTG 90’s Carhartt Active Hooded Jacket Men's Size 2XL Tall Red Made In USA RARE",
+    "price": 129.98,
+    "url": "https://www.ebay.com/itm/227280218220",
+    "photo": "https://i.ebayimg.com/images/g/Tf8AAeSwaeRpy1Kg/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-30T13:13:31.404442+00:00"
+  },
+  {
     "id": 92,
     "query": "j97 petrol",
     "source": "ebay",
@@ -3566,6 +3582,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:48.326691+00:00"
+  },
+  {
+    "id": 1388,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Y2K Carhartt Quilted Hooded Active Jacket “Dark Red” J130 DKR Men’s X-Large",
+    "price": 219.99,
+    "url": "https://www.ebay.com/itm/327380831009",
+    "photo": "https://i.ebayimg.com/images/g/BrAAAeSwRAVqhJUm/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-09-30T13:13:31.418677+00:00"
   },
   {
     "id": 211,
