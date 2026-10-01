@@ -14,8 +14,8 @@
     ],
     "sold": true,
     "created_at": "2026-09-24",
-    "position": -3,
-    "condition": ""
+    "position": 0,
+    "condition": null
   },
   {
     "id": "877e89b0e1",
@@ -32,8 +32,8 @@
     ],
     "sold": true,
     "created_at": "2026-09-24",
-    "position": -2,
-    "condition": ""
+    "position": 1,
+    "condition": null
   },
   {
     "id": "3ad9bd7a07",
@@ -50,8 +50,8 @@
     ],
     "sold": true,
     "created_at": "2026-09-24",
-    "position": -1,
-    "condition": ""
+    "position": 2,
+    "condition": null
   },
   {
     "id": "86a58c45a9",
@@ -69,7 +69,7 @@
     ],
     "sold": true,
     "created_at": "2026-09-06",
-    "position": 0,
+    "position": 3,
     "condition": null
   },
   {
@@ -87,7 +87,7 @@
     ],
     "sold": true,
     "created_at": "2026-08-30",
-    "position": 1,
+    "position": 4,
     "condition": null
   },
   {
@@ -104,9 +104,9 @@
       "https://res.cloudinary.com/dniduygdg/image/upload/v1788120819/graphite/jqwwcsoponceok6ql5u1.jpg",
       "https://res.cloudinary.com/dniduygdg/image/upload/v1788120819/graphite/jjztjiyi13i9dl2wi3qv.jpg"
     ],
-    "sold": false,
+    "sold": true,
     "created_at": "2026-08-30",
-    "position": 2,
+    "position": 5,
     "condition": null
   },
   {
@@ -124,7 +124,7 @@
     ],
     "sold": true,
     "created_at": "2026-08-12",
-    "position": 3,
+    "position": 6,
     "condition": null
   },
   {
@@ -144,7 +144,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-23",
-    "position": 4,
+    "position": 7,
     "condition": null
   },
   {
@@ -161,7 +161,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-15",
-    "position": 5,
+    "position": 8,
     "condition": null
   },
   {
@@ -179,7 +179,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-09",
-    "position": 6,
+    "position": 9,
     "condition": null
   },
   {
@@ -197,7 +197,7 @@
     ],
     "sold": true,
     "created_at": "2026-07-09",
-    "position": 7,
+    "position": 10,
     "condition": null
   },
   {
@@ -214,7 +214,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 8,
+    "position": 11,
     "condition": null
   },
   {
@@ -235,7 +235,7 @@
     ],
     "sold": true,
     "created_at": "2026-06-19",
-    "position": 9,
+    "position": 12,
     "condition": null
   }
 ]
