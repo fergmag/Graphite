@@ -17600,6 +17600,22 @@
     "created_at": "2026-09-14T17:18:23.844200+00:00"
   },
   {
+    "id": 1427,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket J43 CHT Chestnut Size M 90's Made in USA Mens",
+    "price": 586.0,
+    "url": "https://www.grailed.com/listings/107465938",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/27d4fcec463344b1a8c82616c065bc70",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-01T07:15:25.562982+00:00"
+  },
+  {
     "id": 977,
     "query": "j97 petrol",
     "source": "grailed",
@@ -20974,6 +20990,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:03.094165+00:00"
+  },
+  {
+    "id": 1428,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt 90s/Detroit Jacket/Made in USA//XXL/Cotton/BRW/J43CHT//",
+    "price": 1102.28,
+    "url": "https://www.ebay.com/itm/398449503460",
+    "photo": "https://i.ebayimg.com/images/g/AC8AAeSwC7ZqvfRa/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-01T07:15:25.706260+00:00"
   },
   {
     "id": 1171,
