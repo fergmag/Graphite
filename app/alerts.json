@@ -528,6 +528,22 @@
     "created_at": "2026-09-23T19:00:54.619012+00:00"
   },
   {
+    "id": 1440,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Y2K Detroit Jacket Black Blanket Lined Large",
+    "price": 75.0,
+    "url": "https://www.ebay.com/itm/307209200945",
+    "photo": "https://i.ebayimg.com/images/g/lpgAAeSwihBqvqdv/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-01T19:15:10.014281+00:00"
+  },
+  {
     "id": 1437,
     "query": "j97 moss",
     "source": "ebay",
@@ -12064,6 +12080,22 @@
     "created_at": "2026-10-01T01:14:59.914338+00:00"
   },
   {
+    "id": 1438,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Jacket Charcoal Gray/Petrol Blanket Lined J97 PTL Mens M",
+    "price": 526.98,
+    "url": "https://www.ebay.com/itm/327383134201",
+    "photo": "https://i.ebayimg.com/images/g/G-gAAeSwgQBqvnnv/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-01T19:15:09.604520+00:00"
+  },
+  {
     "id": 666,
     "query": "j97 petrol",
     "source": "ebay",
@@ -14750,6 +14782,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.173860+00:00"
+  },
+  {
+    "id": 1439,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Y2K Carhartt Detroit Canvas Blanket Lined Jacket Men’s XL J97 PTL Blue ",
+    "price": 365.0,
+    "url": "https://www.ebay.com/itm/318942777612",
+    "photo": "https://i.ebayimg.com/images/g/kQEAAeSwcWhqvmqT/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-01T19:15:09.909115+00:00"
   },
   {
     "id": 817,
