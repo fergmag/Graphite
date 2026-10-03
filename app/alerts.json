@@ -656,6 +656,22 @@
     "created_at": "2026-09-14T17:57:14.936738+00:00"
   },
   {
+    "id": 1496,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J130 Active Jacket Green Gift For Him",
+    "price": 80.0,
+    "url": "https://www.etsy.com/listing/4587630044/carhartt-j130-active-jacket-green-gift",
+    "photo": "https://i.etsystatic.com/66719797/r/il/361bfe/8664287035/il_570xN.8664287035_i7cu.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-03T13:13:57.801792+00:00"
+  },
+  {
     "id": 37,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -21502,6 +21518,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:56:26.850706+00:00"
+  },
+  {
+    "id": 1495,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Size XL Moss Green Made in USA",
+    "price": 999.0,
+    "url": "https://www.ebay.com/itm/820199186101",
+    "photo": "https://i.ebayimg.com/images/g/jwoAAeSw8qtqwOhw/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-03T13:13:57.208279+00:00"
   },
   {
     "id": 1147,
