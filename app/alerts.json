@@ -6976,6 +6976,22 @@
     "created_at": "2026-09-25T01:08:10.092313+00:00"
   },
   {
+    "id": 1487,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Petrol Blue J97 PTL Detroit Jacket Large",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/287622902559",
+    "photo": "https://i.ebayimg.com/images/g/lfEAAeSwAvNqwET6/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-03T01:14:57.804760+00:00"
+  },
+  {
     "id": 382,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -15310,6 +15326,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.460804+00:00"
+  },
+  {
+    "id": 1488,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Chore Jacket J97 PTL Honeycomb Faded Distressed XL 2002",
+    "price": 371.95,
+    "url": "https://www.ebay.com/itm/198588420103",
+    "photo": "https://i.ebayimg.com/images/g/rksAAeSwxNRqstAa/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-03T01:14:58.312113+00:00"
   },
   {
     "id": 1294,
