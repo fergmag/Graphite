@@ -4400,6 +4400,22 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 1562,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Arctic Jacket J22 Moss Green, Size Medium",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/137815484015",
+    "photo": "https://i.ebayimg.com/images/g/6Z4AAeSwKwRqw-x7/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T19:14:21.803326+00:00"
+  },
+  {
     "id": 1537,
     "query": "j97 petrol",
     "source": "ebay",
@@ -18318,6 +18334,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.380568+00:00"
+  },
+  {
+    "id": 1563,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Men's J97 MOS Green Detroit Jacket Blanket lined Size XL",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/366713082133",
+    "photo": "https://i.ebayimg.com/images/g/d1sAAeSwwqpqw-cG/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T19:14:21.922482+00:00"
   },
   {
     "id": 922,
