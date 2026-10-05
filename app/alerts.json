@@ -14464,6 +14464,22 @@
     "created_at": "2026-10-01T01:15:00.210028+00:00"
   },
   {
+    "id": 1561,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Mens XXL Petrol  Detroit Jacket Made in USA Blanket Lined J97 PTL",
+    "price": 238.57999999999998,
+    "url": "https://www.ebay.com/itm/397916601489",
+    "photo": "https://i.ebayimg.com/images/g/mzYAAeSwxNdp-ocw/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T13:15:13.315716+00:00"
+  },
+  {
     "id": 737,
     "query": "j97 petrol",
     "source": "ebay",
@@ -17742,6 +17758,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:19:18.377469+00:00"
+  },
+  {
+    "id": 1560,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket J97 PTL Workwear Zip-Up 90’s Men’s Size 2XL RARE Blue",
+    "price": 451.0,
+    "url": "https://www.grailed.com/listings/107824184",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/4792e8d1ed5e49718783e9d781901f25",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T13:15:12.904195+00:00"
   },
   {
     "id": 892,
