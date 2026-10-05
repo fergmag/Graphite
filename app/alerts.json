@@ -960,6 +960,22 @@
     "created_at": "2026-09-14T17:18:55.269727+00:00"
   },
   {
+    "id": 1542,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J130 Red Duck Active Jacket USA Union Local 2 2XL Made in USA Carhartt",
+    "price": 95.0,
+    "url": "https://www.ebay.com/itm/117447787799",
+    "photo": "https://i.ebayimg.com/images/g/qUEAAeSwk7BqwxON/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T07:13:23.016839+00:00"
+  },
+  {
     "id": 1507,
     "query": "j97 crimson",
     "source": "etsy",
@@ -1486,6 +1502,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T09:59:26.718989+00:00"
+  },
+  {
+    "id": 1541,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Distressed Red Carhartt Hooded Active Jacket Men’s M Faded",
+    "price": 120.0,
+    "url": "https://www.ebay.com/itm/800758434368",
+    "photo": "https://i.ebayimg.com/images/g/WU0AAeSw8qtqwvr-/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T07:13:22.993822+00:00"
   },
   {
     "id": 1533,
@@ -24478,6 +24510,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:02.163399+00:00"
+  },
+  {
+    "id": 1540,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97CRI Crimson Red Detroit Jacket J97 CRI Size Large",
+    "price": 4200.0,
+    "url": "https://www.ebay.com/itm/327388612353",
+    "photo": "https://i.ebayimg.com/images/g/ZO8AAeSwjjpqwvVM/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T07:13:22.986453+00:00"
   },
   {
     "id": 1359,
