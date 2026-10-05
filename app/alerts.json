@@ -1536,6 +1536,22 @@
     "created_at": "2026-09-14T17:58:48.363017+00:00"
   },
   {
+    "id": 1527,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Distressed Carhartt Jacket XXL red Duck Canvas",
+    "price": 125.0,
+    "url": "https://www.ebay.com/itm/800758016339",
+    "photo": "https://i.ebayimg.com/images/g/JfAAAeSw3GJqws-T/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T01:13:23.670833+00:00"
+  },
+  {
     "id": 87,
     "query": "j97 timber",
     "source": "ebay",
@@ -6174,6 +6190,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:02.184356+00:00"
+  },
+  {
+    "id": 1526,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage 90s salmon red faded grail carhartt canvas Aztec workwear jacket",
+    "price": 390.0,
+    "url": "https://www.ebay.com/itm/137812492745",
+    "photo": "https://i.ebayimg.com/images/g/8uwAAeSw3JBqwr0C/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-05T01:13:23.663052+00:00"
   },
   {
     "id": 332,
