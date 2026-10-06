@@ -23072,6 +23072,22 @@
     "created_at": "2026-09-14T17:20:24.754522+00:00"
   },
   {
+    "id": 1596,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "vintage carhartt j110 dst detroit jacket size men’s medium flawless",
+    "price": 1000.0,
+    "url": "https://www.ebay.com/itm/960026412176",
+    "photo": "https://i.ebayimg.com/images/g/08AAAeSwA9VqxDHo/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-06T19:12:45.713279+00:00"
+  },
+  {
     "id": 1337,
     "query": "j43 hunter green",
     "source": "ebay",
