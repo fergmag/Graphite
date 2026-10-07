@@ -14304,6 +14304,22 @@
     "created_at": "2026-09-18T22:26:20.232101+00:00"
   },
   {
+    "id": 1633,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket Brown J43BRG",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/108066579",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/31f71816e4a942009b5663942f0481ef",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T19:16:00.423544+00:00"
+  },
+  {
     "id": 703,
     "query": "j43 hunter green",
     "source": "ebay",
