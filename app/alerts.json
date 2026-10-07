@@ -1920,6 +1920,22 @@
     "created_at": "2026-09-25T01:06:44.455120+00:00"
   },
   {
+    "id": 1620,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage 90s Red Carhartt J140 Active Quilt Lined Hooded Jacket - XL",
+    "price": 142.98000000000002,
+    "url": "https://www.ebay.com/itm/298740336043",
+    "photo": "https://i.ebayimg.com/images/g/OnMAAeSw~hNqxPWa/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T13:13:30.615545+00:00"
+  },
+  {
     "id": 1443,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3550,6 +3566,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:42.046728+00:00"
+  },
+  {
+    "id": 1619,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J18 BRN S/M Red Quilt Lined GUC",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/237112508050",
+    "photo": "https://i.ebayimg.com/images/g/qvYAAeSwCFxqxiqv/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T13:13:30.570358+00:00"
   },
   {
     "id": 1432,
