@@ -1888,6 +1888,22 @@
     "created_at": "2026-10-03T19:14:22.572358+00:00"
   },
   {
+    "id": 1629,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Detroit Jacket | Moss Green Sandstone Duck, Blanket Lined Workwear",
+    "price": 137.0,
+    "url": "https://www.etsy.com/listing/4590458573/vintage-carhartt-j97-detroit-jacket-moss",
+    "photo": "https://i.etsystatic.com/64974260/r/il/c62cdd/8638461222/il_570xN.8638461222_pypj.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T19:14:17.717825+00:00"
+  },
+  {
     "id": 98,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -4846,6 +4862,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:41.957127+00:00"
+  },
+  {
+    "id": 1628,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Retro Carhartt J97 Detroit Jacket Moss Green Vintage Workwear",
+    "price": 256.67,
+    "url": "https://www.etsy.com/listing/4590476212/retro-carhartt-j97-detroit-jacket-moss",
+    "photo": "https://i.etsystatic.com/68111780/r/il/9094df/8638419554/il_570xN.8638419554_oro3.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T19:14:17.703472+00:00"
   },
   {
     "id": 243,
@@ -20206,6 +20238,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-25T07:08:14.631312+00:00"
+  },
+  {
+    "id": 1627,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt J97 Mos | Original Detroit Jacket | Size L | Excellent Example",
+    "price": 591.11,
+    "url": "https://www.ebay.com/itm/168773837294",
+    "photo": "https://i.ebayimg.com/images/g/vbgAAeSw95NqxoH7/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T19:14:17.414075+00:00"
   },
   {
     "id": 985,
