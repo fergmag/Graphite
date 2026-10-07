@@ -2336,6 +2336,22 @@
     "created_at": "2026-09-14T17:57:14.944341+00:00"
   },
   {
+    "id": 1626,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Red Carhartt Jacket Men's XL Please Read Description",
+    "price": 155.0,
+    "url": "https://www.ebay.com/itm/257787907169",
+    "photo": "https://i.ebayimg.com/images/g/iG0AAeSwy6RqxozQ/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-07T19:13:36.106051+00:00"
+  },
+  {
     "id": 123,
     "query": "j97 crimson",
     "source": "ebay",
