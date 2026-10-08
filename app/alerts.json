@@ -4880,6 +4880,22 @@
     "created_at": "2026-09-14T17:17:41.957127+00:00"
   },
   {
+    "id": 1648,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Retro Carhartt J97 Detroit Jacket PTL Vintage Workwear",
+    "price": 256.67,
+    "url": "https://www.etsy.com/listing/4590802890/retro-carhartt-j97-detroit-jacket-ptl",
+    "photo": "https://i.etsystatic.com/68111780/r/il/e37ef8/8640980386/il_570xN.8640980386_67rs.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-08T01:15:01.907822+00:00"
+  },
+  {
     "id": 1628,
     "query": "j97 moss",
     "source": "etsy",
@@ -12814,6 +12830,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.746659+00:00"
+  },
+  {
+    "id": 1647,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BLK Men's Canvas Lined Full Zip Work Jacket Size Large",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/860020963941",
+    "photo": "https://i.ebayimg.com/images/g/VMkAAeSw~fxqxtrq/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-08T01:15:01.806786+00:00"
   },
   {
     "id": 1313,
