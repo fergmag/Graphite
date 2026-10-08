@@ -1,5 +1,23 @@
 [
   {
+    "id": "9dcbe028d9",
+    "title": "J97 DES",
+    "size": "M",
+    "price": 950.0,
+    "description": "2000 J97 Desert Detroit",
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1791498199/graphite/zbacgy5dspie6tw6529p.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1791498201/graphite/bpqzwomsam58xfcl932f.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1791498203/graphite/pp52o5ojqwug2yndxqy4.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1791498204/graphite/uq4oflvaenxrunxonyim.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1791498205/graphite/c0fdvsflenl4ttwn2c00.jpg"
+    ],
+    "sold": false,
+    "created_at": "2026-10-08",
+    "position": -1,
+    "condition": ""
+  },
+  {
     "id": "e7f2fca6ab",
     "title": "J97 BRG",
     "size": "M",
