@@ -156,6 +156,18 @@ Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "
 
 **Per-model alert count now matches display** — `count_alerts_per_query` was counting raw DB rows without applying the colorway filter. The display applied the filter, so counts diverged. For queries that have a colorway component, the `/api/alerts/counts` endpoint now loads the alerts in Python and applies `negative_colorway_filter` before counting, matching what the UI actually shows. Stable across `refresh_all`.
 
+### Oct 2026 — Brand Polish + Splash Screen
+
+**Color system finalised** — After several rounds of iteration the two brand colors are locked: `#3f3d4a` (indigo-slate — page background, logo box, ticker, all dark elements) and `#e1e1e3` (light gray — header, footer, text on dark). No third color anywhere in the chrome. Updated across `shop.html`, `archive.html`, `about.html`, and `CLAUDE.md`.
+
+**SVG C-crescent removed from logo** — The custom SVG that approximated the Carhartt C-mark inside the G was scrapped. Too fiddly, didn't scale well. The logo is now plain text: `G` + `r` (both Inter, weight 600), which matches what was always in the header anyway. Cleaner and more consistent.
+
+**Mobile nav overflow fixed** — On mobile, the About nav link was getting pushed off-screen. Root cause: `padding-left: 20%` on `.nav-links` in `about.html` (no mobile override) combined with 15px font-size nav links. Fixed by adding a `@media (max-width: 600px)` block: `padding-left: 0`, `font-size: 12px`, `padding: 5px 6px` on links. Shop and archive already had this fix; about.html was missed.
+
+**Splash screen added** — `/` now serves a full-screen splash (`splash.html`): solid `#3f3d4a` background, logo centered with `transform: scale(5)` (exact same HTML/CSS as the header logo — no custom proportions), auto-redirects to `/shop` after 2 seconds. `/shop` route unchanged.
+
+**Logo PNGs regenerated** — `graphite_logo_ig.png` (1080×1080) and `graphite_logo_ig_crop.png` (616×616, 200px padding) re-rendered via headless Chrome at 2× device scale factor, then LANCZOS downsampled. Sharper text than 1× renders. Colors updated to current brand values.
+
 ---
 
 ## Database Schema
