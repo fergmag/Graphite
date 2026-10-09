@@ -1744,6 +1744,22 @@
     "created_at": "2026-09-15T09:59:26.718989+00:00"
   },
   {
+    "id": 1756,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Carhartt 100733 261 Active Jacket Size L Tan Quilted Lined Workwear",
+    "price": 120.0,
+    "url": "https://www.ebay.com/itm/820218990845",
+    "photo": "https://i.ebayimg.com/images/g/D-sAAeSwTIZqyD6F/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:18:01.527781+00:00"
+  },
+  {
     "id": 1755,
     "query": "jb0817",
     "source": "ebay",
