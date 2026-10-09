@@ -3824,6 +3824,22 @@
     "created_at": "2026-09-14T17:17:42.046728+00:00"
   },
   {
+    "id": 1683,
+    "query": "js1236",
+    "source": "ebay",
+    "title": "CARHARTT Men 103828 Moderate wear or visible flaws SV",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/377489189508",
+    "photo": "https://i.ebayimg.com/images/g/1rMAAeSw8SBqpGDV/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:11:30.778144+00:00"
+  },
+  {
     "id": 1619,
     "query": "j97 crimson",
     "source": "ebay",
@@ -4382,6 +4398,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-30T13:13:31.418677+00:00"
+  },
+  {
+    "id": 1682,
+    "query": "js1236",
+    "source": "ebay",
+    "title": "carhartt j284 size large",
+    "price": 220.0,
+    "url": "https://www.ebay.com/itm/137213795346",
+    "photo": "https://i.ebayimg.com/images/g/J0EAAeSw5DFp2I3c/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:11:30.770412+00:00"
   },
   {
     "id": 211,
