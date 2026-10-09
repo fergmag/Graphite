@@ -5824,6 +5824,22 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 1844,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt Quilt-Lined Hooded Active Jacket “Brown” J130-211 Men's Large New",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/327352646907",
+    "photo": "https://i.ebayimg.com/images/g/xSAAAeSwTclqg-fg/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T19:20:02.873998+00:00"
+  },
+  {
     "id": 1799,
     "query": "j97 petrol",
     "source": "ebay",
