@@ -976,6 +976,22 @@
     "created_at": "2026-09-14T17:57:03.175590+00:00"
   },
   {
+    "id": 1690,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Duck Arctic Traditional Coat Tan Canvas Work C26 211 Men's L",
+    "price": 89.99,
+    "url": "https://www.ebay.com/itm/377468057478",
+    "photo": "https://i.ebayimg.com/images/g/6lQAAeSwVwxpMyCO/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:13:09.806435+00:00"
+  },
+  {
     "id": 51,
     "query": "jr0115",
     "source": "ebay",
@@ -1696,6 +1712,22 @@
     "created_at": "2026-09-14T17:58:48.363017+00:00"
   },
   {
+    "id": 1687,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "0C0003 Carhartt Men's Loose Fit Firm Duck Insulated Traditional Coat Black M",
+    "price": 124.53,
+    "url": "https://www.ebay.com/itm/168721070183",
+    "photo": "https://i.ebayimg.com/images/g/sNwAAeSw2Vhqxt95/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:13:09.739693+00:00"
+  },
+  {
     "id": 1527,
     "query": "j97 crimson",
     "source": "ebay",
@@ -1888,6 +1920,38 @@
     "created_at": "2026-09-23T18:59:57.636008+00:00"
   },
   {
+    "id": 1689,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "CARHARTT MEN'S LOOSE FIT FIRM DUCK INSULATED TRADITIONAL COAT - BLACK",
+    "price": 132.62,
+    "url": "https://www.ebay.com/itm/377427179693",
+    "photo": "https://i.ebayimg.com/images/g/WLYAAeSwi0lqxt98/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:13:09.790889+00:00"
+  },
+  {
+    "id": 1688,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Discontinued Carhartt 100733-316 Quilt-Lined Hooded Canvas Duck Moss Green Large",
+    "price": 132.99,
+    "url": "https://www.ebay.com/itm/336809733444",
+    "photo": "https://i.ebayimg.com/images/g/zHcAAeSwCPVqMvEu/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:13:09.763311+00:00"
+  },
+  {
     "id": 1678,
     "query": "j65 blue",
     "source": "ebay",
@@ -1918,6 +1982,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:11:20.238055+00:00"
+  },
+  {
+    "id": 1691,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "CARHARTT BROWN - CARHARTT MEN'S LOOSE FIT FIRM DUCK INSULATED TRADITIONAL COAT",
+    "price": 134.81,
+    "url": "https://www.ebay.com/itm/377447432535",
+    "photo": "https://i.ebayimg.com/images/g/gPQAAeSwUxNqkiOE/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:13:09.816852+00:00"
   },
   {
     "id": 1289,
