@@ -896,6 +896,22 @@
     "created_at": "2026-09-14T17:58:02.287233+00:00"
   },
   {
+    "id": 1724,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Iconic J01 Duck Detroit Jacket Blanket Lined Mens Work Coat / FULL SIZE",
+    "price": 89.69,
+    "url": "https://www.ebay.com/itm/820085307905",
+    "photo": "https://i.ebayimg.com/images/g/6OIAAeSwF-ZqmkB1/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.087266+00:00"
+  },
+  {
     "id": 1675,
     "query": "j65 brick",
     "source": "ebay",
@@ -2272,6 +2288,22 @@
     "created_at": "2026-09-20T04:22:46.169423+00:00"
   },
   {
+    "id": 1730,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket 14806 USED MENS LARGE ",
+    "price": 145.0,
+    "url": "https://www.ebay.com/itm/147137459909",
+    "photo": "https://i.ebayimg.com/images/g/7tQAAeSwqxhpg~pk/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.308166+00:00"
+  },
+  {
     "id": 101,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3408,6 +3440,22 @@
     "created_at": "2026-09-15T04:01:06.330425+00:00"
   },
   {
+    "id": 1726,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "DEADSTOCK 2008 Y2K CARHARTT QUILTED LINED SANDSTONE C26 BLK WORK JACKET XL",
+    "price": 186.98000000000002,
+    "url": "https://www.ebay.com/itm/267789032424",
+    "photo": "https://i.ebayimg.com/images/g/b2YAAeSwzU1qrUpr/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.118455+00:00"
+  },
+  {
     "id": 158,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3502,6 +3550,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:41.785764+00:00"
+  },
+  {
+    "id": 1727,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "2000s Y2K Carhartt J14 Santa Fe Jacket Size L",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/287627627218",
+    "photo": "https://i.ebayimg.com/images/g/1dUAAeSw7Z5qw1iY/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.125851+00:00"
   },
   {
     "id": 1532,
@@ -7072,6 +7136,22 @@
     "created_at": "2026-10-05T07:14:19.205171+00:00"
   },
   {
+    "id": 1728,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "vintage carhartt j128 jacket size large carole",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/237115317747",
+    "photo": "https://i.ebayimg.com/images/g/gy0AAeSwFEJqyD1E/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.208510+00:00"
+  },
+  {
     "id": 1592,
     "query": "j97 moss",
     "source": "ebay",
@@ -7246,6 +7326,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:03.168425+00:00"
+  },
+  {
+    "id": 1731,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt USA Black Jacket L Hooded Distressed",
+    "price": 354.72,
+    "url": "https://www.ebay.com/itm/407236316716",
+    "photo": "https://i.ebayimg.com/images/g/A9kAAeSwzclqslYb/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.319513+00:00"
   },
   {
     "id": 330,
@@ -8062,6 +8158,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-02T19:14:25.416687+00:00"
+  },
+  {
+    "id": 1725,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ2394 Santa Fe Bomber Work Canvas Jacket Aspen Green XL",
+    "price": 230.0,
+    "url": "https://www.ebay.com/itm/398415180694",
+    "photo": "https://i.ebayimg.com/images/g/WoUAAeSwK45qsIJu/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.096765+00:00"
   },
   {
     "id": 368,
@@ -9310,6 +9422,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-24T01:01:18.915208+00:00"
+  },
+  {
+    "id": 1729,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 362.98,
+    "url": "https://www.ebay.com/itm/327386794201",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:16:06.217332+00:00"
   },
   {
     "id": 417,
