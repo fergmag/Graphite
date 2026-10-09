@@ -522,9 +522,15 @@
       function photoSrc(p) {
         return (p && (p.startsWith('http://') || p.startsWith('https://'))) ? p : `/photos/${p}`;
       }
+      function thumbSrc(p) {
+        const url = photoSrc(p);
+        if (url.includes('res.cloudinary.com') && url.includes('/upload/'))
+          return url.replace('/upload/', '/upload/w_600,q_auto,f_auto/');
+        return url;
+      }
       function photoHtml(photos, title, cls) {
         if (photos && photos.length > 0)
-          return `<img src="${photoSrc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
+          return `<img src="${thumbSrc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
         return `<span class="${cls}">Photo coming soon</span>`;
       }
 

@@ -123,7 +123,7 @@
             {% if section.photos %}
             <div class="photo-grid">
               {% for photo in section.photos %}
-              <img src="{{ photo | photo_url }}" alt="{{ section.title }}" loading="lazy" onclick="openPhoto(this.src)" />
+              <img src="{{ photo | photo_thumb_url }}" data-full="{{ photo | photo_url }}" alt="{{ section.title }}" loading="lazy" onclick="openPhoto(this.dataset.full || this.src)" />
               {% endfor %}
             </div>
             {% endif %}
