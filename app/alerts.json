@@ -3536,6 +3536,22 @@
     "created_at": "2026-09-14T17:18:24.874111+00:00"
   },
   {
+    "id": 1822,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Style Detroit Work  Jacket – Navy Blue – Medium Canvas Jacket",
+    "price": 169.99,
+    "url": "https://www.ebay.com/itm/820213185429",
+    "photo": "https://i.ebayimg.com/images/g/yLkAAeSwfKVqxhQA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T13:18:38.136071+00:00"
+  },
+  {
     "id": 1773,
     "query": "jp1017",
     "source": "ebay",
@@ -4046,6 +4062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T01:14:03.911867+00:00"
+  },
+  {
+    "id": 1823,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J247 PTB Jacket Men's L Y2K Sandstone Duck Blue Hooded Full Zip",
+    "price": 190.0,
+    "url": "https://www.ebay.com/itm/800775367628",
+    "photo": "https://i.ebayimg.com/images/g/gDwAAeSwL~xqyNgZ/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T13:18:38.173525+00:00"
   },
   {
     "id": 1792,
@@ -8158,6 +8190,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:16:20.496983+00:00"
+  },
+  {
+    "id": 1824,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 362.98,
+    "url": "https://www.ebay.com/itm/327386794201",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T13:18:38.185087+00:00"
   },
   {
     "id": 1758,
