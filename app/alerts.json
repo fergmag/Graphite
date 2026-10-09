@@ -5952,6 +5952,22 @@
     "created_at": "2026-09-14T17:57:37.253900+00:00"
   },
   {
+    "id": 1686,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Vintage Carhartt J130 DTL Hooded Active Jacket 90s Workwear Dark Teal Size L",
+    "price": 296.99,
+    "url": "https://www.ebay.com/itm/307034799885",
+    "photo": "https://i.ebayimg.com/images/g/20QAAeSw08BqQ99G/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:12:38.024783+00:00"
+  },
+  {
     "id": 277,
     "query": "ju1005",
     "source": "ebay",
@@ -14750,6 +14766,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-01T01:14:13.817135+00:00"
+  },
+  {
+    "id": 1685,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt j110 dst vintage detroit jacket size men’s larg FLAWLESS no patch READ",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/960038993310",
+    "photo": "https://i.ebayimg.com/images/g/TggAAeSwMwxqyC5q/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:12:38.014910+00:00"
   },
   {
     "id": 698,
@@ -25614,6 +25646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T04:20:37.763997+00:00"
+  },
+  {
+    "id": 1684,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J110 DST Large CLEAN RARE",
+    "price": 1400.0,
+    "url": "https://www.ebay.com/itm/860024307681",
+    "photo": "https://i.ebayimg.com/images/g/nigAAeSwGVFqyCZa/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:12:38.009357+00:00"
   },
   {
     "id": 1212,
