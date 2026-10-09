@@ -960,6 +960,22 @@
     "created_at": "2026-09-14T17:58:02.287233+00:00"
   },
   {
+    "id": 1746,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Carhartt Iconic J01 Duck Detroit Jacket Blanket Lined Mens Work Coat / FULL SIZE",
+    "price": 89.69,
+    "url": "https://www.ebay.com/itm/820085307905",
+    "photo": "https://i.ebayimg.com/images/g/DdkAAeSw02Jqmj-e/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:17:17.783123+00:00"
+  },
+  {
     "id": 1732,
     "query": "j43 onyx",
     "source": "ebay",
@@ -3646,6 +3662,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:41.785764+00:00"
+  },
+  {
+    "id": 1748,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "2000s Y2K Carhartt J14 Santa Fe Jacket Size L",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/287627627218",
+    "photo": "https://i.ebayimg.com/images/g/1dUAAeSw7Z5qw1iY/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:17:17.812778+00:00"
   },
   {
     "id": 1727,
@@ -9534,6 +9566,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:47.458616+00:00"
+  },
+  {
+    "id": 1747,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Large J22 MOS Arctic Quilt Lined Faded Made In USA",
+    "price": 358.95,
+    "url": "https://www.ebay.com/itm/198699548500",
+    "photo": "https://i.ebayimg.com/images/g/YwYAAeSwkdVqyAsn/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:17:17.804497+00:00"
   },
   {
     "id": 1524,
