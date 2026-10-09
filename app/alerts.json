@@ -5424,6 +5424,22 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 1763,
+    "query": "js1207",
+    "source": "ebay",
+    "title": "carhartt",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/137124397914",
+    "photo": "https://i.ebayimg.com/images/g/o8MAAeSwiCBps0wE/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:11.936974+00:00"
+  },
+  {
     "id": 331,
     "query": "j97 petrol",
     "source": "ebay",
@@ -17646,6 +17662,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:48.400654+00:00"
+  },
+  {
+    "id": 1764,
+    "query": "js1207",
+    "source": "ebay",
+    "title": "Carhartt Men’s XL Regular  J140 HAZ MAT TEAM logo VTG",
+    "price": 325.0,
+    "url": "https://www.ebay.com/itm/267697540186",
+    "photo": "https://i.ebayimg.com/images/g/0mUAAeSwzEZqLH3J/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:11.944407+00:00"
   },
   {
     "id": 1093,
