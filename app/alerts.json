@@ -128,6 +128,22 @@
     "created_at": "2026-10-02T19:13:45.003917+00:00"
   },
   {
+    "id": 1680,
+    "query": "js1237",
+    "source": "ebay",
+    "title": "Carhartt Super Dux Black Size L",
+    "price": 35.0,
+    "url": "https://www.ebay.com/itm/318816508172",
+    "photo": "https://i.ebayimg.com/images/g/WiwAAeSwvSNqmIr1/s-l225.jpg",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:11:20.227644+00:00"
+  },
+  {
     "id": 8,
     "query": "j97 burgundy",
     "source": "etsy",
@@ -1886,6 +1902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:11:09.516981+00:00"
+  },
+  {
+    "id": 1681,
+    "query": "js1237",
+    "source": "ebay",
+    "title": "Carhartt Quilted-Flanne-Lined Duck Active Jac. CT106677",
+    "price": 133.42000000000002,
+    "url": "https://www.ebay.com/itm/136833524458",
+    "photo": "https://i.ebayimg.com/images/g/RnEAAeSws35pNtnf/s-l225.jpg",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T01:11:20.238055+00:00"
   },
   {
     "id": 1289,
