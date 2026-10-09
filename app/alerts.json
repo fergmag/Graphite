@@ -992,6 +992,22 @@
     "created_at": "2026-09-14T17:58:02.287233+00:00"
   },
   {
+    "id": 1769,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt 106673 Iconic J140 Firm Duck Active Jac Hooded Jacket / FULL SIZE - NEW",
+    "price": 89.69,
+    "url": "https://www.ebay.com/itm/377524122291",
+    "photo": "https://i.ebayimg.com/images/g/bdgAAeSwr5dqt4PZ/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:53.153121+00:00"
+  },
+  {
     "id": 1762,
     "query": "js1237",
     "source": "ebay",
@@ -2430,6 +2446,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T10:24:31.797783+00:00"
+  },
+  {
+    "id": 1770,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J252 BLK Canvas Full Zip Hooded Active Jacket - Mens M Regular",
+    "price": 140.0,
+    "url": "https://www.ebay.com/itm/227556971747",
+    "photo": "https://i.ebayimg.com/images/g/7ZcAAeSweHNqxm7I/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:53.160425+00:00"
   },
   {
     "id": 145,
@@ -5936,6 +5968,22 @@
     "created_at": "2026-09-23T18:59:57.825932+00:00"
   },
   {
+    "id": 1771,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilt-Lined Hooded Jacket “Saddle” J130 SDL Men’s Medium",
+    "price": 259.99,
+    "url": "https://www.ebay.com/itm/147591939825",
+    "photo": "https://i.ebayimg.com/images/g/8NIAAeSwhkhqsugG/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:53.178370+00:00"
+  },
+  {
     "id": 360,
     "query": "j97 moss",
     "source": "ebay",
@@ -6574,6 +6622,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:37.253900+00:00"
+  },
+  {
+    "id": 1772,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Vintage Carhartt J130 CLY Sandstone Duck Active Jacket Clay Red Mens L 2001 Y2k",
+    "price": 296.99,
+    "url": "https://www.ebay.com/itm/820094728394",
+    "photo": "https://i.ebayimg.com/images/g/LdUAAeSwVSNqS9Gg/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:19:53.187316+00:00"
   },
   {
     "id": 400,
