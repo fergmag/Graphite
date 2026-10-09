@@ -3440,6 +3440,22 @@
     "created_at": "2026-09-14T17:18:24.874111+00:00"
   },
   {
+    "id": 1773,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "CARHARTT OC3283-M MEN'S LARGE BLACK DUCK WORK COAT RUGGED DISTRESSED TRASHED",
+    "price": 169.99,
+    "url": "https://www.ebay.com/itm/298706619023",
+    "photo": "https://i.ebayimg.com/images/g/bNkAAeSwVuJpwqTT/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:20:14.698195+00:00"
+  },
+  {
     "id": 205,
     "query": "j97 petrol",
     "source": "ebay",
@@ -4910,6 +4926,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-19T16:24:24.494435+00:00"
+  },
+  {
+    "id": 1774,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt green hooded work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407168010394",
+    "photo": "https://i.ebayimg.com/images/g/nAEAAeSwVsxqjQKl/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:20:14.702087+00:00"
   },
   {
     "id": 296,
@@ -9072,6 +9104,22 @@
     "created_at": "2026-09-14T17:17:41.844511+00:00"
   },
   {
+    "id": 1775,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "New Carhartt Crafted Series Duck Sherpa Lined Chore Jacket USA Made Mens L",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/800287493421",
+    "photo": "https://i.ebayimg.com/images/g/X5EAAeSwSl5qSRoE/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:20:14.707289+00:00"
+  },
+  {
     "id": 549,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -9182,6 +9230,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:56:26.896089+00:00"
+  },
+  {
+    "id": 1776,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Ridge Coat Sherpa Lined Mens Small C61 DKB Dark Brown NWT NOS",
+    "price": 299.0,
+    "url": "https://www.ebay.com/itm/178491107982",
+    "photo": "https://i.ebayimg.com/images/g/ze0AAeSwsqlqfQDn/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-09T07:20:14.710714+00:00"
   },
   {
     "id": 556,
