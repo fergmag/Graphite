@@ -3280,6 +3280,22 @@
     "created_at": "2026-09-14T17:17:41.895920+00:00"
   },
   {
+    "id": 1929,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Carhartt Style Detroit Jacket Green Blanket Lined Mens Medium",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/820224945305",
+    "photo": "https://i.ebayimg.com/images/g/zg0AAeSwvx5qyoI7/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T19:23:01.757530+00:00"
+  },
+  {
     "id": 1928,
     "query": "j97 petrol",
     "source": "ebay",
