@@ -6272,6 +6272,22 @@
     "created_at": "2026-10-09T19:20:02.873998+00:00"
   },
   {
+    "id": 1909,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Men’s Large Saddle Brown Blanket Lined J97 SDL",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/147240210870",
+    "photo": "https://i.ebayimg.com/images/g/N1kAAeSwFh9p2bTz/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T13:21:54.365553+00:00"
+  },
+  {
     "id": 1799,
     "query": "j97 petrol",
     "source": "ebay",
