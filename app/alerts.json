@@ -7104,6 +7104,22 @@
     "created_at": "2026-09-30T07:13:27.512009+00:00"
   },
   {
+    "id": 1893,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Blanket Lined Green Detroit Jacket",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/920025540622",
+    "photo": "https://i.ebayimg.com/images/g/T60AAeSw0aZqybS8/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T07:22:18.463323+00:00"
+  },
+  {
     "id": 1884,
     "query": "j97 moss",
     "source": "ebay",
@@ -7566,6 +7582,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T07:20:48.169764+00:00"
+  },
+  {
+    "id": 1891,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt J97-PTL Size 3XL Rare Grail Vintage Petrol Colorway Detroit Jacket",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/960045948661",
+    "photo": "https://i.ebayimg.com/images/g/jaoAAeSwXKFqyahy/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T07:22:18.161050+00:00"
   },
   {
     "id": 410,
@@ -9534,6 +9566,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:19:18.570845+00:00"
+  },
+  {
+    "id": 1892,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 CML Sandstone Duck Quilted Work Jacket Mens XL",
+    "price": 190.0,
+    "url": "https://www.ebay.com/itm/407268684426",
+    "photo": "https://i.ebayimg.com/images/g/Zm4AAeSwG8ZqxAsz/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T07:22:18.266193+00:00"
   },
   {
     "id": 1786,
