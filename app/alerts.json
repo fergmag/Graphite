@@ -3200,6 +3200,22 @@
     "created_at": "2026-09-14T17:17:41.895920+00:00"
   },
   {
+    "id": 1905,
+    "query": "js1236",
+    "source": "ebay",
+    "title": "2013 Carhartt J 140 Black RN#14806 Size XL",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/376693761619",
+    "photo": "https://i.ebayimg.com/images/g/yFgAAeSwjIZpFP7g/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T13:18:55.531786+00:00"
+  },
+  {
     "id": 162,
     "query": "j76 cement",
     "source": "ebay",
