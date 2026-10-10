@@ -16656,6 +16656,22 @@
     "created_at": "2026-09-23T19:00:35.937842+00:00"
   },
   {
+    "id": 1902,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt J76 CMT Detroit Jacket Large Cement Grey Canvas Plaid Distress",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/407279588804",
+    "photo": "https://i.ebayimg.com/images/g/~6gAAeSwUJVqyZae/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T07:24:33.713004+00:00"
+  },
+  {
     "id": 924,
     "query": "j97 moss",
     "source": "ebay",
