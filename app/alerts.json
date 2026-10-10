@@ -1472,6 +1472,22 @@
     "created_at": "2026-10-09T13:20:06.857886+00:00"
   },
   {
+    "id": 1856,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Y2K CARHARTT J130 US Men’s XL Black Hooded Flannel Duck Canvas Jacket EUC",
+    "price": 99.99,
+    "url": "https://www.ebay.com/itm/820221828873",
+    "photo": "https://i.ebayimg.com/images/g/QnMAAeSwk7dqyV1z/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T01:20:20.941780+00:00"
+  },
+  {
     "id": 81,
     "query": "j97 moss",
     "source": "etsy",
@@ -16318,6 +16334,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:54.756099+00:00"
+  },
+  {
+    "id": 1857,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "vintage carhartt j110 dst grail detroit jacket size men’s large READ",
+    "price": 525.0,
+    "url": "https://www.ebay.com/itm/960045439720",
+    "photo": "https://i.ebayimg.com/images/g/5rsAAeSwUFhqyW0o/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T01:20:20.969834+00:00"
   },
   {
     "id": 938,
