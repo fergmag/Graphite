@@ -8768,6 +8768,22 @@
     "created_at": "2026-09-14T17:57:03.168425+00:00"
   },
   {
+    "id": 1904,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt USA Black Jacket L Hooded Distressed",
+    "price": 354.72,
+    "url": "https://www.ebay.com/itm/407236316716",
+    "photo": "https://i.ebayimg.com/images/g/A9kAAeSwzclqslYb/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T13:18:18.642740+00:00"
+  },
+  {
     "id": 471,
     "query": "j43 burgundy",
     "source": "ebay",
