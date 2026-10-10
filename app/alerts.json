@@ -992,6 +992,22 @@
     "created_at": "2026-09-14T17:18:55.077954+00:00"
   },
   {
+    "id": 1918,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Firm Duck Insulated Traditional Coat C003 Black Loose Fit Size M ",
+    "price": 81.89,
+    "url": "https://www.ebay.com/itm/327242418184",
+    "photo": "https://i.ebayimg.com/images/g/4AIAAeSwVbhqRVa0/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T19:20:32.615240+00:00"
+  },
+  {
     "id": 55,
     "query": "j97 crimson",
     "source": "ebay",
@@ -1966,6 +1982,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-10T07:18:29.716655+00:00"
+  },
+  {
+    "id": 1919,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Firm Duck Insulated Traditional Coat Mens Large Loose Fit Dark Navy NWT",
+    "price": 111.9,
+    "url": "https://www.ebay.com/itm/336781609634",
+    "photo": "https://i.ebayimg.com/images/g/aWQAAeSwMx5qnV-9/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-10T19:20:32.661243+00:00"
   },
   {
     "id": 102,
