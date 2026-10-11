@@ -5184,6 +5184,22 @@
     "created_at": "2026-09-14T17:17:42.046728+00:00"
   },
   {
+    "id": 1936,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt C03-BLK Mens L Regular Black Canvas Full Zip Lined Bomber Jacket BRAND",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/237117961170",
+    "photo": "https://i.ebayimg.com/images/g/RKcAAeSw1dtqyo9C/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T01:18:34.874097+00:00"
+  },
+  {
     "id": 1920,
     "query": "j97 crimson",
     "source": "ebay",
