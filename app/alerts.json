@@ -9120,6 +9120,22 @@
     "created_at": "2026-09-14T17:17:41.850942+00:00"
   },
   {
+    "id": 1988,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green Rare 2000 USA Made 3XL Tall ",
+    "price": 328.93,
+    "url": "https://www.ebay.com/itm/840006953621",
+    "photo": "https://i.ebayimg.com/images/g/FJoAAeSwi21qykrP/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:21:31.572284+00:00"
+  },
+  {
     "id": 449,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -28142,6 +28158,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.051717+00:00"
+  },
+  {
+    "id": 1989,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Green Detroit Jacket Size Small",
+    "price": 850.0,
+    "url": "https://www.ebay.com/itm/237118330606",
+    "photo": "https://i.ebayimg.com/images/g/K3QAAeSwhFtqyu2v/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:21:31.867168+00:00"
   },
   {
     "id": 1532,
