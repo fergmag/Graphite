@@ -672,6 +672,22 @@
     "created_at": "2026-09-14T17:58:02.264595+00:00"
   },
   {
+    "id": 1986,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Heavyweight Rain Defender Hooded Jacket (New With Tags) TJ5022-M",
+    "price": 69.99,
+    "url": "https://www.ebay.com/itm/307225938264",
+    "photo": "https://i.ebayimg.com/images/g/13IAAeSwmRFqy4iP/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:20:53.162887+00:00"
+  },
+  {
     "id": 1985,
     "query": "j65 blue",
     "source": "ebay",
@@ -5166,6 +5182,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-17T10:23:39.298082+00:00"
+  },
+  {
+    "id": 1987,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Y2K CARHARTT J97 48 XL SDL Brown Canvas Blanket Lined Work Detroit Jacket EUC",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/820211538468",
+    "photo": "https://i.ebayimg.com/images/g/JvsAAeSwQ6JqxWO1/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:20:53.168039+00:00"
   },
   {
     "id": 1951,
