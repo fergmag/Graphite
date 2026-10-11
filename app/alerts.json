@@ -592,6 +592,22 @@
     "created_at": "2026-09-14T17:17:41.863282+00:00"
   },
   {
+    "id": 1964,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "CARHARTT J141 266 Mens XL Tan Brown Detroit Sierra Sherpa Hooded Jacket Coat",
+    "price": 64.98,
+    "url": "https://www.ebay.com/itm/287640652209",
+    "photo": "https://i.ebayimg.com/images/g/fSMAAeSwCbtqyvbF/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T07:18:27.762090+00:00"
+  },
+  {
     "id": 31,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -6334,6 +6350,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:41.869458+00:00"
+  },
+  {
+    "id": 1963,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt JB848 denim blue hooded work wear jacket",
+    "price": 232.0,
+    "url": "https://www.ebay.com/itm/407214392350",
+    "photo": "https://i.ebayimg.com/images/g/gZYAAeSwHYBqpw63/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T07:18:27.667529+00:00"
   },
   {
     "id": 314,
