@@ -5456,6 +5456,22 @@
     "created_at": "2026-09-14T17:17:42.046728+00:00"
   },
   {
+    "id": 1995,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Santa Fe Jacket J13 BRN Adult Size Medium RN14806 ",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/307220312436",
+    "photo": "https://i.ebayimg.com/images/g/v~wAAeSwG1ZqxwRB/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:22:56.970986+00:00"
+  },
+  {
     "id": 1956,
     "query": "j43 hunter green",
     "source": "ebay",
