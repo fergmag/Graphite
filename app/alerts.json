@@ -672,6 +672,22 @@
     "created_at": "2026-09-14T17:58:02.264595+00:00"
   },
   {
+    "id": 2001,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": " Carhartt Blanket Lined  Jacket Distressed Med/Large size 40 long  #922 ",
+    "price": 67.98,
+    "url": "https://www.ebay.com/itm/147630621686",
+    "photo": "https://i.ebayimg.com/images/g/8x8AAeSwFktqtWF8/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:24:41.175503+00:00"
+  },
+  {
     "id": 1986,
     "query": "j97 crimson",
     "source": "ebay",
@@ -20414,6 +20430,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:54.630658+00:00"
+  },
+  {
+    "id": 2000,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BRN Detroit Jacket Heavily Thrashed And Distressed Size XXL",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/287591602238",
+    "photo": "https://i.ebayimg.com/images/g/VOwAAeSwZkVqq5tE/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-11T13:24:41.165930+00:00"
   },
   {
     "id": 1059,
