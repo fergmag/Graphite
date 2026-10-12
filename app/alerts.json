@@ -2240,6 +2240,22 @@
     "created_at": "2026-10-10T07:18:29.716655+00:00"
   },
   {
+    "id": 2113,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J22 BRN Men’s M Regular Brown Lined Cotton Work Jacket Full Zip",
+    "price": 110.0,
+    "url": "https://www.ebay.com/itm/336841339734",
+    "photo": "https://i.ebayimg.com/images/g/AMgAAeSwfhZqzQr3/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-12T19:23:20.249860+00:00"
+  },
+  {
     "id": 2111,
     "query": "j43 chestnut",
     "source": "ebay",
