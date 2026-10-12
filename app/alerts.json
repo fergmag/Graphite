@@ -2176,6 +2176,22 @@
     "created_at": "2026-09-14T17:56:26.902007+00:00"
   },
   {
+    "id": 2086,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ186 Sz 46 Traditional Quilted Nylon Lined Duck Canvas 80s 90s",
+    "price": 108.6,
+    "url": "https://www.ebay.com/itm/297895764752",
+    "photo": "https://i.ebayimg.com/images/g/~TUAAeSwrMVpVhIN/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-12T13:20:12.429587+00:00"
+  },
+  {
     "id": 1879,
     "query": "j76 cement",
     "source": "ebay",
