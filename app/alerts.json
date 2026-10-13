@@ -1680,6 +1680,22 @@
     "created_at": "2026-10-13T01:21:34.081099+00:00"
   },
   {
+    "id": 2140,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vtg Carhartt J140 DNY Bomber Jacket Work Faded Distressed USA Made Y2K Mens L",
+    "price": 96.0,
+    "url": "https://www.ebay.com/itm/257796078615",
+    "photo": "https://i.ebayimg.com/images/g/k4IAAeSwPQVqzYfV/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T07:18:32.633246+00:00"
+  },
+  {
     "id": 2139,
     "query": "j65 brick",
     "source": "ebay",
@@ -2302,6 +2318,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-10T01:18:01.309284+00:00"
+  },
+  {
+    "id": 2141,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "PRE OWNED Mens J141 Carhartt Jacket Black Size Large Regular L Made in Mexico",
+    "price": 109.97999999999999,
+    "url": "https://www.ebay.com/itm/940010058366",
+    "photo": "https://i.ebayimg.com/images/g/-WwAAeSw96NqzaF2/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T07:18:32.640227+00:00"
   },
   {
     "id": 1881,
@@ -4960,6 +4992,22 @@
     "created_at": "2026-10-11T19:21:34.964527+00:00"
   },
   {
+    "id": 2143,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Y2K Duck Canvas Carhartt Tan Jacket Arctic Quilt Lined Men Large J22 SDL",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/327402056407",
+    "photo": "https://i.ebayimg.com/images/g/YHQAAeSwLTZqzWFy/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T07:18:32.670600+00:00"
+  },
+  {
     "id": 2137,
     "query": "j76 cement",
     "source": "ebay",
@@ -6798,6 +6846,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T07:22:46.373153+00:00"
+  },
+  {
+    "id": 2142,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage 1999 Carhartt J04 Quilted - Lined Active /hooded Jacket Full Zip Size M",
+    "price": 213.0,
+    "url": "https://www.ebay.com/itm/880011873507",
+    "photo": "https://i.ebayimg.com/images/g/MEIAAeSw~dNqzVuA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T07:18:32.661781+00:00"
   },
   {
     "id": 2136,
