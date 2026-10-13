@@ -1552,6 +1552,22 @@
     "created_at": "2026-09-14T17:56:26.890127+00:00"
   },
   {
+    "id": 2119,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt RN#14806 Navy Blue hooded work wear jacket MENS LARGE L",
+    "price": 90.0,
+    "url": "https://www.ebay.com/itm/336841812125",
+    "photo": "https://i.ebayimg.com/images/g/NnwAAeSwHkZqzWqA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T01:18:35.768723+00:00"
+  },
+  {
     "id": 71,
     "query": "j97 crimson",
     "source": "ebay",
@@ -9200,6 +9216,22 @@
     "created_at": "2026-09-14T17:18:24.893382+00:00"
   },
   {
+    "id": 2118,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Men’s Black Detroit Jacket L made in USA Blanket Lined",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/147600991609",
+    "photo": "https://i.ebayimg.com/images/g/97EAAeSwJOVquAZA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T01:18:35.673370+00:00"
+  },
+  {
     "id": 2064,
     "query": "j65 brick",
     "source": "ebay",
@@ -11134,6 +11166,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:02.092668+00:00"
+  },
+  {
+    "id": 2117,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Medium Blue Detroit J65 J01 BLU NVY 80s 90s RARE",
+    "price": 609.5999999999999,
+    "url": "https://www.ebay.com/itm/267812037798",
+    "photo": "https://i.ebayimg.com/images/g/-LoAAeSw9cNp~AAi/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T01:18:35.650789+00:00"
   },
   {
     "id": 502,
