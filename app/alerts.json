@@ -6048,6 +6048,22 @@
     "created_at": "2026-09-14T17:17:41.963247+00:00"
   },
   {
+    "id": 2199,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J13 Red Quilter Santa Fe \"RED\" jacket Men's M",
+    "price": 194.5,
+    "url": "https://www.ebay.com/itm/407286602623",
+    "photo": "https://i.ebayimg.com/images/g/BnkAAeSwV8VqzdyY/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T19:23:11.651279+00:00"
+  },
+  {
     "id": 238,
     "query": "j97 petrol",
     "source": "ebay",
@@ -34046,6 +34062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T18:57:10.216686+00:00"
+  },
+  {
+    "id": 2198,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket XL Burgundy Work Jacket Mens J43 J97",
+    "price": 1599.0,
+    "url": "https://www.grailed.com/listings/108652999",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/43a8e55c83e9496e953056905545a1f9",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T19:23:11.637653+00:00"
   },
   {
     "id": 2195,
