@@ -624,6 +624,22 @@
     "created_at": "2026-09-14T17:17:41.863282+00:00"
   },
   {
+    "id": 2178,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Detroit Jacket MOS Green",
+    "price": 60.0,
+    "url": "https://www.etsy.com/listing/4594354840/vintage-carhartt-j97-detroit-jacket-mos",
+    "photo": "https://i.etsystatic.com/68286171/r/il/76878b/8669394356/il_570xN.8669394356_p00w.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T13:21:34.868715+00:00"
+  },
+  {
     "id": 1964,
     "query": "j65 blue",
     "source": "ebay",
@@ -22176,6 +22192,22 @@
     "created_at": "2026-09-29T13:15:08.709434+00:00"
   },
   {
+    "id": 2177,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Vintage J97 MOS Detroit Jacket - Made in USA - Size XXL - Blanket Lined",
+    "price": 214.59,
+    "url": "https://www.ebay.com/itm/376943622514",
+    "photo": "https://i.ebayimg.com/images/g/AlEAAeSw~JFpHLRP/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T13:21:34.760982+00:00"
+  },
+  {
     "id": 1025,
     "query": "j97 timber",
     "source": "ebay",
@@ -27902,6 +27934,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T04:24:58.501095+00:00"
+  },
+  {
+    "id": 2176,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J97 MOS Detroit Corduroy Paper Tag Jacket Moss Green Size L",
+    "price": 562.0,
+    "url": "https://www.ebay.com/itm/206623747158",
+    "photo": "https://i.ebayimg.com/images/g/D8YAAeSwRpRqzeJz/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-13T13:21:34.261966+00:00"
   },
   {
     "id": 1345,
