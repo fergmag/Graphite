@@ -1440,6 +1440,22 @@
     "created_at": "2026-09-14T17:58:47.770902+00:00"
   },
   {
+    "id": 1894,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J14 CHT Santa Fe Jacket Chestnut Brown Quilted Flannel Lined Mens XL",
+    "price": 99.46,
+    "url": "https://www.ebay.com/itm/840021373454",
+    "photo": "https://i.ebayimg.com/images/g/X4IAAeSw5hVqz475/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.268210+00:00"
+  },
+  {
     "id": 81,
     "query": "j97 moss",
     "source": "etsy",
@@ -1614,6 +1630,38 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:42.243721+00:00"
+  },
+  {
+    "id": 1891,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J22 CHT Collared Detroit Jacket Large Chestnut Brown MINT",
+    "price": 101.95,
+    "url": "https://www.ebay.com/itm/377571009668",
+    "photo": "https://i.ebayimg.com/images/g/0zIAAeSwt~tqwY3Q/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.212462+00:00"
+  },
+  {
+    "id": 1892,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J14 CML Camel Santa Fe Jacket - Size Large",
+    "price": 102.9,
+    "url": "https://www.ebay.com/itm/168792552378",
+    "photo": "https://i.ebayimg.com/images/g/vnoAAeSwsIxqz6SY/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.237429+00:00"
   },
   {
     "id": 92,
@@ -4224,6 +4272,22 @@
     "created_at": "2026-10-14T21:09:27.970502+00:00"
   },
   {
+    "id": 1893,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "2000s Y2K Carhartt J14 Santa Fe Jacket Size L",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/287627627218",
+    "photo": "https://i.ebayimg.com/images/g/1dUAAeSw7Z5qw1iY/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.248695+00:00"
+  },
+  {
     "id": 1768,
     "query": "j65 blue",
     "source": "ebay",
@@ -4830,6 +4894,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:17:42.046728+00:00"
+  },
+  {
+    "id": 1900,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Hooded Blanket Lined Brown Cotton Duck Canvas Coat",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/336838756650",
+    "photo": "https://i.ebayimg.com/images/g/vggAAeSwnqRqozZ~/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.542627+00:00"
   },
   {
     "id": 1803,
@@ -10256,6 +10336,22 @@
     "created_at": "2026-09-23T19:00:36.121466+00:00"
   },
   {
+    "id": 1895,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Men’s Black Detroit Jacket L made in USA Blanket Lined",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/147600991609",
+    "photo": "https://i.ebayimg.com/images/g/97EAAeSwJOVquAZA/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.343152+00:00"
+  },
+  {
     "id": 1830,
     "query": "j97 moss",
     "source": "ebay",
@@ -10990,6 +11086,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:17:17.804497+00:00"
+  },
+  {
+    "id": 1897,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "90's Carhartt Hooded Jacket J68 CHT SMALL",
+    "price": 359.99,
+    "url": "https://www.ebay.com/itm/267811689002",
+    "photo": "https://i.ebayimg.com/images/g/XKwAAeSwU9tqxCUA/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.439097+00:00"
   },
   {
     "id": 603,
@@ -15632,6 +15744,22 @@
     "created_at": "2026-09-14T17:18:24.386732+00:00"
   },
   {
+    "id": 1898,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Men Brown Blanket Jacket Vintage J97 CHT L Reg. - Farm Assist Advantage",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/287641763961",
+    "photo": "https://i.ebayimg.com/images/g/8RAAAOSwUfhneeDO/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.447907+00:00"
+  },
+  {
     "id": 880,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -19536,6 +19664,22 @@
     "created_at": "2026-09-14T17:18:54.958797+00:00"
   },
   {
+    "id": 1896,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J43CHT Men's Canvas Blanket Lined Full Zip Jacket XL Regular 90s",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/820228267296",
+    "photo": "https://i.ebayimg.com/images/g/Z5wAAeSwlBNqy9Hl/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.354452+00:00"
+  },
+  {
     "id": 1106,
     "query": "j97 petrol",
     "source": "ebay",
@@ -20990,6 +21134,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.691837+00:00"
+  },
+  {
+    "id": 1899,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J97CHT Brown Canvas Wool Lined Zip Front Work Jacket Men's XL Reg",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/800791630347",
+    "photo": "https://i.ebayimg.com/images/g/cC0AAeSwaGRqzm1G/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:11:33.456513+00:00"
   },
   {
     "id": 1865,
