@@ -5424,6 +5424,22 @@
     "created_at": "2026-10-11T19:21:34.964527+00:00"
   },
   {
+    "id": 2250,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Canvas Work Jacket Men's Brown distressed",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/137812516976",
+    "photo": "https://i.ebayimg.com/images/g/HZQAAeSw7tFqwr9d/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:18:22.021123+00:00"
+  },
+  {
     "id": 2246,
     "query": "j76 moss",
     "source": "ebay",
@@ -8654,6 +8670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-28T13:13:46.506976+00:00"
+  },
+  {
+    "id": 2251,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Hooded Active Jacket “Black” J140 BLK Men’s XL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147562748042",
+    "photo": "https://i.ebayimg.com/images/g/iy4AAeSwe~9qocqQ/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:18:22.180114+00:00"
   },
   {
     "id": 2004,
