@@ -5792,6 +5792,38 @@
     "created_at": "2026-09-15T04:01:06.330425+00:00"
   },
   {
+    "id": 2221,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 Vintage Grey Canvas Lined Men’s Large",
+    "price": 185.98,
+    "url": "https://www.ebay.com/itm/920036789785",
+    "photo": "https://i.ebayimg.com/images/g/fvgAAeSw4WBqzo3P/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:19.269315+00:00"
+  },
+  {
+    "id": 2219,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 Vintage Green Canvas Lined Men’s Medium",
+    "price": 185.98,
+    "url": "https://www.ebay.com/itm/920037464188",
+    "photo": "https://i.ebayimg.com/images/g/HQAAAeSwfwBqzroW/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:19.167520+00:00"
+  },
+  {
     "id": 2216,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -7614,6 +7646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T07:20:14.702087+00:00"
+  },
+  {
+    "id": 2218,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL Gasoline Blue Jacket LLLL122609",
+    "price": 215.0,
+    "url": "https://www.grailed.com/listings/108673645",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b47d8ad9aa6b4db392a576badc542dd2",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:18.970472+00:00"
   },
   {
     "id": 2067,
@@ -24416,6 +24464,22 @@
     "created_at": "2026-09-16T15:13:19.898509+00:00"
   },
   {
+    "id": 2223,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vtg Carhartt Detroit Jacket Gray  Blanket Lined Workwear Mens J97 PTL Sz XL",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/940012422685",
+    "photo": "https://i.ebayimg.com/images/g/iNcAAeSwkkFqzgC-/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:19.667495+00:00"
+  },
+  {
     "id": 2212,
     "query": "j97 moss",
     "source": "ebay",
@@ -26798,6 +26862,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:21:06.373895+00:00"
+  },
+  {
+    "id": 2220,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt J97 PTL Gray Detroit Petrol Work Wear Jacket XL Reg Light Distress USA",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/206625166452",
+    "photo": "https://i.ebayimg.com/images/g/z78AAeSwBx5qzpLJ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:19.177129+00:00"
   },
   {
     "id": 2078,
@@ -30992,6 +31072,22 @@
     "created_at": "2026-10-03T01:14:11.404141+00:00"
   },
   {
+    "id": 2222,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 PTL Men's Canvas Full Zip Lined Collared Jacket Blue Sz S",
+    "price": 720.0,
+    "url": "https://www.ebay.com/itm/920037119534",
+    "photo": "https://i.ebayimg.com/images/g/LeUAAeSwl4VqzrG4/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:19.566571+00:00"
+  },
+  {
     "id": 1493,
     "query": "j43 hunter green",
     "source": "grailed",
@@ -31262,6 +31358,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-07T13:14:58.414566+00:00"
+  },
+  {
+    "id": 2217,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL Gasoline Blue Jacket LLLL122609",
+    "price": 764.0,
+    "url": "https://www.grailed.com/listings/108673768",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/0ebfd169b4004327822cb6ed7626c838",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T01:22:18.966101+00:00"
   },
   {
     "id": 1507,
