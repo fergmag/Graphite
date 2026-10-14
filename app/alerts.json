@@ -3312,6 +3312,22 @@
     "created_at": "2026-09-24T18:59:58.786072+00:00"
   },
   {
+    "id": 1788,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt brown Kentucky hooded work wear jacket",
+    "price": 164.98000000000002,
+    "url": "https://www.ebay.com/itm/407240404194",
+    "photo": "https://i.ebayimg.com/images/g/NSoAAeSwg8FqtILV/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:53.420032+00:00"
+  },
+  {
     "id": 197,
     "query": "j97 moss",
     "source": "etsy",
@@ -3438,6 +3454,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.874111+00:00"
+  },
+  {
+    "id": 1790,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "CARHARTT OC3283-M MEN'S LARGE BLACK DUCK WORK COAT RUGGED DISTRESSED TRASHED",
+    "price": 169.99,
+    "url": "https://www.ebay.com/itm/298706619023",
+    "photo": "https://i.ebayimg.com/images/g/bNkAAeSwVuJpwqTT/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:53.429727+00:00"
   },
   {
     "id": 205,
@@ -4256,6 +4288,22 @@
     "created_at": "2026-09-17T10:23:39.298082+00:00"
   },
   {
+    "id": 1787,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt C61 MOS Green Canvas Jacket Sherpa Lined Size Large",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/407288190732",
+    "photo": "https://i.ebayimg.com/images/g/u-0AAeSwoX9qzpcq/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:53.415707+00:00"
+  },
+  {
     "id": 250,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -5006,6 +5054,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-19T16:24:24.494435+00:00"
+  },
+  {
+    "id": 1789,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt green hooded work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407168010394",
+    "photo": "https://i.ebayimg.com/images/g/nAEAAeSwVsxqjQKl/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:53.426089+00:00"
   },
   {
     "id": 296,
@@ -25726,6 +25790,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T07:15:03.510525+00:00"
+  },
+  {
+    "id": 1786,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 Aztec Southwest Chore Jacket Gray 24x26",
+    "price": 999.99,
+    "url": "https://www.ebay.com/itm/267813188037",
+    "photo": "https://i.ebayimg.com/images/g/h4IAAeSwtEVqzv07/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:53.411390+00:00"
   },
   {
     "id": 1575,
