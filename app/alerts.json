@@ -2112,6 +2112,22 @@
     "created_at": "2026-09-14T17:18:55.253904+00:00"
   },
   {
+    "id": 2231,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Men’s Tan/Brown Duck Canvas Hooded Zip-Up Work Jacket Quilted Lined",
+    "price": 100.0,
+    "url": "https://www.ebay.com/itm/307033405570",
+    "photo": "https://i.ebayimg.com/images/g/~DQAAeSw~UhqQvBA/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T07:17:40.061851+00:00"
+  },
+  {
     "id": 2042,
     "query": "ju1005",
     "source": "ebay",
