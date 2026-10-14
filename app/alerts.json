@@ -3408,6 +3408,22 @@
     "created_at": "2026-09-15T16:00:10.641074+00:00"
   },
   {
+    "id": 1761,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Canvas Work Jacket Men's Brown distressed",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/137812516976",
+    "photo": "https://i.ebayimg.com/images/g/HZQAAeSw7tFqwr9d/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:38.364020+00:00"
+  },
+  {
     "id": 207,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -5406,6 +5422,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-28T13:13:46.506976+00:00"
+  },
+  {
+    "id": 1764,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Hooded Active Jacket “Black” J140 BLK Men’s XL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147562748042",
+    "photo": "https://i.ebayimg.com/images/g/iy4AAeSwe~9qocqQ/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:38.440453+00:00"
   },
   {
     "id": 331,
@@ -7648,6 +7680,22 @@
     "created_at": "2026-09-14T17:57:03.168425+00:00"
   },
   {
+    "id": 1763,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt USA Black Jacket L Hooded Distressed",
+    "price": 354.72,
+    "url": "https://www.ebay.com/itm/407236316716",
+    "photo": "https://i.ebayimg.com/images/g/A9kAAeSwzclqslYb/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:38.378799+00:00"
+  },
+  {
     "id": 471,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -7678,6 +7726,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:16:20.496983+00:00"
+  },
+  {
+    "id": 1762,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 362.98,
+    "url": "https://www.ebay.com/itm/327386794201",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:38.371996+00:00"
   },
   {
     "id": 473,
