@@ -1216,6 +1216,22 @@
     "created_at": "2026-10-09T01:15:15.914496+00:00"
   },
   {
+    "id": 1767,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J140 Faded Brown Distressed Active Jacket Mens Medium USA Made 2016",
+    "price": 96.99,
+    "url": "https://www.ebay.com/itm/920038232916",
+    "photo": "https://i.ebayimg.com/images/g/xUoAAeSwnd5qzyc2/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.479657+00:00"
+  },
+  {
     "id": 75,
     "query": "j97 crimson",
     "source": "etsy",
@@ -3408,6 +3424,22 @@
     "created_at": "2026-09-15T16:00:10.641074+00:00"
   },
   {
+    "id": 1766,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Canvas Work Jacket Men's Brown distressed",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/137812516976",
+    "photo": "https://i.ebayimg.com/images/g/HZQAAeSw7tFqwr9d/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.471398+00:00"
+  },
+  {
     "id": 1761,
     "query": "j65 brick",
     "source": "ebay",
@@ -3808,6 +3840,22 @@
     "created_at": "2026-09-14T17:17:41.785764+00:00"
   },
   {
+    "id": 1768,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "2000s Y2K Carhartt J14 Santa Fe Jacket Size L",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/287627627218",
+    "photo": "https://i.ebayimg.com/images/g/1dUAAeSw7Z5qw1iY/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.540138+00:00"
+  },
+  {
     "id": 231,
     "query": "j76 moss",
     "source": "ebay",
@@ -3854,6 +3902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T01:14:03.911867+00:00"
+  },
+  {
+    "id": 1772,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt 2010 J269 PTB Petrol Blue Canvas Quilt Lined",
+    "price": 190.0,
+    "url": "https://www.ebay.com/itm/900013459312",
+    "photo": "https://i.ebayimg.com/images/g/UX0AAeSwq5hqz52o/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.575820+00:00"
   },
   {
     "id": 234,
@@ -6096,6 +6160,22 @@
     "created_at": "2026-09-14T17:17:41.875443+00:00"
   },
   {
+    "id": 1771,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Jacket Arctic Quilt Lined Mens Large 42 J02 BLK Black",
+    "price": 269.0,
+    "url": "https://www.ebay.com/itm/880016716758",
+    "photo": "https://i.ebayimg.com/images/g/AZgAAeSwkONptWtD/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.562209+00:00"
+  },
+  {
     "id": 372,
     "query": "j97 moss",
     "source": "ebay",
@@ -6782,6 +6862,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.893382+00:00"
+  },
+  {
+    "id": 1769,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Men’s Black Detroit Jacket L made in USA Blanket Lined",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/147600991609",
+    "photo": "https://i.ebayimg.com/images/g/97EAAeSwJOVquAZA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.546648+00:00"
   },
   {
     "id": 415,
@@ -7728,6 +7824,22 @@
     "created_at": "2026-10-09T01:16:20.496983+00:00"
   },
   {
+    "id": 1770,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 362.98,
+    "url": "https://www.ebay.com/itm/327386794201",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.555550+00:00"
+  },
+  {
     "id": 1762,
     "query": "j65 brick",
     "source": "ebay",
@@ -8206,6 +8318,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:58:02.092668+00:00"
+  },
+  {
+    "id": 1765,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Medium Blue Detroit J65 J01 BLU NVY 80s 90s RARE",
+    "price": 609.5999999999999,
+    "url": "https://www.ebay.com/itm/267812037798",
+    "photo": "https://i.ebayimg.com/images/g/-LoAAeSw9cNp~AAi/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:06:53.462186+00:00"
   },
   {
     "id": 502,
