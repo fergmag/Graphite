@@ -1744,6 +1744,22 @@
     "created_at": "2026-09-14T17:18:55.269727+00:00"
   },
   {
+    "id": 2255,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Rare Vintage Carhartt J97 Detroit Jacket Moss Green Blanket Lined Work Coat",
+    "price": 92.0,
+    "url": "https://www.etsy.com/listing/4595124536/rare-vintage-carhartt-j97-detroit-jacket",
+    "photo": "https://i.etsystatic.com/68466316/r/il/312f97/8675762226/il_570xN.8675762226_ljz2.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:22:03.365145+00:00"
+  },
+  {
     "id": 2144,
     "query": "j97 crimson",
     "source": "ebay",
@@ -4000,6 +4016,22 @@
     "created_at": "2026-09-15T09:59:26.631061+00:00"
   },
   {
+    "id": 2256,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage J97 Detroit Jacket Carhartt - Blanket Lined Workwear Coat Moss Green (Unisex)",
+    "price": 145.9,
+    "url": "https://www.etsy.com/listing/4595063065/vintage-j97-detroit-jacket-carhartt",
+    "photo": "https://i.etsystatic.com/66626574/r/il/2b6d65/8675197044/il_570xN.8675197044_k24k.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:22:03.372730+00:00"
+  },
+  {
     "id": 152,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -5918,6 +5950,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T04:01:06.330425+00:00"
+  },
+  {
+    "id": 2254,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 Vintage Grey Canvas Lined Men’s Medium",
+    "price": 185.98,
+    "url": "https://www.ebay.com/itm/920038571777",
+    "photo": "https://i.ebayimg.com/images/g/IMsAAeSwFJJqz0mn/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:22:03.071516+00:00"
   },
   {
     "id": 2253,
@@ -18126,6 +18174,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T16:01:00.644886+00:00"
+  },
+  {
+    "id": 2257,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Men's Green Detroit Full Zip Lined  Jacket L ",
+    "price": 435.0,
+    "url": "https://www.ebay.com/itm/820236679636",
+    "photo": "https://i.ebayimg.com/images/g/-9MAAeSwwQRqztnE/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T13:22:03.765225+00:00"
   },
   {
     "id": 762,
