@@ -4336,6 +4336,22 @@
     "created_at": "2026-10-14T21:09:27.970502+00:00"
   },
   {
+    "id": 1909,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "2000s Y2K Carhartt J14 Santa Fe Jacket Size L",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/287627627218",
+    "photo": "https://i.ebayimg.com/images/g/1dUAAeSw7Z5qw1iY/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:12:01.516223+00:00"
+  },
+  {
     "id": 1893,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -9760,6 +9776,22 @@
     "created_at": "2026-10-02T19:14:25.416687+00:00"
   },
   {
+    "id": 1912,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt Trucker Jacket Blanket Lined Mens XL J10 ONX Onyx Black",
+    "price": 229.0,
+    "url": "https://www.ebay.com/itm/880002307221",
+    "photo": "https://i.ebayimg.com/images/g/8ekAAeSwrclp2Fr4/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:12:01.545986+00:00"
+  },
+  {
     "id": 524,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -10030,6 +10062,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:18:24.752981+00:00"
+  },
+  {
+    "id": 1910,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J06 ONX active Jacket Nylon Quilt Lined Made In USA Size XL",
+    "price": 259.86,
+    "url": "https://www.ebay.com/itm/327398728201",
+    "photo": "https://i.ebayimg.com/images/g/uGkAAeSw42ZqypbA/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:12:01.523779+00:00"
   },
   {
     "id": 540,
@@ -14782,6 +14830,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:57:14.918905+00:00"
+  },
+  {
+    "id": 1908,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Vintage 1998 Rare Carhartt  J43 Onyx Detroit Jacket Mens M Aztec Blanket",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/407285428865",
+    "photo": "https://i.ebayimg.com/images/g/lZMAAeSw0z9qzR5N/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:12:01.506121+00:00"
   },
   {
     "id": 819,
@@ -29326,6 +29390,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:20:37.334513+00:00"
+  },
+  {
+    "id": 1911,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "vintage faded black carhartt detroit jacket J43 ONX size medium usa made rare",
+    "price": 1500.0,
+    "url": "https://www.ebay.com/itm/377562426728",
+    "photo": "https://i.ebayimg.com/images/g/jtMAAeSw-v1qy7pD/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:12:01.530520+00:00"
   },
   {
     "id": 1682,
