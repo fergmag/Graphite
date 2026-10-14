@@ -1680,6 +1680,22 @@
     "created_at": "2026-09-14T17:56:26.902007+00:00"
   },
   {
+    "id": 1783,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ186 Sz 46 Traditional Quilted Nylon Lined Duck Canvas 80s 90s",
+    "price": 108.6,
+    "url": "https://www.ebay.com/itm/297895764752",
+    "photo": "https://i.ebayimg.com/images/g/~TUAAeSwrMVpVhIN/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:40.340315+00:00"
+  },
+  {
     "id": 1758,
     "query": "jb0866",
     "source": "ebay",
@@ -3934,6 +3950,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T01:14:03.911867+00:00"
+  },
+  {
+    "id": 1785,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt 2010 J269 PTB Petrol Blue Canvas Quilt Lined",
+    "price": 190.0,
+    "url": "https://www.ebay.com/itm/900013459312",
+    "photo": "https://i.ebayimg.com/images/g/UX0AAeSwq5hqz52o/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:40.355816+00:00"
   },
   {
     "id": 1772,
@@ -10830,6 +10862,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-14T17:20:24.657914+00:00"
+  },
+  {
+    "id": 1784,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "CarHartt                    Active jacket, active parka brown JQ282",
+    "price": 499.7,
+    "url": "https://www.ebay.com/itm/920027943245",
+    "photo": "https://i.ebayimg.com/images/g/wEgAAeSwGg1qyrYB/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-14T21:08:40.349623+00:00"
   },
   {
     "id": 648,
