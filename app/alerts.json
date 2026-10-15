@@ -1552,6 +1552,22 @@
     "created_at": "2026-10-15T09:06:53.103485+00:00"
   },
   {
+    "id": 2458,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt J71MLL Hunter Green Quilted Work Jacket XL USA Insulated Rare",
+    "price": 107.95,
+    "url": "https://www.ebay.com/itm/128137289821",
+    "photo": "https://i.ebayimg.com/images/g/SxYAAeSwxtBq0Q5p/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T21:12:15.862687+00:00"
+  },
+  {
     "id": 99,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -1886,6 +1902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:13:09.739693+00:00"
+  },
+  {
+    "id": 2457,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt J06 HTG Faded “Hunter Green” Quilted Lined Hooded Jacket Size L",
+    "price": 125.0,
+    "url": "https://www.ebay.com/itm/198717647819",
+    "photo": "https://i.ebayimg.com/images/g/j0gAAeSwCgJq0RSh/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T21:12:15.850069+00:00"
   },
   {
     "id": 117,
