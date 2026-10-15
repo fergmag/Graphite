@@ -928,6 +928,22 @@
     "created_at": "2026-10-14T21:11:33.268210+00:00"
   },
   {
+    "id": 1989,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt Duck Active Jac Insulated Loose Fit Black J130 3 Warmest Rating",
+    "price": 99.79,
+    "url": "https://www.ebay.com/itm/137827848547",
+    "photo": "https://i.ebayimg.com/images/g/GaYAAeSw4WBqyOMr/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.661979+00:00"
+  },
+  {
     "id": 81,
     "query": "j97 moss",
     "source": "etsy",
@@ -1920,6 +1936,22 @@
     "created_at": "2026-10-14T21:10:09.275154+00:00"
   },
   {
+    "id": 1996,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11DST",
+    "price": 148.49,
+    "url": "https://www.etsy.com/listing/4557149494/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/ff4f9b/8439712167/il_570xN.8439712167_1am2.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.744330+00:00"
+  },
+  {
     "id": 153,
     "query": "j97 crimson",
     "source": "ebay",
@@ -1966,6 +1998,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-03T07:13:59.906411+00:00"
+  },
+  {
+    "id": 2005,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage 90s Carhartt J11 DST Blanket Lined Denim Trucker Jacket Mens Large",
+    "price": 149.44,
+    "url": "https://www.etsy.com/listing/4534805821/vintage-90s-carhartt-denim-jacket-mens",
+    "photo": "https://i.etsystatic.com/66852319/r/il/162225/8276641203/il_570xN.8276641203_n03c.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.851570+00:00"
   },
   {
     "id": 157,
@@ -2448,6 +2496,22 @@
     "created_at": "2026-10-14T21:10:29.338123+00:00"
   },
   {
+    "id": 1992,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11DST Men’s XL",
+    "price": 168.29,
+    "url": "https://www.etsy.com/listing/4559567938/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/8a9f71/8457150025/il_570xN.8457150025_mrwq.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.685882+00:00"
+  },
+  {
     "id": 201,
     "query": "j97 moss",
     "source": "etsy",
@@ -2800,6 +2864,22 @@
     "created_at": "2026-09-15T10:00:52.926694+00:00"
   },
   {
+    "id": 2007,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Denim Jacket Size XL J11 DST Flannel Trucker Blanket Lined USA",
+    "price": 189.0,
+    "url": "https://www.etsy.com/listing/4415906992/vintage-carhartt-denim-jacket-size-xl",
+    "photo": "https://i.etsystatic.com/55902808/r/il/712faa/7510504235/il_570xN.7510504235_ffo1.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.869042+00:00"
+  },
+  {
     "id": 229,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3086,6 +3166,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:13:34.602265+00:00"
+  },
+  {
+    "id": 1991,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt JB1998 Darkstone Denim Jacket Blanket Lined USA Large Tall",
+    "price": 192.0,
+    "url": "https://www.etsy.com/listing/4554824594/vintage-carhartt-jb1998-darkstone-denim",
+    "photo": "https://i.etsystatic.com/10356060/r/il/290df3/8422501337/il_570xN.8422501337_o0eg.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.679198+00:00"
   },
   {
     "id": 238,
@@ -3792,6 +3888,22 @@
     "created_at": "2026-09-17T16:24:46.497433+00:00"
   },
   {
+    "id": 1998,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Chore Coat “Darkstone” C59",
+    "price": 227.69,
+    "url": "https://www.etsy.com/listing/4557057599/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/3a0957/8391289586/il_570xN.8391289586_mxn6.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.759551+00:00"
+  },
+  {
     "id": 310,
     "query": "jq2472",
     "source": "ebay",
@@ -3902,6 +4014,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:36.243254+00:00"
+  },
+  {
+    "id": 1997,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Trucker Jacket “Darkstone” J11 DST Men’s L",
+    "price": 241.99,
+    "url": "https://www.etsy.com/listing/4557073171/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/ec6ab2/8391403726/il_570xN.8391403726_43xx.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.750671+00:00"
   },
   {
     "id": 1962,
@@ -4464,6 +4592,22 @@
     "created_at": "2026-09-23T18:59:57.825932+00:00"
   },
   {
+    "id": 2000,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilt-Lined Hooded Jacket “Saddle” J130 SDL Men’s Medium",
+    "price": 259.99,
+    "url": "https://www.ebay.com/itm/147591939825",
+    "photo": "https://i.ebayimg.com/images/g/8NIAAeSwhkhqsugG/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.773209+00:00"
+  },
+  {
     "id": 360,
     "query": "j97 moss",
     "source": "ebay",
@@ -4864,6 +5008,22 @@
     "created_at": "2026-09-25T19:07:41.798003+00:00"
   },
   {
+    "id": 1995,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Unlined Denim Chore Coat “Darkstone” 8C",
+    "price": 289.99,
+    "url": "https://www.etsy.com/listing/4557566830/vintage-carhartt-unlined-denim-chore",
+    "photo": "https://i.etsystatic.com/27753259/r/il/62a0b4/8394945750/il_570xN.8394945750_ivtv.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.737643+00:00"
+  },
+  {
     "id": 395,
     "query": "j97 moss",
     "source": "ebay",
@@ -5054,6 +5214,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-25T01:08:10.385111+00:00"
+  },
+  {
+    "id": 2004,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage 90s Carhartt Denim Chore Fleece Lined Button Up Jacket / C59 DST / Flawless Carhartt / Blue Medium",
+    "price": 300.0,
+    "url": "https://www.etsy.com/listing/4567121013/vintage-90s-carhartt-denim-chore-fleece",
+    "photo": "https://i.etsystatic.com/51907540/r/il/e10e9a/8512948343/il_570xN.8512948343_i9py.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.838807+00:00"
   },
   {
     "id": 1928,
@@ -5520,6 +5696,22 @@
     "created_at": "2026-09-16T15:13:19.991805+00:00"
   },
   {
+    "id": 1999,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Denim Chore Coat “Darkstone” C59 DST",
+    "price": 329.99,
+    "url": "https://www.etsy.com/listing/4557046442/vintage-carhartt-blanket-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/af6f09/8391084616/il_570xN.8391084616_ihl4.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.765648+00:00"
+  },
+  {
     "id": 1773,
     "query": "js1236",
     "source": "ebay",
@@ -5614,6 +5806,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T07:14:19.205171+00:00"
+  },
+  {
+    "id": 2006,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Rare Vintage Carhartt J139 DST Blanket Lined",
+    "price": 350.0,
+    "url": "https://www.etsy.com/listing/4551301268/rare-vintage-carhartt-j139-dst-blanket",
+    "photo": "https://i.etsystatic.com/67377485/r/il/562c44/8397199165/il_570xN.8397199165_mq19.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.860247+00:00"
   },
   {
     "id": 459,
@@ -5934,6 +6142,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-20T10:23:26.093008+00:00"
+  },
+  {
+    "id": 1990,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Hooded Jacket “Darkstone”",
+    "price": 399.99,
+    "url": "https://www.etsy.com/listing/4562172461/vintage-carhartt-blanket-lined-hooded",
+    "photo": "https://i.etsystatic.com/27753259/r/il/bd1ff4/8476337683/il_570xN.8476337683_gpaq.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.672340+00:00"
   },
   {
     "id": 1808,
@@ -7886,6 +8110,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T01:07:19.388086+00:00"
+  },
+  {
+    "id": 1993,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Aztec Pile-Lined Denim Chore Jacket “Darkstone” JP1088",
+    "price": 445.49,
+    "url": "https://www.etsy.com/listing/4558416063/vintage-carhartt-aztec-pile-lined-denim",
+    "photo": "https://i.etsystatic.com/27753259/r/il/e75ba9/8400947554/il_570xN.8400947554_easi.jpg",
+    "casp": 800.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.692672+00:00"
+  },
+  {
+    "id": 1994,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Lined Active Jacket “Darkstone” J08 ROCKY",
+    "price": 449.99,
+    "url": "https://www.etsy.com/listing/4558382959/vintage-carhartt-lined-active-jacket",
+    "photo": "https://i.etsystatic.com/27753259/r/il/1f28b1/8448613887/il_570xN.8448613887_73vt.jpg",
+    "casp": 800.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.701727+00:00"
   },
   {
     "id": 637,
@@ -11216,6 +11472,22 @@
     "created_at": "2026-09-20T04:24:49.594257+00:00"
   },
   {
+    "id": 1988,
+    "query": "j110 darkstone",
+    "source": "grailed",
+    "title": "Carhartt J110 DST Large",
+    "price": 550.0,
+    "url": "https://www.grailed.com/listings/86800086",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/777278f3361b4cd6b4ce9ff9ae30ed32",
+    "casp": 800.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.655081+00:00"
+  },
+  {
     "id": 948,
     "query": "j97 moss",
     "source": "ebay",
@@ -11278,6 +11550,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:36.214180+00:00"
+  },
+  {
+    "id": 1987,
+    "query": "j110 darkstone",
+    "source": "grailed",
+    "title": "Carhartt J110 DST Large",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/86800540",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/790a7daa9f5b40b5b40ad844e6a29450",
+    "casp": 800.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.648369+00:00"
   },
   {
     "id": 1818,
@@ -16288,6 +16576,22 @@
     "created_at": "2026-09-15T20:48:16.317371+00:00"
   },
   {
+    "id": 2001,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "RARE GRAIL Vtg 2000 Carhartt Denim Detroit Blue Jacket XL J110DST Made in USA ",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/178394541902",
+    "photo": "https://i.ebayimg.com/images/g/7QwAAeSwJvdqemFQ/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.779485+00:00"
+  },
+  {
     "id": 1980,
     "query": "js1207",
     "source": "grailed",
@@ -16768,6 +17072,38 @@
     "created_at": "2026-09-16T21:20:06.289124+00:00"
   },
   {
+    "id": 2002,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Rare Vintage J110 DST Denim Carhartt Detroit Jacket Sz XL",
+    "price": 800.0,
+    "url": "https://www.ebay.com/itm/397629418803",
+    "photo": "https://i.ebayimg.com/images/g/OykAAeSwws5pl4o~/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.786482+00:00"
+  },
+  {
+    "id": 1986,
+    "query": "j110 darkstone",
+    "source": "grailed",
+    "title": "Vtg Y2k ‘00 Carhartt J110 DST Denim Detroit Jacket. Size XL",
+    "price": 800.0,
+    "url": "https://www.grailed.com/listings/93548105",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b5814c52459a41298bd24213697aaffb",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.641692+00:00"
+  },
+  {
     "id": 1814,
     "query": "j97 moss",
     "source": "ebay",
@@ -17246,6 +17582,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-17T22:22:49.127472+00:00"
+  },
+  {
+    "id": 2003,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Faded Light Wash Denim Men’s Xl J110 DST 90s",
+    "price": 1000.0,
+    "url": "https://www.ebay.com/itm/177825335442",
+    "photo": "https://i.ebayimg.com/images/g/UOQAAeSwdpxoZvK7/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.792615+00:00"
+  },
+  {
+    "id": 1985,
+    "query": "j110 darkstone",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket Light Wash Denim J110 DST",
+    "price": 1000.0,
+    "url": "https://www.grailed.com/listings/99868603",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/3f45b4bd80cd4b388fb78f501542d44b",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:25.634607+00:00"
   },
   {
     "id": 1920,
