@@ -11888,6 +11888,38 @@
     "created_at": "2026-10-14T21:12:19.668640+00:00"
   },
   {
+    "id": 2285,
+    "query": "j43 onyx",
+    "source": "grailed",
+    "title": "Carhartt J43 ONX Medium",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/86796541",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/32f9b9e56fa84ba0b6dd1969244329e5",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.665027+00:00"
+  },
+  {
+    "id": 2283,
+    "query": "j43 onyx",
+    "source": "grailed",
+    "title": "Carhartt J43 ONX",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/95492285",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/ded513a6b88741f5a969b1424b30c777",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.649991+00:00"
+  },
+  {
     "id": 1948,
     "query": "jb0817",
     "source": "grailed",
@@ -13790,6 +13822,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:36.214180+00:00"
+  },
+  {
+    "id": 2284,
+    "query": "j43 onyx",
+    "source": "grailed",
+    "title": "Carhartt J43 ONX Large",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/91822465",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/295aced384c3494cb33cf5ed8a282e4c",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.657951+00:00"
   },
   {
     "id": 2111,
@@ -19200,6 +19248,22 @@
     "created_at": "2026-10-07T19:14:17.414075+00:00"
   },
   {
+    "id": 2286,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 2XL J43 ONX Onyx Black",
+    "price": 599.0,
+    "url": "https://www.ebay.com/itm/178515707487",
+    "photo": "https://i.ebayimg.com/images/g/OuMAAeSwXbFpvqkx/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.671993+00:00"
+  },
+  {
     "id": 2211,
     "query": "j97 petrol",
     "source": "etsy",
@@ -19246,6 +19310,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T03:08:30.810137+00:00"
+  },
+  {
+    "id": 2288,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "VTG Rare 90’s Carhartt Detroit Jacket J43 ONX Black Size XL USA",
+    "price": 599.99,
+    "url": "https://www.ebay.com/itm/840019629402",
+    "photo": "https://i.ebayimg.com/images/g/nNoAAeSw-ABqUXL3/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.688413+00:00"
   },
   {
     "id": 2220,
@@ -19310,6 +19390,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T16:25:04.202510+00:00"
+  },
+  {
+    "id": 2289,
+    "query": "j43 onyx",
+    "source": "etsy",
+    "title": "Vtg Rare 90’s Carhartt Detroit Jacket J43 ONX Black Size XL USA",
+    "price": 600.0,
+    "url": "https://www.etsy.com/listing/4541752068/vtg-rare-90s-carhartt-detroit-jacket-j43",
+    "photo": "https://i.etsystatic.com/65692878/r/il/de88e1/8281333780/il_570xN.8281333780_34fq.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.741605+00:00"
+  },
+  {
+    "id": 2282,
+    "query": "j43 onyx",
+    "source": "grailed",
+    "title": "Carhartt J43 ONX Black Detroit Jacket Vintage, Size X-Large",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/98469380",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/92d17086de294f11aca879f588b5144b",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.638468+00:00"
   },
   {
     "id": 2277,
@@ -21646,6 +21758,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T07:10:54.264810+00:00"
+  },
+  {
+    "id": 2287,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt 1999 J43 ONX Large Detroit Jacket USA",
+    "price": 1027.02,
+    "url": "https://www.ebay.com/itm/137844553751",
+    "photo": "https://i.ebayimg.com/images/g/tgAAAeSwiXBqz~Yk/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:11:59.679967+00:00"
   },
   {
     "id": 1600,
