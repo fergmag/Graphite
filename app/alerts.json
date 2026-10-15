@@ -7280,6 +7280,22 @@
     "created_at": "2026-10-14T21:12:19.456706+00:00"
   },
   {
+    "id": 2025,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "New Carhartt Crafted Series Duck Sherpa Lined Chore Jacket USA Made Mens L",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/800287493421",
+    "photo": "https://i.ebayimg.com/images/g/X5EAAeSwSl5qSRoE/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:46.650544+00:00"
+  },
+  {
     "id": 549,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7390,6 +7406,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:07:51.830270+00:00"
+  },
+  {
+    "id": 2022,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Ridge Coat Sherpa Lined Mens Small C61 DKB Dark Brown NWT NOS",
+    "price": 299.0,
+    "url": "https://www.ebay.com/itm/880011877784",
+    "photo": "https://i.ebayimg.com/images/g/ze0AAeSwsqlqfQDn/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:46.630884+00:00"
   },
   {
     "id": 556,
@@ -13296,6 +13328,22 @@
     "created_at": "2026-10-14T21:10:29.252489+00:00"
   },
   {
+    "id": 2024,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Vintage Taupe Carhartt Aztec Sherpa Distressed Canvas Jacket Chore Detroit 2X/3X",
+    "price": 327.53,
+    "url": "https://www.ebay.com/itm/188400371670",
+    "photo": "https://i.ebayimg.com/images/g/-DEAAeSwu-dqDLl3/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:46.644033+00:00"
+  },
+  {
     "id": 1094,
     "query": "j97 petrol",
     "source": "ebay",
@@ -19054,6 +19102,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T15:12:41.099806+00:00"
+  },
+  {
+    "id": 2023,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
+    "price": 2200.0,
+    "url": "https://www.ebay.com/itm/157810033648",
+    "photo": "https://i.ebayimg.com/images/g/FKkAAeSwvTJpdtCo/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:46.637648+00:00"
   },
   {
     "id": 1719,
