@@ -4816,6 +4816,22 @@
     "created_at": "2026-10-09T01:14:25.812045+00:00"
   },
   {
+    "id": 2453,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J01 BRN Size 46 Regular Early Times Embroidered",
+    "price": 205.49,
+    "url": "https://www.ebay.com/itm/377572841603",
+    "photo": "https://i.ebayimg.com/images/g/mjgAAeSwSApqVrw0/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T21:10:54.342174+00:00"
+  },
+  {
     "id": 2146,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -5006,6 +5022,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T01:14:03.512408+00:00"
+  },
+  {
+    "id": 2454,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket PTL",
+    "price": 214.0,
+    "url": "https://www.etsy.com/listing/4596171394/carhartt-j97-detroit-jacket-ptl",
+    "photo": "https://i.etsystatic.com/67891764/r/il/478044/8731500737/il_570xN.8731500737_p0jp.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T21:10:54.750201+00:00"
   },
   {
     "id": 2161,
@@ -5374,6 +5406,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T13:14:00.907837+00:00"
+  },
+  {
+    "id": 2455,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket PTL",
+    "price": 232.8,
+    "url": "https://www.etsy.com/listing/4596168204/carhartt-j97-detroit-jacket-ptl",
+    "photo": "https://i.etsystatic.com/66875366/r/il/e6cee7/8731465001/il_570xN.8731465001_f2sf.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T21:10:54.769576+00:00"
   },
   {
     "id": 314,
