@@ -1,5 +1,21 @@
 [
   {
+    "id": 2028,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt For Sell",
+    "price": 9.99,
+    "url": "https://www.ebay.com/itm/317760048295",
+    "photo": "https://i.ebayimg.com/images/g/5ZIAAeSwlxdpZmZ5/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:57.141956+00:00"
+  },
+  {
     "id": 2017,
     "query": "jq2472",
     "source": "ebay",
@@ -432,6 +448,22 @@
     "created_at": "2026-10-14T21:09:28.048368+00:00"
   },
   {
+    "id": 2029,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Blue Carhartt (used)",
+    "price": 70.0,
+    "url": "https://www.ebay.com/itm/135528297035",
+    "photo": "https://i.ebayimg.com/images/g/4hQAAOSwTANnndkZ/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:57.148384+00:00"
+  },
+  {
     "id": 37,
     "query": "jb1215",
     "source": "ebay",
@@ -462,6 +494,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:54.619012+00:00"
+  },
+  {
+    "id": 2027,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt that has been worn and torn.",
+    "price": 75.0,
+    "url": "https://www.ebay.com/itm/396365843037",
+    "photo": "https://i.ebayimg.com/images/g/JWIAAeSwQS5n5Fcb/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:57.135472+00:00"
   },
   {
     "id": 2016,
@@ -990,6 +1038,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T13:14:18.309107+00:00"
+  },
+  {
+    "id": 2030,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt J284 Moss Green Canvas Coat Sherpa Lining, Hooded, Size Large",
+    "price": 100.0,
+    "url": "https://www.ebay.com/itm/237104618067",
+    "photo": "https://i.ebayimg.com/images/g/I5kAAeSwxCtqwab-/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:57.155426+00:00"
   },
   {
     "id": 86,
@@ -8494,6 +8558,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T10:02:26.031073+00:00"
+  },
+  {
+    "id": 2026,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Vintage Carhartt JU1005 BLK Jacket Mens M Southwest 1994 Unlined Duck Chore USA",
+    "price": 910.87,
+    "url": "https://www.ebay.com/itm/860008678793",
+    "photo": "https://i.ebayimg.com/images/g/OEIAAeSwk1BqIgNs/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:57.123682+00:00"
   },
   {
     "id": 1967,
