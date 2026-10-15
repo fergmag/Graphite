@@ -1,5 +1,21 @@
 [
   {
+    "id": 2017,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt For Sell",
+    "price": 9.99,
+    "url": "https://www.ebay.com/itm/317760048295",
+    "photo": "https://i.ebayimg.com/images/g/5ZIAAeSwlxdpZmZ5/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.698482+00:00"
+  },
+  {
     "id": 3,
     "query": "j97 crimson",
     "source": "ebay",
@@ -446,6 +462,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:00:54.619012+00:00"
+  },
+  {
+    "id": 2016,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ295 Active Jacket Sandstone",
+    "price": 75.0,
+    "url": "https://www.ebay.com/itm/358602541390",
+    "photo": "https://i.ebayimg.com/images/g/HokAAeSweBdqFgPp/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.687428+00:00"
   },
   {
     "id": 39,
@@ -1456,6 +1488,22 @@
     "created_at": "2026-09-29T19:15:16.101560+00:00"
   },
   {
+    "id": 2020,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ382 Grungy Broken In Mens Large Tall With Hood Red Tag P2p 24.5  ",
+    "price": 127.0,
+    "url": "https://www.ebay.com/itm/298546272485",
+    "photo": "https://i.ebayimg.com/images/g/wpoAAeSwKbZoOxAk/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.759730+00:00"
+  },
+  {
     "id": 124,
     "query": "j97 crimson",
     "source": "ebay",
@@ -2142,6 +2190,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T16:24:17.606322+00:00"
+  },
+  {
+    "id": 2014,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ186 brown arctic work wear jacket XL",
+    "price": 154.98000000000002,
+    "url": "https://www.ebay.com/itm/407025333279",
+    "photo": "https://i.ebayimg.com/images/g/e-IAAeSwQZpqPHo5/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.668163+00:00"
   },
   {
     "id": 172,
@@ -3824,6 +3888,22 @@
     "created_at": "2026-10-09T01:11:30.770412+00:00"
   },
   {
+    "id": 2018,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt Arctic Jacket JQ186 J02 BRN - Brown - Size 44/Large - 100 YEARS",
+    "price": 222.22,
+    "url": "https://www.ebay.com/itm/326870502444",
+    "photo": "https://i.ebayimg.com/images/g/JqkAAeSwWFJpG~8Z/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.744475+00:00"
+  },
+  {
     "id": 305,
     "query": "j97 moss",
     "source": "etsy",
@@ -3966,6 +4046,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-17T16:22:56.316315+00:00"
+  },
+  {
+    "id": 2021,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ295 Thermal Lined Duck Canvas Active Jacket Tan",
+    "price": 239.5,
+    "url": "https://www.ebay.com/itm/227184977886",
+    "photo": "https://i.ebayimg.com/images/g/f30AAeSwnBxpeFy~/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.766554+00:00"
   },
   {
     "id": 320,
@@ -4158,6 +4254,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:06:38.440453+00:00"
+  },
+  {
+    "id": 2019,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "1997 CARHARTT JQ294 SIZE L",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/800420999544",
+    "photo": "https://i.ebayimg.com/images/g/wKkAAeSwihxqaG0U/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.751449+00:00"
   },
   {
     "id": 1952,
@@ -4672,6 +4784,38 @@
     "created_at": "2026-10-03T01:13:32.403184+00:00"
   },
   {
+    "id": 2015,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ243 green hooded work wear jacket Large",
+    "price": 264.98,
+    "url": "https://www.ebay.com/itm/407039251585",
+    "photo": "https://i.ebayimg.com/images/g/MIUAAeSw-lpqRHt9/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.678956+00:00"
+  },
+  {
+    "id": 2013,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ243 green hooded work wear jacket",
+    "price": 264.98,
+    "url": "https://www.ebay.com/itm/407228044018",
+    "photo": "https://i.ebayimg.com/images/g/muoAAeSw9TBqreAy/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.655400+00:00"
+  },
+  {
     "id": 1816,
     "query": "j97 moss",
     "source": "ebay",
@@ -5104,6 +5248,22 @@
     "created_at": "2026-10-14T21:09:05.343445+00:00"
   },
   {
+    "id": 2011,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt Active Quilt Lined Jacket Mens Medium JQ282 Chestnut Brown EUC",
+    "price": 299.0,
+    "url": "https://www.ebay.com/itm/880017517981",
+    "photo": "https://i.ebayimg.com/images/g/GS8AAeSwG4ho8aD5/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.635180+00:00"
+  },
+  {
     "id": 402,
     "query": "j97 petrol",
     "source": "etsy",
@@ -5214,6 +5374,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-25T01:08:10.385111+00:00"
+  },
+  {
+    "id": 2012,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "vintage carhartt jq243 sandstone active jacket aspen green size large 25x25",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/206085540504",
+    "photo": "https://i.ebayimg.com/images/g/saMAAeSwReVpmkMB/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.645741+00:00"
   },
   {
     "id": 2004,
@@ -9952,6 +10128,22 @@
     "created_at": "2026-09-21T18:29:07.782833+00:00"
   },
   {
+    "id": 2008,
+    "query": "jq2472",
+    "source": "grailed",
+    "title": "90s Carhartt JQ2472 Aztec AOP",
+    "price": 650.0,
+    "url": "https://www.grailed.com/listings/97581542",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/d08905e375c945cf88d24a1ab34fb78c",
+    "casp": 850.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.610683+00:00"
+  },
+  {
     "id": 1949,
     "query": "jb0817",
     "source": "grailed",
@@ -11726,6 +11918,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T07:14:00.704183+00:00"
+  },
+  {
+    "id": 2009,
+    "query": "jq2472",
+    "source": "grailed",
+    "title": "Carhartt JQ2472 Aztec Large",
+    "price": 625.0,
+    "url": "https://www.grailed.com/listings/88537068",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/cead763e9f304d4fab4e86da85bf1d0e",
+    "casp": 850.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.618380+00:00"
   },
   {
     "id": 972,
@@ -18062,6 +18270,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-19T22:27:01.553684+00:00"
+  },
+  {
+    "id": 2010,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt Southwest Jacket Quilt Lined Mens Medium JQ2472 Aztec Rare",
+    "price": 1199.0,
+    "url": "https://www.ebay.com/itm/178532590082",
+    "photo": "https://i.ebayimg.com/images/g/zS0AAeSwhrZp71-L/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:08:36.626467+00:00"
   },
   {
     "id": 1627,
