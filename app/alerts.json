@@ -3232,6 +3232,22 @@
     "created_at": "2026-09-26T13:07:28.098814+00:00"
   },
   {
+    "id": 2426,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J02 BRN Arctic Quilt Lined Jacket Men's 50 NWT",
+    "price": 169.86,
+    "url": "https://www.ebay.com/itm/327405616732",
+    "photo": "https://i.ebayimg.com/images/g/pTwAAeSwixNq0EEI/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T15:12:12.193046+00:00"
+  },
+  {
     "id": 2410,
     "query": "j65 blue",
     "source": "ebay",
@@ -8638,6 +8654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:59.579993+00:00"
+  },
+  {
+    "id": 2425,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens XL Chestnut Brown Bomber Faded J22 CHT Distressed",
+    "price": 189.86,
+    "url": "https://www.ebay.com/itm/327405616713",
+    "photo": "https://i.ebayimg.com/images/g/XQ8AAeSw6qVq0Dum/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T15:12:12.136298+00:00"
   },
   {
     "id": 519,
@@ -16638,6 +16670,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T20:48:16.043671+00:00"
+  },
+  {
+    "id": 2427,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Faded Carhartt Detroit XL Black Blanket Lined Zip-Up Work Jacket USA",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/318773464419",
+    "photo": "https://i.ebayimg.com/images/g/9AYAAeSwALdqjHHd/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T15:12:12.347229+00:00"
   },
   {
     "id": 2250,
