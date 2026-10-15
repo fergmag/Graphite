@@ -9376,6 +9376,22 @@
     "created_at": "2026-09-20T22:25:56.077229+00:00"
   },
   {
+    "id": 1975,
+    "query": "js1236",
+    "source": "grailed",
+    "title": "Carhartt JS1236 Large Detroit",
+    "price": 500.0,
+    "url": "https://www.grailed.com/listings/96146723",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/2ed3bc8c75494b43a22e8c207e970ca6",
+    "casp": 800.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:07:13.826508+00:00"
+  },
+  {
     "id": 1956,
     "query": "jb0866",
     "source": "grailed",
@@ -16206,6 +16222,22 @@
     "vision_notes": null,
     "seen": 1,
     "created_at": "2026-09-15T20:48:16.317371+00:00"
+  },
+  {
+    "id": 1976,
+    "query": "js1236",
+    "source": "grailed",
+    "title": "Carhartt JS1236 Redwood Large",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/86805724",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/bdd8f6a7c8ed4358b72c178df780fa97",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:07:13.838901+00:00"
   },
   {
     "id": 1913,
