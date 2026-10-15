@@ -1216,6 +1216,22 @@
     "created_at": "2026-09-24T00:59:55.920106+00:00"
   },
   {
+    "id": 1973,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens XL Tall Black Duck Canvas Blanket Lined J001 BLK",
+    "price": 116.78999999999999,
+    "url": "https://www.ebay.com/itm/960020717309",
+    "photo": "https://i.ebayimg.com/images/g/GAEAAeSwPvlpqi4f/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.665907+00:00"
+  },
+  {
     "id": 108,
     "query": "j97 crimson",
     "source": "ebay",
@@ -5840,6 +5856,22 @@
     "created_at": "2026-10-14T21:06:38.371996+00:00"
   },
   {
+    "id": 1972,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "vintage carhartt detroit jacket in blue size medium",
+    "price": 370.0,
+    "url": "https://www.ebay.com/itm/397491453578",
+    "photo": "https://i.ebayimg.com/images/g/xKUAAeSwhJtpZl5L/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.659374+00:00"
+  },
+  {
     "id": 474,
     "query": "j97 crimson",
     "source": "ebay",
@@ -6142,6 +6174,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:13:34.405888+00:00"
+  },
+  {
+    "id": 1968,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Carhartt J65 BLU Large",
+    "price": 1000.0,
+    "url": "https://www.grailed.com/listings/86957995",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/427b5b4e32fa491cacb31ea50914316b",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.629881+00:00"
   },
   {
     "id": 1964,
@@ -7952,6 +8000,22 @@
     "created_at": "2026-09-15T10:02:26.031073+00:00"
   },
   {
+    "id": 1967,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Carhartt J65 BLU Large",
+    "price": 1250.0,
+    "url": "https://www.grailed.com/listings/91822139",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b2d17da32c9e45a89fa0ee72b5ffc8e6",
+    "casp": 2500.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.622659+00:00"
+  },
+  {
     "id": 1963,
     "query": "j65 brick",
     "source": "grailed",
@@ -7966,6 +8030,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:06:35.515768+00:00"
+  },
+  {
+    "id": 1970,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J65 BLU",
+    "price": 1500.0,
+    "url": "https://www.ebay.com/itm/188018993256",
+    "photo": "https://i.ebayimg.com/images/g/QHoAAeSw1WRpgN96/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.646533+00:00"
   },
   {
     "id": 658,
@@ -18000,6 +18080,22 @@
     "created_at": "2026-10-07T13:14:08.584015+00:00"
   },
   {
+    "id": 1971,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "vintage carhartt j65 blu sandstone detroit jacket in blue size xl",
+    "price": 1700.0,
+    "url": "https://www.ebay.com/itm/376782222282",
+    "photo": "https://i.ebayimg.com/images/g/17cAAeSwlfxpQa-M/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.652832+00:00"
+  },
+  {
     "id": 1693,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -18110,6 +18206,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-01T01:11:11.652437+00:00"
+  },
+  {
+    "id": 1969,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt J65BLU Sandstone Detroit Jacket Blue J65 BLU Size Large",
+    "price": 1950.0,
+    "url": "https://www.ebay.com/itm/236500786570",
+    "photo": "https://i.ebayimg.com/images/g/fnYAAeSwh4BpLSX2/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T03:06:51.639722+00:00"
   },
   {
     "id": 1705,
