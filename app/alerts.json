@@ -3904,6 +3904,22 @@
     "created_at": "2026-10-09T01:15:16.212811+00:00"
   },
   {
+    "id": 2376,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt bankston brown work wear jacket Large",
+    "price": 194.98000000000002,
+    "url": "https://www.ebay.com/itm/406966342356",
+    "photo": "https://i.ebayimg.com/images/g/ddQAAeSwjr5qHZNS/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-15T09:08:48.717076+00:00"
+  },
+  {
     "id": 2367,
     "query": "jb0873",
     "source": "ebay",
