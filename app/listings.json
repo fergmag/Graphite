@@ -1,22 +1,5 @@
 [
   {
-    "id": "a32ed6f33d",
-    "title": "J43 ONX",
-    "size": "L",
-    "price": 800.0,
-    "description": "2000 J97 Desert Detroit",
-    "photos": [
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1792092795/graphite/bfgwai58tugjfq90baqm.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1792092796/graphite/zuqjuovv9d1rd5ryglia.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1792092798/graphite/isqcnnrlixl5rwyaewht.jpg",
-      "https://res.cloudinary.com/dniduygdg/image/upload/v1792092800/graphite/pejjlmnso6eq2fhbfho6.jpg"
-    ],
-    "sold": false,
-    "created_at": "2026-10-15",
-    "position": -1,
-    "condition": ""
-  },
-  {
     "id": "9dcbe028d9",
     "title": "J97 DES",
     "size": "M",
