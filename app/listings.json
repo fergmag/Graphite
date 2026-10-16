@@ -5,7 +5,13 @@
     "size": "L",
     "price": 900.0,
     "description": "2000 J110 Darkstone Detroit",
-    "photos": [],
+    "photos": [
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1792116116/graphite/ndfnsoipjmmvb9kj7fch.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1792116117/graphite/rxelpe2fjx9laqcfgjrm.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1792116118/graphite/bmdkdrsnxx9ve57ki2at.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1792116119/graphite/zgce6eiu9refwwo8ujkw.jpg",
+      "https://res.cloudinary.com/dniduygdg/image/upload/v1792116120/graphite/usz4chw5bb65ruhihsjd.jpg"
+    ],
     "sold": false,
     "created_at": "2026-10-16",
     "position": -3,
