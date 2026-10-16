@@ -400,6 +400,22 @@
     "created_at": "2026-10-15T21:07:05.612184+00:00"
   },
   {
+    "id": 2550,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt jacket dm before purchase",
+    "price": 60.0,
+    "url": "https://www.ebay.com/itm/800801873604",
+    "photo": "https://i.ebayimg.com/images/g/5qUAAeSwMAxq0jK4/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T15:12:24.050767+00:00"
+  },
+  {
     "id": 2549,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -4830,6 +4846,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T07:14:44.416523+00:00"
+  },
+  {
+    "id": 2551,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Hooded Blanket Lined Brown Cotton Duck Canvas Coat",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/336838756650",
+    "photo": "https://i.ebayimg.com/images/g/vggAAeSwnqRqozZ~/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T15:12:24.449126+00:00"
   },
   {
     "id": 1900,
