@@ -160,6 +160,22 @@
     "created_at": "2026-09-16T17:10:38.594218+00:00"
   },
   {
+    "id": 2474,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Duck Canvas Quilt Lined Work Wear Navy Blue Coat 378-20 L",
+    "price": 39.97,
+    "url": "https://www.ebay.com/itm/117467898723",
+    "photo": "https://i.ebayimg.com/images/g/EYIAAeSwZApq0Q3w/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T03:08:51.167721+00:00"
+  },
+  {
     "id": 18,
     "query": "j97 crimson",
     "source": "ebay",
