@@ -16576,6 +16576,22 @@
     "created_at": "2026-09-23T19:00:54.630658+00:00"
   },
   {
+    "id": 2487,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Dark Navy” J01 DNY Men’s 2XL",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/147637629482",
+    "photo": "https://i.ebayimg.com/images/g/S~QAAeSwuxFq0VaN/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T03:10:12.447468+00:00"
+  },
+  {
     "id": 2394,
     "query": "j97 petrol",
     "source": "ebay",
@@ -23486,6 +23502,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-17T22:22:49.127472+00:00"
+  },
+  {
+    "id": 2486,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 BRG Burgundy Blanket Lined J43 brg Mens M - ",
+    "price": 1000.0,
+    "url": "https://www.ebay.com/itm/820243267173",
+    "photo": "https://i.ebayimg.com/images/g/InYAAeSwL-pq0Ump/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T03:10:12.158254+00:00"
   },
   {
     "id": 2340,
