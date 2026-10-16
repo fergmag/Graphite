@@ -1808,6 +1808,22 @@
     "created_at": "2026-10-14T21:06:22.304984+00:00"
   },
   {
+    "id": 2553,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "NWT Vintage Carhartt J25 CML Sandstone Active Jacket Size Large MADE in USA",
+    "price": 109.83999999999999,
+    "url": "https://www.ebay.com/itm/267814568505",
+    "photo": "https://i.ebayimg.com/images/g/Jx4AAeSwmRBq0QQo/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T21:06:36.772202+00:00"
+  },
+  {
     "id": 2406,
     "query": "j76 moss",
     "source": "ebay",
@@ -1886,6 +1902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-02T01:13:29.904754+00:00"
+  },
+  {
+    "id": 2554,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "VNTG Carhartt Jacket Khaki J293 Detroit Workwear Canvas Quilted Lined Mens Sz XL",
+    "price": 113.58,
+    "url": "https://www.ebay.com/itm/860004087733",
+    "photo": "https://i.ebayimg.com/images/g/UAEAAeSwcbdo8War/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T21:06:36.778445+00:00"
   },
   {
     "id": 2541,
