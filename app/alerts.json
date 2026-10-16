@@ -1840,6 +1840,22 @@
     "created_at": "2026-10-02T01:13:29.904754+00:00"
   },
   {
+    "id": 2541,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J360 DKR Jacket Men XL Red Duck Canvas Hooded Mesh Lined Workwear Y2K",
+    "price": 114.97999999999999,
+    "url": "https://www.ebay.com/itm/840027405262",
+    "photo": "https://i.ebayimg.com/images/g/iZ8AAeSwEVVpqZdx/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T15:09:20.452726+00:00"
+  },
+  {
     "id": 104,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -8542,6 +8558,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:08:25.672340+00:00"
+  },
+  {
+    "id": 2542,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 ARG Army Green Blanket Lined Mens Large ",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/147631190406",
+    "photo": "https://i.ebayimg.com/images/g/PyMAAeSwlMpqy9PO/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T15:09:20.649292+00:00"
   },
   {
     "id": 1808,
@@ -26334,6 +26366,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-17T16:27:39.721541+00:00"
+  },
+  {
+    "id": 2540,
+    "query": "j97 crimson",
+    "source": "grailed",
+    "title": "Carhartt J97 CRI Detroit Jacket Crimson Red *RARE*",
+    "price": 2660.0,
+    "url": "https://www.grailed.com/listings/108974105",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/572af1808150463c8c7bb0d4986fa2a3",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T15:09:20.344792+00:00"
   },
   {
     "id": 2365,
