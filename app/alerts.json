@@ -880,6 +880,22 @@
     "created_at": "2026-09-28T19:15:08.203112+00:00"
   },
   {
+    "id": 2509,
+    "query": "jb0817",
+    "source": "ebay",
+    "title": "Carhartt Rugged Flex Duck Jacket Relaxed Fit Black Men’s XL OJ5748-M New W/Tags",
+    "price": 85.0,
+    "url": "https://www.ebay.com/itm/366609661490",
+    "photo": "https://i.ebayimg.com/images/g/97oAAeSwfjZqgf-o/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:06:00.021145+00:00"
+  },
+  {
     "id": 2047,
     "query": "j97 crimson",
     "source": "etsy",
