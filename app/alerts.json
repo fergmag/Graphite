@@ -1920,6 +1920,22 @@
     "created_at": "2026-10-02T01:13:29.904754+00:00"
   },
   {
+    "id": 2573,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VNTG Carhartt Jacket Khaki J293 Detroit Workwear Canvas Quilted Lined Mens Sz XL",
+    "price": 113.58,
+    "url": "https://www.ebay.com/itm/860004087733",
+    "photo": "https://i.ebayimg.com/images/g/UAEAAeSwcbdo8War/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T21:11:23.647790+00:00"
+  },
+  {
     "id": 2554,
     "query": "j65 brick",
     "source": "ebay",
