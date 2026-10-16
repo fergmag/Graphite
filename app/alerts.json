@@ -4864,6 +4864,22 @@
     "created_at": "2026-10-15T21:10:54.342174+00:00"
   },
   {
+    "id": 2517,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Distressed Faded Tan",
+    "price": 206.11,
+    "url": "https://www.ebay.com/itm/336846175076",
+    "photo": "https://i.ebayimg.com/images/g/YS0AAeSw7aJq0Ug7/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:57.050510+00:00"
+  },
+  {
     "id": 2146,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -9760,6 +9776,38 @@
     "created_at": "2026-09-27T19:14:10.010616+00:00"
   },
   {
+    "id": 2515,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "NEW Vintage Carhartt J97 Detroit Jacket Camel Brown Sandstone Blanket Lined L",
+    "price": 284.69,
+    "url": "https://www.ebay.com/itm/820243130520",
+    "photo": "https://i.ebayimg.com/images/g/az0AAeSw5Q9qp0hz/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:56.946354+00:00"
+  },
+  {
+    "id": 2514,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 ARG Detroit Jacket Olive Sandstone Blanket Lined - L",
+    "price": 289.99,
+    "url": "https://www.ebay.com/itm/820243084857",
+    "photo": "https://i.ebayimg.com/images/g/iNUAAeSwM-NqsJoY/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:56.861505+00:00"
+  },
+  {
     "id": 2433,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -12784,6 +12832,22 @@
     "created_at": "2026-09-26T19:07:32.395433+00:00"
   },
   {
+    "id": 2518,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Adult 48 Brown Duck Canvas Union Made In USA 80s",
+    "price": 483.98,
+    "url": "https://www.ebay.com/itm/158304246442",
+    "photo": "https://i.ebayimg.com/images/g/4XsAAeSwdo1qrJUy/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:57.057510+00:00"
+  },
+  {
     "id": 776,
     "query": "j97 moss",
     "source": "ebay",
@@ -14094,6 +14158,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:10:08.968812+00:00"
+  },
+  {
+    "id": 2516,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "NEW Vintage Carhartt J97 Detroit Jacket Camel Brown Sandstone Blanket Lined XL",
+    "price": 319.99,
+    "url": "https://www.ebay.com/itm/820243129620",
+    "photo": "https://i.ebayimg.com/images/g/az0AAeSw5Q9qp0hz/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:56.953724+00:00"
   },
   {
     "id": 866,
@@ -16270,6 +16350,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-16T03:07:19.089560+00:00"
+  },
+  {
+    "id": 2513,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green 2XL Reg Blanket Lined Canvas",
+    "price": 220.0,
+    "url": "https://www.ebay.com/itm/237126588966",
+    "photo": "https://i.ebayimg.com/images/g/tVUAAeSwZ3Nq0dI6/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-16T09:09:56.844829+00:00"
   },
   {
     "id": 1026,
