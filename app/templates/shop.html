@@ -522,12 +522,14 @@
       function photoSrc(p) {
         return (p && (p.startsWith('http://') || p.startsWith('https://'))) ? p : `/photos/${p}`;
       }
-      function thumbSrc(p) {
+      function _cloudinaryTransform(p, params) {
         const url = photoSrc(p);
         if (url.includes('res.cloudinary.com') && url.includes('/upload/'))
-          return url.replace('/upload/', '/upload/w_600,q_auto,f_auto/');
+          return url.replace('/upload/', `/upload/${params}/`);
         return url;
       }
+      function thumbSrc(p) { return _cloudinaryTransform(p, 'w_600,q_auto,f_auto'); }
+      function modalSrc(p) { return _cloudinaryTransform(p, 'w_1200,q_auto,f_auto'); }
       function photoHtml(photos, title, cls) {
         if (photos && photos.length > 0)
           return `<img src="${thumbSrc(photos[0])}" alt="${esc(title)}" loading="lazy" />`;
@@ -574,7 +576,7 @@
           return;
         }
         el.innerHTML = `
-          <img id="slideImg" src="${photoSrc(_slidePhotos[0])}" alt="${esc(title)}" draggable="false" />
+          <img id="slideImg" src="${modalSrc(_slidePhotos[0])}" alt="${esc(title)}" draggable="false" />
           ${_slidePhotos.length > 1 ? `
             <button class="slide-arrow slide-prev" id="slidePrev">&#8249;</button>
             <button class="slide-arrow slide-next" id="slideNext">&#8250;</button>
@@ -597,7 +599,7 @@
 
       function goSlide(dir, title) {
         _slideIndex = (_slideIndex + dir + _slidePhotos.length) % _slidePhotos.length;
-        document.getElementById('slideImg').src = photoSrc(_slidePhotos[_slideIndex]);
+        document.getElementById('slideImg').src = modalSrc(_slidePhotos[_slideIndex]);
         document.querySelectorAll('.slide-dot').forEach((d, i) => d.classList.toggle('active', i === _slideIndex));
       }
 

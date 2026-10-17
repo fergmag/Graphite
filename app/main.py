@@ -357,13 +357,19 @@ def create_app() -> Flask:
             return photo
         return f"/photos/{photo}"
 
-    @app.template_filter("photo_thumb_url")
-    def photo_thumb_url_filter(photo: str) -> str:
-        """Cloudinary thumbnail URL (w_600, auto quality/format). Falls back to full URL."""
+    def _cloudinary_transform(photo: str, params: str) -> str:
         url = photo_url_filter(photo)
         if "res.cloudinary.com" in url and "/upload/" in url:
-            return url.replace("/upload/", "/upload/w_600,q_auto,f_auto/", 1)
+            return url.replace("/upload/", f"/upload/{params}/", 1)
         return url
+
+    @app.template_filter("photo_thumb_url")
+    def photo_thumb_url_filter(photo: str) -> str:
+        return _cloudinary_transform(photo, "w_600,q_auto,f_auto")
+
+    @app.template_filter("photo_modal_url")
+    def photo_modal_url_filter(photo: str) -> str:
+        return _cloudinary_transform(photo, "w_1200,q_auto,f_auto")
 
     @app.get("/photos/<path:filename>")
     def serve_photo(filename):
