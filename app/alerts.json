@@ -1760,6 +1760,22 @@
     "created_at": "2026-10-15T03:10:51.358788+00:00"
   },
   {
+    "id": 2671,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J01 Detroit Jacket Men's Duck Canvas Blanket Lined Black Work Jacket",
+    "price": 103.76,
+    "url": "https://www.ebay.com/itm/800771068886",
+    "photo": "https://i.ebayimg.com/images/g/3B8AAeSwfTxqx0UC/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T15:12:23.656019+00:00"
+  },
+  {
     "id": 2657,
     "query": "j97 moss",
     "source": "ebay",
@@ -5134,6 +5150,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T07:14:44.416523+00:00"
+  },
+  {
+    "id": 2670,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Artic  JQ185/J02 Blk  Xl Detroit Style Artic Workwear Jacket",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/128140930358",
+    "photo": "https://i.ebayimg.com/images/g/zbgAAeSwrElq04ln/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T15:12:23.637870+00:00"
   },
   {
     "id": 2668,
@@ -10174,6 +10206,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:12:01.545986+00:00"
+  },
+  {
+    "id": 2672,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Faded Carhartt Artic Traditional Jacket “Hunter Green” J22 HTG Men’s XL",
+    "price": 229.99,
+    "url": "https://www.ebay.com/itm/327408853710",
+    "photo": "https://i.ebayimg.com/images/g/DswAAeSwhVlqhJcS/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T15:12:24.140991+00:00"
   },
   {
     "id": 1926,
