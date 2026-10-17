@@ -5792,6 +5792,22 @@
     "created_at": "2026-09-19T16:24:24.494435+00:00"
   },
   {
+    "id": 1756,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J02 BLK black arctic work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407286116570",
+    "photo": "https://i.ebayimg.com/images/g/xIEAAeSwtHBqzYr~/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T21:18:34.997487+00:00"
+  },
+  {
     "id": 359,
     "query": "jq2472",
     "source": "ebay",
@@ -7870,6 +7886,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-25T19:07:41.798003+00:00"
+  },
+  {
+    "id": 1757,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Carhartt J68 CHT Jacket Mens M Chestnut Hooded Faded Sandstone Duck Canvas",
+    "price": 286.40000000000003,
+    "url": "https://www.ebay.com/itm/227571826261",
+    "photo": "https://i.ebayimg.com/images/g/6iMAAeSws~Vq09Dt/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T21:18:35.094968+00:00"
   },
   {
     "id": 489,
