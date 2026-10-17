@@ -3072,6 +3072,22 @@
     "created_at": "2026-09-18T16:24:17.606322+00:00"
   },
   {
+    "id": 2582,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ382 brown hooded work wear jacket",
+    "price": 154.98000000000002,
+    "url": "https://www.ebay.com/itm/407219994068",
+    "photo": "https://i.ebayimg.com/images/g/Bs8AAeSwKcdqqgWQ/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T03:08:34.032680+00:00"
+  },
+  {
     "id": 2472,
     "query": "jq2472",
     "source": "ebay",
@@ -5374,6 +5390,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-19T16:24:24.494435+00:00"
+  },
+  {
+    "id": 2583,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ185 faded black arctic work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407295849919",
+    "photo": "https://i.ebayimg.com/images/g/mIgAAeSwx8Zq0sm-/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T03:08:34.039550+00:00"
   },
   {
     "id": 2441,
@@ -8270,6 +8302,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T07:14:19.205171+00:00"
+  },
+  {
+    "id": 2584,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ2135 \"RUM\" SIZE MEDIUM Nice Color Fading No Distressed",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/317856541212",
+    "photo": "https://i.ebayimg.com/images/g/UkEAAeSwQZxpiN3D/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-17T03:08:34.046220+00:00"
   },
   {
     "id": 2048,
