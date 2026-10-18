@@ -4048,6 +4048,22 @@
     "created_at": "2026-10-16T09:10:16.253953+00:00"
   },
   {
+    "id": 1767,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Distressed Tan Size Large Regular",
+    "price": 174.99,
+    "url": "https://www.ebay.com/itm/128141762098",
+    "photo": "https://i.ebayimg.com/images/g/DI8AAeSwiB5q1CoW/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:16:43.707384+00:00"
+  },
+  {
     "id": 253,
     "query": "j76 cement",
     "source": "ebay",
@@ -4382,6 +4398,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-18T10:24:59.199647+00:00"
+  },
+  {
+    "id": 1764,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Black J97 Carhartt Detroit Work Jacket",
+    "price": 185.5,
+    "url": "https://www.ebay.com/itm/198724016908",
+    "photo": "https://i.ebayimg.com/images/g/kV4AAeSwaulq1Cyo/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:16:43.511696+00:00"
   },
   {
     "id": 274,
@@ -5824,6 +5856,22 @@
     "created_at": "2026-10-14T21:08:53.426089+00:00"
   },
   {
+    "id": 1766,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Blanket-Lined Detroit Jacket Size Large (READ DESCRIPTION)",
+    "price": 215.0,
+    "url": "https://www.ebay.com/itm/860055691766",
+    "photo": "https://i.ebayimg.com/images/g/JmMAAeSwICxqrzCs/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:16:43.612239+00:00"
+  },
+  {
     "id": 362,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -6174,6 +6222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T15:08:34.497481+00:00"
+  },
+  {
+    "id": 1765,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Vintage Jacket Dark Red Zip-Up, Quilted, XLarge, 90s USA, J140-DKR",
+    "price": 229.99,
+    "url": "https://www.ebay.com/itm/377578235147",
+    "photo": "https://i.ebayimg.com/images/g/FmgAAeSwd8Vq0-V8/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:16:43.594263+00:00"
   },
   {
     "id": 385,
