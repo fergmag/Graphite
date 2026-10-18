@@ -4448,6 +4448,22 @@
     "created_at": "2026-10-15T09:10:24.743750+00:00"
   },
   {
+    "id": 1811,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Navy Carhartt Hooded Work Jacket JQ1002 - Fits Large!",
+    "price": 183.99,
+    "url": "https://www.ebay.com/itm/800807581761",
+    "photo": "https://i.ebayimg.com/images/g/1oMAAeSwRVxq1ELk/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T15:14:07.814900+00:00"
+  },
+  {
     "id": 272,
     "query": "j97 moss",
     "source": "etsy",
@@ -7502,6 +7518,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T07:14:00.616338+00:00"
+  },
+  {
+    "id": 1810,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Y2K Carhartt Mens J14 CLY Santa Fe Jacket Clay Quilted Lined Sz XL *Read",
+    "price": 260.0,
+    "url": "https://www.ebay.com/itm/168774182533",
+    "photo": "https://i.ebayimg.com/images/g/fT4AAeSw7Z5qxriy/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T15:14:07.797444+00:00"
   },
   {
     "id": 449,
