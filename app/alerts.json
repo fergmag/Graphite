@@ -7520,6 +7520,22 @@
     "created_at": "2026-10-15T03:10:21.638626+00:00"
   },
   {
+    "id": 1790,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Rare Aqua Teal Carhartt Jacket J04 AQU L",
+    "price": 265.0,
+    "url": "https://www.ebay.com/itm/198723468526",
+    "photo": "https://i.ebayimg.com/images/g/mRUAAeSwkF5q0~CO/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:20:11.861867+00:00"
+  },
+  {
     "id": 1788,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -27470,6 +27486,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.166421+00:00"
+  },
+  {
+    "id": 1789,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Carhartt Vintage XL Detroit J76 Mos Moss Made In Usa Men Rare Model Limited Edit",
+    "price": 2468.13,
+    "url": "https://www.ebay.com/itm/398403617900",
+    "photo": "https://i.ebayimg.com/images/g/tSoAAeSwPphqq8e5/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:20:11.849162+00:00"
   },
   {
     "id": 1712,
