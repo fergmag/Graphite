@@ -6544,6 +6544,22 @@
     "created_at": "2026-10-04T07:13:50.705881+00:00"
   },
   {
+    "id": 1786,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1990s Carhartt JQ281 Burgundy Hooded Jacket Medium 23x25.5",
+    "price": 240.0,
+    "url": "https://www.ebay.com/itm/920049801003",
+    "photo": "https://i.ebayimg.com/images/g/udsAAeSwtTdq1Bp~/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:19:03.478664+00:00"
+  },
+  {
     "id": 396,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7502,6 +7518,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:21.638626+00:00"
+  },
+  {
+    "id": 1787,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Rare Aqua Teal Carhartt Jacket J04 AQU L",
+    "price": 265.0,
+    "url": "https://www.ebay.com/itm/198723468526",
+    "photo": "https://i.ebayimg.com/images/g/mRUAAeSwkF5q0~CO/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:19:03.485442+00:00"
   },
   {
     "id": 458,
@@ -25438,6 +25470,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:02:38.224565+00:00"
+  },
+  {
+    "id": 1785,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "💥 Rare 90s Carhartt J43BRG Detroit Jacket",
+    "price": 1000.0,
+    "url": "https://www.grailed.com/listings/106231584",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/7cacf60540144c6f838376281b4344ff",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-18T03:19:03.469836+00:00"
   },
   {
     "id": 1589,
