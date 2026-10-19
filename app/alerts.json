@@ -7824,6 +7824,22 @@
     "created_at": "2026-10-15T03:10:21.638626+00:00"
   },
   {
+    "id": 1857,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt J131-BRN Men’s Brown Lined Canvas Full Zip Active Jacket L Regular",
+    "price": 265.0,
+    "url": "https://www.ebay.com/itm/900023738978",
+    "photo": "https://i.ebayimg.com/images/g/c9AAAeSw2NBq1Xbc/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T03:13:55.157562+00:00"
+  },
+  {
     "id": 1790,
     "query": "j76 moss",
     "source": "ebay",
