@@ -4016,6 +4016,22 @@
     "created_at": "2026-09-20T16:24:08.600613+00:00"
   },
   {
+    "id": 1910,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens Extra Large Canvas Coat J97 J001 BRN Hooded Blanket",
+    "price": 167.87,
+    "url": "https://www.ebay.com/itm/820162509945",
+    "photo": "https://i.ebayimg.com/images/g/RPsAAeSwxKZqkICV/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T15:16:45.505578+00:00"
+  },
+  {
     "id": 233,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -6926,6 +6942,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:01.952020+00:00"
+  },
+  {
+    "id": 1909,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 BRN Men’s 2XL Brown Blanket Lined Clean Vintage Y2K",
+    "price": 235.0,
+    "url": "https://www.ebay.com/itm/920052175285",
+    "photo": "https://i.ebayimg.com/images/g/r8cAAeSwxHlq1U1S/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T15:16:45.380632+00:00"
   },
   {
     "id": 391,
