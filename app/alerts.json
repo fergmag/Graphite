@@ -5632,6 +5632,22 @@
     "created_at": "2026-09-27T07:14:44.416523+00:00"
   },
   {
+    "id": 1903,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J14 DTL Santa Fe Jacket Large Rare Dark Teal USA Made",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/920053086987",
+    "photo": "https://i.ebayimg.com/images/g/v90AAeSwOGhq1bxo/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T09:20:06.039360+00:00"
+  },
+  {
     "id": 1902,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -6942,6 +6958,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.454838+00:00"
+  },
+  {
+    "id": 1904,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Jacket Mens Medium BLK Canvas Quilt Lined JQ185 J02 90s USA",
+    "price": 238.99,
+    "url": "https://www.ebay.com/itm/800811754883",
+    "photo": "https://i.ebayimg.com/images/g/XswAAeSwxvlq1Z2o/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T09:20:06.105545+00:00"
   },
   {
     "id": 1901,
@@ -13966,6 +13998,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-18T21:20:17.597658+00:00"
+  },
+  {
+    "id": 1905,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men’s XL J165 MOS Green Detroit Corduroy Collar USA",
+    "price": 239.99,
+    "url": "https://www.ebay.com/itm/198726891583",
+    "photo": "https://i.ebayimg.com/images/g/Z-gAAeSwXUJqrxor/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T09:20:06.209282+00:00"
   },
   {
     "id": 800,
