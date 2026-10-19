@@ -3040,6 +3040,22 @@
     "created_at": "2026-09-25T01:06:44.455120+00:00"
   },
   {
+    "id": 1861,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Work In Progress Men’s Active Jacket Size Large Green, Quilted, Hooded",
+    "price": 142.98000000000002,
+    "url": "https://www.ebay.com/itm/940023867151",
+    "photo": "https://i.ebayimg.com/images/g/2ZoAAeSwS09q1Va7/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T03:15:54.968000+00:00"
+  },
+  {
     "id": 1854,
     "query": "j76 moss",
     "source": "ebay",
