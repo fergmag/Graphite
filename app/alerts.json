@@ -2000,6 +2000,22 @@
     "created_at": "2026-10-09T01:10:41.102040+00:00"
   },
   {
+    "id": 1870,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J01 Detroit Jacket Men's Duck Canvas Blanket Lined Brown Work Jacket",
+    "price": 105.0,
+    "url": "https://www.ebay.com/itm/920052359489",
+    "photo": "https://i.ebayimg.com/images/g/cqcAAeSwI5tq1WHb/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T03:17:27.812177+00:00"
+  },
+  {
     "id": 1864,
     "query": "j97 moss",
     "source": "ebay",
@@ -6558,6 +6574,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T03:09:59.847700+00:00"
+  },
+  {
+    "id": 1869,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Burgundy Wine Red Men’s XL Carhartt Hooded Jacket Vintage JQ246",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287594010157",
+    "photo": "https://i.ebayimg.com/images/g/7CcAAeSwLgNqrTAu/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T03:17:27.802190+00:00"
   },
   {
     "id": 379,
