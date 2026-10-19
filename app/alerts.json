@@ -1824,6 +1824,22 @@
     "created_at": "2026-10-15T03:10:51.358788+00:00"
   },
   {
+    "id": 1917,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J01 Detroit Jacket Men's Duck Canvas Blanket Lined Brown Work Jacket",
+    "price": 103.76,
+    "url": "https://www.ebay.com/itm/800771044893",
+    "photo": "https://i.ebayimg.com/images/g/F4sAAeSwVHBqx0Hm/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-19T15:19:07.096318+00:00"
+  },
+  {
     "id": 1809,
     "query": "j76 moss",
     "source": "ebay",
