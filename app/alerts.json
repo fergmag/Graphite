@@ -2656,6 +2656,22 @@
     "created_at": "2026-10-09T01:13:09.739693+00:00"
   },
   {
+    "id": 2028,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J131 BRN Thermal Lined Canvas Work Jacket Men's Large Regular USA Made",
+    "price": 124.99,
+    "url": "https://www.ebay.com/itm/178176426123",
+    "photo": "https://i.ebayimg.com/images/g/MTgAAeSwToJqGlII/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T21:19:03.600320+00:00"
+  },
+  {
     "id": 1946,
     "query": "j76 cement",
     "source": "ebay",
