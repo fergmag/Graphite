@@ -15552,6 +15552,22 @@
     "created_at": "2026-09-28T01:15:19.115880+00:00"
   },
   {
+    "id": 2018,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt J97 Detroit Jacket Brown Canvas Full Zip Men's L Workwear MPN J97",
+    "price": 385.0,
+    "url": "https://www.ebay.com/itm/407304276142",
+    "photo": "https://i.ebayimg.com/images/g/iT4AAeSwJZJq16jq/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T21:17:23.904715+00:00"
+  },
+  {
     "id": 846,
     "query": "j97 moss",
     "source": "ebay",
@@ -20110,6 +20126,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:02.345750+00:00"
+  },
+  {
+    "id": 2017,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green 2XL Reg Blanket Lined Canvas",
+    "price": 214.99,
+    "url": "https://www.ebay.com/itm/880035046849",
+    "photo": "https://i.ebayimg.com/images/g/nNAAAeSwoupq15os/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T21:17:23.808712+00:00"
   },
   {
     "id": 1110,
@@ -26606,6 +26638,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-02T19:15:29.880189+00:00"
+  },
+  {
+    "id": 2016,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "VINTAGE TRASHED CARHARTT DETROIT J97 MOS GREEN",
+    "price": 745.0,
+    "url": "https://www.grailed.com/listings/109432384",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/ff673347eb1b46538532cd66a675a85d",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T21:17:23.589160+00:00"
   },
   {
     "id": 1519,
