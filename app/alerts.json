@@ -2768,6 +2768,22 @@
     "created_at": "2026-10-15T03:08:36.759730+00:00"
   },
   {
+    "id": 2003,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "VTG Carhartt Union Made USA Duck Canvas Hooded Work Jacket Distressed Faded J131",
+    "price": 127.99,
+    "url": "https://www.ebay.com/itm/257808383529",
+    "photo": "https://i.ebayimg.com/images/g/GwoAAeSwH0hqs7~z/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T15:19:24.794912+00:00"
+  },
+  {
     "id": 149,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3792,6 +3808,22 @@
     "created_at": "2026-09-23T18:59:57.623153+00:00"
   },
   {
+    "id": 2004,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Mens Lined Jacket  Blanket Lined Deadstock 6BLC Carhartt Jacket",
+    "price": 151.98000000000002,
+    "url": "https://www.ebay.com/itm/366633032358",
+    "photo": "https://i.ebayimg.com/images/g/T5EAAeSw-UhodUCm/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T15:19:24.812314+00:00"
+  },
+  {
     "id": 207,
     "query": "jq2472",
     "source": "ebay",
@@ -4638,6 +4670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-18T03:16:43.707384+00:00"
+  },
+  {
+    "id": 2005,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Y2K Made in Mexico J22 BRN Tan Arctic Carhartt Jacket XL",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/318174965431",
+    "photo": "https://i.ebayimg.com/images/g/QGoAAeSw69Jp5ZiR/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T15:19:24.818973+00:00"
   },
   {
     "id": 253,
@@ -11390,6 +11438,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:06:35.525705+00:00"
+  },
+  {
+    "id": 2002,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket J03 NVY Hooded USA Union Made 2XL",
+    "price": 92.0,
+    "url": "https://www.ebay.com/itm/318796405379",
+    "photo": "https://i.ebayimg.com/images/g/PKIAAeSwKX9qkwNM/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T15:19:24.769349+00:00"
   },
   {
     "id": 614,
