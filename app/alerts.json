@@ -5792,6 +5792,22 @@
     "created_at": "2026-09-27T07:14:44.416523+00:00"
   },
   {
+    "id": 1951,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "J97 Carhartt Detroit Jacket Size 2XL Blanket Lined Dark Brown Color",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/800815180530",
+    "photo": "https://i.ebayimg.com/images/g/EfwAAeSwTxJq1s8e/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:16:42.463378+00:00"
+  },
+  {
     "id": 1903,
     "query": "j76 moss",
     "source": "ebay",
@@ -6878,6 +6894,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T03:09:59.847700+00:00"
+  },
+  {
+    "id": 1953,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BLK Blanket Lined Black Detroit Jacket Mens Size Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287659624865",
+    "photo": "https://i.ebayimg.com/images/g/ymMAAeSwhbxq1r2K/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:16:42.505370+00:00"
   },
   {
     "id": 1942,
@@ -9232,6 +9264,22 @@
     "created_at": "2026-09-25T01:08:10.385111+00:00"
   },
   {
+    "id": 1950,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Insane Vintage 2009 Either J97 or J01 Crimson Carhartt Detroit Jacket Size Large",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/820256902505",
+    "photo": "https://i.ebayimg.com/images/g/E3AAAeSwBMRq1pa0/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:16:42.455523+00:00"
+  },
+  {
     "id": 1796,
     "query": "j97 moss",
     "source": "ebay",
@@ -10846,6 +10894,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.749381+00:00"
+  },
+  {
+    "id": 1952,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Rare color carhartt red jacket women’s size large",
+    "price": 560.0,
+    "url": "https://www.ebay.com/itm/137858771292",
+    "photo": "https://i.ebayimg.com/images/g/pYgAAeSwra9q1tsa/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:16:42.470561+00:00"
   },
   {
     "id": 603,
