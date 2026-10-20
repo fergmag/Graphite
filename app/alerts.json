@@ -7728,6 +7728,22 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 1980,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Y2K Carhartt Thermal-Lined Hooded Active Jacket “Black” J131 BLK Men’s Large",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147643188818",
+    "photo": "https://i.ebayimg.com/images/g/I8MAAeSwTLVq1o49/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:20:20.297392+00:00"
+  },
+  {
     "id": 1850,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -21070,6 +21086,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-20T10:24:49.890434+00:00"
+  },
+  {
+    "id": 1981,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt J25 DTL Hooded Active Jacket Y2K Workwear Dark Teal Size XL 90s",
+    "price": 349.95,
+    "url": "https://www.ebay.com/itm/267818293586",
+    "photo": "https://i.ebayimg.com/images/g/Gj8AAeSwL8tq1pYv/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-20T03:20:20.305335+00:00"
   },
   {
     "id": 1198,
