@@ -1152,6 +1152,22 @@
     "created_at": "2026-10-15T03:10:21.390819+00:00"
   },
   {
+    "id": 2094,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Men's Washed Duck Bartlett Jacket",
+    "price": 83.99,
+    "url": "https://www.ebay.com/itm/377585946142",
+    "photo": "https://i.ebayimg.com/images/g/4GgAAeSwUJFq2ASN/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:16:23.150073+00:00"
+  },
+  {
     "id": 59,
     "query": "j97 petrol",
     "source": "ebay",
