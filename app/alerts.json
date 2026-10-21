@@ -4992,6 +4992,22 @@
     "created_at": "2026-10-15T21:09:21.247038+00:00"
   },
   {
+    "id": 2109,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Jacket J247 PTB Petrol Blue Size Men’s Medium",
+    "price": 169.99,
+    "url": "https://www.ebay.com/itm/198734500192",
+    "photo": "https://i.ebayimg.com/images/g/XI0AAeSwyKpq2Rfz/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T21:14:11.901511+00:00"
+  },
+  {
     "id": 245,
     "query": "jp1017",
     "source": "ebay",
