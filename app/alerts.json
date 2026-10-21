@@ -640,6 +640,22 @@
     "created_at": "2026-10-14T21:06:22.316757+00:00"
   },
   {
+    "id": 2091,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Large Blue Canvas Full Zip Embroidered Workwear",
+    "price": 69.11,
+    "url": "https://www.ebay.com/itm/800557827610",
+    "photo": "https://i.ebayimg.com/images/g/QYAAAeSwrWpqjLT5/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:14:15.955411+00:00"
+  },
+  {
     "id": 35,
     "query": "j97 crimson",
     "source": "ebay",
@@ -766,6 +782,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-18T21:15:40.545934+00:00"
+  },
+  {
+    "id": 2092,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "VTG Carhartt Jacket Mens XL Loose Fit Firm Duck Thermal-Lined Hooded USA J131",
+    "price": 72.98,
+    "url": "https://www.ebay.com/itm/880020576775",
+    "photo": "https://i.ebayimg.com/images/g/M2AAAeSwaaxq0ZEq/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:14:15.968600+00:00"
   },
   {
     "id": 41,
@@ -5038,6 +5070,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-18T03:16:43.707384+00:00"
+  },
+  {
+    "id": 2093,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Y2K Made in Mexico J22 BRN Tan Arctic Carhartt Jacket XL",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/318174965431",
+    "photo": "https://i.ebayimg.com/images/g/QGoAAeSw69Jp5ZiR/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:14:16.002006+00:00"
   },
   {
     "id": 2005,
