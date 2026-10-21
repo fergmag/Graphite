@@ -3056,6 +3056,22 @@
     "created_at": "2026-10-09T01:13:09.816852+00:00"
   },
   {
+    "id": 2039,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage 90s Faded Black Carhartt Jacket Arctic Detroit Style Jacket Size Large",
+    "price": 134.98,
+    "url": "https://www.ebay.com/itm/237134860159",
+    "photo": "https://i.ebayimg.com/images/g/vMUAAeSw4nRq2A07/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:14:13.503115+00:00"
+  },
+  {
     "id": 164,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3582,6 +3598,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T18:59:57.616761+00:00"
+  },
+  {
+    "id": 2041,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J141 MDT Sierra Jacket Medium Midnight Blue Faded Distressed Detroit",
+    "price": 148.99,
+    "url": "https://www.ebay.com/itm/227538248455",
+    "photo": "https://i.ebayimg.com/images/g/bkIAAeSwCbVqte8Z/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:14:13.598555+00:00"
   },
   {
     "id": 191,
@@ -6094,6 +6126,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T07:14:44.416523+00:00"
+  },
+  {
+    "id": 2040,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Stressed Carhartt Jacket Men's",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/800819409883",
+    "photo": "https://i.ebayimg.com/images/g/pskAAeSwqBRq2Cea/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:14:13.511921+00:00"
   },
   {
     "id": 2038,
