@@ -3760,6 +3760,22 @@
     "created_at": "2026-10-17T09:09:04.660256+00:00"
   },
   {
+    "id": 2055,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Y2K CARHARTT J01 USA Men's L 44 Black Blanket Lined Detroit Jacket",
+    "price": 149.99,
+    "url": "https://www.ebay.com/itm/820260432025",
+    "photo": "https://i.ebayimg.com/images/g/8KQAAeSwX3xq1-wW/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:17:35.561554+00:00"
+  },
+  {
     "id": 2050,
     "query": "j97 moss",
     "source": "ebay",
@@ -5102,6 +5118,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:32.520378+00:00"
+  },
+  {
+    "id": 2056,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Men's- Carhartt J97 CML Brown (Carmel) Blanket Lined Detroit Work Jacket- XL",
+    "price": 179.97,
+    "url": "https://www.ebay.com/itm/900028407503",
+    "photo": "https://i.ebayimg.com/images/g/J-MAAeSwtM1q1-5p/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:17:35.698877+00:00"
   },
   {
     "id": 2014,
