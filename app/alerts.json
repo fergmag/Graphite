@@ -3184,6 +3184,22 @@
     "created_at": "2026-10-09T01:13:09.816852+00:00"
   },
   {
+    "id": 2099,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Faded Black Carhartt Jacket Arctic Detroit Style Jacket Size Large",
+    "price": 134.98,
+    "url": "https://www.ebay.com/itm/237134860159",
+    "photo": "https://i.ebayimg.com/images/g/vMUAAeSw4nRq2A07/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:18:10.332075+00:00"
+  },
+  {
     "id": 2068,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -4126,6 +4142,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T18:59:57.522005+00:00"
+  },
+  {
+    "id": 2098,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men’s eggplant purple burgundy Work Jacket Corduroy Collar Zip XL",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/800821227127",
+    "photo": "https://i.ebayimg.com/images/g/il8AAeSw7BNqmYz0/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:18:10.273896+00:00"
   },
   {
     "id": 1860,
@@ -10670,6 +10702,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T18:59:57.818962+00:00"
+  },
+  {
+    "id": 2101,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BRN Detroit Blanket Lined Medium Faded Distressed Work Wear",
+    "price": 314.9,
+    "url": "https://www.ebay.com/itm/137861032477",
+    "photo": "https://i.ebayimg.com/images/g/1w0AAeSwsbFq1-XG/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:18:10.594738+00:00"
   },
   {
     "id": 2051,
@@ -20430,6 +20478,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-19T21:19:18.904181+00:00"
+  },
+  {
+    "id": 2100,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J108 BRN Detroit Jacket Unlined NEW WITHOUT TAGS Deadstock NOS",
+    "price": 784.3499999999999,
+    "url": "https://www.ebay.com/itm/407293444219",
+    "photo": "https://i.ebayimg.com/images/g/EBsAAeSwPjRqu-WZ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T15:18:10.401525+00:00"
   },
   {
     "id": 1080,
