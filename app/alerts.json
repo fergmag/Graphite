@@ -7952,6 +7952,22 @@
     "created_at": "2026-10-19T15:16:45.380632+00:00"
   },
   {
+    "id": 2079,
+    "query": "js1207",
+    "source": "ebay",
+    "title": "CarHartt                    Best black I030584",
+    "price": 235.17,
+    "url": "https://www.ebay.com/itm/820260585789",
+    "photo": "https://i.ebayimg.com/images/g/MbEAAeSwNe1q2ACO/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T09:14:52.954883+00:00"
+  },
+  {
     "id": 391,
     "query": "j43 chestnut",
     "source": "ebay",
