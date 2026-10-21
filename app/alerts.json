@@ -9648,6 +9648,22 @@
     "created_at": "2026-09-25T01:07:22.697562+00:00"
   },
   {
+    "id": 2076,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J001-BLK Size Large Tall Excellent Cond Blanket Lined",
+    "price": 279.0,
+    "url": "https://www.ebay.com/itm/147644717229",
+    "photo": "https://i.ebayimg.com/images/g/6dYAAeSwyXJq1-w9/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T09:13:56.456304+00:00"
+  },
+  {
     "id": 473,
     "query": "j97 moss",
     "source": "etsy",
