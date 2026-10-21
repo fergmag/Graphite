@@ -6064,6 +6064,22 @@
     "created_at": "2026-10-09T01:17:33.008925+00:00"
   },
   {
+    "id": 2066,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1990s Carhartt Faded Black Arctic Distressed Jacket J02 Size 46",
+    "price": 196.98000000000002,
+    "url": "https://www.ebay.com/itm/880034648866",
+    "photo": "https://i.ebayimg.com/images/g/QbsAAeSwzvtq13Jo/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:18:55.857778+00:00"
+  },
+  {
     "id": 2064,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -6318,6 +6334,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T07:14:44.416523+00:00"
+  },
+  {
+    "id": 2067,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Stressed Carhartt Jacket Men's",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/800819409883",
+    "photo": "https://i.ebayimg.com/images/g/pskAAeSwqBRq2Cea/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-21T03:18:55.873262+00:00"
   },
   {
     "id": 2040,
