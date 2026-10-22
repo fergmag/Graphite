@@ -1872,6 +1872,22 @@
     "created_at": "2026-10-15T03:08:25.661979+00:00"
   },
   {
+    "id": 2148,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt J11 DST Denim Blanket Lined Jean Jacket Trucker Jacket Size XL",
+    "price": 99.95,
+    "url": "https://www.etsy.com/listing/4525444600/vintage-carhartt-j11-dst-denim-blanket",
+    "photo": "https://i.etsystatic.com/27240758/r/il/7b03e7/8161496130/il_570xN.8161496130_n81y.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:15:40.106980+00:00"
+  },
+  {
     "id": 1936,
     "query": "j97 petrol",
     "source": "ebay",
