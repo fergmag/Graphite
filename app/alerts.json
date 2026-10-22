@@ -1760,6 +1760,22 @@
     "created_at": "2026-10-22T09:18:02.097826+00:00"
   },
   {
+    "id": 2164,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt JQ2105 Santa Fe Jacket Mens XL Faded Paint Spot Black Red Quilted Liner",
+    "price": 99.0,
+    "url": "https://www.ebay.com/itm/900031019368",
+    "photo": "https://i.ebayimg.com/images/g/vm0AAeSwdhJqx3SU/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:53.020050+00:00"
+  },
+  {
     "id": 2159,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -7438,6 +7454,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:51.274991+00:00"
+  },
+  {
+    "id": 2163,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage USA Carhartt Quilted Artic Jacket  Black JQ185/J02  Men’s 50 XL",
+    "price": 209.99,
+    "url": "https://www.ebay.com/itm/206639984304",
+    "photo": "https://i.ebayimg.com/images/g/liIAAeSwSUlqhoVc/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:53.012815+00:00"
   },
   {
     "id": 2147,
@@ -29902,6 +29934,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T01:14:08.311430+00:00"
+  },
+  {
+    "id": 2162,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 BRG Burgundy Blanket Lined J43 brg Mens L",
+    "price": 1024.99,
+    "url": "https://www.ebay.com/itm/128149788445",
+    "photo": "https://i.ebayimg.com/images/g/5IIAAeSwI-dq2ap8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:53.002677+00:00"
   },
   {
     "id": 2153,
