@@ -16880,6 +16880,22 @@
     "created_at": "2026-10-09T01:14:25.711799+00:00"
   },
   {
+    "id": 2207,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Faded Carhartt Jacket J97 Tan Detroit Jacket Blanket Lined Size XL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147647784619",
+    "photo": "https://i.ebayimg.com/images/g/lAgAAeSwELlq2nI8/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T21:18:30.606084+00:00"
+  },
+  {
     "id": 2192,
     "query": "j97 moss",
     "source": "ebay",
