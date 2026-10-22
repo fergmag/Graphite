@@ -1744,6 +1744,22 @@
     "created_at": "2026-10-14T21:06:53.479657+00:00"
   },
   {
+    "id": 2155,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Arctic Detroit Jacket Black Duck Canvas Paint Distressed 7658",
+    "price": 98.99,
+    "url": "https://www.ebay.com/itm/236994854487",
+    "photo": "https://i.ebayimg.com/images/g/TOsAAeSwaRZqeAUx/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:02.097826+00:00"
+  },
+  {
     "id": 2143,
     "query": "jb1236",
     "source": "ebay",
@@ -12960,6 +12976,22 @@
     "created_at": "2026-10-20T15:19:08.198986+00:00"
   },
   {
+    "id": 2156,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Men's- Carhartt J97 CML Brown (Carmel) Blanket Lined Detroit Work Jacket- XL",
+    "price": 179.97,
+    "url": "https://www.ebay.com/itm/900028407503",
+    "photo": "https://i.ebayimg.com/images/g/J-MAAeSwtM1q1-5p/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:02.298249+00:00"
+  },
+  {
     "id": 2053,
     "query": "j97 moss",
     "source": "ebay",
@@ -20160,6 +20192,22 @@
     "created_at": "2026-09-23T19:00:35.937842+00:00"
   },
   {
+    "id": 2154,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL 2003 Jacket MADE IN U.S.A",
+    "price": 500.0,
+    "url": "https://www.grailed.com/listings/109613298",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6e92f039a3ae4c2baa09ae9499e3c688",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:01.901722+00:00"
+  },
+  {
     "id": 2023,
     "query": "j97 petrol",
     "source": "ebay",
@@ -23726,6 +23774,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-03T19:14:51.611837+00:00"
+  },
+  {
+    "id": 2158,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG CARHARTT Men's Sz US XL Charcoal Gray Cotton Detroit Jacket J97 PTL",
+    "price": 369.0,
+    "url": "https://www.ebay.com/itm/257810985886",
+    "photo": "https://i.ebayimg.com/images/g/B9sAAeSwoTxqfa4C/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:02.398928+00:00"
   },
   {
     "id": 1233,
@@ -28222,6 +28286,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-20T21:17:23.589160+00:00"
+  },
+  {
+    "id": 2157,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Petrol Grey” J97 PTL Men’s Medium",
+    "price": 749.99,
+    "url": "https://www.etsy.com/listing/4600727124/vintage-carhartt-blanket-lined-detroit",
+    "photo": "https://i.etsystatic.com/27753259/r/il/0de6a1/8720979234/il_570xN.8720979234_ldq5.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T09:18:02.312256+00:00"
   },
   {
     "id": 1519,
