@@ -720,6 +720,22 @@
     "created_at": "2026-10-21T15:14:15.955411+00:00"
   },
   {
+    "id": 2191,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Rain Defender Heavyweight Hooded Shirt Jacket Relaxed Fit Size XL NWT",
+    "price": 69.95,
+    "url": "https://www.ebay.com/itm/327382165368",
+    "photo": "https://i.ebayimg.com/images/g/M5cAAeSwfCZqvaLV/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T21:16:38.896301+00:00"
+  },
+  {
     "id": 35,
     "query": "j97 crimson",
     "source": "ebay",
@@ -4318,6 +4334,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T09:09:04.660256+00:00"
+  },
+  {
+    "id": 2190,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BRN Detroit Canvas Work Jacket Brown USA Size XL2XL G2U",
+    "price": 149.9,
+    "url": "https://www.ebay.com/itm/880041060897",
+    "photo": "https://i.ebayimg.com/images/g/JH8AAeSwQTtoE7F-/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T21:16:38.705446+00:00"
   },
   {
     "id": 2074,
@@ -9280,6 +9312,22 @@
     "created_at": "2026-09-28T13:13:46.506976+00:00"
   },
   {
+    "id": 2189,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Faded Carhartt Jacket J97 Tan Detroit Jacket Blanket Lined Size XL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147647784619",
+    "photo": "https://i.ebayimg.com/images/g/lAgAAeSwELlq2nI8/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T21:16:38.655995+00:00"
+  },
+  {
     "id": 1980,
     "query": "j76 cement",
     "source": "ebay",
@@ -12766,6 +12814,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.152184+00:00"
+  },
+  {
+    "id": 2188,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "RARE VINTAGE 1989 CARHARTT LINED DETROIT 100 YEAR ANNIVERSARY JACKET ",
+    "price": 514.98,
+    "url": "https://www.ebay.com/itm/267820819552",
+    "photo": "https://i.ebayimg.com/images/g/iGUAAeSwQxJq2jUb/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-22T21:16:38.625744+00:00"
   },
   {
     "id": 596,
