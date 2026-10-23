@@ -15008,6 +15008,22 @@
     "created_at": "2026-10-14T21:12:01.523779+00:00"
   },
   {
+    "id": 2304,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Jacket Mens XL Detroit Blanket Brown Black Made The USA",
+    "price": 259.98,
+    "url": "https://www.ebay.com/itm/860076764848",
+    "photo": "https://i.ebayimg.com/images/g/ZpEAAeSwVBRq2653/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:55.596054+00:00"
+  },
+  {
     "id": 661,
     "query": "j97 petrol",
     "source": "ebay",
@@ -29982,6 +29998,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-30T07:14:52.002539+00:00"
+  },
+  {
+    "id": 2303,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Mint Carhartt Detroit j43 BRG",
+    "price": 700.0,
+    "url": "https://www.grailed.com/listings/109839677",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6d5e5b2a6e8640a49380783362240c30",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:55.584165+00:00"
   },
   {
     "id": 1887,
