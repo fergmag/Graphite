@@ -8928,6 +8928,22 @@
     "created_at": "2026-10-15T03:10:01.952020+00:00"
   },
   {
+    "id": 2233,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men's (M/L) Faded Green Santa Fe Canvas Zip Up J14 Work",
+    "price": 234.94,
+    "url": "https://www.ebay.com/itm/840011066103",
+    "photo": "https://i.ebayimg.com/images/g/j5IAAeSwcRppbB7l/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T03:19:54.198683+00:00"
+  },
+  {
     "id": 2231,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -13854,6 +13870,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-30T19:14:12.203135+00:00"
+  },
+  {
+    "id": 2234,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "VTG Carhartt J22 MOS Detroit Jacket Mens XL Green Faded Distressed Workwear Y2K",
+    "price": 209.94,
+    "url": "https://www.ebay.com/itm/840049686417",
+    "photo": "https://i.ebayimg.com/images/g/G2QAAeSwfqRq2p3r/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T03:19:54.301096+00:00"
   },
   {
     "id": 2219,
