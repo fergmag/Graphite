@@ -8912,6 +8912,22 @@
     "created_at": "2026-10-15T03:10:01.952020+00:00"
   },
   {
+    "id": 2230,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men's (M/L) Faded Green Santa Fe Canvas Zip Up J14 Work",
+    "price": 234.94,
+    "url": "https://www.ebay.com/itm/840011066103",
+    "photo": "https://i.ebayimg.com/images/g/j5IAAeSwcRppbB7l/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T03:19:00.914388+00:00"
+  },
+  {
     "id": 2228,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -9694,6 +9710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:06:38.440453+00:00"
+  },
+  {
+    "id": 2229,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Distressed Vintage Carhartt hooded Jacket J06 Size Large Onyx",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/820267371959",
+    "photo": "https://i.ebayimg.com/images/g/6RAAAeSwtRdq2pg5/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T03:19:00.904702+00:00"
   },
   {
     "id": 1827,
