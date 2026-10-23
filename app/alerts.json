@@ -10128,6 +10128,22 @@
     "created_at": "2026-10-14T21:06:38.440453+00:00"
   },
   {
+    "id": 2294,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "vintage blanket lined carhartt detroit jacket",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/237140387678",
+    "photo": "https://i.ebayimg.com/images/g/91UAAeSw6Ulq28dR/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.199078+00:00"
+  },
+  {
     "id": 2291,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -15280,6 +15296,22 @@
     "created_at": "2026-10-03T01:14:57.804760+00:00"
   },
   {
+    "id": 2297,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J001-BLK Size Large Tall Excellent Cond Blanket Lined",
+    "price": 279.0,
+    "url": "https://www.ebay.com/itm/147644717229",
+    "photo": "https://i.ebayimg.com/images/g/6dYAAeSwyXJq1-w9/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.403651+00:00"
+  },
+  {
     "id": 2089,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -18670,6 +18702,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T07:14:52.803410+00:00"
+  },
+  {
+    "id": 2299,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Large Desert Tan Detroit Blanket Lined J97 DES USA ",
+    "price": 374.99,
+    "url": "https://www.ebay.com/itm/198739640201",
+    "photo": "https://i.ebayimg.com/images/g/aeEAAeSwRR5q25RB/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.612078+00:00"
   },
   {
     "id": 2286,
@@ -24464,6 +24512,22 @@
     "created_at": "2026-09-23T19:00:54.630658+00:00"
   },
   {
+    "id": 2298,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 PTL Men's Black Jacket Size XL Faded Blanket Lined",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/407312014436",
+    "photo": "https://i.ebayimg.com/images/g/KWcAAeSwcfZq276h/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.595161+00:00"
+  },
+  {
     "id": 2181,
     "query": "j97 petrol",
     "source": "ebay",
@@ -25182,6 +25246,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T07:14:00.625664+00:00"
+  },
+  {
+    "id": 2296,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 52 2XL J01 BLK Black NWT NOS",
+    "price": 349.0,
+    "url": "https://www.ebay.com/itm/880043228039",
+    "photo": "https://i.ebayimg.com/images/g/1wwAAeSw2JtqYfFz/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.300803+00:00"
   },
   {
     "id": 1981,
@@ -28864,6 +28944,22 @@
     "created_at": "2026-09-25T13:08:14.790879+00:00"
   },
   {
+    "id": 2293,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "00s Carhartt J97 Detroit PTL Petrol Blanket Lined Size L",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/109833842",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/87547558d501447cab66ad0fbf74c26a",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:07.828756+00:00"
+  },
+  {
     "id": 2048,
     "query": "j97 moss",
     "source": "ebay",
@@ -30432,6 +30528,22 @@
     "created_at": "2026-10-15T03:12:59.661724+00:00"
   },
   {
+    "id": 2295,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit x STUSSY Jacket Mens Large Petrol Gray Full-Zip J97 PTL",
+    "price": 758.94,
+    "url": "https://www.ebay.com/itm/960106395748",
+    "photo": "https://i.ebayimg.com/images/g/lVwAAeSwUwlq21bj/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:08.245094+00:00"
+  },
+  {
     "id": 1522,
     "query": "j97 moss",
     "source": "ebay",
@@ -31646,6 +31758,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-23T19:02:38.224565+00:00"
+  },
+  {
+    "id": 2292,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Thrashed Carhartt ‘J97 PTL’ Petrol Detroit Jacket",
+    "price": 1000.0,
+    "url": "https://www.grailed.com/listings/109839106",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/aa69b17f29bb466d9e0ce0d4d3458d6b",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:18:07.813815+00:00"
   },
   {
     "id": 1785,
