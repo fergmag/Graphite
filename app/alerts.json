@@ -1632,6 +1632,22 @@
     "created_at": "2026-10-09T01:13:09.806435+00:00"
   },
   {
+    "id": 2289,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 MOS Jacket | Vintage Detroit Workwear | Zip Up Canvas Utility Coat",
+    "price": 90.0,
+    "url": "https://www.etsy.com/listing/4601887797/carhartt-j97-mos-jacket-vintage-detroit",
+    "photo": "https://i.etsystatic.com/66460043/r/il/a6f92d/8778867071/il_570xN.8778867071_sy1a.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:17:19.002362+00:00"
+  },
+  {
     "id": 73,
     "query": "j65 blue",
     "source": "ebay",
@@ -10096,6 +10112,22 @@
     "created_at": "2026-10-14T21:06:38.440453+00:00"
   },
   {
+    "id": 2285,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "vintage blanket lined carhartt detroit jacket",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/237140387678",
+    "photo": "https://i.ebayimg.com/images/g/91UAAeSw6Ulq28dR/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:17:18.397157+00:00"
+  },
+  {
     "id": 2229,
     "query": "j43 onyx",
     "source": "ebay",
@@ -11870,6 +11902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-25T01:08:10.385111+00:00"
+  },
+  {
+    "id": 2287,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage 90’s JB105 Black Carhartt Detroit Jacket Men’s 44 Embroidered Logo NEW",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/840052091946",
+    "photo": "https://i.ebayimg.com/images/g/KVEAAeSwvjpq24KB/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:17:18.505549+00:00"
   },
   {
     "id": 2249,
@@ -18590,6 +18638,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T07:14:52.803410+00:00"
+  },
+  {
+    "id": 2286,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens Large Desert Tan Detroit Blanket Lined J97 DES USA ",
+    "price": 374.99,
+    "url": "https://www.ebay.com/itm/198739640201",
+    "photo": "https://i.ebayimg.com/images/g/aeEAAeSwRR5q25RB/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:17:18.415761+00:00"
   },
   {
     "id": 844,
@@ -25630,6 +25694,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T07:15:09.490221+00:00"
+  },
+  {
+    "id": 2288,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 Green MOS Vintage Jacket Size XL From 2003",
+    "price": 370.0,
+    "url": "https://www.ebay.com/itm/257813848128",
+    "photo": "https://i.ebayimg.com/images/g/DfYAAeSwcUtq25zK/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:17:18.807954+00:00"
   },
   {
     "id": 1234,
