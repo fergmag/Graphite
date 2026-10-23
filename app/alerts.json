@@ -736,6 +736,22 @@
     "created_at": "2026-10-21T15:14:15.955411+00:00"
   },
   {
+    "id": 2278,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt Canvas Jacket 376-51 Hooded Brown Insulated Duck Quilt Lined Men’s L",
+    "price": 69.66,
+    "url": "https://www.ebay.com/itm/257813412169",
+    "photo": "https://i.ebayimg.com/images/g/ieAAAeSwcdFq2jQI/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-23T21:13:31.547056+00:00"
+  },
+  {
     "id": 2191,
     "query": "j97 crimson",
     "source": "ebay",
