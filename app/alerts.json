@@ -32016,6 +32016,22 @@
     "created_at": "2026-10-15T03:11:43.342038+00:00"
   },
   {
+    "id": 2392,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J01 Men’s Canvas Work Jacket Green Lined Full Zip 38 Regular",
+    "price": 985.0,
+    "url": "https://www.ebay.com/itm/800773604080",
+    "photo": "https://i.ebayimg.com/images/g/7uMAAeSwdSxqyDBx/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T21:18:42.197358+00:00"
+  },
+  {
     "id": 1929,
     "query": "j97 moss",
     "source": "grailed",
