@@ -5968,6 +5968,22 @@
     "created_at": "2026-10-18T03:16:43.707384+00:00"
   },
   {
+    "id": 2351,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VTG Carhartt J140RED Mens Quilt Lined Canvas Active Jacket Small Regular Red",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/860077054362",
+    "photo": "https://i.ebayimg.com/images/g/mI4AAeSwFM9q28-I/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T09:16:38.307700+00:00"
+  },
+  {
     "id": 2220,
     "query": "j97 moss",
     "source": "ebay",
