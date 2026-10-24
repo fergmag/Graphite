@@ -992,6 +992,22 @@
     "created_at": "2026-10-21T15:14:15.968600+00:00"
   },
   {
+    "id": 2321,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Burgundy Rain Defender Relaxed Fit Heavyweight Jacket W/hood Mens Med",
+    "price": 74.99,
+    "url": "https://www.ebay.com/itm/800603012699",
+    "photo": "https://i.ebayimg.com/images/g/elAAAeSwoxhqmGck/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T03:17:50.410082+00:00"
+  },
+  {
     "id": 42,
     "query": "ju1005",
     "source": "ebay",
@@ -11824,6 +11840,22 @@
     "created_at": "2026-09-25T01:08:10.385111+00:00"
   },
   {
+    "id": 2322,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "CARHARTT  C10BRG WORK COAT WITH (UNITED GARMENT WORKERS OF AMERICA TAG)",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/960107042632",
+    "photo": "https://i.ebayimg.com/images/g/B-gAAeSwZe9q2-3h/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T03:17:50.498562+00:00"
+  },
+  {
     "id": 2310,
     "query": "j97 crimson",
     "source": "ebay",
@@ -12206,6 +12238,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:09:05.323959+00:00"
+  },
+  {
+    "id": 2319,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "VTG Made in USA Carhartt J01 BLK Black Blanket Lined Detroit Jacket 36 Regular",
+    "price": 308.98,
+    "url": "https://www.ebay.com/itm/366757365733",
+    "photo": "https://i.ebayimg.com/images/g/hWkAAeSw~0pq3AFg/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T03:17:50.274935+00:00"
   },
   {
     "id": 2316,
@@ -24174,6 +24222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T19:15:27.697377+00:00"
+  },
+  {
+    "id": 2320,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1999 Carhartt J06BRG Sandstone Active Jacket 2XL Burgundy Hooded Quilted",
+    "price": 299.97,
+    "url": "https://www.ebay.com/itm/318909135057",
+    "photo": "https://i.ebayimg.com/images/g/9RYAAeSwYxRqtBT8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T03:17:50.398216+00:00"
   },
   {
     "id": 2298,
