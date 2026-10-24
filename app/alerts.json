@@ -5408,6 +5408,22 @@
     "created_at": "2026-09-29T19:14:08.912498+00:00"
   },
   {
+    "id": 2365,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens Large Brown Blanket Lined Duck Canvas Work NWT 1038",
+    "price": 162.81,
+    "url": "https://www.ebay.com/itm/128135225813",
+    "photo": "https://i.ebayimg.com/images/g/JxsAAeSwq1ppuiWe/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-24T15:13:56.458027+00:00"
+  },
+  {
     "id": 2279,
     "query": "j65 blue",
     "source": "ebay",
