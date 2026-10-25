@@ -8048,6 +8048,22 @@
     "created_at": "2026-09-27T07:14:44.416523+00:00"
   },
   {
+    "id": 2459,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "2000’s Carhartt J97 PTL Blanket Lined Duck Canvas Jacket Blue XLT Big & Tall Zip",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/820277161074",
+    "photo": "https://i.ebayimg.com/images/g/l9QAAeSw7Vdq3mqJ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T21:18:04.403520+00:00"
+  },
+  {
     "id": 2453,
     "query": "j97 crimson",
     "source": "ebay",
@@ -29310,6 +29326,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-18T03:18:33.300539+00:00"
+  },
+  {
+    "id": 2458,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens J97 PTL Sz Large Blanket Lined Petrol Grey",
+    "price": 574.95,
+    "url": "https://www.ebay.com/itm/398216357151",
+    "photo": "https://i.ebayimg.com/images/g/WbkAAOSwH5pkw~Jt/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T21:18:04.304876+00:00"
   },
   {
     "id": 1401,
