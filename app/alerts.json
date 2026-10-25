@@ -5648,6 +5648,22 @@
     "created_at": "2026-09-29T19:14:08.912498+00:00"
   },
   {
+    "id": 2465,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens Large Brown Blanket Lined Duck Canvas Work NWT 1038",
+    "price": 162.81,
+    "url": "https://www.ebay.com/itm/128135225813",
+    "photo": "https://i.ebayimg.com/images/g/JxsAAeSwq1ppuiWe/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T21:19:23.217433+00:00"
+  },
+  {
     "id": 2365,
     "query": "j65 brick",
     "source": "ebay",
@@ -6206,6 +6222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-23T15:13:31.337037+00:00"
+  },
+  {
+    "id": 2464,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens Size L Workwear Distressed USA Grunge",
+    "price": 174.99,
+    "url": "https://www.ebay.com/itm/206651833837",
+    "photo": "https://i.ebayimg.com/images/g/YnsAAeSwxqFq3W8a/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T21:19:23.206319+00:00"
   },
   {
     "id": 2418,
@@ -15678,6 +15710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-24T21:19:14.495493+00:00"
+  },
+  {
+    "id": 2463,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Active Jacket Mens XL Hunter Green Quilted Lined USA J06 HTG",
+    "price": 240.95,
+    "url": "https://www.ebay.com/itm/307248924392",
+    "photo": "https://i.ebayimg.com/images/g/CLoAAeSwZzlq3i7q/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T21:19:22.903519+00:00"
   },
   {
     "id": 2118,
