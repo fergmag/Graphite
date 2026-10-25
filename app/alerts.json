@@ -5088,6 +5088,22 @@
     "created_at": "2026-10-23T15:19:02.503181+00:00"
   },
   {
+    "id": 2435,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt brown arctic work wear jacket",
+    "price": 154.98000000000002,
+    "url": "https://www.ebay.com/itm/407230521436",
+    "photo": "https://i.ebayimg.com/images/g/W~IAAeSwM0NqrzRq/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-25T15:15:57.368079+00:00"
+  },
+  {
     "id": 207,
     "query": "jq2472",
     "source": "ebay",
