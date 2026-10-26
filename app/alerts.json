@@ -2272,6 +2272,22 @@
     "created_at": "2026-10-14T21:09:27.954981+00:00"
   },
   {
+    "id": 2006,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt Mens Navy Blue Duck Canvas Quilted Flannel Lined Active Jacket Large L",
+    "price": 123.5,
+    "url": "https://www.ebay.com/itm/327415318771",
+    "photo": "https://i.ebayimg.com/images/g/MGgAAeSwollqsIsJ/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:59:19.055031+00:00"
+  },
+  {
     "id": 2002,
     "query": "jb1236",
     "source": "ebay",
@@ -6702,6 +6718,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:55:59.987816+00:00"
+  },
+  {
+    "id": 2005,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt Active Jacket Quilt Lined Mens XL J140 DKR Dark Red NWT NOS",
+    "price": 249.0,
+    "url": "https://www.ebay.com/itm/880035956130",
+    "photo": "https://i.ebayimg.com/images/g/p98AAeSw6Rlqh5-3/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:59:19.048610+00:00"
   },
   {
     "id": 399,
@@ -12190,6 +12222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:08:25.701727+00:00"
+  },
+  {
+    "id": 2003,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt J68BRK Active Jacket quilted flannel Duck Canvas Brick Red Mens Large",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/920051781024",
+    "photo": "https://i.ebayimg.com/images/g/hvwAAeSwE5lq1R35/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:59:19.034769+00:00"
   },
   {
     "id": 2001,
@@ -24942,6 +24990,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T01:14:08.311430+00:00"
+  },
+  {
+    "id": 2004,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt JB1215 Detroit Jacket Size Large Made in USA Blue Rare",
+    "price": 1024.99,
+    "url": "https://www.ebay.com/itm/128146830472",
+    "photo": "https://i.ebayimg.com/images/g/GpgAAeSwADJqwc4a/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:59:19.041837+00:00"
   },
   {
     "id": 1961,
