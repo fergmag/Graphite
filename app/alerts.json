@@ -9616,6 +9616,22 @@
     "created_at": "2026-10-15T03:09:20.779867+00:00"
   },
   {
+    "id": 2026,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J14BLU Men's XL Regular Blue Canvas Lined Full Zip Bomber Jacket",
+    "price": 420.0,
+    "url": "https://www.ebay.com/itm/840043426738",
+    "photo": "https://i.ebayimg.com/images/g/M7gAAeSw5V9q2Ex3/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T22:53:35.072239+00:00"
+  },
+  {
     "id": 585,
     "query": "j97 crimson",
     "source": "etsy",
