@@ -6032,6 +6032,22 @@
     "created_at": "2026-10-16T09:10:16.253953+00:00"
   },
   {
+    "id": 2468,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt blue hooded work wear jacket",
+    "price": 174.98000000000002,
+    "url": "https://www.ebay.com/itm/407200447980",
+    "photo": "https://i.ebayimg.com/images/g/y0MAAeSwK41qn2AE/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T03:13:33.536901+00:00"
+  },
+  {
     "id": 2349,
     "query": "j65 blue",
     "source": "ebay",
@@ -33806,6 +33822,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T09:12:15.049460+00:00"
+  },
+  {
+    "id": 2467,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket JB0873 Mocha Brown Blanket Lined Size Medium RARE",
+    "price": 1950.0,
+    "url": "https://www.ebay.com/itm/900040773996",
+    "photo": "https://i.ebayimg.com/images/g/KvoAAeSwwvJq3p-m/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T03:13:33.523965+00:00"
   },
   {
     "id": 1695,
