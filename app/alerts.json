@@ -880,6 +880,22 @@
     "created_at": "2026-10-15T15:09:43.655860+00:00"
   },
   {
+    "id": 2514,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "2012 Carhartt J130 Frontier Brown Active Jacket Medium Quilted Hood Workwear",
+    "price": 72.0,
+    "url": "https://www.ebay.com/itm/900041113888",
+    "photo": "https://i.ebayimg.com/images/g/6CEAAeSwh9lq3s8l/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T15:15:40.009315+00:00"
+  },
+  {
     "id": 39,
     "query": "jb0873",
     "source": "ebay",
@@ -4990,6 +5006,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:17:33.016609+00:00"
+  },
+  {
+    "id": 2515,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt Jacket J130 ARG Army Green Mens Size XL Tall Hood Lined EUC",
+    "price": 150.85,
+    "url": "https://www.ebay.com/itm/287678107531",
+    "photo": "https://i.ebayimg.com/images/g/FTcAAeSwlYBq3fHH/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T15:15:40.016093+00:00"
   },
   {
     "id": 2140,
