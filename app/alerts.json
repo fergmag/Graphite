@@ -528,6 +528,22 @@
     "created_at": "2026-10-15T15:09:43.655860+00:00"
   },
   {
+    "id": 1771,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "2012 Carhartt J130 Frontier Brown Active Jacket Medium Quilted Hood Workwear",
+    "price": 72.0,
+    "url": "https://www.ebay.com/itm/900041113888",
+    "photo": "https://i.ebayimg.com/images/g/6CEAAeSwh9lq3s8l/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.136441+00:00"
+  },
+  {
     "id": 39,
     "query": "jb0873",
     "source": "ebay",
@@ -1358,6 +1374,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:08:25.661979+00:00"
+  },
+  {
+    "id": 1776,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt J11 DST Denim Blanket Lined Jean Jacket Trucker Jacket Size XL",
+    "price": 99.95,
+    "url": "https://www.etsy.com/listing/4525444600/vintage-carhartt-j11-dst-denim-blanket",
+    "photo": "https://i.etsystatic.com/27240758/r/il/7b03e7/8161496130/il_570xN.8161496130_n81y.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.278393+00:00"
   },
   {
     "id": 95,
@@ -2814,6 +2846,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:17:33.016609+00:00"
+  },
+  {
+    "id": 1772,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt Jacket J130 ARG Army Green Mens Size XL Tall Hood Lined EUC",
+    "price": 150.85,
+    "url": "https://www.ebay.com/itm/287678107531",
+    "photo": "https://i.ebayimg.com/images/g/FTcAAeSwlYBq3fHH/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.144586+00:00"
   },
   {
     "id": 207,
@@ -5678,6 +5726,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-26T01:06:44.693806+00:00"
+  },
+  {
+    "id": 1774,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130 BLK Jacket Mens Large TALL Black Fleece Insulated Vintage",
+    "price": 241.94,
+    "url": "https://www.ebay.com/itm/257810678576",
+    "photo": "https://i.ebayimg.com/images/g/frMAAeSw54xqIIme/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.182511+00:00"
   },
   {
     "id": 398,
@@ -15136,6 +15200,22 @@
     "created_at": "2026-10-16T09:09:56.844829+00:00"
   },
   {
+    "id": 1775,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Carhartt Mens Vintage Denim Jacket J139-DST 2XL Hooded Lined ASAP Rocky",
+    "price": 225.0,
+    "url": "https://www.etsy.com/listing/4578828338/carhartt-mens-vintage-denim-jacket-j139",
+    "photo": "https://i.etsystatic.com/64464969/r/il/d9cca1/8549795838/il_570xN.8549795838_n7k8.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.270907+00:00"
+  },
+  {
     "id": 1114,
     "query": "j97 petrol",
     "source": "ebay",
@@ -20734,6 +20814,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T15:10:02.245729+00:00"
+  },
+  {
+    "id": 1773,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "RARE GRAIL Vtg 2000 Carhartt Denim Detroit Blue Jacket XL J110DST Made in USA ",
+    "price": 865.0,
+    "url": "https://www.ebay.com/itm/267600484443",
+    "photo": "https://i.ebayimg.com/images/g/-FMAAeSwAHNpsM6Y/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:04.174908+00:00"
   },
   {
     "id": 1769,
