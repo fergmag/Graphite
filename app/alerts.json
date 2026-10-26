@@ -5520,6 +5520,22 @@
     "created_at": "2026-09-27T07:14:44.416523+00:00"
   },
   {
+    "id": 2064,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket L J165 MOS Green Detroit Corduroy Collar USA Distressed",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/147652990289",
+    "photo": "https://i.ebayimg.com/images/g/fzQAAeSwJRhq360l/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T22:59:24.131271+00:00"
+  },
+  {
     "id": 1915,
     "query": "j97 petrol",
     "source": "ebay",
