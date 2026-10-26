@@ -2592,6 +2592,22 @@
     "created_at": "2026-10-26T16:52:54.230295+00:00"
   },
   {
+    "id": 1783,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Work In Progress Men’s Active Jacket Size Large Green, Quilted, Hooded",
+    "price": 142.98000000000002,
+    "url": "https://www.ebay.com/itm/940023867151",
+    "photo": "https://i.ebayimg.com/images/g/2ZoAAeSwS09q1Va7/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:26.334000+00:00"
+  },
+  {
     "id": 182,
     "query": "j97 crimson",
     "source": "ebay",
@@ -20478,6 +20494,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:06:22.429909+00:00"
+  },
+  {
+    "id": 1782,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Vintage Carhartt JP1017 Graphite Aztec Sherpa Lined Distressed Jacket XL US",
+    "price": 750.0,
+    "url": "https://www.ebay.com/itm/168802053569",
+    "photo": "https://i.ebayimg.com/images/g/jrwAAeSwgAlq1XOW/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:26.323094+00:00"
   },
   {
     "id": 1520,
