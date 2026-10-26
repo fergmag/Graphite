@@ -2496,6 +2496,22 @@
     "created_at": "2026-10-09T01:11:09.509822+00:00"
   },
   {
+    "id": 1745,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "NWT Carhartt Firm Duck Insulated Jacket Mens L Brown Flannel Lined Loose Hooded",
+    "price": 142.85000000000002,
+    "url": "https://www.ebay.com/itm/377479045408",
+    "photo": "https://i.ebayimg.com/images/g/8TQAAeSwezBqnsmM/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:52:54.230295+00:00"
+  },
+  {
     "id": 182,
     "query": "j97 crimson",
     "source": "ebay",
@@ -3408,6 +3424,22 @@
     "created_at": "2026-10-16T09:10:16.253953+00:00"
   },
   {
+    "id": 1748,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt grey hooded work wear jacket",
+    "price": 174.98000000000002,
+    "url": "https://www.ebay.com/itm/407109248760",
+    "photo": "https://i.ebayimg.com/images/g/CtUAAeSwlDZqa9ey/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:52:54.257974+00:00"
+  },
+  {
     "id": 253,
     "query": "j76 cement",
     "source": "ebay",
@@ -4174,6 +4206,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:15:16.212811+00:00"
+  },
+  {
+    "id": 1746,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt black flannel lined hooded work wear jacket",
+    "price": 194.98000000000002,
+    "url": "https://www.ebay.com/itm/407314305193",
+    "photo": "https://i.ebayimg.com/images/g/b~4AAeSw6bdq3VLk/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:52:54.240052+00:00"
   },
   {
     "id": 304,
@@ -21792,6 +21840,22 @@
     "created_at": "2026-10-06T01:12:49.007036+00:00"
   },
   {
+    "id": 1747,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket JB0873 Canvas Blanket Lined USA Made Brown Mens 2XL",
+    "price": 1308.62,
+    "url": "https://www.ebay.com/itm/327410187731",
+    "photo": "https://i.ebayimg.com/images/g/RnAAAeSwR7pqg7FN/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:52:54.247958+00:00"
+  },
+  {
     "id": 1654,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -22350,6 +22414,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T09:12:15.049460+00:00"
+  },
+  {
+    "id": 1744,
+    "query": "jb0873",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket JB0873 Mocha Brown Blanket Lined Size Medium RARE",
+    "price": 1950.0,
+    "url": "https://www.ebay.com/itm/900040773996",
+    "photo": "https://i.ebayimg.com/images/g/KvoAAeSwwvJq3p-m/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:52:54.221107+00:00"
   },
   {
     "id": 1695,
