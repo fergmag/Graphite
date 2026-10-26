@@ -544,6 +544,22 @@
     "created_at": "2026-10-14T21:09:28.048368+00:00"
   },
   {
+    "id": 2000,
+    "query": "j43 hunter green",
+    "source": "etsy",
+    "title": "Vintage 90s Carhartt J43 HTG Blue Detroit Jacket Men&#39;s Medium Workwear Coat",
+    "price": 70.0,
+    "url": "https://www.etsy.com/listing/4600993829/vintage-90s-carhartt-j43-htg-blue",
+    "photo": "https://i.etsystatic.com/68367087/r/il/6184af/8723363148/il_570xN.8723363148_ni7v.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:57.069603+00:00"
+  },
+  {
     "id": 1913,
     "query": "j97 petrol",
     "source": "etsy",
@@ -830,6 +846,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:06:11.508375+00:00"
+  },
+  {
+    "id": 1980,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Faded Distressed Jacket Size XL Duck Canvas J130 BRN Quilted Lined",
+    "price": 79.99,
+    "url": "https://www.ebay.com/itm/860085473078",
+    "photo": "https://i.ebayimg.com/images/g/U0oAAeSwJf9qKDtp/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.487509+00:00"
   },
   {
     "id": 1959,
@@ -3968,6 +4000,38 @@
     "created_at": "2026-10-26T16:52:54.257974+00:00"
   },
   {
+    "id": 1993,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J131 Red Duck Canvas Faded Hooded Jacket USA XL",
+    "price": 174.99,
+    "url": "https://www.ebay.com/itm/860085857178",
+    "photo": "https://i.ebayimg.com/images/g/1qoAAeSw5ktq326m/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.789760+00:00"
+  },
+  {
+    "id": 1985,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens Size L Workwear Distressed USA Grunge",
+    "price": 174.99,
+    "url": "https://www.ebay.com/itm/206651833837",
+    "photo": "https://i.ebayimg.com/images/g/YnsAAeSwxqFq3W8a/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.597246+00:00"
+  },
+  {
     "id": 1758,
     "query": "j65 blue",
     "source": "ebay",
@@ -4334,6 +4398,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:55:15.523864+00:00"
+  },
+  {
+    "id": 1987,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt J14 DTL Santa Fe Jacket Large Rare Dark Teal USA Made",
+    "price": 184.75,
+    "url": "https://www.ebay.com/itm/920053086987",
+    "photo": "https://i.ebayimg.com/images/g/v90AAeSwOGhq1bxo/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.680063+00:00"
   },
   {
     "id": 1962,
@@ -5744,6 +5824,22 @@
     "created_at": "2026-10-05T01:14:03.512408+00:00"
   },
   {
+    "id": 1984,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vtg Carhartt Faded Hunter Green Distressed Active Hooded Jacket L Reg",
+    "price": 214.0,
+    "url": "https://www.ebay.com/itm/398293652497",
+    "photo": "https://i.ebayimg.com/images/g/2xUAAeSw1yVqgjxa/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.589968+00:00"
+  },
+  {
     "id": 354,
     "query": "j97 petrol",
     "source": "etsy",
@@ -6414,6 +6510,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:01.952020+00:00"
+  },
+  {
+    "id": 1992,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men's (M/L) Faded Green Santa Fe Canvas Zip Up J14 Work",
+    "price": 234.94,
+    "url": "https://www.ebay.com/itm/840011066103",
+    "photo": "https://i.ebayimg.com/images/g/j5IAAeSwcRppbB7l/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.782873+00:00"
   },
   {
     "id": 391,
@@ -12224,6 +12336,22 @@
     "created_at": "2026-10-26T16:53:56.621820+00:00"
   },
   {
+    "id": 1998,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "NWT Carhartt J001 BLK 125 Anniversary Blanket Lined Canvas Detroit Jacket Size M",
+    "price": 488.88,
+    "url": "https://www.ebay.com/itm/206641698180",
+    "photo": "https://i.ebayimg.com/images/g/A3UAAeSwk8Jq19ef/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.969914+00:00"
+  },
+  {
     "id": 1972,
     "query": "j43 onyx",
     "source": "ebay",
@@ -13984,6 +14112,22 @@
     "created_at": "2026-10-17T03:12:52.948521+00:00"
   },
   {
+    "id": 1983,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43 HTG Men's L Regular Blanket Lined Full Detroit jacket",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/318917522518",
+    "photo": "https://i.ebayimg.com/images/g/SpcAAeSwvOBqtrcH/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.578128+00:00"
+  },
+  {
     "id": 893,
     "query": "j76 moss",
     "source": "grailed",
@@ -14350,6 +14494,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T19:14:25.008583+00:00"
+  },
+  {
+    "id": 1996,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Jacket J43HTG 90's USA Mens L RARE Blanket Patch Faded",
+    "price": 559.0,
+    "url": "https://www.ebay.com/itm/287656331690",
+    "photo": "https://i.ebayimg.com/images/g/G68AAeSwO7xpJd7-/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.874794+00:00"
+  },
+  {
+    "id": 1995,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "NWT Carhartt Detroit Jacket 6BLJ Blanket Lined Vintage Brown Duck Size 46 USA",
+    "price": 593.4,
+    "url": "https://www.ebay.com/itm/117482583796",
+    "photo": "https://i.ebayimg.com/images/g/wjkAAeSwrclqEaaR/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.807050+00:00"
   },
   {
     "id": 917,
@@ -15454,6 +15630,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:51.848757+00:00"
+  },
+  {
+    "id": 1994,
+    "query": "j43 hunter green",
+    "source": "etsy",
+    "title": "Vintage Carhartt J43 HTG Detroit Jacket Hunter Green Men’s XL Faded Distressed",
+    "price": 420.0,
+    "url": "https://www.etsy.com/listing/4596391076/vintage-carhartt-j43-htg-detroit-jacket",
+    "photo": "https://i.etsystatic.com/68200999/r/il/f12420/8792514791/il_570xN.8792514791_a1yy.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.799243+00:00"
   },
   {
     "id": 998,
@@ -16672,6 +16864,22 @@
     "created_at": "2026-10-01T01:14:13.817135+00:00"
   },
   {
+    "id": 1990,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 HTG Hunter Green",
+    "price": 670.0,
+    "url": "https://www.ebay.com/itm/147583134324",
+    "photo": "https://i.ebayimg.com/images/g/vOcAAeSwOZRqrAlo/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.704347+00:00"
+  },
+  {
     "id": 1780,
     "query": "jq2472",
     "source": "ebay",
@@ -16718,6 +16926,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:12:38.014910+00:00"
+  },
+  {
+    "id": 1991,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Jacket Mens 3XL Hunter Green Detroit Canvas Blanket Lined USA J43HTG",
+    "price": 749.99,
+    "url": "https://www.ebay.com/itm/177535640843",
+    "photo": "https://i.ebayimg.com/images/g/VIkAAeSwLxVpBBQC/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.775588+00:00"
   },
   {
     "id": 1743,
@@ -19392,6 +19616,22 @@
     "created_at": "2026-10-02T01:14:54.615434+00:00"
   },
   {
+    "id": 1982,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens 2 X L  J43 HTG Hunter Green",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/117472206961",
+    "photo": "https://i.ebayimg.com/images/g/aGwAAeSwgdxq1EMc/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.500461+00:00"
+  },
+  {
     "id": 1255,
     "query": "j76 moss",
     "source": "ebay",
@@ -20638,6 +20878,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:15:16.102309+00:00"
+  },
+  {
+    "id": 1978,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43 HTG Detroit Jacket Vintage 90s Hunter Green Blanket Lined USA Sz Xl",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/398419014601",
+    "photo": "https://i.ebayimg.com/images/g/6vIAAeSwP-hqrJia/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.452767+00:00"
   },
   {
     "id": 1349,
@@ -22448,6 +22704,22 @@
     "created_at": "2026-10-16T03:11:45.927605+00:00"
   },
   {
+    "id": 1979,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43 HTG Sandstone Detroit Jacket XXL Hunter Green Blanket Lined VTG 90s",
+    "price": 666.98,
+    "url": "https://www.ebay.com/itm/327420362607",
+    "photo": "https://i.ebayimg.com/images/g/~hUAAeSwsp9q2-AZ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.472262+00:00"
+  },
+  {
     "id": 1810,
     "query": "j97 moss",
     "source": "grailed",
@@ -23264,6 +23536,22 @@
     "created_at": "2026-10-16T03:06:22.429909+00:00"
   },
   {
+    "id": 1999,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit J43 HTG FADED size Large Vintage 90s USA rare Color And Size",
+    "price": 750.0,
+    "url": "https://www.ebay.com/itm/236641182182",
+    "photo": "https://i.ebayimg.com/images/g/SlEAAeSw2iRplLuH/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.977573+00:00"
+  },
+  {
     "id": 1879,
     "query": "j97 petrol",
     "source": "grailed",
@@ -23486,6 +23774,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-26T19:03:37.169579+00:00"
+  },
+  {
+    "id": 1981,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90’s Carhartt J43 HTG Detroit jacket USA Made size XL Tall Hunter Green",
+    "price": 799.99,
+    "url": "https://www.ebay.com/itm/366677489673",
+    "photo": "https://i.ebayimg.com/images/g/QigAAeSwnBxpdR2U/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.494049+00:00"
   },
   {
     "id": 1532,
@@ -24048,6 +24352,22 @@
     "created_at": "2026-10-15T03:13:14.649022+00:00"
   },
   {
+    "id": 1988,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Wool-Lined Detroit Jacket “Hunter Green” J43 HTG Men's XL",
+    "price": 949.99,
+    "url": "https://www.ebay.com/itm/327368379930",
+    "photo": "https://i.ebayimg.com/images/g/XaYAAeSwR2JqsX2J/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.690651+00:00"
+  },
+  {
     "id": 1570,
     "query": "j97 moss",
     "source": "ebay",
@@ -24222,6 +24542,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T07:15:03.510525+00:00"
+  },
+  {
+    "id": 1989,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Wool-Lined Detroit Jacket “Hunter Green” J43 HTG Men's XL",
+    "price": 999.99,
+    "url": "https://www.ebay.com/itm/327368367230",
+    "photo": "https://i.ebayimg.com/images/g/MwMAAeSwpN5qhJyS/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.697834+00:00"
   },
   {
     "id": 1960,
@@ -24752,6 +25088,22 @@
     "created_at": "2026-10-15T03:10:01.395609+00:00"
   },
   {
+    "id": 1986,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Wool-Lined Detroit Jacket “Hunter Green” J43 HTG Men’s XL",
+    "price": 1099.99,
+    "url": "https://www.ebay.com/itm/327368367783",
+    "photo": "https://i.ebayimg.com/images/g/uxYAAeSwpN5qhJGq/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.670852+00:00"
+  },
+  {
     "id": 1614,
     "query": "j97 moss",
     "source": "grailed",
@@ -25006,6 +25358,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:08:36.626467+00:00"
+  },
+  {
+    "id": 1997,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Duck Blanket-Lined Detroit Jacket Mens Medium J43 HTG",
+    "price": 1199.99,
+    "url": "https://www.ebay.com/itm/407287668867",
+    "photo": "https://i.ebayimg.com/images/g/Li8AAeSwW2dqsU7b/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.882186+00:00"
   },
   {
     "id": 1766,
@@ -25694,6 +26062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:32.506522+00:00"
+  },
+  {
+    "id": 1977,
+    "query": "j43 hunter green",
+    "source": "grailed",
+    "title": "Distressed Vintage Carhartt Detroit J43 HTG",
+    "price": 1500.0,
+    "url": "https://www.grailed.com/listings/106871076",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/729ce74c288c4c518ff8a3ea8ca07e6f",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:58:56.440063+00:00"
   },
   {
     "id": 1672,
