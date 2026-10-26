@@ -192,6 +192,22 @@
     "created_at": "2026-10-14T21:10:09.339175+00:00"
   },
   {
+    "id": 1870,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Hooded Fleece Lined Flannel Shacket Jacket Burgundy Check Large L",
+    "price": 45.46,
+    "url": "https://www.ebay.com/itm/840028134447",
+    "photo": "https://i.ebayimg.com/images/g/tK4AAeSw5WJpr-j8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.984382+00:00"
+  },
+  {
     "id": 17,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -638,6 +654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:17:03.264359+00:00"
+  },
+  {
+    "id": 1869,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Burgundy Rain Defender Relaxed Fit Heavyweight Jacket W/hood Mens Med",
+    "price": 74.99,
+    "url": "https://www.ebay.com/itm/800603012699",
+    "photo": "https://i.ebayimg.com/images/g/elAAAeSwoxhqmGck/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.973163+00:00"
   },
   {
     "id": 42,
@@ -2608,6 +2640,22 @@
     "created_at": "2026-10-17T15:10:59.443546+00:00"
   },
   {
+    "id": 1861,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Custom Dyed Burgundy Blanket Lined Chore Coat Jacket Boxy XL",
+    "price": 138.98000000000002,
+    "url": "https://www.ebay.com/itm/840031502543",
+    "photo": "https://i.ebayimg.com/images/g/SFYAAeSwrElq08Ou/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.783360+00:00"
+  },
+  {
     "id": 173,
     "query": "jb0866",
     "source": "ebay",
@@ -3054,6 +3102,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:20.677889+00:00"
+  },
+  {
+    "id": 1859,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men’s eggplant purple burgundy Work Jacket Corduroy Collar Zip XL",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/800821227127",
+    "photo": "https://i.ebayimg.com/images/g/il8AAeSw7BNqmYz0/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.764284+00:00"
   },
   {
     "id": 202,
@@ -4142,6 +4206,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:09:53.843415+00:00"
+  },
+  {
+    "id": 1863,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Black J97 Carhartt Detroit Work Jacket",
+    "price": 185.5,
+    "url": "https://www.ebay.com/itm/198724016908",
+    "photo": "https://i.ebayimg.com/images/g/kV4AAeSwaulq1Cyo/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.797546+00:00"
   },
   {
     "id": 274,
@@ -5824,6 +5904,38 @@
     "created_at": "2026-10-17T03:09:59.847700+00:00"
   },
   {
+    "id": 1867,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Burgundy Wine Red Men’s XL Carhartt Hooded Jacket Vintage JQ246",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287594010157",
+    "photo": "https://i.ebayimg.com/images/g/7CcAAeSwLgNqrTAu/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.879245+00:00"
+  },
+  {
+    "id": 1864,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BLK Blanket Lined Black Detroit Jacket Mens Size Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287659624865",
+    "photo": "https://i.ebayimg.com/images/g/ymMAAeSwhbxq1r2K/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.803971+00:00"
+  },
+  {
     "id": 1847,
     "query": "j97 moss",
     "source": "ebay",
@@ -6046,6 +6158,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:08:36.766554+00:00"
+  },
+  {
+    "id": 1866,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Santa Fe Jacket “Burgundy” J14 BRG Men’s Large",
+    "price": 239.99,
+    "url": "https://www.ebay.com/itm/327415863266",
+    "photo": "https://i.ebayimg.com/images/g/MFEAAeSwQe1qhIS5/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.870989+00:00"
   },
   {
     "id": 395,
@@ -6976,6 +7104,22 @@
     "created_at": "2026-10-15T03:09:20.261333+00:00"
   },
   {
+    "id": 1875,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BRN Detroit Blanket Lined Medium Faded Distressed Work Wear",
+    "price": 264.9,
+    "url": "https://www.ebay.com/itm/137861032477",
+    "photo": "https://i.ebayimg.com/images/g/1w0AAeSwsbFq1-XG/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:57:00.183078+00:00"
+  },
+  {
     "id": 1836,
     "query": "j97 moss",
     "source": "ebay",
@@ -7568,6 +7712,22 @@
     "created_at": "2026-10-03T19:14:04.910494+00:00"
   },
   {
+    "id": 1860,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Santa Fe Jacket Burgundy Plum Faded Workwear 25\" Pit to Pit",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/840046100116",
+    "photo": "https://i.ebayimg.com/images/g/jSQAAeSw73pq2Unw/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.774712+00:00"
+  },
+  {
     "id": 1806,
     "query": "j97 crimson",
     "source": "ebay",
@@ -7614,6 +7774,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-27T07:13:17.803348+00:00"
+  },
+  {
+    "id": 1872,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "CARHARTT  C10BRG WORK COAT WITH (UNITED GARMENT WORKERS OF AMERICA TAG)",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/960107042632",
+    "photo": "https://i.ebayimg.com/images/g/B-gAAeSwZe9q2-3h/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:57:00.070091+00:00"
   },
   {
     "id": 1794,
@@ -8688,6 +8864,22 @@
     "created_at": "2026-10-15T03:08:25.672340+00:00"
   },
   {
+    "id": 1862,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt  adult  Medium Burgundy Cotton Duck Canvas Blanket Lined Trucker",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/168801423087",
+    "photo": "https://i.ebayimg.com/images/g/InsAAeSwnRBq1RA4/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.790159+00:00"
+  },
+  {
     "id": 578,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -9712,6 +9904,22 @@
     "created_at": "2026-10-09T01:16:06.096765+00:00"
   },
   {
+    "id": 1873,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J06BRG Hooded Jacket Burgandy Quilted Lined USA XL Regular",
+    "price": 230.67000000000002,
+    "url": "https://www.ebay.com/itm/318883407571",
+    "photo": "https://i.ebayimg.com/images/g/pnwAAeSwMyBqrB3s/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:57:00.090259+00:00"
+  },
+  {
     "id": 646,
     "query": "jr0115",
     "source": "ebay",
@@ -9806,6 +10014,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T13:15:07.103462+00:00"
+  },
+  {
+    "id": 1871,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Faded Carhartt Jacket J97 Tan Detroit Jacket Blanket Lined Size XL",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/147647784619",
+    "photo": "https://i.ebayimg.com/images/g/lAgAAeSwELlq2nI8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.991274+00:00"
   },
   {
     "id": 653,
@@ -16144,6 +16368,22 @@
     "created_at": "2026-10-26T16:55:04.270907+00:00"
   },
   {
+    "id": 1865,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J130 DKR 2XL Duck Jacket Red Burgundy Hooded Workwear",
+    "price": 229.95,
+    "url": "https://www.ebay.com/itm/198745378276",
+    "photo": "https://i.ebayimg.com/images/g/~7wAAeSwK9Nq3ny3/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.811312+00:00"
+  },
+  {
     "id": 1114,
     "query": "j97 petrol",
     "source": "ebay",
@@ -16750,6 +16990,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T19:15:27.697377+00:00"
+  },
+  {
+    "id": 1868,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1999 Carhartt J06BRG Sandstone Active Jacket 2XL Burgundy Hooded Quilted",
+    "price": 299.97,
+    "url": "https://www.ebay.com/itm/318909135057",
+    "photo": "https://i.ebayimg.com/images/g/9RYAAeSwYxRqtBT8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:56:59.893363+00:00"
   },
   {
     "id": 1151,
@@ -22782,6 +23038,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T01:14:08.311430+00:00"
+  },
+  {
+    "id": 1874,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 BRG Burgundy Blanket Lined J43 brg Mens L",
+    "price": 1024.99,
+    "url": "https://www.ebay.com/itm/128149788445",
+    "photo": "https://i.ebayimg.com/images/g/5IIAAeSwI-dq2ap8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:57:00.176410+00:00"
   },
   {
     "id": 1604,
