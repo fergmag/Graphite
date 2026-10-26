@@ -22368,6 +22368,22 @@
     "created_at": "2026-10-01T19:15:44.203962+00:00"
   },
   {
+    "id": 2525,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Detroit  Desert Grey Distressed Work Jacket Large",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/267813191266",
+    "photo": "https://i.ebayimg.com/images/g/b20AAeSwF-5qzv45/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T15:18:41.797365+00:00"
+  },
+  {
     "id": 985,
     "query": "j97 petrol",
     "source": "ebay",
