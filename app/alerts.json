@@ -9488,6 +9488,22 @@
     "created_at": "2026-10-17T03:09:59.847700+00:00"
   },
   {
+    "id": 2502,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 BLK  Blanket Lined Canvas Work Jacket Full Zip",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/920074966579",
+    "photo": "https://i.ebayimg.com/images/g/tBEAAeSwYSZq3seZ/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T09:17:11.600209+00:00"
+  },
+  {
     "id": 2389,
     "query": "j97 petrol",
     "source": "ebay",
@@ -21792,6 +21808,22 @@
     "created_at": "2026-10-22T15:17:30.407622+00:00"
   },
   {
+    "id": 2504,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Men's XL Green Full-Zip Lined Cotton Work Jacket Logo J97 MOS",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/800702990367",
+    "photo": "https://i.ebayimg.com/images/g/DL4AAeSwlyxqs1uR/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T09:17:12.208783+00:00"
+  },
+  {
     "id": 1760,
     "query": "j76 moss",
     "source": "ebay",
@@ -28990,6 +29022,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T21:12:54.449974+00:00"
+  },
+  {
+    "id": 2503,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "VTG 90’s Carhartt Detroit Jacket Size L/XL J97 MOS RARE Workwear Faded Distress",
+    "price": 539.17,
+    "url": "https://www.ebay.com/itm/840060323172",
+    "photo": "https://i.ebayimg.com/images/g/eDEAAeSwZe5q3sip/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T09:17:11.800556+00:00"
   },
   {
     "id": 2457,
