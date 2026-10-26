@@ -2064,6 +2064,22 @@
     "created_at": "2026-10-09T01:13:09.739693+00:00"
   },
   {
+    "id": 1785,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Men’s Firm Duck Canvas Traditional Coat Loose Fit Large Black",
+    "price": 125.0,
+    "url": "https://www.ebay.com/itm/880011332398",
+    "photo": "https://i.ebayimg.com/images/g/M~YAAeSw96FqzR--/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:37.051922+00:00"
+  },
+  {
     "id": 144,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -10958,6 +10974,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:20.582827+00:00"
+  },
+  {
+    "id": 1784,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "00S Carhartt Arctic Traditional J22Mos",
+    "price": 878.76,
+    "url": "https://www.ebay.com/itm/407301298799",
+    "photo": "https://i.ebayimg.com/images/g/bRsAAeSwj8pq1hKI/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T16:55:37.039840+00:00"
   },
   {
     "id": 785,
