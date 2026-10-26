@@ -31584,6 +31584,22 @@
     "created_at": "2026-10-15T03:06:20.944273+00:00"
   },
   {
+    "id": 2498,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens XL Cement Blanket Lined Workwear J76CMT USA",
+    "price": 800.0,
+    "url": "https://www.ebay.com/itm/206653741961",
+    "photo": "https://i.ebayimg.com/images/g/VFgAAeSwlZtq3oXT/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T03:20:14.081371+00:00"
+  },
+  {
     "id": 1831,
     "query": "j97 moss",
     "source": "ebay",
@@ -31694,6 +31710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-03T07:16:34.652731+00:00"
+  },
+  {
+    "id": 2499,
+    "query": "j76 cement",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket Mens XL Cement Blanket Lined Workwear J76CMT USA",
+    "price": 840.09,
+    "url": "https://www.etsy.com/listing/4603209537/vintage-carhartt-detroit-jacket-mens-xl",
+    "photo": "https://i.etsystatic.com/17779231/r/il/93ade6/8790251587/il_570xN.8790251587_n20k.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-26T03:20:14.099493+00:00"
   },
   {
     "id": 1546,
