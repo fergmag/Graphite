@@ -4016,6 +4016,22 @@
     "created_at": "2026-10-26T16:53:34.640576+00:00"
   },
   {
+    "id": 2190,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Jacket Mens Extra Large Brown Santa Fe Canvas Embroidery Coat Y2K",
+    "price": 162.98000000000002,
+    "url": "https://www.ebay.com/itm/137870090551",
+    "photo": "https://i.ebayimg.com/images/g/8dYAAeSwU5Rq2-Zb/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:58:58.683410+00:00"
+  },
+  {
     "id": 2188,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -9486,6 +9502,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-03T19:14:04.910494+00:00"
+  },
+  {
+    "id": 2192,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage CARHARTT J01 USA Men's 38 S Black Blanket Lined Detroit Jacket",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/820285351513",
+    "photo": "https://i.ebayimg.com/images/g/7DcAAeSw08Zq4SU8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:58:58.787023+00:00"
   },
   {
     "id": 2183,
@@ -19104,6 +19136,22 @@
     "created_at": "2026-10-26T16:52:44.160109+00:00"
   },
   {
+    "id": 2189,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt J43 HTG MEDIUM Tall Detroit Jacket ~ j43htg mos green j97 coat m mt",
+    "price": 799.0,
+    "url": "https://www.ebay.com/itm/960123793579",
+    "photo": "https://i.ebayimg.com/images/g/cRcAAeSwYAJq3qW7/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:58:58.572668+00:00"
+  },
+  {
     "id": 1080,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -23790,6 +23838,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-05T19:16:27.113527+00:00"
+  },
+  {
+    "id": 2191,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt J43HTG Men's 2XL Regular Green Lined Full Zip Workwear Jacket",
+    "price": 550.0,
+    "url": "https://www.ebay.com/itm/840066183734",
+    "photo": "https://i.ebayimg.com/images/g/Y4UAAeSwqQFq4Onp/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:58:58.779514+00:00"
   },
   {
     "id": 2049,
