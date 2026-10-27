@@ -4288,6 +4288,22 @@
     "created_at": "2026-10-26T16:53:34.652159+00:00"
   },
   {
+    "id": 2078,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VTG Carhartt J140RED Mens Quilt Lined Canvas Active Jacket Small Regular Red",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/860077054362",
+    "photo": "https://i.ebayimg.com/images/g/mI4AAeSwFM9q28-I/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T04:55:52.080701+00:00"
+  },
+  {
     "id": 1760,
     "query": "j65 blue",
     "source": "ebay",
@@ -4734,6 +4750,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:09:53.843415+00:00"
+  },
+  {
+    "id": 2082,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VTG Carhartt J140 Mens Quilt Lined Canvas Active Jacket XL Regular Red",
+    "price": 185.0,
+    "url": "https://www.ebay.com/itm/860077052288",
+    "photo": "https://i.ebayimg.com/images/g/ccAAAeSwXQFq288A/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T04:55:52.272843+00:00"
+  },
+  {
+    "id": 2080,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VTG Carhartt J04RED Mens Quilt Lined Canvas Active Jacket Large Regular Red",
+    "price": 185.0,
+    "url": "https://www.ebay.com/itm/860077050093",
+    "photo": "https://i.ebayimg.com/images/g/aSkAAeSwEwJq286P/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T04:55:52.179236+00:00"
   },
   {
     "id": 1941,
@@ -6400,6 +6448,22 @@
     "created_at": "2026-10-15T03:10:51.958973+00:00"
   },
   {
+    "id": 2079,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 CPT Detroit Jacket XL Tan Blanket Lined Distressed",
+    "price": 219.99,
+    "url": "https://www.ebay.com/itm/900043637994",
+    "photo": "https://i.ebayimg.com/images/g/2cAAAeSwsEpq4B2Z/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T04:55:52.087690+00:00"
+  },
+  {
     "id": 1761,
     "query": "js1237",
     "source": "ebay",
@@ -6606,6 +6670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T03:09:59.847700+00:00"
+  },
+  {
+    "id": 2081,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BLK Blanket Lined Black Detroit Jacket Mens Size Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287659624865",
+    "photo": "https://i.ebayimg.com/images/g/ymMAAeSwhbxq1r2K/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T04:55:52.187863+00:00"
   },
   {
     "id": 1937,
