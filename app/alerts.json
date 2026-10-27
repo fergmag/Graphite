@@ -18400,6 +18400,22 @@
     "created_at": "2026-10-07T19:16:00.423544+00:00"
   },
   {
+    "id": 2127,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket 90S Usa Star Tag J43Htg No.ch1227",
+    "price": 842.23,
+    "url": "https://www.ebay.com/itm/147653437490",
+    "photo": "https://i.ebayimg.com/images/g/xK8AAeSw~K9q4BmU/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T10:59:14.280051+00:00"
+  },
+  {
     "id": 1085,
     "query": "j43 hunter green",
     "source": "grailed",
@@ -28142,6 +28158,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-02T13:11:10.353719+00:00"
+  },
+  {
+    "id": 2126,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "RARE Vintage Carhartt J43 HTG Hunter Green Detroit Jacket Size Large Regular",
+    "price": 2000.0,
+    "url": "https://www.ebay.com/itm/237146443601",
+    "photo": "https://i.ebayimg.com/images/g/GBwAAeSwW-pq4Fkt/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T10:59:13.873742+00:00"
   },
   {
     "id": 1701,
