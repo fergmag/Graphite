@@ -7344,6 +7344,22 @@
     "created_at": "2026-10-16T15:08:34.497481+00:00"
   },
   {
+    "id": 2180,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Jacket Mens Medium Reg Saddle Brown Blanket Lined J G2U",
+    "price": 229.1,
+    "url": "https://www.ebay.com/itm/178519247451",
+    "photo": "https://i.ebayimg.com/images/g/dqUAAeSwogFqc2Xc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:57:31.679954+00:00"
+  },
+  {
     "id": 1851,
     "query": "j97 moss",
     "source": "etsy",
@@ -9438,6 +9454,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-03T19:14:04.910494+00:00"
+  },
+  {
+    "id": 2179,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage CARHARTT J01 USA Men's 38 S Black Blanket Lined Detroit Jacket",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/820285351513",
+    "photo": "https://i.ebayimg.com/images/g/7DcAAeSw08Zq4SU8/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:57:31.599618+00:00"
   },
   {
     "id": 2176,
@@ -13008,6 +13040,22 @@
     "created_at": "2026-10-26T16:56:40.482552+00:00"
   },
   {
+    "id": 2178,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage 05 Carhartt J97 PTL Detroit Jacket Petroleum Grey Blue Large Distressed",
+    "price": 309.99,
+    "url": "https://www.ebay.com/itm/198750210261",
+    "photo": "https://i.ebayimg.com/images/g/9iQAAeSwI8Jq4Qg-/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:57:31.582315+00:00"
+  },
+  {
     "id": 709,
     "query": "j97 petrol",
     "source": "ebay",
@@ -13230,6 +13278,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T03:11:25.947161+00:00"
+  },
+  {
+    "id": 2177,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Duck Blanket-Lined Detroit Jacket Mens Medium J97 SDL Saddle",
+    "price": 329.99,
+    "url": "https://www.ebay.com/itm/287685206296",
+    "photo": "https://i.ebayimg.com/images/g/sFMAAeSwXQFq4Qvt/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:57:31.568700+00:00"
   },
   {
     "id": 728,
@@ -25342,6 +25406,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-30T07:14:52.002539+00:00"
+  },
+  {
+    "id": 2181,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "USA MADE VINTAGE Carhartt J97 PTL Detroit Jacket Blanket Lined Gray Two Tone XL",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/117490406802",
+    "photo": "https://i.ebayimg.com/images/g/2sMAAeSwTJFq4Nhw/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-27T22:57:31.988807+00:00"
   },
   {
     "id": 1957,
