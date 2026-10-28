@@ -9680,6 +9680,22 @@
     "created_at": "2026-10-08T19:13:54.508881+00:00"
   },
   {
+    "id": 2225,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Detroit Jacket Brown Duck Canvas Blanket Lined",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/820285428255",
+    "photo": "https://i.ebayimg.com/images/g/8pcAAeSwCZlq4SxG/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:57:44.588678+00:00"
+  },
+  {
     "id": 2222,
     "query": "j97 petrol",
     "source": "ebay",
@@ -22960,6 +22976,22 @@
     "created_at": "2026-10-15T03:10:51.750733+00:00"
   },
   {
+    "id": 2224,
+    "query": "j97 timber",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Brown Detroit J97 TMB USA Workwear Honeycombed",
+    "price": 465.0,
+    "url": "https://www.grailed.com/listings/107118146",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b34c08bc4e9b49eebd43b3a9d1b8979f",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:57:44.565037+00:00"
+  },
+  {
     "id": 1327,
     "query": "j97 moss",
     "source": "ebay",
@@ -29390,6 +29422,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:06:35.545837+00:00"
+  },
+  {
+    "id": 2226,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "2000Usa Carhartt Detroit Jacket J97Tmb No.ch2202",
+    "price": 2505.45,
+    "url": "https://www.ebay.com/itm/147654788661",
+    "photo": "https://i.ebayimg.com/images/g/jvYAAeSwcuJq4W6k/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:57:44.774946+00:00"
   },
   {
     "id": 1713,
