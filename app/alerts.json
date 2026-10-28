@@ -14496,6 +14496,22 @@
     "created_at": "2026-10-15T03:10:01.386724+00:00"
   },
   {
+    "id": 2289,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Carhartt Carhartt Active Jacket Mos Duck Ground No.ch1179",
+    "price": 416.38,
+    "url": "https://www.ebay.com/itm/147653437440",
+    "photo": "https://i.ebayimg.com/images/g/hyMAAeSw9tNq4BmU/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T16:59:39.880508+00:00"
+  },
+  {
     "id": 767,
     "query": "j97 moss",
     "source": "etsy",
@@ -20830,6 +20846,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T15:10:35.739500+00:00"
+  },
+  {
+    "id": 2288,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage carhartt J165 MOS Green 2xl",
+    "price": 279.99,
+    "url": "https://www.ebay.com/itm/960076104689",
+    "photo": "https://i.ebayimg.com/images/g/cWIAAeSwp6hq0n0L/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T16:59:39.872404+00:00"
   },
   {
     "id": 1131,
