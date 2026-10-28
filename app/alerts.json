@@ -13968,6 +13968,22 @@
     "created_at": "2026-10-15T03:11:43.234960+00:00"
   },
   {
+    "id": 2205,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Rare 00S Carhartt Activejacket Mos No.ch2568",
+    "price": 455.07,
+    "url": "https://www.ebay.com/itm/147654789154",
+    "photo": "https://i.ebayimg.com/images/g/5n4AAeSwIhZq4W6m/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:55:12.982548+00:00"
+  },
+  {
     "id": 775,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -14158,6 +14174,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T15:12:05.683746+00:00"
+  },
+  {
+    "id": 2204,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt Carhartt Western Jacket Jq166S No.ch2066",
+    "price": 538.96,
+    "url": "https://www.ebay.com/itm/147654788521",
+    "photo": "https://i.ebayimg.com/images/g/8jEAAeSwcHtq4W6l/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:55:12.969710+00:00"
   },
   {
     "id": 784,
@@ -18878,6 +18910,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:56.704347+00:00"
+  },
+  {
+    "id": 2206,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "00'S Carhartt Active Jacket J68Mos No.ch2608",
+    "price": 687.37,
+    "url": "https://www.ebay.com/itm/147654789205",
+    "photo": "https://i.ebayimg.com/images/g/A0gAAeSwoVlq4W6o/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-28T04:55:13.000498+00:00"
   },
   {
     "id": 1780,
