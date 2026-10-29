@@ -8,6 +8,7 @@ import re
 import threading
 
 import base64
+import secrets
 import uuid
 import requests as _req
 import stripe
@@ -248,7 +249,7 @@ def _login_required(f):
 
 def create_app() -> Flask:
     app = Flask(__name__)
-    app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-change-me")
+    app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
     init_db()
 
     _refresh_lock = threading.Lock()
@@ -292,8 +293,8 @@ def create_app() -> Flask:
     @app.post("/login")
     def login_post():
         password = request.form.get("password", "")
-        expected = os.environ.get("TOOL_PASSWORD", "graphite")
-        if password == expected:
+        expected = os.environ.get("TOOL_PASSWORD")
+        if expected and password == expected:
             session["logged_in"] = True
             return redirect(url_for("admin"))
         return render_template("login.html", error=True)
