@@ -240,6 +240,22 @@
     "created_at": "2026-10-15T03:10:21.738995+00:00"
   },
   {
+    "id": 2365,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Rugged Flex Fleece Lined Flannel Shirt Jacket Mens 2XL Red Plaid 104913",
+    "price": 48.0,
+    "url": "https://www.ebay.com/itm/237151491661",
+    "photo": "https://i.ebayimg.com/images/g/s2gAAeSw2pJq47rl/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T22:56:02.677863+00:00"
+  },
+  {
     "id": 18,
     "query": "ju1005",
     "source": "ebay",
@@ -8096,6 +8112,22 @@
     "created_at": "2026-10-16T15:08:34.497481+00:00"
   },
   {
+    "id": 2367,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 CRI Carhartt Detroit Jacket Crimson Workwear",
+    "price": 229.0,
+    "url": "https://www.etsy.com/listing/4605816547/vintage-carhartt-j97-cri-carhartt",
+    "photo": "https://i.etsystatic.com/67995724/r/il/672a9e/8812313225/il_570xN.8812313225_8ti7.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T22:56:02.882002+00:00"
+  },
+  {
     "id": 2180,
     "query": "j97 petrol",
     "source": "ebay",
@@ -8382,6 +8414,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:57:28.789925+00:00"
+  },
+  {
+    "id": 2366,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 CRI Carhartt Detroit Jacket Crimson Workwear",
+    "price": 239.0,
+    "url": "https://www.etsy.com/listing/4605824221/vintage-carhartt-j97-cri-carhartt",
+    "photo": "https://i.etsystatic.com/62774098/r/il/226edd/8812405671/il_570xN.8812405671_cbxe.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T22:56:02.872206+00:00"
   },
   {
     "id": 394,
