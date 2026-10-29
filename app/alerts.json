@@ -18912,6 +18912,22 @@
     "created_at": "2026-10-09T01:14:25.820884+00:00"
   },
   {
+    "id": 2336,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "NWT Carhartt J001 BLK 125 Anniversary Blanket Lined Canvas Detroit Jacket Size M",
+    "price": 488.88,
+    "url": "https://www.ebay.com/itm/206641698180",
+    "photo": "https://i.ebayimg.com/images/g/A3UAAeSwk8Jq19ef/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T10:57:36.982950+00:00"
+  },
+  {
     "id": 2061,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -20414,6 +20430,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:10:58.685576+00:00"
+  },
+  {
+    "id": 2337,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket Lined Canvas Detroit Jacket J97 BRN Distressed Size XXL",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/196530920823",
+    "photo": "https://i.ebayimg.com/images/g/KU0AAOSwZ6dmqDQF/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T10:57:37.070840+00:00"
   },
   {
     "id": 2334,
@@ -22590,6 +22622,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-09-29T19:14:59.103578+00:00"
+  },
+  {
+    "id": 2335,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket Mens XL Tall Gray J97 PTL Detroit USA Canvas Work Lined",
+    "price": 377.0,
+    "url": "https://www.grailed.com/listings/110443187",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/251f969d9bd34557912510924d71ea0b",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T10:57:36.679666+00:00"
   },
   {
     "id": 1244,
