@@ -3792,6 +3792,22 @@
     "created_at": "2026-10-17T09:09:04.660256+00:00"
   },
   {
+    "id": 2310,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage 2009 Carhartt J25 Sandstone Duck Active Hooded Jacket Dark Brown Sz XL",
+    "price": 149.95,
+    "url": "https://www.ebay.com/itm/307252183580",
+    "photo": "https://i.ebayimg.com/images/g/90QAAeSwVxNq4N79/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T04:53:36.926802+00:00"
+  },
+  {
     "id": 2309,
     "query": "j65 brick",
     "source": "ebay",
