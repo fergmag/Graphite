@@ -6448,6 +6448,22 @@
     "created_at": "2026-10-05T13:14:18.363890+00:00"
   },
   {
+    "id": 2354,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens 44 Brown Tan Blanket Lined 6BLJ USA Size L",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/800831535912",
+    "photo": "https://i.ebayimg.com/images/g/N7MAAeSw0O9q3Bzx/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T16:58:19.574614+00:00"
+  },
+  {
     "id": 2350,
     "query": "j97 petrol",
     "source": "ebay",
@@ -12576,6 +12592,22 @@
     "created_at": "2026-10-26T22:56:38.769961+00:00"
   },
   {
+    "id": 2355,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined USA Union Made Men’s 48 Regular XL",
+    "price": 179.99,
+    "url": "https://www.ebay.com/itm/307249314783",
+    "photo": "https://i.ebayimg.com/images/g/jmgAAeSw-UNq3pnX/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T16:58:19.674901+00:00"
+  },
+  {
     "id": 620,
     "query": "j97 petrol",
     "source": "ebay",
@@ -14464,6 +14496,22 @@
     "created_at": "2026-10-05T01:14:52.809462+00:00"
   },
   {
+    "id": 2356,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Men's 44 Gray Duck Canvas Blanket Lined Workwear J43 CHT",
+    "price": 357.49,
+    "url": "https://www.ebay.com/itm/117492620667",
+    "photo": "https://i.ebayimg.com/images/g/pdEAAeSwOXZq4zKS/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T16:58:19.686414+00:00"
+  },
+  {
     "id": 743,
     "query": "j76 moss",
     "source": "ebay",
@@ -15470,6 +15518,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T04:55:02.774490+00:00"
+  },
+  {
+    "id": 2357,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J22CHT Brown Duck Canvas Lined Work Jacket Full Zip Men's XL",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/336868939368",
+    "photo": "https://i.ebayimg.com/images/g/7akAAeSwAD5q40zK/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T16:58:19.870905+00:00"
   },
   {
     "id": 792,
