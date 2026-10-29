@@ -4000,6 +4000,22 @@
     "created_at": "2026-10-29T04:53:21.898739+00:00"
   },
   {
+    "id": 2361,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage CARHARTT J14 XL MDT Navy Blue Santa Fe Flannel Lined Bomber Jacket EUC",
+    "price": 149.99,
+    "url": "https://www.ebay.com/itm/820293204938",
+    "photo": "https://i.ebayimg.com/images/g/BZ0AAeSwRONq47HA/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-29T22:53:38.744531+00:00"
+  },
+  {
     "id": 2358,
     "query": "j43 hunter green",
     "source": "ebay",
