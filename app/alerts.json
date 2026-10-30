@@ -10368,6 +10368,22 @@
     "created_at": "2026-10-08T19:14:38.818143+00:00"
   },
   {
+    "id": 2461,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Vintage Carhartt JQ282 Brown Duck Canvas Active Jacket Medium Paint 90s Chestnut",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/307257316531",
+    "photo": "https://i.ebayimg.com/images/g/hi0AAeSw4y9q5M1y/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T22:55:12.373335+00:00"
+  },
+  {
     "id": 2238,
     "query": "j110 darkstone",
     "source": "ebay",
