@@ -912,6 +912,22 @@
     "created_at": "2026-10-15T15:09:43.655860+00:00"
   },
   {
+    "id": 2492,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt C26 MOS Coat Large Moss Green Duck Canvas Work Jacket Flaws",
+    "price": 71.57,
+    "url": "https://www.ebay.com/itm/128165025235",
+    "photo": "https://i.ebayimg.com/images/g/v1gAAeSw045qyR4d/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T22:59:28.652274+00:00"
+  },
+  {
     "id": 1771,
     "query": "j110 darkstone",
     "source": "ebay",
@@ -5470,6 +5486,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:53:34.652159+00:00"
+  },
+  {
+    "id": 2491,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage 2001 Carhartt J68 Moss Size Large Tall ",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/287692615718",
+    "photo": "https://i.ebayimg.com/images/g/~gEAAeSwfjFq5OVa/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T22:59:28.640299+00:00"
   },
   {
     "id": 2379,
