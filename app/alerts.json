@@ -7584,6 +7584,22 @@
     "created_at": "2026-10-15T03:09:20.386874+00:00"
   },
   {
+    "id": 2422,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt brown hooded work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407115966880",
+    "photo": "https://i.ebayimg.com/images/g/RZ4AAeSwK8xqcCNf/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T10:55:23.310838+00:00"
+  },
+  {
     "id": 359,
     "query": "jq2472",
     "source": "ebay",
