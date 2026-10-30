@@ -9072,6 +9072,22 @@
     "created_at": "2026-10-14T21:06:38.440453+00:00"
   },
   {
+    "id": 2453,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 SDL Mens Medium Sandstone Duck Blanket Lined",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/128164444078",
+    "photo": "https://i.ebayimg.com/images/g/xroAAeSwAo9q5JmM/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T16:58:00.169172+00:00"
+  },
+  {
     "id": 2450,
     "query": "j97 petrol",
     "source": "ebay",
@@ -16622,6 +16638,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T10:59:28.822067+00:00"
+  },
+  {
+    "id": 2454,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens XL Tan Detroit Blanket Lined J97 SDL Saddle USA Y2K",
+    "price": 262.73,
+    "url": "https://www.ebay.com/itm/307255860667",
+    "photo": "https://i.ebayimg.com/images/g/f4MAAeSwsEFq0N3n/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T16:58:00.176551+00:00"
   },
   {
     "id": 2446,
