@@ -5136,6 +5136,22 @@
     "created_at": "2026-10-26T16:52:54.257974+00:00"
   },
   {
+    "id": 2414,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Y2K Carhartt Jacket (L) large green vintage mens J141 canvas zip up streetwear ",
+    "price": 174.99,
+    "url": "https://www.ebay.com/itm/840072936891",
+    "photo": "https://i.ebayimg.com/images/g/UgwAAeSwClhq49Ky/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T04:58:49.680048+00:00"
+  },
+  {
     "id": 2411,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -27440,6 +27456,22 @@
     "created_at": "2026-09-30T07:14:52.002539+00:00"
   },
   {
+    "id": 2413,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Hunter Green Carhartt Detroit Jacket Size Large Tall",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/377606874458",
+    "photo": "https://i.ebayimg.com/images/g/-nkAAeSwXWVq49Kf/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T04:58:49.655376+00:00"
+  },
+  {
     "id": 2308,
     "query": "jb0866",
     "source": "ebay",
@@ -28382,6 +28414,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-01T19:14:23.145597+00:00"
+  },
+  {
+    "id": 2415,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "GRAIL RARE VINTAGE CARHARTT J43 HTG DETROIT MINT XL 90s HUNTER GREEN WORKWEAR",
+    "price": 850.0,
+    "url": "https://www.ebay.com/itm/188910368470",
+    "photo": "https://i.ebayimg.com/images/g/PxAAAeSwBJhqoe36/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T04:58:49.773535+00:00"
   },
   {
     "id": 1971,
