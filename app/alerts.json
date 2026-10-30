@@ -19648,6 +19648,22 @@
     "created_at": "2026-10-08T01:15:01.806786+00:00"
   },
   {
+    "id": 2441,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Usa Carhartt C26 Mos Traditional Coat L Carhartt No.ch1066",
+    "price": 403.48,
+    "url": "https://www.ebay.com/itm/147653437331",
+    "photo": "https://i.ebayimg.com/images/g/LQ0AAeSw-bJq4BmW/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T16:55:29.634841+00:00"
+  },
+  {
     "id": 995,
     "query": "j97 petrol",
     "source": "ebay",
@@ -25920,6 +25936,22 @@
     "created_at": "2026-09-30T01:14:03.744566+00:00"
   },
   {
+    "id": 2440,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Us Carhartt Loose Fit Washed Duck Sherpa-Lined Sierra Jacket No.ch368",
+    "price": 532.51,
+    "url": "https://www.ebay.com/itm/147652013449",
+    "photo": "https://i.ebayimg.com/images/g/kd4AAeSw6Ltq3sSq/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T16:55:29.624732+00:00"
+  },
+  {
     "id": 2297,
     "query": "j97 moss",
     "source": "ebay",
@@ -28542,6 +28574,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:21.683420+00:00"
+  },
+  {
+    "id": 2439,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Jacket Arctic Quilt Lined Men 40 Medium JQ1802 Navy Blue RARE",
+    "price": 799.0,
+    "url": "https://www.ebay.com/itm/880037794914",
+    "photo": "https://i.ebayimg.com/images/g/coAAAeSwsB5o-siO/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-30T16:55:29.615038+00:00"
   },
   {
     "id": 2299,
