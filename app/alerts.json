@@ -2176,6 +2176,22 @@
     "created_at": "2026-10-05T13:14:18.309107+00:00"
   },
   {
+    "id": 2529,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Carhartt Men's Brown Blanket-Lined Canvas Work Jacket Coat with Pockets",
+    "price": 100.0,
+    "url": "https://www.ebay.com/itm/377610813277",
+    "photo": "https://i.ebayimg.com/images/g/1CkAAeSw1vJq5hMk/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:53:05.142399+00:00"
+  },
+  {
     "id": 2489,
     "query": "j43 hunter green",
     "source": "ebay",
