@@ -2992,6 +2992,22 @@
     "created_at": "2026-10-05T01:14:52.510278+00:00"
   },
   {
+    "id": 2557,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt J01 Detroit Jacket Men's Duck Canvas Blanket Lined Brown Work Jacket",
+    "price": 120.48,
+    "url": "https://www.ebay.com/itm/137890585375",
+    "photo": "https://i.ebayimg.com/images/g/ssEAAeSwiB1q5mKB/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:47.284000+00:00"
+  },
+  {
     "id": 140,
     "query": "j97 crimson",
     "source": "ebay",
@@ -8606,6 +8622,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-17T03:09:59.847700+00:00"
+  },
+  {
+    "id": 2559,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BLK Blanket Lined Black Detroit Jacket Mens Size Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/287659624865",
+    "photo": "https://i.ebayimg.com/images/g/ymMAAeSwhbxq1r2K/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:47.782739+00:00"
   },
   {
     "id": 2464,
@@ -19600,6 +19632,22 @@
     "created_at": "2026-10-06T19:14:25.008583+00:00"
   },
   {
+    "id": 2556,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Detroit Carhartt Blanket Lined Plaid Work Jacket Moss Green J97 MOS Med Mexico",
+    "price": 559.0,
+    "url": "https://www.ebay.com/itm/860101093774",
+    "photo": "https://i.ebayimg.com/images/g/VQUAAeSw7qVq5i0C/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:47.275922+00:00"
+  },
+  {
     "id": 1996,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -20606,6 +20654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:39.369308+00:00"
+  },
+  {
+    "id": 2558,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "VTG 00s Carhartt J97 BLK Black Detroit Flannel Lined Canvas Jacket Size XL",
+    "price": 314.0,
+    "url": "https://www.ebay.com/itm/206594249936",
+    "photo": "https://i.ebayimg.com/images/g/B0EAAeSwTTtquda6/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:47.380232+00:00"
   },
   {
     "id": 970,
