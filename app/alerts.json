@@ -14608,6 +14608,22 @@
     "created_at": "2026-10-26T16:56:59.991274+00:00"
   },
   {
+    "id": 2539,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": " Vintage 90s Carhartt J01 J97 BLK Blanket Lined Detroit XL Black Work Jacket ",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/128166438090",
+    "photo": "https://i.ebayimg.com/images/g/bPgAAeSwxyFpACti/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:57:10.581922+00:00"
+  },
+  {
     "id": 1976,
     "query": "j43 onyx",
     "source": "etsy",
@@ -16782,6 +16798,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-01T07:12:49.601657+00:00"
+  },
+  {
+    "id": 2540,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BLK Detroit Jacket Blanket Lined Distressed Faded Black USA",
+    "price": 480.0,
+    "url": "https://www.ebay.com/itm/267737074989",
+    "photo": "https://i.ebayimg.com/images/g/qOQAAeSw1KlqYrBx/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:57:10.969282+00:00"
   },
   {
     "id": 779,
