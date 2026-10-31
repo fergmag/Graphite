@@ -8048,6 +8048,22 @@
     "created_at": "2026-10-15T03:09:20.386874+00:00"
   },
   {
+    "id": 2548,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J22 CHT brown Arctic work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407150040049",
+    "photo": "https://i.ebayimg.com/images/g/GBIAAeSwCN1qgm-c/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:58:19.375826+00:00"
+  },
+  {
     "id": 2437,
     "query": "j65 brick",
     "source": "ebay",
@@ -29552,6 +29568,22 @@
     "created_at": "2026-10-28T16:57:38.193947+00:00"
   },
   {
+    "id": 2546,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J43 CHT Brown Vintage Men's L-XL Work Coat USA Made",
+    "price": 787.81,
+    "url": "https://www.ebay.com/itm/820299674471",
+    "photo": "https://i.ebayimg.com/images/g/24sAAeSw~0pq5dPa/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:58:19.078878+00:00"
+  },
+  {
     "id": 1526,
     "query": "j97 petrol",
     "source": "grailed",
@@ -30526,6 +30558,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:01.641037+00:00"
+  },
+  {
+    "id": 2547,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Vintage 1998 Made in USA Chestnut L-XL Workwear",
+    "price": 966.04,
+    "url": "https://www.ebay.com/itm/820299674467",
+    "photo": "https://i.ebayimg.com/images/g/XLoAAeSwC~tq5dI0/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T16:58:19.086200+00:00"
   },
   {
     "id": 1575,
