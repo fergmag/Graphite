@@ -9664,6 +9664,22 @@
     "created_at": "2026-10-14T21:06:38.440453+00:00"
   },
   {
+    "id": 2554,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Red Carhartt Santa Fe Jacket Size XXL",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/336872456636",
+    "photo": "https://i.ebayimg.com/images/g/vzoAAeSwc2xq5lVH/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:08.379308+00:00"
+  },
+  {
     "id": 2523,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -11406,6 +11422,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T10:56:34.069902+00:00"
+  },
+  {
+    "id": 2553,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket DYED Red USA Made J001 J97 Crimson Wine Dark XL",
+    "price": 289.99,
+    "url": "https://www.ebay.com/itm/407329654756",
+    "photo": "https://i.ebayimg.com/images/g/1~YAAeSwLlJq5j40/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:08.368983+00:00"
   },
   {
     "id": 489,
@@ -13584,6 +13616,22 @@
     "created_at": "2026-10-26T16:55:59.881320+00:00"
   },
   {
+    "id": 2555,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Red Aztec Southwestern Bomber Jacket Men’s Large USA Style",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/377611019871",
+    "photo": "https://i.ebayimg.com/images/g/A5IAAeSwEp5q5jBi/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:08.389214+00:00"
+  },
+  {
     "id": 2255,
     "query": "j97 crimson",
     "source": "ebay",
@@ -13662,6 +13710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-09T01:11:09.529543+00:00"
+  },
+  {
+    "id": 2552,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket J68 CRI Size Large",
+    "price": 550.0,
+    "url": "https://www.ebay.com/itm/900054486995",
+    "photo": "https://i.ebayimg.com/images/g/wPsAAeSweZpq5jTO/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T22:56:08.360842+00:00"
   },
   {
     "id": 1790,
