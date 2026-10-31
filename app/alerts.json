@@ -12096,6 +12096,22 @@
     "created_at": "2026-10-16T21:09:58.992818+00:00"
   },
   {
+    "id": 2513,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "carhartt j97 des big patch vintage detroit jacket no size measures 25x25",
+    "price": 325.0,
+    "url": "https://www.ebay.com/itm/960134701229",
+    "photo": "https://i.ebayimg.com/images/g/wk8AAeSwMrNq5S~O/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T04:57:39.434131+00:00"
+  },
+  {
     "id": 2506,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -24766,6 +24782,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:10:09.168427+00:00"
+  },
+  {
+    "id": 2514,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Vintage Carhartt Blanket-Lined Detroit Jacket “Timber” J97 TMB Men’s 2XL",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/327380419807",
+    "photo": "https://i.ebayimg.com/images/g/QMsAAeSwaclqhA0Z/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-10-31T04:57:39.469829+00:00"
   },
   {
     "id": 2268,
