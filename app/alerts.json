@@ -22144,6 +22144,22 @@
     "created_at": "2026-10-07T01:14:12.817976+00:00"
   },
   {
+    "id": 2600,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt J97 MOS Detroit Jacket Moss Green 4XL Tall 4XLT Vintage Workwear",
+    "price": 614.51,
+    "url": "https://www.ebay.com/itm/820303608456",
+    "photo": "https://i.ebayimg.com/images/g/6ecAAeSwXctq51kE/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T16:56:45.682003+00:00"
+  },
+  {
     "id": 1064,
     "query": "j97 moss",
     "source": "ebay",
@@ -25696,6 +25712,22 @@
     "created_at": "2026-10-08T01:14:10.305446+00:00"
   },
   {
+    "id": 2599,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Mos Detroit Jacket Size XL Regular Moss Green",
+    "price": 401.99,
+    "url": "https://www.ebay.com/itm/880071520349",
+    "photo": "https://i.ebayimg.com/images/g/CZoAAeSwGFdq5mhq/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T16:56:45.585798+00:00"
+  },
+  {
     "id": 1284,
     "query": "j97 moss",
     "source": "ebay",
@@ -25854,6 +25886,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T07:14:59.105305+00:00"
+  },
+  {
+    "id": 2601,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens XL Green Canvas Workwear Corduroy Collar J97 ARG",
+    "price": 412.0,
+    "url": "https://www.ebay.com/itm/287695412687",
+    "photo": "https://i.ebayimg.com/images/g/S5gAAeSwAeRq5oyP/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T16:56:45.868901+00:00"
   },
   {
     "id": 1831,
