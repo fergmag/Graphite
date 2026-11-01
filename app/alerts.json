@@ -3520,6 +3520,22 @@
     "created_at": "2026-10-09T01:13:09.790889+00:00"
   },
   {
+    "id": 2615,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J03 GKN Thermal Lined Duck Active Jacket Green Mens Large Regular",
+    "price": 132.92,
+    "url": "https://www.ebay.com/itm/267814713860",
+    "photo": "https://i.ebayimg.com/images/g/P7MAAeSwXudq0TLd/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T22:53:36.625586+00:00"
+  },
+  {
     "id": 2614,
     "query": "j65 brick",
     "source": "ebay",
@@ -12158,6 +12174,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T19:13:54.508881+00:00"
+  },
+  {
+    "id": 2616,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Active Jac J140 Men's L 50th anniversary edition",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/257828851257",
+    "photo": "https://i.ebayimg.com/images/g/7o0AAeSwGqJq55WV/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T22:53:36.675220+00:00"
   },
   {
     "id": 2522,
