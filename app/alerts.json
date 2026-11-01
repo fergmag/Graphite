@@ -4720,6 +4720,22 @@
     "created_at": "2026-10-31T16:53:21.547706+00:00"
   },
   {
+    "id": 2580,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J164 PTL Arctic Sandstone Detroit Jacket Petrol Blue Mens M",
+    "price": 157.1,
+    "url": "https://www.ebay.com/itm/800861161509",
+    "photo": "https://i.ebayimg.com/images/g/dtwAAeSwpdZq5poo/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:57:25.082103+00:00"
+  },
+  {
     "id": 2570,
     "query": "j65 blue",
     "source": "ebay",
@@ -18144,6 +18160,22 @@
     "created_at": "2026-10-07T07:15:00.509394+00:00"
   },
   {
+    "id": 2581,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Early 2000’s Carhartt J97 Petrol Gray Detroit Lined Work Jacket Mens L Regular",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/128107988351",
+    "photo": "https://i.ebayimg.com/images/g/LDAAAeSwZztqvY37/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:57:25.174045+00:00"
+  },
+  {
     "id": 2451,
     "query": "j97 petrol",
     "source": "ebay",
@@ -21534,6 +21566,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T01:14:26.918187+00:00"
+  },
+  {
+    "id": 2582,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "New With Tags Vintage Carhartt J97 PTL Detroit Jacket Petrol Blue Med July 2005 ",
+    "price": 525.0,
+    "url": "https://www.ebay.com/itm/137798428103",
+    "photo": "https://i.ebayimg.com/images/g/i94AAeSwIFpqvZM4/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:57:25.187017+00:00"
   },
   {
     "id": 1038,
@@ -28030,6 +28078,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:12:03.742094+00:00"
+  },
+  {
+    "id": 2583,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Y2K Carhartt Detroit Canvas Jacket Men’s M USA Made Faded J97 PTL",
+    "price": 616.66,
+    "url": "https://www.ebay.com/itm/960138452563",
+    "photo": "https://i.ebayimg.com/images/g/itIAAeSwGkdq5ncm/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:57:25.475320+00:00"
   },
   {
     "id": 1452,
