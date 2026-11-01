@@ -8544,6 +8544,38 @@
     "created_at": "2026-10-14T21:08:53.426089+00:00"
   },
   {
+    "id": 2631,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Blanket-Lined Detroit Jacket Size Medium (READ DESCRIPTION)",
+    "price": 215.0,
+    "url": "https://www.ebay.com/itm/860104185563",
+    "photo": "https://i.ebayimg.com/images/g/JmMAAeSwICxqrzCs/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T22:57:06.271070+00:00"
+  },
+  {
+    "id": 2629,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Blanket-Lined Detroit Jacket Size Large (READ DESCRIPTION)",
+    "price": 215.0,
+    "url": "https://www.ebay.com/itm/860104184304",
+    "photo": "https://i.ebayimg.com/images/g/JmMAAeSwICxqrzCs/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T22:57:06.158571+00:00"
+  },
+  {
     "id": 2624,
     "query": "j97 moss",
     "source": "ebay",
@@ -12286,6 +12318,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T19:13:54.508881+00:00"
+  },
+  {
+    "id": 2630,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J14 BRK Brick Burgundy Red Santa Fe Jacket M",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/237156136546",
+    "photo": "https://i.ebayimg.com/images/g/264AAeSwbxNq5390/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T22:57:06.168453+00:00"
   },
   {
     "id": 2619,
