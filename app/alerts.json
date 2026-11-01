@@ -2640,6 +2640,22 @@
     "created_at": "2026-10-16T21:06:36.772202+00:00"
   },
   {
+    "id": 2571,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Blanket Lined Jacket Black Duck Canvas OJ3828-M Mens L NWT",
+    "price": 110.0,
+    "url": "https://www.ebay.com/itm/227591988012",
+    "photo": "https://i.ebayimg.com/images/g/dY0AAeSwXiZq5pCm/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:53:35.249517+00:00"
+  },
+  {
     "id": 2567,
     "query": "j65 brick",
     "source": "ebay",
@@ -3936,6 +3952,22 @@
     "created_at": "2026-10-26T16:55:15.532558+00:00"
   },
   {
+    "id": 2572,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "VTG Carhartt Y2K Santa Fe Jacket J14 Canvas Quilted Lining Mens Large Brown",
+    "price": 145.0,
+    "url": "https://www.ebay.com/itm/257827574790",
+    "photo": "https://i.ebayimg.com/images/g/mREAAeSwXX1q5rVe/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:53:35.270694+00:00"
+  },
+  {
     "id": 2149,
     "query": "j97 petrol",
     "source": "etsy",
@@ -4654,6 +4686,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-31T16:53:21.547706+00:00"
+  },
+  {
+    "id": 2570,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt J164 PTL Arctic Sandstone Detroit Jacket Petrol Blue Mens M",
+    "price": 157.1,
+    "url": "https://www.ebay.com/itm/800861161509",
+    "photo": "https://i.ebayimg.com/images/g/dtwAAeSwpdZq5poo/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:53:35.243334+00:00"
   },
   {
     "id": 2259,
@@ -32286,6 +32334,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-02T13:11:10.371340+00:00"
+  },
+  {
+    "id": 2569,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Vintage Carhartt J65 BLU XL",
+    "price": 1850.0,
+    "url": "https://www.grailed.com/listings/107450479",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/34193d8d2541488194b30c578fae1800",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-01T04:53:35.235429+00:00"
   },
   {
     "id": 1694,
