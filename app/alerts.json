@@ -9456,6 +9456,22 @@
     "created_at": "2026-10-17T03:09:59.847700+00:00"
   },
   {
+    "id": 2710,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "vintage carhartt active jacket Large",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/336875149089",
+    "photo": "https://i.ebayimg.com/images/g/Kd0AAeSw9s9q6Jkd/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T22:58:21.575920+00:00"
+  },
+  {
     "id": 2698,
     "query": "j65 blue",
     "source": "ebay",
