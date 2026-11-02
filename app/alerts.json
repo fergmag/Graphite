@@ -21424,6 +21424,22 @@
     "created_at": "2026-10-14T21:10:08.968812+00:00"
   },
   {
+    "id": 2671,
+    "query": "j97 timber",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J97 TMB Carhartt Jacket XL",
+    "price": 315.0,
+    "url": "https://www.grailed.com/listings/107557656",
+    "photo": "https://media-assets.grailed.com/prd/listing/45296537/0e62c493c32040519381c13339584290",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:58:01.587055+00:00"
+  },
+  {
     "id": 972,
     "query": "j97 moss",
     "source": "ebay",
@@ -30062,6 +30078,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:51.345841+00:00"
+  },
+  {
+    "id": 2670,
+    "query": "j97 timber",
+    "source": "grailed",
+    "title": "Carhartt J97 TMB Detroit Jacket Vintage",
+    "price": 739.0,
+    "url": "https://www.grailed.com/listings/107592494",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/b6202dc4c24b4090a26762a76a8f63e4",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:58:01.578106+00:00"
   },
   {
     "id": 1517,
