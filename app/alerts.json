@@ -1248,6 +1248,22 @@
     "created_at": "2026-10-16T03:08:40.361491+00:00"
   },
   {
+    "id": 2677,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt J72/73 Nylon Work Bomber Jacket Hunter Green Mens Large",
+    "price": 80.0,
+    "url": "https://www.ebay.com/itm/860080531620",
+    "photo": "https://i.ebayimg.com/images/g/PGcAAeSwKR9q3UPz/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:59:03.593096+00:00"
+  },
+  {
     "id": 2652,
     "query": "ju1005",
     "source": "ebay",
@@ -8176,6 +8192,22 @@
     "created_at": "2026-10-15T03:10:51.274991+00:00"
   },
   {
+    "id": 2675,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Active Jacket Mens Medium Teal Faded Duck Canvas Quilted Hooded",
+    "price": 209.29999999999998,
+    "url": "https://www.ebay.com/itm/800865081184",
+    "photo": "https://i.ebayimg.com/images/g/Dj4AAeSwmOJq591D/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:59:03.568948+00:00"
+  },
+  {
     "id": 2673,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -12526,6 +12558,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T19:13:54.508881+00:00"
+  },
+  {
+    "id": 2676,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Active Jac J140 Men's L 50th anniversary edition",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/257828851257",
+    "photo": "https://i.ebayimg.com/images/g/7o0AAeSwGqJq55WV/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:59:03.585703+00:00"
   },
   {
     "id": 2649,
@@ -31390,6 +31438,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:20.586133+00:00"
+  },
+  {
+    "id": 2678,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "NWT Carhartt Detroit Jacket 6BLJ Blanket Lined Vintage Brown Duck Size 36 USA",
+    "price": 990.0,
+    "url": "https://www.ebay.com/itm/117498592282",
+    "photo": "https://i.ebayimg.com/images/g/P1oAAeSwEv9qEYwB/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:59:03.979437+00:00"
   },
   {
     "id": 1811,
