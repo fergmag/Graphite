@@ -6256,6 +6256,22 @@
     "created_at": "2026-10-29T16:57:13.707065+00:00"
   },
   {
+    "id": 2648,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt USA J140 DNY Active Jacket - Large Regular - Navy Blue -original-xlnt..",
+    "price": 180.0,
+    "url": "https://www.ebay.com/itm/158122170987",
+    "photo": "https://i.ebayimg.com/images/g/d0QAAeSwvmNqd1SJ/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:53:39.884651+00:00"
+  },
+  {
     "id": 2528,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -8414,6 +8430,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.386874+00:00"
+  },
+  {
+    "id": 2646,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J164 PTL blue Arctic work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407332149043",
+    "photo": "https://i.ebayimg.com/images/g/gAIAAeSwIR1q59dB/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:53:39.859664+00:00"
   },
   {
     "id": 2597,
@@ -22928,6 +22960,22 @@
     "created_at": "2026-10-15T03:11:43.260374+00:00"
   },
   {
+    "id": 2647,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Sz L Royal Blue J65 BLU 2001 USA UNION MADE",
+    "price": 1709.99,
+    "url": "https://www.ebay.com/itm/267801169499",
+    "photo": "https://i.ebayimg.com/images/g/QN8AAeSwS8JqvvXi/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:53:39.870321+00:00"
+  },
+  {
     "id": 1090,
     "query": "j97 crimson",
     "source": "ebay",
@@ -32624,6 +32672,22 @@
     "created_at": "2026-10-15T03:12:32.506522+00:00"
   },
   {
+    "id": 2645,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Rare Vintage Carhartt Detroit jacket J65 BLU",
+    "price": 1500.0,
+    "url": "https://www.grailed.com/listings/107565919",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/4d3d2a46208c4c48996762271e53dc0a",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:53:39.847193+00:00"
+  },
+  {
     "id": 1977,
     "query": "j43 hunter green",
     "source": "grailed",
@@ -32990,6 +33054,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:20.528288+00:00"
+  },
+  {
+    "id": 2644,
+    "query": "j65 blue",
+    "source": "grailed",
+    "title": "Rare vintage Carhartt Detroit jacket J65 Blu large",
+    "price": 1999.0,
+    "url": "https://www.grailed.com/listings/107566529",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/6b95098907cd4fe2b6ecd5771126df03",
+    "casp": 2500.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-02T04:53:39.838140+00:00"
   },
   {
     "id": 2126,
