@@ -5424,6 +5424,22 @@
     "created_at": "2026-11-02T22:58:07.376380+00:00"
   },
   {
+    "id": 2765,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J14 MDT Faded Blue Santa Fe Canvas Quilt Lined Jacket XL",
+    "price": 161.31,
+    "url": "https://www.ebay.com/itm/318930685425",
+    "photo": "https://i.ebayimg.com/images/g/VrAAAeSw8nNpepLg/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-03T22:53:40.006169+00:00"
+  },
+  {
     "id": 2395,
     "query": "j97 moss",
     "source": "etsy",
