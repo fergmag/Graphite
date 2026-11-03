@@ -47,7 +47,7 @@
       "https://res.cloudinary.com/dniduygdg/image/upload/v1792092907/graphite/vzljaapklafxzvhvlcvl.jpg",
       "https://res.cloudinary.com/dniduygdg/image/upload/v1792092908/graphite/nau5uxwmlm4tgavm9m7j.jpg"
     ],
-    "sold": false,
+    "sold": true,
     "created_at": "2026-10-15",
     "position": 2,
     "condition": null
@@ -65,7 +65,7 @@
       "https://res.cloudinary.com/dniduygdg/image/upload/v1791498204/graphite/uq4oflvaenxrunxonyim.jpg",
       "https://res.cloudinary.com/dniduygdg/image/upload/v1791498205/graphite/c0fdvsflenl4ttwn2c00.jpg"
     ],
-    "sold": true,
+    "sold": false,
     "created_at": "2026-10-08",
     "position": 3,
     "condition": null
