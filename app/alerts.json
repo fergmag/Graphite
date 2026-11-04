@@ -8128,6 +8128,22 @@
     "created_at": "2026-10-05T07:14:00.515273+00:00"
   },
   {
+    "id": 2815,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J68 BRK Active Hooded Jacket Burgundy ",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/206673968008",
+    "photo": "https://i.ebayimg.com/images/g/in4AAeSwhNJq6o~8/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:58:07.263632+00:00"
+  },
+  {
     "id": 2783,
     "query": "j65 brick",
     "source": "ebay",
