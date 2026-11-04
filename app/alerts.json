@@ -12240,6 +12240,22 @@
     "created_at": "2026-10-15T03:08:36.655400+00:00"
   },
   {
+    "id": 2814,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 Beige Canvas Full Zip Lined Corduroy Collar Men Size S/M",
+    "price": 264.99,
+    "url": "https://www.ebay.com/itm/800874266560",
+    "photo": "https://i.ebayimg.com/images/g/teMAAeSwydhq6rbL/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:37.777364+00:00"
+  },
+  {
     "id": 2808,
     "query": "j97 petrol",
     "source": "ebay",
@@ -19664,6 +19680,22 @@
     "created_at": "2026-10-26T16:57:47.775626+00:00"
   },
   {
+    "id": 2812,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "carhartt j97 tmb timber brown vintage detroit jacket size men’s xl",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/960151140033",
+    "photo": "https://i.ebayimg.com/images/g/ZhkAAeSwBvtq6oPO/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:37.540953+00:00"
+  },
+  {
     "id": 2319,
     "query": "j97 moss",
     "source": "ebay",
@@ -20990,6 +21022,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:51.460795+00:00"
+  },
+  {
+    "id": 2813,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "RARE Vintage Carhartt Detroit Jacket J97 DTL Dark Teal Fleece Lined Size S",
+    "price": 475.0,
+    "url": "https://www.ebay.com/itm/366783031937",
+    "photo": "https://i.ebayimg.com/images/g/H5sAAeSw74Jq6m97/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:37.545189+00:00"
   },
   {
     "id": 2807,
