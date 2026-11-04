@@ -3200,6 +3200,22 @@
     "created_at": "2026-10-31T22:53:37.269972+00:00"
   },
   {
+    "id": 2828,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J169 BLS 2008 Sandstone Twill Workwear Jacket Mens XL Blue Gray Zip",
+    "price": 120.0,
+    "url": "https://www.ebay.com/itm/168834909745",
+    "photo": "https://i.ebayimg.com/images/g/J5wAAeSw~bJq6drT/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:53:36.462150+00:00"
+  },
+  {
     "id": 2345,
     "query": "j97 moss",
     "source": "ebay",
@@ -24766,6 +24782,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-02T04:53:39.870321+00:00"
+  },
+  {
+    "id": 2827,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J65BLU Blue Cotton Canvas Lined Zip Workwear Jacket Men's M Regular",
+    "price": 2100.0,
+    "url": "https://www.ebay.com/itm/800875761637",
+    "photo": "https://i.ebayimg.com/images/g/KAEAAeSwNTdq6xeF/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:53:36.443191+00:00"
   },
   {
     "id": 1090,
