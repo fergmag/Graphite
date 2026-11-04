@@ -13168,6 +13168,22 @@
     "created_at": "2026-10-15T03:08:36.635180+00:00"
   },
   {
+    "id": 2832,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "NOS Carhartt V02 Dark Red Quilt Lined Mens Large Sand washed Canvas *Read*",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/366784968650",
+    "photo": "https://i.ebayimg.com/images/g/DrsAAeSwrEFq6z23/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:55:15.177416+00:00"
+  },
+  {
     "id": 2830,
     "query": "j110 darkstone",
     "source": "ebay",
@@ -18320,6 +18336,22 @@
     "created_at": "2026-10-28T16:56:44.594284+00:00"
   },
   {
+    "id": 2831,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "NOS Carhartt V02 Dark Red Quilt Lined Mens Large Sand washed Canvas",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/366784959123",
+    "photo": "https://i.ebayimg.com/images/g/DrsAAeSwrEFq6z23/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:55:15.166925+00:00"
+  },
+  {
     "id": 2773,
     "query": "j97 moss",
     "source": "ebay",
@@ -22878,6 +22910,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:37.344501+00:00"
+  },
+  {
+    "id": 2833,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt Active Jacket/XL/Brown/JQ382//",
+    "price": 387.35,
+    "url": "https://www.ebay.com/itm/137901613634",
+    "photo": "https://i.ebayimg.com/images/g/XEcAAeSwPzBq6yQ-/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:55:15.275950+00:00"
   },
   {
     "id": 1907,
