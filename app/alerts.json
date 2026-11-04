@@ -10448,6 +10448,22 @@
     "created_at": "2026-10-26T16:58:56.782873+00:00"
   },
   {
+    "id": 2840,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Sante Fe Jacket Men's (L) Quilt Lined JQ2382 Chestnut",
+    "price": 234.97,
+    "url": "https://www.ebay.com/itm/840032323118",
+    "photo": "https://i.ebayimg.com/images/g/NjwAAeSwmRVq08Ml/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:58:02.155095+00:00"
+  },
+  {
     "id": 2055,
     "query": "j97 timber",
     "source": "ebay",
@@ -12046,6 +12062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:40.402808+00:00"
+  },
+  {
+    "id": 2843,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J14 CHT brown Santa Fe work wear jacket",
+    "price": 264.98,
+    "url": "https://www.ebay.com/itm/407338078320",
+    "photo": "https://i.ebayimg.com/images/g/W0kAAeSw~0lq6oJa/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:58:02.374793+00:00"
   },
   {
     "id": 2839,
@@ -23312,6 +23344,22 @@
     "created_at": "2026-10-08T19:15:31.611403+00:00"
   },
   {
+    "id": 2841,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt Jacket Mens Large Brown Detroit Blanket Lined J43 CHT USA 90s",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/800864702092",
+    "photo": "https://i.ebayimg.com/images/g/58UAAeSwD2Fq570y/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:58:02.181572+00:00"
+  },
+  {
     "id": 2535,
     "query": "j97 moss",
     "source": "ebay",
@@ -33326,6 +33374,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:11:43.342038+00:00"
+  },
+  {
+    "id": 2842,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt 90s/Detroit Jacket/Made in USA//XXL/Cotton/BRW/J43CHT//",
+    "price": 984.59,
+    "url": "https://www.ebay.com/itm/137901612276",
+    "photo": "https://i.ebayimg.com/images/g/v2sAAeSw2OVq6yQZ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T16:58:02.287825+00:00"
   },
   {
     "id": 1964,
