@@ -2960,6 +2960,22 @@
     "created_at": "2026-10-16T21:06:36.772202+00:00"
   },
   {
+    "id": 2874,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vtg Carhartt C26 MOS Arctic Coat Mens Medium Moss Green Canvas Jacket USA Made",
+    "price": 109.99,
+    "url": "https://www.ebay.com/itm/820315052460",
+    "photo": "https://i.ebayimg.com/images/g/U9gAAeSwEhdq6pft/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:59:48.968931+00:00"
+  },
+  {
     "id": 2590,
     "query": "j76 moss",
     "source": "ebay",
@@ -4894,6 +4910,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:53:21.898739+00:00"
+  },
+  {
+    "id": 2875,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Y2K CARHARTT J01 USA Men's 42 M Tall Brown Blanket Lined Detroit Jacket",
+    "price": 149.99,
+    "url": "https://www.ebay.com/itm/820316865195",
+    "photo": "https://i.ebayimg.com/images/g/pawAAeSws~hq67VN/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:59:49.070543+00:00"
   },
   {
     "id": 2868,
