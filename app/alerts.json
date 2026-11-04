@@ -8016,6 +8016,22 @@
     "created_at": "2026-10-05T13:14:18.363890+00:00"
   },
   {
+    "id": 2859,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "CARHARTT J01 J001 USA Men's 42 M Black Blanket Lined Detroit Jacket",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/820316874481",
+    "photo": "https://i.ebayimg.com/images/g/ZnIAAeSwdV1q67Za/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:57:18.272680+00:00"
+  },
+  {
     "id": 2853,
     "query": "j97 moss",
     "source": "ebay",
@@ -18462,6 +18478,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:56.870571+00:00"
+  },
+  {
+    "id": 2860,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 des Vintage Size L Made in USA",
+    "price": 375.0,
+    "url": "https://www.ebay.com/itm/407340606971",
+    "photo": "https://i.ebayimg.com/images/g/NigAAeSwUrhq668-/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:57:18.672166+00:00"
   },
   {
     "id": 1908,
@@ -34704,6 +34736,22 @@
     "created_at": "2026-10-09T01:14:26.104509+00:00"
   },
   {
+    "id": 2858,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J97 BRG Burgundy Rare",
+    "price": 1212.0,
+    "url": "https://www.ebay.com/itm/206675978750",
+    "photo": "https://i.ebayimg.com/images/g/PhUAAeSwKkpq66Mn/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:57:18.175538+00:00"
+  },
+  {
     "id": 1642,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -35502,6 +35550,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T09:06:50.917709+00:00"
+  },
+  {
+    "id": 2857,
+    "query": "j97 burgundy",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket XL Red Detroit J97 BRG Blanket Lined Rare Mens",
+    "price": 1666.0,
+    "url": "https://www.grailed.com/listings/111355152",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/51b8db48db1f41d4a37f1f419c136200",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T22:57:18.161922+00:00"
   },
   {
     "id": 1956,
