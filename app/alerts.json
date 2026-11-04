@@ -12240,6 +12240,22 @@
     "created_at": "2026-10-15T03:08:36.655400+00:00"
   },
   {
+    "id": 2808,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit J97 Beige Canvas Full Zip Lined Corduroy Collar Men Size S/M",
+    "price": 264.99,
+    "url": "https://www.ebay.com/itm/800874266560",
+    "photo": "https://i.ebayimg.com/images/g/teMAAeSwydhq6rbL/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:19.770595+00:00"
+  },
+  {
     "id": 2805,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -20976,6 +20992,22 @@
     "created_at": "2026-10-15T03:10:51.460795+00:00"
   },
   {
+    "id": 2807,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "RARE Vintage Carhartt Detroit Jacket J97 DTL Dark Teal Fleece Lined Size S",
+    "price": 475.0,
+    "url": "https://www.ebay.com/itm/366783031937",
+    "photo": "https://i.ebayimg.com/images/g/H5sAAeSw74Jq6m97/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:19.680939+00:00"
+  },
+  {
     "id": 2795,
     "query": "j97 moss",
     "source": "ebay",
@@ -22030,6 +22062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-31T22:57:38.380446+00:00"
+  },
+  {
+    "id": 2810,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt J97 Men’s Gray Canvas Bomber Jacket XL Full Zip Pockets",
+    "price": 249.99,
+    "url": "https://www.ebay.com/itm/920102398230",
+    "photo": "https://i.ebayimg.com/images/g/p5EAAeSwMbpq6oP0/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:19.986705+00:00"
   },
   {
     "id": 1905,
@@ -25966,6 +26014,38 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:52.341411+00:00"
+  },
+  {
+    "id": 2811,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Men's XL Regular Detroit Stone Blue  Jacket J97 PTL",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/327386873982",
+    "photo": "https://i.ebayimg.com/images/g/~E4AAeSwKLVqwXp6/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:20.072833+00:00"
+  },
+  {
+    "id": 2809,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt j97 ptl gray canvas lined detroit bomber jacket zip men’s xl regular",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/960150885020",
+    "photo": "https://i.ebayimg.com/images/g/bvEAAeSwKhlq6m28/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:19.974787+00:00"
   },
   {
     "id": 2542,
@@ -29966,6 +30046,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:52.441979+00:00"
+  },
+  {
+    "id": 2806,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage carhartt J97 PTL blanket lined Detroit jacket XL REG",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/107747348",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/5b6f60af9d284b8083c1ef41645bf364",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-04T04:57:19.671910+00:00"
   },
   {
     "id": 2774,
