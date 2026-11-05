@@ -5680,6 +5680,22 @@
     "created_at": "2026-11-02T22:58:07.376380+00:00"
   },
   {
+    "id": 2928,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Rare Carhartt J20 Jacket Mens Arctic Detroit Style Quilt Lined Black L BOXY",
+    "price": 160.79,
+    "url": "https://www.ebay.com/itm/147667619514",
+    "photo": "https://i.ebayimg.com/images/g/QLwAAeSwk~Vq7HqG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:57:30.374599+00:00"
+  },
+  {
     "id": 2765,
     "query": "j65 blue",
     "source": "ebay",
@@ -13262,6 +13278,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:12:19.858977+00:00"
+  },
+  {
+    "id": 2929,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J01 / 6BLJ Size 50 / Brown Made In Usa RARE Big Patch",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/206675618734",
+    "photo": "https://i.ebayimg.com/images/g/fTEAAeSwyLRqsrZ3/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:57:30.479700+00:00"
   },
   {
     "id": 2924,
@@ -23680,6 +23712,22 @@
     "created_at": "2026-10-15T03:11:27.947537+00:00"
   },
   {
+    "id": 2927,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Faded J97 PTL Petrol Grey Flannel Lined Detroit Jacket Size Large",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/168841213098",
+    "photo": "https://i.ebayimg.com/images/g/duMAAeSwObBq7KYr/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:57:30.181779+00:00"
+  },
+  {
     "id": 2864,
     "query": "j97 petrol",
     "source": "ebay",
@@ -24238,6 +24286,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T10:56:37.981286+00:00"
+  },
+  {
+    "id": 2930,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "2000 Carhartt J97 PTL Detroit Canvas Blanket Lined Workwear Jacket Made in USA",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/336881618892",
+    "photo": "https://i.ebayimg.com/images/g/KKEAAeSw2dRq7K1v/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:57:30.577141+00:00"
   },
   {
     "id": 2821,
@@ -34174,6 +34238,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T01:16:17.760289+00:00"
+  },
+  {
+    "id": 2926,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Thrashed Fade Carhartt Detroit Jacket J97 PTL Petrol Grey",
+    "price": 1000.0,
+    "url": "https://www.grailed.com/listings/111422888",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/19e1d33dbae7411a9161df59b1cc2f61",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:57:29.960566+00:00"
   },
   {
     "id": 2306,
