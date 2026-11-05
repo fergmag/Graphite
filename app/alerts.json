@@ -20128,6 +20128,22 @@
     "created_at": "2026-10-27T04:57:20.671129+00:00"
   },
   {
+    "id": 2957,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "90s Carhartt C02 CHT blanket lined Jacket Size XL",
+    "price": 224.99,
+    "url": "https://www.ebay.com/itm/960159228654",
+    "photo": "https://i.ebayimg.com/images/g/KmYAAeSwRglq7Pnc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T22:58:03.270885+00:00"
+  },
+  {
     "id": 2562,
     "query": "j97 petrol",
     "source": "ebay",
