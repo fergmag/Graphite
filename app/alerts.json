@@ -18672,6 +18672,22 @@
     "created_at": "2026-11-02T22:56:45.579410+00:00"
   },
   {
+    "id": 2885,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Moss Green Duck Canvas Blanket Lined J97 MOS",
+    "price": 441.0,
+    "url": "https://www.ebay.com/itm/168839395366",
+    "photo": "https://i.ebayimg.com/images/g/gQsAAeSwWd1q69Ms/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T04:56:29.574509+00:00"
+  },
+  {
     "id": 2421,
     "query": "js1236",
     "source": "ebay",
@@ -19934,6 +19950,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:56:39.073979+00:00"
+  },
+  {
+    "id": 2884,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Moss Green Detroit Jacket Men’s XL Workwear J97 MOS",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/820317917286",
+    "photo": "https://i.ebayimg.com/images/g/f8cAAeSwtLZqrFfR/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T04:56:29.269291+00:00"
   },
   {
     "id": 2722,
@@ -21486,6 +21518,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T04:56:35.969882+00:00"
+  },
+  {
+    "id": 2883,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Detroit Carhartt Blanket Lined Plaid Work Jacket Moss Green J97 MOS Med Mexico",
+    "price": 499.99,
+    "url": "https://www.ebay.com/itm/860114278284",
+    "photo": "https://i.ebayimg.com/images/g/VQUAAeSw7qVq5i0C/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T04:56:29.083321+00:00"
   },
   {
     "id": 2315,
