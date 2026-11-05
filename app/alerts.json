@@ -27632,6 +27632,22 @@
     "created_at": "2026-11-02T16:57:26.178035+00:00"
   },
   {
+    "id": 2879,
+    "query": "js1207",
+    "source": "ebay",
+    "title": "Carhartt Carhartt Check Active Jacket Quilting L No.ch1065",
+    "price": 390.57,
+    "url": "https://www.ebay.com/itm/147653437322",
+    "photo": "https://i.ebayimg.com/images/g/dSQAAeSwgmNq4BmU/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T04:54:14.225165+00:00"
+  },
+  {
     "id": 2531,
     "query": "jp1017",
     "source": "ebay",
