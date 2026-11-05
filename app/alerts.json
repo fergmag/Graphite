@@ -6160,6 +6160,22 @@
     "created_at": "2026-10-16T09:10:16.253953+00:00"
   },
   {
+    "id": 2916,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Carhartt grey hooded work wear jacket",
+    "price": 174.98000000000002,
+    "url": "https://www.ebay.com/itm/407109248760",
+    "photo": "https://i.ebayimg.com/images/g/CtUAAeSwlDZqa9ey/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:53:06.614831+00:00"
+  },
+  {
     "id": 2496,
     "query": "js1236",
     "source": "ebay",
@@ -15214,6 +15230,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-06T13:14:14.312202+00:00"
+  },
+  {
+    "id": 2917,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Detroit Jacket Blanket Lined Men’s Brown Hooded Khaki",
+    "price": 353.48,
+    "url": "https://www.ebay.com/itm/198774900768",
+    "photo": "https://i.ebayimg.com/images/g/WFUAAeSwfSxq0CNF/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T16:53:06.636910+00:00"
   },
   {
     "id": 565,
