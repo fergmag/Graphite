@@ -3408,6 +3408,22 @@
     "created_at": "2026-10-31T22:53:37.269972+00:00"
   },
   {
+    "id": 2956,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket, Vintage Detroit Workwear Jacket, Blanket Lined Cotton Duck Coat, Rugged Men&#39;s Carhartt Jacket PLT",
+    "price": 120.0,
+    "url": "https://www.etsy.com/listing/4610645253/carhartt-j97-detroit-jacket-vintage",
+    "photo": "https://i.etsystatic.com/68848753/r/il/cbfdd8/8851718031/il_570xN.8851718031_hjsn.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T22:57:32.578065+00:00"
+  },
+  {
     "id": 2828,
     "query": "j65 blue",
     "source": "ebay",
@@ -20832,6 +20848,22 @@
     "created_at": "2026-10-27T16:58:25.874600+00:00"
   },
   {
+    "id": 2955,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 PTL Blanket Lined Detroit Gray Workwear Jacket Size large",
+    "price": 325.0,
+    "url": "https://www.ebay.com/itm/840098133563",
+    "photo": "https://i.ebayimg.com/images/g/oVcAAeSwbF5q7QX3/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T22:57:31.975901+00:00"
+  },
+  {
     "id": 824,
     "query": "j43 onyx",
     "source": "ebay",
@@ -21870,6 +21902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T10:58:21.371423+00:00"
+  },
+  {
+    "id": 2954,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage Carhartt Detroit Jacket J97 PTL",
+    "price": 450.0,
+    "url": "https://www.grailed.com/listings/111437994",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/f8d06891f6ab4afb959895f5aa823633",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T22:57:31.784586+00:00"
   },
   {
     "id": 1749,
@@ -32366,6 +32414,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T16:56:47.081392+00:00"
+  },
+  {
+    "id": 2953,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "vintage beutiful faded distressed carhartt detroit J97 ptl🦍",
+    "price": 685.0,
+    "url": "https://www.grailed.com/listings/111392972",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/e9adb76c410249be976e0be88a3dcb6b",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-05T22:57:31.776413+00:00"
   },
   {
     "id": 1479,
