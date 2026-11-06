@@ -8000,6 +8000,22 @@
     "created_at": "2026-10-09T01:16:06.118455+00:00"
   },
   {
+    "id": 3041,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 PTL Blanket Lined Detroit Gray Workwear Jacket Size large",
+    "price": 187.99,
+    "url": "https://www.ebay.com/itm/128179109125",
+    "photo": "https://i.ebayimg.com/images/g/C0oAAeSwdV1q7euP/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T16:57:32.971859+00:00"
+  },
+  {
     "id": 278,
     "query": "j97 petrol",
     "source": "ebay",
@@ -25054,6 +25070,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T21:07:34.697754+00:00"
+  },
+  {
+    "id": 3040,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Vintage Detroit Jacket J97 PTL Mens Large Petrol Grey Blanket Lined HTF",
+    "price": 432.7,
+    "url": "https://www.ebay.com/itm/377626165506",
+    "photo": "https://i.ebayimg.com/images/g/o4UAAeSwCFxpaUky/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T16:57:32.573951+00:00"
   },
   {
     "id": 2596,
