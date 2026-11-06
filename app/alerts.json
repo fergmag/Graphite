@@ -3936,6 +3936,22 @@
     "created_at": "2026-10-15T03:08:36.759730+00:00"
   },
   {
+    "id": 3003,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt J02 BLK Black Traditional Arctic Duck Jacket Coat Large Tall Distressed",
+    "price": 129.0,
+    "url": "https://www.ebay.com/itm/117507298375",
+    "photo": "https://i.ebayimg.com/images/g/O30AAeSwGLRq7Vr2/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:51.168876+00:00"
+  },
+  {
     "id": 2640,
     "query": "j76 moss",
     "source": "ebay",
@@ -7408,6 +7424,22 @@
     "created_at": "2026-10-26T16:55:15.523864+00:00"
   },
   {
+    "id": 3001,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt J03 BRN Active Jacket Medium USA Made Brown Duck Thermal",
+    "price": 184.0,
+    "url": "https://www.ebay.com/itm/407343547682",
+    "photo": "https://i.ebayimg.com/images/g/DAIAAeSwywhqoZiv/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:51.051344+00:00"
+  },
+  {
     "id": 2999,
     "query": "j76 moss",
     "source": "ebay",
@@ -7678,6 +7710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T04:55:52.179236+00:00"
+  },
+  {
+    "id": 3004,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt J130 BRN Jacket Size Large Tall Distressed Faded",
+    "price": 185.5,
+    "url": "https://www.ebay.com/itm/237166395853",
+    "photo": "https://i.ebayimg.com/images/g/hxYAAeSwMMRq7SVH/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:51.176440+00:00"
   },
   {
     "id": 2120,
@@ -22414,6 +22462,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:39.282818+00:00"
+  },
+  {
+    "id": 3002,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "VTG 2002 Carhartt J128 Charcoal Black Firm Nylon Workwear Jacket us sz LBig Logo",
+    "price": 464.76,
+    "url": "https://www.ebay.com/itm/198775719566",
+    "photo": "https://i.ebayimg.com/images/g/HggAAeSwoGZq7QE0/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:51.078497+00:00"
   },
   {
     "id": 2932,
