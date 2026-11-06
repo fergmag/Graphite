@@ -3888,6 +3888,22 @@
     "created_at": "2026-10-26T16:58:20.689735+00:00"
   },
   {
+    "id": 3052,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Distressed Carhartt Jacket XXL red Duck Canvas",
+    "price": 125.0,
+    "url": "https://www.ebay.com/itm/800758016339",
+    "photo": "https://i.ebayimg.com/images/g/JfAAAeSw3GJqws-T/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:55:55.678048+00:00"
+  },
+  {
     "id": 2948,
     "query": "j97 moss",
     "source": "ebay",
@@ -8942,6 +8958,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:05:59.865165+00:00"
+  },
+  {
+    "id": 3054,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J01 Work Blanket Vintage, Lined, Union Black Kingsford",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/198775571966",
+    "photo": "https://i.ebayimg.com/images/g/efsAAeSwMbpq7O3Z/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:55:55.972550+00:00"
   },
   {
     "id": 3008,
@@ -25582,6 +25614,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T10:56:37.981286+00:00"
+  },
+  {
+    "id": 3053,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens Sz 52 XXL J01 BLK Blanket Lined USA Made",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/820324860433",
+    "photo": "https://i.ebayimg.com/images/g/R0IAAeSw5uVq7hIj/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 2,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:55:55.771709+00:00"
   },
   {
     "id": 2930,
