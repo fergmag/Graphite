@@ -4336,6 +4336,22 @@
     "created_at": "2026-10-09T01:13:09.816852+00:00"
   },
   {
+    "id": 3031,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Duck Blanket-Lined Chore Jacket Mens Medium C02 BRN Brown",
+    "price": 134.99,
+    "url": "https://www.ebay.com/itm/407278434266",
+    "photo": "https://i.ebayimg.com/images/g/F18AAeSwDtpqyOy5/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T16:55:25.307509+00:00"
+  },
+  {
     "id": 2460,
     "query": "js1237",
     "source": "ebay",
@@ -9998,6 +10014,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.386874+00:00"
+  },
+  {
+    "id": 3032,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt CHT brown hooded work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407203041084",
+    "photo": "https://i.ebayimg.com/images/g/n9IAAeSwOfJqoMRe/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T16:55:25.317857+00:00"
   },
   {
     "id": 3025,
