@@ -34096,6 +34096,22 @@
     "created_at": "2026-10-15T03:10:51.371133+00:00"
   },
   {
+    "id": 3050,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Jb0866 Moss Green USA Made Medium J97 90s Lined",
+    "price": 744.18,
+    "url": "https://www.ebay.com/itm/820325236055",
+    "photo": "https://i.ebayimg.com/images/g/x4wAAeSwcsdq7jDt/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:53:06.129614+00:00"
+  },
+  {
     "id": 1914,
     "query": "j97 petrol",
     "source": "etsy",
