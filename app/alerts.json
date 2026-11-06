@@ -2096,6 +2096,22 @@
     "created_at": "2026-11-02T10:55:27.230697+00:00"
   },
   {
+    "id": 3017,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Iconic Duck Active Jacket XL Brown J140 Quilted Flannel Lined",
+    "price": 94.99,
+    "url": "https://www.ebay.com/itm/920111284976",
+    "photo": "https://i.ebayimg.com/images/g/gWMAAeSw9aVq7M3~/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T10:58:07.771532+00:00"
+  },
+  {
     "id": 3005,
     "query": "j65 blue",
     "source": "ebay",
@@ -20110,6 +20126,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:53:56.630302+00:00"
+  },
+  {
+    "id": 3018,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "VTG 2002 Carhartt J128 Charcoal Black Firm Nylon Workwear Jacket us sz LBig Logo",
+    "price": 464.76,
+    "url": "https://www.ebay.com/itm/198775719566",
+    "photo": "https://i.ebayimg.com/images/g/HggAAeSwoGZq7QE0/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T10:58:07.874331+00:00"
   },
   {
     "id": 2804,
