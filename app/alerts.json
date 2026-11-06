@@ -7328,6 +7328,22 @@
     "created_at": "2026-10-26T16:55:15.523864+00:00"
   },
   {
+    "id": 2964,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt J03 BRN Active Jacket Medium USA Made Brown Duck Thermal",
+    "price": 184.0,
+    "url": "https://www.ebay.com/itm/407343547682",
+    "photo": "https://i.ebayimg.com/images/g/DAIAAeSwywhqoZiv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:53:34.337724+00:00"
+  },
+  {
     "id": 2125,
     "query": "j43 onyx",
     "source": "ebay",
@@ -10142,6 +10158,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:53:45.154971+00:00"
+  },
+  {
+    "id": 2965,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Green Canvas Workwear Jacket Zip Lined Brown Collar Size: XL",
+    "price": 220.0,
+    "url": "https://www.ebay.com/itm/880087394268",
+    "photo": "https://i.ebayimg.com/images/g/6WYAAeSwQdNq7Slj/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:53:34.387685+00:00"
   },
   {
     "id": 2658,
