@@ -7408,6 +7408,22 @@
     "created_at": "2026-10-26T16:55:15.523864+00:00"
   },
   {
+    "id": 2999,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J03 BRN Active Jacket Medium USA Made Brown Duck Thermal",
+    "price": 184.0,
+    "url": "https://www.ebay.com/itm/407343547682",
+    "photo": "https://i.ebayimg.com/images/g/DAIAAeSwywhqoZiv/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:35.678104+00:00"
+  },
+  {
     "id": 2996,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -11006,6 +11022,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T10:56:36.076058+00:00"
+  },
+  {
+    "id": 3000,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Y2K Early 2000s Carhartt Detroit Jacket Faded Grey Slight Distressing ",
+    "price": 230.0,
+    "url": "https://www.ebay.com/itm/137906211328",
+    "photo": "https://i.ebayimg.com/images/g/2tAAAeSwLhlnw1Pt/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:35.689017+00:00"
   },
   {
     "id": 2989,
@@ -28222,6 +28254,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:11:10.979556+00:00"
+  },
+  {
+    "id": 2998,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vtg Carhartt J76 MOS Detroit Jacket 2XL Moss Green Blanket Lined USA Workwear",
+    "price": 349.95,
+    "url": "https://www.ebay.com/itm/147668292176",
+    "photo": "https://i.ebayimg.com/images/g/3NQAAeSwv31q7AFS/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T04:59:35.621379+00:00"
   },
   {
     "id": 2835,
