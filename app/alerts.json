@@ -8960,6 +8960,22 @@
     "created_at": "2026-10-14T21:05:59.865165+00:00"
   },
   {
+    "id": 3062,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J01 Work Blanket Vintage, Lined, Union Black Kingsford",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/198775571966",
+    "photo": "https://i.ebayimg.com/images/g/efsAAeSwMbpq7O3Z/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:57:25.272193+00:00"
+  },
+  {
     "id": 3059,
     "query": "j97 moss",
     "source": "ebay",
@@ -14560,6 +14576,22 @@
     "created_at": "2026-10-26T22:56:38.792224+00:00"
   },
   {
+    "id": 3061,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens Medium Brown Canvas NY Yankees Blanket Line",
+    "price": 291.0,
+    "url": "https://www.ebay.com/itm/287707320287",
+    "photo": "https://i.ebayimg.com/images/g/I1EAAeSw7LZq7K4B/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:57:25.083430+00:00"
+  },
+  {
     "id": 3060,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -18846,6 +18878,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T15:13:09.288971+00:00"
+  },
+  {
+    "id": 3063,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Men's J97 BRN Detroit Work Jacket – Large Made in USA vintage ",
+    "price": 294.99,
+    "url": "https://www.ebay.com/itm/227601625573",
+    "photo": "https://i.ebayimg.com/images/g/DxkAAeSwfKVqxAQJ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-06T22:57:25.575356+00:00"
   },
   {
     "id": 3058,
