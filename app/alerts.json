@@ -3600,6 +3600,22 @@
     "created_at": "2026-10-15T03:06:51.665907+00:00"
   },
   {
+    "id": 3138,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "NWT Carhartt Detroit Jacket Men’s M Blanket Lined Black Duck Canvas 0J3828",
+    "price": 117.75,
+    "url": "https://www.ebay.com/itm/960167341017",
+    "photo": "https://i.ebayimg.com/images/g/Z90AAeSwYxRqtSRt/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-07T22:58:38.885074+00:00"
+  },
+  {
     "id": 3134,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -15806,6 +15822,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:09:05.323959+00:00"
+  },
+  {
+    "id": 3139,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens M Beige Canvas Blanket Lined Full Zip",
+    "price": 309.95,
+    "url": "https://www.ebay.com/itm/137909215882",
+    "photo": "https://i.ebayimg.com/images/g/bjsAAeSwUFVq7nKU/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-07T22:58:39.079601+00:00"
   },
   {
     "id": 1807,
