@@ -176,22 +176,6 @@
     "created_at": "2026-10-16T03:08:51.167721+00:00"
   },
   {
-    "id": 12,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Carhartt Fleece Jacket MENS Small Black Red 1/4 Zip OUTDOOR Pullover Plaid NWT",
-    "price": 39.99,
-    "url": "https://www.ebay.com/itm/198695110346",
-    "photo": "https://i.ebayimg.com/images/g/XyQAAeSwt-dqxWyV/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:13:31.208783+00:00"
-  },
-  {
     "id": 2968,
     "query": "j97 crimson",
     "source": "ebay",
@@ -4480,22 +4464,6 @@
     "created_at": "2026-10-17T03:12:52.890664+00:00"
   },
   {
-    "id": 170,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt J97 Detroit Jacket | Moss Green Sandstone Duck, Blanket Lined Workwear",
-    "price": 137.0,
-    "url": "https://www.etsy.com/listing/4590458573/vintage-carhartt-j97-detroit-jacket-moss",
-    "photo": "https://i.etsystatic.com/64974260/r/il/c62cdd/8638461222/il_570xN.8638461222_pypj.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:14:17.717825+00:00"
-  },
-  {
     "id": 171,
     "query": "j97 crimson",
     "source": "ebay",
@@ -4798,22 +4766,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:55:26.334000+00:00"
-  },
-  {
-    "id": 182,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage 90s Red Carhartt J140 Active Quilt Lined Hooded Jacket - XL",
-    "price": 142.98000000000002,
-    "url": "https://www.ebay.com/itm/298740336043",
-    "photo": "https://i.ebayimg.com/images/g/OnMAAeSw~hNqxPWa/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:13:30.615545+00:00"
   },
   {
     "id": 2362,
@@ -5760,22 +5712,6 @@
     "created_at": "2026-10-16T15:07:37.908135+00:00"
   },
   {
-    "id": 211,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Vintage Red Carhartt Jacket Men's XL Please Read Description",
-    "price": 155.0,
-    "url": "https://www.ebay.com/itm/257787907169",
-    "photo": "https://i.ebayimg.com/images/g/iG0AAeSwy6RqxozQ/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:13:36.106051+00:00"
-  },
-  {
     "id": 2292,
     "query": "j97 crimson",
     "source": "ebay",
@@ -5790,38 +5726,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T22:55:52.873556+00:00"
-  },
-  {
-    "id": 213,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt J97 Brown Duck Canvas Lined Work Jacket Full Zip Stand Collar Mens L",
-    "price": 155.99,
-    "url": "https://www.ebay.com/itm/377550417929",
-    "photo": "https://i.ebayimg.com/images/g/kXsAAeSw78VqxYIu/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:15:01.403122+00:00"
-  },
-  {
-    "id": 214,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Carhartt J97 Brown Duck Canvas Lined Work Jacket Full Zip Stand Collar Mens L",
-    "price": 155.99,
-    "url": "https://www.ebay.com/itm/377550417929",
-    "photo": "https://i.ebayimg.com/images/g/kXsAAeSw78VqxYIu/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:12.822272+00:00"
   },
   {
     "id": 2530,
@@ -9584,22 +9488,6 @@
     "created_at": "2026-10-09T01:11:30.778144+00:00"
   },
   {
-    "id": 333,
-    "query": "j97 crimson",
-    "source": "ebay",
-    "title": "Carhartt J18 BRN S/M Red Quilt Lined GUC",
-    "price": 200.0,
-    "url": "https://www.ebay.com/itm/237112508050",
-    "photo": "https://i.ebayimg.com/images/g/qvYAAeSwCFxqxiqv/s-l225.jpg",
-    "casp": 2700.0,
-    "deal_score": 5,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:13:30.570358+00:00"
-  },
-  {
     "id": 2846,
     "query": "jb0873",
     "source": "ebay",
@@ -13054,22 +12942,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T01:15:01.907822+00:00"
-  },
-  {
-    "id": 440,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Retro Carhartt J97 Detroit Jacket Moss Green Vintage Workwear",
-    "price": 256.67,
-    "url": "https://www.etsy.com/listing/4590476212/retro-carhartt-j97-detroit-jacket-moss",
-    "photo": "https://i.etsystatic.com/68111780/r/il/9094df/8638419554/il_570xN.8638419554_oro3.jpg",
-    "casp": 700.0,
-    "deal_score": 5,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:14:17.703472+00:00"
   },
   {
     "id": 441,
@@ -17888,22 +17760,6 @@
     "created_at": "2026-10-14T21:11:16.458020+00:00"
   },
   {
-    "id": 627,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Y2K CARHARTT J97 48 XL SDL Brown Canvas Blanket Lined Work Detroit Jacket EUC",
-    "price": 199.99,
-    "url": "https://www.ebay.com/itm/820211538468",
-    "photo": "https://i.ebayimg.com/images/g/JvsAAeSwQ6JqxWO1/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 4,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:12.902735+00:00"
-  },
-  {
     "id": 628,
     "query": "j76 cement",
     "source": "ebay",
@@ -21312,22 +21168,6 @@
     "created_at": "2026-10-26T16:57:48.082928+00:00"
   },
   {
-    "id": 800,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt J97 BRN Detroit Camel Detroit Flannel Lined Jacket Mens Size XL",
-    "price": 247.49,
-    "url": "https://www.ebay.com/itm/327362581122",
-    "photo": "https://i.ebayimg.com/images/g/LCcAAeSwKkJqrENu/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:14:09.101880+00:00"
-  },
-  {
     "id": 801,
     "query": "j97 moss",
     "source": "ebay",
@@ -22078,22 +21918,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-02T04:57:44.988948+00:00"
-  },
-  {
-    "id": 830,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Blanket-Lined Detroit Jacket J97 PTL USA Mens Large Tall",
-    "price": 349.99,
-    "url": "https://www.ebay.com/itm/178404306165",
-    "photo": "https://i.ebayimg.com/images/g/kkAAAeSwTpVqF25W/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 3,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:00.509394+00:00"
   },
   {
     "id": 2909,
@@ -23312,22 +23136,6 @@
     "created_at": "2026-10-31T10:57:17.772815+00:00"
   },
   {
-    "id": 887,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt J97 Mos",
-    "price": 480.0,
-    "url": "https://www.grailed.com/listings/108027624",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/0dc0ffae09254dad93fd35b6bf1ced89",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:14:08.706889+00:00"
-  },
-  {
     "id": 889,
     "query": "j97 moss",
     "source": "ebay",
@@ -23598,22 +23406,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:13:14.573196+00:00"
-  },
-  {
-    "id": 904,
-    "query": "j97 moss",
-    "source": "etsy",
-    "title": "Vintage Carhartt J97 MOS Moss Green Detroit Jacket Blanket Lined Made in USA 2002 Workwear Coat, Distressed Duck Canvas Outerwear 3XL Tall",
-    "price": 520.0,
-    "url": "https://www.etsy.com/listing/4590654463/vintage-carhartt-j97-mos-moss-green",
-    "photo": "https://i.etsystatic.com/20656072/r/il/a580bd/8687785063/il_570xN.8687785063_umu5.jpg",
-    "casp": 700.0,
-    "deal_score": 3,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T21:42:30.315306+00:00"
   },
   {
     "id": 905,
@@ -24606,22 +24398,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-31T10:57:17.272082+00:00"
-  },
-  {
-    "id": 950,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Men's Detroit Jacket J97 PTL Size XL Vintage Made in USA",
-    "price": 285.0,
-    "url": "https://www.ebay.com/itm/206608414316",
-    "photo": "https://i.ebayimg.com/images/g/ys8AAeSwtRBpxKK5/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 2,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:00.447673+00:00"
   },
   {
     "id": 1854,
@@ -26448,22 +26224,6 @@
     "created_at": "2026-10-15T09:10:05.338967+00:00"
   },
   {
-    "id": 1062,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage 90s J97Mos Green Carhartt Detroit Jacket Size M Made In USA",
-    "price": 610.0,
-    "url": "https://www.ebay.com/itm/307217935748",
-    "photo": "https://i.ebayimg.com/images/g/knAAAeSwwcNqxU2M/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 2,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:12.817976+00:00"
-  },
-  {
     "id": 2600,
     "query": "j97 moss",
     "source": "ebay",
@@ -26990,22 +26750,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:12:19.654218+00:00"
-  },
-  {
-    "id": 1084,
-    "query": "j43 burgundy",
-    "source": "grailed",
-    "title": "Vintage Carhartt Detroit Jacket Brown J43BRG",
-    "price": 800.0,
-    "url": "https://www.grailed.com/listings/108066579",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/31f71816e4a942009b5663942f0481ef",
-    "casp": 900.0,
-    "deal_score": 2,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:16:00.423544+00:00"
   },
   {
     "id": 2127,
@@ -27840,22 +27584,6 @@
     "created_at": "2026-10-14T21:10:08.862311+00:00"
   },
   {
-    "id": 1123,
-    "query": "j97 petrol",
-    "source": "grailed",
-    "title": "Vintage Carhartt J97 Petrol Detroit Blanket Lined Jacket XXL",
-    "price": 250.0,
-    "url": "https://www.grailed.com/listings/108056017",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/3d22c14438a24936ab58c4eef4f2e4a0",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:15:08.591370+00:00"
-  },
-  {
     "id": 1124,
     "query": "j97 moss",
     "source": "ebay",
@@ -28222,22 +27950,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:10:58.239208+00:00"
-  },
-  {
-    "id": 1139,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Detroit Zip Work Jacket J97 PTL  2XL",
-    "price": 289.99,
-    "url": "https://www.ebay.com/itm/407273553806",
-    "photo": "https://i.ebayimg.com/images/g/vj8AAeSwD3ZqvWCF/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:15:09.215737+00:00"
   },
   {
     "id": 1140,
@@ -28688,22 +28400,6 @@
     "created_at": "2026-10-29T16:57:47.784557+00:00"
   },
   {
-    "id": 1174,
-    "query": "j76 cement",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket J76 CMT Size XXL Blanket Lined 90s",
-    "price": 309.94,
-    "url": "https://www.ebay.com/itm/407271826100",
-    "photo": "https://i.ebayimg.com/images/g/iXoAAeSwuf1qxWQx/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XXL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T21:45:34.498311+00:00"
-  },
-  {
     "id": 1926,
     "query": "j97 petrol",
     "source": "ebay",
@@ -29086,22 +28782,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:57:32.071244+00:00"
-  },
-  {
-    "id": 1191,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Carhartt Detroit Jacket J97 PTL Mens XL Black Canvas Bomber Full Zip Lined",
-    "price": 336.71000000000004,
-    "url": "https://www.ebay.com/itm/198694557213",
-    "photo": "https://i.ebayimg.com/images/g/o8MAAeSwVnNqdTHj/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:00.315133+00:00"
   },
   {
     "id": 1193,
@@ -29726,22 +29406,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T10:57:36.679666+00:00"
-  },
-  {
-    "id": 1244,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Vintage Carhartt J97 MOS Detroit Jacket Moss Green Blanket Lined XL Tall CLEAN",
-    "price": 379.99,
-    "url": "https://www.ebay.com/itm/920015172135",
-    "photo": "https://i.ebayimg.com/images/g/5ckAAeSwqWZqvB3a/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:12.812701+00:00"
   },
   {
     "id": 1245,
@@ -31680,38 +31344,6 @@
     "created_at": "2026-10-14T21:10:09.154920+00:00"
   },
   {
-    "id": 1358,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Early 2000s Carhartt Detroit Jacket (2005), J97 MOS (Moss/Green), X-Large ",
-    "price": 500.0,
-    "url": "https://www.ebay.com/itm/336832669293",
-    "photo": "https://i.ebayimg.com/images/g/zngAAeSwoWtqwYqN/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:13.004920+00:00"
-  },
-  {
-    "id": 1359,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "Carhartt J97 Detroit Jacket Men's XL 56\" Chest Lined Canvas Duck Moss Green",
-    "price": 500.0,
-    "url": "https://www.ebay.com/itm/820211535747",
-    "photo": "https://i.ebayimg.com/images/g/P28AAeSwmZdqxWWa/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:14:12.806994+00:00"
-  },
-  {
     "id": 2824,
     "query": "j97 petrol",
     "source": "ebay",
@@ -32528,22 +32160,6 @@
     "created_at": "2026-10-16T03:09:53.551892+00:00"
   },
   {
-    "id": 1419,
-    "query": "j97 moss",
-    "source": "ebay",
-    "title": "VINTAGE Carhartt J97 Mos | Original Detroit Jacket | Size L | Excellent Example",
-    "price": 591.11,
-    "url": "https://www.ebay.com/itm/168773837294",
-    "photo": "https://i.ebayimg.com/images/g/vbgAAeSw95NqxoH7/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:14:17.414075+00:00"
-  },
-  {
     "id": 2820,
     "query": "j97 moss",
     "source": "ebay",
@@ -33328,22 +32944,6 @@
     "created_at": "2026-10-15T03:10:01.587964+00:00"
   },
   {
-    "id": 1464,
-    "query": "j110 darkstone",
-    "source": "ebay",
-    "title": "RARE  Vintage 2000 Carhartt Detroit J110 DST Jacket XL  USA made & Union label",
-    "price": 650.0,
-    "url": "https://www.ebay.com/itm/800768546062",
-    "photo": "https://i.ebayimg.com/images/g/NocAAeSwTD9qtBqv/s-l225.jpg",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:12:40.218544+00:00"
-  },
-  {
     "id": 2574,
     "query": "j97 moss",
     "source": "grailed",
@@ -33582,38 +33182,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:01.162399+00:00"
-  },
-  {
-    "id": 1476,
-    "query": "j76 cement",
-    "source": "ebay",
-    "title": "Vintage Carhartt J76 CMT Detroit Jacket Large Cement Grey Canvas Plaid Distress",
-    "price": 675.0,
-    "url": "https://www.ebay.com/itm/406984991699",
-    "photo": "https://i.ebayimg.com/images/g/lf0AAeSw-LRqJynD/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:17:27.069313+00:00"
-  },
-  {
-    "id": 1477,
-    "query": "j97 burgundy",
-    "source": "ebay",
-    "title": "Carhartt J97 BRG Burgundy Canvas Full Zip Lined Work Jacket Men's XL Regular",
-    "price": 675.0,
-    "url": "https://www.ebay.com/itm/960032239255",
-    "photo": "https://i.ebayimg.com/images/g/1bQAAeSwjdRqxna2/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:14:37.185524+00:00"
   },
   {
     "id": 1882,
@@ -34512,22 +34080,6 @@
     "created_at": "2026-10-28T16:57:38.080734+00:00"
   },
   {
-    "id": 1523,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit J97 PTL Jacket Size Small Made In USA ",
-    "price": 762.98,
-    "url": "https://www.ebay.com/itm/397593371531",
-    "photo": "https://i.ebayimg.com/images/g/LosAAeSwviJpi5k7/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:14:58.414566+00:00"
-  },
-  {
     "id": 1524,
     "query": "j97 petrol",
     "source": "grailed",
@@ -35328,22 +34880,6 @@
     "created_at": "2026-10-08T01:12:34.603708+00:00"
   },
   {
-    "id": 1563,
-    "query": "j97 petrol",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Mens XL-Tall J97 PTL Blanket Lined Gray USA Made",
-    "price": 900.0,
-    "url": "https://www.ebay.com/itm/820212510816",
-    "photo": "https://i.ebayimg.com/images/g/yaQAAeSwdhJqxcTb/s-l225.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": "XL",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:00.466777+00:00"
-  },
-  {
     "id": 2233,
     "query": "j76 moss",
     "source": "ebay",
@@ -35920,22 +35456,6 @@
     "created_at": "2026-10-14T21:08:53.411390+00:00"
   },
   {
-    "id": 1584,
-    "query": "j76 cement",
-    "source": "ebay",
-    "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Large Workwear",
-    "price": 999.99,
-    "url": "https://www.ebay.com/itm/177526399979",
-    "photo": "https://i.ebayimg.com/images/g/rcAAAeSwWZlo-8FZ/s-l225.jpg",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T19:17:27.062256+00:00"
-  },
-  {
     "id": 2926,
     "query": "j97 petrol",
     "source": "grailed",
@@ -36158,22 +35678,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-08T19:16:54.406491+00:00"
-  },
-  {
-    "id": 1597,
-    "query": "j110 darkstone",
-    "source": "ebay",
-    "title": "vintage carhartt j110 dst vintage detroit jacket men’s medium flawless",
-    "price": 1000.0,
-    "url": "https://www.ebay.com/itm/960027253730",
-    "photo": "https://i.ebayimg.com/images/g/uXMAAeSwimhqxXIp/s-l225.jpg",
-    "casp": 800.0,
-    "deal_score": 1,
-    "size": "M",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T01:12:40.003334+00:00"
   },
   {
     "id": 2004,
@@ -37008,22 +36512,6 @@
     "created_at": "2026-10-26T16:52:54.247958+00:00"
   },
   {
-    "id": 1654,
-    "query": "j43 burgundy",
-    "source": "ebay",
-    "title": "Vtg Carhartt J43 BRG Burgundy Red Detroit Boxy Canvas Work Jacket Mens Large",
-    "price": 1324.0,
-    "url": "https://www.ebay.com/itm/920016330423",
-    "photo": "https://i.ebayimg.com/images/g/DWEAAeSwV9Rqxdib/s-l225.jpg",
-    "casp": 900.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:47.604088+00:00"
-  },
-  {
     "id": 2876,
     "query": "j65 blue",
     "source": "ebay",
@@ -37518,22 +37006,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-06T16:52:56.630510+00:00"
-  },
-  {
-    "id": 1684,
-    "query": "j97 moss",
-    "source": "grailed",
-    "title": "Carhartt Detroit Jacket J97 Moss Green Size L Mens Made in MEXICO",
-    "price": 1646.0,
-    "url": "https://www.grailed.com/listings/108044688",
-    "photo": "https://media-assets.grailed.com/prd/listing/temp/959c20b35250413a8978acb89eb64b3b",
-    "casp": 700.0,
-    "deal_score": 1,
-    "size": "L",
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T13:14:08.584015+00:00"
   },
   {
     "id": 1685,
@@ -38350,22 +37822,6 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.190990+00:00"
-  },
-  {
-    "id": 1739,
-    "query": "j97 petrol",
-    "source": "etsy",
-    "title": "Vintage Carhartt J97 Detroit Jacket PTL",
-    "price": 8950.71,
-    "url": "https://www.etsy.com/listing/4590183826/vintage-carhartt-j97-detroit-jacket-ptl",
-    "photo": "https://i.etsystatic.com/68283162/r/il/ab05e2/8636158288/il_570xN.8636158288_4dkv.jpg",
-    "casp": 600.0,
-    "deal_score": 1,
-    "size": null,
-    "vision_grade": null,
-    "vision_notes": null,
-    "seen": 0,
-    "created_at": "2026-10-07T07:15:00.613110+00:00"
   },
   {
     "id": 1741,
