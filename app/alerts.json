@@ -3600,6 +3600,22 @@
     "created_at": "2026-10-15T03:06:51.665907+00:00"
   },
   {
+    "id": 3123,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "NWT Carhartt Detroit Jacket Men’s M Blanket Lined Black Duck Canvas 0J3828",
+    "price": 117.75,
+    "url": "https://www.ebay.com/itm/960167341017",
+    "photo": "https://i.ebayimg.com/images/g/Z90AAeSwYxRqtSRt/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-07T22:56:46.369309+00:00"
+  },
+  {
     "id": 1795,
     "query": "j97 crimson",
     "source": "ebay",
@@ -18736,6 +18752,22 @@
     "created_at": "2026-10-17T09:10:34.449349+00:00"
   },
   {
+    "id": 3125,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J97 BLK Detroit Jacket Mens XL Black Canvas Blanket Lined Workwear 2015",
+    "price": 254.99,
+    "url": "https://www.ebay.com/itm/237169599853",
+    "photo": "https://i.ebayimg.com/images/g/L~IAAeSwbWxq7yRE/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-07T22:56:46.583206+00:00"
+  },
+  {
     "id": 660,
     "query": "j43 onyx",
     "source": "ebay",
@@ -18958,6 +18990,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-06T04:57:27.975867+00:00"
+  },
+  {
+    "id": 3124,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket 2025 Fw Size xl",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/800889989974",
+    "photo": "https://i.ebayimg.com/images/g/B38AAeSwF9Fq74hR/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-07T22:56:46.389588+00:00"
   },
   {
     "id": 670,
