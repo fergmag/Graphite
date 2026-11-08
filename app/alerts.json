@@ -4720,6 +4720,22 @@
     "created_at": "2026-10-09T01:11:20.238055+00:00"
   },
   {
+    "id": 3199,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VINTAGE CARHARTT DETROIT JACKET  JO1 BRN USA Made BLANKET LINED Size 50 TALL",
+    "price": 134.0,
+    "url": "https://www.ebay.com/itm/920118459826",
+    "photo": "https://i.ebayimg.com/images/g/9P8AAeSwu2RphQqr/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:58:03.279633+00:00"
+  },
+  {
     "id": 3198,
     "query": "j97 petrol",
     "source": "ebay",
@@ -6622,6 +6638,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-02T22:58:07.376380+00:00"
+  },
+  {
+    "id": 3200,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Rare Carhartt J20 Jacket Mens Arctic Detroit Style Quilt Lined Black L BOXY",
+    "price": 160.79,
+    "url": "https://www.ebay.com/itm/147671869876",
+    "photo": "https://i.ebayimg.com/images/g/QLwAAeSwk~Vq7HqG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:58:03.377527+00:00"
   },
   {
     "id": 3189,
