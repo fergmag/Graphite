@@ -5904,6 +5904,22 @@
     "created_at": "2026-10-15T03:12:20.677889+00:00"
   },
   {
+    "id": 3221,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt 1990s Active Jacket Olive Canvas size medium",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/820332103326",
+    "photo": "https://i.ebayimg.com/images/g/5doAAeSwmwRq8Mu-/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T22:59:36.890885+00:00"
+  },
+  {
     "id": 3101,
     "query": "j97 moss",
     "source": "etsy",
@@ -13838,6 +13854,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:21.551842+00:00"
+  },
+  {
+    "id": 3220,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage 2007 Carhartt J140 RED Duck Canvas Active Jacket Men L Hooded Insulated",
+    "price": 257.98,
+    "url": "https://www.ebay.com/itm/206674169818",
+    "photo": "https://i.ebayimg.com/images/g/6GEAAeSw1vpq6qth/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T22:59:36.883463+00:00"
   },
   {
     "id": 2791,
