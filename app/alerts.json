@@ -4720,6 +4720,22 @@
     "created_at": "2026-10-09T01:11:20.238055+00:00"
   },
   {
+    "id": 3198,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VINTAGE CARHARTT DETROIT JACKET  JO1 BRN USA Made BLANKET LINED Size 50 TALL",
+    "price": 134.0,
+    "url": "https://www.ebay.com/itm/920118459826",
+    "photo": "https://i.ebayimg.com/images/g/9P8AAeSwu2RphQqr/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:57:25.081702+00:00"
+  },
+  {
     "id": 3195,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -31822,6 +31838,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T22:56:42.283370+00:00"
+  },
+  {
+    "id": 3197,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Carhartt J97 PTL Detroit Jacket Petrol Blue XL-R",
+    "price": 435.0,
+    "url": "https://www.grailed.com/listings/111679118",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/53ea47e2edf24b5bb285f77a25e12a9b",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:57:24.870957+00:00"
   },
   {
     "id": 1300,
