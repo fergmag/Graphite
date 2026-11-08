@@ -4720,6 +4720,22 @@
     "created_at": "2026-10-09T01:11:20.238055+00:00"
   },
   {
+    "id": 3195,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "VINTAGE CARHARTT DETROIT JACKET  JO1 BRN USA Made BLANKET LINED Size 50 TALL",
+    "price": 134.0,
+    "url": "https://www.ebay.com/itm/920118459826",
+    "photo": "https://i.ebayimg.com/images/g/9P8AAeSwu2RphQqr/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:56:52.372214+00:00"
+  },
+  {
     "id": 2136,
     "query": "jp1017",
     "source": "ebay",
@@ -9518,6 +9534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:05:59.865165+00:00"
+  },
+  {
+    "id": 3196,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J01 Work Blanket Vintage, Lined, Union Black Kingsford",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/198775571966",
+    "photo": "https://i.ebayimg.com/images/g/efsAAeSwMbpq7O3Z/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:56:52.388739+00:00"
   },
   {
     "id": 3086,
