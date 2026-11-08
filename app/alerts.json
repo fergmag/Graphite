@@ -1216,6 +1216,22 @@
     "created_at": "2026-10-26T16:56:59.973163+00:00"
   },
   {
+    "id": 3142,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Navy Blue & Brown Canvas Detroit Jacket Mens Size Large (L)",
+    "price": 75.0,
+    "url": "https://www.ebay.com/itm/147671082467",
+    "photo": "https://i.ebayimg.com/images/g/W1gAAeSw2qZq77OF/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T04:53:36.331838+00:00"
+  },
+  {
     "id": 2756,
     "query": "j97 moss",
     "source": "ebay",
@@ -2414,6 +2430,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-03T10:53:44.516461+00:00"
+  },
+  {
+    "id": 3141,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Jacket Mens L Brown Duck Blanket-Lined Detroit Jacket OJ3828-M",
+    "price": 98.76,
+    "url": "https://www.ebay.com/itm/407347816184",
+    "photo": "https://i.ebayimg.com/images/g/VsgAAeSw3pNq78aO/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T04:53:36.323135+00:00"
   },
   {
     "id": 2322,
