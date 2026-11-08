@@ -4256,6 +4256,22 @@
     "created_at": "2026-10-26T16:58:20.689735+00:00"
   },
   {
+    "id": 3194,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket Moss Green, Quilted Lined Workwear Jacket Unisex",
+    "price": 125.0,
+    "url": "https://www.etsy.com/listing/4612459656/carhartt-j97-detroit-jacket-moss-green",
+    "photo": "https://i.etsystatic.com/68995250/r/il/97675c/8866196473/il_570xN.8866196473_bfh0.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:56:33.773581+00:00"
+  },
+  {
     "id": 3052,
     "query": "j97 crimson",
     "source": "ebay",
@@ -20160,6 +20176,22 @@
     "created_at": "2026-10-15T03:10:52.380432+00:00"
   },
   {
+    "id": 3192,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 Size Large Men’s 90s Made In USA BRN",
+    "price": 315.99,
+    "url": "https://www.ebay.com/itm/227601615048",
+    "photo": "https://i.ebayimg.com/images/g/tiwAAeSw-hpq7gpa/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:56:33.668789+00:00"
+  },
+  {
     "id": 719,
     "query": "j76 moss",
     "source": "ebay",
@@ -28990,6 +29022,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-16T03:10:43.244868+00:00"
+  },
+  {
+    "id": 3193,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens 2XL Green Duck Canvas Detroit J97MOS Lined Workwear",
+    "price": 261.7,
+    "url": "https://www.ebay.com/itm/227553826486",
+    "photo": "https://i.ebayimg.com/images/g/XfcAAeSwQ-FqxBjb/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-08T16:56:33.680748+00:00"
   },
   {
     "id": 2263,
