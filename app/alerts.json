@@ -3024,6 +3024,22 @@
     "created_at": "2026-10-15T03:10:51.358788+00:00"
   },
   {
+    "id": 3261,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Men's Carhartt Brown Duck Canvas Blanket Lined Coat AUTH",
+    "price": 103.76,
+    "url": "https://www.ebay.com/itm/407345899912",
+    "photo": "https://i.ebayimg.com/images/g/rjcAAeSw1xJq7pVG/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:53:20.550185+00:00"
+  },
+  {
     "id": 111,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -10270,6 +10286,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-03T04:57:16.673223+00:00"
+  },
+  {
+    "id": 3262,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt J001 BRN Detroit Jacket Made in USA Large Tall Interstellar",
+    "price": 211.65,
+    "url": "https://www.ebay.com/itm/117507278775",
+    "photo": "https://i.ebayimg.com/images/g/jk8AAeSwbnpq7Vf9/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:53:20.558598+00:00"
   },
   {
     "id": 350,
