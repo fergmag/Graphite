@@ -3024,6 +3024,22 @@
     "created_at": "2026-10-15T03:10:51.358788+00:00"
   },
   {
+    "id": 3279,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Men's Carhartt Brown Duck Canvas Blanket Lined Coat AUTH",
+    "price": 103.76,
+    "url": "https://www.ebay.com/itm/407345899912",
+    "photo": "https://i.ebayimg.com/images/g/rjcAAeSw1xJq7pVG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:58:06.469807+00:00"
+  },
+  {
     "id": 3263,
     "query": "j65 blue",
     "source": "ebay",
@@ -8654,6 +8670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:09:27.970502+00:00"
+  },
+  {
+    "id": 3278,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J14CHT Santa Fe Jacket Chestnut Brown Medium Duck Canvas Quilt Lined",
+    "price": 189.99,
+    "url": "https://www.ebay.com/itm/820333941108",
+    "photo": "https://i.ebayimg.com/images/g/K2MAAeSwLDBq7XeK/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:58:06.409312+00:00"
   },
   {
     "id": 2537,
@@ -19902,6 +19934,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:40.482552+00:00"
+  },
+  {
+    "id": 3280,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens M Beige Canvas Blanket Lined Full Zip",
+    "price": 309.95,
+    "url": "https://www.ebay.com/itm/137909215882",
+    "photo": "https://i.ebayimg.com/images/g/bjsAAeSwUFVq7nKU/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:58:06.577921+00:00"
   },
   {
     "id": 3276,
