@@ -3744,6 +3744,22 @@
     "created_at": "2026-10-26T16:55:59.897582+00:00"
   },
   {
+    "id": 3272,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt C08 BRG Burgundy Plum Barn Chore Coat USA Made 4XL",
+    "price": 119.0,
+    "url": "https://www.ebay.com/itm/128185025578",
+    "photo": "https://i.ebayimg.com/images/g/SjsAAeSwSO1q8dJY/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:57:02.276656+00:00"
+  },
+  {
     "id": 2685,
     "query": "j97 crimson",
     "source": "ebay",
@@ -10302,6 +10318,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-03T04:57:16.673223+00:00"
+  },
+  {
+    "id": 3273,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J001 BRN Detroit Jacket Made in USA Large Tall Interstellar",
+    "price": 211.65,
+    "url": "https://www.ebay.com/itm/117507278775",
+    "photo": "https://i.ebayimg.com/images/g/jk8AAeSwbnpq7Vf9/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:57:02.381653+00:00"
   },
   {
     "id": 3264,
@@ -38270,6 +38302,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:12:01.530520+00:00"
+  },
+  {
+    "id": 3271,
+    "query": "j97 burgundy",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Jacket XL Red Detroit J97 BRG Blanket Lined Mens Rare",
+    "price": 1531.0,
+    "url": "https://www.grailed.com/listings/111800910",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/1ed075a770b44d06bc5381d862345983",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:57:02.249055+00:00"
   },
   {
     "id": 1678,
