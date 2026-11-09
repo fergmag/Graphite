@@ -768,6 +768,22 @@
     "created_at": "2026-10-29T04:58:49.481106+00:00"
   },
   {
+    "id": 3222,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Carhartt Active Jacket Tan Duck Canvas Quilted Flannel Lined Distressed Mens XL",
+    "price": 66.0,
+    "url": "https://www.ebay.com/itm/168835410647",
+    "photo": "https://i.ebayimg.com/images/g/H6YAAeSwfoxq6hkB/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T04:53:04.469261+00:00"
+  },
+  {
     "id": 2219,
     "query": "j97 burgundy",
     "source": "ebay",
