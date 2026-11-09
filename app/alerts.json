@@ -39120,6 +39120,22 @@
     "created_at": "2026-10-15T03:09:20.643654+00:00"
   },
   {
+    "id": 3266,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "CarHartt Detroit Jacket J97CRI XL Red",
+    "price": 4692.0,
+    "url": "https://www.ebay.com/itm/880098863577",
+    "photo": "https://i.ebayimg.com/images/g/0okAAeSwAQFq8cXO/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T16:56:03.873112+00:00"
+  },
+  {
     "id": 1734,
     "query": "jb0873",
     "source": "ebay",
