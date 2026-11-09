@@ -20512,6 +20512,22 @@
     "created_at": "2026-10-15T03:10:01.199998+00:00"
   },
   {
+    "id": 3255,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "insane Carhartt J97 MTL Detroit Jacket Size M with embroidery on back",
+    "price": 390.0,
+    "url": "https://www.ebay.com/itm/407347260623",
+    "photo": "https://i.ebayimg.com/images/g/fRUAAeSwZllq72Zc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T10:57:26.076251+00:00"
+  },
+  {
     "id": 2878,
     "query": "js1236",
     "source": "ebay",
@@ -25760,6 +25776,22 @@
     "created_at": "2026-10-15T03:11:27.947537+00:00"
   },
   {
+    "id": 3256,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt J97 PTL Detroit Vintage Jacket Large",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/377632203378",
+    "photo": "https://i.ebayimg.com/images/g/JesAAeSwNoVq8WAM/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T10:57:26.279620+00:00"
+  },
+  {
     "id": 3241,
     "query": "j97 petrol",
     "source": "ebay",
@@ -26318,6 +26350,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T10:56:37.981286+00:00"
+  },
+  {
+    "id": 3254,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 Detroit Jacket Petrol PTL Black Blanket Lined Size Medium",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/840109452689",
+    "photo": "https://i.ebayimg.com/images/g/1DMAAeSw-mBq8Vd-/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-09T10:57:25.970902+00:00"
   },
   {
     "id": 3053,
