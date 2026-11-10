@@ -9936,6 +9936,22 @@
     "created_at": "2026-10-14T21:08:53.415707+00:00"
   },
   {
+    "id": 3335,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Jacket Grey Blanket Lined Mens XL Vintage",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/267839356027",
+    "photo": "https://i.ebayimg.com/images/g/9jQAAeSwsqtq8r1z/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:53:32.731149+00:00"
+  },
+  {
     "id": 3334,
     "query": "j65 brick",
     "source": "ebay",
