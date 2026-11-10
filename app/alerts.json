@@ -12416,6 +12416,22 @@
     "created_at": "2026-10-15T03:11:43.242673+00:00"
   },
   {
+    "id": 3351,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Quilted Lined Duck Canvas Jacket – Corduroy Collar, Moss Green (Gift Belt)",
+    "price": 231.67,
+    "url": "https://www.etsy.com/listing/4614053026/vintage-carhartt-quilted-lined-duck",
+    "photo": "https://i.etsystatic.com/67752976/r/il/2289eb/8879379313/il_570xN.8879379313_ngfm.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T16:56:49.175331+00:00"
+  },
+  {
     "id": 388,
     "query": "j97 petrol",
     "source": "etsy",
@@ -16702,6 +16718,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T15:07:00.556492+00:00"
+  },
+  {
+    "id": 3350,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt J01 BLK black Detroit work wear jacket",
+    "price": 314.98,
+    "url": "https://www.ebay.com/itm/407349745986",
+    "photo": "https://i.ebayimg.com/images/g/a-8AAeSwJPdq8SOM/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T16:56:48.983638+00:00"
   },
   {
     "id": 524,
@@ -31630,6 +31662,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T04:56:35.880830+00:00"
+  },
+  {
+    "id": 3349,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit J001 BLK Black Blanket Lined Zip Jacket Men’s XL 2013 Logo New",
+    "price": 384.99,
+    "url": "https://www.ebay.com/itm/840112890163",
+    "photo": "https://i.ebayimg.com/images/g/vi8AAeSw76dq8puz/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T16:56:48.387336+00:00"
   },
   {
     "id": 3326,
