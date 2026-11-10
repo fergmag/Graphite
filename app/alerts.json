@@ -1216,6 +1216,22 @@
     "created_at": "2026-10-26T16:56:59.973163+00:00"
   },
   {
+    "id": 3338,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 MOS Detroit Jacket | Vintage Moss Green Sandstone Duck Canvas Blanket Lined Workwear | Men&#39;s J97 Carhartt Vintage Work Jacket",
+    "price": 75.0,
+    "url": "https://www.etsy.com/listing/4613876217/carhartt-j97-mos-detroit-jacket-vintage",
+    "photo": "https://i.etsystatic.com/66876067/r/il/fd076b/8878006149/il_570xN.8878006149_3j45.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:56:27.280198+00:00"
+  },
+  {
     "id": 3142,
     "query": "j65 blue",
     "source": "ebay",
@@ -10320,6 +10336,22 @@
     "created_at": "2026-10-15T03:10:21.543651+00:00"
   },
   {
+    "id": 3337,
+    "query": "j97 moss",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket, Moss Green Workwear with Plaid Lining, Corduroy Collar and Zip Front, Casual Streetwear Outerwear",
+    "price": 207.95,
+    "url": "https://www.etsy.com/listing/4613862255/carhartt-j97-detroit-jacket-moss-green",
+    "photo": "https://i.etsystatic.com/66302298/r/il/7d3307/8877908649/il_570xN.8877908649_clqd.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:56:27.271685+00:00"
+  },
+  {
     "id": 2702,
     "query": "j97 moss",
     "source": "etsy",
@@ -18910,6 +18942,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:11:16.458020+00:00"
+  },
+  {
+    "id": 3336,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Jacket Grey Blanket Lined Mens XL Vintage",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/267839356027",
+    "photo": "https://i.ebayimg.com/images/g/9jQAAeSwsqtq8r1z/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:56:27.070252+00:00"
   },
   {
     "id": 628,
