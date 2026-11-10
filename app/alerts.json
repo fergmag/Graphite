@@ -12480,6 +12480,22 @@
     "created_at": "2026-10-16T03:11:16.551467+00:00"
   },
   {
+    "id": 3325,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Carhartt J25 CHT Duck Sandstone Jacket M Chestnut Brown Lined Grunge Y2K",
+    "price": 237.99,
+    "url": "https://www.ebay.com/itm/307275061872",
+    "photo": "https://i.ebayimg.com/images/g/~xsAAeSwJAZq8lJ9/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:57:50.477936+00:00"
+  },
+  {
     "id": 392,
     "query": "j97 crimson",
     "source": "ebay",
@@ -31278,6 +31294,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T04:56:35.880830+00:00"
+  },
+  {
+    "id": 3326,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit J001 BLK Black Blanket Lined Zip Jacket Men’s XL 2013 Logo New",
+    "price": 384.99,
+    "url": "https://www.ebay.com/itm/840112890163",
+    "photo": "https://i.ebayimg.com/images/g/vi8AAeSw76dq8puz/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:57:50.673501+00:00"
   },
   {
     "id": 3319,
