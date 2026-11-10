@@ -26208,6 +26208,22 @@
     "created_at": "2026-10-27T22:54:21.427436+00:00"
   },
   {
+    "id": 3306,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Blanket Lined Trucker Blue Denim Jacket J08 DST Size XL",
+    "price": 360.0,
+    "url": "https://www.etsy.com/listing/4612379070/vintage-carhartt-blanket-lined-trucker",
+    "photo": "https://i.etsystatic.com/53441538/r/il/3e2edd/8865497073/il_570xN.8865497073_qn4l.jpg",
+    "casp": 800.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:54:56.973529+00:00"
+  },
+  {
     "id": 1969,
     "query": "j43 onyx",
     "source": "grailed",
