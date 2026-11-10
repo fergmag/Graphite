@@ -7264,6 +7264,22 @@
     "created_at": "2026-10-16T09:10:16.253953+00:00"
   },
   {
+    "id": 3308,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt SANTA FE WESTERN Jacket Red Quilted Work Coat Distressed L TALL",
+    "price": 174.48000000000002,
+    "url": "https://www.ebay.com/itm/117513209729",
+    "photo": "https://i.ebayimg.com/images/g/vCkAAeSwnWRpr0pT/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:55:52.071761+00:00"
+  },
+  {
     "id": 2916,
     "query": "jb0866",
     "source": "ebay",
@@ -17518,6 +17534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T16:53:38.128463+00:00"
+  },
+  {
+    "id": 3309,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit J001 BLK Black Blanket Lined Zip Jacket Men’s XL 2013 Logo New",
+    "price": 384.99,
+    "url": "https://www.ebay.com/itm/840112890163",
+    "photo": "https://i.ebayimg.com/images/g/vi8AAeSw76dq8puz/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:55:52.173032+00:00"
   },
   {
     "id": 576,
