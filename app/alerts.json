@@ -18976,6 +18976,22 @@
     "created_at": "2026-10-14T21:11:16.458020+00:00"
   },
   {
+    "id": 3345,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt Jacket Grey Blanket Lined Mens XL Vintage",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/267839356027",
+    "photo": "https://i.ebayimg.com/images/g/9jQAAeSwsqtq8r1z/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:59:20.572492+00:00"
+  },
+  {
     "id": 3343,
     "query": "j76 moss",
     "source": "ebay",
@@ -24462,6 +24478,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:01.140503+00:00"
+  },
+  {
+    "id": 3344,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Full Zip J76 CMT Cement USA 90s Size Large Rare",
+    "price": 429.99,
+    "url": "https://www.ebay.com/itm/336889639562",
+    "photo": "https://i.ebayimg.com/images/g/QCMAAeSwbmdq8rDo/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T10:59:20.357982+00:00"
   },
   {
     "id": 2967,
