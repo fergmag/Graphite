@@ -4832,6 +4832,22 @@
     "created_at": "2026-10-14T21:07:39.622003+00:00"
   },
   {
+    "id": 3361,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BRN Detroit Canvas Work Jacket Brown USA Size XL2XL G2U",
+    "price": 134.91,
+    "url": "https://www.ebay.com/itm/880041060897",
+    "photo": "https://i.ebayimg.com/images/g/JH8AAeSwQTtoE7F-/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T22:55:52.887680+00:00"
+  },
+  {
     "id": 3051,
     "query": "jp1017",
     "source": "ebay",
@@ -16750,6 +16766,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:55:59.575443+00:00"
+  },
+  {
+    "id": 3360,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Y2K Carhartt Quilted Hooded Duck Canvas Jacket “Dark Red” J130 DKR Men’s X-Large",
+    "price": 313.0,
+    "url": "https://www.ebay.com/itm/366800214117",
+    "photo": "https://i.ebayimg.com/images/g/rBoAAeSwRHlq85nw/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T22:55:52.877928+00:00"
   },
   {
     "id": 2694,
