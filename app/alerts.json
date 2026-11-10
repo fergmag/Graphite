@@ -14032,6 +14032,22 @@
     "created_at": "2026-10-30T16:56:04.481553+00:00"
   },
   {
+    "id": 3331,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 262.98,
+    "url": "https://www.ebay.com/itm/327386794201",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:58:20.881417+00:00"
+  },
+  {
     "id": 2470,
     "query": "j97 moss",
     "source": "ebay",
@@ -26446,6 +26462,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:37.344501+00:00"
+  },
+  {
+    "id": 3330,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt Detroit J001 BLK Black Blanket Lined Zip Jacket Men’s XL 2013 Logo New",
+    "price": 384.99,
+    "url": "https://www.ebay.com/itm/840112890163",
+    "photo": "https://i.ebayimg.com/images/g/vi8AAeSw76dq8puz/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T04:58:20.871076+00:00"
   },
   {
     "id": 3317,
