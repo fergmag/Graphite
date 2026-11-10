@@ -2480,6 +2480,22 @@
     "created_at": "2026-11-08T04:53:36.323135+00:00"
   },
   {
+    "id": 3372,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens XL J140 BLK Black Thrashed Faded Duck Canvas",
+    "price": 98.91,
+    "url": "https://www.ebay.com/itm/168852978540",
+    "photo": "https://i.ebayimg.com/images/g/cs0AAeSwsJpq82wu/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T22:58:10.949603+00:00"
+  },
+  {
     "id": 3370,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -39518,6 +39534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:13:14.505093+00:00"
+  },
+  {
+    "id": 3373,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Detroit Jacket J43 BRG Burgundy USA Made Union Size XL RARE",
+    "price": 1350.0,
+    "url": "https://www.ebay.com/itm/227608311513",
+    "photo": "https://i.ebayimg.com/images/g/tykAAeSwm9Bq839a/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T22:58:10.969041+00:00"
   },
   {
     "id": 1820,
