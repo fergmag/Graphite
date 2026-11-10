@@ -16720,6 +16720,22 @@
     "created_at": "2026-10-15T15:07:00.556492+00:00"
   },
   {
+    "id": 3354,
+    "query": "j97 timber",
+    "source": "ebay",
+    "title": "Carhartt J01 BLK black Detroit work wear jacket",
+    "price": 314.98,
+    "url": "https://www.ebay.com/itm/407349745986",
+    "photo": "https://i.ebayimg.com/images/g/a-8AAeSwJPdq8SOM/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-10T16:57:58.680570+00:00"
+  },
+  {
     "id": 3350,
     "query": "j97 moss",
     "source": "ebay",
