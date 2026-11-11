@@ -1728,6 +1728,22 @@
     "created_at": "2026-10-15T03:11:11.048935+00:00"
   },
   {
+    "id": 3380,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Jacket Mens Large Black Detroit Blanket Lined Logo Workwear OJ3828-M",
+    "price": 80.99,
+    "url": "https://www.ebay.com/itm/237175533772",
+    "photo": "https://i.ebayimg.com/images/g/-C4AAeSw4fpq81RF/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T04:53:32.557326+00:00"
+  },
+  {
     "id": 57,
     "query": "ju1005",
     "source": "ebay",
@@ -2046,6 +2062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:07:48.477989+00:00"
+  },
+  {
+    "id": 3381,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Navy Blue Full Zip Hooded Work Coat Size Large Distressed J280 MDT 0811",
+    "price": 90.0,
+    "url": "https://www.ebay.com/itm/860132397826",
+    "photo": "https://i.ebayimg.com/images/g/pxkAAeSwKkpq84E2/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T04:53:32.587781+00:00"
   },
   {
     "id": 1857,
