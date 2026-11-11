@@ -3888,6 +3888,22 @@
     "created_at": "2026-10-16T21:06:36.778445+00:00"
   },
   {
+    "id": 3382,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Jacket Mens Large Navy C003 DNY Arctic Corduroy Collar Traditional Coat",
+    "price": 113.86999999999999,
+    "url": "https://www.ebay.com/itm/920128130766",
+    "photo": "https://i.ebayimg.com/images/g/BdcAAeSw9LJq86K4/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T04:55:13.387419+00:00"
+  },
+  {
     "id": 131,
     "query": "j97 crimson",
     "source": "ebay",
