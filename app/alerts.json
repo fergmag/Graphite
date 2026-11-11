@@ -16144,6 +16144,22 @@
     "created_at": "2026-11-10T04:55:07.325550+00:00"
   },
   {
+    "id": 3416,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "2004 Carhartt J130 CLY Clay Red Duck Cotton Active jacket winter coat XL",
+    "price": 289.0,
+    "url": "https://www.ebay.com/itm/366802652050",
+    "photo": "https://i.ebayimg.com/images/g/KBoAAeSwTTRq9N0-/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T22:55:46.186695+00:00"
+  },
+  {
     "id": 2505,
     "query": "j97 moss",
     "source": "etsy",
@@ -19022,6 +19038,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:09:20.772649+00:00"
+  },
+  {
+    "id": 3417,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Red Aztec Southwestern Hooded Jacket",
+    "price": 550.0,
+    "url": "https://www.ebay.com/itm/227610116002",
+    "photo": "https://i.ebayimg.com/images/g/P8QAAeSwLEtq9Osn/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T22:55:46.272216+00:00"
   },
   {
     "id": 2552,
