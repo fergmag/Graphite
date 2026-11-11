@@ -23392,6 +23392,22 @@
     "created_at": "2026-10-30T04:59:40.880963+00:00"
   },
   {
+    "id": 3394,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 BRN Detroit Camel Detroit Flannel Lined Jacket Mens Size XL",
+    "price": 247.49,
+    "url": "https://www.ebay.com/itm/327362581122",
+    "photo": "https://i.ebayimg.com/images/g/LCcAAeSwKkJqrENu/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T10:56:27.382320+00:00"
+  },
+  {
     "id": 1946,
     "query": "j97 timber",
     "source": "ebay",
@@ -37246,6 +37262,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T16:57:38.193947+00:00"
+  },
+  {
+    "id": 3395,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J97 MOS Size XL Regular USA UNION MADE RARE",
+    "price": 780.0,
+    "url": "https://www.ebay.com/itm/237176425748",
+    "photo": "https://i.ebayimg.com/images/g/pJgAAeSwvv5q8~3F/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-11T10:56:27.581074+00:00"
   },
   {
     "id": 2546,
