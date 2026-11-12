@@ -2016,6 +2016,22 @@
     "created_at": "2026-11-05T16:53:35.071493+00:00"
   },
   {
+    "id": 3460,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Detroit Men’s Relaxed Fit Lined Black Zip Jacket Size XL Workwear 3828",
+    "price": 88.29,
+    "url": "https://www.ebay.com/itm/117516466252",
+    "photo": "https://i.ebayimg.com/images/g/PYUAAeSwLuxq9Mu5/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T04:58:32.576521+00:00"
+  },
+  {
     "id": 3433,
     "query": "j65 blue",
     "source": "ebay",
@@ -36654,6 +36670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-14T21:10:09.077689+00:00"
+  },
+  {
+    "id": 3459,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "CARHARTT J43 HTG Detroit Mens Hunter Green Workwear Jacket XL Cotton Zip Up",
+    "price": 613.37,
+    "url": "https://www.ebay.com/itm/287722642930",
+    "photo": "https://i.ebayimg.com/images/g/8kYAAeSwRPhq2dEl/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T04:58:32.473149+00:00"
   },
   {
     "id": 1450,
