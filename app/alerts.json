@@ -13328,6 +13328,22 @@
     "created_at": "2026-11-10T16:56:49.175331+00:00"
   },
   {
+    "id": 3486,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage 80s Carhartt Detroit Canvas Jacket 6BLJ Blanket Lined Brown USA 44/46?",
+    "price": 231.99,
+    "url": "https://www.ebay.com/itm/820343421058",
+    "photo": "https://i.ebayimg.com/images/g/MagAAeSwhrlq9KFX/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T16:57:24.780528+00:00"
+  },
+  {
     "id": 388,
     "query": "j97 petrol",
     "source": "etsy",
@@ -21902,6 +21918,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-09T16:57:33.585977+00:00"
+  },
+  {
+    "id": 3485,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J97 CML Work Jacket Mens M Brown Canvas Blanket Lined",
+    "price": 309.98,
+    "url": "https://www.ebay.com/itm/227611191467",
+    "photo": "https://i.ebayimg.com/images/g/abAAAeSwJD9q9cw0/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T16:57:24.573336+00:00"
   },
   {
     "id": 2178,
