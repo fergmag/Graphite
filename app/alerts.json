@@ -1536,6 +1536,22 @@
     "created_at": "2026-11-12T16:53:20.348773+00:00"
   },
   {
+    "id": 3477,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130-M Brown Hooded Full Zip Lined Canvas Bomber Jacket Men’s S Reg",
+    "price": 79.0,
+    "url": "https://www.ebay.com/itm/237177844826",
+    "photo": "https://i.ebayimg.com/images/g/visAAeSwnLFq9OEe/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T16:54:58.950684+00:00"
+  },
+  {
     "id": 3400,
     "query": "jp1017",
     "source": "ebay",
@@ -3086,6 +3102,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:11:11.257851+00:00"
+  },
+  {
+    "id": 3478,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Carhartt Overalls Mens 30x34 Blue Denim Bib R07 DST Made In USA 1999",
+    "price": 100.0,
+    "url": "https://www.etsy.com/listing/4615642661/vintage-carhartt-overalls-mens-30x34",
+    "photo": "https://i.etsystatic.com/66285794/r/il/f3455f/8844790872/il_570xN.8844790872_by54.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T16:54:58.980368+00:00"
   },
   {
     "id": 3359,
