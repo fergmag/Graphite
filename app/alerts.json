@@ -224,6 +224,22 @@
     "created_at": "2026-10-29T10:59:12.624485+00:00"
   },
   {
+    "id": 3506,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men's Brown Hooded Lined Full Zip Canvas Workwear Jacket Size 40",
+    "price": 45.0,
+    "url": "https://www.ebay.com/itm/257849588772",
+    "photo": "https://i.ebayimg.com/images/g/0o8AAeSwJmBq9jV4/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T22:58:00.682605+00:00"
+  },
+  {
     "id": 1870,
     "query": "j97 burgundy",
     "source": "ebay",
