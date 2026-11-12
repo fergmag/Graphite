@@ -2016,6 +2016,22 @@
     "created_at": "2026-11-05T16:53:35.071493+00:00"
   },
   {
+    "id": 3433,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Men’s Relaxed Fit Lined Black Zip Jacket Size XL Workwear 3828",
+    "price": 88.29,
+    "url": "https://www.ebay.com/itm/117516466252",
+    "photo": "https://i.ebayimg.com/images/g/PYUAAeSwLuxq9Mu5/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-12T04:53:35.317627+00:00"
+  },
+  {
     "id": 3301,
     "query": "j43 burgundy",
     "source": "ebay",
