@@ -23504,6 +23504,22 @@
     "created_at": "2026-10-15T03:10:51.563951+00:00"
   },
   {
+    "id": 3585,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket J01 BLK Black Size 42 Blanket Lined Canvas",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/407359708638",
+    "photo": "https://i.ebayimg.com/images/g/kGoAAeSwT1Rq9ral/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T22:57:18.880379+00:00"
+  },
+  {
     "id": 3128,
     "query": "j97 petrol",
     "source": "ebay",
@@ -27630,6 +27646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:51.057564+00:00"
+  },
+  {
+    "id": 3584,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Jacket Faded Petrol Gray Distressed Vintage Carhartt J97 PTL Size M",
+    "price": 480.0,
+    "url": "https://www.ebay.com/itm/366808290202",
+    "photo": "https://i.ebayimg.com/images/g/Nv0AAeSwAbVq94xE/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T22:57:18.772163+00:00"
   },
   {
     "id": 2704,
