@@ -8288,6 +8288,22 @@
     "created_at": "2026-11-10T04:55:52.071761+00:00"
   },
   {
+    "id": 3548,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt J02 Arctic Quilted Lined Jacket Mens Medium Corduroy Collar Tan",
+    "price": 174.97,
+    "url": "https://www.ebay.com/itm/920136096172",
+    "photo": "https://i.ebayimg.com/images/g/dCQAAeSw4gNq9hXv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T16:53:33.884144+00:00"
+  },
+  {
     "id": 3397,
     "query": "jb0866",
     "source": "ebay",
@@ -15600,6 +15616,22 @@
     "created_at": "2026-10-30T16:56:04.481553+00:00"
   },
   {
+    "id": 3547,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detriot Jacket Mens Large Black J001 Canvas Blanket Lined Workwear",
+    "price": 262.98,
+    "url": "https://www.ebay.com/itm/327454096302",
+    "photo": "https://i.ebayimg.com/images/g/ECwAAeSwV9Rqvunv/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T16:53:33.873028+00:00"
+  },
+  {
     "id": 3546,
     "query": "j65 brick",
     "source": "ebay",
@@ -15726,6 +15758,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:40.402808+00:00"
+  },
+  {
+    "id": 3549,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt JQ283 Hooded Workwear Jacket Large Dark Blue Union Made",
+    "price": 264.98,
+    "url": "https://www.ebay.com/itm/257849650336",
+    "photo": "https://i.ebayimg.com/images/g/7NQAAeSwvH1q9kGf/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T16:53:33.908045+00:00"
   },
   {
     "id": 3488,
