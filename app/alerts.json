@@ -18368,6 +18368,22 @@
     "created_at": "2026-10-15T21:05:59.327824+00:00"
   },
   {
+    "id": 3522,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "90s Carhartt black Detroit blanket lined jacket",
+    "price": 320.0,
+    "url": "https://www.ebay.com/itm/366806294613",
+    "photo": "https://i.ebayimg.com/images/g/AZIAAeSwYzJq9m-7/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T04:56:30.773423+00:00"
+  },
+  {
     "id": 2679,
     "query": "j65 blue",
     "source": "ebay",
@@ -31376,6 +31392,22 @@
     "created_at": "2026-10-29T10:57:02.480843+00:00"
   },
   {
+    "id": 3520,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Gray Canvas Workwear Jacket Lined Zip Front Men’s XXL",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/168858615510",
+    "photo": "https://i.ebayimg.com/images/g/YYoAAeSwpF9q9pLx/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T04:56:30.174376+00:00"
+  },
+  {
     "id": 1104,
     "query": "j76 moss",
     "source": "grailed",
@@ -38430,6 +38462,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:10:52.055467+00:00"
+  },
+  {
+    "id": 3521,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt J97MOS Men's Work Jacket XL Regular Green Lined",
+    "price": 700.0,
+    "url": "https://www.ebay.com/itm/198790399910",
+    "photo": "https://i.ebayimg.com/images/g/oOcAAeSwOBNq9hTW/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-13T04:56:30.371256+00:00"
   },
   {
     "id": 2413,
