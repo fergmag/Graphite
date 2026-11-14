@@ -6432,6 +6432,22 @@
     "created_at": "2026-10-15T03:12:20.677889+00:00"
   },
   {
+    "id": 3678,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Vintage Carhartt C26 Jacket Mens Medium Faded Black Arctic Quilt Lined Coat Y2K",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/800916759329",
+    "photo": "https://i.ebayimg.com/images/g/rBwAAeSwYRRq-JY9/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:53:25.472746+00:00"
+  },
+  {
     "id": 3594,
     "query": "jr0115",
     "source": "ebay",
@@ -8206,6 +8222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-13T16:53:33.884144+00:00"
+  },
+  {
+    "id": 3679,
+    "query": "j65 brick",
+    "source": "ebay",
+    "title": "Carhartt faded black Arctic work wear jacket",
+    "price": 174.98000000000002,
+    "url": "https://www.ebay.com/itm/407044596580",
+    "photo": "https://i.ebayimg.com/images/g/jJ0AAeSw0dNqRxr1/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:53:25.490929+00:00"
   },
   {
     "id": 3397,
