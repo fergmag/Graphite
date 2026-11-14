@@ -6048,6 +6048,22 @@
     "created_at": "2026-10-15T03:08:25.744330+00:00"
   },
   {
+    "id": 3709,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Santa Fe Jacket XL Faded Black Canvas Bomber Workwear J14 BLK",
+    "price": 149.0,
+    "url": "https://www.ebay.com/itm/206685549200",
+    "photo": "https://i.ebayimg.com/images/g/wXkAAeSwTJFq29Qi/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:58:34.372221+00:00"
+  },
+  {
     "id": 3708,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -14174,6 +14190,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T22:56:02.872206+00:00"
+  },
+  {
+    "id": 3710,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt JQ06HTG Hunter Green Active Jacket Faded Teal Hooded Large",
+    "price": 239.5,
+    "url": "https://www.ebay.com/itm/137914449499",
+    "photo": "https://i.ebayimg.com/images/g/3i8AAeSw8Blq8QfU/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:58:34.384647+00:00"
   },
   {
     "id": 3631,
@@ -27870,6 +27902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:21.237999+00:00"
+  },
+  {
+    "id": 3711,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt 6BLJT Detroit/J01/J001 Detroit W Detachable Hood",
+    "price": 625.0,
+    "url": "https://www.ebay.com/itm/168863086932",
+    "photo": "https://i.ebayimg.com/images/g/L6EAAeSwXV9q-NjG/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:58:34.579200+00:00"
   },
   {
     "id": 928,
