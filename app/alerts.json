@@ -14224,6 +14224,22 @@
     "created_at": "2026-11-11T04:59:04.471656+00:00"
   },
   {
+    "id": 3674,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Active Jacket Thermal Lined Mens Large Tall J131 BLK Black NWT NOS",
+    "price": 249.0,
+    "url": "https://www.ebay.com/itm/880032525872",
+    "photo": "https://i.ebayimg.com/images/g/Xt4AAeSwuQVqhjGE/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T16:58:48.124605+00:00"
+  },
+  {
     "id": 3019,
     "query": "j43 onyx",
     "source": "ebay",
