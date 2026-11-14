@@ -12528,6 +12528,22 @@
     "created_at": "2026-11-06T04:56:51.882755+00:00"
   },
   {
+    "id": 3695,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Mens 54 Reg Blanket Lining Full Zip Work",
+    "price": 219.99,
+    "url": "https://www.ebay.com/itm/307282791045",
+    "photo": "https://i.ebayimg.com/images/g/TawAAeSw~C5q-Mni/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:56:46.833891+00:00"
+  },
+  {
     "id": 2739,
     "query": "jb0866",
     "source": "ebay",
@@ -18334,6 +18350,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-12T16:55:56.575049+00:00"
+  },
+  {
+    "id": 3694,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 CML Detroit Jacket Large Camel Plaid Blanket Lined USA",
+    "price": 311.0,
+    "url": "https://www.ebay.com/itm/880116913839",
+    "photo": "https://i.ebayimg.com/images/g/yHsAAeSwCFlq-KN7/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:56:46.826270+00:00"
   },
   {
     "id": 3685,
@@ -42158,6 +42190,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:05:59.489527+00:00"
+  },
+  {
+    "id": 3696,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 J97 BRG Detroit Jacket USA Made Burgundy L PERFECT FADE 90s",
+    "price": 1800.0,
+    "url": "https://www.ebay.com/itm/940092538555",
+    "photo": "https://i.ebayimg.com/images/g/SV4AAeSwwl9q-MkK/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T22:56:46.840925+00:00"
   },
   {
     "id": 2569,
