@@ -9424,6 +9424,22 @@
     "created_at": "2026-10-26T16:56:59.797546+00:00"
   },
   {
+    "id": 3613,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J01 BRN Detroit Jacket Mens 42 L Regular Blanket Duck Canvas Brown",
+    "price": 186.98000000000002,
+    "url": "https://www.ebay.com/itm/227613245150",
+    "photo": "https://i.ebayimg.com/images/g/hIsAAeSwgH5q944a/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:56:39.452429+00:00"
+  },
+  {
     "id": 3606,
     "query": "j97 moss",
     "source": "ebay",
@@ -11536,6 +11552,22 @@
     "created_at": "2026-10-17T03:09:18.918641+00:00"
   },
   {
+    "id": 3616,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J06BRG Hooded Jacket Brown Quilted Lined USA XL Regular",
+    "price": 212.95999999999998,
+    "url": "https://www.ebay.com/itm/336896553968",
+    "photo": "https://i.ebayimg.com/images/g/NQIAAeSwIpVpk~9v/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:56:39.769952+00:00"
+  },
+  {
     "id": 2477,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -13614,6 +13646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T22:56:02.872206+00:00"
+  },
+  {
+    "id": 3615,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "VTG Carhartt J01 BRN Detroit Jacket Sz 40 Regular Blanket Lined Duck Canvas USA",
+    "price": 239.5,
+    "url": "https://www.ebay.com/itm/206699844185",
+    "photo": "https://i.ebayimg.com/images/g/5LkAAeSwQr9q9-iC/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:56:39.576140+00:00"
   },
   {
     "id": 3604,
@@ -20702,6 +20750,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T10:58:15.321696+00:00"
+  },
+  {
+    "id": 3614,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Jacket Mens XL Brown Detroit Ford Canvas Blanket Lined Made USA J001BRN",
+    "price": 262.73,
+    "url": "https://www.ebay.com/itm/307277990994",
+    "photo": "https://i.ebayimg.com/images/g/hd8AAeSwTQFq9Lef/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:56:39.478987+00:00"
   },
   {
     "id": 2400,
