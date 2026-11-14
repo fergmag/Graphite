@@ -20848,6 +20848,22 @@
     "created_at": "2026-11-07T22:56:46.583206+00:00"
   },
   {
+    "id": 3637,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J06 ONX active Jacket Nylon Quilt Lined Made In USA Size XL",
+    "price": 259.86,
+    "url": "https://www.ebay.com/itm/327398728201",
+    "photo": "https://i.ebayimg.com/images/g/uGkAAeSw42ZqypbA/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:58:08.771059+00:00"
+  },
+  {
     "id": 661,
     "query": "j97 petrol",
     "source": "ebay",
@@ -34768,6 +34784,22 @@
     "created_at": "2026-10-15T03:10:51.773557+00:00"
   },
   {
+    "id": 3635,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Distressed Detroit Workwear Jacket J43ONX ONYX XL FADED",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/227613282572",
+    "photo": "https://i.ebayimg.com/images/g/1j8AAeSw4VFq95az/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:58:08.667602+00:00"
+  },
+  {
     "id": 2971,
     "query": "j97 moss",
     "source": "grailed",
@@ -40894,6 +40926,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-15T03:12:32.506522+00:00"
+  },
+  {
+    "id": 3636,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "vintage onyx black carhartt detroit jacket J43 ONX size medium usa made rare",
+    "price": 1500.0,
+    "url": "https://www.ebay.com/itm/377562426728",
+    "photo": "https://i.ebayimg.com/images/g/jtMAAeSw-v1qy7pD/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-14T04:58:08.676882+00:00"
   },
   {
     "id": 3207,
