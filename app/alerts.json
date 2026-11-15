@@ -6256,6 +6256,22 @@
     "created_at": "2026-10-16T09:11:22.657631+00:00"
   },
   {
+    "id": 4083,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Men’s Faded Green Hooded Quilt Lined Full Zip Jacket Relaxed Fit",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/920146058185",
+    "photo": "https://i.ebayimg.com/images/g/jWkAAeSwVoBq-edj/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T22:58:39.924343+00:00"
+  },
+  {
     "id": 4059,
     "query": "jb0866",
     "source": "ebay",
