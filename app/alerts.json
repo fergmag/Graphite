@@ -7392,6 +7392,22 @@
     "created_at": "2026-10-27T04:56:32.081515+00:00"
   },
   {
+    "id": 3936,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J02 BRN Arctic Quilt Lined Jacket Men's 50 NWT",
+    "price": 169.86,
+    "url": "https://www.ebay.com/itm/327405616732",
+    "photo": "https://i.ebayimg.com/images/g/pTwAAeSwixNq0EEI/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.485910+00:00"
+  },
+  {
     "id": 3730,
     "query": "j65 blue",
     "source": "ebay",
@@ -11198,6 +11214,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:56.589968+00:00"
+  },
+  {
+    "id": 3946,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J14 CHT brown Santa Fe work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407363602942",
+    "photo": "https://i.ebayimg.com/images/g/TpoAAeSwtOtq-P6v/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.688235+00:00"
   },
   {
     "id": 3544,
@@ -16030,6 +16062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T16:56:45.679400+00:00"
+  },
+  {
+    "id": 3943,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "vintage carhartt detroit jacket j43cht mens medium",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/195699672900",
+    "photo": "https://i.ebayimg.com/images/g/kmcAAOSwh6JkL9wR/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.591535+00:00"
   },
   {
     "id": 3788,
@@ -21344,6 +21392,22 @@
     "created_at": "2026-11-07T16:57:22.673491+00:00"
   },
   {
+    "id": 3935,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt J43 CHT Detroit Jacket 3XL Chestnut Brown Blanket Lined",
+    "price": 337.5,
+    "url": "https://www.ebay.com/itm/206701636401",
+    "photo": "https://i.ebayimg.com/images/g/f8EAAeSw40tq-Oh0/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.477300+00:00"
+  },
+  {
     "id": 3161,
     "query": "j97 timber",
     "source": "ebay",
@@ -24016,6 +24080,22 @@
     "created_at": "2026-10-28T16:57:38.474162+00:00"
   },
   {
+    "id": 3940,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 CHT ‘Chestnut’ Detroit Blanket Lined Jacket MENS X LARGE",
+    "price": 340.98,
+    "url": "https://www.ebay.com/itm/167449817650",
+    "photo": "https://i.ebayimg.com/images/g/TkIAAeSwX8dn~Erm/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.568667+00:00"
+  },
+  {
     "id": 2667,
     "query": "j97 petrol",
     "source": "ebay",
@@ -24480,6 +24560,38 @@
     "created_at": "2026-10-26T16:58:05.107071+00:00"
   },
   {
+    "id": 3941,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 4XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/880021905505",
+    "photo": "https://i.ebayimg.com/images/g/giYAAeSw5TlqgcOn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.575703+00:00"
+  },
+  {
+    "id": 3938,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens 3XL J43 CHT Chestnut Brown NWT NOS",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/880041017909",
+    "photo": "https://i.ebayimg.com/images/g/p~EAAeSw2Ztqicsg/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.502679+00:00"
+  },
+  {
     "id": 2963,
     "query": "j76 moss",
     "source": "ebay",
@@ -24494,6 +24606,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-05T22:59:24.670722+00:00"
+  },
+  {
+    "id": 3951,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J43 CHT Men's Size M 90's Vintage Workwear Made in USA",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/137056664321",
+    "photo": "https://i.ebayimg.com/images/g/CSwAAeSw77VpmTXn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.881236+00:00"
   },
   {
     "id": 3525,
@@ -26752,6 +26880,22 @@
     "created_at": "2026-11-05T04:57:50.447794+00:00"
   },
   {
+    "id": 3949,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Aztec Blanket-Lined  Chore Coat Detroit L 90s J43 CHT",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/157134623872",
+    "photo": "https://i.ebayimg.com/images/g/kzoAAeSwHNhoTNsn/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.796213+00:00"
+  },
+  {
     "id": 2221,
     "query": "j97 petrol",
     "source": "ebay",
@@ -27038,6 +27182,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:56:39.086586+00:00"
+  },
+  {
+    "id": 3947,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 CHT Traditional Jacket – Men's Large Regular",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/307165437823",
+    "photo": "https://i.ebayimg.com/images/g/~QwAAeSwmvhqnPDI/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.776213+00:00"
   },
   {
     "id": 3503,
@@ -27376,6 +27536,22 @@
     "created_at": "2026-10-28T10:56:37.981286+00:00"
   },
   {
+    "id": 3934,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt J43 CHT",
+    "price": 500.0,
+    "url": "https://www.grailed.com/listings/91585268",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/342523bfaca849c29519ab6ab4c832f4",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.470623+00:00"
+  },
+  {
     "id": 3874,
     "query": "j97 petrol",
     "source": "grailed",
@@ -27694,6 +27870,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-05T10:57:27.079681+00:00"
+  },
+  {
+    "id": 3948,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage 90s J43 CHT CARHARTT Detroit Workwear Jacket RARE JAPAN",
+    "price": 550.0,
+    "url": "https://www.ebay.com/itm/389906685206",
+    "photo": "https://i.ebayimg.com/images/g/LjUAAeSwYytp48dd/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.784676+00:00"
   },
   {
     "id": 2371,
@@ -29536,6 +29728,22 @@
     "created_at": "2026-10-17T09:10:34.851002+00:00"
   },
   {
+    "id": 3939,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Workwear Jacket Chestnut Blanket Lined J43 CHT 2XL Reg.",
+    "price": 295.0,
+    "url": "https://www.ebay.com/itm/127683622173",
+    "photo": "https://i.ebayimg.com/images/g/3zkAAeSwzq5pj9~R/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.510072+00:00"
+  },
+  {
     "id": 1917,
     "query": "j97 petrol",
     "source": "ebay",
@@ -29918,6 +30126,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:57:30.477603+00:00"
+  },
+  {
+    "id": 3937,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG 90s Carhartt J43 CHT Chestnut Detroit Jacket Mens 2XL Blanket Lined Made USA",
+    "price": 313.59000000000003,
+    "url": "https://www.ebay.com/itm/397154133319",
+    "photo": "https://i.ebayimg.com/images/g/3IUAAeSwYxlo7Y-5/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.494700+00:00"
   },
   {
     "id": 2510,
@@ -31280,6 +31504,22 @@
     "created_at": "2026-10-16T03:09:53.768743+00:00"
   },
   {
+    "id": 3932,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt J43 CHT brown XL Detroit work wear jacket",
+    "price": 400.0,
+    "url": "https://www.grailed.com/listings/100148272",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/f58c6be0c2f344f6ae110182feffdde4",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.456811+00:00"
+  },
+  {
     "id": 3914,
     "query": "j97 timber",
     "source": "grailed",
@@ -31680,6 +31920,22 @@
     "created_at": "2026-10-16T03:09:53.755488+00:00"
   },
   {
+    "id": 3945,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J43 CHT brown XL Detroit work wear jacket",
+    "price": 414.98,
+    "url": "https://www.ebay.com/itm/407051063414",
+    "photo": "https://i.ebayimg.com/images/g/WG8AAeSw7UVqSvfm/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.670100+00:00"
+  },
+  {
     "id": 3561,
     "query": "j97 petrol",
     "source": "ebay",
@@ -31806,6 +32062,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:57:47.752460+00:00"
+  },
+  {
+    "id": 3944,
+    "query": "j43 chestnut",
+    "source": "etsy",
+    "title": "Vtg 90’s Carhartt Faded Detroit Jacket Chestnut Brown J43 CHT SZ XL Made In Usa",
+    "price": 425.0,
+    "url": "https://www.etsy.com/listing/4541795333/vtg-90s-carhartt-faded-detroit-jacket",
+    "photo": "https://i.etsystatic.com/65692878/r/il/3ce1d3/8329668173/il_570xN.8329668173_ssg7.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.602277+00:00"
   },
   {
     "id": 3318,
@@ -32304,6 +32576,22 @@
     "created_at": "2026-10-26T22:56:38.782977+00:00"
   },
   {
+    "id": 3930,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Vintage Sun faded Carhartt J43 CHT Detroit Jacket –",
+    "price": 495.0,
+    "url": "https://www.grailed.com/listings/107848436",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/3d2e4d13cd6b4d06a61759519837214f",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.443665+00:00"
+  },
+  {
     "id": 3240,
     "query": "j97 petrol",
     "source": "ebay",
@@ -32336,6 +32624,22 @@
     "created_at": "2026-11-10T22:57:57.273497+00:00"
   },
   {
+    "id": 3942,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J43 CHT Chestnut Brown EUC",
+    "price": 499.0,
+    "url": "https://www.ebay.com/itm/178430969675",
+    "photo": "https://i.ebayimg.com/images/g/FXgAAeSwiNlpcXye/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.583316+00:00"
+  },
+  {
     "id": 3083,
     "query": "j97 petrol",
     "source": "ebay",
@@ -32350,6 +32654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-07T04:57:21.568755+00:00"
+  },
+  {
+    "id": 3929,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt Detroit J43 Chestnut XL Vintage 1998 USA",
+    "price": 500.0,
+    "url": "https://www.grailed.com/listings/95893233",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/e4e37d47a95a4c0ea8e3a4e3a6822783",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.432268+00:00"
   },
   {
     "id": 3826,
@@ -33296,6 +33616,22 @@
     "created_at": "2026-11-15T04:57:07.034744+00:00"
   },
   {
+    "id": 3931,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt Jacket XL Brown Detroit Work Wear J43 CHT Mens",
+    "price": 586.0,
+    "url": "https://www.grailed.com/listings/100714462",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/1c2746018e914e4386f1226d72354e0d",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.450334+00:00"
+  },
+  {
     "id": 3833,
     "query": "j97 moss",
     "source": "grailed",
@@ -34030,6 +34366,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T22:58:45.969810+00:00"
+  },
+  {
+    "id": 3933,
+    "query": "j43 chestnut",
+    "source": "grailed",
+    "title": "Carhartt J43 CHT Medium",
+    "price": 650.0,
+    "url": "https://www.grailed.com/listings/100529656",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/c5402f3f61b94cf2bc14c584ef899c74",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.463879+00:00"
   },
   {
     "id": 3890,
@@ -35294,6 +35646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:56.494049+00:00"
+  },
+  {
+    "id": 3950,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt Jacket Mens Large Brown Detroit Blanket Lined J43 CHT USA 90s",
+    "price": 800.0,
+    "url": "https://www.ebay.com/itm/365414391419",
+    "photo": "https://i.ebayimg.com/images/g/lnwAAeSwXKhnuPAS/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:38.871813+00:00"
   },
   {
     "id": 3752,
