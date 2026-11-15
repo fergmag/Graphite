@@ -6256,6 +6256,22 @@
     "created_at": "2026-10-16T09:11:22.657631+00:00"
   },
   {
+    "id": 4085,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt Men’s Faded Green Hooded Quilt Lined Full Zip Jacket Relaxed Fit",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/920146058185",
+    "photo": "https://i.ebayimg.com/images/g/jWkAAeSwVoBq-edj/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T22:59:19.071423+00:00"
+  },
+  {
     "id": 4083,
     "query": "jb1236",
     "source": "ebay",
@@ -8494,6 +8510,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:53:34.652159+00:00"
+  },
+  {
+    "id": 4086,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "VTG Carhartt J140BLK Hooded Full Zip Quilted Lined Work Jacket Black Men's L",
+    "price": 175.0,
+    "url": "https://www.ebay.com/itm/137933658736",
+    "photo": "https://i.ebayimg.com/images/g/ZeAAAeSwq3Zq-e2p/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T22:59:19.078788+00:00"
   },
   {
     "id": 3205,
@@ -13822,6 +13854,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:57:28.789925+00:00"
+  },
+  {
+    "id": 4087,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Jacket Arctic Quilt Lined Mens 44 Tall Large J02 BRN NWT READ",
+    "price": 239.0,
+    "url": "https://www.ebay.com/itm/880120989208",
+    "photo": "https://i.ebayimg.com/images/g/FoAAAeSwwplp4DXM/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T22:59:19.094243+00:00"
   },
   {
     "id": 4061,
