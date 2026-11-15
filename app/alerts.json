@@ -5664,6 +5664,22 @@
     "created_at": "2026-11-15T04:54:50.799401+00:00"
   },
   {
+    "id": 4004,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Twill Work Jacket Mens Large J293 NVY Navy Blue Quilt Lined NWT NOS",
+    "price": 149.0,
+    "url": "https://www.ebay.com/itm/880110719703",
+    "photo": "https://i.ebayimg.com/images/g/ZEkAAeSwSUhqfS19/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:58:33.325350+00:00"
+  },
+  {
     "id": 3895,
     "query": "j97 petrol",
     "source": "ebay",
@@ -8414,6 +8430,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:00.001266+00:00"
+  },
+  {
+    "id": 4003,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Vintage Carhartt JB1236 Redwood Detroit Jacket Size Medium Extremely Rare J97",
+    "price": 177.0,
+    "url": "https://www.ebay.com/itm/128015437101",
+    "photo": "https://i.ebayimg.com/images/g/rw8AAeSwQ6Jpg09p/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:58:33.317803+00:00"
   },
   {
     "id": 2959,
@@ -38558,6 +38590,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:56:37.984117+00:00"
+  },
+  {
+    "id": 4002,
+    "query": "jb1236",
+    "source": "ebay",
+    "title": "Carhartt Redwood JB1236 Vintage Detroit Jacket Size Large",
+    "price": 1499.99,
+    "url": "https://www.ebay.com/itm/206008017526",
+    "photo": "https://i.ebayimg.com/images/g/EZ8AAeSwinJpbZeA/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:58:33.310259+00:00"
   },
   {
     "id": 1765,
