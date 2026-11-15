@@ -4160,6 +4160,22 @@
     "created_at": "2026-11-06T16:53:38.859594+00:00"
   },
   {
+    "id": 4063,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "VINTAGE CARHARTT J140 RED QUILTED HOODED WORKWEAR JACKET 2XL Has Stains See Phot",
+    "price": 120.0,
+    "url": "https://www.ebay.com/itm/267589879613",
+    "photo": "https://i.ebayimg.com/images/g/c7EAAeSwl~xpo1ip/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T22:55:44.472599+00:00"
+  },
+  {
     "id": 3551,
     "query": "js1207",
     "source": "ebay",
