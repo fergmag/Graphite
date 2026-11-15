@@ -9648,6 +9648,22 @@
     "created_at": "2026-10-27T22:53:21.271949+00:00"
   },
   {
+    "id": 4046,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt J68 PTL blue hooded work wear jacket",
+    "price": 194.98000000000002,
+    "url": "https://www.ebay.com/itm/407363601065",
+    "photo": "https://i.ebayimg.com/images/g/dm8AAeSwI2Jq-P6P/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T16:53:29.824256+00:00"
+  },
+  {
     "id": 3768,
     "query": "jp1017",
     "source": "ebay",
