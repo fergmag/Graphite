@@ -7392,6 +7392,22 @@
     "created_at": "2026-10-27T04:56:32.081515+00:00"
   },
   {
+    "id": 3961,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J02 BRN Arctic Quilt Lined Jacket Men's 50 NWT",
+    "price": 169.86,
+    "url": "https://www.ebay.com/itm/327405616732",
+    "photo": "https://i.ebayimg.com/images/g/pTwAAeSwixNq0EEI/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.586967+00:00"
+  },
+  {
     "id": 3936,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -9790,6 +9806,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T16:59:49.325225+00:00"
+  },
+  {
+    "id": 3962,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men’s Brown Cotton Work Jacket Size L Vintage 90s",
+    "price": 199.0,
+    "url": "https://www.ebay.com/itm/406981836339",
+    "photo": "https://i.ebayimg.com/images/g/Sb0AAeSwYi9qJawT/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.595565+00:00"
   },
   {
     "id": 3656,
@@ -12782,6 +12814,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T10:56:36.076058+00:00"
+  },
+  {
+    "id": 3955,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt J43 BRG Large",
+    "price": 230.0,
+    "url": "https://www.grailed.com/listings/88537213",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/c03660e4898b452193d7f565a753e7df",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.481410+00:00"
   },
   {
     "id": 3600,
@@ -22366,6 +22414,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T22:56:39.179778+00:00"
+  },
+  {
+    "id": 3954,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt J43 BRG Large",
+    "price": 450.0,
+    "url": "https://www.grailed.com/listings/91822222",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/f45019651b0140a7bec4c8a60617a91e",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.474539+00:00"
   },
   {
     "id": 3292,
@@ -33840,6 +33904,38 @@
     "created_at": "2026-11-13T10:58:40.471073+00:00"
   },
   {
+    "id": 3959,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Men’s Detroit Blanket Line Jacket J43BRG Burgundy 2XL Logo Back",
+    "price": 600.0,
+    "url": "https://www.ebay.com/itm/257521159788",
+    "photo": "https://i.ebayimg.com/images/g/4fIAAeSwtz5qE751/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.571041+00:00"
+  },
+  {
+    "id": 3952,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt Detroit Jacket J43 BRG 1990s Faded Burgundy Rare",
+    "price": 600.0,
+    "url": "https://www.grailed.com/listings/100220311",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/1aebfadd2a76475b8af7a2b06e943cc3",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.457122+00:00"
+  },
+  {
     "id": 3925,
     "query": "j97 timber",
     "source": "ebay",
@@ -36416,6 +36512,22 @@
     "created_at": "2026-11-05T04:58:38.487237+00:00"
   },
   {
+    "id": 3956,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Large J43 BRG Burgundy",
+    "price": 984.0,
+    "url": "https://www.ebay.com/itm/257375581724",
+    "photo": "https://i.ebayimg.com/images/g/-BYAAeSwZJxpnOhb/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.492181+00:00"
+  },
+  {
     "id": 2842,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -36670,6 +36782,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:20.493538+00:00"
+  },
+  {
+    "id": 3957,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt j43 brg sandstone Detroit jacket in burgundy size Large",
+    "price": 1000.0,
+    "url": "https://www.ebay.com/itm/286754061692",
+    "photo": "https://i.ebayimg.com/images/g/RkMAAeSwTPholU6~/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.499154+00:00"
   },
   {
     "id": 3753,
@@ -37280,6 +37408,22 @@
     "created_at": "2026-10-26T16:54:07.445793+00:00"
   },
   {
+    "id": 3953,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "Carhartt J43 BRG M Detroit",
+    "price": 1200.0,
+    "url": "https://www.grailed.com/listings/96445751",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/d7dcc68a7d4f4013a7292ef8b0d0dead",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.467616+00:00"
+  },
+  {
     "id": 3858,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -37632,6 +37776,22 @@
     "created_at": "2026-11-03T04:58:01.446070+00:00"
   },
   {
+    "id": 3963,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Men's Jacket J43brg Size XXL Faded purple And Blanket Inline",
+    "price": 1350.0,
+    "url": "https://www.ebay.com/itm/377018800050",
+    "photo": "https://i.ebayimg.com/images/g/uWkAAeSwkt9prd8n/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.672403+00:00"
+  },
+  {
     "id": 3873,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -37790,6 +37950,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:53:04.756987+00:00"
+  },
+  {
+    "id": 3958,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Blanket Lined Mens Medium J43 BRG Burgundy EUC",
+    "price": 1499.0,
+    "url": "https://www.ebay.com/itm/880038766343",
+    "photo": "https://i.ebayimg.com/images/g/YoIAAeSwH4hpcY8y/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.508319+00:00"
   },
   {
     "id": 3859,
@@ -38190,6 +38366,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-01T04:53:35.235429+00:00"
+  },
+  {
+    "id": 3960,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit jacket J43 BRG Flannel Lined Collared Zip Men's Size Large ",
+    "price": 1950.0,
+    "url": "https://www.ebay.com/itm/377155667965",
+    "photo": "https://i.ebayimg.com/images/g/TRgAAeSweDNp9O97/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:57:52.580527+00:00"
   },
   {
     "id": 3470,
