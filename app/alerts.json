@@ -9088,6 +9088,22 @@
     "created_at": "2026-10-27T22:53:21.271949+00:00"
   },
   {
+    "id": 3768,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt bankston brown work wear jacket Large",
+    "price": 194.98000000000002,
+    "url": "https://www.ebay.com/itm/406966342356",
+    "photo": "https://i.ebayimg.com/images/g/ddQAAeSwjr5qHZNS/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:55:11.256093+00:00"
+  },
+  {
     "id": 3516,
     "query": "jp1017",
     "source": "ebay",
@@ -19456,6 +19472,22 @@
     "created_at": "2026-11-03T10:57:27.079278+00:00"
   },
   {
+    "id": 3771,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "New Carhartt Crafted Series Duck Sherpa Lined Chore Jacket USA Made Mens L",
+    "price": 280.0,
+    "url": "https://www.ebay.com/itm/800287493421",
+    "photo": "https://i.ebayimg.com/images/g/X5EAAeSwSl5qSRoE/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:55:11.277057+00:00"
+  },
+  {
     "id": 682,
     "query": "j97 petrol",
     "source": "ebay",
@@ -19614,6 +19646,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:57:31.691036+00:00"
+  },
+  {
+    "id": 3767,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt Sandstone Ridge Coat Sherpa Lined Mens Small C61 DKB Dark Brown NWT NOS",
+    "price": 299.0,
+    "url": "https://www.ebay.com/itm/880110316662",
+    "photo": "https://i.ebayimg.com/images/g/ze0AAeSwsqlqfQDn/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:55:11.248915+00:00"
   },
   {
     "id": 3131,
@@ -28592,6 +28640,22 @@
     "created_at": "2026-10-16T21:10:50.051654+00:00"
   },
   {
+    "id": 3770,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Vintage Taupe Carhartt Aztec Sherpa Distressed Canvas Jacket Chore Detroit 2X/3X",
+    "price": 327.53,
+    "url": "https://www.ebay.com/itm/188400371670",
+    "photo": "https://i.ebayimg.com/images/g/-DEAAeSwu-dqDLl3/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:55:11.269490+00:00"
+  },
+  {
     "id": 1906,
     "query": "j97 petrol",
     "source": "ebay",
@@ -35566,6 +35630,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T10:59:13.873742+00:00"
+  },
+  {
+    "id": 3769,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "VTG Carhartt JP1017 MEDIUM Chore Jacket ~ Graphite aztec m grey southwest coat",
+    "price": 2200.0,
+    "url": "https://www.ebay.com/itm/157810033648",
+    "photo": "https://i.ebayimg.com/images/g/FKkAAeSwvTJpdtCo/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-15T04:55:11.262901+00:00"
   },
   {
     "id": 2008,
