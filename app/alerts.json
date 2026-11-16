@@ -1152,6 +1152,22 @@
     "created_at": "2026-10-26T16:56:59.973163+00:00"
   },
   {
+    "id": 4097,
+    "query": "j110 darkstone",
+    "source": "etsy",
+    "title": "Vintage Y2K Carhartt S115DST Fleece Lined Denim Snap Shirt Jacket Large Tall",
+    "price": 75.0,
+    "url": "https://www.etsy.com/listing/4618290245/vintage-y2k-carhartt-s115dst-fleece",
+    "photo": "https://i.etsystatic.com/68868623/r/il/9a31da/8866848634/il_570xN.8866848634_b3gy.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:54:58.583989+00:00"
+  },
+  {
     "id": 3791,
     "query": "j97 crimson",
     "source": "ebay",
@@ -2254,6 +2270,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-06T10:53:34.724376+00:00"
+  },
+  {
+    "id": 4094,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J140 Duck Lined Hooded Zip Work Jacket Brown Men’s L Loose 106673",
+    "price": 95.0,
+    "url": "https://www.ebay.com/itm/206704067442",
+    "photo": "https://i.ebayimg.com/images/g/LRkAAeSwiAJq-j~0/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:54:58.464549+00:00"
   },
   {
     "id": 3518,
@@ -13808,6 +13840,22 @@
     "created_at": "2026-10-28T04:55:55.987410+00:00"
   },
   {
+    "id": 4096,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130 BLK Active Jacket Mens Medium Faded Charcoal Sandstone Duck 2014",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/800922746310",
+    "photo": "https://i.ebayimg.com/images/g/FDYAAeSwjllq-ls~/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:54:58.571901+00:00"
+  },
+  {
     "id": 3861,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -15630,6 +15678,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T04:56:31.174805+00:00"
+  },
+  {
+    "id": 4095,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130 Men’s Hooded Full Zip Canvas Jacket Quilted Lined Green M",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/227616305101",
+    "photo": "https://i.ebayimg.com/images/g/LcUAAeSwlNZq-mAx/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:54:58.481763+00:00"
   },
   {
     "id": 4066,
@@ -36654,6 +36718,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:20.586133+00:00"
+  },
+  {
+    "id": 4093,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J110 Darkstone DST Detroit Jacket Large Vintage USA",
+    "price": 988.0899999999999,
+    "url": "https://www.ebay.com/itm/137847362037",
+    "photo": "https://i.ebayimg.com/images/g/gSMAAeSwtfZq0YNk/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:54:58.456835+00:00"
   },
   {
     "id": 2678,
