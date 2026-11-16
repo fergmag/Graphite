@@ -13584,6 +13584,22 @@
     "created_at": "2026-11-10T04:57:50.477936+00:00"
   },
   {
+    "id": 4163,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Santa Fe Jacket JQ2100 Red Quilted Lined Work Size Large",
+    "price": 238.0,
+    "url": "https://www.ebay.com/itm/227499478098",
+    "photo": "https://i.ebayimg.com/images/g/UJoAAeSwyIRqlZ-4/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T22:55:44.276978+00:00"
+  },
+  {
     "id": 2325,
     "query": "j97 petrol",
     "source": "ebay",
@@ -39886,6 +39902,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:55:42.955178+00:00"
+  },
+  {
+    "id": 4162,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J97CRI Canvas Bomber Jacket Mens XL Regular Red Lined Full Zip",
+    "price": 2400.0,
+    "url": "https://www.ebay.com/itm/198800760882",
+    "photo": "https://i.ebayimg.com/images/g/c5AAAeSwjotq-3KS/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T22:55:44.158355+00:00"
   },
   {
     "id": 2008,
