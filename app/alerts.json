@@ -1488,6 +1488,22 @@
     "created_at": "2026-11-11T16:55:19.521504+00:00"
   },
   {
+    "id": 4157,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG USA Carhartt Mens Jacket Sz L J04 BRN Quilted Lined Duck Canvas Workwear USA",
+    "price": 79.99,
+    "url": "https://www.ebay.com/itm/327443898430",
+    "photo": "https://i.ebayimg.com/images/g/9T8AAeSwMqBq7npS/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T16:58:29.590621+00:00"
+  },
+  {
     "id": 4155,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -23104,6 +23120,22 @@
     "created_at": "2026-11-12T10:58:20.344985+00:00"
   },
   {
+    "id": 4158,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Adult 48 Brown Duck Canvas Union Made In USA 80s",
+    "price": 508.98,
+    "url": "https://www.ebay.com/itm/158304246442",
+    "photo": "https://i.ebayimg.com/images/g/4XsAAeSwdo1qrJUy/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T16:58:29.979580+00:00"
+  },
+  {
     "id": 783,
     "query": "j43 onyx",
     "source": "ebay",
@@ -36142,6 +36174,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:40.319340+00:00"
+  },
+  {
+    "id": 4156,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Hunter Green J43 HTG Mens XL Blanket Lined",
+    "price": 715.0,
+    "url": "https://www.ebay.com/itm/880123431196",
+    "photo": "https://i.ebayimg.com/images/g/o~UAAeSwKfJoz0OB/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T16:58:29.484612+00:00"
   },
   {
     "id": 3970,
