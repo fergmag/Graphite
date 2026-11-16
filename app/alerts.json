@@ -7408,6 +7408,22 @@
     "created_at": "2026-11-15T22:57:15.685430+00:00"
   },
   {
+    "id": 4127,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Carhartt J02 BRN Arctic Quilt Lined Jacket Men's 50 NWT",
+    "price": 169.86,
+    "url": "https://www.ebay.com/itm/327405616732",
+    "photo": "https://i.ebayimg.com/images/g/pTwAAeSwixNq0EEI/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:59:05.339616+00:00"
+  },
+  {
     "id": 3987,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -10302,6 +10318,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:57:31.304883+00:00"
+  },
+  {
+    "id": 4129,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Carhartt J01 Men’s L Green Canvas Full Zip Lined Collared Relaxed Jacket",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/377649061811",
+    "photo": "https://i.ebayimg.com/images/g/pe8AAeSwgH5q-lQy/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:59:05.389073+00:00"
   },
   {
     "id": 4122,
@@ -21550,6 +21582,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-07T22:57:18.093833+00:00"
+  },
+  {
+    "id": 4128,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket Moss Green Blanket Lined J97 MOS Size Large Tall",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/377597533939",
+    "photo": "https://i.ebayimg.com/images/g/SsgAAeSwZAxq3qnR/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:59:05.375138+00:00"
   },
   {
     "id": 3500,
