@@ -10320,6 +10320,22 @@
     "created_at": "2026-10-26T16:57:31.304883+00:00"
   },
   {
+    "id": 4130,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Carhartt J01 Men’s L Green Canvas Full Zip Lined Collared Relaxed Jacket",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/377649061811",
+    "photo": "https://i.ebayimg.com/images/g/pe8AAeSwgH5q-lQy/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:59:19.948091+00:00"
+  },
+  {
     "id": 4129,
     "query": "j76 moss",
     "source": "ebay",
@@ -27406,6 +27422,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T04:56:39.086586+00:00"
+  },
+  {
+    "id": 4131,
+    "query": "j76 cement",
+    "source": "ebay",
+    "title": "Vtg 90s Carhartt Jacket Detroit J76 CMT Large Made In USA Blanket Lined ",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/318865771761",
+    "photo": "https://i.ebayimg.com/images/g/PiAAAeSwBDhqpsB3/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T04:59:19.969595+00:00"
   },
   {
     "id": 3947,
