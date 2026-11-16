@@ -5424,6 +5424,22 @@
     "created_at": "2026-10-26T16:55:15.532558+00:00"
   },
   {
+    "id": 4160,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Mens XL Detroit J001 BLK Black Blanket Lined Made in USA",
+    "price": 145.0,
+    "url": "https://www.ebay.com/itm/820362163761",
+    "photo": "https://i.ebayimg.com/images/g/qQ0AAeSwNuBq-1ZY/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T22:53:30.745042+00:00"
+  },
+  {
     "id": 3274,
     "query": "j97 petrol",
     "source": "ebay",
@@ -17214,6 +17230,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:00.188875+00:00"
+  },
+  {
+    "id": 4161,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt JB0998 Green Canvas Blanket Lined Trucker Jacket Men’s L Button Front",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/880112417149",
+    "photo": "https://i.ebayimg.com/images/g/K0AAAeSw--Fq0xUa/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-16T22:53:30.779749+00:00"
   },
   {
     "id": 3762,
