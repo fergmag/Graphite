@@ -26128,6 +26128,22 @@
     "created_at": "2026-11-05T04:56:29.083321+00:00"
   },
   {
+    "id": 4298,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt 1990s j01 detroit jacket size L",
+    "price": 500.0,
+    "url": "https://www.ebay.com/itm/227617718294",
+    "photo": "https://i.ebayimg.com/images/g/S58AAeSwVExq-44L/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T16:56:48.873642+00:00"
+  },
+  {
     "id": 4255,
     "query": "j43 hunter green",
     "source": "ebay",
