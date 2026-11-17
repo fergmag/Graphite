@@ -5728,6 +5728,22 @@
     "created_at": "2026-10-26T16:57:31.870668+00:00"
   },
   {
+    "id": 4260,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt 104050 BLK Loose Fit Washed Duck Insulated Active Jac Black Large Reg",
+    "price": 145.99,
+    "url": "https://www.ebay.com/itm/960198108740",
+    "photo": "https://i.ebayimg.com/images/g/yUwAAeSw1spq-Ss6/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:58:41.901001+00:00"
+  },
+  {
     "id": 4259,
     "query": "jb1236",
     "source": "ebay",
