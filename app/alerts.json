@@ -16976,6 +16976,22 @@
     "created_at": "2026-11-16T04:56:27.680731+00:00"
   },
   {
+    "id": 4237,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J97 CHT  USA Made  Jacket  Sz LT Grey Blanket Lined Chestnut VTG",
+    "price": 299.0,
+    "url": "https://www.ebay.com/itm/960080161216",
+    "photo": "https://i.ebayimg.com/images/g/YSwAAeSw7FZq08a5/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:36.861759+00:00"
+  },
+  {
     "id": 4216,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -20832,6 +20848,22 @@
     "created_at": "2026-10-28T04:54:31.020173+00:00"
   },
   {
+    "id": 4242,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J204 Detroit Jacket Men’s Size Large, Vintage",
+    "price": 279.61,
+    "url": "https://www.ebay.com/itm/336598430397",
+    "photo": "https://i.ebayimg.com/images/g/XaMAAeSwpB1qEffP/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:37.081623+00:00"
+  },
+  {
     "id": 2748,
     "query": "j97 petrol",
     "source": "ebay",
@@ -21534,6 +21566,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-08T04:56:39.078937+00:00"
+  },
+  {
+    "id": 4238,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Mens Detroit Brown Zip Lined Work Jacket Point Collar Regular 3XL J43",
+    "price": 325.0,
+    "url": "https://www.ebay.com/itm/267786626898",
+    "photo": "https://i.ebayimg.com/images/g/VbsAAeSweQVqqeop/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:36.881371+00:00"
   },
   {
     "id": 2508,
@@ -24288,6 +24336,22 @@
     "created_at": "2026-11-15T22:57:15.478585+00:00"
   },
   {
+    "id": 4239,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Carhartt J97 CHT Brown Cotton Work Jacket Full Zip Lined Men’s L Regular",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/900097290178",
+    "photo": "https://i.ebayimg.com/images/g/23UAAeSwI0dq-5Yq/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:36.892887+00:00"
+  },
+  {
     "id": 4076,
     "query": "j97 petrol",
     "source": "ebay",
@@ -24574,6 +24638,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:39.398557+00:00"
+  },
+  {
+    "id": 4241,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Brown Carhartt Detroit Blanket Lined J43CHT Jacket 4X Large Regular",
+    "price": 375.0,
+    "url": "https://www.ebay.com/itm/940098130028",
+    "photo": "https://i.ebayimg.com/images/g/ae4AAeSwIWlq-5x7/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:36.980259+00:00"
   },
   {
     "id": 3236,
@@ -27134,6 +27214,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-05T04:57:50.447794+00:00"
+  },
+  {
+    "id": 4240,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J97 CHT Brown Duck Canvas Full Zip Lined Work Jacket Men’s Large",
+    "price": 399.0,
+    "url": "https://www.ebay.com/itm/137937896514",
+    "photo": "https://i.ebayimg.com/images/g/l7gAAeSwio5q-8K5/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-17T04:57:36.973164+00:00"
   },
   {
     "id": 3949,
