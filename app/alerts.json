@@ -10864,6 +10864,22 @@
     "created_at": "2026-11-10T16:59:49.325225+00:00"
   },
   {
+    "id": 4399,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage carhartt j97 ptl detroit",
+    "price": 199.0,
+    "url": "https://www.ebay.com/itm/267845661742",
+    "photo": "https://i.ebayimg.com/images/g/GqIAAeSwUY5q-7KQ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:57:16.974264+00:00"
+  },
+  {
     "id": 3962,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -31614,6 +31630,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-03T10:56:36.006874+00:00"
+  },
+  {
+    "id": 4400,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG 2008 Carhartt J97 Petrol Blue Detroit Jacket Blanket Lined DistresseD 2XL",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/880129547206",
+    "photo": "https://i.ebayimg.com/images/g/CkwAAeSwdIlq12-M/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:57:16.984451+00:00"
   },
   {
     "id": 2972,
