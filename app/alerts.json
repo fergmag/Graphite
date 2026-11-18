@@ -17456,6 +17456,22 @@
     "created_at": "2026-11-15T04:55:43.211216+00:00"
   },
   {
+    "id": 4397,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J204 Detroit Jacket Men’s Size Large, Vintage",
+    "price": 279.08,
+    "url": "https://www.ebay.com/itm/336598430397",
+    "photo": "https://i.ebayimg.com/images/g/XaMAAeSwpB1qEffP/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:56:46.778284+00:00"
+  },
+  {
     "id": 4254,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -24478,6 +24494,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:58:37.371399+00:00"
+  },
+  {
+    "id": 4398,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt 1990s RARE NVY Detroit Jacket 1990s Made in USA JB102",
+    "price": 497.23,
+    "url": "https://www.ebay.com/itm/880077536863",
+    "photo": "https://i.ebayimg.com/images/g/h54AAeSweIlq6VsJ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:56:46.882912+00:00"
   },
   {
     "id": 3436,
@@ -31630,6 +31662,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:39.289959+00:00"
+  },
+  {
+    "id": 4396,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1999 Carhartt J06BRG Sandstone Active Jacket 2XL Burgundy Hooded Quilted",
+    "price": 250.31,
+    "url": "https://www.ebay.com/itm/318909189992",
+    "photo": "https://i.ebayimg.com/images/g/3UYAAeSwnTpqtBMi/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:56:46.768827+00:00"
   },
   {
     "id": 4034,
@@ -40606,6 +40654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:54:07.445793+00:00"
+  },
+  {
+    "id": 4395,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "1994 Carhartt JQ2472 Full Aztec Print Quilt-Lined Jacket Size XL(BEST SIZE)",
+    "price": 1200.0,
+    "url": "https://www.ebay.com/itm/880130061810",
+    "photo": "https://i.ebayimg.com/images/g/po4AAeSwQRRq~dUm/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:56:46.554948+00:00"
   },
   {
     "id": 4387,
