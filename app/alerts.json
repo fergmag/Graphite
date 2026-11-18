@@ -7552,6 +7552,22 @@
     "created_at": "2026-10-27T10:55:00.953641+00:00"
   },
   {
+    "id": 4352,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt J04 NVY Quilted Flannel Lined Duck Active Jacket Navy XL Tall",
+    "price": 160.0,
+    "url": "https://www.ebay.com/itm/800931425477",
+    "photo": "https://i.ebayimg.com/images/g/RnIAAeSw2Wpq~Nfn/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T04:53:32.987145+00:00"
+  },
+  {
     "id": 3180,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -19616,6 +19632,22 @@
     "created_at": "2026-11-05T04:56:47.473062+00:00"
   },
   {
+    "id": 4350,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "NEW Carhartt J001 BRN Brown Jacket Medium ( IRREGULAR on TAGs )",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/960207195184",
+    "photo": "https://i.ebayimg.com/images/g/cJQAAeSwaRRq~CvN/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T04:53:32.951029+00:00"
+  },
+  {
     "id": 4346,
     "query": "j76 cement",
     "source": "ebay",
@@ -20158,6 +20190,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-14T16:53:33.169691+00:00"
+  },
+  {
+    "id": 4351,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Detroit Blanket Lined Jacket J001 BRN Medium Full Zip Logo Flag Ranch ",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/800931561454",
+    "photo": "https://i.ebayimg.com/images/g/QVQAAeSwQr9q~OQ-/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T04:53:32.974534+00:00"
   },
   {
     "id": 3743,
