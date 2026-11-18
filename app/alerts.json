@@ -4192,6 +4192,22 @@
     "created_at": "2026-10-31T22:53:37.269972+00:00"
   },
   {
+    "id": 4405,
+    "query": "jb1215",
+    "source": "ebay",
+    "title": "Carhartt Mens Loose Fit Washed Duck Insulated Active Jac Black OJ0140-M Large",
+    "price": 119.95,
+    "url": "https://www.ebay.com/itm/117528602966",
+    "photo": "https://i.ebayimg.com/images/g/ljMAAeSwb4dq~cRD/s-l225.jpg",
+    "casp": 1000.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T16:58:56.212753+00:00"
+  },
+  {
     "id": 4388,
     "query": "jp1017",
     "source": "ebay",
