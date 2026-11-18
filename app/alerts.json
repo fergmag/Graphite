@@ -19712,6 +19712,38 @@
     "created_at": "2026-10-26T16:53:34.669422+00:00"
   },
   {
+    "id": 4376,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Sandstone Quilt-Lined Artic Jacket “Blue” C26 BLU Men's Large",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/327462592857",
+    "photo": "https://i.ebayimg.com/images/g/Wz4AAeSwWoZq~Uju/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T10:53:31.474808+00:00"
+  },
+  {
+    "id": 4375,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Artic Jacket “Black” J02 Black Men’s Large",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/147637494986",
+    "photo": "https://i.ebayimg.com/images/g/GyoAAeSw86tq0AJp/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T10:53:31.423207+00:00"
+  },
+  {
     "id": 2958,
     "query": "j43 onyx",
     "source": "ebay",
