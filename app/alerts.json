@@ -19744,6 +19744,22 @@
     "created_at": "2026-11-05T04:56:47.473062+00:00"
   },
   {
+    "id": 4370,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "NEW Carhartt J001 BRN Brown Jacket Medium ( IRREGULAR on TAGs )",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/960207195184",
+    "photo": "https://i.ebayimg.com/images/g/cJQAAeSwaRRq~CvN/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T04:58:23.570317+00:00"
+  },
+  {
     "id": 4368,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -20318,6 +20334,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-14T16:53:33.169691+00:00"
+  },
+  {
+    "id": 4369,
+    "query": "j43 onyx",
+    "source": "ebay",
+    "title": "Carhartt Detroit Blanket Lined Jacket J001 BRN Medium Full Zip Logo Flag Ranch ",
+    "price": 399.99,
+    "url": "https://www.ebay.com/itm/800931561454",
+    "photo": "https://i.ebayimg.com/images/g/QVQAAeSwQr9q~OQ-/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-18T04:58:23.562441+00:00"
   },
   {
     "id": 4351,
