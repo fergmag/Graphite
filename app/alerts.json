@@ -13616,6 +13616,22 @@
     "created_at": "2026-10-26T16:53:45.154971+00:00"
   },
   {
+    "id": 4469,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket 6BLJ Mens 40/Medium Vintage",
+    "price": 220.0,
+    "url": "https://www.ebay.com/itm/117529390647",
+    "photo": "https://i.ebayimg.com/images/g/cJcAAeSwdXFq~ksy/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-19T16:56:44.476908+00:00"
+  },
+  {
     "id": 3490,
     "query": "j76 moss",
     "source": "ebay",
