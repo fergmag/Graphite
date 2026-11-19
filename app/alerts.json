@@ -8272,6 +8272,22 @@
     "created_at": "2026-10-27T22:55:26.904148+00:00"
   },
   {
+    "id": 4483,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J140 Active Jacket Mens XL Red Duck Canvas Quilted Flannel Workwear",
+    "price": 167.89999999999998,
+    "url": "https://www.ebay.com/itm/168870949955",
+    "photo": "https://i.ebayimg.com/images/g/6H8AAeSw9e5q~asS/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-19T22:55:47.180508+00:00"
+  },
+  {
     "id": 3745,
     "query": "j110 darkstone",
     "source": "etsy",
@@ -18334,6 +18350,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T04:55:07.325550+00:00"
+  },
+  {
+    "id": 4482,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt 6BLJ Detroit Jacket Brown Blanket Lined Size 42 Large",
+    "price": 285.99,
+    "url": "https://www.ebay.com/itm/407375226875",
+    "photo": "https://i.ebayimg.com/images/g/ZH0AAeSwSAdq~0Gc/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-19T22:55:47.056702+00:00"
   },
   {
     "id": 4294,
