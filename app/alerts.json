@@ -10800,6 +10800,22 @@
     "created_at": "2026-10-26T16:52:54.240052+00:00"
   },
   {
+    "id": 4442,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt C10 BRG Blanket Lined Coat Burgundy Made in USA Large",
+    "price": 195.0,
+    "url": "https://www.ebay.com/itm/206711668891",
+    "photo": "https://i.ebayimg.com/images/g/9-AAAeSwb~hq~kGR/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-19T04:56:44.576361+00:00"
+  },
+  {
     "id": 2194,
     "query": "j76 moss",
     "source": "ebay",
@@ -41518,6 +41534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-18T04:52:54.438618+00:00"
+  },
+  {
+    "id": 4441,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J43 J97 BRG Detroit Jacket USA Made Burgundy XL 90s",
+    "price": 1250.0,
+    "url": "https://www.ebay.com/itm/940103864865",
+    "photo": "https://i.ebayimg.com/images/g/SV4AAeSwwl9q-MkK/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-19T04:56:44.259048+00:00"
   },
   {
     "id": 3818,
