@@ -6960,6 +6960,22 @@
     "created_at": "2026-10-26T16:56:40.509104+00:00"
   },
   {
+    "id": 4580,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Faded Hunter Green Hooded Active Work Jacket",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/128019794652",
+    "photo": "https://i.ebayimg.com/images/g/Bn8AAeSw-wtquqgv/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-20T22:58:37.874296+00:00"
+  },
+  {
     "id": 4295,
     "query": "j97 moss",
     "source": "ebay",
@@ -33022,6 +33038,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T22:58:58.572668+00:00"
+  },
+  {
+    "id": 4579,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "RARE Carhartt J43 Hunter Green Detroit Blanket Lined Faded Honeycombing M",
+    "price": 800.0,
+    "url": "https://www.ebay.com/itm/800944066376",
+    "photo": "https://i.ebayimg.com/images/g/9HwAAeSw1V5rALOV/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-20T22:58:37.771412+00:00"
   },
   {
     "id": 4000,
