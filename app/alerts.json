@@ -5824,6 +5824,22 @@
     "created_at": "2026-10-30T22:55:58.282194+00:00"
   },
   {
+    "id": 4596,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 80s Carhartt J97 Detroit Jacket  Quilted Lined Size XL",
+    "price": 140.0,
+    "url": "https://www.ebay.com/itm/840150117174",
+    "photo": "https://i.ebayimg.com/images/g/46oAAOSwjiZm91MA/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T04:56:40.774853+00:00"
+  },
+  {
     "id": 4592,
     "query": "j97 moss",
     "source": "ebay",
@@ -11374,6 +11390,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-27T16:53:38.655825+00:00"
+  },
+  {
+    "id": 4595,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage USA Carhartt Mens Medium, J22 Jacket, Detroit Trucker, Arctic, Patina, ",
+    "price": 196.95,
+    "url": "https://www.ebay.com/itm/206716653990",
+    "photo": "https://i.ebayimg.com/images/g/AygAAeSw-fZrAQzC/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T04:56:40.673933+00:00"
   },
   {
     "id": 4587,
@@ -25902,6 +25934,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-03T22:56:40.107653+00:00"
+  },
+  {
+    "id": 4597,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 90s Carhartt Detroit plum purple  Jacket Size Large Made in USA JW141",
+    "price": 400.0,
+    "url": "https://www.ebay.com/itm/206059456718",
+    "photo": "https://i.ebayimg.com/images/g/BPMAAeSwvD5pidsZ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T04:56:40.876349+00:00"
   },
   {
     "id": 3828,
