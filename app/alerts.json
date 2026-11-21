@@ -16528,6 +16528,22 @@
     "created_at": "2026-10-28T04:55:55.987410+00:00"
   },
   {
+    "id": 4608,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "2006 Carhartt J97 SDL (saddle) Detroit Jacket - blanket lined",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/307138454837",
+    "photo": "https://i.ebayimg.com/images/g/s9UAAeSwTclqh8cT/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T10:55:44.682037+00:00"
+  },
+  {
     "id": 4564,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -18638,6 +18654,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T04:56:31.174805+00:00"
+  },
+  {
+    "id": 4607,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Faded J01 Black Blanket Lined Carhartt Detroit Jacket Size M/L",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/198811515393",
+    "photo": "https://i.ebayimg.com/images/g/AjAAAeSwyMNrANBN/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T10:55:44.530251+00:00"
   },
   {
     "id": 4481,
