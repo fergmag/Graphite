@@ -5824,6 +5824,22 @@
     "created_at": "2026-10-30T22:55:58.282194+00:00"
   },
   {
+    "id": 4613,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage 80s Carhartt J97 Detroit Jacket  Quilted Lined Size XL",
+    "price": 140.0,
+    "url": "https://www.ebay.com/itm/840150117174",
+    "photo": "https://i.ebayimg.com/images/g/46oAAOSwjiZm91MA/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T10:57:09.675362+00:00"
+  },
+  {
     "id": 4596,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -18656,6 +18672,22 @@
     "created_at": "2026-11-10T04:56:31.174805+00:00"
   },
   {
+    "id": 4612,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Faded J01 Black Blanket Lined Carhartt Detroit Jacket Size M/L",
+    "price": 275.0,
+    "url": "https://www.ebay.com/itm/198811515393",
+    "photo": "https://i.ebayimg.com/images/g/AjAAAeSwyMNrANBN/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T10:57:09.277630+00:00"
+  },
+  {
     "id": 4610,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -23278,6 +23310,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T16:58:19.674901+00:00"
+  },
+  {
+    "id": 4611,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "VTG 2005 Carhartt J01 Detroit Jacket 48R XL Made in USA Blanket Lined Thrashed",
+    "price": 185.0,
+    "url": "https://www.ebay.com/itm/407378952918",
+    "photo": "https://i.ebayimg.com/images/g/aCwAAeSwSOJrAWGD/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T10:57:09.182232+00:00"
   },
   {
     "id": 3152,
