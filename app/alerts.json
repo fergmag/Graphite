@@ -11744,6 +11744,22 @@
     "created_at": "2026-11-10T16:58:19.476994+00:00"
   },
   {
+    "id": 4633,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J01 BLK Detroit Jacket Size 48 Regular Workwear Blanket Lining",
+    "price": 198.0,
+    "url": "https://www.ebay.com/itm/860147233549",
+    "photo": "https://i.ebayimg.com/images/g/HGMAAeSwtKlq-lWU/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T16:57:15.974253+00:00"
+  },
+  {
     "id": 3835,
     "query": "j97 moss",
     "source": "grailed",
@@ -27440,6 +27456,22 @@
     "created_at": "2026-11-07T22:57:18.074591+00:00"
   },
   {
+    "id": 4632,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J97 CML Blanket Lined Jacket Mens Size XL Workwear",
+    "price": 219.99,
+    "url": "https://www.ebay.com/itm/198676663117",
+    "photo": "https://i.ebayimg.com/images/g/uSAAAeSwjclq3fa6/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T16:57:15.784767+00:00"
+  },
+  {
     "id": 2095,
     "query": "j97 petrol",
     "source": "ebay",
@@ -31902,6 +31934,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T04:54:31.026850+00:00"
+  },
+  {
+    "id": 4631,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens Large J97 PTL Petrol Gray Y2K VTG",
+    "price": 412.0,
+    "url": "https://www.ebay.com/itm/336909242748",
+    "photo": "https://i.ebayimg.com/images/g/iJAAAeSw97JrAcwY/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T16:57:15.587696+00:00"
   },
   {
     "id": 4174,
@@ -37950,6 +37998,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-31T04:56:34.191608+00:00"
+  },
+  {
+    "id": 4634,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Detroit Vintage Jacket J97 PTL Perfect Fade 0 Flaws Size XL USA Made",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/236575318907",
+    "photo": "https://i.ebayimg.com/images/g/-AcAAeSwnLBpYrdk/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-21T16:57:16.386825+00:00"
   },
   {
     "id": 4371,
