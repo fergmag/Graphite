@@ -176,6 +176,22 @@
     "created_at": "2026-11-15T04:59:11.880430+00:00"
   },
   {
+    "id": 4702,
+    "query": "j97 petrol",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 Detroit Jacket PTL",
+    "price": 39.99,
+    "url": "https://www.etsy.com/listing/4623134258/vintage-carhartt-j97-detroit-jacket-ptl",
+    "photo": "https://i.etsystatic.com/69292664/r/il/166d45/8905911408/il_570xN.8905911408_t4bd.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:57:19.576825+00:00"
+  },
+  {
     "id": 4136,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -36238,6 +36254,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T16:57:47.784557+00:00"
+  },
+  {
+    "id": 4701,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 PTL Gray Canvas Full Zip Lined Jacket Embroidered XL",
+    "price": 304.99,
+    "url": "https://www.ebay.com/itm/307295730811",
+    "photo": "https://i.ebayimg.com/images/g/oEkAAeSw-blrAmsc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:57:19.176012+00:00"
   },
   {
     "id": 3505,
