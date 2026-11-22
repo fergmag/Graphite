@@ -18048,6 +18048,22 @@
     "created_at": "2026-11-11T16:56:28.670890+00:00"
   },
   {
+    "id": 4704,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "RARE Vintage 90’s Carhartt J06 Quilted Lined Active Jacket Aspen Green Full Zip",
+    "price": 256.99,
+    "url": "https://www.ebay.com/itm/117533562638",
+    "photo": "https://i.ebayimg.com/images/g/JJ8AAeSwOwRrAfpM/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:57:50.785596+00:00"
+  },
+  {
     "id": 4665,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -23902,6 +23918,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T22:57:31.881013+00:00"
+  },
+  {
+    "id": 4703,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vtg Carhartt J13 BLK Santa Fe Jacket Black Red Quilt Lined Bomber Y2K Men XL NEW",
+    "price": 160.45,
+    "url": "https://www.ebay.com/itm/257862846197",
+    "photo": "https://i.ebayimg.com/images/g/MkUAAeSw3C1rAKMN/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:57:50.778138+00:00"
   },
   {
     "id": 3633,
