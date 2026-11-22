@@ -1952,6 +1952,22 @@
     "created_at": "2026-10-26T16:53:34.627277+00:00"
   },
   {
+    "id": 4687,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J131 Hooded Work Jacket Brown Duck Made in USA",
+    "price": 80.0,
+    "url": "https://www.ebay.com/itm/237195759786",
+    "photo": "https://i.ebayimg.com/images/g/glEAAeSwMt9rAPhe/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T04:57:53.433186+00:00"
+  },
+  {
     "id": 4673,
     "query": "j110 darkstone",
     "source": "ebay",
