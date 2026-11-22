@@ -4576,6 +4576,22 @@
     "created_at": "2026-11-06T16:53:38.859594+00:00"
   },
   {
+    "id": 4674,
+    "query": "jp1017",
+    "source": "ebay",
+    "title": "Carhartt C61 DKB Sandstone Ridge Coat Mens Large Dark Brown Sherpa Lined Jacket",
+    "price": 120.0,
+    "url": "https://www.ebay.com/itm/860139349799",
+    "photo": "https://i.ebayimg.com/images/g/P9YAAeSw1klq9o12/s-l225.jpg",
+    "casp": 550.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T04:55:11.832284+00:00"
+  },
+  {
     "id": 4504,
     "query": "jb0866",
     "source": "ebay",
