@@ -12768,6 +12768,22 @@
     "created_at": "2026-10-26T16:57:31.304883+00:00"
   },
   {
+    "id": 4718,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt J97 BRN Detroit Men's Brown Canvas Lined Full Zip Work Jacket XL",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/137953645388",
+    "photo": "https://i.ebayimg.com/images/g/CqUAAeSw9GBrA1qh/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T22:56:50.479589+00:00"
+  },
+  {
     "id": 4473,
     "query": "j97 petrol",
     "source": "ebay",
@@ -31486,6 +31502,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:55:42.976884+00:00"
+  },
+  {
+    "id": 4717,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 SDL Blanket Lined Mens XL  (tagged 2xl) Sandstone",
+    "price": 165.0,
+    "url": "https://www.ebay.com/itm/920169468179",
+    "photo": "https://i.ebayimg.com/images/g/GXUAAeSwgQJrAhb2/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 2,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T22:56:50.370828+00:00"
   },
   {
     "id": 2324,
