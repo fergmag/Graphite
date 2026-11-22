@@ -24000,6 +24000,22 @@
     "created_at": "2026-10-29T16:58:19.674901+00:00"
   },
   {
+    "id": 4694,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Santa Fe Jacket “Chestnut” J14 CHT Size XL Tall",
+    "price": 185.0,
+    "url": "https://www.ebay.com/itm/406866936541",
+    "photo": "https://i.ebayimg.com/images/g/UP0AAeSw1URp44QW/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T10:57:35.179018+00:00"
+  },
+  {
     "id": 4611,
     "query": "j97 petrol",
     "source": "ebay",
