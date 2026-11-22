@@ -32848,6 +32848,22 @@
     "created_at": "2026-10-29T04:56:39.086586+00:00"
   },
   {
+    "id": 4699,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J97 MOS Canvas Jacket Moss Green Lined Men's Size Large",
+    "price": 450.0,
+    "url": "https://www.ebay.com/itm/267850987869",
+    "photo": "https://i.ebayimg.com/images/g/PBUAAeSwRGNrAw1F/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 2,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:56:27.977161+00:00"
+  },
+  {
     "id": 4131,
     "query": "j76 cement",
     "source": "ebay",
@@ -42576,6 +42592,22 @@
     "created_at": "2026-10-28T16:57:55.281998+00:00"
   },
   {
+    "id": 4700,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt J97 MOS Detroit Jacket Small Moss Green Blanket Lined Workwear",
+    "price": 706.49,
+    "url": "https://www.ebay.com/itm/198814035506",
+    "photo": "https://i.ebayimg.com/images/g/SPMAAeSwfH5rAhuH/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:56:28.178354+00:00"
+  },
+  {
     "id": 3846,
     "query": "j97 moss",
     "source": "ebay",
@@ -44206,6 +44238,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-02T04:59:03.979437+00:00"
+  },
+  {
+    "id": 4698,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket Small Moss Green J97 MOS Blanket Lined Workwear Mens",
+    "price": 991.0,
+    "url": "https://www.grailed.com/listings/113131462",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/dc6844e8ac604a7aba0b8e8a198b90d1",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-22T16:56:27.669931+00:00"
   },
   {
     "id": 1811,
