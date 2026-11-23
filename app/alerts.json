@@ -29664,6 +29664,22 @@
     "created_at": "2026-11-15T22:57:15.478585+00:00"
   },
   {
+    "id": 4770,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Artic Jacket “Black” J02 Black Men’s Large",
+    "price": 349.99,
+    "url": "https://www.ebay.com/itm/147637494986",
+    "photo": "https://i.ebayimg.com/images/g/GyoAAeSw86tq0AJp/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T16:57:53.670197+00:00"
+  },
+  {
     "id": 4239,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -36670,6 +36686,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-11T16:57:14.280632+00:00"
+  },
+  {
+    "id": 4771,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J13 BLK Santa Fe Jacket Flannel Lined Mens Size XL Black Made in USA",
+    "price": 294.95,
+    "url": "https://www.ebay.com/itm/377659473171",
+    "photo": "https://i.ebayimg.com/images/g/pckAAeSw6Ttq~y5b/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T16:57:53.680779+00:00"
   },
   {
     "id": 3939,
