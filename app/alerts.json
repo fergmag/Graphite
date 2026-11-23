@@ -17424,6 +17424,22 @@
     "created_at": "2026-10-28T04:55:55.987410+00:00"
   },
   {
+    "id": 4757,
+    "query": "j97 moss",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 Men's Size M",
+    "price": 250.0,
+    "url": "https://www.ebay.com/itm/840157703238",
+    "photo": "https://i.ebayimg.com/images/g/jygAAeSwgNBrA-dt/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T10:56:23.280971+00:00"
+  },
+  {
     "id": 4737,
     "query": "j97 petrol",
     "source": "ebay",
@@ -40846,6 +40862,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-16T10:57:19.093581+00:00"
+  },
+  {
+    "id": 4756,
+    "query": "j97 moss",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket J97 MOS Men's 2XL Green Faded Canvas Workwear Y2K",
+    "price": 532.0,
+    "url": "https://www.grailed.com/listings/113235447",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/1c006864bca44233bc82d7b0928f8a15",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T10:56:22.978762+00:00"
   },
   {
     "id": 2440,
