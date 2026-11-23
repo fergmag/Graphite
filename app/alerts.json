@@ -4032,6 +4032,22 @@
     "created_at": "2026-11-17T04:53:04.912629+00:00"
   },
   {
+    "id": 4759,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Vtg Carhartt J97 PTL Detroit Jacket Men's Size 4XL Petrol Gray Distressed",
+    "price": 109.95,
+    "url": "https://www.ebay.com/itm/800954697786",
+    "photo": "https://i.ebayimg.com/images/g/ZQYAAeSwQIdrA8rW/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T10:57:11.973200+00:00"
+  },
+  {
     "id": 2874,
     "query": "j76 moss",
     "source": "ebay",
@@ -37806,6 +37822,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-11T04:56:24.481659+00:00"
+  },
+  {
+    "id": 4758,
+    "query": "j97 petrol",
+    "source": "grailed",
+    "title": "Vintage J97 PTL Faded Grey Carhartt Detroit Jacket Size L",
+    "price": 359.0,
+    "url": "https://www.grailed.com/listings/96391616",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/ff635033c74d4042bd9d361c282d89a1",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-23T10:57:11.782917+00:00"
   },
   {
     "id": 4362,
