@@ -12640,6 +12640,22 @@
     "created_at": "2026-11-22T16:55:51.577104+00:00"
   },
   {
+    "id": 4821,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J01 brown detroit work wear jacket",
+    "price": 199.99,
+    "url": "https://www.ebay.com/itm/198820285964",
+    "photo": "https://i.ebayimg.com/images/g/OfAAAeSwUWBrBRKd/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T16:55:50.563255+00:00"
+  },
+  {
     "id": 4236,
     "query": "j97 timber",
     "source": "ebay",
@@ -28766,6 +28782,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:58:22.197348+00:00"
+  },
+  {
+    "id": 4822,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Vintage Carhartt Quilted Hooded Active Jacket “Crimson Red” J130 CRI Men’s XL",
+    "price": 740.0,
+    "url": "https://www.ebay.com/itm/407385458434",
+    "photo": "https://i.ebayimg.com/images/g/JqMAAeSwrkBrBXXE/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T16:55:50.972035+00:00"
   },
   {
     "id": 2423,
