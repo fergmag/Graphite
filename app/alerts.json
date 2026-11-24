@@ -17136,6 +17136,22 @@
     "created_at": "2026-11-15T04:54:50.805901+00:00"
   },
   {
+    "id": 4799,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J02 BLK black Arctic work wear jacket",
+    "price": 244.98000000000002,
+    "url": "https://www.ebay.com/itm/407365763756",
+    "photo": "https://i.ebayimg.com/images/g/adoAAeSwXV9q-luC/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T04:57:52.978705+00:00"
+  },
+  {
     "id": 4604,
     "query": "jb1215",
     "source": "ebay",
@@ -29614,6 +29630,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T04:56:56.522747+00:00"
+  },
+  {
+    "id": 4800,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt J25 CHT Canvas Jacket Mens Size Large Hooded Mesh Lining",
+    "price": 314.98,
+    "url": "https://www.ebay.com/itm/366833664813",
+    "photo": "https://i.ebayimg.com/images/g/L2QAAeSw3b5rBOJ1/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T04:57:53.070653+00:00"
   },
   {
     "id": 4494,
