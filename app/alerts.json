@@ -15424,6 +15424,22 @@
     "created_at": "2026-11-15T04:55:01.298042+00:00"
   },
   {
+    "id": 4818,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt C26 Cht Jacket - Medium Brown Cotton",
+    "price": 223.46,
+    "url": "https://www.ebay.com/itm/407294467802",
+    "photo": "https://i.ebayimg.com/images/g/xB4AAeSwdpFq0f~w/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T10:57:42.577841+00:00"
+  },
+  {
     "id": 3654,
     "query": "j43 onyx",
     "source": "ebay",
@@ -26334,6 +26350,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-26T16:56:40.411899+00:00"
+  },
+  {
+    "id": 4817,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J43 CHT Chestnut Size L Super Rare Beautiful Fade",
+    "price": 300.0,
+    "url": "https://www.ebay.com/itm/407384887627",
+    "photo": "https://i.ebayimg.com/images/g/b4IAAeSwX~9rBRvv/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T10:57:42.278606+00:00"
   },
   {
     "id": 4719,
