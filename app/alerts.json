@@ -31760,6 +31760,22 @@
     "created_at": "2026-11-15T04:56:19.274527+00:00"
   },
   {
+    "id": 4796,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Vintage 1996 Carhartt JQ2246 Santa Fe Jacket Mens Large Burgundy Wine Tan Collar",
+    "price": 556.82,
+    "url": "https://www.ebay.com/itm/377671645824",
+    "photo": "https://i.ebayimg.com/images/g/PDMAAeSw6V5rBJJK/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 3,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T04:56:51.077241+00:00"
+  },
+  {
     "id": 2556,
     "query": "j97 moss",
     "source": "ebay",
@@ -45326,6 +45342,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-05T16:52:44.462176+00:00"
+  },
+  {
+    "id": 4795,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket J97 BRG Burgundy – Size M Super Rare",
+    "price": 900.0,
+    "url": "https://www.ebay.com/itm/407384505717",
+    "photo": "https://i.ebayimg.com/images/g/YPkAAeSwtWdrBOMT/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T04:56:51.066865+00:00"
   },
   {
     "id": 3888,
