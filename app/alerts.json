@@ -3968,6 +3968,22 @@
     "created_at": "2026-10-27T22:52:54.222259+00:00"
   },
   {
+    "id": 4808,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Digger Coat Dark Gray Mens M",
+    "price": 105.0,
+    "url": "https://www.ebay.com/itm/187858905100",
+    "photo": "https://i.ebayimg.com/images/g/X8sAAeSwLWJpRaaW/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T10:55:25.195245+00:00"
+  },
+  {
     "id": 2549,
     "query": "j65 brick",
     "source": "ebay",
