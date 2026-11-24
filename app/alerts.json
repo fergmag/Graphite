@@ -24208,6 +24208,22 @@
     "created_at": "2026-11-17T04:55:41.184233+00:00"
   },
   {
+    "id": 4809,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit J01 BLK Black Blanket Lined Jacket Size Medium 38 made in USA",
+    "price": 459.98,
+    "url": "https://www.ebay.com/itm/227628114574",
+    "photo": "https://i.ebayimg.com/images/g/n6sAAeSwb6ZrBHz7/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T10:55:47.671321+00:00"
+  },
+  {
     "id": 3474,
     "query": "j65 brick",
     "source": "ebay",
