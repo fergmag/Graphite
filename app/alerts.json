@@ -3840,6 +3840,22 @@
     "created_at": "2026-10-28T16:56:04.275517+00:00"
   },
   {
+    "id": 4806,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt Men's Iconic J01 Duck Detroit Jacket 103828 Blanket Lined Workwear",
+    "price": 102.95,
+    "url": "https://www.ebay.com/itm/860168985279",
+    "photo": "https://i.ebayimg.com/images/g/~c0AAeSwL2NrA6Ry/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-24T10:53:32.669423+00:00"
+  },
+  {
     "id": 3288,
     "query": "j110 darkstone",
     "source": "ebay",
