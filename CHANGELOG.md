@@ -170,6 +170,26 @@ Colorway filtering fully fixed: `filter_comps` now requires the colorway (e.g. "
 
 ---
 
+### Nov 2026 — GitHub Token Rotation
+
+**Nov 24** — The classic GitHub personal access token ("My Mac Again", `repo` scope) expired, so it was regenerated. **The new token expires Dec 24, 2026.** If you're reading this around Dec 23, this is the job to redo.
+
+What changed:
+- **Token removed from the git remote.** The local `origin` URL had the token hard-coded in it (`https://fergmag:ghp_…@github.com/...`), so it sat in plain text in `.git/config`. The remote is now plain `https://github.com/fergmag/Graphite.git`, and git gets the login from the macOS Keychain (`credential.helper osxkeychain`) like every other repo.
+- **New token stored in the Keychain.** It was checked against the GitHub API, which returned 200 with `repo` scope.
+
+**Next rotation (before Dec 24):**
+1. Regenerate the token at github.com → Settings → Developer settings → Personal access tokens (classic). Pick a longer expiry this time (90 days or more).
+2. In a fresh Terminal window (not inside a Claude session, so the token stays out of the chat), store it in the Keychain:
+   ```bash
+   read -s "t?Token: "; printf "protocol=https\nhost=github.com\nusername=fergmag\npassword=%s\n\n" "$t" | git credential-osxkeychain store; unset t
+   ```
+3. Update `GITHUB_TOKEN` in Render's environment dashboard if it uses the same token (see below).
+
+**Unverified: the Render `GITHUB_TOKEN`.** `_github_sync_file()` in `app/main.py` uses `GITHUB_TOKEN` from Render's environment to push alerts, estimates and the refresh log back to the repo. That variable isn't in the local `.env`, so we couldn't tell whether Render uses this same token. If it does, the sync fails **silently** once the token expires: the function just stops writing, nothing errors, and data is lost on the next redeploy. To check: look for recent `sync:` commits in `git log origin/main`. If they stop after a token expires, the Render token needs updating.
+
+---
+
 ## Database Schema
 
 Tables created/migrated in `app/db.py → init_db()`. Always `ALTER TABLE ADD COLUMN` — never drop/recreate.
