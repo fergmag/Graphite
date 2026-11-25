@@ -1472,6 +1472,22 @@
     "created_at": "2026-10-26T16:55:04.136441+00:00"
   },
   {
+    "id": 3170,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": " CARHARTT J130 BLK SANDSTONE DUCK ACTIVE JACKET HOOD XL TALL",
+    "price": 72.95,
+    "url": "https://www.ebay.com/itm/198792103167",
+    "photo": "https://i.ebayimg.com/images/g/2bMAAeSw5Nlq9ybl/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-25T23:01:38.640310+00:00"
+  },
+  {
     "id": 88,
     "query": "j110 darkstone",
     "source": "ebay",
@@ -17758,6 +17774,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:54:50.805901+00:00"
+  },
+  {
+    "id": 3171,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130 BLK black hooded work wear jacket",
+    "price": 244.98000000000002,
+    "url": "https://www.ebay.com/itm/407347959359",
+    "photo": "https://i.ebayimg.com/images/g/FdAAAeSw6A1q7-LR/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-25T23:01:38.658728+00:00"
   },
   {
     "id": 1086,
