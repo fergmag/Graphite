@@ -184,9 +184,9 @@ What changed:
    ```bash
    read -s "t?Token: "; printf "protocol=https\nhost=github.com\nusername=fergmag\npassword=%s\n\n" "$t" | git credential-osxkeychain store; unset t
    ```
-3. Update `GITHUB_TOKEN` in Render's environment dashboard if it uses the same token (see below).
+3. Update `GITHUB_TOKEN` in Render → service → Environment to the same new token.
 
-**Unverified: the Render `GITHUB_TOKEN`.** `_github_sync_file()` in `app/main.py` uses `GITHUB_TOKEN` from Render's environment to push alerts, estimates and the refresh log back to the repo. That variable isn't in the local `.env`, so we couldn't tell whether Render uses this same token. If it does, the sync fails **silently** once the token expires: the function just stops writing, nothing errors, and data is lost on the next redeploy. To check: look for recent `sync:` commits in `git log origin/main`. If they stop after a token expires, the Render token needs updating.
+**Render `GITHUB_TOKEN` updated to the new token** (Nov 24–25). `_github_sync_file()` in `app/main.py` uses it to push alerts, estimates and the refresh log back to the repo. If it expires, the sync fails **silently**: nothing errors, and data is lost on the next redeploy. After any rotation, check that new `sync:` commits keep appearing in `git log origin/main`.
 
 ---
 
