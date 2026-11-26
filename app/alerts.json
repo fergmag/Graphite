@@ -13584,6 +13584,22 @@
     "created_at": "2026-11-04T22:52:56.945369+00:00"
   },
   {
+    "id": 3346,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Red Faded Active Jacket J158-DKR Size Medium",
+    "price": 205.0,
+    "url": "https://www.ebay.com/itm/840160665877",
+    "photo": "https://i.ebayimg.com/images/g/tSYAAeSwGd9rBQYc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T23:04:35.438764+00:00"
+  },
+  {
     "id": 858,
     "query": "j97 crimson",
     "source": "ebay",
@@ -30736,6 +30752,22 @@
     "created_at": "2026-10-31T04:57:55.142367+00:00"
   },
   {
+    "id": 3347,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt J22 CHT faded brown arctic work wear jacket",
+    "price": 414.98,
+    "url": "https://www.ebay.com/itm/407389341719",
+    "photo": "https://i.ebayimg.com/images/g/3xsAAeSwJlFrB4yy/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 3,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T23:04:35.748410+00:00"
+  },
+  {
     "id": 3340,
     "query": "j97 petrol",
     "source": "ebay",
@@ -32590,6 +32622,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-17T16:57:52.879051+00:00"
+  },
+  {
+    "id": 3345,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Carhartt Detroit J001 BRN USA  XL Tall Blanket Lined",
+    "price": 270.0,
+    "url": "https://www.ebay.com/itm/376394542357",
+    "photo": "https://i.ebayimg.com/images/g/I7cAAeSwC9tn0hoG/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 2,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T23:04:35.429124+00:00"
   },
   {
     "id": 2078,
