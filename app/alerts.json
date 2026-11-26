@@ -5104,6 +5104,22 @@
     "created_at": "2026-11-02T04:56:50.072628+00:00"
   },
   {
+    "id": 3210,
+    "query": "ju1005",
+    "source": "ebay",
+    "title": "Carhartt Men’s Firm Duck Canvas Traditional Coat Loose Fit Large Black",
+    "price": 125.0,
+    "url": "https://www.ebay.com/itm/880011332398",
+    "photo": "https://i.ebayimg.com/images/g/M~YAAeSw96FqzR--/s-l225.jpg",
+    "casp": 1500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:02:11.448958+00:00"
+  },
+  {
     "id": 339,
     "query": "j97 moss",
     "source": "etsy",
