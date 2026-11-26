@@ -26496,6 +26496,22 @@
     "created_at": "2026-11-07T22:57:18.093833+00:00"
   },
   {
+    "id": 3261,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit J200 BLK Fits Like Men’s M",
+    "price": 350.0,
+    "url": "https://www.ebay.com/itm/860169906216",
+    "photo": "https://i.ebayimg.com/images/g/gaQAAeSwGMZrBBXc/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 4,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:04:26.357281+00:00"
+  },
+  {
     "id": 1719,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -40318,6 +40334,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-14T04:57:08.793045+00:00"
+  },
+  {
+    "id": 3262,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VINTAGE Carhartt Jacket Mens Large Brown Detroit Blanket Lined J43 CHT USA 90s",
+    "price": 550.0,
+    "url": "https://www.ebay.com/itm/398415891210",
+    "photo": "https://i.ebayimg.com/images/g/jKsAAeSwYWxqsM4O/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:04:26.554748+00:00"
   },
   {
     "id": 2639,
