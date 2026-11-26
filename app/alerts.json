@@ -1696,6 +1696,22 @@
     "created_at": "2026-11-20T10:54:49.154310+00:00"
   },
   {
+    "id": 3327,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Carhartt J97 Plaid Detroit Jacket Crimson Red Street Wear Outer Wear Gift",
+    "price": 79.0,
+    "url": "https://www.etsy.com/listing/4554359913/carhartt-j97-plaid-detroit-jacket",
+    "photo": "https://i.etsystatic.com/66376665/r/il/5b41cc/8371438984/il_570xN.8371438984_mfh3.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T23:02:36.662376+00:00"
+  },
+  {
     "id": 108,
     "query": "j110 darkstone",
     "source": "ebay",
@@ -6430,6 +6446,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-19T04:55:26.618528+00:00"
+  },
+  {
+    "id": 3326,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Vintage Carhartt J97 CRI Detroit Jacket, Crimson Canvas Workwear Coat, Classic Vintage Style",
+    "price": 141.0,
+    "url": "https://www.etsy.com/listing/4626384623/vintage-carhartt-j97-cri-detroit-jacket",
+    "photo": "https://i.etsystatic.com/69246505/r/il/68a4c8/8980996835/il_570xN.8980996835_2t3r.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T23:02:36.653233+00:00"
   },
   {
     "id": 406,
