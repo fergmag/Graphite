@@ -5696,6 +5696,22 @@
     "created_at": "2026-11-06T16:55:25.307509+00:00"
   },
   {
+    "id": 3208,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "VTG Carhartt Arctic Traditional Quilted Lined Duck JQ186 removable Hood Large ",
+    "price": 135.0,
+    "url": "https://www.ebay.com/itm/178522589248",
+    "photo": "https://i.ebayimg.com/images/g/DJ8AAeSwTy1qtC3x/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:01:48.061738+00:00"
+  },
+  {
     "id": 379,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -6222,6 +6238,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-09T04:57:57.676230+00:00"
+  },
+  {
+    "id": 3206,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ1006 brown hooded work wear jacket",
+    "price": 144.98000000000002,
+    "url": "https://www.ebay.com/itm/407230534294",
+    "photo": "https://i.ebayimg.com/images/g/N-MAAeSwLgNqrzZe/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:01:48.040333+00:00"
   },
   {
     "id": 413,
@@ -10576,6 +10608,22 @@
     "created_at": "2026-11-20T04:57:50.673221+00:00"
   },
   {
+    "id": 3207,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "VTG 1999 Carhartt JQ282 Chestnut Brown Quilt Lined Zip Up Jacket us sz L Canvas",
+    "price": 183.76,
+    "url": "https://www.ebay.com/itm/198744989724",
+    "photo": "https://i.ebayimg.com/images/g/3moAAeSwmaFq3kaB/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:01:48.052882+00:00"
+  },
+  {
     "id": 700,
     "query": "j76 cement",
     "source": "ebay",
@@ -13694,6 +13742,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-15T04:56:38.286868+00:00"
+  },
+  {
+    "id": 3205,
+    "query": "jq2472",
+    "source": "ebay",
+    "title": "Carhartt JQ621 green faded thrashed hooded work wear jacket",
+    "price": 214.98000000000002,
+    "url": "https://www.ebay.com/itm/407389344911",
+    "photo": "https://i.ebayimg.com/images/g/3I0AAeSwrJBrB42B/s-l225.jpg",
+    "casp": 850.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T05:01:48.028444+00:00"
   },
   {
     "id": 905,
