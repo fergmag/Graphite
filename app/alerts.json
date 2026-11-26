@@ -5456,6 +5456,22 @@
     "created_at": "2026-11-01T22:59:31.404371+00:00"
   },
   {
+    "id": 3298,
+    "query": "j97 crimson",
+    "source": "etsy",
+    "title": "Carhartt J97 Detroit Jacket: Crimson Red Duck Canvas, Blanket Lined Workwear",
+    "price": 130.0,
+    "url": "https://www.etsy.com/listing/4571810283/carhartt-j97-detroit-jacket-cri-crimson",
+    "photo": "https://i.etsystatic.com/67795468/r/il/d91250/8497871448/il_570xN.8497871448_1eji.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T11:02:37.057600+00:00"
+  },
+  {
     "id": 357,
     "query": "j76 cement",
     "source": "ebay",
@@ -17856,6 +17872,22 @@
     "created_at": "2026-10-30T16:53:05.632044+00:00"
   },
   {
+    "id": 3297,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt J97 SDL Saddle Brown Canvas Blanket Lined JacketSize MediumUSA G2U",
+    "price": 252.0,
+    "url": "https://www.ebay.com/itm/880141648967",
+    "photo": "https://i.ebayimg.com/images/g/DeoAAeSw1KVpdqDW/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T11:02:37.049618+00:00"
+  },
+  {
     "id": 3233,
     "query": "j97 moss",
     "source": "ebay",
@@ -21966,6 +21998,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T22:55:52.877928+00:00"
+  },
+  {
+    "id": 3299,
+    "query": "j97 crimson",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Mens 42 Brown J01 BRN Vintage Blanket Lined Made in USA",
+    "price": 314.39,
+    "url": "https://www.ebay.com/itm/287706018862",
+    "photo": "https://i.ebayimg.com/images/g/4EoAAeSwjZ9q7AE4/s-l225.jpg",
+    "casp": 2700.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T11:02:37.354641+00:00"
   },
   {
     "id": 1419,
