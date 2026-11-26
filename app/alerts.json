@@ -36576,6 +36576,22 @@
     "created_at": "2026-11-26T05:03:28.058634+00:00"
   },
   {
+    "id": 3322,
+    "query": "j76 moss",
+    "source": "ebay",
+    "title": "Vintage Carhartt Detroit Jacket XXL J76 MOS Moss Green Blanket Lined Workwear",
+    "price": 299.99,
+    "url": "https://www.ebay.com/itm/257849764444",
+    "photo": "https://i.ebayimg.com/images/g/c18AAeSwzc5q9l2l/s-l225.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T17:05:58.549621+00:00"
+  },
+  {
     "id": 2354,
     "query": "j97 petrol",
     "source": "ebay",
@@ -37294,6 +37310,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-06T04:59:35.621379+00:00"
+  },
+  {
+    "id": 3323,
+    "query": "j76 moss",
+    "source": "etsy",
+    "title": "Vintage Carhartt Detroit Jacket XXL J76 MOS Moss Green Blanket Lined Workwear",
+    "price": 349.99,
+    "url": "https://www.etsy.com/listing/4621397293/vintage-carhartt-detroit-jacket-xxl-j146",
+    "photo": "https://i.etsystatic.com/42328501/r/il/beee4e/8939777683/il_570xN.8939777683_r9pu.jpg",
+    "casp": 700.0,
+    "deal_score": 1,
+    "size": "XXL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-26T17:05:58.561214+00:00"
   },
   {
     "id": 3258,
