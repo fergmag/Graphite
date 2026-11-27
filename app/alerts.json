@@ -3920,6 +3920,22 @@
     "created_at": "2026-10-28T16:56:04.275517+00:00"
   },
   {
+    "id": 3420,
+    "query": "j110 darkstone",
+    "source": "ebay",
+    "title": "Carhartt J130 Men's Active Jac Washed Duck Insulated Hooded Jacket",
+    "price": 102.95,
+    "url": "https://www.ebay.com/itm/307303696558",
+    "photo": "https://i.ebayimg.com/images/g/yw0AAeSwXm9rCLt-/s-l225.jpg",
+    "casp": 800.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:01:42.740094+00:00"
+  },
+  {
     "id": 3319,
     "query": "j43 chestnut",
     "source": "ebay",
