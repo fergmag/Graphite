@@ -15312,6 +15312,22 @@
     "created_at": "2026-11-17T04:55:41.092201+00:00"
   },
   {
+    "id": 3429,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Insulated Detroit Corduroy Collar, Vintage, Charcoal, Large, Grail Coat",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/227635430202",
+    "photo": "https://i.ebayimg.com/images/g/7owAAeSwsYFrCccM/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:03:32.550222+00:00"
+  },
+  {
     "id": 988,
     "query": "j65 blue",
     "source": "ebay",
@@ -45104,6 +45120,22 @@
     "created_at": "2026-10-28T22:56:50.738579+00:00"
   },
   {
+    "id": 3428,
+    "query": "j97 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Detroit Jacket Blanket Lined Mens XL J97 BRG Burgundy Rare",
+    "price": 1012.0,
+    "url": "https://www.ebay.com/itm/206731002806",
+    "photo": "https://i.ebayimg.com/images/g/PhUAAeSwKkpq66Mn/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:03:32.237178+00:00"
+  },
+  {
     "id": 3383,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -46190,6 +46222,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-10T22:58:10.969041+00:00"
+  },
+  {
+    "id": 3427,
+    "query": "j97 burgundy",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket Mens XL Burgundy Blanket Lined Plaid Zip Bomber J97 Workwear",
+    "price": 1396.0,
+    "url": "https://www.grailed.com/listings/113702252",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/47aae600bdbb402e9ce669f33c39cb1d",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:03:32.218098+00:00"
   },
   {
     "id": 3015,
