@@ -6528,6 +6528,22 @@
     "created_at": "2026-10-28T04:58:49.477359+00:00"
   },
   {
+    "id": 3438,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage Carhartt Jacket Men's green",
+    "price": 140.49,
+    "url": "https://www.ebay.com/itm/407393985196",
+    "photo": "https://i.ebayimg.com/images/g/YtYAAeSwEalrCgka/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:05:18.048735+00:00"
+  },
+  {
     "id": 3436,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -12256,6 +12272,22 @@
     "created_at": "2026-10-30T10:53:38.283424+00:00"
   },
   {
+    "id": 3441,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vtg 90s Carhartt J14HTG Santa Fe Detroit Jacket Quilt Lined Distressed Large USA",
+    "price": 199.67,
+    "url": "https://www.ebay.com/itm/137968124849",
+    "photo": "https://i.ebayimg.com/images/g/WQkAAeSwABVrCb35/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:05:18.368402+00:00"
+  },
+  {
     "id": 787,
     "query": "j65 blue",
     "source": "ebay",
@@ -12878,6 +12910,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-29T16:56:12.490746+00:00"
+  },
+  {
+    "id": 3440,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Mens Medium Black Faded Duck Canvas Hooded Work Jacket Full Zip",
+    "price": 200.0,
+    "url": "https://www.ebay.com/itm/336919929772",
+    "photo": "https://i.ebayimg.com/images/g/254AAeSwu75rCclv/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:05:18.356375+00:00"
   },
   {
     "id": 3417,
@@ -15662,6 +15710,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-30T10:56:36.076058+00:00"
+  },
+  {
+    "id": 3439,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Arctic Jacket Mens M Black Distressed Duck Canvas Workwear J02 BLK",
+    "price": 229.99,
+    "url": "https://www.ebay.com/itm/327480771098",
+    "photo": "https://i.ebayimg.com/images/g/naAAAeSwFydrCeqB/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:05:18.247710+00:00"
   },
   {
     "id": 3416,
