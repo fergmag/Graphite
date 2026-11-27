@@ -4416,6 +4416,22 @@
     "created_at": "2026-11-17T16:53:03.167799+00:00"
   },
   {
+    "id": 3361,
+    "query": "js1237",
+    "source": "ebay",
+    "title": "Carhartt Gilliam Active Jac Men's Stone Brown Water Repellent Hooded Jack",
+    "price": 112.86,
+    "url": "https://www.ebay.com/itm/128219341627",
+    "photo": "https://i.ebayimg.com/images/g/w90AAeSwwQBrCQDC/s-l225.jpg",
+    "casp": 2000.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T05:00:35.713483+00:00"
+  },
+  {
     "id": 279,
     "query": "jp1017",
     "source": "ebay",
