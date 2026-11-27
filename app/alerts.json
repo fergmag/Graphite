@@ -6240,6 +6240,22 @@
     "created_at": "2026-10-30T22:55:58.282194+00:00"
   },
   {
+    "id": 3400,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Vintage Carhartt CQ7182 Brown Duck Canvas Quilt-Lined Workwear Jacket Mens Large",
+    "price": 140.0,
+    "url": "https://www.ebay.com/itm/257851512320",
+    "photo": "https://i.ebayimg.com/images/g/A8cAAeSw8KJq97fE/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T17:00:26.958334+00:00"
+  },
+  {
     "id": 3168,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -7582,6 +7598,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-10-28T22:56:33.182758+00:00"
+  },
+  {
+    "id": 3401,
+    "query": "j65 blue",
+    "source": "ebay",
+    "title": "Carhartt 2010 J269 PTB Petrol Blue Canvas Quilt Lined",
+    "price": 150.0,
+    "url": "https://www.ebay.com/itm/900126579115",
+    "photo": "https://i.ebayimg.com/images/g/9pIAAeSwWftrCawN/s-l225.jpg",
+    "casp": 2500.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T17:00:27.058782+00:00"
   },
   {
     "id": 3112,
