@@ -5520,6 +5520,22 @@
     "created_at": "2026-11-01T22:59:31.404371+00:00"
   },
   {
+    "id": 3358,
+    "query": "jb0866",
+    "source": "ebay",
+    "title": "Carhartt Men's Brown Work Jacket - Jacket Style Outerwear",
+    "price": 130.0,
+    "url": "https://www.ebay.com/itm/800971967936",
+    "photo": "https://i.ebayimg.com/images/g/NBYAAeSwvlRrCQXs/s-l225.jpg",
+    "casp": 750.0,
+    "deal_score": 5,
+    "size": null,
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T04:59:56.303348+00:00"
+  },
+  {
     "id": 3298,
     "query": "j97 crimson",
     "source": "etsy",
