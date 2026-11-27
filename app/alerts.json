@@ -15312,6 +15312,22 @@
     "created_at": "2026-11-17T04:55:41.092201+00:00"
   },
   {
+    "id": 3430,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "Carhartt Insulated Detroit Corduroy Collar, Vintage, Charcoal, Large, Grail Coat",
+    "price": 225.0,
+    "url": "https://www.ebay.com/itm/227635430202",
+    "photo": "https://i.ebayimg.com/images/g/7owAAeSwsYFrCccM/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:04:03.760682+00:00"
+  },
+  {
     "id": 3429,
     "query": "j97 burgundy",
     "source": "ebay",
@@ -36654,6 +36670,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-02T04:57:11.187231+00:00"
+  },
+  {
+    "id": 3431,
+    "query": "j97 petrol",
+    "source": "ebay",
+    "title": "USA MADE VINTAGE Carhartt J97 PTL Detroit Jacket Blanket Lined Gray Two Tone XL",
+    "price": 335.69,
+    "url": "https://www.ebay.com/itm/267736878374",
+    "photo": "https://i.ebayimg.com/images/g/mtMAAeSwwzRqYn8D/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T23:04:04.262004+00:00"
   },
   {
     "id": 2396,
