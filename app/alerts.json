@@ -29152,6 +29152,22 @@
     "created_at": "2026-11-12T04:56:48.759512+00:00"
   },
   {
+    "id": 3402,
+    "query": "js1207",
+    "source": "ebay",
+    "title": "CarHartt PHOENIX COA Size: M Navy Men 900.17.PO01378.0417 I019759.1C.01.03",
+    "price": 356.89,
+    "url": "https://www.ebay.com/itm/237210365089",
+    "photo": "https://i.ebayimg.com/images/g/kswAAeSw~5lrCNlw/s-l225.jpg",
+    "casp": 500.0,
+    "deal_score": 3,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-27T17:01:07.894721+00:00"
+  },
+  {
     "id": 1911,
     "query": "j43 chestnut",
     "source": "ebay",
