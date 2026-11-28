@@ -1824,6 +1824,22 @@
     "created_at": "2026-11-07T16:53:18.952847+00:00"
   },
   {
+    "id": 3484,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "Y2K Carhartt J97 Mens Brown Canvas Full Zip Workwear Jacket L 44\" Chest",
+    "price": 80.0,
+    "url": "https://www.ebay.com/itm/407394256979",
+    "photo": "https://i.ebayimg.com/images/g/ZHsAAeSwux5rCiwQ/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:27.043539+00:00"
+  },
+  {
     "id": 3483,
     "query": "j97 timber",
     "source": "ebay",
@@ -19134,6 +19150,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-07T16:56:52.474062+00:00"
+  },
+  {
+    "id": 3485,
+    "query": "j43 chestnut",
+    "source": "ebay",
+    "title": "VTG Carhartt J68 CHT Size MED Chestnut Hooded Jacket",
+    "price": 269.99,
+    "url": "https://www.ebay.com/itm/267856716999",
+    "photo": "https://i.ebayimg.com/images/g/z48AAeSw3aJrB0sS/s-l225.jpg",
+    "casp": 600.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:27.050410+00:00"
   },
   {
     "id": 3410,
