@@ -1824,6 +1824,22 @@
     "created_at": "2026-11-07T16:53:18.952847+00:00"
   },
   {
+    "id": 3487,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Y2K Carhartt J97 Mens Brown Canvas Full Zip Workwear Jacket L 44\" Chest",
+    "price": 80.0,
+    "url": "https://www.ebay.com/itm/407394256979",
+    "photo": "https://i.ebayimg.com/images/g/ZHsAAeSwux5rCiwQ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:40.827452+00:00"
+  },
+  {
     "id": 3484,
     "query": "j43 chestnut",
     "source": "ebay",
@@ -15520,6 +15536,22 @@
     "created_at": "2026-10-30T10:56:36.076058+00:00"
   },
   {
+    "id": 3489,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "VTG Carhartt Arctic Jacket Mens M Black Distressed Duck Canvas Workwear J02 BLK",
+    "price": 229.99,
+    "url": "https://www.ebay.com/itm/327480771098",
+    "photo": "https://i.ebayimg.com/images/g/naAAAeSwFydrCeqB/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:40.859118+00:00"
+  },
+  {
     "id": 3439,
     "query": "j43 hunter green",
     "source": "ebay",
@@ -24270,6 +24302,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-27T17:04:56.614470+00:00"
+  },
+  {
+    "id": 3488,
+    "query": "j43 burgundy",
+    "source": "ebay",
+    "title": "Carhartt Vintage 2001 J04 Active Jacket Sun Faded Distressed Made in USA Size XL",
+    "price": 241.32,
+    "url": "https://www.ebay.com/itm/800974929033",
+    "photo": "https://i.ebayimg.com/images/g/sMcAAeSwPARrCfZD/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:40.835139+00:00"
   },
   {
     "id": 1603,
@@ -45486,6 +45534,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-06T16:58:35.773265+00:00"
+  },
+  {
+    "id": 3486,
+    "query": "j43 burgundy",
+    "source": "grailed",
+    "title": "VINTAGE Carhartt Detroit Jacket XL Burgundy Work Jacket Mens J43 BRG J97",
+    "price": 1464.0,
+    "url": "https://www.grailed.com/listings/110267317",
+    "photo": "https://media-assets.grailed.com/prd/listing/temp/2c1d89f824c6456d9ec2cd83dcfa0b0b",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:04:40.815026+00:00"
   },
   {
     "id": 3464,
