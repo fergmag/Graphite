@@ -1824,6 +1824,22 @@
     "created_at": "2026-11-07T16:53:18.952847+00:00"
   },
   {
+    "id": 3492,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Y2K Carhartt J97 Mens Brown Canvas Full Zip Workwear Jacket L 44\" Chest",
+    "price": 80.0,
+    "url": "https://www.ebay.com/itm/407394256979",
+    "photo": "https://i.ebayimg.com/images/g/ZHsAAeSwux5rCiwQ/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 5,
+    "size": "L",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:05:08.948547+00:00"
+  },
+  {
     "id": 3487,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -24304,6 +24320,22 @@
     "created_at": "2026-11-27T17:04:56.614470+00:00"
   },
   {
+    "id": 3490,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Carhartt Vintage 2001 J04 Active Jacket Sun Faded Distressed Made in USA Size XL",
+    "price": 241.32,
+    "url": "https://www.ebay.com/itm/800974929033",
+    "photo": "https://i.ebayimg.com/images/g/sMcAAeSwPARrCfZD/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 4,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:05:08.851622+00:00"
+  },
+  {
     "id": 3488,
     "query": "j43 burgundy",
     "source": "ebay",
@@ -38480,6 +38512,22 @@
     "created_at": "2026-11-13T04:57:22.672316+00:00"
   },
   {
+    "id": 3491,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "VTG Carhartt Detroit Hunter Green Kanye Canvas Blanket Lined Jacket J43HTG XL",
+    "price": 445.0,
+    "url": "https://www.ebay.com/itm/227587517103",
+    "photo": "https://i.ebayimg.com/images/g/ETgAAeSwyExqyldk/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "XL",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:05:08.868502+00:00"
+  },
+  {
     "id": 2543,
     "query": "j97 moss",
     "source": "ebay",
@@ -45838,6 +45886,22 @@
     "vision_notes": null,
     "seen": 0,
     "created_at": "2026-11-14T04:58:34.727027+00:00"
+  },
+  {
+    "id": 3493,
+    "query": "j43 hunter green",
+    "source": "ebay",
+    "title": "Vintage 90s CARHARTT J43 HTG Detroit Jacket MINT RARE J97 Medium Hunter Green",
+    "price": 1617.0,
+    "url": "https://www.ebay.com/itm/117433742595",
+    "photo": "https://i.ebayimg.com/images/g/QgkAAeSwnm9quNGz/s-l225.jpg",
+    "casp": 900.0,
+    "deal_score": 1,
+    "size": "M",
+    "vision_grade": null,
+    "vision_notes": null,
+    "seen": 0,
+    "created_at": "2026-11-28T05:05:08.965196+00:00"
   },
   {
     "id": 3040,
